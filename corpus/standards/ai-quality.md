@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 14
 origin: "Documents/BUSINESS/neon1/Organization/Core/06-ai-quality-and-oversight.md"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
 ---

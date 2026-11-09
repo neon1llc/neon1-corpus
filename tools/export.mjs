@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // tools/export.mjs - Writes the bundle a consumer reads: adopted documents for that consumer, plus a manifest.
-// Usage: node tools/export.mjs --target chat|site|knowledge|ai [--out dist]
+// Usage: node tools/export.mjs --target chat|site|knowledge|ai [--sections standards,policies] [--out dist]
 //
 // Every document is written twice, flat and named by id: <id>.md to read whole (matching neon1-chat's rule,
 // ^[a-z0-9-]+\.md$), and <id>.json with its front matter, its body as HTML and its H2 sections, so no consumer
@@ -80,7 +80,9 @@ function json(doc) {
 }
 
 
-const docs = load().filter((d) => d.data.status === "adopted" && d.data.consumers.includes(target))
+// --sections narrows a bundle to some shelves, such as only the standards as context for development work
+const only = option("--sections", "").split(",").filter(Boolean)
+const docs = load().filter((d) => d.data.status === "adopted" && d.data.consumers.includes(target) && (!only.length || only.includes(d.section)))
 rmSync(outDir, { recursive: true, force: true })
 mkdirSync(outDir, { recursive: true })
 

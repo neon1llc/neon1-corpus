@@ -57,5 +57,6 @@ export function load() {
       const path = relative(corpusDir, file)
       return { file, path, section: path.split("/")[0], data, body }
     })
-    .sort((a, b) => SECTIONS.indexOf(a.section) - SECTIONS.indexOf(b.section) || a.path.localeCompare(b.path))
+    // Within a shelf, documents with an order come first, in that order, then the rest by path
+    .sort((a, b) => SECTIONS.indexOf(a.section) - SECTIONS.indexOf(b.section) || (a.data?.order ?? 1e9) - (b.data?.order ?? 1e9) || a.path.localeCompare(b.path))
 }
