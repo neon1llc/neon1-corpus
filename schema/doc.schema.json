@@ -76,6 +76,10 @@
       "type": "boolean",
       "description": "True when the knowledge area offers it as a download."
     },
+    "featured": {
+      "type": "boolean",
+      "description": "True to show it in the Knowledge Center's featured row, for the most useful documents to a newcomer."
+    },
     "edition": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+$",
