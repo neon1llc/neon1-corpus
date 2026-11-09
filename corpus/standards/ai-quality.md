@@ -5,7 +5,7 @@ summary: When neon1 uses AI, how it's tested before anyone relies on it, and whe
 type: standard
 status: adopted
 updated: 2026-11-09
-consumers: [chat, knowledge, ai]
+consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/06-ai-quality-and-oversight.md"

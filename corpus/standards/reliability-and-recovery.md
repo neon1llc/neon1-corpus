@@ -5,7 +5,7 @@ summary: How neon1 sets honest service targets, plans for failure, and proves th
 type: standard
 status: adopted
 updated: 2026-11-09
-consumers: [chat, knowledge, ai]
+consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/04-reliability-and-recovery.md"

@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-09
 reviewed: 2026-11-09
-consumers: [chat, knowledge, ai]
+consumers: [knowledge, ai]
 pdf: true
 related: [company-charter, services, standards-client-trust]
 ---
