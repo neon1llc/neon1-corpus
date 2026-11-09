@@ -11,7 +11,7 @@ pdf: true
 edition: "1.0"
 order: 3
 origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md"
-related: [company-charter, standards-discovery-and-delivery, standards-client-trust]
+related: [company-charter, standards-discovery-and-delivery]
 ---
 
 # Operating principles

@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-order: 18
+order: 17
 origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
 ---
@@ -20,7 +20,7 @@ Some projects need another firm, a vendor, or a specialist alongside me. That wo
 
 ## Before any shared work
 
-A [partner responsibilities](../templates/partner-responsibilities.md) sheet is filled in and shared with the client. It names who sells and approves scope, who builds each piece, who handles incidents and when, who invoices for what, who can see which data, who owns the deliverables, who carries insurance, and what each party does if the work ends.
+A [partner responsibilities](../templates/partner-responsibilities.md) sheet is filled in and shared with the client. It names who sells, builds, supports, invoices, sees the data, owns the deliverables, and carries insurance, and what happens if the work ends.
 
 ## Fees and incentives
 
