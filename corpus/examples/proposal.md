@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "0.9"
+edition: "1.0"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -97,7 +97,7 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 ## Terms
 
-**Governing agreement:** neon1 LLC services agreement (version 1.0)
+**Governing agreement:** the services agreement named in the real proposal
 
 **Other agreements needed:**
 
