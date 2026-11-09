@@ -9,21 +9,18 @@ area: migration
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: migration
+order: 3
+stat_key: "2 servers · 2 offices"
+stat: "· no app rewrite"
+short_needs: "The app, database, and files lived on two local servers both offices relied on."
+short_execute: "Moved them to AWS with their technical lead, linked over a VPN."
+short_observe: "Re-ran the real daily tasks from each office and reconciled every record."
+short_normalize: "Change more only when reliability, capacity, or cost data says so."
 origin: "neon1-site src/app/public/index.html#case-migration"
 ---
 
 # Two offices off local servers
-
-*Automotive business · migration*
-
-**2 servers · 2 offices · no app rewrite**
-
-| | In short |
-|---|---|
-| **Needs** | The app, database, and files lived on two local servers both offices relied on. |
-| **Execute** | Moved them to AWS with their technical lead, linked over a VPN. |
-| **Observe** | Re-ran the real daily tasks from each office and reconciled every record. |
-| **Normalize** | Change more only when reliability, capacity, or cost data says so. |
 
 ## Needs
 

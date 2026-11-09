@@ -9,21 +9,18 @@ area: "cloud & AI"
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: accounting
+order: 1
+stat_key: "~5 min → 14 s"
+stat: "lookup · recall 72% → 94%"
+short_needs: "Staff spent minutes hunting through Microsoft 365, or interrupted a senior colleague."
+short_execute: "An assistant on AWS Bedrock that answers only from approved documents each person may see."
+short_observe: "Timed real lookups before and after, and scored 80 test questions for accuracy."
+short_normalize: "Next, an MCP server over the same search, so agents get answers with the same permissions."
 origin: "neon1-site src/app/public/index.html#case-accounting"
 ---
 
 # Answers in seconds, with sources
-
-*Accounting firm · cloud & AI*
-
-**~5 min → 14 s lookup · recall 72% → 94%**
-
-| | In short |
-|---|---|
-| **Needs** | Staff spent minutes hunting through Microsoft 365, or interrupted a senior colleague. |
-| **Execute** | An assistant on AWS Bedrock that answers only from approved documents each person may see. |
-| **Observe** | Timed real lookups before and after, and scored 80 test questions for accuracy. |
-| **Normalize** | Next, an MCP server over the same search, so agents get answers with the same permissions. |
 
 ## Needs
 

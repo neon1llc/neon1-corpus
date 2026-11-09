@@ -9,21 +9,18 @@ area: home tech
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: home
+order: 5
+stat_key: "small jobs welcome"
+stat: "· patience included"
+short_needs: "A house with no cameras, and passwords reused everywhere."
+short_execute: "A camera system at my parents' house, and a password manager for the family."
+short_observe: "Checked that recordings, alerts, and logins all work without me there."
+short_normalize: "Advice, tech support, and on-demand troubleshooting when something acts up."
 origin: "neon1-site src/app/public/index.html#case-home"
 ---
 
 # From cameras to Grandma's email
-
-*Family & friends · home tech*
-
-**small jobs welcome · patience included**
-
-| | In short |
-|---|---|
-| **Needs** | A house with no cameras, and passwords reused everywhere. |
-| **Execute** | A camera system at my parents' house, and a password manager for the family. |
-| **Observe** | Checked that recordings, alerts, and logins all work without me there. |
-| **Normalize** | Advice, tech support, and on-demand troubleshooting when something acts up. |
 
 ## Needs
 
