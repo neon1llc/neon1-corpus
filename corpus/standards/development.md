@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Written for neon1-corpus from neon1's repository conventions (VCS etiquette, licensing, CI) and Core 05 and 07"
-related: [standards-security-and-data, standards-technology-decisions, standards-design-and-accessibility]
+related: [standards-security-and-data, standards-technology-decisions, standards-design-and-accessibility, policy-ai-use]
 ---
 
 # Development
@@ -64,3 +64,6 @@ Cloud resources are described in code (usually Terraform), reviewed like code, a
 
 Code written for you lives in a repository you own, under the license we agree on. The handover includes how to build, test, deploy, and roll back without me. If I reuse open-source work, its license and notices stay intact, and I'll tell you what each one allows.
 
+## Review tools
+
+I use AI tools to review code for bugs, security issues, and missing tests, alongside automated checks. I review and take responsibility for every change that ships. See [How I use AI](../policies/ai-use.md).
