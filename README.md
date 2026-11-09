@@ -36,18 +36,35 @@ origin: "neon1-site src/app/public/index.html#services"
 ---
 ```
 
-The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json).
+The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections.
 
 ## Tools
 
 Node 22, no dependencies.
 
 ```
-node tools/lint.mjs                     # front matter, links, and checks for anything that looks private
-node tools/export.mjs --target chat     # writes dist/chat/ with a manifest. Also site, knowledge or ai
+node tools/lint.mjs                     # front matter, per-type rules, links, and checks for anything that looks private
+node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge or ai
 ```
 
-Exported files are flat and named by `id`, with a `manifest.json` that lists their order, sha256 and length, plus a digest of the whole bundle. Consumers pin a tag of this repo and read its export.
+## Reading the corpus from another repo
+
+Consumers never parse Markdown. The export does it once, the same way for every document, and writes each one twice, flat and named by `id`:
+
+| File | What's in it | Who it suits |
+|---|---|---|
+| `<id>.md` | The whole document as Markdown, with its card facts written out | Reading whole, such as Neo's prompt or AI context |
+| `<id>.json` | `id`, `type`, `title`, `summary`, `source`, all front matter as `data`, the body as `html`, and `sections`: one entry per H2 with `key`, `heading`, `headingHtml` and `html` (text before the first H2 has the key `lead`) | Pages that place parts of a document, such as a case study card |
+| `manifest.json` | Every document in export order with its `type`, both file names, sha256 and length, and a `digest` of the whole bundle | Picking documents, and telling when anything changed |
+
+To use it, pin a tag and export at build time:
+
+```
+git clone --quiet --depth 1 --branch v0.2.0 https://github.com/neon1llc/neon1-corpus .corpus
+node .corpus/tools/export.mjs --target site
+```
+
+Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`. The export runs in well under a second and needs nothing installed, and nothing is fetched while a page is being viewed.
 
 ## Contributing
 
