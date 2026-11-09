@@ -8,6 +8,7 @@ client: accounting firm
 area: "cloud & AI"
 updated: 2026-11-09
 created: 2026-11-06
+edition: "1.0"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting

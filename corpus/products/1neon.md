@@ -10,6 +10,7 @@ origin: neon1-1NEON README.md
 status: adopted
 updated: 2026-11-09
 created: 2026-11-06
+edition: "1.0"
 ---
 
 # 1NEON

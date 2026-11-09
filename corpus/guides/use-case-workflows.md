@@ -6,6 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
+edition: "1.0"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Owners of small service businesses"
