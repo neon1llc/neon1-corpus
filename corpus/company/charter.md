@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-09
 created: 2026-11-05
-consumers: [site, chat, knowledge, ai]
+consumers: [site, knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
