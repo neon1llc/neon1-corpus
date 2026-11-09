@@ -5,7 +5,7 @@ summary: How a neon1 project moves from your problem to a result you can run, st
 type: standard
 status: adopted
 updated: 2026-11-09
-consumers: [chat, knowledge, ai]
+consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/02-discovery-and-delivery.md"

@@ -5,7 +5,7 @@ summary: How neon1 defines success with you, measures it honestly, and reports w
 type: standard
 status: adopted
 updated: 2026-11-09
-consumers: [chat, knowledge, ai]
+consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/03-measurement-handbook.md (client-facing parts)"
