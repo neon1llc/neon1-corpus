@@ -14,7 +14,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/case-studies/`](corpus/case-studies) | Past projects, each told as Needs, Execute, Observe, Normalize |
 | [`corpus/products/`](corpus/products) | 1NEON, AWS CLIP, DeployOps, Ready, Secure, Go |
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
-| [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) and the Matrix lines and motifs it may use (`motifs.md`) |
+| [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) and the lines from the Matrix films it may quote (`motifs.md`) |
 | `corpus/templates/`, `corpus/forms/` | Coming next: proposal and agreement examples, intake forms |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
