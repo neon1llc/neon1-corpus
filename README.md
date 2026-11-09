@@ -56,6 +56,7 @@ Consumers never parse Markdown. The export does it once, the same way for every 
 | `<id>.md` | The whole document as Markdown, with its card facts written out | Reading whole, such as Neo's prompt or AI context |
 | `<id>.json` | `id`, `type`, `title`, `summary`, `source`, all front matter as `data`, the body as `html`, and `sections`: one entry per H2 with `key`, `heading`, `headingHtml` and `html` (text before the first H2 has the key `lead`) | Pages that place parts of a document, such as a case study card |
 | `manifest.json` | Every document in export order with its `type`, both file names, sha256 and length, and a `digest` of the whole bundle | Picking documents, and telling when anything changed |
+| `bundle.json` | The manifest with every document's Markdown inline, one file for the whole set. Each tagged release attaches it as `<target>.bundle.json` | Taking everything in one download, such as Neo's weekly refresh |
 
 To use it, pin a tag and export at build time:
 

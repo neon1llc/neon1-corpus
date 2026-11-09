@@ -7,6 +7,8 @@
 // ^[a-z0-9-]+\.md$), and <id>.json with its front matter, its body as HTML and its H2 sections, so no consumer
 // ever parses Markdown. The manifest lists both, in export order, with each file's sha256 and length and a digest
 // of the whole bundle, so consumers can tell when it changed and fetch only the documents they need.
+// bundle.json holds the manifest and every Markdown text in one file, for a consumer that takes the whole set
+// in one download, such as neon1-chat's weekly refresh. Tagged releases attach it as <target>.bundle.json.
 
 import { writeFileSync, mkdirSync, rmSync } from "node:fs"
 import { join, resolve, relative } from "node:path"
@@ -89,14 +91,17 @@ const files = docs.map((doc, order) => {
   writeFileSync(join(outDir, file), text)
   writeFileSync(join(outDir, jsonFile), data)
   const { id, type, title } = doc.data
-  return { file, order, id, type, title, source: `corpus/${doc.path}`, sha256: sha(text), chars: text.length, json: jsonFile, jsonSha256: sha(data) }
+  const entry = { file, order, id, type, title, source: `corpus/${doc.path}`, sha256: sha(text), chars: text.length, json: jsonFile, jsonSha256: sha(data) }
+  return { entry, text, published: doc.data.published }
 })
 
 const manifest = {
   target,
-  digest: "sha256:" + sha(files.map((f) => f.sha256).join("\n")),
-  chars: files.reduce((n, f) => n + f.chars, 0),
-  files,
+  digest: "sha256:" + sha(files.map((f) => f.entry.sha256).join("\n")),
+  chars: files.reduce((n, f) => n + f.entry.chars, 0),
+  files: files.map((f) => f.entry),
 }
 writeFileSync(join(outDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n")
+const bundle = { ...manifest, files: files.map(({ entry, text, published }) => ({ ...entry, ...(published ? { published } : {}), text })) }
+writeFileSync(join(outDir, "bundle.json"), JSON.stringify(bundle, null, 2) + "\n")
 console.log(`Exported ${files.length} document(s), ${manifest.chars} characters, to ${relative(root, outDir)}.`)
