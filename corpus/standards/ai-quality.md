@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/06-ai-quality-and-oversight.md"
-related: [standards-security-and-data, standards-technology-decisions, neo-chat]
+related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
 ---
 
 # AI quality and oversight
