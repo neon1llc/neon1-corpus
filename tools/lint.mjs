@@ -8,11 +8,13 @@
 import { readFileSync, existsSync } from "node:fs"
 import { join, dirname, resolve } from "node:path"
 import { root, load, SECTIONS } from "./corpus.mjs"
+import { sections } from "./markdown.mjs"
 
 
 
 const schema = JSON.parse(readFileSync(join(root, "schema/doc.schema.json"), "utf8"))
 const P = schema.properties
+const TYPES = schema["x-types"]
 
 // Patterns that should never appear in a public document
 const PRIVATE = [
@@ -28,6 +30,8 @@ const PRIVATE = [
 
 const errors = []
 const ids = new Map()
+// key and order must be unique within a type, since consumers use them for anchors and positions
+const seen = new Map()
 const docs = load()
 
 for (const doc of docs) {
@@ -48,6 +52,28 @@ for (const doc of docs) {
   if (d.pdf !== undefined && typeof d.pdf !== "boolean") err("pdf should be true or false")
   for (const c of Array.isArray(d.consumers) ? d.consumers : [d.consumers])
     if (!P.consumers.items.enum.includes(c)) err(`unknown consumer ${c}`)
+  for (const [key, rule] of Object.entries(P)) {
+    if (d[key] === undefined) continue
+    if (rule.type === "integer" && !Number.isInteger(d[key])) err(`${key} should be a whole number`)
+    if (rule.type === "string" && typeof d[key] !== "string") err(`${key} should be text`)
+    if (rule.minimum !== undefined && d[key] < rule.minimum) err(`${key} should be at least ${rule.minimum}`)
+    if (rule.pattern && typeof d[key] === "string" && !new RegExp(rule.pattern).test(d[key]) && !["id", "updated"].includes(key)) err(`${key} "${d[key]}" doesn't match ${rule.pattern}`)
+  }
+
+  for (const field of ["key", "order"]) {
+    if (d[field] === undefined) continue
+    const tag = `${d.type}:${field}:${d[field]}`
+    if (seen.has(tag)) err(`${field} ${d[field]} is also used by ${seen.get(tag)}`)
+    seen.set(tag, doc.path)
+  }
+
+  // Rules for this type: extra required keys, and the H2 sections it must have, in order
+  const rules = TYPES[d.type] ?? {}
+  for (const key of rules.required ?? []) if (d[key] === undefined || d[key] === "") err(`a ${d.type} needs ${key}`)
+  if (rules.sections) {
+    const found = sections(doc.body).filter((s) => s.heading).map((s) => s.heading)
+    if (found.join("|") !== rules.sections.join("|")) err(`a ${d.type} needs the sections ${rules.sections.join(", ")} in that order, found ${found.join(", ") || "none"}`)
+  }
   if (!SECTIONS.includes(doc.section)) err(`section ${doc.section} isn't one of ${SECTIONS.join(", ")}`)
 
   // Ids are unique because they become file names in every bundle

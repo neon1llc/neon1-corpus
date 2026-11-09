@@ -9,21 +9,18 @@ area: security
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: security
+order: 4
+stat_key: "30+ people"
+stat: "per seminar · every level"
+short_needs: "People knew they were exposed online, but not where to start."
+short_execute: "Plain-language sessions on networks, cameras, devices, fraud, and data brokers."
+short_observe: "Live checkups during sessions, and the questions people brought back later."
+short_normalize: "Stay current with Ready, Secure, Go and other sources as threats change."
 origin: "neon1-site src/app/public/index.html#case-security"
 ---
 
 # Security for non-security people
-
-*Schools, families, & teams · security*
-
-**30+ people per seminar · every level**
-
-| | In short |
-|---|---|
-| **Needs** | People knew they were exposed online, but not where to start. |
-| **Execute** | Plain-language sessions on networks, cameras, devices, fraud, and data brokers. |
-| **Observe** | Live checkups during sessions, and the questions people brought back later. |
-| **Normalize** | Stay current with Ready, Secure, Go and other sources as threats change. |
 
 ## Needs
 

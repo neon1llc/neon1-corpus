@@ -9,21 +9,18 @@ area: community
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: community
+order: 6
+stat_key: "free for the school"
+stat: "· where it began"
+short_needs: "A grade school wanted real STEM tools on a small budget."
+short_execute: "Budgeted and set up a new STEM edtech system, free of charge."
+short_observe: "Watched how teachers and students used it, and adjusted."
+short_normalize: "Free security sessions for teachers and parents, which became neon1."
 origin: "neon1-site src/app/public/index.html#case-community"
 ---
 
 # Where neon1 started
-
-*Grade school · community*
-
-**free for the school · where it began**
-
-| | In short |
-|---|---|
-| **Needs** | A grade school wanted real STEM tools on a small budget. |
-| **Execute** | Budgeted and set up a new STEM edtech system, free of charge. |
-| **Observe** | Watched how teachers and students used it, and adjusted. |
-| **Normalize** | Free security sessions for teachers and parents, which became neon1. |
 
 ## Needs
 
