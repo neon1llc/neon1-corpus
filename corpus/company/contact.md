@@ -9,6 +9,7 @@ origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
 updated: 2026-11-09
 created: 2025-09-07
+edition: "1.0"
 ---
 
 # Contact

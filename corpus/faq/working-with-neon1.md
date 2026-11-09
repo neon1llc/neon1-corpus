@@ -9,6 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-09
 created: 2026-11-07
+edition: "1.0"
 ---
 
 # Working with neon1

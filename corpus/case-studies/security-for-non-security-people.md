@@ -8,6 +8,7 @@ client: "schools, families, & teams"
 area: security
 updated: 2026-11-09
 created: 2026-11-06
+edition: "1.0"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security

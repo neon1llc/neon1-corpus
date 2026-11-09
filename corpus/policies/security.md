@@ -6,6 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-09
 created: 2026-11-08
+edition: "1.0"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/security/"
