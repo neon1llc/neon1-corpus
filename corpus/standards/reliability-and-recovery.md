@@ -1,21 +1,21 @@
 ---
 id: standards-reliability-and-recovery
 title: Reliability and recovery
-summary: How neon1 sets honest service targets, plans for failure, and proves that backups actually restore.
+summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/04-reliability-and-recovery.md"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
 ---
 
 # Reliability and recovery
 
-Reliability means you can do the task when you need to, and get back on your feet when something goes wrong. Targets come from how much interruption and data loss your business can actually tolerate, what the design can do, what it costs, and who's available to respond. I never start by picking an impressive uptime percentage.
+Reliability means you can do the task when you need to, and get back on your feet when something goes wrong. Targets come from how much interruption and data loss your business can actually tolerate, what the design can do, what it costs, and who's available to respond. I don't start by picking an uptime percentage.
 
 ## Define the service first
 
@@ -55,7 +55,7 @@ I ask what happens if the task fails for five minutes, an hour, a day, and a wee
 
 An hourly backup doesn't guarantee an hour of data loss at most. Jobs fail, copies come out incomplete, credentials get lost, and corruption is found late. Recovery also needs uploaded files, configuration, and the keys to decrypt it all.
 
-> [!example] Counting data loss honestly
+> [!example] Counting data loss
 > Trouble starts at 10:15. The last backup finished at 9:00, but the data in it only goes up to 8:30. You've lost an hour and forty-five minutes of work, not an hour and fifteen.
 
 Replication copies deletions and corruption too, and file sync spreads unwanted changes. I keep an independent copy that matches the threat, following the 3-2-1 idea (several copies, different places, one off site) plus an offline or locked copy and regular test restores, as [CISA recommends](https://www.cisa.gov/stopransomware/ransomware-guide).
@@ -88,6 +88,6 @@ An incident disrupts or threatens normal work. A request asks for access, advice
 
 Afterward a short review covers impact, timeline, what helped, and what changes, focused on conditions rather than blame, with a few actions that get checked later.
 
-## What care can honestly promise
+## What ongoing care covers
 
-Ongoing care with neon1 is scheduled attention to a named workflow within an agreed allowance. It isn't a help desk, round-the-clock security monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows the allowance, the scope or the price changes. A low monthly fee never quietly turns into an unlimited recovery promise.
+Ongoing care with neon1 is scheduled attention to a named workflow within an agreed allowance. It isn't a help desk, round-the-clock security monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows the allowance, we change the scope or the price.

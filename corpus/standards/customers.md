@@ -1,21 +1,21 @@
 ---
 id: standards-customers
 title: Customers
-summary: "Who neon1 works with, how it treats each kind of customer, from households to enterprises, and when it says no."
+summary: "Who neon1 works with, how the work differs from households to enterprises, and when it declines work."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/02-positioning-and-operating-model.md and Core 01"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
 
 # Customers
 
-Every customer gets the same core treatment: I listen first, say plainly what I can and can't do, put you in control of what you own, and leave you able to run it. What changes with the kind of customer is the shape of the work.
+Some things stay the same for every customer: I listen first, say plainly what I can and can't do, keep you in control of what you own, and leave you able to run it. The shape of the work changes with the kind of customer.
 
 ## Everyone
 
@@ -39,7 +39,7 @@ Startups and technical small businesses that need clearer cloud accounts, deploy
 
 ## Larger organizations and enterprises
 
-I'm one person, so I'm honest about where I fit. That might be a focused piece of a larger effort, such as a proof of concept, a review, an automation, or training, alongside your own teams. I'll follow your security, procurement, and change processes. I won't take on round-the-clock operations, large migrations that need a team, or formal assurance. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed for those.
+As a one-person practice, I fit best on a focused piece of a larger effort, such as a proof of concept, a review, an automation, or training, alongside your own teams. I'll follow your security, procurement, and change processes. I won't take on round-the-clock operations, large migrations that need a team, or formal assurance. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed for those.
 
 ## Health care and other regulated work
 
@@ -51,4 +51,4 @@ I'll turn down or refer work that needs emergency coverage, safety-critical equi
 
 ## Community help
 
-Separately from paid work, I set aside a little time each month to help people and groups in my community, chosen at my discretion. It's offered as help, not as a sales funnel.
+Separately from paid work, I set aside a little time each month to help people and groups in my community, chosen at my discretion. It isn't used to sell paid work.

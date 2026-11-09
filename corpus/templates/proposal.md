@@ -1,7 +1,7 @@
 ---
 id: templates-proposal
 title: Proposal
-summary: "The one-document proposal neon1 sends after discovery: your problem, the result, what's in and out, schedule, price, and acceptance."
+summary: "The proposal neon1 sends after discovery: your problem, the result, what's in and out, schedule, price, and acceptance."
 type: template
 status: adopted
 updated: 2026-11-09
@@ -9,7 +9,7 @@ created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#3, Projects/Proposals (structure only)"
 related: [examples-proposal, forms-change-request, forms-discovery, templates-decision-review]
 ---

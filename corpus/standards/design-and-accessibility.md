@@ -1,21 +1,21 @@
 ---
 id: standards-design-and-accessibility
 title: Design and accessibility
-summary: "How neon1 designs interfaces and documents that anyone can use, on any device, including people using assistive technology."
+summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md (website behavior), extended"
 related: [standards-client-trust, standards-development, policy-accessibility]
 ---
 
 # Design and accessibility
 
-Good design here means the person can do what they came to do, quickly, and recover when something goes wrong. Looks matter, and neon1 has a look of its own, but the task always comes first.
+Good design means people can do what they came to do quickly, and recover when something goes wrong. neon1 has its own look, but the task comes first.
 
 ## Start from the task
 
@@ -23,7 +23,7 @@ Every screen and document answers three questions before anything else: what is 
 
 ## Accessible by default
 
-I aim for [WCAG 2.2](https://www.w3.org/TR/WCAG22/) level AA and test the real pages. In practice that means:
+I aim for [WCAG 2.2](https://www.w3.org/TR/WCAG22/) level AA. That means designing and checking for:
 
 - Semantic headings and landmarks, so screen readers can jump around.
 - Every control is reachable and usable with a keyboard, with a visible focus ring.
@@ -37,7 +37,7 @@ An automated accessibility score is a starting point. I also check with a keyboa
 
 ## Fast and light
 
-Pages load what they need and nothing else. No trackers, no ad scripts, and no third-party fonts loaded from someone else's server. Images are sized for the screen. A slow connection is a real user, not an edge case.
+Pages load what they need and nothing else: no trackers, no ad scripts, and no fonts loaded from someone else's server. Images are sized for the screen, and pages should still work on a slow connection.
 
 ## Forms people can finish
 
@@ -45,7 +45,7 @@ Short forms, one question per field, and only the questions the task needs. Inpu
 
 ## Documents
 
-Documents use one clear column, real headings, comfortable spacing, and tables only for real comparisons. PDFs from the [Knowledge Center](https://neon1.tech/knowledge/) are tagged for screen readers, carry their title and edition, and print cleanly in black and white.
+Documents use one clear column, real headings, comfortable spacing, and tables only for real comparisons. PDFs from the [Knowledge Center](https://neon1.tech/knowledge/) are tagged for screen readers and carry their title and edition.
 
 ## The neon1 look, used with restraint
 

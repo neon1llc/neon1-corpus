@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#2"
 related: [standards-technology-decisions, templates-proposal]
 ---

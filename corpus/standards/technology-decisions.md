@@ -1,21 +1,21 @@
 ---
 id: standards-technology-decisions
 title: Technology decisions
-summary: How neon1 chooses tools and architecture, counts the real cost, and checks licenses before you depend on anything.
+summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/07-technology-decisions.md"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
 ---
 
 # Technology decisions
 
-I choose technology by your task and by what it costs to run after I've handed it over. Popular, new, and free are all fine qualities. None of them is a reason on its own.
+I choose technology by your task and by what it costs to run after I've handed it over. Being popular, new, or free isn't a reason on its own.
 
 ## Start with what you already have
 
@@ -32,7 +32,7 @@ A tool that can't meet the hard requirements is out, however good it looks. Thos
 First-year cost includes setup, subscriptions, computing, storage, data transfer, backups, monitoring, AI usage, payment fees, migration, training, upkeep, and the cost of leaving later.
 
 > [!example] Why the license price isn't the price
-> A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better. The point is that "free" was never the whole number.
+> A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better, and the license price is only part of the cost.
 
 I follow the [FinOps](https://www.finops.org/framework/) idea at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
 
@@ -53,7 +53,7 @@ I follow the [FinOps](https://www.finops.org/framework/) idea at a small scale: 
 
 ## Knowing when it's broken
 
-Every service starts with a health check on the journey that matters, a clear failure log, cost visibility, and a named person for alerts. Alerts say what's affected, what to do next, and where the instructions are. A monitor hosted on the same server as the app goes down with it, so it doesn't count.
+Every service starts with a health check on the journey that matters, a clear failure log, cost visibility, and a named person for alerts. Alerts say what's affected, what to do next, and where the instructions are. A monitor hosted on the same server as the app goes down with it, so it can't report that outage.
 
 ## Licenses and terms
 
