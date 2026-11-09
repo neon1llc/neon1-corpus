@@ -13,9 +13,13 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/faq/`](corpus/faq) | Working with neon1, and help for the 1NEON portal |
 | [`corpus/case-studies/`](corpus/case-studies) | Past projects, each told as Needs, Execute, Observe, Normalize |
 | [`corpus/products/`](corpus/products) | 1NEON, AWS CLIP, DeployOps, Ready, Secure, Go |
+| [`corpus/standards/`](corpus/standards) | How I work: operating principles, discovery and delivery, security, AI quality, technology decisions, reliability, measurement, writing and client trust |
+| [`corpus/landscape/`](corpus/landscape) | Where else to get help, and when another provider would serve you better |
+| [`corpus/templates/`](corpus/templates) | Blank proposal, decision review, partner responsibilities, business associate agreement and its request questionnaire |
+| [`corpus/forms/`](corpus/forms) | Blank intake, discovery, change request, handover, service profile, tool decision, incident, metric and publication records |
+| [`corpus/examples/`](corpus/examples) | Templates and forms filled in for a fictional client |
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
 | [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) and the lines from the Matrix films it may quote (`motifs.md`) |
-| `corpus/templates/`, `corpus/forms/` | Coming next: proposal and agreement examples, intake forms |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
 
@@ -28,16 +32,17 @@ Each file is Markdown with front matter that tells tools what it is and who read
 id: services
 title: Services
 summary: Four kinds of help, from automating a small business to SOC 2 readiness.
-type: page            # page, policy, template, form, faq, case-study or directive
+type: page            # page, standard, guide, policy, template, form, example, faq, case-study, comparison or directive
 status: adopted       # draft, adopted or retired. Only adopted documents are exported
-updated: 2026-11-09
+updated: 2026-11-09   # when it last changed in substance
+created: 2025-09-07   # when the content was first written, from its real source
 consumers: [site, chat, knowledge, ai]
 pdf: true             # offered as a PDF download in the knowledge area
 origin: "neon1-site src/app/public/index.html#services"
 ---
 ```
 
-The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
+The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. Templates and forms mark lines to write on with four or more underscores (`____`) and choices with task items (`- [ ] Option`). An `example` names the blank it fills in (`example_of`) and says whether it's `fictional`. A quote that starts with `[!note]`, `[!tip]`, `[!warning]` or `[!example]` becomes a callout box. Each folder is a shelf in the Knowledge Center, labeled in `tools/corpus.mjs`. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
 
 ## Tools
 
