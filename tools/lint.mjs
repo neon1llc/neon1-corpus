@@ -49,6 +49,14 @@ for (const doc of docs) {
   if (d.type && !P.type.enum.includes(d.type)) err(`type "${d.type}" isn't one of ${P.type.enum.join(", ")}`)
   if (d.status && !P.status.enum.includes(d.status)) err(`status "${d.status}" isn't one of ${P.status.enum.join(", ")}`)
   if (d.updated && !new RegExp(P.updated.pattern).test(d.updated)) err("updated should be YYYY-MM-DD")
+  if (d.created && d.updated && d.created > d.updated) err("created is after updated")
+  // A "Last updated" line in the text must say the same day as updated
+  const stated = doc.body.match(/Last updated (\w+) (\d{1,2}), (\d{4})/)
+  if (stated && d.updated) {
+    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"].indexOf(stated[1]) + 1
+    const iso = `${stated[3]}-${String(month).padStart(2, "0")}-${stated[2].padStart(2, "0")}`
+    if (iso !== d.updated) err(`the text says Last updated ${iso}, but updated is ${d.updated}`)
+  }
   if (d.pdf !== undefined && typeof d.pdf !== "boolean") err("pdf should be true or false")
   for (const c of Array.isArray(d.consumers) ? d.consumers : [d.consumers])
     if (!P.consumers.items.enum.includes(c)) err(`unknown consumer ${c}`)

@@ -5,6 +5,7 @@ summary: What neon1 is for, who it serves first, the values it works by, and wha
 type: page
 status: adopted
 updated: 2026-11-09
+created: 2026-11-05
 consumers: [site, chat, knowledge, ai]
 pdf: true
 edition: "1.0"
@@ -14,7 +15,7 @@ related: [standards-operating-principles, company-about, company-names, services
 
 # Charter
 
-neon1 is a one-person technology practice in New York, run by me, Pradeep. neon1 LLC is the company and neon1 is the name it does business under. This charter is the short version of why it exists and how it behaves. Everything on the [How I work](../standards/operating-principles.md) shelf follows from it.
+neon1 is a one-person technology practice in New York, run by me, Pradeep. neon1 LLC, formed in New York on July 24, 2025, is the company, and neon1 is the name it does business under. This charter is the short version of why it exists and how it behaves. Everything on the [How I work](../standards/operating-principles.md) shelf follows from it.
 
 ## Mission
 

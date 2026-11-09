@@ -5,6 +5,7 @@ summary: When neon1 uses AI, how it's tested before anyone relies on it, and whe
 type: standard
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

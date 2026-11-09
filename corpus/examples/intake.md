@@ -5,6 +5,7 @@ summary: "The intake form completed for a fictional physical therapy practice af
 type: example
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 example_of: forms-intake

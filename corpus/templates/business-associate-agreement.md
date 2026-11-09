@@ -5,6 +5,7 @@ summary: "An example HIPAA business associate agreement with neon1 LLC as the bu
 type: template
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

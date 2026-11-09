@@ -5,6 +5,7 @@ summary: "The short questionnaire that tells us whether a project involves healt
 type: template
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

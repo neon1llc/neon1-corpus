@@ -7,6 +7,7 @@ consumers: [chat, ai]
 pdf: false
 status: adopted
 updated: 2026-11-09
+created: 2026-11-08
 ---
 
 # Neo, the chat on neon1.tech

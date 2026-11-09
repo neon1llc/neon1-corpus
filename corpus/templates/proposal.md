@@ -5,6 +5,7 @@ summary: "The one-document proposal neon1 sends after discovery: your problem, t
 type: template
 status: adopted
 updated: 2026-11-09
+created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

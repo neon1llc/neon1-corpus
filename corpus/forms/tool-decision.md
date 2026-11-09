@@ -5,6 +5,7 @@ summary: "A short record of a technology choice: the problem, the options, the e
 type: form
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

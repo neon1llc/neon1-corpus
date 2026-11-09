@@ -5,6 +5,7 @@ summary: "A two-page written review of one technology decision: the situation, t
 type: template
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

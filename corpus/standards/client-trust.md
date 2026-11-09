@@ -5,6 +5,7 @@ summary: How neon1 writes, designs documents, backs up its claims, and keeps the
 type: standard
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

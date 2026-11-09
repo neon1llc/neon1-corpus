@@ -5,6 +5,7 @@ summary: "A complete neon1 proposal for a fictional physical therapy practice's 
 type: example
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal

@@ -5,6 +5,7 @@ summary: "The first record of a possible project: the problem, who's involved, a
 type: form
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

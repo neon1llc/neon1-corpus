@@ -5,6 +5,7 @@ summary: "What a running service must do, how it's measured, who supports it, an
 type: form
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

@@ -9,6 +9,7 @@ stage: "public, pre-release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-09
+created: 2026-09-13
 ---
 
 # AWS CLIP

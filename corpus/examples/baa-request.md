@@ -5,6 +5,7 @@ summary: "The BAA questionnaire completed for a fictional physical therapy pract
 type: example
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-baa-request
