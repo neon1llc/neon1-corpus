@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/neon1llc/neon1-corpus/schema/doc.schema.json",
+  "title": "neon1-corpus document front matter",
+  "type": "object",
+  "required": ["id", "title", "summary", "type", "status", "updated", "consumers", "pdf"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Unique. Also the file name in exported bundles." },
+    "title": { "type": "string" },
+    "summary": { "type": "string", "description": "One sentence anyone can read." },
+    "type": { "enum": ["page", "policy", "template", "form", "faq", "case-study"] },
+    "status": { "enum": ["draft", "adopted", "retired"], "description": "Only adopted documents are exported." },
+    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "consumers": { "type": "array", "items": { "enum": ["site", "chat", "knowledge", "ai"] }, "minItems": 1 },
+    "pdf": { "type": "boolean", "description": "True when the knowledge area offers it as a download." },
+    "origin": { "type": "string", "description": "Where the text came from before the corpus held it." },
+    "published": { "type": "string", "description": "The live URL that shows this document, if any." },
+    "client": { "type": "string" },
+    "area": { "type": "string" },
+    "stage": { "type": "string" }
+  },
+  "additionalProperties": false
+}
