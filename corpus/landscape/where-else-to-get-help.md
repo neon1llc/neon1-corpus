@@ -6,6 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
+edition: "1.0"
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true

@@ -12,7 +12,8 @@
     "updated",
     "created",
     "consumers",
-    "pdf"
+    "pdf",
+    "edition"
   ],
   "properties": {
     "id": {
@@ -83,7 +84,7 @@
     "edition": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+$",
-      "description": "The document's edition, such as 1.0. Raise the minor number for clarifications, the major number when a promise or rule changes. Printed on PDFs."
+      "description": "The document's edition, written X.Y without a v, such as 1.0. Every document has one. Raise the minor number for clarifications and corrections, the major number when a promise, rule, or required field changes. Printed on pages and PDFs."
     },
     "audience": {
       "type": "string",
@@ -198,10 +199,7 @@
       "$comment": "How a consumer behaves rather than what it says about neon1, such as Neo's character and rules. Consumers keep it apart from the facts they answer from."
     },
     "standard": {
-      "$comment": "How neon1 works: a habit or rule neon1 holds itself to, written as what it does, with the reason. Never a claim of certification or measured results.",
-      "required": [
-        "edition"
-      ]
+      "$comment": "How neon1 works: a habit or rule neon1 holds itself to, written as what it does, with the reason. Never a claim of certification or measured results."
     },
     "guide": {
       "$comment": "A how-to or use case for someone outside neon1. Says who it's for and what they'll be able to do.",
@@ -210,16 +208,10 @@
       ]
     },
     "template": {
-      "$comment": "A blank document to copy and fill in, such as a proposal. Blanks are four or more underscores; choices are - [ ] task items.",
-      "required": [
-        "edition"
-      ]
+      "$comment": "A blank document to copy and fill in, such as a proposal. Blanks are four or more underscores; choices are - [ ] task items."
     },
     "form": {
-      "$comment": "A blank record to fill in, such as a discovery record. Same blanks and checkboxes as a template.",
-      "required": [
-        "edition"
-      ]
+      "$comment": "A blank record to fill in, such as a discovery record. Same blanks and checkboxes as a template."
     },
     "example": {
       "$comment": "A template or form filled in, so a reader can see what good looks like.",

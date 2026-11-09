@@ -8,6 +8,7 @@ pdf: false
 status: adopted
 updated: 2026-11-09
 created: 2026-11-08
+edition: "1.0"
 ---
 
 # Neo, the chat on neon1.tech
