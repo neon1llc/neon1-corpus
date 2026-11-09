@@ -9,6 +9,7 @@ created: 2026-11-01
 reviewed: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
+featured: true
 origin: "Documents/BUSINESS/neon1/Organization/Research/2026-11-01/02-github-tooling-catalog.md (96 repositories, public facts only)"
 related: [standards-technology-decisions, forms-tool-decision, guides-before-you-buy]
 ---

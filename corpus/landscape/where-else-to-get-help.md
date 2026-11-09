@@ -9,6 +9,7 @@ created: 2026-11-09
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
+featured: true
 related: [company-charter, services, standards-client-trust]
 ---
 

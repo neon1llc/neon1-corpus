@@ -8,6 +8,7 @@ updated: 2026-11-09
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
+featured: true
 audience: "Small offices and households"
 related: [standards-reliability-and-recovery, forms-incident-and-restore]
 ---

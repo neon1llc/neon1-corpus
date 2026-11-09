@@ -13,6 +13,17 @@ export const corpusDir = join(root, "corpus")
 // Each folder is also a shelf in the Knowledge Center, with the label and one-line description below
 export const SECTIONS = ["company", "services", "standards", "guides", "faq", "case-studies", "products", "landscape", "templates", "forms", "examples", "policies", "neo"]
 
+// Shelves fall into two groups in the Knowledge Center: resources a reader can use, and what neon1 is
+export const GROUPS = {
+  resources: ["For you", "Guides, templates, forms, filled-out examples, and honest comparisons, useful whether or not you ever hire neon1."],
+  about: ["About neon1", "Who neon1 is, how it works, what it offers, and the fine print."],
+}
+
+export const SHELF_GROUP = {
+  guides: "resources", landscape: "resources", templates: "resources", forms: "resources", examples: "resources",
+  company: "about", services: "about", standards: "about", faq: "about", "case-studies": "about", products: "about", policies: "about", neo: "about",
+}
+
 export const SHELVES = {
   company: ["Company", "Who neon1 is, what it stands for, and how to reach it."],
   services: ["Services", "What neon1 helps with and how an engagement works."],
