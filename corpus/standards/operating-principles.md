@@ -5,6 +5,7 @@ summary: The eight habits behind every neon1 engagement, and what they look like
 type: standard
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

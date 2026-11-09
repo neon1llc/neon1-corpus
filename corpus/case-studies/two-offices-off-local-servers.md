@@ -7,6 +7,7 @@ status: adopted
 client: automotive business
 area: migration
 updated: 2026-11-09
+created: 2026-11-06
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration

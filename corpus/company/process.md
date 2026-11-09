@@ -8,6 +8,7 @@ pdf: true
 origin: "neon1-site src/app/public/index.html#process"
 status: adopted
 updated: 2026-11-09
+created: 2025-08-08
 ---
 
 # How a project runs

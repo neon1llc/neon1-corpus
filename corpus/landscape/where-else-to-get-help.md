@@ -5,6 +5,7 @@ summary: "The other places a small business or household can get technology help
 type: comparison
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true

@@ -5,6 +5,7 @@ summary: How a neon1 project moves from your problem to a result you can run, st
 type: standard
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

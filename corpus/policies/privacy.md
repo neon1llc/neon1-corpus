@@ -4,7 +4,8 @@ title: Privacy policy
 summary: "What neon1.tech and the 1NEON portal collect, why, and what you can do about it."
 type: policy
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-08
+created: 2026-11-06
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"

@@ -5,6 +5,7 @@ summary: "The handover record that closed a fictional physical therapy practice'
 type: example
 status: adopted
 updated: 2026-11-09
+created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 example_of: forms-release-and-handover

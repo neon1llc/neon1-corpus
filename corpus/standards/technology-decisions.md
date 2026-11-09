@@ -5,6 +5,7 @@ summary: How neon1 chooses tools and architecture, counts the real cost, and che
 type: standard
 status: adopted
 updated: 2026-11-09
+created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
