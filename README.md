@@ -55,4 +55,10 @@ Branch and commit rules are in [VCS-ETIQUETTE.md](VCS-ETIQUETTE.md).
 
 ## License
 
-The tools (`tools/`, `schema/`) are under the [MIT License](LICENSE). The documents in `corpus/`, along with the neon1 name, brand marks, copy and case studies, are © neon1 LLC and aren't licensed for reuse. Quoting with a link back is welcome.
+| What | License | What it means |
+|---|---|---|
+| Documents (everything in `corpus/`) | [CC BY-ND 4.0](LICENSE) | Copy and share them word for word, even commercially, with the credit *"© neon1 LLC (neon1.tech)"*. Don't share altered versions. |
+| Tools (`tools/`, `schema/`) | [FSL-1.1-ALv2](LICENSE-CODE) | Read, run and change them for anything except a competing product or service. Each release becomes Apache-2.0 two years after it's published. |
+| The neon1, 1NEON, N1 Supply and Ready, Secure, Go names, the logo and brand marks | Reserved | See [TRADEMARK.md](TRADEMARK.md). |
+
+neon1-corpus is © 2026 neon1 LLC. Keep the [NOTICE](NOTICE) file with every copy.
