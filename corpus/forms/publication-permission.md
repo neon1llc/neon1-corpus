@@ -1,14 +1,14 @@
 ---
 id: forms-publication-permission
 title: Publication permission record
-summary: "Your separate, specific permission before anything about your project appears in public."
+summary: "Your specific permission before anything about your project is published."
 type: form
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/07-evidence-and-publication.md and Planning/2026-11-01/11-working-templates.md#6"
 related: [standards-client-trust]
 ---

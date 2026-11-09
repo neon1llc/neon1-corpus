@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Owners of small service businesses"
@@ -39,7 +39,7 @@ Requests arrive by web form, email, and phone. Someone copies each one into the 
 
 ## What usually doesn't
 
-The tools you depend on stay. Most of the time the fix is configuring what's already there plus one small connection, not a new platform.
+The tools you depend on usually stay. Often the fix is configuring what's already there and adding one small connection.
 
 ## Paperwork you'd see
 

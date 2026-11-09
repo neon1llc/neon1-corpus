@@ -1,21 +1,21 @@
 ---
 id: standards-outreach
 title: Outreach and selling
-summary: "How neon1 finds clients and talks about its work: honest, specific, no pressure, and always with an easy way to say no."
+summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
 related: [standards-client-trust, standards-customers, landscape-where-else-to-get-help]
 ---
 
 # Outreach and selling
 
-I'd rather lose a sale than win it with pressure. Selling, for neon1, means helping you decide quickly and accurately whether I'm the right help, and getting out of the way if I'm not.
+Selling, for neon1, means helping you decide quickly whether I'm the right help, and telling you when I'm not.
 
 ## What I make clear, in order
 
@@ -26,7 +26,7 @@ I'd rather lose a sale than win it with pressure. Selling, for neon1, means help
 5. **Control.** How you approve work, what you own, how to cancel, and what the handover includes.
 6. **Reliability.** When I respond, how failures are handled, and what support isn't included.
 
-## What I never do
+## What I don't do
 
 - Fake scarcity, countdowns, or "only two spots left" unless it's literally true and relevant.
 - Shame or fear, including the fear of being "left behind" by AI.
@@ -35,7 +35,7 @@ I'd rather lose a sale than win it with pressure. Selling, for neon1, means help
 - Cold email lists bought from someone else. Contact comes from people who asked, referrals, and my own network.
 - Tracking you around the internet. The website has no ads, analytics, or trackers.
 
-## Common questions, answered straight
+## Common questions
 
 | You ask | I answer |
 |---|---|
@@ -47,7 +47,7 @@ I'd rather lose a sale than win it with pressure. Selling, for neon1, means help
 
 ## Where I show up
 
-Local relationships and referrals, LinkedIn, GitHub, and this website. What I publish is meant to be useful on its own, like this Knowledge Center, whether or not you ever hire me.
+Local relationships and referrals, LinkedIn, GitHub, and this website. What I publish, including the Knowledge Center, is meant to be useful to anyone who reads it.
 
 ## Follow-up
 

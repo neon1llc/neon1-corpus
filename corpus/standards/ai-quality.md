@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/06-ai-quality-and-oversight.md"
 related: [standards-security-and-data, standards-technology-decisions, neo-chat]
 ---
@@ -17,7 +17,7 @@ related: [standards-security-and-data, standards-technology-decisions, neo-chat]
 
 I use AI when it makes a defined task better after counting the errors, the review time, privacy, cost, and upkeep. A smooth demo is useful for exploring. It doesn't show that something is dependable. So I start with AI that a person can check and correct, and earn more autonomy with evidence.
 
-## Does AI belong here at all?
+## Whether AI belongs in the solution
 
 I compare the current process, a simple rule or search, an existing product, and a narrow AI approach. Ordinary software wins when the rules are clear and mistakes are costly. AI tends to help with drafting, sorting messy text, summarizing documents you're allowed to share, and finding the right passage. You still need to know when to double-check.
 
@@ -25,7 +25,7 @@ I use the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-m
 
 ## One page on intended use
 
-Before choosing a model we write down the user, the task, the approved data, the output, the actions it may take, the decisions it may not make, who reviews, and the fallback. Is the output a draft, a search aid, a recommendation, or an action? Those are four different things.
+Before choosing a model we write down the user, the task, the approved data, the output, the actions it may take, the decisions it may not make, who reviews, and the fallback. We also decide whether the output is a draft, a search aid, a recommendation, or an action, since each needs different checks.
 
 A document-search assistant can find an invoice or a policy passage. That doesn't make it fit to give accounting or legal conclusions, and the interface should make that plain. We also set a spending limit, a response time, and how much review effort is acceptable.
 
@@ -33,7 +33,7 @@ A document-search assistant can find an invoice or a policy passage. That doesn'
 
 We collect permitted examples and write the expected answer before tuning anything. The set includes ordinary requests, vague ones, missing information, out-of-date documents, conflicting sources, odd formats, and cases that should be refused or sent to a person. Examples used for building stay separate from examples used for the final check.
 
-Twenty or thirty cases make a good first hunt for problems. They aren't a basis for a big reliability claim.
+Twenty or thirty cases are enough to find early problems, but not enough to support a broad reliability claim.
 
 ## Testing the whole task
 
@@ -54,7 +54,7 @@ Tools start read-only. Sending messages, spending money, changing permissions, o
 3. **Assisted pilot.** Named people use the output on a limited task, with a fallback and a way to report problems.
 4. **Controlled use.** Expanded only when you accept the evidence, the remaining risks, and the running cost.
 
-Many good services should stay at assisted forever. A pilot doesn't have to become autonomous.
+Some services are best left at the assisted stage permanently. A pilot doesn't have to become autonomous.
 
 ## When to stop
 
@@ -68,4 +68,4 @@ We track task success, corrections, review minutes, cost per successful task, an
 
 Only scoped statements with their conditions: "In a twenty-case test using made-up records, it completed eighteen without correction," if that's what happened. Never "reliable AI for every business."
 
-Neo, the chat on this site, follows these rules too. Its directives are public in [the corpus](../neo/chat.md).
+Neo, the chat on this site, answers only from neon1's public documents, is run against a set of test questions before each change, and has its directives published in [the corpus](../neo/chat.md).

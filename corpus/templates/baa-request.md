@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Written for neon1-corpus, based on 45 CFR 160.103 and the HHS guidance on business associates"
 related: [templates-business-associate-agreement, examples-baa-request, forms-intake]
 ---

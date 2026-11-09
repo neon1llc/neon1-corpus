@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
@@ -16,15 +16,15 @@ related: [company-charter, services, standards-client-trust]
 
 # Where else to get help
 
-neon1 isn't the right fit for everyone, and I'd rather you end up with the right help than with me. Here are the main alternatives, how they usually work, and where each one is honestly better. Prices change, so check each provider's own site for current figures.
+neon1 isn't the right fit for everyone. This page covers the main alternatives, how they usually charge, and when each one would serve you better. Prices change, so check each provider's site for current figures.
 
 ## At a glance
 
 | Option | Best for | Usually charges | Where it beats neon1 |
 |---|---|---|---|
 | Doing it yourself, with vendor support | One clear task in a tool you already use | Included in your subscription | Free, immediate, and the vendor knows its own product best |
-| Free advising (SCORE, Small Business Development Centers, libraries) | Planning, first steps, a second opinion | Free | Free, unbiased, and broader than technology |
-| Freelance marketplaces | A well-defined, one-off build | Hourly or fixed price, plus platform fees | Huge choice and quick start for narrow tasks |
+| Free advising (SCORE, Small Business Development Centers, libraries) | Planning, first steps, a second opinion | Free | Free, independent, and broader than technology |
+| Freelance marketplaces | A well-defined, one-off build | Hourly or fixed price, plus platform fees | A large choice and a quick start for narrow tasks |
 | Managed service providers (MSPs) | Ongoing help desk, devices, and security for a team | A monthly fee per user or per device | Round-the-clock coverage, staff depth, and accountability for day-to-day IT |
 | Retail and local repair shops | A broken device or a home setup | Flat fee per job, sometimes a membership | Walk-in convenience and parts on hand |
 | Automation and software agencies | A larger build with a team behind it | Project fees or retainers | More people, more capacity, faster on big projects |
@@ -42,7 +42,7 @@ Microsoft 365, Google Workspace, QuickBooks, Square, and most other business too
 
 [SCORE](https://www.score.org/how-mentoring-works/) offers free one-on-one mentoring to any owner of a U.S.-based business, and New York's [Small Business Development Centers](https://www.nysbdc.org/) offer free one-on-one advising funded by the U.S. Small Business Administration and the state. Public libraries, such as the [New York Public Library](https://www.nypl.org/), run small business programs too.
 
-**Better than neon1 when** you're still deciding what to do, need business planning beyond technology, or want an unbiased second opinion before spending anything. They generally advise rather than build.
+**Better than neon1 when** you're still deciding what to do, need business planning beyond technology, or want an independent second opinion before spending anything. They generally advise rather than build.
 
 ## Freelance marketplaces
 
@@ -88,7 +88,7 @@ Managed security service providers watch systems around the clock. Auditors issu
 
 ## Where neon1 fits
 
-neon1 suits owner-run businesses, small practices, and households that want their tools to work together, want to understand and own the result, and value someone who listens first and leaves good documentation behind. It's the wrong choice if you need 24/7 coverage, a team of many, formal assurance, or someone to make regulated professional judgments.
+neon1 suits owner-run businesses, small practices, and households that want their tools to work together and want to understand and own the result, with written documentation at handover. It's the wrong choice if you need 24/7 coverage, a team of many, formal assurance, or someone to make regulated professional judgments.
 
 If none of this fits, ask anyway. If I'm not the right person, I'll try to point you to someone who is.
 

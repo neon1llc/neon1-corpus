@@ -9,7 +9,7 @@ created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
+edition: "0.9"
 origin: "Modeled on the HHS Office for Civil Rights sample business associate agreement provisions (January 2013), adapted for neon1 LLC"
 related: [templates-baa-request, examples-baa-request, standards-security-and-data, policy-privacy]
 ---
