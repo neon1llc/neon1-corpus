@@ -13,7 +13,7 @@
 import { writeFileSync, mkdirSync, rmSync } from "node:fs"
 import { join, resolve, relative } from "node:path"
 import { createHash } from "node:crypto"
-import { root, load, SECTIONS, SHELVES } from "./corpus.mjs"
+import { root, load, SECTIONS, SHELVES, GROUPS, SHELF_GROUP } from "./corpus.mjs"
 import { render as toHtml, sections, inline } from "./markdown.mjs"
 
 
@@ -98,7 +98,8 @@ const files = docs.map((doc, order) => {
 
 const manifest = {
   target,
-  shelves: Object.fromEntries(SECTIONS.filter((s) => files.some((f) => f.entry.section === s)).map((s) => [s, { label: SHELVES[s][0], description: SHELVES[s][1] }])),
+  groups: Object.fromEntries(Object.entries(GROUPS).map(([k, [label, description]]) => [k, { label, description }])),
+  shelves: Object.fromEntries(SECTIONS.filter((s) => files.some((f) => f.entry.section === s)).map((s) => [s, { label: SHELVES[s][0], description: SHELVES[s][1], group: SHELF_GROUP[s] }])),
   digest: "sha256:" + sha(files.map((f) => f.entry.sha256).join("\n")),
   chars: files.reduce((n, f) => n + f.entry.chars, 0),
   files: files.map((f) => f.entry),
