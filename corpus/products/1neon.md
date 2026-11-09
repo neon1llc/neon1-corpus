@@ -9,6 +9,7 @@ published: "https://neon1.tech/1NEON/"
 origin: neon1-1NEON README.md
 status: adopted
 updated: 2026-11-09
+created: 2026-11-06
 ---
 
 # 1NEON

@@ -1,7 +1,8 @@
 // tools/markdown.mjs - Turns the Markdown the corpus uses into HTML, with no dependencies.
 //
-// Supported: headings, paragraphs, bullet and numbered lists (nested by indent), tables, block quotes,
-// fenced code, rules, and inline code, links, bold and italics. Raw HTML in a document is escaped, never passed through.
+// Supported: headings, paragraphs, bullet and numbered lists (nested by indent), task lists (- [ ] and - [x]),
+// tables, block quotes, callouts (> [!note] Title), fenced code, rules, and inline code, links, bold, italics and
+// fill-in blanks (four or more underscores). Raw HTML in a document is escaped, never passed through.
 
 
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }
@@ -29,6 +30,8 @@ export function inline(text) {
     // Links and autolinks, with their text formatted and their address escaped
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, label, href) => keep(`<a href="${attr(href)}">${inline(label)}</a>`))
     .replace(/<(https?:\/\/[^>\s]+)>/g, (_, href) => keep(`<a href="${attr(href)}">${escape(href)}</a>`))
+    // A run of four or more underscores is a line to write on, in forms and templates
+    .replace(/_{4,}/g, () => keep('<span class="blank" role="img" aria-label="blank to fill in"></span>'))
   s = escape(s)
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^\w*])\*(?!\s)(.+?)\*(?!\w)/g, "$1<em>$2</em>")
@@ -72,7 +75,13 @@ function list(lines, i) {
         i++
       } else break
     }
-    items.push(`<li>${inline(text.join("\n"))}${nested}</li>`)
+    // "[ ] " or "[x] " at the start makes a checkbox to tick, on screen or on paper
+    const task = text[0].match(/^\[( |x|X)\] +(.*)$/)
+    if (task) {
+      text[0] = task[2]
+      const box = `<input type="checkbox"${task[1] === " " ? "" : " checked"}>`
+      items.push(`<li class="task"><label>${box} ${inline(text.join("\n"))}</label>${nested}</li>`)
+    } else items.push(`<li>${inline(text.join("\n"))}${nested}</li>`)
     // A blank line between items keeps the list going
     if (!lines[i]?.trim() && listItem(lines[i + 1] ?? "")?.[1].length === indent) i++
   }
@@ -107,7 +116,13 @@ export function render(markdown) {
     } else if (isQuote(line)) {
       const inner = []
       for (; i < lines.length && lines[i].trim() && (isQuote(lines[i]) || !startsBlock(lines, i)); i++) inner.push(lines[i].replace(/^ {0,3}> ?/, ""))
-      out.push(`<blockquote>${render(inner.join("\n"))}</blockquote>`)
+      // "> [!kind] Title" is a callout box: note, tip, warning or example
+      const callout = inner[0].match(/^\[!(note|tip|warning|example)\] *(.*)$/i)
+      if (callout) {
+        const kind = callout[1].toLowerCase()
+        const title = callout[2] || kind[0].toUpperCase() + kind.slice(1)
+        out.push(`<aside class="callout ${kind}"><p class="callout-title">${inline(title)}</p>${render(inner.slice(1).join("\n"))}</aside>`)
+      } else out.push(`<blockquote>${render(inner.join("\n"))}</blockquote>`)
     } else if (isTableStart(lines, i)) {
       const head = cells(line)
       const align = cells(lines[i + 1]).map((c) => (c.startsWith(":") && c.endsWith(":") ? "center" : c.endsWith(":") ? "right" : ""))

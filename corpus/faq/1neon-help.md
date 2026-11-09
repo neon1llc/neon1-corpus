@@ -5,6 +5,7 @@ summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
 updated: 2026-11-09
+created: 2026-11-07
 consumers: [site, chat, knowledge, ai]
 pdf: false
 published: "https://neon1.tech/1NEON/"

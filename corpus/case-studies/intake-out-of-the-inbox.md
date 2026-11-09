@@ -7,6 +7,7 @@ status: adopted
 client: dermatology practice
 area: workflows
 updated: 2026-11-09
+created: 2026-11-06
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
