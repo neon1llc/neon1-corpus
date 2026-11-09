@@ -9,21 +9,18 @@ area: workflows
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
 pdf: true
+key: dermatology
+order: 2
+stat_key: "2.6 days → 3.4 hours"
+stat: "· 24 → 8 min staff time"
+short_needs: "Intake ran through one inbox, with staff chasing documents and retyping them."
+short_execute: "A small AWS portal where patients upload once and staff see what's complete."
+short_observe: "Compared four weeks before and after, on the same appointment types."
+short_normalize: "Ongoing maintenance with Xenoss, and tuning as the practice grows."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
 
 # Intake, out of the shared inbox
-
-*Dermatology practice · workflows*
-
-**2.6 days → 3.4 hours · 24 → 8 min staff time**
-
-| | In short |
-|---|---|
-| **Needs** | Intake ran through one inbox, with staff chasing documents and retyping them. |
-| **Execute** | A small AWS portal where patients upload once and staff see what's complete. |
-| **Observe** | Compared four weeks before and after, on the same appointment types. |
-| **Normalize** | Ongoing maintenance with Xenoss, and tuning as the practice grows. |
 
 ## Needs
 

@@ -3,21 +3,149 @@
   "$id": "https://github.com/neon1llc/neon1-corpus/schema/doc.schema.json",
   "title": "neon1-corpus document front matter",
   "type": "object",
-  "required": ["id", "title", "summary", "type", "status", "updated", "consumers", "pdf"],
+  "required": [
+    "id",
+    "title",
+    "summary",
+    "type",
+    "status",
+    "updated",
+    "consumers",
+    "pdf"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Unique. Also the file name in exported bundles." },
-    "title": { "type": "string" },
-    "summary": { "type": "string", "description": "One sentence anyone can read." },
-    "type": { "enum": ["page", "policy", "template", "form", "faq", "case-study"] },
-    "status": { "enum": ["draft", "adopted", "retired"], "description": "Only adopted documents are exported." },
-    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "consumers": { "type": "array", "items": { "enum": ["site", "chat", "knowledge", "ai"] }, "minItems": 1 },
-    "pdf": { "type": "boolean", "description": "True when the knowledge area offers it as a download." },
-    "origin": { "type": "string", "description": "Where the text came from before the corpus held it." },
-    "published": { "type": "string", "description": "The live URL that shows this document, if any." },
-    "client": { "type": "string" },
-    "area": { "type": "string" },
-    "stage": { "type": "string" }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique. Also the file name in exported bundles."
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "description": "One sentence anyone can read."
+    },
+    "type": {
+      "enum": [
+        "page",
+        "policy",
+        "template",
+        "form",
+        "faq",
+        "case-study"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "adopted",
+        "retired"
+      ],
+      "description": "Only adopted documents are exported."
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "consumers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "site",
+          "chat",
+          "knowledge",
+          "ai"
+        ]
+      },
+      "minItems": 1
+    },
+    "pdf": {
+      "type": "boolean",
+      "description": "True when the knowledge area offers it as a download."
+    },
+    "origin": {
+      "type": "string",
+      "description": "Where the text came from before the corpus held it."
+    },
+    "published": {
+      "type": "string",
+      "description": "The live URL that shows this document, if any."
+    },
+    "client": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Short name a consumer uses for anchors, such as case-<key> on the site."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Position within its type when a consumer shows a set, such as the case study rail."
+    },
+    "stat_key": {
+      "type": "string",
+      "description": "Case study: the headline result, shown in bold."
+    },
+    "stat": {
+      "type": "string",
+      "description": "Case study: the rest of the result line after the headline."
+    },
+    "short_needs": {
+      "type": "string",
+      "description": "Case study: one line on the problem, for cards and the at-a-glance table."
+    },
+    "short_execute": {
+      "type": "string",
+      "description": "Case study: one line on what was done, for cards and the at-a-glance table."
+    },
+    "short_observe": {
+      "type": "string",
+      "description": "Case study: one line on how it was measured, for cards and the at-a-glance table."
+    },
+    "short_normalize": {
+      "type": "string",
+      "description": "Case study: one line on what happens next, for cards and the at-a-glance table."
+    }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "x-types": {
+    "$comment": "Extra rules per type, checked by tools/lint.mjs. sections lists the H2 headings a document of that type must have, in order.",
+    "case-study": {
+      "required": [
+        "client",
+        "area",
+        "key",
+        "order",
+        "stat_key",
+        "stat",
+        "short_needs",
+        "short_execute",
+        "short_observe",
+        "short_normalize"
+      ],
+      "sections": [
+        "Needs",
+        "Execute",
+        "Observe",
+        "Normalize"
+      ]
+    },
+    "policy": {
+      "required": [
+        "published"
+      ]
+    },
+    "faq": {
+      "$comment": "Each H2 is a question and its text is the answer."
+    }
+  }
 }

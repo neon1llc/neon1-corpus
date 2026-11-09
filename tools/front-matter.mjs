@@ -1,12 +1,13 @@
 // tools/front-matter.mjs - Reads the small YAML subset the corpus uses for front matter, with no dependencies.
 //
-// Supported: one key per line, plain or double-quoted strings, true and false, and [inline, lists].
+// Supported: one key per line, plain or double-quoted strings, whole numbers, true and false, and [inline, lists].
 
 
-// Turns one YAML scalar into a string or boolean
+// Turns one YAML scalar into a string, number or boolean
 function scalar(raw) {
   const value = raw.trim()
   if (value === "true" || value === "false") return value === "true"
+  if (/^-?\d+$/.test(value)) return Number(value)
   if (value.startsWith('"') && value.endsWith('"')) return JSON.parse(value)
   return value
 }
