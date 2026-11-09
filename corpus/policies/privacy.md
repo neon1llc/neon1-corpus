@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/privacy-policy.md
 
 *Last updated November 8, 2026.*
 
-NEON1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client portal at neon1.tech/1NEON. This policy explains what information I collect, why, and what you can do about it.
+neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client portal at neon1.tech/1NEON. This policy explains what information I collect, why, and what you can do about it.
 
 ## The short version
 
@@ -88,4 +88,4 @@ If I change this policy in a way that matters, I'll update the effective date an
 
 ## Contact
 
-NEON1 LLC, New York, NY · [privacy@neon1.tech](mailto:privacy@neon1.tech)
+neon1 LLC, New York, NY · [privacy@neon1.tech](mailto:privacy@neon1.tech)
