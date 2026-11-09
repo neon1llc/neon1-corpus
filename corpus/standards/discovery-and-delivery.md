@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "0.9"
+edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/02-discovery-and-delivery.md"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
 ---
