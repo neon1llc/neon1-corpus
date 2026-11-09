@@ -34,7 +34,7 @@ Publishing a page is a task. People understanding it and acting on it is an outc
 
 ## Every measure gets a definition
 
-For each measure we agree on, the [metric record](../forms/metric-record.md) captures the decision it supports, who acts on it, exactly what counts, the formula, how duplicates, cancellations, and missing data are handled, the time window and time zone, the source, the baseline, the target, the guardrail, and the review date. A zero in the denominator means "no data," not zero percent and not perfect. Missing data stays visible as unknown.
+Each measure we agree on gets a [metric record](../forms/metric-record.md): what decision it supports, exactly what counts, the formula, the source, the baseline, the target, and the review date. A zero in the denominator means "no data," not zero percent and not perfect. Missing data stays visible as unknown.
 
 ## Measures I reach for most
 

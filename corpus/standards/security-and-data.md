@@ -49,7 +49,7 @@ For apps with more than one user, I test permissions on the server. Hiding a but
 
 ## Thinking through threats, briefly
 
-For each project I sketch what's being built, where information crosses from one party to another, what could go wrong, what reduces the risk, and how we'll check. For a simple intake form that might mean a forged submission, a stolen account, a malicious attachment, a duplicate, an email sent to the wrong person, a failed integration, and lost recovery access. Each risk ends with a decision and a way to test it.
+For each project I sketch what's being built, where information changes hands, what could go wrong, and how we'll check. For an intake form that might mean a forged submission, a stolen account, a malicious attachment, or an email sent to the wrong person. Each risk ends with a decision and a test.
 
 ## The baseline
 
@@ -69,11 +69,9 @@ For each project I sketch what's being built, where information crosses from one
 
 This is neon1's starting point, not a full copy of any standard and not a guarantee against compromise. When the stakes call for it, I bring in a specialist.
 
-## Software and automation
+## Software and secrets
 
-I use maintained dependencies, keep build credentials narrow, and never give untested outside code access to production secrets. Third-party CI actions are pinned to exact versions. Secret scanning, dependency scanning, and static analysis each catch different things and miss different things. A scan against a live system can change data, so its scope is agreed first.
-
-When a secret leaks, I revoke or rotate it and confirm the old one no longer works. Deleting the visible copy isn't enough.
+Code follows the [development](development.md) standard. When a secret leaks, I revoke or rotate it and confirm the old one no longer works. Deleting the visible copy isn't enough. A scan against a live system can change data, so its scope is agreed first.
 
 ## Fixing vulnerabilities
 
