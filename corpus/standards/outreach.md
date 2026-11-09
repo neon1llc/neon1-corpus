@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 19
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
 related: [standards-client-trust, standards-customers, landscape-where-else-to-get-help]
 ---

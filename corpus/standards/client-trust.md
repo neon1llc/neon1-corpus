@@ -9,8 +9,9 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 16
 origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md"
-related: [forms-publication-permission, standards-operating-principles, company-names]
+related: [standards-writing, forms-publication-permission, standards-operating-principles, company-names]
 ---
 
 # Writing and client trust
@@ -19,11 +20,7 @@ Clients trust a business when the offer is clear, the limits are realistic, the 
 
 ## How I write
 
-- Concrete statements: what's included, what you own, how a change gets approved, when help is available.
-- An unfamiliar technical term is explained once, in terms of your task.
-- No "seamless," "guaranteed transformation," or "cutting edge" unless a specific, supported statement can stand in.
-- "I" where I'm personally doing the work, and "neon1" for the business. I don't imply a staff or a partner network that doesn't exist.
-- Warmth shows in the explanation and the follow-through, not in sentimental reassurance.
+The [writing standard](writing.md) covers voice, plain language, and the conventions for each kind of document. In short: concrete statements about what's included, what you own, and what happens next, with "I" for my own work and "neon1" for the business.
 
 ## Documents that help you act
 
