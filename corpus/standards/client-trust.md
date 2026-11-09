@@ -1,21 +1,21 @@
 ---
 id: standards-client-trust
 title: Writing and client trust
-summary: How neon1 writes, designs documents, backs up its claims, and keeps the website honest and accessible.
+summary: "How neon1 writes, designs documents, supports its claims with evidence, and runs its website."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md"
 related: [forms-publication-permission, standards-operating-principles, company-names]
 ---
 
 # Writing and client trust
 
-Trust comes from a clear offer, realistic limits, visible work, and always knowing what happens next. The green and the Matrix rain are personality. The useful information should always be easier to find than the decoration.
+Clients trust a business when the offer is clear, the limits are realistic, the work is visible, and they know what happens next. The green and the Matrix rain are neon1's personality, but the useful information should be easier to find than the decoration.
 
 ## How I write
 
@@ -52,7 +52,7 @@ The site uses semantic headings, descriptive links, visible keyboard focus, labe
 
 ## Helping you choose
 
-I show a concrete example, explain the tradeoff, and offer a sensible next step: a free first call, a paid assessment, or a scoped project. When an existing tool or another provider would serve you better, I say so. The [Alternatives shelf](../landscape/where-else-to-get-help.md) exists for exactly that. No manufactured urgency, ever.
+I show a concrete example, explain the tradeoff, and offer a sensible next step: a free first call, a paid assessment, or a scoped project. When an existing tool or another provider would serve you better, I say so. The [alternatives page](../landscape/where-else-to-get-help.md) lists other options. I don't create false urgency.
 
 ## The brand
 

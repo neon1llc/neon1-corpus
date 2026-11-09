@@ -15,8 +15,8 @@ export const SECTIONS = ["company", "services", "standards", "guides", "faq", "c
 
 // Shelves fall into two groups in the Knowledge Center: resources a reader can use, and what neon1 is
 export const GROUPS = {
-  resources: ["For you", "Guides, templates, forms, filled-out examples, and honest comparisons, useful whether or not you ever hire neon1."],
-  about: ["About neon1", "Who neon1 is, how it works, what it offers, and the fine print."],
+  resources: ["For you", "Guides, templates, forms, filled-out examples, and comparisons."],
+  about: ["About neon1", "Who neon1 is, how it works, what it offers, and its policies."],
 }
 
 export const SHELF_GROUP = {
@@ -25,18 +25,18 @@ export const SHELF_GROUP = {
 }
 
 export const SHELVES = {
-  company: ["Company", "Who neon1 is, what it stands for, and how to reach it."],
-  services: ["Services", "What neon1 helps with and how an engagement works."],
-  standards: ["How I work", "The habits and rules behind every engagement, from discovery to handover."],
-  guides: ["Guides", "How-tos and use cases for owners, teams, and families."],
-  faq: ["Questions", "Straight answers to what people ask most."],
+  company: ["Company", "The charter, the names, how to get in touch, and a glossary."],
+  services: ["Services", "What neon1 offers."],
+  standards: ["How I work", "How each engagement is run, from the first conversation to handover."],
+  guides: ["Guides", "How-tos and typical engagements, for owners, teams, and families."],
+  faq: ["Questions", "Common questions about working with neon1 and using 1NEON."],
   "case-studies": ["Case studies", "Past projects, told as Needs, Execute, Observe, Normalize."],
-  products: ["Products", "Open-source tools and products neon1 builds."],
-  landscape: ["Alternatives", "Where else to get help, and when they'd serve you better."],
+  products: ["Products", "Tools and products neon1 builds."],
+  landscape: ["Alternatives", "Other places to get help, and open-source tools worth a look."],
   templates: ["Templates", "Blank business documents to copy and fill in."],
   forms: ["Forms", "Blank records used during an engagement."],
   examples: ["Filled-out examples", "Templates and forms filled in for a fictional client."],
-  policies: ["Policies", "Privacy, terms, cookies, and the rest of the fine print."],
+  policies: ["Policies", "Privacy, terms, cookies, accessibility, and security reporting."],
   neo: ["Neo", "How Neo, the chat on neon1.tech, behaves."],
 }
 

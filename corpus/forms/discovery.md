@@ -1,14 +1,14 @@
 ---
 id: forms-discovery
 title: Discovery and outcome record
-summary: "Everything learned about one real task before a solution is proposed: steps, baseline, desired result, and options."
+summary: "What's learned about one real task before a solution is proposed: steps, baseline, desired result, and options."
 type: form
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/01-discovery-and-outcome.md"
 related: [forms-intake, templates-proposal, standards-discovery-and-delivery]
 ---

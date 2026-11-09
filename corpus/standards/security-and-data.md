@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/05-security-and-data.md"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
 ---
@@ -32,7 +32,7 @@ Informed by a framework isn't the same as certified against it. I won't call wor
 
 Before connecting anything, we list the information involved, why it's needed, where it lives, who can see it, which vendors receive it, and when it should be deleted. We label it in plain words: public, internal, confidential, or restricted.
 
-I don't collect what the work doesn't need. Development uses sample or redacted records. Before your data goes to a vendor, I explain where it's processed, how long it's kept, and who else touches it. Free consumer accounts and business accounts often have different terms, and that matters.
+I don't collect what the work doesn't need. Development uses sample or redacted records. Before your data goes to a vendor, I explain where it's processed, how long it's kept, and who else touches it. Free consumer accounts and business accounts often have different terms, so I check which one applies.
 
 Information also lingers in places people forget: email notifications, automation history, logs, AI prompts, search indexes, and backups. I won't promise complete deletion until I know how each of those behaves.
 
@@ -48,7 +48,7 @@ For apps with more than one user, I test permissions on the server. Hiding a but
 
 ## Thinking through threats, briefly
 
-For each project I sketch what's being built, where information crosses from one party to another, what could go wrong, what reduces the risk, and how we'll check. For a simple intake form that might mean a forged submission, a stolen account, a malicious attachment, a duplicate, an email sent to the wrong person, a failed integration, and lost recovery access. The output that matters is a decision and a test, not a diagram.
+For each project I sketch what's being built, where information crosses from one party to another, what could go wrong, what reduces the risk, and how we'll check. For a simple intake form that might mean a forged submission, a stolen account, a malicious attachment, a duplicate, an email sent to the wrong person, a failed integration, and lost recovery access. Each risk ends with a decision and a way to test it.
 
 ## The baseline
 
