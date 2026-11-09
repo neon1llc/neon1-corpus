@@ -1,0 +1,54 @@
+---
+id: standards-outreach
+title: Outreach and selling
+summary: "How neon1 finds clients and talks about its work: honest, specific, no pressure, and always with an easy way to say no."
+type: standard
+status: adopted
+updated: 2026-11-09
+created: 2026-11-01
+consumers: [knowledge, ai]
+pdf: true
+edition: "1.0"
+origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
+related: [standards-client-trust, standards-customers, landscape-where-else-to-get-help]
+---
+
+# Outreach and selling
+
+I'd rather lose a sale than win it with pressure. Selling, for neon1, means helping you decide quickly and accurately whether I'm the right help, and getting out of the way if I'm not.
+
+## What I make clear, in order
+
+1. **Recognition.** Your problem, described in ordinary words.
+2. **Fit.** Who the offer is for, and when it isn't.
+3. **Credibility.** Who does the work (me) and real examples, labeled honestly.
+4. **Clarity on cost.** The paid next step, what affects the price, and recurring costs, in the proposal before anything starts.
+5. **Control.** How you approve work, what you own, how to cancel, and what the handover includes.
+6. **Reliability.** When I respond, how failures are handled, and what support isn't included.
+
+## What I never do
+
+- Fake scarcity, countdowns, or "only two spots left" unless it's literally true and relevant.
+- Shame or fear, including the fear of being "left behind" by AI.
+- Fabricated reviews, logos, client lists, or numbers.
+- Guilt-trip exit messages or hard-to-cancel subscriptions.
+- Cold email lists bought from someone else. Contact comes from people who asked, referrals, and my own network.
+- Tracking you around the internet. The website has no ads, analytics, or trackers.
+
+## Common questions, answered straight
+
+| You ask | I answer |
+|---|---|
+| "That's expensive." | Let's check the value against the budget. I can offer a smaller useful step, not the same work for half the price. |
+| "Why not do it ourselves?" | Often you can. I'll say which parts, and what review, testing, and training would add. |
+| "We need someone during the day." | Then I may not be the right fit, and I'll help you find the coverage you need. |
+| "Can you guarantee the savings?" | I commit to deliverables and to measuring the result. Estimates are labeled as estimates. |
+| "Will we depend on you?" | You'll own the accounts, have the instructions and exports, and know how to leave. |
+
+## Where I show up
+
+Local relationships and referrals, LinkedIn, GitHub, and this website. What I publish is meant to be useful on its own, like this Knowledge Center, whether or not you ever hire me.
+
+## Follow-up
+
+One follow-up after a proposal, then the next move is yours. If you say no, that's the end of it, and you're welcome back anytime.
