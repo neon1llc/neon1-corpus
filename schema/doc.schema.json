@@ -33,7 +33,8 @@
         "template",
         "form",
         "faq",
-        "case-study"
+        "case-study",
+        "directive"
       ]
     },
     "status": {
@@ -146,6 +147,9 @@
     },
     "faq": {
       "$comment": "Each H2 is a question and its text is the answer."
+    },
+    "directive": {
+      "$comment": "How a consumer behaves rather than what it says about neon1, such as Neo's character and rules. Consumers keep it apart from the facts they answer from."
     }
   }
 }

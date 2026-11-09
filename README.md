@@ -14,6 +14,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/case-studies/`](corpus/case-studies) | Past projects, each told as Needs, Execute, Observe, Normalize |
 | [`corpus/products/`](corpus/products) | 1NEON, AWS CLIP, DeployOps, Ready, Secure, Go |
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
+| [`corpus/neo/`](corpus/neo) | Neo's character and the directives it follows in every chat |
 | `corpus/templates/`, `corpus/forms/` | Coming next: proposal and agreement examples, intake forms |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
@@ -27,7 +28,7 @@ Each file is Markdown with front matter that tells tools what it is and who read
 id: services
 title: Services
 summary: Four kinds of help, from automating a small business to SOC 2 readiness.
-type: page            # page, policy, template, form, faq or case-study
+type: page            # page, policy, template, form, faq, case-study or directive
 status: adopted       # draft, adopted or retired. Only adopted documents are exported
 updated: 2026-11-09
 consumers: [site, chat, knowledge, ai]
@@ -36,7 +37,7 @@ origin: "neon1-site src/app/public/index.html#services"
 ---
 ```
 
-The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections.
+The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
 
 ## Tools
 
