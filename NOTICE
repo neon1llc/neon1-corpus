@@ -1,0 +1,13 @@
+neon1-corpus
+Copyright (c) 2026 neon1 LLC (neon1.tech). All rights not granted below are reserved.
+
+neon1's public information, written once in Markdown. https://github.com/neon1llc/neon1-corpus
+
+Required credit on every copy: "© neon1 LLC (neon1.tech)"
+
+Content (everything in corpus/) is under CC BY-ND 4.0, see LICENSE.
+Code (tools/ and schema/) is under FSL-1.1-ALv2, see LICENSE-CODE. Each release
+becomes Apache-2.0 two years after it's published.
+Names, logos and brand marks are reserved, see TRADEMARK.md.
+
+Keep this file with every copy.
