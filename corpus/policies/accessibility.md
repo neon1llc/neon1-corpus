@@ -1,12 +1,12 @@
 ---
 id: policy-accessibility
 title: Accessibility statement
-summary: "neon1.tech aims to meet WCAG 2.2 AA. What that covers, what's known not to, and how to tell me about a barrier."
+summary: "neon1.tech aims for WCAG 2.2 AA. What's in place, what isn't yet, and how to report a barrier."
 type: policy
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/accessibility/"
@@ -21,26 +21,25 @@ I want everyone to be able to use neon1.tech, the 1NEON portal, and the document
 
 ## The goal
 
-neon1.tech aims to conform to the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at level AA. This is a goal I test against, not a formal certification.
+neon1.tech aims to meet the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at level AA. This is a target, not a certification, and the site hasn't had a full independent audit.
 
 ## What's in place
 
-- Semantic headings and landmarks, and a "skip to content" link on every page.
-- Everything works with a keyboard, with a visible focus ring.
-- Text meets AA contrast, including over the animated rain.
-- The rain can be paused, stops when the tab is hidden, and becomes a still image when your device asks for reduced motion.
+- A "skip to content" link and semantic headings on every page.
+- Navigation and controls built from standard links and buttons, so they work with a keyboard.
+- A pause control for the animated rain. The rain stops when the tab is hidden and becomes a still image when your device asks for reduced motion.
 - The terminal and the white rabbit are optional. Every page and service is reachable without them.
-- Knowledge Center PDFs are tagged for screen readers, and every one has a web page with the same text.
-- No content is only available as an image or video.
+- Every Knowledge Center PDF has a web page with the same text, and the PDFs are tagged for screen readers.
 
 ## Known limitations
 
-- The white rabbit scene is a 3D animation. It offers keyboard controls and a way back that needs no gesture, but it can't be fully described to a screen reader. It's an easter egg, and nothing important lives only there.
-- Some third-party services linked from the site, such as Calendly for booking a call, have their own accessibility. If one doesn't work for you, email or call instead, and I'll book it for you.
+- The white rabbit scene is a 3D animation. It has keyboard controls and a way back that needs no gesture, but it can't be described to a screen reader. Nothing important is only available there.
+- Contrast over the animated rain and the full keyboard path haven't been formally tested against every WCAG criterion yet.
+- Third-party services linked from the site, such as Calendly for booking a call, have their own accessibility. If one doesn't work for you, email or call, and I'll book the call for you.
 
 ## How it's checked
 
-With automated tools, then by hand with a keyboard, a screen reader, browser zoom at 200%, a narrow phone screen, and reduced motion turned on. The check is repeated when a page changes significantly.
+Every page is validated against the HTML standard on each change, and keyboard and reduced-motion behavior is checked by hand during development. A full review with automated accessibility tools and a screen reader is planned, and this statement will be updated with what it finds.
 
 ## Tell me about a barrier
 

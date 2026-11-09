@@ -1,12 +1,12 @@
 ---
 id: guides-first-call
 title: "Getting ready for a first call"
-summary: "What to bring to a free 15-minute call with neon1 so you leave it with real options."
+summary: "What to bring to a free 15-minute call with neon1."
 type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -15,7 +15,7 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and short, about 15 minutes. Its job is to find the main pain point and whether I'm the right help. A little preparation makes it count.
+The first call is free and short, about 15 minutes. Its job is to find the main pain point and whether I'm the right help. A little preparation helps.
 
 ## Bring one real example
 

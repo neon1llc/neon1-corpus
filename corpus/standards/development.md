@@ -1,28 +1,28 @@
 ---
 id: standards-development
 title: Development
-summary: "How neon1 writes, reviews, tests, and ships code, so the software you receive is readable, safe to change, and yours to keep."
+summary: "How neon1 writes, reviews, tests, and ships code, and how the code is handed over to you."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Written for neon1-corpus from neon1's repository conventions (VCS etiquette, licensing, CI) and Core 05 and 07"
 related: [standards-security-and-data, standards-technology-decisions, standards-design-and-accessibility]
 ---
 
 # Development
 
-Most of what I deliver isn't code. When it is, it should be code you could hand to another developer tomorrow without an apology. These are the habits behind every repository I touch, including neon1's own, which are public on [GitHub](https://github.com/neon1llc).
+Most of what I deliver isn't code. When it is, another developer should be able to pick it up and work on it without me. These are the habits behind every repository I touch, including neon1's own, which are public on [GitHub](https://github.com/neon1llc).
 
 ## Write for the next person
 
 - Plain names, small functions, and comments that explain why rather than what.
 - Every file starts with a line saying what it's for.
 - The README says what it is, who it's for, how to run it, how to deploy it, what's missing, and the license.
-- No clever tricks where an ordinary approach works. The next person may be you, a year from now, in a hurry.
+- No clever tricks where an ordinary approach works.
 
 ## Fewer moving parts
 
@@ -35,7 +35,7 @@ Most of what I deliver isn't code. When it is, it should be code you could hand 
 - Every change lives on a named branch that says what it does, such as `fix/office-hours`.
 - Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/): `feat`, `fix`, `docs`, `refactor`, `chore`, or `test`, with a plain subject.
 - Each commit makes sense on its own and passes the checks.
-- History on the main branch is never rewritten. Releases are tagged and listed in a changelog written for people, not machines.
+- History on the main branch is never rewritten. Releases are tagged and listed in a changelog written in plain language.
 
 ## Tests that match the promise
 
@@ -64,6 +64,3 @@ Cloud resources are described in code (usually Terraform), reviewed like code, a
 
 Code written for you lives in a repository you own, under the license we agree on. The handover includes how to build, test, deploy, and roll back without me. If I reuse open-source work, its license and notices stay intact, and I'll tell you what each one allows.
 
-## AI-assisted work
-
-I may use AI coding tools as one of many aids. A person reviews, tests, and takes responsibility for every line that ships, the same as for code written by hand. Your confidential information doesn't go into any AI service unless you've approved that service. See [AI quality and oversight](ai-quality.md) for AI inside the systems I build.

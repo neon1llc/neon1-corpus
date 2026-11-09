@@ -1,31 +1,31 @@
 ---
 id: standards-partners
 title: Partners
-summary: "How neon1 works with other firms, vendors, and referrals, so the client always knows who does what and who gets paid."
+summary: "How neon1 works with other firms, vendors, and referrals, and how responsibilities and fees are disclosed."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
 ---
 
 # Partners
 
-Sometimes the right answer is another firm, a vendor, or a specialist working alongside me. Partnerships are good for clients when everyone knows who's responsible for what. They're bad when an introduction quietly turns into an assumed obligation. These rules keep it the first kind.
+Some projects need another firm, a vendor, or a specialist alongside me. That works when everyone knows who's responsible for what, and causes problems when an introduction turns into an assumed obligation. These rules keep responsibilities written down.
 
 ## Before any shared work
 
 A [partner responsibilities](../templates/partner-responsibilities.md) sheet is filled in and shared with the client. It names who sells and approves scope, who builds each piece, who handles incidents and when, who invoices for what, who can see which data, who owns the deliverables, who carries insurance, and what each party does if the work ends.
 
-## Money is visible
+## Fees and incentives
 
 If I'd receive a referral fee or any other benefit for recommending a vendor or firm, you'll know before you decide. I don't recommend tools because of affiliate programs. When a free or built-in option fits, I recommend it.
 
-## Titles are accurate
+## Accurate titles
 
 - Working with an AWS Partner, Microsoft partner, or any other program member doesn't make neon1 one.
 - A certification I hold personally doesn't certify the business.
@@ -42,7 +42,7 @@ I don't hand your work or your data to anyone else without your written approval
 
 ## Referrals out
 
-When someone else is better placed, I refer you without strings. A good referral is good service, and I'd rather you get the right help than keep the work.
+When someone else is better placed, I refer you to them, with no fee or obligation attached.
 
 ## Referrals in
 

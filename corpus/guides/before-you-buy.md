@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -16,7 +16,7 @@ related: [standards-technology-decisions, forms-tool-decision]
 
 # Before you buy a new tool
 
-New software can fix a real problem or add a new one. These questions take ten minutes and save a lot of regret.
+New software can fix a problem or add a new one. These questions take about ten minutes.
 
 ## 1. Can something you already pay for do it?
 
@@ -28,7 +28,7 @@ Write one sentence: "When X happens, we currently do Y, and Z goes wrong." If yo
 
 ## 3. Who will use it every day?
 
-Ask them. A tool the owner loves and the staff avoid isn't a fix.
+Ask them. A tool the staff avoid won't fix the problem, however much the owner likes it.
 
 ## 4. What does it really cost per year?
 

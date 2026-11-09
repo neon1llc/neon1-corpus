@@ -8,14 +8,14 @@ updated: 2026-11-09
 created: 2026-11-05
 consumers: [site, knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
 related: [standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
 
-neon1 is a one-person technology practice in New York, run by me, Pradeep. neon1 LLC, formed in New York on July 24, 2025, is the company, and neon1 is the name it does business under. This charter is the short version of why it exists and how it behaves. Everything on the [How I work](../standards/operating-principles.md) shelf follows from it.
+neon1 is a one-person technology practice in New York, run by me, Pradeep. The company is neon1 LLC, formed in New York on July 24, 2025, and neon1 is the name it does business under. This charter covers why neon1 exists, who it serves, and how it works. The [How I work](../standards/operating-principles.md) documents go into detail.
 
 ## Mission
 
@@ -23,13 +23,13 @@ Help people and small organizations make their technology work together, improve
 
 ## How
 
-Cloud and AI native software, infrastructure, and connected devices, used where they make the result better. Every engagement ends in one of seven outcomes for each tool or system involved:
+I work with cloud and AI software, infrastructure, and connected devices, and use them where they make the result better. For each tool or system in an engagement, the recommendation is one of seven outcomes:
 
 | Outcome | What it means |
 |---|---|
 | **Keep** | It works. Leave it alone, maybe with a note on how it's used |
 | **Configure** | The tool you have can already do it. Turn on what's there |
-| **Integrate** | Two tools that should talk to each other start talking |
+| **Integrate** | Connect it to the other tools it should share information with |
 | **Migrate** | Move it somewhere that fits better, with your data intact |
 | **Replace** | Swap it for something that does the job with less effort |
 | **Retire** | Stop paying for it and shut it down cleanly |
@@ -54,7 +54,7 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 ## What I refer to others
 
-Some work deserves a specialist or a team with round-the-clock coverage. I'll point you to one rather than stretch:
+Some work needs a specialist or a team with round-the-clock coverage. For these, I'll refer you to someone who fits:
 
 - 24/7 emergency support
 - Safety-critical equipment
@@ -68,7 +68,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, plus open-source projects such as [AWS CLIP](../products/aws-clip.md), [DeployOps](../products/deploy-ops.md), and [Ready, Secure, Go](../products/ready-secure-go.md). They're shown as open source or in development, never sold as a service until they can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md) and [Ready, Secure, Go](../products/ready-secure-go.md), which are public, and [DeployOps](../products/deploy-ops.md), which is in development. None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 
@@ -76,4 +76,4 @@ N1 Supply LLC is a separate company for product experiments. It shares an owner 
 
 ## Signature lines
 
-*1 is glad to be of service* (from *Bicentennial Man*) and *1withtechnology*. They say something about personality. They don't describe a scope of service.
+*1 is glad to be of service*, from the film *Bicentennial Man*, and *1withtechnology*. They're part of neon1's personality, not a description of its services.

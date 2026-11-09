@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -19,7 +19,7 @@ A password manager remembers a different strong password for every account, so n
 
 ## Pick one together
 
-Choose a well-known manager with family sharing, apps for every device you use, and an emergency access feature. Many good ones exist, including the ones built into Apple and Google devices. The best one is the one everyone will actually use.
+Choose a well-known manager with family sharing, apps for every device you use, and an emergency access feature. Many good ones exist, including the ones built into Apple and Google devices. Pick the one everyone in the household will use.
 
 ## Before you start
 
@@ -29,7 +29,7 @@ Choose a well-known manager with family sharing, apps for every device you use, 
 
 ## Set it up
 
-1. **The organizer creates the family account** and sets a long master password: four or five random words is easy to remember and hard to guess.
+1. **The organizer creates the family account** and sets a long master password: four or five random words are easy to remember and hard to guess.
 2. **Turn on two-step sign-in** for the password manager itself.
 3. **Write down the recovery key or emergency kit** on paper, and keep it somewhere safe at home, such as with other important papers. This is the one thing to protect most.
 4. **Invite each family member.** Each person gets their own vault and master password. Shared things, like streaming and Wi-Fi, go in a shared vault.

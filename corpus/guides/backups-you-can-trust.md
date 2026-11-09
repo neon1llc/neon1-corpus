@@ -1,12 +1,12 @@
 ---
 id: guides-backups-you-can-trust
 title: "Backups you can trust"
-summary: "How a small office or household checks that its backups would actually bring things back."
+summary: "How a small office or household checks that its backups would restore what it needs."
 type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "0.9"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -16,7 +16,7 @@ related: [standards-reliability-and-recovery, forms-incident-and-restore]
 
 # Backups you can trust
 
-A backup you've never restored is a hope, not a backup. This guide helps you find out whether yours would actually work, before you need it.
+Until you've restored from a backup, you don't know whether it works. This guide helps you find out before you need it.
 
 ## Know what you'd lose
 

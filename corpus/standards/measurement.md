@@ -1,23 +1,23 @@
 ---
 id: standards-measurement
 title: Measurement
-summary: How neon1 defines success with you, measures it honestly, and reports what the numbers can and can't show.
+summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "0.9"
 origin: "Documents/BUSINESS/neon1/Organization/Core/03-measurement-handbook.md (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
 ---
 
 # Measurement
 
-Measurement is how we both know the work was worth it. It starts during discovery with a baseline, gets checked at handover, and gets reviewed after real use. I keep the list short, define every number exactly, and say plainly what a small sample can't prove.
+Measurement shows whether the work was worth it. It starts during discovery with a baseline, gets checked at handover, and gets reviewed after real use. I keep the list short, define every number exactly, and say plainly what a small sample can't prove.
 
-## Words that keep us honest
+## Terms
 
 | Term | Meaning |
 |---|---|
@@ -49,9 +49,9 @@ For each measure we agree on, the [metric record](../forms/metric-record.md) cap
 | Independent success | People finishing without help ÷ people trying | With a few people, it's qualitative evidence |
 | Benefit realized | Observed benefit ÷ estimated benefit, same period | Keep time, money, and quality apart unless the conversion is written down |
 
-Satisfaction scores such as CSAT and NPS have their place. With a handful of clients, an honest conversation about what worked and what's still hard usually tells us more.
+Satisfaction scores such as CSAT and NPS have their place. With a handful of clients, a direct conversation about what worked and what's still hard usually tells us more.
 
-## Small samples, told honestly
+## Small samples
 
 - Counts appear next to percentages. Four out of five is 80%, and one more case changes it a lot.
 - Failed and abandoned cases stay in the data.
