@@ -1,6 +1,6 @@
 ---
 id: standards-outreach
-title: Outreach and selling
+title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
@@ -9,12 +9,12 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-order: 19
+order: 18
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
-related: [standards-client-trust, standards-customers, landscape-where-else-to-get-help]
+related: [standards-customers, landscape-where-else-to-get-help]
 ---
 
-# Outreach and selling
+# Outreach and claims
 
 Selling, for neon1, means helping you decide quickly whether I'm the right help, and telling you when I'm not.
 
@@ -45,6 +45,12 @@ Selling, for neon1, means helping you decide quickly whether I'm the right help,
 | "We need someone during the day." | Then I may not be the right fit, and I'll help you find the coverage you need. |
 | "Can you guarantee the savings?" | I commit to deliverables and to measuring the result. Estimates are labeled as estimates. |
 | "Will we depend on you?" | You'll own the accounts, have the instructions and exports, and know how to leave. |
+
+## Claims and evidence
+
+Every public claim has a record behind it: the wording, what supports it, its scope, the date, permission, and its limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's still unknown. A clear result without a number beats an invented percentage.
+
+Work I did as an employee can show my background, but it isn't presented as neon1's client work. Testimonials reflect the person's real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
 
 ## Where I show up
 

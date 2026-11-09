@@ -11,7 +11,7 @@ pdf: true
 edition: "1.0"
 order: 11
 origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md (website behavior), extended"
-related: [standards-client-trust, standards-development, policy-accessibility]
+related: [standards-development, policy-accessibility]
 ---
 
 # Design and accessibility
@@ -54,6 +54,7 @@ Documents use one clear column, real headings, comfortable spacing, and tables o
 - Inter for text, JetBrains Mono for labels and code, Aptos in Office documents.
 - The rain animation is decoration. It pauses on request, stops when the tab is hidden, and becomes a still image for reduced motion.
 - Easter eggs, like the white rabbit, are optional and never stand between you and the content.
+- The logo isn't redrawn, stretched, or recolored. neon1 is always lowercase, and the company is neon1 LLC.
 
 ## For your projects
 

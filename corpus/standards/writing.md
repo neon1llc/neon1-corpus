@@ -11,7 +11,7 @@ order: 1
 consumers: [knowledge, ai]
 pdf: true
 origin: "Core 08 (writing), neon1's private writing guide, and the genre conventions below"
-related: [standards-development, standards-documentation, standards-client-trust, standards-code-style]
+related: [standards-development, standards-documentation, standards-code-style]
 ---
 
 # Writing

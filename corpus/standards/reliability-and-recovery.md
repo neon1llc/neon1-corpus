@@ -22,7 +22,7 @@ Reliability means you can do the task when you need to, and get back on your fee
 
 A service profile names the task that matters, operating hours, users, normal volume, dependencies, data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." We describe normal, degraded, and failed states separately, because a form that accepts a request but sends the email late hasn't lost the request.
 
-Dependencies such as sign-in, DNS, email delivery, storage, payments, an AI provider, and your own internet connection are listed, along with which failures the design survives. A vendor's uptime figure doesn't describe your whole experience.
+Dependencies such as sign-in, email delivery, payments, and your own internet connection are listed, with which failures the design survives.
 
 ## The vocabulary
 
@@ -87,7 +87,7 @@ Restores are tested before handover, after a big change, and at an interval we a
 
 An incident disrupts or threatens normal work. A request asks for access, advice, or a change. Severity comes from the consequences to you. For each incident we name who coordinates, who can change the system, and your contact, and keep a timestamped log. Updates say what's affected, what's known, what isn't, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep the evidence intact, and bring in the right specialist or insurer.
 
-Afterward a short review covers impact, timeline, what helped, and what changes, focused on conditions rather than blame, with a few actions that get checked later.
+Afterward, a short review covers what happened and what changes, focused on conditions rather than blame.
 
 ## What ongoing care covers
 
