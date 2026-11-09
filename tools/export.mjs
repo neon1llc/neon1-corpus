@@ -13,7 +13,7 @@
 import { writeFileSync, mkdirSync, rmSync } from "node:fs"
 import { join, resolve, relative } from "node:path"
 import { createHash } from "node:crypto"
-import { root, load } from "./corpus.mjs"
+import { root, load, SECTIONS, SHELVES } from "./corpus.mjs"
 import { render as toHtml, sections, inline } from "./markdown.mjs"
 
 
@@ -69,6 +69,7 @@ function json(doc) {
   return {
     id: doc.data.id,
     type: doc.data.type,
+    section: doc.section,
     title: doc.data.title,
     summary: doc.data.summary,
     source: `corpus/${doc.path}`,
@@ -91,12 +92,13 @@ const files = docs.map((doc, order) => {
   writeFileSync(join(outDir, file), text)
   writeFileSync(join(outDir, jsonFile), data)
   const { id, type, title } = doc.data
-  const entry = { file, order, id, type, title, source: `corpus/${doc.path}`, sha256: sha(text), chars: text.length, json: jsonFile, jsonSha256: sha(data) }
+  const entry = { file, order, id, type, section: doc.section, title, source: `corpus/${doc.path}`, sha256: sha(text), chars: text.length, json: jsonFile, jsonSha256: sha(data) }
   return { entry, text, published: doc.data.published }
 })
 
 const manifest = {
   target,
+  shelves: Object.fromEntries(SECTIONS.filter((s) => files.some((f) => f.entry.section === s)).map((s) => [s, { label: SHELVES[s][0], description: SHELVES[s][1] }])),
   digest: "sha256:" + sha(files.map((f) => f.entry.sha256).join("\n")),
   chars: files.reduce((n, f) => n + f.entry.chars, 0),
   files: files.map((f) => f.entry),

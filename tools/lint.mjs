@@ -56,6 +56,10 @@ for (const doc of docs) {
     if (d[key] === undefined) continue
     if (rule.type === "integer" && !Number.isInteger(d[key])) err(`${key} should be a whole number`)
     if (rule.type === "string" && typeof d[key] !== "string") err(`${key} should be text`)
+    if (rule.type === "boolean" && typeof d[key] !== "boolean") err(`${key} should be true or false`)
+    if (rule.type === "array" && !Array.isArray(d[key])) err(`${key} should be a [list]`)
+    if (rule.type === "array" && rule.items?.pattern && Array.isArray(d[key]))
+      for (const item of d[key]) if (!new RegExp(rule.items.pattern).test(item)) err(`${key} item "${item}" doesn't match ${rule.items.pattern}`)
     if (rule.minimum !== undefined && d[key] < rule.minimum) err(`${key} should be at least ${rule.minimum}`)
     if (rule.pattern && typeof d[key] === "string" && !new RegExp(rule.pattern).test(d[key]) && !["id", "updated"].includes(key)) err(`${key} "${d[key]}" doesn't match ${rule.pattern}`)
   }
@@ -73,6 +77,10 @@ for (const doc of docs) {
   if (rules.sections) {
     const found = sections(doc.body).filter((s) => s.heading).map((s) => s.heading)
     if (found.join("|") !== rules.sections.join("|")) err(`a ${d.type} needs the sections ${rules.sections.join(", ")} in that order, found ${found.join(", ") || "none"}`)
+  }
+  if (rules.last_section) {
+    const found = sections(doc.body).filter((s) => s.heading).map((s) => s.heading)
+    if (found.at(-1) !== rules.last_section) err(`a ${d.type} ends with a ${rules.last_section} section`)
   }
   if (!SECTIONS.includes(doc.section)) err(`section ${doc.section} isn't one of ${SECTIONS.join(", ")}`)
 
@@ -93,6 +101,18 @@ for (const doc of docs) {
     const text = line.replace(/\(tel:\+?\d+[^)]*\)/g, "")
     for (const [re, why] of PRIVATE) if (re.test(text)) err(`line ${i + 1}: ${why}`)
   })
+}
+
+// References between documents, checked once every id is known
+for (const doc of docs) {
+  const d = doc.data ?? {}
+  const err = (m) => errors.push(`corpus/${doc.path}: ${m}`)
+  for (const id of d.related ?? []) if (!ids.has(id)) err(`related id ${id} isn't a document`)
+  if (d.example_of) {
+    const blank = docs.find((x) => x.data?.id === d.example_of)
+    if (!blank) err(`example_of ${d.example_of} isn't a document`)
+    else if (!["template", "form"].includes(blank.data.type)) err(`example_of ${d.example_of} is a ${blank.data.type}, not a template or form`)
+  }
 }
 
 if (errors.length) {
