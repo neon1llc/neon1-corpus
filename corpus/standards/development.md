@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
-edition: "0.9"
+edition: "1.0"
 origin: "Written for neon1-corpus from neon1's repository conventions (VCS etiquette, licensing, CI) and Core 05 and 07"
 related: [standards-security-and-data, standards-technology-decisions, standards-design-and-accessibility]
 ---

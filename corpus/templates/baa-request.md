@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
-edition: "0.9"
+edition: "1.0"
 origin: "Written for neon1-corpus, based on 45 CFR 160.103 and the HHS guidance on business associates"
 related: [templates-business-associate-agreement, examples-baa-request, forms-intake]
 ---
@@ -16,7 +16,7 @@ related: [templates-business-associate-agreement, examples-baa-request, forms-in
 # Business associate agreement request
 
 > [!note] Why this exists
-> Under HIPAA, a vendor that creates, receives, keeps, or sends protected health information for a covered entity is a business associate, and needs a signed agreement first. Many projects never touch health information at all. This questionnaire tells us which kind of project yours is, before any access is granted. It isn't legal advice. Your privacy officer or counsel makes the final call.
+> Under HIPAA, a vendor that creates, receives, keeps, or sends protected health information (PHI) for a covered entity is a business associate, and needs a signed agreement first. Many projects never touch health information at all. This questionnaire tells us which kind of project yours is, before any access is granted. It isn't legal advice. Your privacy officer or counsel makes the final call.
 
 **Organization:** ____
 

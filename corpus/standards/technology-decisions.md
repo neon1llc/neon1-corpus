@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "0.9"
+edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/07-technology-decisions.md"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
 ---

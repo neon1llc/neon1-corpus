@@ -9,7 +9,7 @@ created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "0.9"
+edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#3, Projects/Proposals (structure only)"
 related: [examples-proposal, forms-change-request, forms-discovery, templates-decision-review]
 ---

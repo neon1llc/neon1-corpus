@@ -84,7 +84,7 @@
     "edition": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+$",
-      "description": "The document's edition, written X.Y without a v. Below 1.0 means written but not yet reviewed and accepted by the owner. 1.0 means accepted. Every document has one. Raise the minor number for clarifications and corrections, the major number when a promise, rule, or required field changes. Printed on pages and PDFs."
+      "description": "The document's edition, written X.Y without a v. 1.0 is the first edition published as adopted, after an editing pass for accuracy, plain language, and the conventions of its kind. Below 1.0 is a draft. Every document has one. Raise the minor number for clarifications and corrections, the major number when a promise, rule, or required field changes. Printed on pages and PDFs."
     },
     "audience": {
       "type": "string",
