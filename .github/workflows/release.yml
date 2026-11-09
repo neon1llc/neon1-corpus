@@ -1,0 +1,32 @@
+name: release
+
+# A pushed tag such as v0.2.1 becomes a GitHub release with every bundle attached, so a consumer can take
+# the whole set in one download (neon1-chat reads chat.bundle.json from the latest release)
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Lint documents
+        run: node tools/lint.mjs
+      - name: Export every bundle
+        run: |
+          mkdir -p assets
+          for t in chat site knowledge ai; do
+            node tools/export.mjs --target "$t"
+            cp "dist/$t/bundle.json" "assets/$t.bundle.json"
+          done
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" assets/*.bundle.json --title "$GITHUB_REF_NAME" --notes "Bundles for each consumer. Each one holds the manifest and every document's Markdown. See the README for the format."
