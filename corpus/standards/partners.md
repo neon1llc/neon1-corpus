@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 18
 origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
 ---

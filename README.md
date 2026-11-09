@@ -74,9 +74,19 @@ node .corpus/tools/export.mjs --target site
 
 Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`. The export runs in well under a second and needs nothing installed, and nothing is fetched while a page is being viewed.
 
+## As context for AI tools
+
+The corpus is, with some levity, neon1's context window: everything neon1 has written down about itself, in one place, in a form people and AI tools read equally well. The `ai` bundle holds every adopted document. For development work, the standards alone are enough:
+
+```
+node tools/export.mjs --target ai --sections standards
+```
+
+That's about 80,000 characters, roughly 20,000 tokens. The export already drops front matter. Stripping Markdown further would save only about 5%, mostly link addresses and table padding, and would cost the structure that helps a model read it, so the bundles stay as Markdown. Narrowing by shelf is the better way to save context. Each release also attaches `standards.bundle.json`.
+
 ## Contributing
 
-Branch and commit rules are in [VCS-ETIQUETTE.md](VCS-ETIQUETTE.md).
+Branch and commit rules follow neon1's [version control standard](corpus/standards/version-control.md), with this repository's additions in [VCS-ETIQUETTE.md](VCS-ETIQUETTE.md). Versions follow the [versioning standard](corpus/standards/versioning.md).
 
 ## License
 

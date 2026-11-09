@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 15
 origin: "Documents/BUSINESS/neon1/Organization/Core/03-measurement-handbook.md (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
 ---

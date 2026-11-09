@@ -1,6 +1,6 @@
 # Version control etiquette
 
-How changes get into neon1-corpus. The rules get stricter at `v1.0.0`, because the site, Neo and the knowledge area depend on what's here.
+How changes get into neon1-corpus. neon1's [version control](corpus/standards/version-control.md) and [versioning](corpus/standards/versioning.md) standards apply here, and this file adds the corpus's own details. The rules get stricter at `v1.0.0`, because the site, Neo and the Knowledge Center depend on what's here.
 
 ## Always
 

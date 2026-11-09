@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 13
 origin: "Documents/BUSINESS/neon1/Organization/Core/04-reliability-and-recovery.md"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
 ---

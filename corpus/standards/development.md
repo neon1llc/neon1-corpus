@@ -1,69 +1,105 @@
 ---
 id: standards-development
 title: Development
-summary: "How neon1 writes, reviews, tests, and ships code, and how the code is handed over to you."
+summary: "The main development standard for neon1: the principles in priority order, what each word means, how work moves from idea to release, and where the detailed rules live."
 type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
+edition: "1.0"
+order: 2
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
-origin: "Written for neon1-corpus from neon1's repository conventions (VCS etiquette, licensing, CI) and Core 05 and 07"
-related: [standards-security-and-data, standards-technology-decisions, standards-design-and-accessibility, policy-ai-use]
+origin: "neon1's private development guide and repository conventions, Core 05 and 07"
+related: [standards-writing, standards-version-control, standards-versioning, standards-code-style, standards-testing-and-review, standards-documentation, policy-ai-use]
 ---
 
 # Development
 
-Most of what I deliver isn't code. When it is, another developer should be able to pick it up and work on it without me. These are the habits behind every repository I touch, including neon1's own, which are public on [GitHub](https://github.com/neon1llc).
+This is the main development standard for neon1. It covers every project neon1 builds, for itself or for a client: websites, tools, infrastructure, automations, and AI features. It sets the principles and the order of work. The detailed rules live in the standards linked at the end, and each of them follows this one.
 
-## Write for the next person
+## Principles, in priority order
 
-- Plain names, small functions, and comments that explain why rather than what.
-- Every file starts with a line saying what it's for.
-- The README says what it is, who it's for, how to run it, how to deploy it, what's missing, and the license.
-- No clever tricks where an ordinary approach works.
+When two principles pull in different directions, the higher one wins. Most of the time they agree.
 
-## Fewer moving parts
+| # | Principle | What it means here |
+|---|---|---|
+| 1 | **Safety** | Nobody is harmed, no data is lost or exposed, and nothing irreversible happens by accident. Covers security, privacy, and data integrity |
+| 2 | **Correctness** | It does what it says, including in the failure cases that matter |
+| 3 | **Value** | It solves a real need someone has today. Work that isn't needed isn't done, however interesting |
+| 4 | **Usability** | The intended person can do the task without help, on their device, including with assistive technology |
+| 5 | **Simplicity** | The fewest parts, dependencies, and concepts that meet the need. Easy to explain in a few sentences |
+| 6 | **Robustness** | It degrades visibly instead of silently, recovers from failure, and can be undone |
+| 7 | **Maintainability** | Someone else can read it, change it, and run it without the author |
+| 8 | **Efficiency** | It uses time, money, and computing in proportion to its value. Fast enough, cheap enough, measured before optimized |
+| 9 | **Consistency** | It follows the conventions of its project and of neon1, so nothing has to be relearned |
 
-- Use the platform's built-in features before adding a library, and a library before writing a framework.
-- Every dependency is a long-term commitment, so each one has to earn its place. Several neon1 tools run on Node with no dependencies at all.
-- Pin versions, including CI actions, and update them on purpose rather than by accident.
+A few consequences of the order:
 
-## Version control
+- A simpler design that leaves a security gap loses. A faster design that's harder to use loses unless speed is the need.
+- Efficiency matters, but it comes after people can use and maintain the thing. Optimize what's measured, not what's guessed.
+- Consistency is last because a convention should give way when it would make something unsafe, wrong, or unusable. When that happens, the convention gets updated rather than quietly broken.
 
-- Every change lives on a named branch that says what it does, such as `fix/office-hours`.
-- Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/): `feat`, `fix`, `docs`, `refactor`, `chore`, or `test`, with a plain subject.
-- Each commit makes sense on its own and passes the checks.
-- History on the main branch is never rewritten. Releases are tagged and listed in a changelog written in plain language.
+## Words neon1 uses, defined
 
-## Tests that match the promise
+These words come up often. Each one means something specific here.
 
-Tests check what the client was promised: a request arrives once, permissions hold, a retry doesn't duplicate work, and a failure leaves a visible, recoverable state. A green test suite that skips those is weak evidence. When a bug is found, a test that would have caught it comes first.
+| Word | Meaning |
+|---|---|
+| **Mature** | Complete for its stated purpose, dependable in its intended workflows, documented, and recoverable. Not the same as old or large |
+| **Ready** | Tested in conditions like real use, with known limits written down and a way back |
+| **Done** | Built, tested, documented, reviewed, released, and handed over. Merged alone isn't done |
+| **Robust** | Survives bad input, outages, and retries without corrupting anything, and says when it fails |
+| **Simple** | Few parts and few concepts. Not the same as quick to write |
+| **Usable** | The intended person finishes the task without help |
+| **Valuable** | Someone would notice and mind if it were gone |
+| **Efficient** | Proportionate in time, cost, and resources to what it delivers |
+| **Secure** | Meets the agreed baseline for its data and risks, with evidence. Never a blanket claim |
 
-Checks run the same way locally and in CI, from one command. If a check is too slow or needs a browser, it says so instead of quietly being skipped.
+## How work moves
 
-## Security as a habit
+Every piece of work follows the same order, at whatever size fits:
 
-- Secrets never go in code, issues, or chat. Repositories are scanned for leaked secrets on every push.
-- Untrusted input is validated where it arrives. Permissions are checked on the server, never only in the interface.
-- Content Security Policy, HTTPS everywhere, and least-privilege cloud roles are the default.
-- See [Security and data](security-and-data.md) for the full baseline.
+1. **Reproduce.** Start from something that works: an existing tool, a known pattern, or the current behavior, with a baseline measured.
+2. **Integrate.** Connect it into the complete path a person actually uses, end to end.
+3. **Enhance.** Improve what real use shows is missing or weak.
+4. **Unify.** Once several pieces work, share their common parts and make them consistent.
 
-## Infrastructure as code
+Reuse comes before building. Existing tools and well-maintained open-source projects come first, checked under the [technology decisions](technology-decisions.md) standard. Custom code covers only what nothing else does.
 
-Cloud resources are described in code (usually Terraform), reviewed like code, and applied from CI with short-lived credentials. Nobody clicks around a console to change production. When a resource has to be created by hand in an emergency, it's imported into code afterward.
+For a bug, the order is: reproduce it, find the cause, fix it narrowly, add a test that would have caught it, and check the behavior around it.
 
-## Deploys you can undo
+## Maturity and version 1.0.0
 
-- Every deploy says which version it shipped and checks that the live site serves it.
-- A rollback is a known command, not an improvisation.
-- Static assets that never change are cached for a long time. Pages that do change are always revalidated.
+Before `v1.0.0`, a project is under initial development, and its versions say so. `v1.0.0` is reserved for the first complete, dependable release of the whole intended scope, shown to work for the people it's for. Passing tests or finishing one feature doesn't make a project 1.0.0. The [versioning standard](versioning.md) defines every version number in detail.
+
+## The detailed standards
+
+| Standard | Covers |
+|---|---|
+| [Writing](writing.md) | Every word neon1 writes, including code comments and commit messages |
+| [Version control](version-control.md) | Branches, commits, merges, protection, and history |
+| [Versioning and releases](versioning.md) | Version numbers, tags, changelogs, and when each number goes up |
+| [Code style](code-style.md) | Names, comments, file headers, formatting, and layout |
+| [Testing and review](testing-and-review.md) | What gets tested, how changes are reviewed, and the definition of done |
+| [Documentation](documentation.md) | READMEs, changelogs, decision records, and runbooks |
+| [Security and data](security-and-data.md) | The security baseline and data handling |
+| [Design and accessibility](design-and-accessibility.md) | Interfaces and documents anyone can use |
+| [Technology decisions](technology-decisions.md) | Choosing tools and architecture, and counting the full cost |
+| [Reliability and recovery](reliability-and-recovery.md) | Service targets, backups, and incidents |
+| [AI quality and oversight](ai-quality.md) | AI features inside what neon1 builds |
 
 ## Your code is yours
 
-Code written for you lives in a repository you own, under the license we agree on. The handover includes how to build, test, deploy, and roll back without me. If I reuse open-source work, its license and notices stay intact, and I'll tell you what each one allows.
+Code written for a client lives in a repository the client owns, under the license agreed. The handover includes how to build, test, deploy, and roll back without me. Reused open-source code keeps its license and notices, and I explain what each license allows.
 
 ## Review tools
 
 I use AI tools to review code for bugs, security issues, and missing tests, alongside automated checks. I review and take responsibility for every change that ships. See [How I use AI](../policies/ai-use.md).
+
+## Sources
+
+- [Semantic Versioning 2.0.0](https://semver.org/)
+- [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+- [The Twelve-Factor App](https://12factor.net/)
+- [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final)

@@ -9,6 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
+order: 17
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/02-positioning-and-operating-model.md and Core 01"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
