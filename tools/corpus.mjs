@@ -10,7 +10,7 @@ export const root = join(dirname(fileURLToPath(import.meta.url)), "..")
 export const corpusDir = join(root, "corpus")
 
 // Export order, so bundles read like the site: who, what, how, proof, products, then the fine print
-export const SECTIONS = ["company", "services", "faq", "case-studies", "products", "templates", "forms", "policies"]
+export const SECTIONS = ["company", "services", "faq", "case-studies", "products", "templates", "forms", "policies", "neo"]
 
 
 // Every Markdown file under dir
