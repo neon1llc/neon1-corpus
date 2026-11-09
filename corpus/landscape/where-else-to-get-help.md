@@ -38,13 +38,13 @@ Microsoft 365, Google Workspace, QuickBooks, Square, and most other business too
 
 ## Free advising
 
-[SCORE](https://www.score.org/) pairs businesses with volunteer mentors at no cost, and New York's [Small Business Development Centers](https://www.nysbdc.org/) offer free one-on-one advising funded by the U.S. Small Business Administration and the state. Public libraries, such as the [New York Public Library](https://www.nypl.org/), run small business programs too.
+[SCORE](https://www.score.org/how-mentoring-works/) offers free one-on-one mentoring to any owner of a U.S.-based business, and New York's [Small Business Development Centers](https://www.nysbdc.org/) offer free one-on-one advising funded by the U.S. Small Business Administration and the state. Public libraries, such as the [New York Public Library](https://www.nypl.org/), run small business programs too.
 
 **Better than neon1 when** you're still deciding what to do, need business planning beyond technology, or want an unbiased second opinion before spending anything. They generally advise rather than build.
 
 ## Freelance marketplaces
 
-Platforms such as [Upwork](https://www.upwork.com/) and [Fiverr](https://www.fiverr.com/) list thousands of freelancers. Both charge service fees on top of, or out of, the freelancer's price. See each platform's pricing page for the current rates.
+Platforms such as [Upwork](https://www.upwork.com/) and [Fiverr](https://www.fiverr.com/) list thousands of freelancers. On its [client pricing page](https://www.upwork.com/pricing/client), Upwork charges clients a 5% service fee on its Basic plan or 10% on Business Plus, plus a contract initiation fee. Fiverr adds a service fee at checkout that you see before you pay.
 
 **Better than neon1 when** the task is narrow and well defined, such as "build this form" or "fix this spreadsheet formula," and you're comfortable writing the specification and checking the result. **Watch for:** quality varies widely, and handover, documentation, and account ownership depend entirely on who you pick. Make sure accounts are created in your name.
 
@@ -56,7 +56,7 @@ An MSP takes over day-to-day IT for a monthly fee, usually per user or per devic
 
 ## Retail and local repair shops
 
-Big-box tech services such as Best Buy's [Geek Squad](https://www.bestbuy.com/site/geek-squad/geek-squad-services/pcmcat138100050018.c?id=pcmcat138100050018) and independent repair shops handle broken devices, in-home installs, and setup, usually at a flat price per job.
+Big-box tech services such as Best Buy's [Geek Squad](https://www.bestbuy.com/site/electronics/services/pcmcat1528819595254.c?id=pcmcat1528819595254) and independent repair shops handle broken devices, in-home installs, and setup, usually at a price per job. Best Buy's paid Total membership adds 24/7 tech support and protection plans for what you buy there.
 
 **Better than neon1 when** a device is broken, needs parts, or you want walk-in convenience and a store's warranty. **Watch for:** they fix the device in front of them. They rarely look at how your tools work together.
 
@@ -92,10 +92,11 @@ If none of this fits, ask anyway. If I'm not the right person, I'll try to point
 
 ## Sources
 
-- SCORE, free business mentoring: <https://www.score.org/>
+- SCORE, how mentoring works: <https://www.score.org/how-mentoring-works/>
 - New York Small Business Development Center: <https://www.nysbdc.org/>
 - New York Public Library small business resources: <https://www.nypl.org/>
-- Upwork: <https://www.upwork.com/> and Fiverr: <https://www.fiverr.com/>, platform fees on their pricing pages
-- Best Buy Geek Squad services: <https://www.bestbuy.com/site/geek-squad/geek-squad-services/pcmcat138100050018.c?id=pcmcat138100050018>
+- Upwork client pricing: <https://www.upwork.com/pricing/client>
+- Fiverr help center, paying for orders: <https://help.fiverr.com/>
+- Best Buy services and Geek Squad: <https://www.bestbuy.com/site/electronics/services/pcmcat1528819595254.c?id=pcmcat1528819595254>
 - Managed IT pricing: published 2026 MSP pricing guides, which mostly place small-business plans between about $100 and $250 per user per month. They're written by providers, so treat them as a rough range.
-- Checked on the date at the top of this page. Descriptions are general and individual providers vary.
+- Every figure above was read on the provider's own page on November 9, 2026, except the managed IT range. Descriptions are general and individual providers vary.
