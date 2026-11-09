@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-05
 consumers: [site, knowledge, ai]
 pdf: true
-edition: "0.9"
+edition: "1.0"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
 related: [standards-operating-principles, company-about, company-names, services]
 ---

@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
-edition: "0.9"
+edition: "1.0"
 reviewed: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true

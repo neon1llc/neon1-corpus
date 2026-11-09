@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "0.9"
+edition: "1.0"
 consumers: [knowledge, ai]
 pdf: true
 origin: "Core 00 glossary, extended with the terms the standards use"
