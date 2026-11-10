@@ -8,7 +8,7 @@ client: grade school
 area: community
 updated: 2026-11-09
 created: 2026-11-06
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: community
@@ -26,7 +26,7 @@ origin: "neon1-site src/app/public/index.html#case-community"
 
 ## Needs
 
-I'd wanted to put my experience to work in my own community for a long time. A local grade school needed a STEM edtech setup that would actually get used, on a budget that couldn't afford mistakes.
+A local grade school needed a STEM edtech setup that teachers would use, on a budget with no room for mistakes. I'd wanted to do this kind of work in my own community for some time.
 
 ## Execute
 
@@ -34,8 +34,8 @@ I budgeted the new system, compared the realistic options, and set it up for the
 
 ## Observe
 
-Seeing teachers use it in class, and parents leave those sessions knowing a little more and worrying a little less, showed me the same help was worth offering more widely.
+Teachers used it in class, and parents left the sessions with specific steps to take. That showed the same help was worth offering more widely.
 
 ## Normalize
 
-That's how neon1 began. Community and nonprofit work is still part of it, so if your school or organization needs a hand, reach out.
+That's how neon1 began. Community and nonprofit work is still part of it. Schools and community groups can ask through [contact](../company/contact.md).

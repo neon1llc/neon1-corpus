@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -61,4 +61,4 @@ Write down what happened, especially anything that was confusing or slow.
 - Keep the instructions somewhere you can reach if your main computer is the thing that failed.
 - Make sure more than one person knows how to get the data back.
 
-If you'd like a hand, a backup review is one of the smallest projects I do. You keep the instructions either way.
+A backup review is one of the smallest projects I take on. The instructions are yours either way.
