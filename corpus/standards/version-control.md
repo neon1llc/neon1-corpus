@@ -1,12 +1,12 @@
 ---
 id: standards-version-control
 title: Version control
-summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, before and after version 1.0.0."
+summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, and which safeguards production and client data require."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-10
 created: 2026-11-08
-edition: "1.0"
+edition: "2.0"
 audience: "Developers"
 order: 5
 consumers: [knowledge, ai]
@@ -17,7 +17,7 @@ related: [standards-development, standards-versioning, standards-testing-and-rev
 
 # Version control
 
-Every neon1 project lives in git, on GitHub. These rules apply to all of them. A repository can add stricter rules in its own `VCS-ETIQUETTE.md`, but not looser ones. The rules get stricter at `v1.0.0`, when other people and systems start depending on the project.
+Every neon1 project lives in git, on GitHub. These rules apply to all of them. A repository can add stricter rules in its own `VCS-ETIQUETTE.md`, but not looser ones. The rules get stricter when a repository deploys to production or holds client data, whatever its version number says.
 
 ## Before you commit
 
@@ -69,7 +69,7 @@ Commits are made under the name and email of the person responsible for the chan
 ## Merging
 
 - Merge a feature branch with `git merge --no-ff`, so the branch stays visible in history, then delete it.
-- Small pull requests may be squash-merged after `v1.0.0` when the individual commits don't matter.
+- Small pull requests may be squash-merged once the repository is protected (see below) when the individual commits don't matter.
 - Keep the main branch releasable. If the checks fail on main, fixing them comes before anything else.
 
 ## History
@@ -79,21 +79,33 @@ Commits are made under the name and email of the person responsible for the chan
 - Never force-push to main. A mistake on main is fixed by a new commit, such as a `git revert`.
 - A leaked secret is revoked and rotated first. Removing it, or correcting a wrong author, from history is a separate decision the repository's owner makes deliberately, with branch protection paused only for that change and restored right after.
 
-## Before v1.0.0
+## Before anything is live
 
-The project moves fast, and these are strong habits rather than hard gates:
+A repository that deploys nothing to production and holds no client data moves fast, and these are strong habits rather than hard gates:
 
 - Named branches for anything bigger than a typo, merged with `--no-ff`.
 - Typos and broken links may go straight to main.
 - Pull requests are optional. Read your own diff before merging.
 
-## From v1.0.0 on
+## From the first live release, or when client data is at stake
 
-- **The main branch is protected.** No direct pushes. Every change arrives through a pull request from a named branch.
-- **Required checks pass** before merge.
-- **Review:** every pull request needs an approving review from someone other than the author when a second person is available. Policies and agreements also need a reviewer who can check them against what's live.
-- **Signed commits and tags** on main.
+Production deployment and risk to clients or their data decide when the safeguards apply, not the version number. A `v0.x` repository that deploys a live site or holds client data follows these rules from its first live release:
+
+- **The main branch is protected** against force pushes and deletion, with no one allowed to bypass that.
+- **Required checks pass** before a change reaches main.
+- **Every change is reviewed** as a full diff before it merges. When a second person is available, someone other than the author approves it. Policies and agreements also need a reviewer who can check them against what's live.
+- **Rollback is ready:** the previous release can be put back, and how is written down before the release goes out.
+- **Signed commits and tags** on main, from `v1.0.0` on.
 - **Urgent fixes**, such as a wrong policy or contact detail, go on a `fix/urgent-...` branch and can be merged with one review and released as a patch the same day.
+
+### How this works today
+
+neon1 is one person, so the controls are honest about that. On the repositories that deploy to production (the website, the 1NEON portal, the chat, and the AWS infrastructure), main has two rulesets in force:
+
+- **No force push or deletion**, with no bypass for anyone, including me.
+- **Required checks** must pass before a change lands on main. As the sole maintainer and repository admin, I can bypass this ruleset, and GitHub prints a bypass warning whenever I push to main directly.
+
+That bypass is the sole-maintainer exception. It's for when no second reviewer exists, not for skipping checks. I use it for small changes I've reviewed myself as a full diff, with the checks run locally first, and for an urgent fix when waiting would cause more harm. Each bypass shows in GitHub's warnings and in the history, and I look back at any bypassed change once it's live. When a second maintainer joins, review by someone other than the author becomes required.
 
 ## Tags
 
