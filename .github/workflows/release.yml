@@ -1,25 +1,89 @@
 name: release
 
-# A pushed tag such as v0.2.1 becomes a GitHub release with every bundle attached, so a consumer can take
-# the whole set in one download (neon1-chat reads chat.bundle.json from the latest release)
+# Each version in CHANGELOG.md becomes an annotated tag and a GitHub release with every bundle attached,
+# so a consumer can take the whole set in one download (neon1-chat reads chat.bundle.json from the
+# latest release). On main, the changelog's top version is released once, on the commit that added it.
+# A tag pushed by hand releases too, and a manual run can release an older version on a named commit
 on:
   push:
+    branches: [main]
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, without the v (for example 0.24.0)"
+        required: true
+      commit:
+        description: "Full commit SHA on main that the version was built from"
+        required: true
 
 permissions:
   contents: write
+
+# One release at a time, never cancelled halfway
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Which version this run releases, on which commit; empty means there's nothing new to release
+      - name: Pick the version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IN_VERSION: ${{ inputs.version }}
+          IN_COMMIT: ${{ inputs.commit }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            version="$IN_VERSION"; commit="$IN_COMMIT"
+            [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && "$commit" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::give a version like 0.24.0 and a full commit SHA"; exit 1; }
+            git merge-base --is-ancestor "$commit" origin/main || { echo "::error::$commit is not on main"; exit 1; }
+          elif [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            version="${GITHUB_REF_NAME#v}"; commit="$GITHUB_SHA"
+          else
+            version=$(sed -n 's/^## v\([0-9][0-9.]*[0-9a-z.-]*\).*/\1/p' CHANGELOG.md | head -1)
+            commit="$GITHUB_SHA"
+            [ -n "$version" ] || { echo "::error::CHANGELOG.md names no version"; exit 1; }
+          fi
+          grep -q "^## v$version\b" CHANGELOG.md || [ "$GITHUB_REF_TYPE" = "tag" ] || { echo "::error::CHANGELOG.md has no entry for v$version"; exit 1; }
+          if gh release view "v$version" >/dev/null 2>&1; then
+            echo "v$version is already released"
+            exit 0
+          fi
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          echo "COMMIT=$commit" >> "$GITHUB_ENV"
+
+      # The tag first, annotated, on the release's own commit (a hand-pushed tag is already there)
+      - name: Tag
+        if: env.VERSION != ''
+        run: |
+          if git ls-remote --exit-code --tags origin "refs/tags/v$VERSION" >/dev/null; then
+            echo "v$VERSION is already tagged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "v$VERSION" -m "v$VERSION" "$COMMIT"
+            git push origin "v$VERSION"
+          fi
+          git checkout -q "v$VERSION"
+
       - uses: actions/setup-node@v4
+        if: env.VERSION != ''
         with:
           node-version: 22
+
       - name: Lint documents
+        if: env.VERSION != ''
         run: node tools/lint.mjs
+
       - name: Export every bundle
+        if: env.VERSION != ''
         run: |
           mkdir -p assets
           for t in chat site knowledge ai portal; do
@@ -29,7 +93,9 @@ jobs:
           # The standards alone, as context for development work
           node tools/export.mjs --target ai --sections standards --out dist/standards
           cp dist/standards/ai/bundle.json assets/standards.bundle.json
+
       - name: Publish the release
+        if: env.VERSION != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" assets/*.bundle.json --title "$GITHUB_REF_NAME" --notes "Bundles for each consumer. Each one holds the manifest and every document's Markdown. See the README for the format."
+        run: gh release create "v$VERSION" assets/*.bundle.json --verify-tag --title "v$VERSION" --notes "Bundles for each consumer. Each one holds the manifest and every document's Markdown. See CHANGELOG.md for what changed and the README for the format."
