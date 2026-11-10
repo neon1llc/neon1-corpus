@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 10, 2026.*
+*Last updated November 10, 2026.* This update lists every key the portal and its demos save in your browser, including a few that were missing before. Nothing new is stored.
 
 Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
