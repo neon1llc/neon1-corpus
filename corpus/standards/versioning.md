@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-10
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 audience: "Developers"
 order: 6
 consumers: [knowledge, ai]
@@ -62,6 +62,10 @@ A project's checks should fail when these disagree. Every version named in a cha
 ## When versions have drifted
 
 If a project's numbers have drifted, such as a package file saying `0.42.0` while the latest tag is `v0.13.0`, don't rewrite old tags. Pick the next correct number from where the project actually is, make every place agree in that release, and note the change in the changelog. History stays as it was, and the numbers are right from then on.
+
+## When a project shipped before it was tagged
+
+A project that ran from main before its first tag can still show how it got there. Pick the commits on main where a meaningful piece landed and tag them as pre-releases of the first tagged version, in order: `v0.1.0-alpha.1`, `v0.1.0-alpha.2`, and so on. Tag the commits as they are; don't rebase or rewrite main to make the history look tidier. Give each one a short entry under a "Before v0.1.0" heading in the changelog, dated when it shipped, and say when the tags were added. Tags already pushed stay where they are.
 
 ## Changelogs
 
