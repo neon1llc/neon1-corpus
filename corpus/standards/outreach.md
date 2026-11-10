@@ -8,7 +8,7 @@ updated: 2026-11-09
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 18
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -40,7 +40,7 @@ Selling, for neon1, means helping you decide quickly whether I'm the right help,
 
 | You ask | I answer |
 |---|---|
-| "That's expensive." | Let's check the value against the budget. I can offer a smaller useful step, not the same work for half the price. |
+| "That's expensive." | We check the value against the budget. I can offer a smaller useful step, not the same work for half the price. |
 | "Why not do it ourselves?" | Often you can. I'll say which parts, and what review, testing, and training would add. |
 | "We need someone during the day." | Then I may not be the right fit, and I'll help you find the coverage you need. |
 | "Can you guarantee the savings?" | I commit to deliverables and to measuring the result. Estimates are labeled as estimates. |

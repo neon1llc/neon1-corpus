@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -19,7 +19,7 @@ The first call is free and short, about 15 minutes. Its job is to find the main 
 
 ## Bring one real example
 
-The most useful thing you can bring is the last time the problem actually happened. Not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days." Real examples show where the work really waits.
+The most useful thing to bring is the last time the problem happened. Not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days." Real examples show where the work waits.
 
 ## Five questions to think about
 

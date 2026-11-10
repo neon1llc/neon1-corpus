@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-09
 created: 2026-11-01
-edition: "1.0"
+edition: "1.1"
 order: 1
 consumers: [knowledge, ai]
 pdf: true
@@ -27,6 +27,19 @@ This is the main writing standard for neon1. It applies to every word neon1 publ
 5. **Use the fewest words that keep the full meaning.** Cut framing, repetition, and filler. Don't cut a detail that explains a cause, a limit, or a consequence.
 6. **Write in the right voice.** "I" where Pradeep is doing the work, "neon1" for the business, and "you" for the reader. Warm through clarity and follow-through, not through reassurance.
 
+## Voice
+
+Write like a technical business owner talking to another one: direct, candid, and specific. The care shows in what gets done for the reader, not in how the writing feels about them.
+
+- **Say it and stop.** State what's true, what it costs, and what happens next. Don't add warmth, reassurance, or enthusiasm on top.
+- **Don't solicit.** No pitch, no urgency, no "let's get started," and no telling readers how they feel or what they deserve.
+- **Argue from evidence.** A number, a named method, or a real example beats an adjective. When the evidence is thin, say that.
+- **Leave the decision with the reader.** Give the options and their tradeoffs. Recommend plainly when it helps, and say why.
+- **Be candid about limits.** Say what neon1 doesn't do, when someone else is a better fit, and what might not work.
+- **Show values as practices.** "Accounts stay in your name" says more than "we value your ownership." Talk about the work and the reader's problem, not about neon1's passion or commitment.
+
+The test: would a capable professional say this sentence across a table to a peer? If it sounds like an advertisement, a greeting card, or a pitch, rewrite it.
+
 ## Patterns to avoid
 
 These are signs of writing that sounds produced rather than meant:
@@ -39,6 +52,10 @@ These are signs of writing that sounds produced rather than meant:
 - Dashes and semicolons in prose. Use a period or a comma instead.
 - Absolutes such as "always," "never," and "every" unless they're literally true.
 - Selling words in place of facts: guaranteed, best-in-class, effortless, game-changing.
+- Soft selling: "happy to help," "I'd love to," "no pressure," "peace of mind," "worry-free," "let's get started," "reach out."
+- Intensifiers that stand in for evidence: really, truly, genuinely, honestly, simply, just, actually, incredibly.
+- Describing neon1's character instead of its practice: passionate, dedicated, committed to, care deeply, here for you.
+- Telling the reader how they feel ("Worried about...?", "Tired of...?") or what they'll feel afterward.
 
 Lists, the passive voice, and formal words aren't errors on their own. Judge them by whether they help the reader.
 

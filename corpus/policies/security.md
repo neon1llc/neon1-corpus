@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-09
 created: 2026-11-08
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/security/"
@@ -33,7 +33,7 @@ Email [security@neon1.tech](mailto:security@neon1.tech). If that bounces, use [h
 
 - I'll acknowledge your report within a few days.
 - I'll keep you updated while I investigate and fix it.
-- Once it's fixed, I'm glad to credit you publicly if you'd like.
+- Once it's fixed, I'll credit you publicly if you want.
 - There's no bug bounty. neon1 is a one-person company, and I can't offer payment.
 
 ## Please don't
