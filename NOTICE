@@ -6,6 +6,11 @@ neon1's public information, written once in Markdown. https://github.com/neon1ll
 Required credit on every copy: "© neon1 LLC (neon1.tech)"
 
 Content (everything in corpus/) is under CC BY-ND 4.0, see LICENSE.
+Blank templates and forms (corpus/templates/ and corpus/forms/) carry this
+additional permission: "You may fill in, adapt, and share completed copies of
+this template for your own work, with or without credit. Please don't
+republish the blank template as your own." Templates that look like legal
+documents are examples, not legal advice.
 Code (tools/ and schema/) is under FSL-1.1-ALv2, see LICENSE-CODE. Each release
 becomes Apache-2.0 two years after it's published.
 Names, logos and brand marks are reserved, see TRADEMARK.md.

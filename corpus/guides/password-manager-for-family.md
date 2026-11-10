@@ -4,9 +4,9 @@ title: "A password manager for your family"
 summary: "How to move a household onto a password manager, step by step, without locking anyone out."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-10
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -19,19 +19,23 @@ A password manager remembers a different strong password for every account, so n
 
 ## Pick one together
 
-Choose a well-known manager with family sharing, apps for every device you use, and an emergency access feature. Many good ones exist, including the ones built into Apple and Google devices. Pick the one everyone in the household will use.
+Choose a well-known manager with family sharing and apps for every device you use. Many good ones exist, including the ones built into Apple and Google devices. Pick the one everyone in the household will use.
+
+Recovery works differently in each one, and in most of them it only works if it was set up before anything went wrong. Before you move important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
 
 ## Before you start
 
 - [ ] Decide who will be the family organizer
 - [ ] Pick a time when everyone has their phone and computer nearby
 - [ ] Have a pen and paper ready for the recovery details
+- [ ] Know which product and plan you're using, and which recovery options it offers on that plan
+- [ ] Make sure each person can get into the email address and phone number their account uses for recovery, on their own
 
 ## Set it up
 
 1. **The organizer creates the family account** and sets a long master password: four or five random words are easy to remember and hard to guess.
 2. **Turn on two-step sign-in** for the password manager itself.
-3. **Write down the recovery key or emergency kit** on paper, and keep it somewhere safe at home, such as with other important papers. This is the one thing to protect most.
+3. **Set up recovery now, the way your product does it** (see [recovery by product](#recovery-by-product)), and write down anything it gives you on paper. Keep it somewhere safe at home, such as with other important papers. This is the one thing to protect most.
 4. **Invite each family member.** Each person gets their own vault and master password. Shared things, like streaming and Wi-Fi, go in a shared vault.
 5. **Install it on every device**, then turn on autofill in the phone's settings.
 
@@ -50,10 +54,30 @@ Do the rest over the following weeks, whenever each account comes up. There's no
 - Keep it to one device at first.
 - Show it, then let them do it, then let them fix a mistake on purpose.
 - Leave a one-page printed guide with the three things they'll do most: open the manager, find a password, and fill it in.
-- Set up emergency access so a trusted family member can help if they get stuck.
+- If your product has a trusted contact or family recovery feature, set it up now so a family member can help if they get stuck.
+
+## Recovery by product
+
+*Reviewed 2026-11-10.* Each product changes its options over time, so follow its own instructions, linked below, rather than this summary. In every case, recovery may be impossible if nothing was set up beforehand. Don't try a recovery just to test it: some steps reset your password or keys, or can't be undone. Instead, check that what you set up is still in place.
+
+### Apple Passwords and iCloud Keychain
+
+Your passwords are tied to your Apple Account, so recovering them means recovering that account. Apple offers a [recovery contact](https://support.apple.com/ht212513), a trusted person who can help you get a code, and an optional [recovery key](https://support.apple.com/109345). If you turn on a recovery key and later can't provide it, Apple says you can be locked out permanently, and Apple can't give it back to you. Don't store the key in the Passwords app itself.
+
+### Google Password Manager
+
+Your passwords are tied to your Google Account. By default you get them back on a new device by signing in with your Google password, so keep your Google recovery phone and email current. If you turned on [on-device encryption](https://support.google.com/accounts/answer/11350823), Google says losing every recovery option (your Google password, an eligible device's screen lock, and every signed-in device) can mean losing the saved passwords.
+
+### Bitwarden
+
+Bitwarden [can't reset or recover a forgotten master password](https://bitwarden.com/help/forgot-master-password/). Recovery only works through something set up in advance, such as a password hint, a device that's still signed in, a login passkey, or emergency access. If none of those work, the vault can't be recovered. [Emergency access](https://bitwarden.com/help/emergency-access/) has to be set up before it's needed, and the person granting it needs a paid plan (Premium, or a paid organization such as Families). The trusted contact can use a free account.
+
+### 1Password
+
+Sign-in uses your account password together with a Secret Key, which is printed on your Emergency Kit. The Secret Key isn't a recovery method: you need it to sign in on a new device. Separately, you can generate a [recovery code](https://support.1password.com/recovery-codes/) on individual and family accounts and keep it safe; it lets you recover your own account with access to your email, and it doesn't exist until you create it. In a family account, the [family organizer can also recover](https://support.1password.com/recovery/) a member's account. After either kind of recovery you get a new Secret Key, so save the new Emergency Kit.
 
 ## If something goes wrong
 
-- **Forgot the master password:** use the recovery key or emergency access you set up. This is why step 3 matters.
+- **Forgot the master password:** follow your product's own recovery steps from [recovery by product](#recovery-by-product), using what you set up in step 3.
 - **Lost a phone:** sign in on another device and remove the lost one from the account.
 - **A site says the password is wrong:** check that you're on the real site, not a look-alike from a link in an email.
