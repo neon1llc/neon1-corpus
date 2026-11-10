@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/privacy-policy.md
 
 # Privacy policy
 
-*Last updated November 10, 2026.*
+*Last updated November 10, 2026.* This update corrects how the policy describes things the portal already does: where the authenticator app key is kept, which emails and texts you can get (there is no daily summary), and how Neo handles questions. It adds no new use of your information.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client portal at neon1.tech/1NEON. This policy explains what information I collect, why, and what you can do about it.
 
