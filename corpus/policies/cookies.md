@@ -4,9 +4,9 @@ title: Cookie and browser storage notice
 summary: "The only cookies and browser storage neon1.tech and 1NEON use, and why."
 type: policy
 status: adopted
-updated: 2026-11-07
+updated: 2026-11-10
 created: 2026-11-06
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 7, 2026.*
+*Last updated November 10, 2026.*
 
 Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
@@ -48,8 +48,23 @@ The portal also saves, on your device only:
 | Saved item | What it's for | How long it lasts |
 |---|---|---|
 | `1neon.last` (local storage) | Whether you were last signed in, so a reload starts on the right background | Until you clear it |
+| `1neon.lastOrg` (local storage) | The organization you last had open, so pages outside one, such as your profile, keep its menu | Until you clear it |
+| `1neon.projects.view` (local storage) | Whether you last looked at projects as a list or a timeline | Until you clear it |
 | `1neon.signin` (session storage) | Your email and the sign-in step in progress, so a reload mid sign-in returns to the code step. The code itself is never saved | 5 minutes, or until the tab closes |
+| `1neon.tour-offered` (session storage) | That the welcome tour was already offered, so it isn't offered again in this tab | Until the tab closes |
 | `neon1.rain` (local storage) | The same rain settings as the website, on the sign-in screen | Until you clear it |
+
+The public demo (neon1.tech/1NEON/demo) and the guided playback (neon1.tech/1NEON/live) run entirely in your browser and send nothing to me. They keep different things:
+
+| Saved item | What it's for | How long it lasts |
+|---|---|---|
+| `1neon-demo` (IndexedDB) | The demo's sample data and any files you add to it, so the demo survives a reload. If your browser blocks this storage, the demo still works but starts fresh each time | Until you reset the demo or clear site data |
+| `1neon.devUser` (local storage) | Which sample person you chose to be in the demo | Until you clear it |
+| `1neon.liveUser` (local storage) | Which sample person the guided playback is showing | Cleared each time the playback loads |
+| `1neon.live` (session storage) | Which section of the guided playback was on screen, so a reload resumes there | Until the tab closes |
+| `1neon.liveSpeed` (local storage) | The playback speed you picked | Until you clear it |
+
+The guided playback never saves its story: each load starts again from the same made-up project.
 
 Your other preferences, such as your theme, are saved with your account.
 
