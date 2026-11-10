@@ -25,7 +25,7 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **Neo** | The chat assistant on neon1.tech. It answers only from neon1's public documents |
 | **CLIP** | Command-Line Interface Plus. AWS CLIP, a pre-release tool, puts account guards and approval checks around the AWS command line. Its own previews show the service, operation, and policy decision and leave argument values out. What AWS prints isn't filtered |
 | **DeployOps** | Cloud automation in development: pipelines for infrastructure and applications on any major cloud |
-| **Ready, Secure, Go** | neon1's free security readiness guide for homes and small businesses |
+| **Ready, Secure, Go** | A security readiness guide for homes and small businesses, in development and not yet available |
 | **N1 Supply LLC** | A separate company for product experiments, with the same owner |
 | **neon1-corpus** | The public repository where every neon1 document is written once |
 | **1 is glad to be of service** | neon1's slogan, from *Bicentennial Man* |
