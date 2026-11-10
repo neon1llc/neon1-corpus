@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -30,7 +30,7 @@ Write one sentence: "When X happens, we currently do Y, and Z goes wrong." If yo
 
 Ask them. A tool the staff avoid won't fix the problem, however much the owner likes it.
 
-## 4. What does it really cost per year?
+## 4. What does it cost per year, all in?
 
 Subscription per user, add-ons, payment fees, setup, training, and the hours someone will spend looking after it. Free trials end, and introductory prices rise.
 
@@ -60,4 +60,4 @@ Pick one thing to measure before you start, such as time spent, errors, or misse
 
 ## A simple decision
 
-If the answers to 1, 5, and 6 are worrying, wait. If they're fine and 2 and 3 are clear, try it on one small piece of work first. The [tool decision form](../forms/tool-decision.md) is the longer version I use with clients.
+If 1, 5, or 6 has a bad answer, wait. If they're fine and 2 and 3 are clear, try it on one small piece of work first. The [tool decision form](../forms/tool-decision.md) is the longer version I use with clients.

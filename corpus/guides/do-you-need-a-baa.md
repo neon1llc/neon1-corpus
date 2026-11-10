@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Health practices and their vendors"
@@ -37,7 +37,7 @@ Common examples: your practice management or electronic health record system, a 
 
 ## Before you sign
 
-- **Is patient information really needed?** Often the work can be done with made-up or de-identified data instead.
+- **Is patient information needed at all?** Often the work can be done with made-up or de-identified data instead.
 - **What's the smallest amount needed?** Ask the vendor to name it.
 - **How fast will they report a problem?** Look for a specific number of days.
 - **Who else will see it?** Subcontractors must agree to the same terms.
