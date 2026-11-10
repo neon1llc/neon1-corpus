@@ -4,9 +4,9 @@ title: Versioning and releases
 summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents (X.Y), when each number goes up, and how tags, changelogs, and package files stay in agreement."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-10
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 audience: "Developers"
 order: 6
 consumers: [knowledge, ai]
@@ -83,8 +83,25 @@ The release date may follow the version in the heading. Sections are **Added**, 
 
 1. Merge everything the release includes into main, with the checks passing.
 2. Update the changelog and every place the version appears, in one commit.
-3. Tag that commit: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then push the tag.
-4. Deploy or publish from the tag, and check that what's live reports the new version.
+3. Merge it to main. The pipeline deploys it, checks that what's live reports the new version, and then tags that commit: `vX.Y.Z`, annotated.
+4. A project without a pipeline tags by hand the same way: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
+
+## How neon1's repositories release
+
+In every neon1 repository, the pipeline makes the tag, not a person. A tag then always means "this exact commit passed its checks and is live", and a release can't be forgotten or tagged on the wrong commit.
+
+| Repository | Where the version is set | When the tag is made |
+|---|---|---|
+| neon1-site | The changelog, the page's version, and the footer | After the deploy, once the live site reports the new version |
+| neon1-1NEON | The changelog and `package.json` | After the deploy, once the portal is verified live |
+| neon1-chat | The changelog and `package.json` | After the deploy, once Neo's health check reports the new commit |
+| neon1-aws-infrastructure | The changelog | Once every stack's plan or apply has passed |
+| neon1-corpus | The changelog | On main, by the release workflow, which also publishes the bundles |
+
+- **A change that people will notice ships in a release.** Add its changelog entry in the same merge: a fix goes under the next patch, new capability under the next minor.
+- **A push with no new version ships under the current one.** Keep that to changes nobody would notice, such as CI, comments, or a dependency bump with no effect.
+- **Checks enforce agreement.** Each repository's checks fail when its version places disagree, and the tag step stops when the changelog names no version.
+- **A tag that exists is never made again or moved.** If a release went wrong, the fix is the next patch.
 
 ## Documents: editions X.Y
 
