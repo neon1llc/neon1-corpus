@@ -68,7 +68,8 @@
           "site",
           "chat",
           "knowledge",
-          "ai"
+          "ai",
+          "portal"
         ]
       },
       "minItems": 1

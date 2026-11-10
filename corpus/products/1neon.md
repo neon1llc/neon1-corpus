@@ -3,7 +3,7 @@ id: product-1neon
 title: 1NEON
 summary: "The neon1 client portal that comes with a client engagement, where each project runs from the first call to handover."
 type: page
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
 origin: neon1-1NEON README.md

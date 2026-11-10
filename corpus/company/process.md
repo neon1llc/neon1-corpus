@@ -3,7 +3,7 @@ id: company-process
 title: How a project runs
 summary: "Listen, propose, decide, build and hand over."
 type: page
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#process"
 status: adopted

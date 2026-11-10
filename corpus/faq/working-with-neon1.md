@@ -3,7 +3,7 @@ id: faq-working-with-neon1
 title: Working with neon1
 summary: "Short answers on where, when, how long, how much, and how data is handled."
 type: faq
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted

@@ -3,7 +3,7 @@ id: company-names
 title: The names
 summary: "Where neon1, its slogan and its products get their names."
 type: page
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted

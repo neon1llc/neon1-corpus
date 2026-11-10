@@ -22,7 +22,7 @@ jobs:
       - name: Export every bundle
         run: |
           mkdir -p assets
-          for t in chat site knowledge ai; do
+          for t in chat site knowledge ai portal; do
             node tools/export.mjs --target "$t"
             cp "dist/$t/bundle.json" "assets/$t.bundle.json"
           done

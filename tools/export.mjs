@@ -24,7 +24,7 @@ const option = (name, fallback) => {
   return i >= 0 && args[i + 1] ? args[i + 1] : fallback
 }
 
-const TARGETS = ["chat", "site", "knowledge", "ai"]
+const TARGETS = ["chat", "site", "knowledge", "ai", "portal"]
 const target = option("--target", "")
 if (!TARGETS.includes(target)) {
   console.error(`Pick a target: --target ${TARGETS.join("|")}`)

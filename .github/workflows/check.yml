@@ -16,4 +16,4 @@ jobs:
       - name: Lint documents
         run: node tools/lint.mjs
       - name: Export every bundle
-        run: for t in chat site knowledge ai; do node tools/export.mjs --target "$t"; done
+        run: for t in chat site knowledge ai portal; do node tools/export.mjs --target "$t"; done

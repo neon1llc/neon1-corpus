@@ -3,7 +3,7 @@ id: company-contact
 title: Contact
 summary: "How to reach neon1, when, and what the first call covers."
 type: page
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
