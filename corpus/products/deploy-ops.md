@@ -10,11 +10,11 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-09
 created: 2026-11-03
-edition: "1.0"
+edition: "1.1"
 ---
 
 # DeployOps
 
 *Private · pre-release*
 
-**Cloud automation, bundled.** Pipelines for infrastructure and applications on AWS, Azure, Google Cloud, or several at once. It sets up CI/CD for one repo or many, works with the IaC you already use, and adds checks, approvals, rollback, monitoring, and alerts where your team will see them.
+**Deploy pipelines for any cloud.** Pipelines for infrastructure and applications on AWS, Azure, Google Cloud, or several at once. It sets up CI/CD for one repo or many, works with the IaC you already use, and adds checks, approvals, rollback, monitoring, and alerts where your team will see them.
