@@ -4,10 +4,10 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## v0.24.1 - 2026-11-10
 
-### Changed
-- Versioning and releases (edition 1.1) says how each neon1 repository releases: the pipeline tags each version once it's live, and a change people will notice ships with a changelog entry.
-
-## v0.24.0 - 2026-11-10
+This release also carries v0.24.0, which was tagged only on a local machine and never published.
 
 ### Added
 - The 1NEON guide (overview, projects, pages, people and account) and a portal bundle for Neo inside the portal.
+
+### Changed
+- Versioning and releases (edition 1.1) says how each neon1 repository releases: the pipeline tags each version once it's live, and a change people will notice ships with a changelog entry.
