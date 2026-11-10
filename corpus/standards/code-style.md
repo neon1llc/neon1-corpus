@@ -4,9 +4,9 @@ title: Code style
 summary: "How neon1 code reads: names, comments, file headers, formatting, and layout, in every language and configuration format."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-10
 created: 2026-11-09
-edition: "1.0"
+edition: "2.0"
 audience: "Developers"
 order: 7
 consumers: [knowledge, ai]
@@ -29,9 +29,10 @@ Code is read far more often than it's written. These conventions make neon1 code
 ## Comments
 
 - **Explain why, not what.** A comment gives the purpose, a constraint, an invariant, or a reason that isn't visible in the code. It doesn't narrate the next line.
-- **Put a short comment before each function, class, and meaningful group of lines**, usually one or two lines, without a closing period on single-line comments.
+- **Comment at every semantic junction**: section boundaries, exported or public functions, classes, and components, non-obvious invariants, security and tenancy rules, and configuration blocks. Usually one or two lines, without a closing period on single-line comments. Between junctions, code that already says plainly what it does needs no comment of its own.
 - **Start with the meaning.** Don't repeat the function's name or open with "This function." For example, `// Invalid records are rejected before anything is written`.
 - **Keep comments true.** A comment that no longer matches the code is a bug. Update or remove it in the same change.
+- **Judge comments by usefulness and truth, not by count.** A review asks whether each comment tells a reader something they need and whether it's still accurate. Adding comments to reach a number, or a test that counts them, doesn't make code clearer.
 - Use each language's native documentation format where tools read it: docstrings in Python, doc comments in Go, JSDoc where a project uses it. Document parameters, results, and errors only when they add something the signature doesn't say.
 
 ## File headers
@@ -45,7 +46,9 @@ Every source file starts with a one-line header saying what it is and what it's 
 // Usage: node tools/export.mjs --target chat|site|knowledge|ai
 ```
 
-The header uses sentence case and a period. A `Usage:` line follows when the file can be run, showing a real invocation without closing punctuation. Full help belongs in `--help`, not the header.
+The header uses sentence case and a period.
+
+The header and junction rules apply to files people write and maintain. See the exceptions below. A `Usage:` line follows when the file can be run, showing a real invocation without closing punctuation. Full help belongs in `--help`, not the header.
 
 ## Layout and whitespace
 
@@ -68,6 +71,15 @@ The header uses sentence case and a period. A `Usage:` line follows when the fil
 - Pin exact versions in lock files, including CI actions pinned to a commit.
 - Each new dependency needs a reason: what it does that would be costly to write and maintain.
 - Check its license for the way it will be used.
+
+## Exceptions
+
+These don't get added headers or comments:
+
+- **Generated files**, such as compiled output, generated clients, and build artifacts. Document the generator and its inputs instead, and regenerate rather than editing by hand.
+- **Vendored code** copied from another project. Leave it as its authors wrote it, and record where it came from and which version in the nearest README or notice file.
+- **Lock files**, such as `package-lock.json` or `go.sum`. Their tools own them.
+- **Formats with their own authoritative description**, such as a JSON Schema with `description` fields, an OpenAPI document, or a migration tracked by its tool. The description fields are where the explanation goes.
 
 ## Formats without comments
 
