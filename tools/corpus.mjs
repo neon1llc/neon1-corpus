@@ -11,7 +11,7 @@ export const corpusDir = join(root, "corpus")
 
 // Export order, so bundles read like the site: who, what, how, proof, products, then the paperwork and fine print.
 // Each folder is also a shelf in the Knowledge Center, with the label and one-line description below
-export const SECTIONS = ["company", "services", "standards", "guides", "faq", "case-studies", "products", "landscape", "templates", "forms", "examples", "policies", "neo"]
+export const SECTIONS = ["company", "services", "standards", "guides", "faq", "case-studies", "products", "landscape", "templates", "forms", "examples", "policies", "neo", "1neon"]
 
 // Shelves fall into two groups in the Knowledge Center: resources a reader can use, and what neon1 is
 export const GROUPS = {
@@ -21,7 +21,7 @@ export const GROUPS = {
 
 export const SHELF_GROUP = {
   guides: "resources", landscape: "resources", templates: "resources", forms: "resources", examples: "resources",
-  company: "about", services: "about", standards: "about", faq: "about", "case-studies": "about", products: "about", policies: "about", neo: "about",
+  company: "about", services: "about", standards: "about", faq: "about", "case-studies": "about", products: "about", policies: "about", neo: "about", "1neon": "about",
 }
 
 export const SHELVES = {
@@ -38,6 +38,7 @@ export const SHELVES = {
   examples: ["Filled-out examples", "Templates and forms filled in for a fictional client."],
   policies: ["Policies", "Privacy, terms, cookies, accessibility, and security reporting."],
   neo: ["Neo", "How Neo, the chat on neon1.tech, behaves."],
+  "1neon": ["1NEON guide", "Every 1NEON page, state, and action, for Neo inside the portal."],
 }
 
 

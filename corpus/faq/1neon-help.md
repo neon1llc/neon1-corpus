@@ -7,7 +7,7 @@ status: adopted
 updated: 2026-11-10
 created: 2026-11-07
 edition: "1.2"
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
 origin: neon1-1NEON apps/web/src/help/faqs.md

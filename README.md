@@ -20,6 +20,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/examples/`](corpus/examples) | Templates and forms filled in for a fictional client |
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
 | [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) and the lines from the Matrix films it may quote (`motifs.md`) |
+| [`corpus/1neon/`](corpus/1neon) | The 1NEON guide: every page, state, ID, and action in the portal, for Neo inside 1NEON (the `portal` bundle) |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
 
@@ -37,7 +38,7 @@ status: adopted       # draft, adopted or retired. Only adopted documents are ex
 updated: 2026-11-09   # when it last changed in substance
 created: 2025-09-07   # when the content was first written, from its real source
 edition: "1.0"       # X.Y, no v: minor for corrections, major when a promise or rule changes
-consumers: [site, chat, knowledge, ai]
+consumers: [site, chat, knowledge, ai]   # also portal: Neo inside 1NEON
 pdf: true             # offered as a PDF download in the knowledge area
 origin: "neon1-site src/app/public/index.html#services"
 ---
@@ -51,7 +52,7 @@ Node 22, no dependencies.
 
 ```
 node tools/lint.mjs                     # front matter, per-type rules, links, and checks for anything that looks private
-node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge or ai
+node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge, ai or portal
 ```
 
 ## Reading the corpus from another repo
