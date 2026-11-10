@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-09
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 origin: "Core 00 glossary, extended with the terms the standards use"
@@ -53,7 +53,7 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **RTO** | Recovery time objective: the longest acceptable time to restore a service |
 | **RPO** | Recovery point objective: how much recent data you can afford to lose |
 | **3-2-1 backup** | Three copies, two kinds of storage, one away from the building |
-| **Restore test** | Actually bringing data back from a backup to prove it works |
+| **Restore test** | Bringing data back from a backup to prove it works |
 | **Incident** | Something that disrupts or threatens normal work |
 
 ## Security and privacy
