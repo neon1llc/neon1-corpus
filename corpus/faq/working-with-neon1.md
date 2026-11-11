@@ -7,16 +7,16 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-07
-edition: "1.2"
+edition: "1.3"
 ---
 
 # Working with neon1
 
 ## Do you come on site?
 
-Yes, within about 30 miles. I also work remotely, or on your own network through a secure connection that I set up for the job and that's removed when it's done.
+Yes, within about 30 miles of Queens, NY. I also work remotely, or on your own network through a secure connection that I set up for the job and that's removed when it's done.
 
 ## When do you work?
 
