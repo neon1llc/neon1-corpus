@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.27.1 - 2026-11-11
+
+### Changed
+- Wording that undersold neon1 now says the same facts plainly: Where I learn from, writing, and documentation say neon1's practice builds on published standards; version control and testing describe one maintainer; customers, where else to get help, and the 1NEON help FAQ describe fit and hours without downplaying the work.
+- Security policy: the bug bounty note is reworded, dated November 11, 2026.
+
 ## v0.27.0 - 2026-11-11
 
 ### Added

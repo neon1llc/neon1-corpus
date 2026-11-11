@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-11
 created: 2026-11-11
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone who wants to go past neon1's documents to where the practice comes from"
@@ -16,7 +16,7 @@ related: [standards-writing, standards-documentation, standards-operating-princi
 
 # Where I learn from
 
-Very little in neon1's documents is original. The methods come from standards bodies, government agencies, and practitioners who published what they learned so others could use it. This page lists the ones I rely on most, so you can read the source instead of my summary of it. Each document in this Knowledge Center also names the sources it uses, where it uses them.
+neon1's methods build on the published work of standards bodies, government agencies, and practitioners who wrote down what they learned so others could use it. This page lists the ones I rely on most, so you can go straight to the source and read further. Each document in this Knowledge Center also names the sources it uses, where it uses them.
 
 Almost all of these are free to read. Where I use only part of one, or do something differently, the document that cites it says so.
 
