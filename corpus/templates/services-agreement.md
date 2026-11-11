@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 featured: true
 edition: "1.0"
-related: [templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-business-associate-agreement]
+related: [templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
 # Services agreement
@@ -64,7 +64,7 @@ The work is accepted when the checks in its proposal pass in front of you. If a 
 ## 6. After handover
 
 1. Defects found within 30 days of acceptance are fixed at no charge. A defect is the work not doing what the proposal says.
-2. Ongoing care is optional and agreed separately.
+2. Ongoing care is optional and agreed separately, in a [care plan](care-plan.md).
 3. Beyond that, the work is provided as described in its proposal, without other warranties.
 
 ## 7. Ownership
