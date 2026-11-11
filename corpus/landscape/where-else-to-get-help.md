@@ -4,9 +4,9 @@ title: Where else to get help
 summary: "The other places a small business or household can get technology help, who each one suits, and when they'd serve you better than neon1."
 type: comparison
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
@@ -16,7 +16,7 @@ related: [company-charter, services]
 
 # Where else to get help
 
-neon1 isn't the right fit for everyone. These are the main alternatives, how they usually charge, and when each would serve you better. Prices change, so check each provider's site.
+Different needs call for different kinds of help. These are the main options, how they usually charge, and when each would serve you better. Prices change, so check each provider's site.
 
 | Option | Best for | Usually charges | Better than neon1 when |
 |---|---|---|---|
@@ -40,7 +40,7 @@ neon1 isn't the right fit for everyone. These are the main alternatives, how the
 
 Owner-run businesses, small practices, and households that want their tools to work together, and want to understand and own the result, with documentation at handover. neon1 works by appointment and takes at most two clients at a time. It isn't the right choice for 24/7 coverage, a large team, formal assurance, or regulated professional judgment.
 
-If you're not sure, ask. If I'm not the right person, I'll try to point you to someone who is.
+If you're not sure, ask. When someone else fits better, I'll point you to them.
 
 ## Sources
 
