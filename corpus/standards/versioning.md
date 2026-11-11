@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 audience: "Developers"
 order: 6
 consumers: [knowledge, ai]
@@ -65,7 +65,7 @@ If a project's numbers have drifted, such as a package file saying `0.42.0` whil
 
 ## When a project shipped before it was tagged
 
-A project that ran from main before its first tag can still show how it got there. Pick the commits on main where a meaningful piece landed and tag them as pre-releases of the first tagged version, in order: `v0.1.0-alpha.1`, `v0.1.0-alpha.2`, and so on. Tag the commits as they are; don't rebase or rewrite main to make the history look tidier. Give each one a short entry under a "Before v0.1.0" heading in the changelog, dated when it shipped, and say when the tags were added. Tags already pushed stay where they are.
+A project that ran from main before its first tag can still show how it got there. Pick the commits on main where a meaningful piece landed and tag them as pre-releases of the first tagged version, in order: `v0.1.0-alpha.1`, `v0.1.0-alpha.2`, and so on. Tag the commits as they are. Don't rebase or rewrite main to make the history look tidier. Give each one a short entry under a "Before v0.1.0" heading in the changelog, dated when it shipped, and say when the tags were added. Tags already pushed stay where they are.
 
 ## Changelogs
 
@@ -122,6 +122,6 @@ A collection of documents, such as neon1-corpus, is itself software and follows 
 
 ## Sources
 
-- [Semantic Versioning 2.0.0](https://semver.org/)
-- [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/)
-- [Git, Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- [Semantic Versioning 2.0.0](https://semver.org/), Tom Preston-Werner: what a major, minor, and patch number each promise.
+- [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/), Olivier Lacan: changelogs written for people, newest first.
+- [Git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging), from Pro Git by Scott Chacon and Ben Straub: annotated tags that mark a release.

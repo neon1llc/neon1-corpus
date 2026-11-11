@@ -4,9 +4,9 @@ title: Code style
 summary: "How neon1 code reads: names, comments, file headers, formatting, and layout, in every language and configuration format."
 type: standard
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 audience: "Developers"
 order: 7
 consumers: [knowledge, ai]
@@ -84,3 +84,10 @@ These don't get added headers or comments:
 ## Formats without comments
 
 Strict JSON and similar formats can't hold comments. Don't invent them. Put the explanation in the nearest file that can hold it, such as the README or the code that reads the file.
+
+## Sources
+
+- [Google style guides](https://google.github.io/styleguide/), Google: naming, comments, and layout conventions for many languages.
+- [PEP 8](https://peps.python.org/pep-0008/), the Python community: the style guide for Python code.
+- [Prettier rationale](https://prettier.io/docs/en/rationale), the Prettier project: why formatting is best left to a tool.
+- [EditorConfig](https://editorconfig.org/), the EditorConfig project: one file that keeps indentation and line endings the same in every editor.

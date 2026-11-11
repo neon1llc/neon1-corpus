@@ -4,11 +4,11 @@ title: Design and accessibility
 summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 11
 origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -59,3 +59,11 @@ Documents use one clear column, real headings, comfortable spacing, and tables o
 ## For your projects
 
 The same standard applies to anything I build for you. If something in scope can't meet it, such as a vendor's checkout page we can't change, I'll tell you and note it in the handover.
+
+## Sources
+
+- [Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22/), W3C: the accessibility standard neon1 designs to, at level AA.
+- [Introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/), W3C Web Accessibility Initiative: who accessibility serves, in plain terms.
+- [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/), Nielsen Norman Group: broad rules for judging an interface.
+- [GOV.UK Design System](https://design-system.service.gov.uk/), UK Government Digital Service: tested patterns for forms, errors, and navigation.
+- [Web Vitals](https://web.dev/articles/vitals), Google: measures of how fast and stable a page feels.

@@ -2,6 +2,19 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.27.0 - 2026-11-11
+
+### Added
+- Where I learn from (`company/sources.md`): the standards bodies, government guides, and practitioners behind neon1's practice, grouped by topic, with what each one is for.
+- Writing (edition 1.2): how to structure a line, a group, a section, and a whole document, with a table for choosing a list, numbered steps, a table, or a paragraph, plus rules for attribution.
+- Documentation (edition 1.1): what every Knowledge Center document carries, the kinds of document, sharing and reuse, and crediting sources.
+- A Sources section, naming the primary standard or guide and what it covers, on every standard and on the backup and password manager guides.
+
+### Changed
+- Sources sections now share one form: the linked name, its publisher, and what it's used for.
+- 1NEON guides and the 1NEON help FAQ: sentences joined by semicolons are split, and the handoff checklist is a list.
+- Security for non-security people: plainer wording about keeping the material current.
+
 ## v0.26.0 - 2026-11-11
 
 ### Added

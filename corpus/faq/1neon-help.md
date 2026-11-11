@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-11
 created: 2026-11-07
-edition: "1.3"
+edition: "1.4"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -64,10 +64,10 @@ Tap the item's title. A panel opens with its status, owner, due date, and detail
 Tick the box beside it. Every item that can be finished has one, and the counts on each tab and section show how many are done. A choice between options counts as one, done once an option is approved, and a measure counts as done when it reaches its target. Status updates and decisions are records, so they don't count. Files you upload aren't counted either; a **File needed** is, and it's checked off when you send the file. [Watch it](https://neon1.tech/1NEON/live?play=handover).
 
 ### How do I delete something?
-Use the trash button on the item, or **Delete** in its panel. Either one asks first. Approved options and decisions can't be deleted, since they're the record of what was agreed; options themselves come from neon1. Files have their own **Delete** for the person who uploaded them and admins.
+Use the trash button on the item, or **Delete** in its panel. Either one asks first. Approved options and decisions can't be deleted, since they're the record of what was agreed. Options themselves come from neon1. Files have their own **Delete** for the person who uploaded them and admins.
 
 ### What does the onion next to a project mean?
-It shows progress. Needs is the center ring and Normalize is the outside one; each ring fills as that layer's work gets done.
+It shows progress. Needs is the center ring and Normalize is the outside one. Each ring fills as that layer's work gets done.
 
 ### What does the board show?
 Every project as a card, in the stage it's in. Columns run left to right from the first call to care after handover. Drag a card to move it, or use its **Move to** menu on a phone. A closed project moves back the same way, or use **Reopen** on its page. [Watch it](https://neon1.tech/1NEON/live?play=build).
@@ -93,7 +93,7 @@ Open the project's **Needs** layer, compare the options, and choose **Approve th
 The person named as the project's decision maker. If nobody is named, an admin of your organization can. Only an admin of your organization can name or change the decision maker, under **People** on the project's overview, after confirming it's them; editors can change everyone else on the project. Each change is recorded with the old and new decision maker, and neon1 can't be named, since it proposes the options. (In neon1's own organization, where neon1 is the client, it can.) [Watch it](https://neon1.tech/1NEON/live?play=decide).
 
 ### Can an approval be changed?
-Not edited. Once approved, neither the decision nor the option it came from can be edited or removed. To change course, a new option is proposed and approved; the earlier decision stays on record, marked as replaced, so the history stays clear.
+Not edited. Once approved, neither the decision nor the option it came from can be edited or removed. To change course, a new option is proposed and approved. The earlier decision stays on record, marked as replaced, so the history stays clear.
 
 ### What do Cost, Quality, and Effort mean?
 They're neon1's assessment of each option, from 1 to 5, where more filled dots is always better. **Cost** is the total cost. **Quality** is how fully it meets the requirements you agreed. **Effort** is your team's effort to adopt and run it. Each option also lists one-time and recurring charges apart, with a first-year total when it has both; the written price on the option is what you'd agree to. Figures in the demo and the walkthrough are illustrative. [Watch it](https://neon1.tech/1NEON/live?play=propose).
