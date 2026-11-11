@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-10
-edition: "1.0"
+edition: "1.1"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -79,7 +79,7 @@ Every signed-in page lives under `https://neon1.tech/1NEON/`. In the table, `{or
 | Interactive demo, public | `/1NEON/demo/` |
 | Privacy, terms, cookies | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies` |
 
-The address word for Execute is `execute` and for Normalize is `normalize`; older links that say `execution` or `next` still work.
+The address word for Execute is `execute` and for Normalize is `normalize`. Older links that say `execution` or `next` still work.
 
 ## Spotlight anchors
 

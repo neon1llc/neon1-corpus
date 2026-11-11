@@ -4,9 +4,9 @@ title: "Do you need a business associate agreement?"
 summary: "A plain guide for health practices on when a vendor needs a BAA, and what to check before signing one."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Health practices and their vendors"
@@ -50,5 +50,5 @@ Many projects never touch patient information, and I design them that way when I
 
 ## Sources
 
-- U.S. Department of Health and Human Services, [Business Associates](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html) and its sample business associate agreement provisions
-- 45 CFR 160.103, the definition of a business associate
+- [Business associates](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html), US Department of Health and Human Services: who counts as a business associate, and the sample agreement provisions.
+- [45 CFR 160.103](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103), Electronic Code of Federal Regulations: the legal definition of a business associate.

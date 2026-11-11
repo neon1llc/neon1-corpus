@@ -4,9 +4,9 @@ title: "Backups you can trust"
 summary: "How a small office or household checks that its backups would restore what it needs."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -62,3 +62,9 @@ Write down what happened, especially anything that was confusing or slow.
 - Make sure more than one person knows how to get the data back.
 
 A backup review is one of the smallest projects I take on. The instructions are yours either way.
+
+## Sources
+
+- [Small business guide: backing up your data](https://www.ncsc.gov.uk/collection/small-business-guide), UK National Cyber Security Centre: what to back up, and keeping a copy apart.
+- [Ransomware guide](https://www.cisa.gov/stopransomware/ransomware-guide), US Cybersecurity and Infrastructure Security Agency: why one backup should be offline.
+- [Contingency planning guide, SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final), NIST: testing that a recovery plan works.

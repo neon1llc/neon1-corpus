@@ -4,11 +4,11 @@ title: Reliability and recovery
 summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 13
 origin: "Documents/BUSINESS/neon1/Organization/Core/04-reliability-and-recovery.md"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -92,3 +92,11 @@ Afterward, a short review covers what happened and what changes, focused on cond
 ## What ongoing care covers
 
 Ongoing care with neon1 is scheduled attention to a named workflow within an agreed allowance. It isn't a help desk, round-the-clock security monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows the allowance, we change the scope or the price.
+
+## Sources
+
+- [Service level objectives](https://sre.google/sre-book/service-level-objectives/), Google: targets, error budgets, and what a percentage really allows.
+- [Postmortem culture](https://sre.google/sre-book/postmortem-culture/), Google: reviews that look for causes, not someone to blame.
+- [Reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html), Amazon Web Services: designing cloud systems to recover from failure.
+- [Contingency planning guide, SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final), NIST: recovery objectives and plans that get tested.
+- [Ransomware guide](https://www.cisa.gov/stopransomware/ransomware-guide), US Cybersecurity and Infrastructure Security Agency: offline backups, and what to do first.

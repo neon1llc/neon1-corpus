@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 14
 origin: "Documents/BUSINESS/neon1/Organization/Core/06-ai-quality-and-oversight.md"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -70,3 +70,9 @@ We track task success, corrections, review minutes, cost per successful task, an
 Only scoped statements with their conditions: "In a twenty-case test using made-up records, it completed eighteen without correction," if that's what happened. Never "reliable AI for every business."
 
 Neo, the chat on this site, answers only from neon1's public documents, is run against a set of test questions before each change, and has its directives published in [the corpus](../neo/chat.md).
+
+## Sources
+
+- [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework), NIST: mapping, measuring, and managing the risks of an AI system.
+- [Generative AI profile, NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf), NIST: risks particular to language models, with suggested actions.
+- [Top 10 for LLM applications](https://genai.owasp.org/llm-top-10/), OWASP: the common ways AI features are misused, starting with prompt injection.

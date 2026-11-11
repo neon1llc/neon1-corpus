@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-10
-edition: "1.0"
+edition: "1.1"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -67,7 +67,7 @@ Files asked for show under Needs with **Upload**. Measures take dated readings. 
 
 - **Invite people** (admins): one or more emails, an access level (viewer, editor, or admin), and optional names and titles. Each person gets an email with a link and signs in with a code. Up to 50 at once.
 - Each invitation shows whether its email went out: queued, sent, or failed. **Resend** sends it again (rate limited).
-- Admins change someone's access or title, or **deactivate** them, which signs them out and ends their access; reactivating brings them back.
+- Admins change someone's access or title, or **deactivate** them, which signs them out and ends their access. Reactivating brings them back.
 - Member statuses: **Invited** (hasn't signed in yet), **Joined**, **Deactivated**.
 - neon1's own access shows without a way to change it.
 

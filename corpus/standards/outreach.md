@@ -4,11 +4,11 @@ title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 18
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -59,3 +59,7 @@ Local relationships and referrals, LinkedIn, GitHub, and this website. What I pu
 ## Follow-up
 
 One follow-up after a proposal, then the next move is yours. If you say no, that's the end of it, and you're welcome back anytime.
+
+## Sources
+
+- [Consumer reviews and testimonials rule, questions and answers](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers), US Federal Trade Commission: what makes a review or testimonial fair to use.
