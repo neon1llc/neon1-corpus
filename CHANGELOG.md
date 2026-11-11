@@ -2,7 +2,7 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## v0.29.0 - 2026-11-11
+## v0.30.0 - 2026-11-11
 
 ### Added
 - Mission and promise (`company/mission.md`): neon1's mission in one sentence, the five things every client can count on, what neon1 does, how a project runs, and the signature lines. It reconciles the original mission statement drafts with the charter, neon1.tech, GitHub, and LinkedIn.
