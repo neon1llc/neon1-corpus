@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-09
-edition: "2.1"
+edition: "2.2"
 audience: "Developers"
 order: 8
 consumers: [knowledge, ai]
@@ -48,7 +48,7 @@ Checks run the same way on a laptop and in CI, from one command, such as `make c
 
 ## Review
 
-Every change gets read in full before it merges, as a diff, by its author at minimum. Once a repository deploys to production or holds client data, from its first live release and whatever its version number, its required checks must pass and someone other than the author reviews each change when a second person is available. While neon1 is one person, the [version control standard](version-control.md#how-this-works-today) describes the sole-maintainer exception. A review asks:
+Every change gets read in full before it merges, as a diff, by its author at minimum. Once a repository deploys to production or holds client data, from its first live release and whatever its version number, its required checks must pass and someone other than the author reviews each change when a second person is available. While neon1 has one maintainer, the [version control standard](version-control.md#how-this-works-today) describes the sole-maintainer exception. A review asks:
 
 1. Does it do what it says, and only that?
 2. Is anything unsafe: secrets, permissions, data loss, irreversible actions?

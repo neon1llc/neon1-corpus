@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-11
 created: 2026-11-07
-edition: "1.4"
+edition: "1.5"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -155,7 +155,7 @@ An approval records that your organization agreed to that option as shown: its s
 Not in 1NEON. Invoices and payment happen outside the portal, as your signed agreement sets out.
 
 ### Something urgent is wrong. Who do I tell?
-Email [hello@neon1.tech](mailto:hello@neon1.tech) with what happened and when. neon1 is one person working planned hours, with no 24/7 or emergency response, so for something that can't wait, such as a fraud on your bank account or an outage your business can't run without, contact the provider responsible first. Report a security problem in the portal itself to [security@neon1.tech](mailto:security@neon1.tech).
+Email [hello@neon1.tech](mailto:hello@neon1.tech) with what happened and when. neon1 works planned hours, with no 24/7 or emergency response, so for something that can't wait, such as a fraud on your bank account or an outage your business can't run without, contact the provider responsible first. Report a security problem in the portal itself to [security@neon1.tech](mailto:security@neon1.tech).
 
 ### Can we get a copy of our data?
 Yes. There's no export button, so ask at [hello@neon1.tech](mailto:hello@neon1.tech) and I'll send your organization's data in a common format.

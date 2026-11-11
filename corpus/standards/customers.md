@@ -4,11 +4,11 @@ title: Customers
 summary: "Who neon1 works with, how the work differs from households to enterprises, and when it declines work."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 16
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/02-positioning-and-operating-model.md and Core 01"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
@@ -40,7 +40,7 @@ Startups and technical small businesses that need clearer cloud accounts, deploy
 
 ## Larger organizations and enterprises
 
-As a one-person practice, I fit best on a focused piece of a larger effort, such as a proof of concept, a review, an automation, or training, alongside your own teams. I'll follow your security, procurement, and change processes. I won't take on round-the-clock operations, large migrations that need a team, or formal assurance. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed for those.
+I'm most useful on one focused piece of the effort, such as a proof of concept, a review, an automation, or training, alongside your own teams. I'll follow your security, procurement, and change processes. I won't take on round-the-clock operations, large migrations that need a team, or formal assurance. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed for those.
 
 ## Health care and other regulated work
 
