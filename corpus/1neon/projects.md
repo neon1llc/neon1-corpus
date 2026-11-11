@@ -89,7 +89,9 @@ Options are compared on the Needs tab under Options (`#options`). Each shows its
 - if nobody is named, an **admin of the client organization**;
 - never neon1, which proposed the options, except in neon1's own organization (N1-0001), where neon1 is the client.
 
-Approving asks for optional conditions ("only after 6pm") and records a decision with the approver's name and email, the time, the option's version, and a copy of its terms exactly as shown. If the option changed after the person opened it, the approval is refused and they review it again. An approval records that the organization agreed to that option's scope, cost, and timeline. It works alongside the signed agreement with neon1, which governs paid work.
+Approving asks for optional conditions ("only after 6pm") and records a decision with the approver's name and email, the time, the option's version, and a copy of its terms exactly as shown. If the option changed after the person opened it, the approval is refused and they review it again. An approval records that the organization agreed to that option's scope, cost, and timeline, and it counts the same as signing the proposal. It works under the [services agreement](../templates/services-agreement.md) signed with neon1 before any paid work.
+
+Each option can carry neon1's estimated hours, the costs paid directly to vendors, and the result the client can check, and all three are copied into the decision. **Read the full proposal**, under the options, opens `/1NEON/o/{org}/projects/{KEY}/proposal`: discovery, goals, every shared option with what's in and out, a cost table, what each side will do, and the agreement, in neon1's letterhead look. **Print or save as PDF** prints only the proposal. Once an option is approved, the proposal shows who approved which version and when; before that, it has signature lines.
 
 Only an admin of the client, after confirming it's them, can name or change a project's decision maker, under People on the project's Overview. Editors can change everyone else on the project. neon1 can't be named decision maker, except in its own organization.
 
