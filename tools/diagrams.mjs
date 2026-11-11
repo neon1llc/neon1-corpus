@@ -74,9 +74,12 @@ const CONFIG = {
     noteBkgColor: "#fff8e6",
     noteBorderColor: "#d9b44a",
   },
-  // Text drawn as SVG text, not HTML, so it shows inside an <img> everywhere
+  // Text drawn as SVG text, not HTML in a foreignObject, so it shows inside an <img> and opened on its own in
+  // every browser. Mermaid 11 reads the top-level switch; the flowchart one is kept for older builds
+  htmlLabels: false,
   flowchart: { htmlLabels: false, curve: "basis", padding: 12 },
-  sequence: { useMaxWidth: false, mirrorActors: false },
+  // Messages wrap to the space between lifelines, so a sequence stays narrow enough to read on a phone
+  sequence: { useMaxWidth: false, mirrorActors: false, wrap: true, width: 116, actorMargin: 56, messageMargin: 32, noteMargin: 8 },
   state: { useMaxWidth: false },
 }
 
@@ -92,22 +95,53 @@ function playwright() {
   try { return require("playwright") } catch { return createRequire(import.meta.url)("playwright") }
 }
 
-/** In the page: Mermaid's SVG as well-formed XML that sizes itself as an image, with real width and height
- * from its viewBox and a white ground (an <img> shows nothing for malformed XML or a width of 100%) */
+/** In the page: Mermaid's SVG as a self-contained image. Mermaid styles its drawing with a <style> element and
+ * style attributes, which a strict Content-Security-Policy refuses when the SVG is opened on its own (neon1.tech
+ * sends one), leaving black shapes. So the drawing is laid out in the page, every computed style that matters is
+ * written onto its element as a presentation attribute, and the <style> element and style attributes are removed.
+ * It also gets real width and height from its viewBox (an <img> shows nothing for a width of 100%) and a white
+ * rectangle behind it, since a background style would be refused too */
 function asImage(svg) {
   const holder = document.createElement("div")
   holder.innerHTML = svg
+  document.body.appendChild(holder)
   const el = holder.querySelector("svg")
-  const [, , w, h] = el.getAttribute("viewBox").split(/[\s,]+/).map(Number)
+  const [x, y, w, h] = el.getAttribute("viewBox").split(/[\s,]+/).map(Number)
   el.removeAttribute("style")
   el.setAttribute("width", String(Math.ceil(w)))
   el.setAttribute("height", String(Math.ceil(h)))
-  el.setAttribute("style", "background-color:#ffffff")
+
+  const SHAPE = ["fill", "fill-opacity", "stroke", "stroke-width", "stroke-opacity", "stroke-dasharray", "stroke-linecap", "stroke-linejoin", "opacity"]
+  const TEXT = ["fill", "fill-opacity", "stroke", "stroke-width", "opacity", "font-family", "font-size", "font-weight", "font-style", "text-anchor", "dominant-baseline", "letter-spacing"]
+  const keep = { "stroke-dasharray": "none", "letter-spacing": "normal", opacity: "1", "fill-opacity": "1", "stroke-opacity": "1" }
+  // Computed first, written after, so writing one element's attributes can't change what another computes
+  const writes = []
+  for (const node of el.querySelectorAll("rect, circle, ellipse, path, line, polyline, polygon, text, tspan")) {
+    const cs = getComputedStyle(node)
+    const props = node.tagName === "text" || node.tagName === "tspan" ? TEXT : SHAPE
+    const attrs = {}
+    for (const p of props) {
+      const v = cs.getPropertyValue(p)
+      if (v && v !== keep[p]) attrs[p] = v
+    }
+    if (cs.display === "none") attrs.display = "none"
+    if (cs.visibility === "hidden") attrs.visibility = "hidden"
+    writes.push([node, attrs])
+  }
+  for (const [node, attrs] of writes) for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v)
+  for (const node of el.querySelectorAll("style")) node.remove()
+  for (const node of [el, ...el.querySelectorAll("[style]")]) node.removeAttribute("style")
+
+  const ground = document.createElementNS("http://www.w3.org/2000/svg", "rect")
+  for (const [k, v] of Object.entries({ x, y, width: w, height: h, fill: "#ffffff" })) ground.setAttribute(k, String(v))
+  el.insertBefore(ground, el.firstChild)
+
   // Coordinates to one decimal place: Mermaid writes up to fifteen, which only adds bytes
   const round = (v) => v.replace(/-?\d+\.\d{2,}/g, (n) => String(Math.round(Number(n) * 10) / 10))
   for (const node of el.querySelectorAll("[d], [points], [transform]")) {
     for (const name of ["d", "points", "transform"]) if (node.hasAttribute(name)) node.setAttribute(name, round(node.getAttribute(name)))
   }
+  holder.remove()
   return new XMLSerializer().serializeToString(el) + "\n"
 }
 
@@ -152,7 +186,11 @@ function check() {
   }
   const keys = new Set(all.map((f) => f.key))
   for (const key of Object.keys(drawn)) if (!keys.has(key)) errors.push(`diagrams/${key}.svg: no diagram uses it; run node tools/diagrams.mjs draw`)
-  for (const [key, svg] of Object.entries(drawn)) if (/<script|on\w+=/i.test(svg)) errors.push(`diagrams/${key}.svg: holds script`)
+  for (const [key, svg] of Object.entries(drawn)) {
+    if (/<script|on\w+=/i.test(svg)) errors.push(`diagrams/${key}.svg: holds script`)
+    // Opened on its own under a strict Content-Security-Policy, styles and HTML labels don't draw
+    if (/<style|\sstyle=|<foreignObject/i.test(svg)) errors.push(`diagrams/${key}.svg: uses a style element, style attribute, or HTML label; run node tools/diagrams.mjs draw`)
+  }
   if (errors.length) { console.error(errors.join("\n")); process.exit(1) }
   console.log(`diagrams: ${all.length} drawn`)
 }
