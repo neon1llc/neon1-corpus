@@ -4,11 +4,11 @@ title: Security and data
 summary: How neon1 handles your accounts, access, and information, and the baseline every project starts from.
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 10
 origin: "Documents/BUSINESS/neon1/Organization/Core/05-security-and-data.md"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -86,3 +86,13 @@ Real customer information never appears in a public demo, forum post, or code is
 ## Before you rely on it
 
 Access is right, normal and failure paths behave as agreed, security findings are fixed or knowingly accepted, recovery is believable, recurring charges are understood, and you can run it. We write down who decided and on what evidence. If something important is unknown, we name it and either resolve it or limit the release.
+
+## Sources
+
+- [Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework), NIST: a shared outline of what security covers.
+- [CIS Controls, implementation group 1](https://www.cisecurity.org/controls/implementation-groups/ig1), Center for Internet Security: the safeguards sized for small teams.
+- [Digital identity guidelines, SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html), NIST: passwords, multi-factor sign-in, and recovery.
+- [Application Security Verification Standard](https://owasp.org/www-project-application-security-verification-standard/), OWASP: what to check in a web application.
+- [Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final), NIST: security practices across development.
+- [Threat modeling](https://owasp.org/www-community/Threat_Modeling), OWASP: asking what could go wrong before building.
+- [Privacy Framework](https://www.nist.gov/privacy-framework), NIST: treating personal data as a risk to people.

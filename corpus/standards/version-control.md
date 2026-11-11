@@ -4,9 +4,9 @@ title: Version control
 summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, and which safeguards production and client data require."
 type: standard
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-08
-edition: "2.0"
+edition: "2.1"
 audience: "Developers"
 order: 5
 consumers: [knowledge, ai]
@@ -113,6 +113,6 @@ Every released version has an annotated tag on the commit it was built from, nam
 
 ## Sources
 
-- [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
-- [Pro Git, Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [GitHub, About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
+- [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/): the commit message format.
+- [Pro Git: branches in a nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell), Scott Chacon and Ben Straub: how branches and merges work.
+- [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), GitHub: the rules that guard a main branch.

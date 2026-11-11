@@ -4,9 +4,9 @@ title: "A password manager for your family"
 summary: "How to move a household onto a password manager, step by step, without locking anyone out."
 type: guide
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -81,3 +81,9 @@ Sign-in uses your account password together with a Secret Key, which is printed 
 - **Forgot the master password:** follow your product's own recovery steps from [recovery by product](#recovery-by-product), using what you set up in step 3.
 - **Lost a phone:** sign in on another device and remove the lost one from the account.
 - **A site says the password is wrong:** check that you're on the real site, not a look-alike from a link in an email.
+
+## Sources
+
+- [Digital identity guidelines, SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html), NIST: current advice on passwords and second steps.
+- [Passkeys](https://fidoalliance.org/passkeys/), FIDO Alliance: sign-in without passwords, and why it resists phishing.
+- [Small business guide](https://www.ncsc.gov.uk/collection/small-business-guide), UK National Cyber Security Centre: passwords and two-step sign-in, in plain terms.
