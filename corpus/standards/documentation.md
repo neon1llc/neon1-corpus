@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 audience: "Developers"
 order: 9
 consumers: [knowledge, ai]
@@ -101,7 +101,7 @@ Dates are never moved to look newer or older than they are. A typo fix doesn't c
 
 ### Credit where it's due
 
-Most of the practice described here comes from standards bodies, government guides, and practitioners who published what they learned. Documents name them where they're used and list them under Sources, following the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them in one place.
+The practice described here builds on standards bodies, government guides, and practitioners who published what they learned. Documents name them where they're used and list them under Sources, following the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them in one place.
 
 ## Sources
 

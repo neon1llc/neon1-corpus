@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-08
-edition: "2.1"
+edition: "2.2"
 audience: "Developers"
 order: 5
 consumers: [knowledge, ai]
@@ -100,7 +100,7 @@ Production deployment and risk to clients or their data decide when the safeguar
 
 ### How this works today
 
-neon1 is one person, so the controls are honest about that. On the repositories that deploy to production (the website, the 1NEON portal, the chat, and the AWS infrastructure), main has two rulesets in force:
+neon1 has one maintainer today, and the controls are set up for that. On the repositories that deploy to production (the website, the 1NEON portal, the chat, and the AWS infrastructure), main has two rulesets in force:
 
 - **No force push or deletion**, with no bypass for anyone, including me.
 - **Required checks** must pass before a change lands on main. As the sole maintainer and repository admin, I can bypass this ruleset, and GitHub prints a bypass warning whenever I push to main directly.

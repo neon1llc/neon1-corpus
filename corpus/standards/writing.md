@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-01
-edition: "1.2"
+edition: "1.3"
 order: 1
 consumers: [knowledge, ai]
 pdf: true
@@ -93,7 +93,7 @@ Keep the items in a group grammatically alike, so they all start with a verb or 
 
 ### Attribution
 
-Most of what neon1 practices was worked out first by someone else: standards bodies, government guides, and practitioners who wrote down what they learned. Every document that relies on one says so.
+neon1's practice builds on standards bodies, government guides, and practitioners who wrote down what they learned. Every document that relies on one says so, so readers can follow it to the source.
 
 - A method, rule, or number taken from somewhere names its source, in the text where it's used or in the document's Sources section.
 - Link the primary source, such as the standard itself or the agency's own guide, rather than an article about it. Link the page that says the thing, not a home page, when one exists.
