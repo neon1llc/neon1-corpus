@@ -3,11 +3,46 @@
 // Supported: headings, paragraphs, bullet and numbered lists (nested by indent), task lists (- [ ] and - [x]),
 // tables, block quotes, callouts (> [!note] Title), fenced code, rules, and inline code, links, bold, italics and
 // fill-in blanks (four or more underscores). Raw HTML in a document is escaped, never passed through.
+// A ```mermaid fence becomes its diagram, drawn ahead of time by tools/diagrams.mjs into diagrams/<key>.svg,
+// as an image with its alt text and the source beneath it; without a drawing it stays a code block. Exports
+// copy the drawings their documents use into <bundle>/diagrams/.
+
+import { createHash } from "node:crypto"
 
 
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }
 export const escape = (text) => text.replace(/[&<>]/g, (c) => ESC[c])
 const attr = (text) => text.replace(/[&<>"]/g, (c) => ESC[c])
+
+// --- Diagrams ---
+
+// Drawn diagrams by key (tools/diagrams.mjs loadDiagrams), and the address their files are served from, set
+// once by a tool before rendering. The Knowledge Center serves them at /knowledge/diagrams/<key>.svg
+let DIAGRAMS = {}
+let DIAGRAM_BASE = "/knowledge/diagrams/"
+export const useDiagrams = (map, base = DIAGRAM_BASE) => { DIAGRAMS = map; DIAGRAM_BASE = base }
+
+// A diagram's key: its source's hash, so an edited diagram needs a new drawing
+export const diagramKey = (source) => createHash("sha256").update(source.trim()).digest("hex").slice(0, 12)
+
+// The "%% alt: ..." line that describes a diagram for anyone who can't see it
+export const diagramAlt = (source) => (source.match(/^\s*%%\s*alt:\s*(.+)$/m) || [])[1]?.trim() ?? ""
+
+// The drawing as an image file (its own styles stay inside it, under the page's strict CSP), sized so the
+// page doesn't shift as it loads, with its alt text, a link to open it full size (to zoom on a phone), and
+// the source folded beneath for the text form
+function diagram(source) {
+  const key = diagramKey(source)
+  const svg = DIAGRAMS[key]
+  if (!svg) return null
+  const w = svg.match(/<svg[^>]* width="(\d+)"/)?.[1]
+  const h = svg.match(/<svg[^>]* height="(\d+)"/)?.[1]
+  const size = w && h ? ` width="${w}" height="${h}"` : ""
+  return `<figure class="diagram"><div class="diagram-scroll"><img src="${DIAGRAM_BASE}${key}.svg"${size} alt="${attr(diagramAlt(source))}" loading="lazy" decoding="async"></div>` +
+    `<p class="diagram-open"><a href="${DIAGRAM_BASE}${key}.svg">Open full size</a></p>` +
+    `<details><summary>Diagram source (Mermaid)</summary><pre><code class="language-mermaid">${escape(source)}</code></pre></details></figure>`
+}
+
 
 // Lowercase words joined by hyphens, used for heading ids and section keys
 export const slug = (text) =>
@@ -104,7 +139,8 @@ export function render(markdown) {
       const code = []
       for (i++; i < lines.length && !isFence(lines[i]); i++) code.push(lines[i])
       i++
-      out.push(`<pre><code${lang ? ` class="language-${attr(lang)}"` : ""}>${escape(code.join("\n"))}</code></pre>`)
+      const drawn = lang === "mermaid" ? diagram(code.join("\n")) : null
+      out.push(drawn ?? `<pre><code${lang ? ` class="language-${attr(lang)}"` : ""}>${escape(code.join("\n"))}</code></pre>`)
     } else if (isHeading(line)) {
       const [, hashes, text] = line.trim().match(/^(#+) +(.*?)( +#+)?$/)
       const html = inline(text)
