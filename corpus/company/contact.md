@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2025-09-07
-edition: "1.1"
+edition: "1.2"
 ---
 
 # Contact
@@ -26,7 +26,7 @@ Tell me what's on your mind, or ask for an opinion on how your operations run to
 
 ## What to expect
 
-- **Where:** remote from anywhere, or on site within about 30 miles.
+- **Where:** remote from anywhere, or on site within about 30 miles of Queens, NY.
 - **When:** weekends 8am to 8pm and weekday evenings, Eastern time.
 - **Size:** small jobs of a week or two up to projects of four to six weeks, with at most two clients at a time.
 - **First call:** free and 15 minutes. The main pain points and your options.
