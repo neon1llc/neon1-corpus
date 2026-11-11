@@ -59,7 +59,7 @@
     "created": {
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-      "description": "When the content was first written, from its real source (a file, a commit, or a page), not when it moved into the corpus."
+      "description": "When the content was first published, from its real source (a file, a commit, or a page), not when it moved into the corpus. Shown to readers as Published."
     },
     "consumers": {
       "type": "array",
