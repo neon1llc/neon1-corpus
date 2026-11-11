@@ -149,7 +149,10 @@ An admin of your organization. Admins invite people and change their access. If 
 ## Support, billing, and your data
 
 ### What does approving an option commit us to?
-An approval records that your organization agreed to that option as shown: its scope, cost, and timeline, plus any conditions you added. Both sides can rely on that record. It works alongside your signed agreement with neon1, which governs the paid work.
+An approval records that your organization agreed to that option as shown: its scope, price, hours, and timeline, plus any conditions you added. It counts the same as signing the proposal, and both sides can rely on it. It works under your [services agreement](https://neon1.tech/knowledge/templates/services-agreement/) with neon1, which covers payment, ownership, and confidentiality.
+
+### Can I download the proposal?
+Yes. Under the options, choose **Read the full proposal**. It puts the discovery, the goals, every option with what's in and out, the hours and prices, what each of us will do, and the agreement on one page. **Print or save as PDF** keeps a copy, or lets you sign it on paper. [Watch it](https://neon1.tech/1NEON/live?play=decide).
 
 ### Where are invoices and payments?
 Not in 1NEON. Invoices and payment happen outside the portal, as your signed agreement sets out.

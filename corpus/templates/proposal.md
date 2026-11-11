@@ -1,7 +1,7 @@
 ---
 id: templates-proposal
 title: Proposal
-summary: "The proposal neon1 sends after discovery: your problem, the result, what's in and out, schedule, price, and acceptance."
+summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
 updated: 2026-11-11
@@ -9,15 +9,15 @@ created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.1"
+edition: "1.2"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#3, Projects/Proposals (structure only)"
-related: [examples-proposal, forms-change-request, forms-discovery, templates-decision-review]
+related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
 
 # Proposal
 
 > [!note] How to use this template
-> Fill every blank. A blank left empty is an open question to settle before signing. This is a commercial proposal. It pairs with the agreement named under "Terms" and doesn't replace it.
+> Fill every blank. A blank left empty is an open question to settle before signing. This is a commercial proposal. It works under the [services agreement](services-agreement.md), signed once before any paid work, and doesn't replace it. One way to do the work fills in "Included" and "Not included"; two or three fill in "Options" instead, one block each. Hours are estimated task by task for one experienced person, with no padding.
 
 **neon1 proposal for:** ____
 
@@ -55,12 +55,37 @@ ____
 - Emergency or after-hours coverage, unless listed above
 - Third-party subscriptions, hardware, travel, and taxes, which are billed separately and preferably straight to you
 
-## Your part
+## Options
 
-- Access to: ____
-- Safe sample data, or approval to use real data under the agreed safeguards
-- Decisions from: ____ within ____ business days of a question
-- Time from the person who does the work, for testing and training
+Instead of "Included" and "Not included", when there's a real choice. For each option:
+
+### ____ (A, B, C)
+
+____ (what it is, in a sentence)
+
+**Includes:** ____
+
+**Not included:** ____
+
+**Depends on:** ____
+
+**Target result:** ____
+
+**neon1's time:** about ____ hours **Timeline:** ____ **Paid directly by you:** ____
+
+**Which to choose:** one line per option on when it's the right one.
+
+## What each of us will do
+
+| You will | I will |
+|---|---|
+| Decide through ____, and answer questions within ____ business days | Say when I'm working and what I'll do, and answer within one business day |
+| Give access to ____, in your own accounts | Use only that access, keep it confidential, and remove it at handover |
+| Provide safe sample data, or approve real data under the agreed safeguards | Keep what you send in this project only, and use it only for this work |
+| Make time for testing and training: ____ | Test against the acceptance checks, show you the result, and train your team |
+| Pay outside costs directly, in your name | Leave a runbook and every login in your name |
+
+If something outside either of our control holds the work up, I'll pause the timeline, tell you the same day, and give you a new date.
 
 ## Schedule
 
@@ -104,7 +129,7 @@ The work is accepted when these checks pass in front of you:
 
 ## Terms
 
-**Governing agreement:** ____ (version ____)
+**Governing agreement:** [services agreement](services-agreement.md) signed ____ (edition ____)
 
 **Other agreements needed:**
 
@@ -112,7 +137,15 @@ The work is accepted when these checks pass in front of you:
 - [ ] Data processing terms
 - [ ] None
 
+## Comments and agreement
+
+- This proposal is valid until the date at the top.
+- Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
+- For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.
+
 ## Acceptance of this proposal
+
+**Option chosen:** ____
 
 **For the client:** ____ **Title:** ____ **Date:** ____
 

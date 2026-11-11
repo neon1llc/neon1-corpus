@@ -2,6 +2,16 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.29.0 - 2026-11-11
+
+### Added
+- Services agreement (`templates/services-agreement.md`): the short agreement a client and neon1 sign once before any paid work. It says how a proposal becomes agreed work (signing it, or approving an option in 1NEON), and covers what each side will do, payment, changes, acceptance, ownership, confidentiality, limits, and ending. It cites the federal and New York electronic signature laws.
+- Proposal with options, filled in (`examples/proposal-options.md`): the walkthrough bakery's proposal, with three options, what each includes and leaves out, hours estimated task by task (about 3, 10, and 17), what each side will do, acceptance checks, and the agreement.
+
+### Changed
+- The proposal template (edition 1.2) has an Options section, a "What each of us will do" table in place of "Your part", and a Comments and agreement section, and it names the services agreement as the governing agreement. The filled-in physical therapy proposal (edition 1.2) follows it.
+- 1NEON's guide and FAQ describe the full proposal page, the hours and outside costs on options, and that approving an option counts the same as signing the proposal. Working with neon1 explains the one-time agreement and the proposal that follows.
+
 ## v0.28.1 - 2026-11-11
 
 ### Fixed

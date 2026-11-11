@@ -6,12 +6,12 @@ type: example
 status: adopted
 updated: 2026-11-11
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
 fictional: true
-related: [templates-proposal]
+related: [templates-proposal, examples-proposal-options, templates-services-agreement]
 ---
 
 # Proposal, filled in
@@ -50,12 +50,15 @@ Every new patient request lands once, in one queue, and reaches the practice man
 - Emergency or after-hours coverage
 - Third-party subscriptions, which you pay the vendors for directly
 
-## Your part
+## What each of us will do
 
-- Admin access for the project, removed at handover: practice management system, business email, website
-- Approval to use a few real requests during go-live checks, under the signed business associate agreement
-- Decisions from: Dana within two business days of a question
-- An hour of Sam's time for testing and 45 minutes for training
+| You will | I will |
+|---|---|
+| Decide through Dana, within two business days of a question | Say when I'm working and what I'll do, and answer within one business day |
+| Give admin access to the practice management system, business email, and website | Use only that access, and remove it at handover |
+| Approve using a few real requests during go-live checks, under the signed business associate agreement | Test with made-up patients first, and handle real requests only as that agreement allows |
+| Give an hour of Sam's time for testing and 45 minutes for training | Show you every acceptance check passing, and train the front desk |
+| Pay the practice management vendor directly | Leave the guide, the handover record, and every login in the practice's name |
 
 ## Schedule
 
@@ -97,13 +100,18 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 ## Terms
 
-**Governing agreement:** the services agreement named in the real proposal
+**Governing agreement:** the [services agreement](../templates/services-agreement.md) signed March 2
 
 **Other agreements needed:**
 
 - [x] Business associate agreement (health information)
 - [ ] Data processing terms
 - [ ] None
+
+## Comments and agreement
+
+- This proposal is valid until April 14.
+- Signing below means we both agree to the work, price, and schedule above, and to what each of us will do.
 
 ## Acceptance of this proposal
 
