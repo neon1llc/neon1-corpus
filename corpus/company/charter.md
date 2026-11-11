@@ -4,11 +4,11 @@ title: Charter
 summary: What neon1 is for, who it serves first, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-05
 consumers: [site, knowledge, ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
 related: [standards-operating-principles, company-about, company-names, services]
 ---
@@ -68,7 +68,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), which is public, and [Ready, Secure, Go](../products/ready-secure-go.md) and [DeployOps](../products/deploy-ops.md), which are in development. None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), which are public and in development. None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 
