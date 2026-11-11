@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.29.1 - 2026-11-11
+
+### Changed
+- Links say what they point to, and point to the exact page a sentence relies on. WCAG 2.2 is named in full and "level AA" links to W3C's explanation of its conformance levels, in measurement, design and accessibility, and the accessibility policy (a link only; its wording is unchanged). Measurement links DORA's four key measures and Core Web Vitals, and names the NIST handbook section it uses. Reliability, security, technology decisions, outreach, and where else to get help spell out the guides they cite (NIST's contingency planning guide, the OWASP Application Security Verification Standard, the FinOps Framework, the FTC's guidance on reviews and testimonials, SCORE's free mentoring, and the New York Public Library).
+
 ## v0.29.0 - 2026-11-11
 
 ### Added
