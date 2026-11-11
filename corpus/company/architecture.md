@@ -21,61 +21,16 @@ neon1 runs on a small set of AWS services, sized to cost a few dollars a month w
 One CloudFront distribution serves neon1.tech. It sends each address to the part of the system that owns it: the website, the 1NEON portal and its API, or Neo's API. Storage stays private, and only CloudFront can read the buckets. Every visit uses HTTPS, with strict security headers.
 
 ```mermaid
-%% alt: Architecture diagram. Visitors reach Route 53 DNS and then one CloudFront distribution in AWS us-east-1, with an ACM certificate, edge functions, and a release store. CloudFront sends the website to a private S3 bucket, the 1NEON app to a second private bucket, the 1NEON API to API Gateway and Lambda, which use DynamoDB, an S3 documents bucket, Cognito, SES, and SMS, and Neo's API to API Gateway and Lambda, which use Amazon Bedrock and DynamoDB. CloudWatch alarms reach Pradeep by email through SNS. Google Workspace handles neon1.tech mail.
-flowchart LR
-  visitor(["Visitor's browser"]):::person
-  subgraph aws["AWS · us-east-1"]
-    direction LR
-    dns["Route 53<br/>neon1.tech DNS, DNSSEC"]:::network
-    subgraph edge["Edge"]
-      cf["CloudFront<br/>neon1.tech · www · mta-sts"]:::network
-      acm["ACM certificate<br/>neon1.tech, *.neon1.tech"]:::security
-      fn["CloudFront Functions<br/>site router · portal router"]:::compute
-      kvs["Key value store<br/>live site release"]:::storage
-    end
-    subgraph site["Website"]
-      s3site[("S3 · site bucket<br/>releases, fonts, media")]:::storage
-    end
-    subgraph portal["1NEON portal"]
-      s3app[("S3 · app bucket")]:::storage
-      apigw["API Gateway<br/>/1NEON/api"]:::network
-      api["Lambda · 1NEON API<br/>and its outbox, every minute"]:::compute
-      ddb[("DynamoDB<br/>projects, people, records")]:::storage
-      docs[("S3 · documents<br/>malware-scanned uploads")]:::storage
-      cognito["Cognito<br/>auth.neon1.tech sign-in"]:::security
-      ses["SES<br/>notify.neon1.tech mail"]:::comms
-      sms["End User Messaging<br/>toll-free texts"]:::comms
-    end
-    subgraph chat["Neo, the chat"]
-      chatgw["API Gateway<br/>/chat/api"]:::network
-      chatfn["Lambda · Neo"]:::compute
-      bedrock["Amazon Bedrock<br/>language model"]:::ai
-      limits[("DynamoDB<br/>rate limits")]:::storage
-    end
-    alarms["CloudWatch alarms<br/>and budgets"]:::ops
-    sns["SNS"]:::ops
-  end
-  gws["Google Workspace<br/>neon1.tech mail"]:::external
-  pradeep(["Pradeep"]):::person
-
-  visitor --> dns --> cf
-  acm -.- cf
-  cf --- fn
-  fn -.->|reads| kvs
-  cf -->|"/ and files"| s3site
-  cf -->|"/1NEON"| s3app
-  cf -->|"/1NEON/api"| apigw --> api
-  api --> ddb
-  api --> docs
-  api --> ses
-  api --> sms
-  visitor -.->|sign in| cognito
-  visitor -.->|"uploads, presigned"| docs
-  cf -->|"/chat/api"| chatgw --> chatfn
-  chatfn --> bedrock
-  chatfn --> limits
-  alarms --> sns -->|email| pradeep
-  gws -.->|mail| pradeep
+%% alt: Overview diagram of AWS us-east-1. A visitor's browser looks up neon1.tech in Route 53 and reaches one CloudFront distribution, secured by an ACM certificate. CloudFront Functions route each request, reading the live site release from a key value store. CloudFront sends each address to its owner: the website's private S3 bucket, the 1NEON portal, or Neo, the chat.
+flowchart TB
+  visitor(["Visitor's browser"]):::person --> dns["Route 53<br/>neon1.tech DNS"]:::network
+  kvs["Key value store<br/>live site release"]:::storage -.->|read by| fn
+  dns --> cf["CloudFront<br/>neon1.tech"]:::network
+  acm["ACM certificate<br/>HTTPS"]:::security -.- cf
+  fn["CloudFront Functions<br/>routers"]:::compute -.- cf
+  cf -->|"/ and files"| site[("Website<br/>S3 site bucket")]:::storage
+  cf -->|"/1NEON"| portal["1NEON portal<br/>app, API, sign-in"]:::compute
+  cf -->|"/chat/api"| neo["Neo, the chat<br/>API, Lambda, Bedrock"]:::ai
 
   classDef person fill:#ffffff,stroke:#16201a,stroke-width:1.5px,color:#16201a
   classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
@@ -95,29 +50,52 @@ The colours follow AWS's own groups: purple for networking, orange for compute, 
 - **Neo.** A small function that answers questions from neon1's public documents, using a language model on Amazon Bedrock. Amazon doesn't keep the questions or answers, or train on them. Per-visitor limits keep it fair and cheap.
 - **Watching it.** Alarms and monthly budgets email Pradeep when something fails or costs more than expected.
 
+### Inside 1NEON
+
+The portal's own pieces, from the browser's two direct paths (sign-in and file uploads) to the API's storage and messages.
+
+```mermaid
+%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly and uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware.
+flowchart TB
+  browser(["Browser"]):::person --> cf["CloudFront"]:::network
+  cf -->|"/1NEON"| app[("S3 app bucket<br/>the 1NEON app")]:::storage
+  cf -->|"/1NEON/api"| gw["API Gateway"]:::network --> api["1NEON API, Lambda<br/>and its outbox"]:::compute
+  browser -.->|sign in| cognito["Cognito<br/>auth.neon1.tech"]:::security
+  browser -.->|"uploads, presigned"| docs[("S3 documents<br/>malware-scanned")]:::storage
+  api --> ddb[("DynamoDB<br/>projects, people")]:::storage
+  api --> docs
+  api --> ses["SES<br/>email"]:::comms
+  api --> sms["End User Messaging<br/>texts"]:::comms
+
+  classDef person fill:#ffffff,stroke:#16201a,stroke-width:1.5px,color:#16201a
+  classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700
+  classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef security fill:#fdecec,stroke:#c83b3b,color:#4d1010
+  classDef comms fill:#fde9f3,stroke:#c2408a,color:#4a1030
+```
+
 ## Visiting neon1.tech
 
 What happens between typing the address and seeing the page. Each deploy uploads the whole site into a new folder, and one small switch, the release store, tells CloudFront which folder is live. So every file in a visit comes from the same release, even while a deploy is running.
 
 ```mermaid
-%% alt: Sequence diagram of a visit. The browser asks Route 53 for neon1.tech and gets CloudFront's address. It requests the page from CloudFront. The site router function reads the live release from the release store and rewrites the address into that release's folder. CloudFront returns a cached copy or fetches it from the private S3 bucket, adding security headers. The browser then loads the page's scripts, styles, fonts, and media the same way, all from the same release, and starts the matrix rain.
+%% alt: Sequence diagram of a visit. The browser opens neon1.tech. It asks Route 53 for the address and gets CloudFront's address. It requests the page from CloudFront. The site router function reads the live release from the release store and rewrites the address into that release's folder. CloudFront returns a cached copy or fetches it from the private S3 bucket, adding security headers. The browser then loads the page's scripts, styles, fonts, and media the same way, all from the same release, and draws the page.
 sequenceDiagram
   autonumber
-  actor V as Visitor
-  participant B as Browser
+  actor B as Browser
   participant R as Route 53
   participant C as CloudFront
   participant F as Site router
   participant K as Release store
   participant S as S3 site bucket
-  V->>B: open neon1.tech
   B->>R: where is neon1.tech?
   R-->>B: CloudFront's address
   B->>C: GET / over HTTPS
   C->>F: route the request
   F->>K: which release is live?
   K-->>F: release id
-  F-->>C: /releases/<id>/index.html
+  F-->>C: that release's page
   alt cached at the edge
     C-->>B: page, with security headers
   else not cached yet
@@ -126,9 +104,9 @@ sequenceDiagram
     C-->>B: page, with security headers
   end
   B->>C: scripts, styles, fonts, media
-  Note over C,S: the same release for every file, so a page and its scripts always match
+  Note over C,S: every file comes from the same release, so a page and its scripts always match
   C-->>B: files
-  B-->>V: the page, and the matrix rain starts
+  Note over B: the page draws
 ```
 
 ## Asking Neo
@@ -141,13 +119,13 @@ sequenceDiagram
   autonumber
   actor V as Visitor
   participant C as CloudFront
-  participant N as Neo · Lambda
+  participant N as Neo Lambda
   participant D as DynamoDB limits
   participant M as Amazon Bedrock
-  V->>C: POST /chat/api with a question
-  C->>N: forward, with a secret header only CloudFront adds
-  N->>N: check the header
-  N->>D: count this visitor's recent questions
+  V->>C: POST a question
+  C->>N: forward, with CloudFront's secret header
+  N->>N: check header
+  N->>D: count recent questions
   alt over the limit
     D-->>N: too many
     N-->>V: a short cooldown, then try again
@@ -164,30 +142,25 @@ sequenceDiagram
 The portal has no passwords. Here is the email-code sign-in, the one the guided walkthrough shows. Passkeys and authenticator apps work the same way, with the code coming from the device.
 
 ```mermaid
-%% alt: Sequence diagram of 1NEON sign-in. The person enters their email in the 1NEON app. The app asks Cognito to start a sign-in. Cognito runs 1NEON's trigger, which writes the branded message, and emails an 8-digit code through SES. The person reads the code in their inbox and enters it. Cognito checks the code and returns tokens. The app calls the 1NEON API through CloudFront with the token, and the API verifies it and returns the person's Home page data from DynamoDB.
+%% alt: Sequence diagram of 1NEON sign-in. The person enters their email in the 1NEON app. The app asks Cognito to start a sign-in. Cognito emails a branded message with an 8-digit code through SES. The person reads the code and enters it. Cognito checks the code and returns tokens. The app calls the 1NEON API through CloudFront with the token, and the API verifies it and returns the person's Home page data from DynamoDB.
 sequenceDiagram
   autonumber
   actor P as Person
   participant A as 1NEON app
   participant G as Cognito
-  participant T as Trigger · Lambda
   participant E as SES
-  participant I as Inbox
   participant X as 1NEON API
   participant D as DynamoDB
   P->>A: email, then Continue
   A->>G: start sign-in
-  G->>T: write the code email
-  T-->>G: the branded message
-  G->>E: send the code
-  E->>I: "Your 1NEON sign-in code"
-  P->>I: read the 8-digit code
+  G->>E: email the code
+  E-->>P: "Your 1NEON sign-in code", 8 digits
   P->>A: paste the code, Enter
   A->>G: answer with the code
   G-->>A: tokens
   A->>X: GET Home, with the token
-  X->>X: verify the token and the organization
-  X->>D: what needs them, what's coming up, what's new
+  X->>X: verify token
+  X->>D: read Home records
   D-->>X: records
   X-->>A: Home
   A-->>P: signed in
@@ -205,7 +178,7 @@ flowchart TD
   checks -->|yes| oidc["Short-lived AWS role<br/>through OpenID Connect"]:::security
   oidc --> shared["Upload shared fonts and media"]:::step
   shared --> release["Upload the whole release<br/>to releases/&lt;id&gt;/"]:::step
-  release --> switch["Switch the release store<br/>every visitor moves at once"]:::network
+  release --> switch["Switch the release store,<br/>so every visitor moves at once"]:::network
   switch --> verify{"Live site serves<br/>the new version?"}:::decision
   verify -->|yes| tag["Tag vX.Y.Z on GitHub"]:::step
   verify -->|no| rollback["make rollback:<br/>back in seconds"]:::stop
@@ -226,18 +199,17 @@ The website, the Knowledge Center, 1NEON's guide, and Neo all read from neon1-co
 
 ```mermaid
 %% alt: Flowchart of the corpus. Markdown documents in neon1-corpus are checked by a linter for front matter, links, and anything private. A tagged release exports a bundle for each reader. The site bundle feeds the case studies and questions on neon1.tech. The knowledge bundle feeds the Knowledge Center and its PDFs. The chat bundle feeds Neo, refreshed weekly. The portal bundle feeds the 1NEON guide used by Neo inside 1NEON.
-flowchart LR
-  md["neon1-corpus<br/>Markdown documents"]:::source --> lint{"Lint: front matter,<br/>links, nothing private"}:::decision
+flowchart TB
+  md["neon1-corpus<br/>Markdown documents"]:::source --> lint["Lint checks<br/>front matter, links,<br/>nothing private"]:::check
   lint --> tag["Tagged release<br/>vX.Y.Z"]:::step
-  tag --> b1["site bundle"]:::bundle --> site["neon1.tech<br/>case studies, questions"]:::reader
-  tag --> b2["knowledge bundle"]:::bundle --> kc["Knowledge Center<br/>pages and PDFs"]:::reader
-  tag --> b3["chat bundle"]:::bundle --> neo["Neo<br/>refreshed weekly"]:::reader
-  tag --> b4["portal bundle"]:::bundle --> guide["1NEON guide<br/>for Neo in the portal"]:::reader
+  tag -->|site bundle| site["neon1.tech<br/>case studies,<br/>questions"]:::reader
+  tag -->|knowledge bundle| kc["Knowledge Center<br/>pages and PDFs"]:::reader
+  tag -->|chat bundle| neo["Neo<br/>refreshed weekly"]:::reader
+  tag -->|portal bundle| guide["1NEON guide<br/>for Neo<br/>in the portal"]:::reader
 
   classDef source fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
-  classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
+  classDef check fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
   classDef step fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
-  classDef bundle fill:#f1f3f5,stroke:#7b8794,color:#1f2933
   classDef reader fill:#fff1e3,stroke:#e07b14,color:#4a2700
 ```
 
@@ -248,7 +220,7 @@ Every project moves through the same four layers, and the work in each one follo
 ```mermaid
 %% alt: State diagram of a 1NEON project. It starts in Needs, where Pradeep listens, proposes options, and the client's decision maker decides. An approved option moves the project to Execute, where the work is built and shown as it lands. Then Observe, where results are measured against what was agreed. Then Normalize, where the work is handed over and becomes part of normal operations. From Normalize, a new need starts the cycle again.
 stateDiagram-v2
-  direction LR
+  direction TB
   [*] --> Needs
   state Needs {
     direction LR
