@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-11
 created: 2026-11-01
-edition: "1.3"
+edition: "1.4"
 order: 1
 consumers: [knowledge, ai]
 pdf: true
@@ -61,7 +61,7 @@ Lists, the passive voice, and formal words aren't errors on their own. Judge the
 
 ## Mechanics
 
-- **neon1** is always lowercase, even at the start of a sentence. The company is **neon1 LLC**.
+- **neon1** is always lowercase, even at the start of a sentence, and it's the name used everywhere. The legal name, **neon1 LLC**, appears only in the copyright line and in legal text: policies, agreements, signature lines, and the [state registration](../company/registration.md).
 - Serial comma: "email, spreadsheets, and POS."
 - Sentence case for titles and headings.
 - Numbers: words for one to nine in prose, numerals for 10 and up, and numerals for measurements, money, versions, and dates in tables.

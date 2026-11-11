@@ -2,6 +2,15 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.28.0 - 2026-11-11
+
+### Added
+- State registration (`company/registration.md`): neon1 LLC's public record with the New York Department of State, including its DOS ID, status, filings, registered agent, assumed name, the next biennial statement, how to search the live record, and how to get official proof. It carries a facts-checked date.
+
+### Changed
+- neon1 is the name used everywhere. The legal name, neon1 LLC, is kept to the copyright line and legal text, as writing (edition 1.4) and design and accessibility now say. The proposal template and example are headed and prepared by neon1. About and the names link to the state registration.
+- The lint allows the state's public file numbers on the registration page.
+
 ## v0.27.1 - 2026-11-11
 
 ### Changed

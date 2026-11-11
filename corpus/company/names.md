@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2025-09-07
-edition: "1.1"
+edition: "1.2"
 ---
 
 # The names
@@ -24,7 +24,7 @@ The slogan nods to Robin Williams' Andrew from *Bicentennial Man*, a machine who
 
 ## The legal names
 
-- **neon1 LLC**, a New York limited liability company, does business as **neon1**.
+- **neon1 LLC**, a New York limited liability company, does business as **neon1**, a registered assumed name (see the [state registration](registration.md)).
 - **N1 Supply LLC** does business as **N1 Supply**. It is an affiliate of neon1 LLC.
 
 ## Product names
