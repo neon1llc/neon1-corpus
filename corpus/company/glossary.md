@@ -4,9 +4,9 @@ title: Glossary
 summary: "The names and technical terms used across neon1's documents, each in a sentence or two."
 type: page
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 origin: "Core 00 glossary, extended with the terms the standards use"
@@ -24,8 +24,8 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **1NEON** | The client workspace and portal, pronounced "onion": layers for purpose, plan, work, files, decisions, care, and exit |
 | **Neo** | The chat assistant on neon1.tech. It answers only from neon1's public documents |
 | **CLIP** | Command-Line Interface Plus. AWS CLIP, a pre-release tool, puts account guards and approval checks around the AWS command line. Its own previews show the service, operation, and policy decision and leave argument values out. What AWS prints isn't filtered |
-| **DeployOps** | Cloud automation in development: pipelines for infrastructure and applications on any major cloud |
-| **Ready, Secure, Go** | A security readiness guide for homes and small businesses, in development and not yet available |
+| **DeployOps** | Cloud automation, public and in development: pipelines for infrastructure and applications on any major cloud |
+| **Ready, Secure, Go** | A security readiness guide for homes and small businesses, public and in development |
 | **N1 Supply LLC** | A separate company for product experiments, with the same owner |
 | **neon1-corpus** | The public repository where every neon1 document is written once |
 | **1 is glad to be of service** | neon1's slogan, from *Bicentennial Man* |
