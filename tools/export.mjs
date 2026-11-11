@@ -14,7 +14,8 @@ import { writeFileSync, mkdirSync, rmSync } from "node:fs"
 import { join, resolve, relative } from "node:path"
 import { createHash } from "node:crypto"
 import { root, load, SECTIONS, SHELVES, GROUPS, SHELF_GROUP } from "./corpus.mjs"
-import { render as toHtml, sections, inline } from "./markdown.mjs"
+import { render as toHtml, sections, inline, useDiagrams, diagramKey } from "./markdown.mjs"
+import { loadDiagrams } from "./diagrams.mjs"
 
 
 
@@ -80,11 +81,22 @@ function json(doc) {
 }
 
 
+// Mermaid fences render as their committed drawings (tools/diagrams.mjs)
+useDiagrams(loadDiagrams())
+
 // --sections narrows a bundle to some shelves, such as only the standards as context for development work
 const only = option("--sections", "").split(",").filter(Boolean)
 const docs = load().filter((d) => d.data.status === "adopted" && d.data.consumers.includes(target) && (!only.length || only.includes(d.section)))
 rmSync(outDir, { recursive: true, force: true })
 mkdirSync(outDir, { recursive: true })
+
+// The drawings these documents use, beside them, for consumers that serve the HTML (the Knowledge Center)
+const drawn = loadDiagrams()
+const used = new Set(docs.flatMap((d) => [...d.body.matchAll(/^ {0,3}```mermaid\s*\n([\s\S]*?)\n {0,3}```/gm)].map((m) => diagramKey(m[1]))))
+for (const key of used) if (drawn[key]) {
+  mkdirSync(join(outDir, "diagrams"), { recursive: true })
+  writeFileSync(join(outDir, "diagrams", `${key}.svg`), drawn[key])
+}
 
 const files = docs.map((doc, order) => {
   const text = render(doc)

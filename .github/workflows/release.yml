@@ -81,6 +81,9 @@ jobs:
       - name: Lint documents
         if: env.VERSION != ''
         run: node tools/lint.mjs
+      # Every mermaid diagram is drawn, has alt text, and no drawing is left over
+      - name: Check diagrams
+        run: node tools/diagrams.mjs check
 
       - name: Export every bundle
         if: env.VERSION != ''
