@@ -4,9 +4,9 @@ title: "Proposal, filled in"
 summary: "A complete neon1 proposal for a fictional physical therapy practice's intake project."
 type: example
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -19,13 +19,13 @@ related: [templates-proposal]
 > [!example] A fictional example
 > Fernwood Physical Therapy, its staff, and every detail below are invented to show what a finished document looks like. Any resemblance to a real practice is a coincidence. Prices are left out of public examples. A real proposal states them.
 
-**neon1 LLC proposal for:** Fernwood Physical Therapy
+**neon1 proposal for:** Fernwood Physical Therapy
 
 **Proposal number:** FPT-01 **Version:** 1 **Date:** March 14
 
 **Valid until:** April 14
 
-**Prepared by:** Pradeep Tathineni, neon1 LLC **Prepared for:** Dana Reyes, owner
+**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** Dana Reyes, owner
 
 ## Your problem
 

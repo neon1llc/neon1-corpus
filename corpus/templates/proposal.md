@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, what's in and out, schedule, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
+edition: "1.1"
 origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#3, Projects/Proposals (structure only)"
 related: [examples-proposal, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -19,13 +19,13 @@ related: [examples-proposal, forms-change-request, forms-discovery, templates-de
 > [!note] How to use this template
 > Fill every blank. A blank left empty is an open question to settle before signing. This is a commercial proposal. It pairs with the agreement named under "Terms" and doesn't replace it.
 
-**neon1 LLC proposal for:** ____
+**neon1 proposal for:** ____
 
 **Proposal number:** ____ **Version:** ____ **Date:** ____
 
 **Valid until:** ____
 
-**Prepared by:** Pradeep Tathineni, neon1 LLC **Prepared for:** ____
+**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** ____
 
 ## Your problem
 
