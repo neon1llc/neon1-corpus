@@ -7,14 +7,14 @@ consumers: [site, chat, knowledge, ai]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2025-09-07
-edition: "1.1"
+edition: "1.2"
 ---
 
 # About neon1
 
-I'm [Pradeep](https://www.linkedin.com/in/pradeep-tathineni/). I've worked with technology and automation for about 15 years, at home and at work. neon1 is how I do that work for local businesses, teams, and families, so they end up better off with their tech than before.
+I'm [Pradeep](https://www.linkedin.com/in/pradeep-tathineni/). For about 15 years I've kept a strong curiosity and passion for technology and automation, and put them to work at home and on the job. neon1 is how I do that work for local businesses, teams, and families, so they end up better off with their tech than before.
 
 How I work:
 
