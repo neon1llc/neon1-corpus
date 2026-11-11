@@ -10,7 +10,7 @@ consumers: [site, knowledge, ai]
 pdf: true
 edition: "1.2"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
-related: [standards-operating-principles, company-about, company-names, services]
+related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
@@ -19,7 +19,7 @@ neon1 is a one-person technology practice in New York, run by me, Pradeep. The c
 
 ## Mission
 
-Help people and small organizations make their technology work together, improve everyday work, and keep the understanding and control to run what they own.
+Help people and small organizations get their technology working together and working for them, explained honestly and at a human level, so they're left more capable, confident, and in control than before. [Mission and promise](mission.md) puts it on one page.
 
 ## How
 

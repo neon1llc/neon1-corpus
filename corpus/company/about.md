@@ -25,4 +25,4 @@ How I work:
 - Costs are explained before work starts.
 - I plan for failure and test that the work does what we agreed.
 
-neon1 is the name neon1 LLC, a New York company, does business under. See [the names](names.md) for where it comes from, the [state registration](registration.md) for the public record, and [contact](contact.md) to get in touch.
+neon1 is the name neon1 LLC, a New York company, does business under. See the [mission and promise](mission.md) for what it stands for, [the names](names.md) for where it comes from, the [state registration](registration.md) for the public record, and [contact](contact.md) to get in touch.
