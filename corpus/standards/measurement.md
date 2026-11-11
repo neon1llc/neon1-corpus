@@ -4,11 +4,11 @@ title: Measurement
 summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 15
 origin: "Documents/BUSINESS/neon1/Organization/Core/03-measurement-handbook.md (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
@@ -67,3 +67,10 @@ One page when possible: the result you wanted, the period and sample size, the b
 ## Software and website measures
 
 For software I track how often changes ship, how long they take, how often they fail, and how fast service comes back. For websites I check Core Web Vitals and test accessibility against [WCAG 2.2](https://www.w3.org/TR/WCAG22/) AA on the real pages. An automated accessibility score is a starting point, not a certificate.
+
+## Sources
+
+- [e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/), NIST and SEMATECH: honest measurement, including what small samples can show.
+- [Service level objectives](https://sre.google/sre-book/service-level-objectives/), Google: choosing measures and targets for a service.
+- [DORA research](https://dora.dev/), DevOps Research and Assessment: four measures of software delivery.
+- [Web Vitals](https://web.dev/articles/vitals), Google: measures of how fast and stable a page feels.

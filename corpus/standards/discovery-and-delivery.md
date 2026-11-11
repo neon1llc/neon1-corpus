@@ -4,11 +4,11 @@ title: Discovery and delivery
 summary: How a neon1 project moves from your problem to a result you can run, step by step.
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 4
 origin: "Documents/BUSINESS/neon1/Organization/Core/02-discovery-and-delivery.md"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
@@ -74,3 +74,11 @@ Permission to do the work isn't permission to publish it. I ask separately befor
 | Usability testing | Checking the whole task, including recovery | Testing only looks or expert use |
 
 These are tools, not certifications. I use the parts that help and say so when I'm only using some of them.
+
+## Sources
+
+- [Lean lexicon: waste](https://www.lean.org/lexicon-terms/muda-mura-muri/), Lean Enterprise Institute: the kinds of waste behind retyping, waiting, and handoffs.
+- [Lean lexicon: five whys](https://www.lean.org/lexicon-terms/5-whys/), Lean Enterprise Institute: tracing a recurring problem back to its cause.
+- [The Kanban guide](https://kanban.university/kanban-guide/), Kanban University: making work visible and limiting work in progress.
+- [Usability testing 101](https://www.nngroup.com/articles/usability-testing-101/), Nielsen Norman Group: watching people do the real task.
+- [Documenting architecture decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions), Michael Nygard: the short decision record.

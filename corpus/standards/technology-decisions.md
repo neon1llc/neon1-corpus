@@ -4,11 +4,11 @@ title: Technology decisions
 summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 order: 12
 origin: "Documents/BUSINESS/neon1/Organization/Core/07-technology-decisions.md"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -71,3 +71,11 @@ Open source, source available, open core, free tier, and free trial mean differe
 7. Name the owner, update policy, review date, and exit before it goes live.
 
 Lots of stars or a recent commit isn't enough. A mature project can change rarely, and a busy one can be unstable.
+
+## Sources
+
+- [FinOps Framework](https://www.finops.org/framework/), FinOps Foundation: understanding and managing what the cloud costs.
+- [The pillars of the Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html), Amazon Web Services: the tradeoffs a cloud design has to weigh.
+- [Documenting architecture decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions), Michael Nygard: recording why a big choice was made.
+- [Choose a License](https://choosealicense.com/), GitHub: what common open source licenses allow.
+- [SPDX license list](https://spdx.org/licenses/), the Linux Foundation: exact names for every common license.

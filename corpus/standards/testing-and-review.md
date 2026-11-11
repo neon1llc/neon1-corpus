@@ -4,9 +4,9 @@ title: Testing and review
 summary: "What neon1 tests, how changes are checked and reviewed before they ship, and what done means."
 type: standard
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 audience: "Developers"
 order: 8
 consumers: [knowledge, ai]
@@ -75,3 +75,8 @@ Merged isn't done. Deployed but unchecked isn't done either.
 ## Evidence
 
 Report what was actually checked and how. Keep the difference between "passes locally," "passes in CI," "deployed," and "confirmed working by the people who use it." When something wasn't checked, say so.
+
+## Sources
+
+- [Code review guidelines](https://google.github.io/eng-practices/review/), Google: what a reviewer looks for, and how to keep reviews quick.
+- [The practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), Ham Vocke, on Martin Fowler's site: many small fast tests, fewer slow ones.

@@ -4,9 +4,9 @@ title: Development
 summary: "The main development standard for neon1: the principles in priority order, what each word means, how work moves from idea to release, and where the detailed rules live."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 audience: "Developers"
 order: 2
 consumers: [knowledge, ai]
@@ -100,7 +100,7 @@ I use AI tools to review code for bugs, security issues, and missing tests, alon
 
 ## Sources
 
-- [Semantic Versioning 2.0.0](https://semver.org/)
-- [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
-- [The Twelve-Factor App](https://12factor.net/)
-- [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final)
+- [Semantic Versioning 2.0.0](https://semver.org/), Tom Preston-Werner: what a version number promises.
+- [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/): commit messages a person and a tool can both read.
+- [The Twelve-Factor App](https://12factor.net/), Adam Wiggins and contributors at Heroku: settings outside code, and builds that repeat.
+- [Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final), NIST: security practices across development.
