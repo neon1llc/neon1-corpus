@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#why"
 status: adopted
 updated: 2026-11-11
 created: 2025-09-07
-edition: "1.2"
+edition: "1.3"
 ---
 
 # About neon1
@@ -25,4 +25,4 @@ How I work:
 - Costs are explained before work starts.
 - I plan for failure and test that the work does what we agreed.
 
-neon1 is the name neon1 LLC, a New York company, does business under. See [the names](names.md) for where it comes from, and [contact](contact.md) to get in touch.
+neon1 is the name neon1 LLC, a New York company, does business under. See [the names](names.md) for where it comes from, the [state registration](registration.md) for the public record, and [contact](contact.md) to get in touch.

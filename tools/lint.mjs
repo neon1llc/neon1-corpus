@@ -27,6 +27,10 @@ const PRIVATE = [
 ]
 
 
+// Numbers that look private but are public record: New York Department of State file numbers on the state
+// registration page, shown on the state's own public inquiry site
+const PUBLIC_NUMBERS = new Set(["250724003758", "260702004758"])
+const withoutPublic = (text) => text.replace(/\b\d{9,17}\b/g, (n) => (PUBLIC_NUMBERS.has(n) ? "" : n))
 
 const errors = []
 const ids = new Map()
@@ -107,7 +111,7 @@ for (const doc of docs) {
   // Phone links are published on purpose, so they're left out of the number checks
   doc.body.split("\n").forEach((line, i) => {
     const text = line.replace(/\(tel:\+?\d+[^)]*\)/g, "")
-    for (const [re, why] of PRIVATE) if (re.test(text)) err(`line ${i + 1}: ${why}`)
+    for (const [re, why] of PRIVATE) if (re.test(withoutPublic(text))) err(`line ${i + 1}: ${why}`)
   })
 }
 
