@@ -8,7 +8,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 
 | Folder | What it holds |
 |---|---|
-| [`corpus/company/`](corpus/company) | Who neon1 is, the names, how a project runs, how to get in touch |
+| [`corpus/company/`](corpus/company) | Who neon1 is, the names, how a project runs, how it's built (diagrams), how to get in touch |
 | [`corpus/services/`](corpus/services) | The four kinds of help and where to start |
 | [`corpus/faq/`](corpus/faq) | Working with neon1, and help for the 1NEON portal |
 | [`corpus/case-studies/`](corpus/case-studies) | Past projects, each told as Needs, Execute, Observe, Normalize |
@@ -53,6 +53,16 @@ Node 22, no dependencies.
 ```
 node tools/lint.mjs                     # front matter, per-type rules, links, and checks for anything that looks private
 node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge, ai or portal
+node tools/diagrams.mjs check           # every diagram is drawn and has alt text
+```
+
+### Diagrams
+
+A diagram is a ```` ```mermaid ```` block in a document, so GitHub shows it too. Its first line is `%% alt: ...`, describing it for anyone who can't see it. The drawings are committed in [`diagrams/`](diagrams), named by a hash of their source, so exporting stays dependency-free. Exports copy the drawings their documents use into `<bundle>/diagrams/`, and the Knowledge Center shows each one as an image with its source beneath it. After adding or editing a diagram, draw it (this one step needs Playwright and Mermaid):
+
+```
+npm i --prefix tools/.diagram-deps mermaid@11 playwright
+node tools/diagrams.mjs draw            # draws new or changed diagrams and removes unused ones
 ```
 
 ## Reading the corpus from another repo
