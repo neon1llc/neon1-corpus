@@ -35,7 +35,7 @@ Dependencies such as sign-in, email delivery, payments, and your own internet co
 | **RTO** (recovery time objective) | The intended longest time to restore the service after a defined disruption |
 | **RPO** (recovery point objective) | How much recent data you can afford to lose, measured in time |
 
-Definitions follow [Google's SRE guidance](https://sre.google/sre-book/service-level-objectives/) and [NIST SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final).
+Definitions follow [Google's site reliability guidance on service level objectives](https://sre.google/sre-book/service-level-objectives/) and NIST's contingency planning guide, [SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final).
 
 ## What a percentage costs
 

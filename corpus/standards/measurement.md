@@ -57,7 +57,7 @@ Satisfaction scores such as CSAT and NPS have their place. With a handful of cli
 - Counts appear next to percentages. Four out of five is 80%, and one more case changes it a lot.
 - Failed and abandoned cases stay in the data.
 - A survey only happy customers answer overstates satisfaction.
-- Zero failures in 20 representative trials still allows a failure rate near 14% at 95% confidence. A small pilot finds problems. It can't prove near-perfection. (The math follows [NIST's handbook](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).)
+- Zero failures in 20 representative trials still allows a failure rate near 14% at 95% confidence. A small pilot finds problems. It can't prove near-perfection. (The math follows [NIST's handbook section on estimating a proportion from a sample](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).)
 - Seasons, staff changes, and training also move numbers, so before-and-after reports name them. I don't claim cause and effect without a design that could show it.
 
 ## What a report from me looks like
@@ -66,7 +66,7 @@ One page when possible: the result you wanted, the period and sample size, the b
 
 ## Software and website measures
 
-For software I track how often changes ship, how long they take, how often they fail, and how fast service comes back. For websites I check Core Web Vitals and test accessibility against [WCAG 2.2](https://www.w3.org/TR/WCAG22/) AA on the real pages. An automated accessibility score is a starting point, not a certificate.
+For software I track how often changes ship, how long they take, how often they fail, and how fast service comes back: [DORA's four key measures](https://dora.dev/guides/dora-metrics-four-keys/) of software delivery. For websites I check Google's [Core Web Vitals](https://web.dev/articles/vitals) for loading, responsiveness, and visual stability, and test accessibility on the real pages against the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. An automated accessibility score is a starting point, not a certificate.
 
 ## Sources
 

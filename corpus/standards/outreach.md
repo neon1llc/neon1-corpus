@@ -50,7 +50,7 @@ Selling, for neon1, means helping you decide quickly whether I'm the right help,
 
 Every public claim has a record behind it: the wording, what supports it, its scope, the date, permission, and its limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's still unknown. A clear result without a number beats an invented percentage.
 
-Work I did as an employee can show my background, but it isn't presented as neon1's client work. Testimonials reflect the person's real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
+Work I did as an employee can show my background, but it isn't presented as neon1's client work. Testimonials reflect the person's real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance on reviews and testimonials](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
 
 ## Where I show up
 

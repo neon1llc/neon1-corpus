@@ -24,7 +24,7 @@ Every screen and document answers three questions before anything else: what is 
 
 ## Accessible by default
 
-I aim for [WCAG 2.2](https://www.w3.org/TR/WCAG22/) level AA. That means designing and checking for:
+I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. That means designing and checking for:
 
 - Semantic headings and landmarks, so screen readers can jump around.
 - Every control is reachable and usable with a keyboard, with a visible focus ring.

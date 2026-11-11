@@ -35,7 +35,7 @@ First-year cost includes setup, subscriptions, computing, storage, data transfer
 > [!example] Why the license price isn't the price
 > A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better, and the license price is only part of the cost.
 
-I follow the [FinOps](https://www.finops.org/framework/) idea at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
+I follow the [FinOps Framework](https://www.finops.org/framework/), the practice of managing cloud costs, at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
 
 ## Architecture that fits a small business
 

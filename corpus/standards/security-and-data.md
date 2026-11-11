@@ -24,7 +24,7 @@ Security work protects your actual task, your information, and your way back whe
 |---|---|
 | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Spotting missing responsibilities across Govern, Identify, Protect, Detect, Respond, and Recover |
 | [CIS Controls, Implementation Group 1](https://www.cisecurity.org/controls/implementation-groups/ig1) | A prioritized starting point for basic hygiene |
-| [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | Testable requirements for applications, cited by version and number |
+| [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) | Testable requirements for applications, cited by version and number |
 | [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | How software gets built and released safely |
 
 Informed by a framework isn't the same as certified against it. I won't call work "NIST certified," "compliant," or "enterprise grade" because these sources shaped it.
