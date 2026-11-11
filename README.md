@@ -36,7 +36,7 @@ summary: Four kinds of help, from automating a small business to SOC 2 readiness
 type: page            # page, standard, guide, policy, template, form, example, faq, case-study, comparison or directive
 status: adopted       # draft, adopted or retired. Only adopted documents are exported
 updated: 2026-11-09   # when it last changed in substance
-created: 2025-09-07   # when the content was first written, from its real source
+created: 2025-09-07   # when the content was first published, from its real source
 edition: "1.0"       # X.Y, no v: minor for corrections, major when a promise or rule changes
 consumers: [site, chat, knowledge, ai]   # also portal: Neo inside 1NEON
 pdf: true             # offered as a PDF download in the knowledge area

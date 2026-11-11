@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.26.0 - 2026-11-11
+
+### Added
+- How neon1.tech works (`company/how-it-works.md`): a plain walk through every part of the site, from the rain and the white rabbit to the Knowledge Center, the contact form, Neo, 1NEON's demo, sample, and guided walkthroughs, and how a change goes live.
+
+### Changed
+- A document's `created` date is now called its published date, everywhere it's described. Versioning (edition 1.3) says so.
+
 ## v0.25.0 - 2026-11-11
 
 ### Added

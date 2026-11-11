@@ -4,9 +4,9 @@ title: Versioning and releases
 summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents (X.Y), when each number goes up, and how tags, changelogs, and package files stay in agreement."
 type: standard
 status: adopted
-updated: 2026-11-10
+updated: 2026-11-11
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 audience: "Developers"
 order: 6
 consumers: [knowledge, ai]
@@ -116,7 +116,7 @@ Documents, such as the standards, policies, and templates in this Knowledge Cent
 | **Major** (X) | A promise, a rule, a required field, or an obligation changes |
 | **Minor** (Y) | Wording is clarified, a fact is corrected, or something is added without changing a promise |
 
-`1.0` is the first edition published as adopted, after an editing pass for accuracy, plain language, and the conventions of its kind. Below `1.0` is a draft. Each document also records when it was first written and when it was last updated, taken from its real history.
+`1.0` is the first edition published as adopted, after an editing pass for accuracy, plain language, and the conventions of its kind. Below `1.0` is a draft. Each document also records when it was published and when it was last updated, taken from its real history. The published date is when the content first appeared, in whatever form, not when it moved into this collection.
 
 A collection of documents, such as neon1-corpus, is itself software and follows `vX.Y.Z`: a new document is a minor release, and a correction is a patch.
 
