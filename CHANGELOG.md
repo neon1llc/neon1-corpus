@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.28.1 - 2026-11-11
+
+### Fixed
+- Architecture diagrams now render when opened on their own, including in mobile browsers that apply the site's content security policy to an SVG. Every colour and font is written onto each shape instead of a style sheet, text is plain SVG text, and `diagrams.mjs check` refuses a drawing with styles or embedded HTML.
+
+### Changed
+- Architecture diagrams read better on a phone. The overview shows only the request path, and a new Inside 1NEON drawing covers the portal. Sequence messages wrap between lifelines, so the visit, sign-in, and Neo drawings are about a third narrower, with shorter labels. The corpus flowchart names each bundle on its arrow.
+
 ## v0.28.0 - 2026-11-11
 
 ### Added
