@@ -68,7 +68,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), which are public and in development. It also publishes open teaching material: [SOC It 2 Me](../products/soc-it-2-me.md) for SOC 2 readiness, [Phish Out of Water](../products/phish-out-of-water.md) for security awareness sessions, and [Home Is Where the Smart Is](../products/home-is-where-the-smart-is.md) for households. None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), which are public and in development. It also publishes open teaching material: [SOC It 2 Me](../products/soc-it-2-me.md) for SOC 2 readiness, [Phish Out of Water](../products/phish-out-of-water.md) for security awareness sessions, [Home Is Where the Smart Is](../products/home-is-where-the-smart-is.md) for households, and [You Have 20 Seconds To Comply](../products/you-have-20-seconds-to-comply.md) for compliance guides and training. None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 
