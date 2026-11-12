@@ -16,7 +16,7 @@ related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is
 
 # Phish Out of Water
 
-*Public · v0.1.0*
+*Public · v0.1.1*
 
 **An hour on scams and safer accounts, ready to run.** The kit behind neon1's [security awareness sessions](../guides/use-case-security-awareness.md), open on [GitHub](https://github.com/neon1llc/phish-out-of-water) for anyone to teach from: a team, a family, a senior center, or a classroom.
 
