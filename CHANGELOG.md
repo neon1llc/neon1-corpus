@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.35.1 - 2026-11-12
+
+### Changed
+- 1NEON help (edition 1.6) and the 1NEON account guide (edition 1.2) say how someone who has lost every second step gets back in: an email from the account's address, then a call to a phone number already on record and, where there is one, another admin's written OK, before anything is removed.
+
 ## v0.35.0 - 2026-11-12
 
 ### Added
