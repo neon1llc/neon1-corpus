@@ -102,3 +102,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release create "v$VERSION" assets/*.bundle.json --verify-tag --title "v$VERSION" --notes "Bundles for each consumer. Each one holds the manifest and every document's Markdown. See CHANGELOG.md for what changed and the README for the format."
+
+      # neon1.tech builds from the newest release, so it's asked to publish this one now rather than waiting
+      # for its own watch. SITE_DEPLOY_TOKEN is a fine-grained token limited to neon1-site's Actions (read and
+      # write); without it this step only says so, and the site's 15-minute watch picks the release up instead
+      - name: Ask neon1.tech to publish it
+        if: env.VERSION != ''
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "No SITE_DEPLOY_TOKEN; the site's watch will publish v$VERSION"; exit 0; fi
+          gh workflow run deploy.yml --repo neon1llc/neon1-site --ref main
