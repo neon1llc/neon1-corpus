@@ -16,11 +16,13 @@ related: [product-you-have-20-seconds-to-comply, product-phish-out-of-water, gui
 
 # Tax preparers are financial institutions, as far as the FTC is concerned
 
-Once a year, people sit across from you and hand over their whole financial life. Social Security numbers for themselves, their spouse, and their kids. What they earned, what they owe, and the bank account their refund will land in. Most of them never think twice about it, because they trust you. That trust is the business.
+Picture a couple who've had their taxes done at the same small office for years. In February they come in, sign, and e-file, the way they always do. A day later the return bounces: one was already filed under their Social Security number. Somebody got there first, with their names, their income, and a refund sent to an account they've never seen. In its 2025 report to Congress, the National Taxpayer Advocate described identity theft victims waiting an average of more than 21 months for the IRS to sort cases like this out. That's nearly two years of a family waiting on money they were counting on.
 
-It's also why criminals want what's in your files. With one client folder, someone can file a fake return before your client does and take the refund. Your client won't learn about it from the thief. They'll learn about it from the IRS, when their real return gets rejected. In its 2025 report to Congress, the National Taxpayer Advocate described identity theft victims waiting an average of more than 21 months for the IRS to resolve their cases. That's nearly two years of a family waiting on money they were counting on.
+The thief didn't need to break into the IRS. Everything it took to file that return sits in a tax preparer's client folder: Social Security numbers for the whole household, income, prior returns, and the bank account for the refund. People hand all of that over once a year without thinking twice, because they trust the person across the desk. That trust is the business, and it's exactly what criminals go after.
 
-The federal government's answer to that risk reaches into your office, whether you work alone at a kitchen table or run a ten-person firm. The Federal Trade Commission names tax preparation services as a "financial institution" under its Safeguards Rule, and it expects you to protect client information the way that rule lays out. Here's what it asks, in plain words, and what you can get done before tax season starts in late January.
+The timing matters right now. The IRS just reminded taxpayers that its online tool for getting an Identity Protection PIN, the six-digit number that blocks anyone else from filing under a person's Social Security number, goes offline for annual maintenance on Monday, November 16, and doesn't come back until mid-January. The 2027 filing season opens soon after. So the next ten weeks are the window to get an office's own defenses in order before the busiest, most targeted stretch of the year.
+
+Those defenses aren't optional, either. The Federal Trade Commission names tax preparation services as a "financial institution" under its Safeguards Rule, whether you work alone at a kitchen table or run a ten-person firm. Here's what the rule asks, in plain words, and what you can get done before January.
 
 ## Why the rule reaches tax offices
 
@@ -56,6 +58,10 @@ The IRS comes at the same requirement from its side. Each time you apply for or 
 - **Publication 5708** is a sample WISP written for small tax and accounting practices. It's the best place to start.
 - **Publication 4557** is the IRS guide to safeguarding taxpayer data, with checklists for the office.
 
+## One thing to tell your clients this week
+
+Clients who want an IP PIN for the coming season should request one through their IRS online account before Monday, when the tool goes offline. Clients who already have one don't need to do anything: the IRS generates a new number for them each year, and they can see it in their account again from mid-January. A short note from you this week could spare one of them the wait described above. Remind them, too, that the IRS never calls, emails, or texts to ask for an IP PIN, and that they should share it only with you, when you're ready to file.
+
 ## What to get done before January
 
 None of this takes a large budget. It takes a few evenings and some follow-through. If I were sitting in your office, this is the order I'd go in:
@@ -86,6 +92,8 @@ This post explains the rule in general terms. It isn't legal advice, and an atto
 - [16 CFR Part 314, Standards for Safeguarding Customer Information](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314), eCFR: the rule's text. Tax preparation as a financial institution is in [§ 314.2](https://www.ecfr.gov/current/title-16/section-314.2), the elements of the program in [§ 314.4](https://www.ecfr.gov/current/title-16/section-314.4), and the under-5,000 exemption in [§ 314.6](https://www.ecfr.gov/current/title-16/section-314.6).
 - [FTC Safeguards Rule: What Your Business Needs to Know](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), Federal Trade Commission: the FTC's plain-language guide to the rule.
 - [Standards for Safeguarding Customer Information, notification amendment](https://www.federalregister.gov/documents/2023/11/13/2023-24412/standards-for-safeguarding-customer-information), Federal Register: the 30-day FTC notice, effective May 13, 2024.
+- [IRS reminder: Take steps now to protect tax information](https://www.irs.gov/newsroom/irs-reminder-take-steps-now-to-protect-tax-information), IRS (IR-2026-127, October 22, 2026): the IP PIN and the online tool's mid-November to mid-January maintenance window.
+- [Get an Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), IRS: who can get one, the yearly new number, and the system being offline from November 16, 2026, until mid-January 2027.
 - [National Taxpayer Advocate delivers annual report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), IRS (IR-2026-15): identity theft victims waiting an average of more than 21 months.
 - [Form W-12, PTIN Application and Renewal](https://www.irs.gov/pub/irs-pdf/fw12.pdf), IRS: the line where preparers confirm they know a written information security plan is required.
 - [Publication 5708, Creating a Written Information Security Plan for your Tax and Accounting Practice](https://www.irs.gov/pub/irs-pdf/p5708.pdf), IRS and the Security Summit: the sample WISP for small practices.
