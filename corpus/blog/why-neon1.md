@@ -1,7 +1,7 @@
 ---
 id: blog-why-neon1
 title: "Why I started neon1, and what I'll write about here"
-summary: "The reason neon1 exists, who it's for, and the three kinds of posts this blog will carry, a week before Small Business Saturday."
+summary: "The reason neon1 exists, who it's for, and the three kinds of posts this blog will carry."
 type: post
 topic: whats-and-whys
 status: draft
@@ -16,48 +16,23 @@ related: [company-mission, company-names, company-process]
 
 # Why I started neon1, and what I'll write about here
 
-It's the Saturday after Thanksgiving, and a bakery on a busy block has a line out the door. Halfway through the morning, the card reader drops off the Wi-Fi. The owner restarts it, then the router, then the reader again, while the line gets longer and a few people quietly leave. By the time it's working, the best hour of the busiest day of the year is gone. The fix turns out to be a setting on the router that nobody had ever explained.
+I started neon1 because the people who most need good technical help are the least likely to have any.
 
-[Small Business Saturday](https://www.sba.gov/Saturday) is November 28 this year. The SBA counts more than 36.2 million independent businesses in the country, and most of them don't have anyone whose job is technology. The owner is the IT department, on top of everything else. I started neon1 for them.
+A company of a few hundred people has an IT department. A three-person tax office, a dental practice with two chairs, or a bakery on a busy block usually has the owner, who is also the bookkeeper, the HR department, and the person who restarts the router when the card reader drops off the Wi-Fi on a Saturday morning. The SBA [counts more than 36.2 million](https://www.sba.gov/Saturday) independent businesses in the country, and most of them run that way. Small Business Saturday is November 28 this year, which seemed like the right week to say this out loud.
 
-## Why it exists
+I'm Pradeep. For about 15 years I've been the person people call when their technology stops cooperating, at home and at work. What I noticed, over and over, is that the fix was rarely the hard part. The hard part was that nobody had explained the problem in words that made sense. So the same thing broke again, or the owner paid for something much bigger than they needed, because a bigger thing was the only thing anyone offered.
 
-I'm Pradeep. For about 15 years I've been the person people call when their technology stops cooperating, at home and at work. Along the way I noticed that the fix was rarely the hard part. The hard part was that nobody had explained the problem in words that made sense, so the same thing broke again, or the owner paid for something bigger than they needed.
+neon1 is my answer to that. I help small businesses, technical teams, and families get their technology working together and working for them: connected workflows, cloud and AI engineering, networks and devices, and plain-language security training. I'm in Queens, and I work remotely, on site within about 30 miles, or over a secure temporary connection.
 
-neon1 is that work as a business. I help small businesses, technical teams, and families get their technology working together and working for them, and I explain it at a human level so they're more capable afterward than before.
+The way I work follows from the same frustration. Every project runs through [five steps](../company/process.md): listen, propose, decide, build, and hand over. I watch how the work gets done today before I suggest anything. I come back with a few options, from the quickest fix to the fuller build, and you choose. Sometimes the right option is a setting, a cleanup, or leaving something alone. When we're done, you have the documentation and the accounts, and everything stays yours.
 
-## Who it's for
+The name nods to Neo from *The Matrix*, who made peace between people and machines. The slogan, "1 is glad to be of service," nods to Andrew from *Bicentennial Man*. [The 1 is me](../company/names.md), neon1's sole owner and your dedicated deputy.
 
-Most of my work falls into four areas:
+## What you'll find here
 
-- **Business workflows** for small and medium businesses: email, spreadsheets, booking, point of sale, and accounting connected, with the repetitive steps automated.
-- **Cloud and AI engineering** for technical teams: infrastructure as code, deploys that can be rolled back, and assistants that answer from a company's own documents.
-- **Networks, devices, and spaces** for offices and homes: Wi-Fi that reaches the rooms you use, cameras that record when they should, and devices set up and written down.
-- **Security awareness and readiness**: plain-language sessions on phishing, fraud, and passwords, and readiness work before an audit.
+About one post a week, sometimes two, and never filler. Some will answer questions small offices around Queens actually ask, like [what a federal security rule means for a small tax office](tax-preparers-are-financial-institutions.md). Some will explain why I run neon1 the way I do. Some will be notes from building neon1's website, client portal, and training kits in the open, when the work teaches me something worth passing on. Each post links what it relies on, so you can check it yourself.
 
-I'm based in Queens and work remotely, on site within about 30 miles, or over a secure temporary connection.
-
-## How I work
-
-Every project follows the same [five steps](../company/process.md): listen, propose, decide, build, and hand over. I ask you to show me how the work gets done today before I suggest anything. Then I come back with a few options, from the quickest fix to the fuller build, each with its cost and effort, and you choose. Often the right answer is a setting, a cleanup, or leaving something alone, like the bakery's router.
-
-When the work is done, you get the documentation and the accounts. Everything stays yours, with a clean way out at any time.
-
-## Why the name
-
-neon1 nods to Neo from *The Matrix*, who brought peace between people and machines. The slogan, "1 is glad to be of service," nods to Andrew from *Bicentennial Man*, a machine who spends two centuries being of service. [The 1 is me](../company/names.md), neon1's sole owner and your dedicated deputy.
-
-## What this blog is for
-
-I'll post about once a week, sometimes twice. Each post is one of three kinds:
-
-- **Questions from local businesses.** The things small offices around Queens actually ask, like [what a federal security rule means for a small tax office](tax-preparers-are-financial-institutions.md), or whether your IT person needs to sign a HIPAA agreement. Each one links the rule or guide it relies on.
-- **The whats and whys of neon1.** Why I do things the way I do, such as giving every proposal options instead of one price, or publishing how the business works.
-- **Lessons from building in the open.** neon1's website, its client portal, and several training kits are open on GitHub. When building them teaches me something worth passing on, I'll write it up here.
-
-Whenever I can, a post starts from something happening now: a new rule, a deadline, or a warning worth knowing about. Everything here is shared under [the same license](https://creativecommons.org/licenses/by-nd/4.0/) as the rest of neon1's public documents, so you're welcome to pass a post along word for word, with credit.
-
-If something here raises a question for your own office or home, the [first 15-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+Everything here is shared under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/), so pass a post along word for word, with credit, to anyone it might help. That's the whole point.
 
 ## Sources
 
