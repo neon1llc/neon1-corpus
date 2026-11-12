@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-11
-edition: "1.0"
+edition: "1.1"
 ---
 
 # How neon1 is built
@@ -46,16 +46,16 @@ flowchart TB
 The colours follow AWS's own groups: purple for networking, orange for compute, green for storage, red for security, pink for messaging, and teal for machine learning.
 
 - **Website.** Plain HTML, CSS, and JavaScript, with no framework and no tracking. The page loads only its own files, and its security policy blocks everything else.
-- **1NEON.** A single-page app with its own API. Sign-in uses email codes, passkeys, authenticator apps, or Google, through Cognito. Data is kept per organization, and files go straight from the browser to a private documents bucket, where every upload is scanned for malware.
+- **1NEON.** A single-page app with its own API. Sign-in uses email codes, passkeys, authenticator apps, or Google, through Cognito. Data is kept per organization, and files go straight from the browser to a private documents bucket, where every upload is scanned for malware. Invoices are paid on Stripe's own checkout page, so card and bank details never reach neon1.
 - **Neo.** A small function that answers questions from neon1's public documents, using a language model on Amazon Bedrock. Amazon doesn't keep the questions or answers, or train on them. Per-visitor limits keep it fair and cheap.
 - **Watching it.** Alarms and monthly budgets email Pradeep when something fails or costs more than expected.
 
 ### Inside 1NEON
 
-The portal's own pieces, from the browser's two direct paths (sign-in and file uploads) to the API's storage and messages.
+The portal's own pieces, from the browser's direct paths (sign-in, file uploads, and paying on Stripe) to the API's storage, records, and messages.
 
 ```mermaid
-%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly and uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware.
+%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, writes locked copies of signatures, invoices, and payments to an S3 records bucket under Object Lock, reads Stripe keys from SSM Parameter Store, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly, uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware, and pays invoices on Stripe Checkout, which calls the API's webhook at /1NEON/api/billing/stripe.
 flowchart TB
   browser(["Browser"]):::person --> cf["CloudFront"]:::network
   cf -->|"/1NEON"| app[("S3 app bucket<br/>the 1NEON app")]:::storage
@@ -64,6 +64,11 @@ flowchart TB
   browser -.->|"uploads, presigned"| docs[("S3 documents<br/>malware-scanned")]:::storage
   api --> ddb[("DynamoDB<br/>projects, people")]:::storage
   api --> docs
+  api --> records[("S3 records<br/>Object Lock, 7 years")]:::storage
+  api -.->|keys| ssm["SSM Parameter Store<br/>Stripe keys"]:::security
+  browser -.->|pay| stripe["Stripe Checkout"]:::external
+  stripe -.->|"webhook, signed"| cf
+  api -->|"open checkout"| stripe
   api --> ses["SES<br/>email"]:::comms
   api --> sms["End User Messaging<br/>texts"]:::comms
 
@@ -73,6 +78,37 @@ flowchart TB
   classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
   classDef security fill:#fdecec,stroke:#c83b3b,color:#4d1010
   classDef comms fill:#fde9f3,stroke:#c2408a,color:#4a1030
+  classDef external fill:#f1f3f5,stroke:#7b8794,color:#1f2933
+```
+
+Signed approvals, handover acceptances, the service agreement's signatures, issued invoices, and payments live in DynamoDB like everything else, and a copy of each is also written to a records bucket under S3 Object Lock in governance mode, which keeps every copy unchanged for seven years. Nothing in that bucket expires on a schedule. Stripe's restricted key and its webhook signing secret are SecureString parameters under `/1neon/prod/stripe/`. Terraform creates them with placeholder values and never sees the real ones, and until they're set, online payment stays off.
+
+## Paying an invoice
+
+What happens between **Pay** in 1NEON and the invoice showing as paid. Card and bank details go only to Stripe. 1NEON learns about a payment only from Stripe's signed webhook, and it records each payment once, however many times Stripe sends the event.
+
+```mermaid
+%% alt: Sequence diagram of paying an invoice. The client chooses Pay on an issued invoice in the 1NEON app. The app asks the 1NEON API for a checkout. The API reads the restricted Stripe key from SSM Parameter Store, works out what is still owed from DynamoDB, and asks Stripe for a Checkout session for that amount, offering bank transfer first and card. The browser goes to Stripe Checkout, where the client pays. Stripe sends a signed webhook to /1NEON/api/billing/stripe. The API checks the signature with the webhook secret, refuses anything older than five minutes, and records the payment once in DynamoDB, marking the invoice paid when nothing is left. It writes a locked copy to the records bucket and notifies the organization. A bank payment completes days later as its own event, handled the same way.
+sequenceDiagram
+  autonumber
+  participant C as Client's browser
+  participant X as 1NEON API
+  participant P as SSM Parameter Store
+  participant D as DynamoDB
+  participant S as Stripe
+  participant R as S3 records
+  C->>X: Pay invoice INV-0039-01
+  X->>P: read the restricted key
+  X->>D: what's still owed
+  X->>S: open a Checkout session (bank, then card)
+  S-->>C: Stripe's payment page
+  C->>S: pays
+  S->>X: signed webhook, /1NEON/api/billing/stripe
+  X->>X: check signature and age
+  X->>D: record payment once, mark paid if nothing is left
+  X->>R: locked copy
+  X-->>C: bell and email to the organization
+  Note over S,X: A bank (ACH) payment clears days later and arrives as its own signed event
 ```
 
 ## Visiting neon1.tech
