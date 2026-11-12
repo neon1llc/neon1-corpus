@@ -16,6 +16,7 @@ Release together with 1NEON's proposals and billing, so the guide never describe
 - 1NEON guide, pages (edition 1.2), overview (edition 1.2), and account (edition 1.3): the proposal, invoice, and agreement pages, who may do what with each, the proposal, option, and invoice IDs, the new notification group, and where invoices live.
 - 1NEON (edition 1.2) no longer says invoices and payment happen outside the portal.
 - Services agreement template (edition 1.1) points 1NEON clients to the service agreement they sign there.
+- 1NEON help (edition 1.7) matches the portal's FAQ word for word: "Proposals, decisions, and signing" (with proposal revisions and accepting a handover step), a new "Invoices and paying" section, and walkthrough links that include the new paying chapter.
 
 ## v0.36.0 - 2026-11-12
 
