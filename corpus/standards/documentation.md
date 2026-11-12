@@ -11,7 +11,7 @@ audience: "Developers"
 order: 9
 consumers: [knowledge, ai]
 pdf: true
-origin: "Core 09 (knowledge and governance) and neon1's repository conventions"
+origin: "neon1's internal handbook (knowledge and governance) and neon1's repository conventions"
 related: [standards-writing, standards-development, standards-versioning]
 ---
 

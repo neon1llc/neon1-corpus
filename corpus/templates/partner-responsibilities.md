@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#10"
+origin: "neon1's November 2026 planning notes, working templates"
 related: [standards-operating-principles]
 ---
 
