@@ -2,6 +2,16 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.36.0 - 2026-11-12
+
+### Added
+- Services (edition 1.2) lists a typical first project for each service, with how long it usually takes.
+- The short version on the Terms of use (edition 1.2) and the Security disclosure (edition 1.3), matching the Privacy policy. Both are dated corrections that change nothing else.
+- "Answers in seconds, with sources" (edition 1.2) closes its results with the client's words, from Boris M. of Boris M Tax, quoted with permission.
+
+### Changed
+- About neon1 (edition 1.4) sums neon1 up as a technology practice, without "one-person" or the location.
+
 ## v0.35.1 - 2026-11-12
 
 ### Changed
