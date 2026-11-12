@@ -25,4 +25,4 @@ jobs:
           [ -n "$top" ] || { echo "::error::CHANGELOG.md names no version"; exit 1; }
           echo "release v$top"
       - name: Export every bundle
-        run: for t in chat site knowledge ai portal; do node tools/export.mjs --target "$t"; done
+        run: for t in chat site knowledge ai portal blog; do node tools/export.mjs --target "$t"; done

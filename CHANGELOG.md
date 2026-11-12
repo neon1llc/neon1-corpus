@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.34.0 - 2026-11-12
+
+### Added
+- The blog: a `blog/` folder for posts shown on neon1.tech/blog/, a `post` type (with its `topic` and `audience`, ending in Sources), and a `blog` export target, attached to each release as `blog.bundle.json`. Posts go to the `blog` and `ai` bundles.
+- First post: "Tax preparers are financial institutions, as far as the FTC is concerned" (`blog/tax-preparers-are-financial-institutions.md`), what the FTC Safeguards Rule asks of a small tax or accounting office and what to get done before tax season.
+
 ## v0.33.0 - 2026-11-12
 
 ### Added
