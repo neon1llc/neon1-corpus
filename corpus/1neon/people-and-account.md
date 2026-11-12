@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-12
 created: 2026-11-10
-edition: "1.2"
+edition: "1.3"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -54,4 +54,4 @@ Once texts are switched on for the portal, a person adds a mobile number on the 
 
 ## Your data, billing, and urgent problems
 
-Invoices and payments happen outside 1NEON. There's no export button, so ask hello@neon1.tech for a copy of the organization's data. Data is kept as the record of the work unless the organization asks for deletion. neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.
+Invoices and payments are in each project's Execute layer, under Invoices (see the projects guide). There's no export button, so ask hello@neon1.tech for a copy of the organization's data. Data is kept as the record of the work unless the organization asks for deletion. neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.

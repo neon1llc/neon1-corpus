@@ -2,6 +2,21 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+Release together with 1NEON's proposals and billing, so the guide never describes features that aren't live yet.
+
+### Added
+- Service agreement (edition 1.0): the agreement a client organization signs once in 1NEON, word for word as the portal shows it, with its short version.
+- How neon1 is built (edition 1.1) has a "Paying an invoice" diagram, and its 1NEON diagram adds the records bucket under S3 Object Lock, the Stripe keys in Parameter Store, and Stripe Checkout with its signed webhook.
+- Working with neon1 (edition 1.4) answers "How do I pay?".
+
+### Changed
+- 1NEON guide, projects (edition 2.0): proposals issued in numbered revisions (0039-r1) with option IDs (0039-r1-B), price checks, changes of scope, signed approvals and what approving needs, the service agreement, purchases and paying back at cost, signed handover acceptance, invoices and paying, and the new Next step order.
+- 1NEON guide, pages (edition 1.2), overview (edition 1.2), and account (edition 1.3): the proposal, invoice, and agreement pages, who may do what with each, the proposal, option, and invoice IDs, the new notification group, and where invoices live.
+- 1NEON (edition 1.2) no longer says invoices and payment happen outside the portal.
+- Services agreement template (edition 1.1) points 1NEON clients to the service agreement they sign there.
+
 ## v0.36.0 - 2026-11-12
 
 ### Added
