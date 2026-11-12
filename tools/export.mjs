@@ -59,12 +59,15 @@ function lead(d) {
   ].join("\n")
 }
 
-// Each exported file starts with its title and summary so it reads on its own
+// The short version, when a document has one, as a labeled list under the summary
+const shortOf = (d) => (d.short?.length ? `**The short version**\n\n${d.short.map((s) => `- ${s}`).join("\n")}\n\n` : "")
+
+// Each exported file starts with its title, summary, and short version so it reads on its own
 function render(doc) {
-  return `# ${doc.data.title}\n\n${doc.data.summary}\n\n${lead(doc.data)}${bodyOf(doc)}\n`
+  return `# ${doc.data.title}\n\n${doc.data.summary}\n\n${shortOf(doc.data)}${lead(doc.data)}${bodyOf(doc)}\n`
 }
 
-// The same document as data: front matter, body as HTML, and the body split at its H2 headings
+// The same document as data: front matter, the short version and body as HTML, and the body split at its H2 headings
 function json(doc) {
   const body = bodyOf(doc)
   return {
@@ -73,6 +76,7 @@ function json(doc) {
     section: doc.section,
     title: doc.data.title,
     summary: doc.data.summary,
+    ...(doc.data.short?.length ? { shortHtml: doc.data.short.map(inline) } : {}),
     source: `corpus/${doc.path}`,
     data: doc.data,
     html: toHtml(body),

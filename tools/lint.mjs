@@ -82,6 +82,16 @@ for (const doc of docs) {
     if (rule.pattern && typeof d[key] === "string" && !new RegExp(rule.pattern).test(d[key]) && !["id", "updated"].includes(key)) err(`${key} "${d[key]}" doesn't match ${rule.pattern}`)
   }
 
+  // The short version: one to three sentences, 60 words at most, and any #anchor must name one of its own sections
+  if (d.short !== undefined && Array.isArray(d.short)) {
+    if (!d.short.length || d.short.length > 3) err("short holds one to three sentences")
+    if (d.short.some((s) => typeof s !== "string" || !s.trim())) err("short has an empty item")
+    const words = d.short.join(" ").replace(/\]\([^)]*\)/g, "]").split(/\s+/).filter(Boolean).length
+    if (words > 60) err(`short is ${words} words, over 60`)
+    const keys = new Set(sections(doc.body).filter((s) => s.heading).map((s) => s.key))
+    for (const [, hash] of d.short.join(" ").matchAll(/\]\(#([^)\s]+)\)/g)) if (!keys.has(hash)) err(`short links to #${hash}, which isn't a section`)
+  }
+
   for (const field of ["key", "order"]) {
     if (d[field] === undefined) continue
     const tag = `${d.type}:${field}:${d[field]}`

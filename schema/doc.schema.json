@@ -28,6 +28,14 @@
       "type": "string",
       "description": "One sentence anyone can read."
     },
+    "short": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 3,
+      "description": "The short version: one to three sentences, 60 words at most in all, on what the reader should do or know. Shown in a box between a page's facts and its text, and at the top of the Markdown export. Inline links are allowed, including to the document's own sections (#heading-key). Written as a block list, one \"  - item\" line per sentence."
+    },
     "type": {
       "enum": [
         "page",

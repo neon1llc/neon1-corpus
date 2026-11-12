@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.35.0 - 2026-11-12
+
+### Added
+- The short version: an optional `short` front matter list of one to three sentences, 60 words at most, on what the reader should do or know. neon1.tech shows it in a box between a page's facts and its text, and the Markdown export puts it under the summary. Front matter now reads block lists (`key:` then `  - item` lines) for items that hold commas, and `tools/lint.mjs` checks the length and that any `#` link names one of the document's own sections.
+- The Safeguards post (edition 1.3) and "A password manager for your family" (edition 1.3) have their short versions.
+
 ## v0.34.3 - 2026-11-12
 
 ### Changed

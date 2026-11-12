@@ -2,12 +2,16 @@
 id: blog-tax-preparers-are-financial-institutions
 title: "Tax preparers are financial institutions, as far as the FTC is concerned"
 summary: "What the FTC Safeguards Rule asks of a small tax or accounting office, and what to get done before tax season."
+short:
+  - "If you prepare taxes, even alone at a kitchen table, the FTC counts you as a financial institution that needs a written security plan."
+  - "The plan comes down to one person in charge, multi-factor sign-in, encryption, and reporting large breaches within 30 days."
+  - "The IRS IP PIN tool goes offline November 16, so start now. [Jump to the checklist](#what-to-get-done-before-january)."
 type: post
 topic: questions
 status: adopted
 updated: 2026-11-12
 created: 2026-11-12
-edition: "1.2"
+edition: "1.3"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
