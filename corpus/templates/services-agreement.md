@@ -4,19 +4,22 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
-related: [templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
+edition: "1.1"
+related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
 # Services agreement
 
 > [!warning] An example, not legal advice
 > This shows the terms neon1 works under. It's written to be read, not to be clever. Your own counsel should review it before you sign, and the signed copy is the one that counts.
+
+> [!note] Signing in 1NEON
+> Clients who work with me in 1NEON sign the [service agreement](../policies/service-agreement.md) there instead, with the blanks filled in: a deposit on fixed-price work, invoices due within 15 days, and work paused only after 30 days overdue. This blank stays for agreements made outside the portal.
 
 We sign this once, before any paid work. After that, each piece of work is a [proposal](proposal.md): it says what will be done, by when, and for how much. This agreement holds the parts that stay the same from project to project, so a proposal can stay short.
 

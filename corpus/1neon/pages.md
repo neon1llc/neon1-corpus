@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-10
-edition: "1.1"
+edition: "1.2"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -51,11 +51,28 @@ Access levels are cumulative. **Viewers** read, comment, add requests, and appro
 | Edit name, summary, outcome, target date; set health; post a status update; move stage; archive | Editors and admins |
 | Change people on the project (not the decision maker) | Editors and admins |
 | Name or change the decision maker | Admins of the client, after confirming it's them (in N1-0001 also neon1) |
-| Approve an option | The named decision maker; with none named, a client admin |
-| Add, share, or withdraw options | neon1 only |
+| Approve an option, with a typed signature | The named decision maker; with none named, a client admin. Only from an issued revision, within its price check, once the service agreement is signed |
+| Ask neon1 to refresh a revision past its price check | Whoever may approve |
+| Initial a purchase neon1 buys; check and accept a handover step | Whoever may approve |
+| Add, share, or withdraw options; issue the proposal or its next revision | neon1 only |
+| Add a purchase, attach a receipt, mark it bought, installed, or returned | Editors and admins (neon1 marks its own purchases bought only after the decision maker's initials) |
+| Read issued invoices; pay one online | Everyone in the client organization |
+| Draft, issue, void, or credit an invoice; record a check, Zelle, or wire payment | neon1 only |
 | Move to Trash | Admins, after confirming it's them, typing the project's key |
 
-Files asked for show under Needs with **Upload**. Measures take dated readings. Someone else editing the same item shows as a small avatar beside the project's name.
+Files asked for show under Needs with **Upload**. The proposal, purchases, invoices, and paying are described in the projects guide. Measures take dated readings. Someone else editing the same item shows as a small avatar beside the project's name.
+
+## The proposal
+
+`/1NEON/o/{org}/projects/{KEY}/proposal`. The project's proposal on neon1's letterhead: the latest issued revision (such as 0039-r2), or the draft before the first is issued, with earlier revisions marked as replaced. **Print or save as PDF** and **Download Word** keep a copy. Once an option is approved, it shows the signed approval recorded against that revision. Everyone in the organization can read it.
+
+## An invoice
+
+`/1NEON/o/{org}/projects/{KEY}/invoices/{id}`. One invoice on neon1's letterhead, ready to print or save as a PDF: its number, dates, bill to, lines, tax, total, credits, payments, the balance due, the terms, and how to pay. **Back to invoices** returns to the project's Invoices. A draft says "Draft, only neon1 sees it. Issuing numbers it and shows it to the client."
+
+## The service agreement
+
+`/1NEON/o/{org}/agreement` (signed in) and `/1NEON/agreement` (public). neon1's service agreement, its edition, and its **Signatures**: who signed which edition and when. An admin of the client organization reads it and signs it once, with a typed name and the consent box. On success: "Signed. Thank you; a copy is kept with your organization's records."
 
 ## One layer across projects
 
@@ -81,11 +98,11 @@ Files asked for show under Needs with **Upload**. Measures take dated readings. 
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. The stages on the board. Each row: name, layer, "Done when", and an optional limit; **Show** or **Hide**; reorder. **Save workflow** saves all at once (admins, after confirming it's them). A stage that holds projects can't be removed.
+`/1NEON/o/{org}/settings`. Who signed the service agreement and which edition, or "not signed yet", with **Read and sign** (or **Read it** once signed). Then the stages on the board. Each row: name, layer, "Done when", and an optional limit; **Show** or **Hide**; reorder. **Save workflow** saves all at once (admins, after confirming it's them). A stage that holds projects can't be removed.
 
 ## Your profile
 
-`/1NEON/me`. Name, title, phone (only you see it), theme (Awake, Matrix, or Device), menu (Default or Mini), and **Notifications**: for each group (files; people and access; decisions and options; workflow and stages; comments; updates and items; sign-ins) whether it reaches you by email, by text, or neither. Then **Save**. Also here: texts (add a mobile number, agree to texts, confirm the code), **Two-step verification** at `#security` (passkey, authenticator app, text-message codes), **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
+`/1NEON/me`. Name, title, phone (only you see it), theme (Awake, Matrix, or Device), menu (Default or Mini), and **Notifications**: for each group (files; people and access; decisions and options; agreements, invoices, and payments; workflow and stages; comments; updates and items; sign-ins) whether it reaches you by email, by text, or neither. Then **Save**. Also here: texts (add a mobile number, agree to texts, confirm the code), **Two-step verification** at `#security` (passkey, authenticator app, text-message codes), **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
 
 ## All clients
 
@@ -93,4 +110,4 @@ Files asked for show under Needs with **Upload**. Measures take dated readings. 
 
 ## Public pages
 
-The sign-in screen (`/1NEON/`), FAQs, the sample project, the guided walkthrough, the interactive demo, and the policies need no account. Neo on the sign-in screen is the public Neo, which only knows neon1's public pages.
+The sign-in screen (`/1NEON/`), FAQs, the service agreement, the sample project, the guided walkthrough, the interactive demo, and the policies need no account. Neo on the sign-in screen is the public Neo, which only knows neon1's public pages.
