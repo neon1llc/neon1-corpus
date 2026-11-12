@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.34.2 - 2026-11-12
+
+### Changed
+- The Safeguards post (edition 1.2) tells its opening story directly, without "picture."
+
 ## v0.34.1 - 2026-11-12
 
 ### Changed
