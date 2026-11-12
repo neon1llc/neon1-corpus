@@ -11,7 +11,7 @@ audience: "Developers"
 order: 6
 consumers: [knowledge, ai]
 pdf: true
-origin: "neon1's private development guide (versions and releases), Semantic Versioning 2.0.0, and Keep a Changelog 1.1.0"
+origin: "neon1's internal engineering notes (versions and releases), Semantic Versioning 2.0.0, and Keep a Changelog 1.1.0"
 related: [standards-development, standards-version-control, standards-documentation]
 ---
 

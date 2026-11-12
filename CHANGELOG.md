@@ -7,7 +7,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - Writing standard (edition 1.5) reads as my own guide: first person throughout, and "Patterns to avoid" becomes "Habits I edit out," a shorter list grounded in the GOV.UK style guide's words to avoid.
 - Code style (edition 2.2) and version control (edition 2.3) drop two lines aimed at tools rather than people.
-- Every document's `origin` names neon1's internal handbook, planning notes, or research notes in words instead of private folder paths.
+- Every document's `origin` names neon1's internal handbook, engineering notes, planning notes, or research notes in words instead of private folder paths, and `tools/lint.mjs` now fails an origin that names a private folder, handbook chapter number, or private guide.
 
 ## v0.34.2 - 2026-11-12
 
