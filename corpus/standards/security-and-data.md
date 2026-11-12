@@ -4,7 +4,7 @@ title: Security and data
 summary: How neon1 handles your accounts, access, and information, and the baseline every project starts from.
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
@@ -24,7 +24,7 @@ Security work protects your actual task, your information, and your way back whe
 |---|---|
 | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Spotting missing responsibilities across Govern, Identify, Protect, Detect, Respond, and Recover |
 | [CIS Controls, Implementation Group 1](https://www.cisecurity.org/controls/implementation-groups/ig1) | A prioritized starting point for basic hygiene |
-| [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) | Testable requirements for applications, cited by version and number |
+| [OWASP Application Security Verification Standard (ASVS)](https://asvs.owasp.org/) | Testable requirements for applications, cited by version and number |
 | [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | How software gets built and released safely |
 
 Informed by a framework isn't the same as certified against it. I won't call work "NIST certified," "compliant," or "enterprise grade" because these sources shaped it.
@@ -92,7 +92,7 @@ Access is right, normal and failure paths behave as agreed, security findings ar
 - [Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework), NIST: a shared outline of what security covers.
 - [CIS Controls, implementation group 1](https://www.cisecurity.org/controls/implementation-groups/ig1), Center for Internet Security: the safeguards sized for small teams.
 - [Digital identity guidelines, SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html), NIST: passwords, multi-factor sign-in, and recovery.
-- [Application Security Verification Standard](https://owasp.org/www-project-application-security-verification-standard/), OWASP: what to check in a web application.
+- [Application Security Verification Standard](https://asvs.owasp.org/), OWASP: what to check in a web application.
 - [Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final), NIST: security practices across development.
-- [Threat modeling](https://owasp.org/www-community/Threat_Modeling), OWASP: asking what could go wrong before building.
+- [Threat modeling](https://community.owasp.org/Threat_Modeling), OWASP: asking what could go wrong before building.
 - [Privacy Framework](https://www.nist.gov/privacy-framework), NIST: treating personal data as a risk to people.
