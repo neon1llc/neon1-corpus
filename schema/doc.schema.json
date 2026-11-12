@@ -40,7 +40,8 @@
         "faq",
         "case-study",
         "comparison",
-        "directive"
+        "directive",
+        "post"
       ]
     },
     "status": {
@@ -69,7 +70,8 @@
           "chat",
           "knowledge",
           "ai",
-          "portal"
+          "portal",
+          "blog"
         ]
       },
       "minItems": 1
@@ -148,6 +150,14 @@
       "type": "string",
       "description": "Case study: the rest of the result line after the headline."
     },
+    "topic": {
+      "enum": [
+        "questions",
+        "whats-and-whys",
+        "lessons"
+      ],
+      "description": "Post: which of the blog's three kinds it is. questions answers a real question from local clients, whats-and-whys explains a neon1 choice, and lessons shares what building neon1's open repositories taught."
+    },
     "short_needs": {
       "type": "string",
       "description": "Case study: one line on the problem, for cards and the at-a-glance table."
@@ -225,6 +235,14 @@
       "$comment": "neon1 next to the alternatives: who each fits, where each is better, sources for every outside fact. The last section is Sources.",
       "required": [
         "reviewed"
+      ],
+      "last_section": "Sources"
+    },
+    "post": {
+      "$comment": "A blog post on neon1.tech/blog/, in Pradeep's voice. created is the day it's published; a draft keeps status draft until then. The last section is Sources, and every outside fact is cited there.",
+      "required": [
+        "audience",
+        "topic"
       ],
       "last_section": "Sources"
     }

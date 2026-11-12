@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // tools/export.mjs - Writes the bundle a consumer reads: adopted documents for that consumer, plus a manifest.
-// Usage: node tools/export.mjs --target chat|site|knowledge|ai [--sections standards,policies] [--out dist]
+// Usage: node tools/export.mjs --target chat|site|knowledge|ai|portal|blog [--sections standards,policies] [--out dist]
 //
 // Every document is written twice, flat and named by id: <id>.md to read whole (matching neon1-chat's rule,
 // ^[a-z0-9-]+\.md$), and <id>.json with its front matter, its body as HTML and its H2 sections, so no consumer
@@ -25,7 +25,7 @@ const option = (name, fallback) => {
   return i >= 0 && args[i + 1] ? args[i + 1] : fallback
 }
 
-const TARGETS = ["chat", "site", "knowledge", "ai", "portal"]
+const TARGETS = ["chat", "site", "knowledge", "ai", "portal", "blog"]
 const target = option("--target", "")
 if (!TARGETS.includes(target)) {
   console.error(`Pick a target: --target ${TARGETS.join("|")}`)

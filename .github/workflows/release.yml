@@ -89,7 +89,7 @@ jobs:
         if: env.VERSION != ''
         run: |
           mkdir -p assets
-          for t in chat site knowledge ai portal; do
+          for t in chat site knowledge ai portal blog; do
             node tools/export.mjs --target "$t"
             cp "dist/$t/bundle.json" "assets/$t.bundle.json"
           done
