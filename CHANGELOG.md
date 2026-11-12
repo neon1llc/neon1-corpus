@@ -2,7 +2,7 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## Unreleased
+## v0.33.0 - 2026-11-12
 
 ### Added
 - Product page for There Are No Incidents (`products/there-are-no-incidents.md`), incident response training for small businesses with a runbook, playbooks, tabletop exercises, templates, and notification rules.
