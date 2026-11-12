@@ -16,7 +16,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 # SOC It 2 Me
 
-*Public · v0.1.1*
+*Public · v0.1.2*
 
 **SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to a clean first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-it-2-me).
 

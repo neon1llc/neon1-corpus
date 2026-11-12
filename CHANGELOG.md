@@ -2,11 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## Unreleased
+## v0.32.1 - 2026-11-12
 
 ### Fixed
 - Sources that moved or were retired now link their current pages: the federal plain language guidelines (now on Digital.gov), GOV.UK's writing standards and A to Z style guide, the NCSC small organisations guide, OWASP's ASVS and threat modeling pages, Prettier's rationale, and Apple's recovery contact article.
 - The measurement standard describes DORA's current five software delivery metrics instead of the original four keys, and links DORA's current guide.
+- Product pages show the current releases of SOC It 2 Me, Phish Out of Water, and Home Is Where the Smart Is (v0.1.2) and You Have 20 Seconds To Comply (v0.1.1).
 
 ## v0.32.0 - 2026-11-12
 
