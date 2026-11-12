@@ -2,11 +2,15 @@
 id: guides-password-manager-for-family
 title: "A password manager for your family"
 summary: "How to move a household onto a password manager, step by step, without locking anyone out."
+short:
+  - "One person sets up a family account, and everyone gets their own vault plus a shared one."
+  - "Set up recovery first and keep it on paper at home, since most products can't let you back in without it."
+  - "Move email, banking, and the phone carrier first, and the rest over the following weeks. [Recovery by product](#recovery-by-product)."
 type: guide
 status: adopted
 updated: 2026-11-12
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
