@@ -9,7 +9,7 @@ created: 2026-11-05
 consumers: [site, knowledge, ai]
 pdf: true
 edition: "1.3"
-origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
+origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 

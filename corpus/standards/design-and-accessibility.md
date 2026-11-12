@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"
 order: 11
-origin: "Documents/BUSINESS/neon1/Organization/Core/08-brand-and-client-trust.md (website behavior), extended"
+origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
 ---
 

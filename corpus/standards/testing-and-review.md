@@ -11,7 +11,7 @@ audience: "Developers"
 order: 8
 consumers: [knowledge, ai]
 pdf: true
-origin: "Core 02 (build and test in small increments) and neon1's private development guide (checks)"
+origin: "neon1's internal handbook (building and testing in small increments) and neon1's internal engineering notes (checks)"
 related: [standards-development, standards-version-control, standards-security-and-data, standards-design-and-accessibility]
 ---
 

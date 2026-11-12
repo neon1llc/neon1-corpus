@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/04-tool-and-architecture-decision.md"
+origin: "neon1's internal handbook, tool and architecture decision form"
 related: [standards-technology-decisions]
 ---
 

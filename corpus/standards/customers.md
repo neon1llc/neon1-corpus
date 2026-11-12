@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
 order: 16
-origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/02-positioning-and-operating-model.md and Core 01"
+origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
 
