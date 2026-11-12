@@ -4,7 +4,7 @@ title: Where I learn from
 summary: "The standards bodies, government guides, and practitioners whose published work shapes how neon1 works, grouped by topic, with what each one is for."
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-11
 edition: "1.1"
 consumers: [knowledge, ai]
@@ -24,8 +24,8 @@ Almost all of these are free to read. Where I use only part of one, or do someth
 
 How documents are worded, organized, and kept true.
 
-- **[Federal plain language guidelines](https://www.plainlanguage.gov/guidelines/)**, Plain Language Action and Information Network. Writing for the reader: audience first, plain words, short sections.
-- **[Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)**, UK Government Digital Service. Front-loading the important words, and writing the way people search.
+- **[Plain language guide series](https://digital.gov/guides/plain-language)**, Digital.gov, which now hosts the federal plain language guidelines. Writing for the reader: audience first, plain words, short sections.
+- **[Writing to GOV.UK standards](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/)**, UK Government Digital Service. Front-loading the important words, and writing the way people search.
 - **[How users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/)**, Nielsen Norman Group. The research on scanning that shapes headings, lists, and first lines.
 - **[Google developer documentation style guide](https://developers.google.com/style)**, Google. Conventions for procedures, lists, tables, and code in technical writing.
 - **[The Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html)**, University of Chicago Press. Mechanics, including the serial comma.
@@ -38,12 +38,12 @@ What a sensible baseline looks like for a household, a small office, and a softw
 
 - **[NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework)**, US National Institute of Standards and Technology. A shared outline of what security covers: govern, identify, protect, detect, respond, and recover.
 - **[Small business cybersecurity](https://www.nist.gov/itl/smallbusinesscyber)**, NIST. Plain guides sized for a small organization.
-- **[Small business guide](https://www.ncsc.gov.uk/collection/small-business-guide)**, UK National Cyber Security Centre. Five practical areas, from backups to phishing, in a few pages.
+- **[Small organisations guide to cyber security](https://www.ncsc.gov.uk/collection/small-organisations-guide-to-cyber-security)**, UK National Cyber Security Centre. Five practical areas, from backups to phishing, in a few pages.
 - **[CIS Controls](https://www.cisecurity.org/controls)**, Center for Internet Security. A prioritized list of safeguards, with a first group sized for small teams.
 - **[Digital identity guidelines, SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html)**, NIST. Current guidance on passwords, multi-factor sign-in, and recovery.
 - **[Passkeys](https://fidoalliance.org/passkeys/)**, FIDO Alliance. How sign-in without passwords works, and why it resists phishing.
-- **[Application Security Verification Standard](https://owasp.org/www-project-application-security-verification-standard/)** and the **[cheat sheet series](https://cheatsheetseries.owasp.org/)**, OWASP. What to check in a web application, and how to fix common problems.
-- **[Threat modeling](https://owasp.org/www-community/Threat_Modeling)**, OWASP, and the **[Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)**. Asking what could go wrong before building.
+- **[Application Security Verification Standard](https://asvs.owasp.org/)** and the **[cheat sheet series](https://cheatsheetseries.owasp.org/)**, OWASP. What to check in a web application, and how to fix common problems.
+- **[Threat modeling](https://community.owasp.org/Threat_Modeling)**, OWASP, and the **[Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)**. Asking what could go wrong before building.
 - **[NIST Privacy Framework](https://www.nist.gov/privacy-framework)**, NIST. Thinking about personal data as a risk to people, not only to the business.
 - **[Business associates](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html)**, US Department of Health and Human Services. When a vendor working with health information needs an agreement.
 
