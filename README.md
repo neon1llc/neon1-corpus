@@ -21,6 +21,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
 | [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) and the lines from the Matrix films it may quote (`motifs.md`) |
 | [`corpus/1neon/`](corpus/1neon) | The 1NEON guide: every page, state, ID, and action in the portal, for Neo inside 1NEON (the `portal` bundle) |
+| [`corpus/blog/`](corpus/blog) | Posts for [neon1.tech/blog](https://neon1.tech/blog/) (the `blog` bundle): local clients' questions, the whats and whys of neon1, and lessons from its open repositories. Unpublished posts stay drafts |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
 
@@ -38,13 +39,13 @@ status: adopted       # draft, adopted or retired. Only adopted documents are ex
 updated: 2026-11-09   # when it last changed in substance
 created: 2025-09-07   # when the content was first published, from its real source
 edition: "1.0"       # X.Y, no v: minor for corrections, major when a promise or rule changes
-consumers: [site, chat, knowledge, ai]   # also portal: Neo inside 1NEON
+consumers: [site, chat, knowledge, ai]   # also portal (Neo inside 1NEON) and blog (neon1.tech/blog)
 pdf: true             # offered as a PDF download in the knowledge area
 origin: "neon1-site src/app/public/index.html#services"
 ---
 ```
 
-The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. Templates and forms mark lines to write on with four or more underscores (`____`) and choices with task items (`- [ ] Option`). An `example` names the blank it fills in (`example_of`) and says whether it's `fictional`. A quote that starts with `[!note]`, `[!tip]`, `[!warning]` or `[!example]` becomes a callout box. Each folder is a shelf in the Knowledge Center, labeled in `tools/corpus.mjs`. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
+The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. Templates and forms mark lines to write on with four or more underscores (`____`) and choices with task items (`- [ ] Option`). An `example` names the blank it fills in (`example_of`) and says whether it's `fictional`. A quote that starts with `[!note]`, `[!tip]`, `[!warning]` or `[!example]` becomes a callout box. Each folder is a shelf in the Knowledge Center, labeled in `tools/corpus.mjs`. A `post` is a blog post: it names its `topic` (`questions`, `whats-and-whys` or `lessons`) and `audience`, its `created` date is the day it's published, and it ends with Sources. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
 
 ## Tools
 
@@ -52,7 +53,7 @@ Node 22, no dependencies.
 
 ```
 node tools/lint.mjs                     # front matter, per-type rules, links, and checks for anything that looks private
-node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge, ai or portal
+node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge, ai, portal or blog
 node tools/diagrams.mjs check           # every diagram is drawn and has alt text
 ```
 
