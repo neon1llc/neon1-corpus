@@ -1,7 +1,7 @@
 ---
 id: blog-why-i-publish-how-neon1-works
 title: "Why I publish how neon1 works"
-summary: "neon1's standards, templates, policies, and most of its code are public. In a year of fake listings and fake reviews, here's why a one-person business does that."
+summary: "After a year of fake business listings and paid-for reviews, why neon1's standards, templates, policies, and most of its code are public."
 type: post
 topic: whats-and-whys
 status: draft
@@ -16,37 +16,36 @@ related: [company-charter, company-sources, standards-operating-principles]
 
 # Why I publish how neon1 works
 
-A furnace quits on a January night. The homeowner searches for heating repair nearby and calls the company with the best rating: a local address, a local number, and a wall of five-star reviews. Someone answers, promises a technician in the morning, and takes a card number for the visit. Nobody comes.
+Last May, the Federal Trade Commission and the State of Illinois [sued a company](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake) they say created thousands of online listings for home-repair businesses that didn't exist. According to the complaint, the listings had invented addresses and local phone numbers, and fabricated five-star reviews to bury the real one-star ones. Calls went to representatives overseas who promised technicians, and in many cases nobody came.
 
-That's roughly what the FTC and the State of Illinois [described in a lawsuit last May](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake) against a company they say created thousands of listings for home-repair businesses that didn't exist, with invented addresses and fabricated five-star reviews to bury the real one-star ones. Calls to the "local" numbers allegedly went to representatives overseas, and in many cases no one ever showed up. The complaint relies in part on the FTC's newer [rule against fake reviews](https://www.ftc.gov/business-guidance/blog/2025/12/warning-letter-or-ten-businesses-comply-ftcs-consumer-review-rule), the same rule behind a round of warning letters in December 2025 to companies using fake reviews or paying for five-star ones. Violations can cost up to $53,088 each.
+The case relies in part on the FTC's newer [rule against fake reviews](https://www.ftc.gov/business-guidance/blog/2025/12/warning-letter-or-ten-businesses-comply-ftcs-consumer-review-rule), the same rule behind a round of warning letters in December 2025 to companies using fake reviews or paying for five-star ones. Violations can cost up to $53,088 each.
 
-The lesson I take from it isn't only "be careful online." It's that when hiring help means trusting claims you can't check, the claims get cheaper to fake. So almost everything about how neon1 runs is public. The standards I hold myself to, the proposal and agreement templates, the intake and handover forms, the privacy policy, and the case studies all live in one open repository and show up in the [Knowledge Center](https://neon1.tech/knowledge/). So does the code for this website, the 1NEON client portal, and the infrastructure under both.
+## What it means for anyone hiring help
 
-## You can check before you call
+A rating used to be a decent shortcut. When stars and listings can be bought in bulk, it isn't anymore, and the people hurt most are the ones who can least afford a wasted service call: a homeowner with no heat, or a small office with a server down on a Monday.
 
-With neon1, you can read how I run discovery, how I handle security and backups, what the agreement says, and what a finished proposal looks like, all before we talk. If something doesn't sit right, you find out early and for free. A rating can be bought. A body of work that has been public, dated, and changing in the open for months is much harder to fake.
+Technical help has always had this problem in a quieter form. You're asked to trust claims you can't check: that your data is backed up, that the vendor uses strong passwords, that the work was done the way the invoice says.
 
-## It keeps me honest
+## So I publish the work instead
 
-Writing a standard down in public makes it harder to quietly skip it. If my security standard says I test restores, a client can ask to see the last one. If a policy changes, the change is dated and visible. A public promise is easier to keep than a private intention.
+Almost everything about how neon1 runs is public. The standards I hold myself to, the proposal and agreement templates, the intake and handover forms, the privacy policy, and the case studies all live in one open repository, [neon1-corpus](https://github.com/neon1llc/neon1-corpus), and appear in the [Knowledge Center](https://neon1.tech/knowledge/). So does the code for this website, the 1NEON client portal, and the infrastructure under both.
 
-## It's useful to people who never hire me
+That does a few things a rating can't:
 
-Plenty of readers will never be clients, and that's fine. A small office can copy the proposal template, follow the backup guide, or teach a staff session from one of the training kits without paying anyone. Getting better technology into more small businesses and homes is the point of neon1, whether or not the work comes through me.
+- **You can check before you call.** Read how I run discovery, how I handle security and backups, what the agreement says, and what a finished proposal looks like. If something doesn't sit right, you find out early and for free.
+- **It keeps me honest.** If my security standard says I test restores, a client can ask to see the last one. When a policy changes, the change is dated and visible.
+- **It's hard to fake.** A body of work that has been public, dated, and changing in the open for months can't be bought overnight.
+- **It helps people who never hire me.** A small office can copy the proposal template or teach a staff session from one of the training kits without paying anyone.
 
-## Writing it once keeps it consistent
-
-Every public document lives once, in Markdown, in a repository called [neon1-corpus](https://github.com/neon1llc/neon1-corpus). The website, the Knowledge Center, its PDFs, this blog, and Neo, the chat on neon1.tech, all read from that one copy. A change made there reaches every place, so the site never says one thing while a PDF says another.
+Every document lives once, in Markdown, and the website, the Knowledge Center, its PDFs, this blog, and Neo, the chat on neon1.tech, all read from that one copy. A change made there reaches every place, so the site never says one thing while a PDF says another.
 
 ## What stays private
 
 Publishing how I work is different from publishing who I work with. Client names, client data, and anything covered by a confidentiality agreement or a BAA never go into a public repository. A case study is published only with permission, and the tooling refuses to export anything that looks like private data, such as an account number or a personal email address.
 
-## The license
+The documents are shared under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/), and the code under the [MIT License](https://opensource.org/license/mit). The neon1 name and brand are covered by neither.
 
-The documents are shared under [Creative Commons BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/): you can copy and share them word for word, with credit. The code is under the [MIT License](https://opensource.org/license/mit). The neon1 name and brand are not part of either.
-
-Whoever you hire, for anything, it's fair to ask to see how they work before you trust the stars next to their name. The [GOV.UK design principles](https://www.gov.uk/guidance/government-design-principles) put it in five words I come back to often: "Make things open: it makes things better."
+Whoever you hire, for anything, it's fair to ask to see how they work before you trust the stars next to their name.
 
 ## Sources
 
@@ -54,5 +53,4 @@ Whoever you hire, for anything, it's fair to ask to see how they work before you
 - [A warning letter (or ten) for businesses: comply with the FTC's Consumer Review Rule](https://www.ftc.gov/business-guidance/blog/2025/12/warning-letter-or-ten-businesses-comply-ftcs-consumer-review-rule), FTC Business Blog (December 22, 2025): the warning letters about fake and paid-for reviews, and the penalty of up to $53,088 per violation.
 - [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/), Creative Commons: the license on neon1's documents.
 - [The MIT License](https://opensource.org/license/mit), Open Source Initiative: the license on neon1's code.
-- [Government design principles](https://www.gov.uk/guidance/government-design-principles), GOV.UK: "Make things open: it makes things better."
 - [Where I learn from](../company/sources.md), neon1: the reading list behind neon1's standards.
