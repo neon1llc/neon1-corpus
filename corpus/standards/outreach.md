@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"
 order: 18
-origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/08-community-marketing-and-sales.md (ethical persuasion)"
+origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
 ---
 

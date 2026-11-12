@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 order: 3
-origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md"
+origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
 ---
 

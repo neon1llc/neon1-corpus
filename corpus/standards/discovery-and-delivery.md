@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
 order: 4
-origin: "Documents/BUSINESS/neon1/Organization/Core/02-discovery-and-delivery.md"
+origin: "neon1's internal handbook, discovery and delivery"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
 ---
 

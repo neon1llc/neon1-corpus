@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
 order: 13
-origin: "Documents/BUSINESS/neon1/Organization/Core/04-reliability-and-recovery.md"
+origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
 ---
 

@@ -9,7 +9,7 @@ created: 2026-11-09
 edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
-origin: "Core 00 glossary, extended with the terms the standards use"
+origin: "neon1's internal glossary, extended with the terms the standards use"
 related: [company-names, standards-reliability-and-recovery, standards-security-and-data]
 ---
 

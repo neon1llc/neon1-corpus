@@ -6,17 +6,17 @@ type: standard
 status: adopted
 updated: 2026-11-12
 created: 2026-11-01
-edition: "1.4"
+edition: "1.5"
 order: 1
 consumers: [knowledge, ai]
 pdf: true
-origin: "Core 08 (writing), neon1's private writing guide, and the genre conventions below"
+origin: "neon1's internal handbook (writing) and the genre conventions below"
 related: [standards-development, standards-documentation, standards-code-style]
 ---
 
 # Writing
 
-This is the main writing standard for neon1. It applies to every word neon1 publishes or ships: documents on this site, proposals, emails, READMEs, changelogs, commit messages, code comments, and the text inside an interface. Other standards add rules for particular kinds of writing and point back here.
+This is how I write for neon1. It applies to every word neon1 publishes or ships: documents on this site, proposals, emails, READMEs, changelogs, commit messages, code comments, and the text inside an interface. Other standards add rules for particular kinds of writing and point back here.
 
 ## The core rules
 
@@ -25,13 +25,13 @@ This is the main writing standard for neon1. It applies to every word neon1 publ
 3. **Be concrete.** Name who does what, when, and what happens next. A specific detail beats a general claim.
 4. **Say only what's true and supported.** Keep the difference between what was planned, built, tested, released, and shown to help. Don't invent experience, numbers, quotes, or results. When something is unknown, say so.
 5. **Use the fewest words that keep the full meaning.** Cut framing, repetition, and filler. Don't cut a detail that explains a cause, a limit, or a consequence.
-6. **Write in the right voice.** "I" where Pradeep is doing the work, "neon1" for the business, and "you" for the reader. Warm through clarity and follow-through, not through reassurance.
+6. **Keep the voices straight.** I write as myself, "neon1" is the business, and "you" is the reader. Being clear and following through does more for a reader than reassurance does.
 
 ## Voice
 
-Write like a technical business owner talking to another one: direct, candid, and specific. The care shows in what gets done for the reader, not in how the writing feels about them.
+I write the way one business owner talks to another across a table: direct, candid, and specific. The care shows in what gets done for the reader, not in how the writing feels about them.
 
-- **Say it and stop.** State what's true, what it costs, and what happens next. Don't add warmth, reassurance, or enthusiasm on top.
+- **Say it and stop.** State what's true, what it costs, and what happens next, and leave it there.
 - **Don't solicit.** No pitch, no urgency, no "let's get started," and no telling readers how they feel or what they deserve.
 - **Argue from evidence.** A number, a named method, or a real example beats an adjective. When the evidence is thin, say that.
 - **Leave the decision with the reader.** Give the options and their tradeoffs. Recommend plainly when it helps, and say why.
@@ -40,24 +40,21 @@ Write like a technical business owner talking to another one: direct, candid, an
 
 The test: would a capable professional say this sentence across a table to a peer? If it sounds like an advertisement, a greeting card, or a pitch, rewrite it.
 
-## Patterns to avoid
+## Habits I edit out
 
-These are signs of writing that sounds produced rather than meant:
+Most of these come from marketing copy and corporate writing. The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/) keeps a longer list of words to avoid, and these are the ones I catch most in my own drafts.
 
-- Inflated words: leverage, utilize, robust (as praise), seamless, cutting-edge, delve, landscape, tapestry, pivotal, crucial, furthermore, moreover.
-- Slogan sentences that sound good but say little, such as "Technology that works together, and stays yours."
-- "Not just X, but Y," and other set-piece contrasts used for effect.
-- A question answered right away ("Why does this matter? Because...").
-- Lists of exactly three used as rhythm rather than content.
-- Dashes and semicolons in prose. Use a period or a comma instead.
-- Absolutes such as "always," "never," and "every" unless they're literally true.
-- Selling words in place of facts: guaranteed, best-in-class, effortless, game-changing.
-- Soft selling: "happy to help," "I'd love to," "no pressure," "peace of mind," "worry-free," "let's get started," "reach out."
-- Intensifiers that stand in for evidence: really, truly, genuinely, honestly, simply, just, actually, incredibly.
-- Describing neon1's character instead of its practice: passionate, dedicated, committed to, care deeply, here for you.
-- Telling the reader how they feel ("Worried about...?", "Tired of...?") or what they'll feel afterward.
+- **Inflated words** where a plain one works: leverage, utilize, robust (as praise), seamless, cutting-edge, empower, streamline.
+- **Selling words** in place of facts: guaranteed, best-in-class, effortless, game-changing.
+- **Soft selling:** "happy to help," "I'd love to," "no pressure," "peace of mind," "worry-free," "let's get started," "reach out."
+- **Intensifiers** standing in for evidence: really, truly, genuinely, honestly, simply, just, actually, incredibly.
+- **Slogans** that sound good but say little, such as "Technology that works together, and stays yours."
+- **Character claims** instead of practice: passionate, dedicated, committed to, care deeply, here for you.
+- **Telling readers how they feel**, such as "Worried about...?" or "Tired of...?", or how they'll feel afterward.
+- **Absolutes** such as "always," "never," and "every" when they aren't literally true.
+- **Dashes and semicolons** in prose. A period or a comma almost always reads better.
 
-Lists, the passive voice, and formal words aren't errors on their own. Judge them by whether they help the reader.
+Lists, the passive voice, and formal words aren't errors on their own. I judge them by whether they help the reader.
 
 ## Mechanics
 
@@ -131,7 +128,7 @@ The guide and reference split follows the [Diátaxis](https://diataxis.fr/) fram
 2. Read only the headings and the first words of each paragraph and list item. Do they tell the story on their own?
 3. Check each group's form: lists that should be tables, tables that should be a sentence, and lists that mix kinds of item.
 4. Compare it claim by claim with the sources. Nothing added, nothing overstated, and every borrowed idea credited.
-5. Remove anything from the "avoid" list.
+5. Cut the habits listed above.
 6. Check names, numbers, dates, links, and code exactly. Open every link.
 7. Read it aloud. Rewrite any sentence that's hard to say.
 

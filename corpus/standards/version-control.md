@@ -4,9 +4,9 @@ title: Version control
 summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, and which safeguards production and client data require."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-08
-edition: "2.2"
+edition: "2.3"
 audience: "Developers"
 order: 5
 consumers: [knowledge, ai]
@@ -64,7 +64,7 @@ Commit at a point that makes sense on its own: a finished workflow, a narrow fix
 
 ## Authorship
 
-Commits are made under the name and email of the person responsible for the change. Tools that help along the way, including AI review tools, aren't listed as authors or co-authors. The person committing has read and stands behind every line.
+Commits are made under the name and email of the person responsible for the change. The person committing has read and stands behind every line.
 
 ## Merging
 

@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
 order: 12
-origin: "Documents/BUSINESS/neon1/Organization/Core/07-technology-decisions.md"
+origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
 ---
 

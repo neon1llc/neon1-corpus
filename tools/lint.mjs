@@ -26,6 +26,12 @@ const PRIVATE = [
   [/[A-Za-z0-9._%+-]+@(?!neon1\.tech\b)[A-Za-z0-9.-]+\.[a-z]{2,}/, "email address outside neon1.tech"],
 ]
 
+// What an origin may not name: private folders and files, or a private guide (name the source in words instead)
+const ORIGIN_PRIVATE = [
+  [/(^|[\s"'(])(Documents|Organization|Planning|Research|Core)\/|~\/|\/Users\//, "names a private folder"],
+  [/\bCore \d{2}\b/, "names a private handbook chapter by number"],
+  [/\bprivate (writing|development) guide\b/, "names a private guide"],
+]
 
 // Numbers that look private but are public record: New York Department of State file numbers on the state
 // registration page, shown on the state's own public inquiry site
@@ -113,6 +119,9 @@ for (const doc of docs) {
     const text = line.replace(/\(tel:\+?\d+[^)]*\)/g, "")
     for (const [re, why] of PRIVATE) if (re.test(withoutPublic(text))) err(`line ${i + 1}: ${why}`)
   })
+
+  // origin is published in the raw repository too, so it names sources in words, never a private folder or file
+  if (typeof d.origin === "string") for (const [re, why] of ORIGIN_PRIVATE) if (re.test(d.origin)) err(`origin ${why}`)
 }
 
 // References between documents, checked once every id is known

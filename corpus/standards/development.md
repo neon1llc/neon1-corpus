@@ -11,7 +11,7 @@ audience: "Developers"
 order: 2
 consumers: [knowledge, ai]
 pdf: true
-origin: "neon1's private development guide and repository conventions, Core 05 and 07"
+origin: "neon1's internal handbook (security, data, and technology decisions) and repository conventions"
 related: [standards-writing, standards-version-control, standards-versioning, standards-code-style, standards-testing-and-review, standards-documentation, policy-ai-use]
 ---
 

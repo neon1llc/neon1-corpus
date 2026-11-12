@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/03-service-and-recovery-profile.md"
+origin: "neon1's internal handbook, service and recovery profile form"
 related: [standards-reliability-and-recovery, forms-incident-and-restore]
 ---
 

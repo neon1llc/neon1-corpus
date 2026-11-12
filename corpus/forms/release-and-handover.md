@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/05-release-and-handover.md and Planning/2026-11-01/11-working-templates.md#5"
+origin: "neon1's internal handbook, release and handover form and the November 2026 planning notes, working templates"
 related: [standards-discovery-and-delivery, examples-release-and-handover, forms-service-and-recovery-profile]
 ---
 
