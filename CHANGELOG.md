@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.37.1 - 2026-11-12
+
+### Changed
+- 1NEON help (edition 1.8) matches the portal's FAQ again: the proposal opens from **Read the proposal** and downloads as Word as well as PDF, the approval lists its terms again (including anything to buy) before signing, and three new answers cover suggesting changes with a marked-up copy, who buys equipment or software (with receipts and paying back at cost), and asking for something new after approving.
+
 ## v0.37.0 - 2026-11-12
 
 ### Added
