@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/07-evidence-and-publication.md and Planning/2026-11-01/11-working-templates.md#6"
+origin: "neon1's internal handbook, evidence and publication form and the November 2026 planning notes, working templates"
 related: [standards-outreach]
 ---
 

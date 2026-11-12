@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
 order: 10
-origin: "Documents/BUSINESS/neon1/Organization/Core/05-security-and-data.md"
+origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
 ---
 

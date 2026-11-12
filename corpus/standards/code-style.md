@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-12
 created: 2026-11-09
-edition: "2.1"
+edition: "2.2"
 audience: "Developers"
 order: 7
 consumers: [knowledge, ai]
@@ -32,7 +32,7 @@ Code is read far more often than it's written. These conventions make neon1 code
 - **Comment at every semantic junction**: section boundaries, exported or public functions, classes, and components, non-obvious invariants, security and tenancy rules, and configuration blocks. Usually one or two lines, without a closing period on single-line comments. Between junctions, code that already says plainly what it does needs no comment of its own.
 - **Start with the meaning.** Don't repeat the function's name or open with "This function." For example, `// Invalid records are rejected before anything is written`.
 - **Keep comments true.** A comment that no longer matches the code is a bug. Update or remove it in the same change.
-- **Judge comments by usefulness and truth, not by count.** A review asks whether each comment tells a reader something they need and whether it's still accurate. Adding comments to reach a number, or a test that counts them, doesn't make code clearer.
+- **Comments earn their place.** In review I ask whether each comment tells a reader something they need and whether it's still accurate. More comments don't make code clearer on their own.
 - Use each language's native documentation format where tools read it: docstrings in Python, doc comments in Go, JSDoc where a project uses it. Document parameters, results, and errors only when they add something the signature doesn't say.
 
 ## File headers

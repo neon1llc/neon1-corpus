@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 featured: true
 edition: "1.2"
-origin: "Documents/BUSINESS/neon1/Organization/Planning/2026-11-01/11-working-templates.md#3, Projects/Proposals (structure only)"
+origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
 

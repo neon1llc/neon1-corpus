@@ -9,7 +9,7 @@ created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "Documents/BUSINESS/neon1/Organization/Core/Forms/01-discovery-and-outcome.md"
+origin: "neon1's internal handbook, discovery and outcome form"
 related: [forms-intake, templates-proposal, standards-discovery-and-delivery]
 ---
 

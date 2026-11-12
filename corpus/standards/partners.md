@@ -10,7 +10,7 @@ consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
 order: 17
-origin: "Documents/BUSINESS/neon1/Organization/Core/01-operating-principles.md (service and partnership boundaries)"
+origin: "neon1's internal handbook, operating principles (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
 ---
 
