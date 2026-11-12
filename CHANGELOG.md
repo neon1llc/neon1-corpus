@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.31.0 - 2026-11-12
+
+### Added
+- Product pages for three open education repositories: SOC It 2 Me (`products/soc-it-2-me.md`), SOC 2 readiness training; Phish Out of Water (`products/phish-out-of-water.md`), the security awareness session kit; and Home Is Where the Smart Is (`products/home-is-where-the-smart-is.md`), a household tech handbook.
+
+### Changed
+- The charter lists the education repositories beside neon1's tools, and the security awareness use case links the session kit.
+
 ## v0.30.0 - 2026-11-11
 
 ### Added

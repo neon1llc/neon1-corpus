@@ -4,11 +4,11 @@ title: Charter
 summary: What neon1 is for, who it serves first, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-05
 consumers: [site, knowledge, ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 origin: "Documents/BUSINESS/neon1/Organization/Core/00-charter.md (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
@@ -68,7 +68,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), which are public and in development. None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), which are public and in development. It also publishes open teaching material: [SOC It 2 Me](../products/soc-it-2-me.md) for SOC 2 readiness, [Phish Out of Water](../products/phish-out-of-water.md) for security awareness sessions, and [Home Is Where the Smart Is](../products/home-is-where-the-smart-is.md) for households. None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 
