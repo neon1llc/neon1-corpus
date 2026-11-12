@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Added
+- Product page for You Have 20 Seconds To Comply (`products/you-have-20-seconds-to-comply.md`), open compliance guides and training by domain, from HIPAA and GxP to PCI DSS, privacy, and accessibility.
+
+### Changed
+- The charter lists the compliance guides with the other education repositories.
+
 ## v0.31.0 - 2026-11-12
 
 ### Added
