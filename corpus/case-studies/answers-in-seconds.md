@@ -6,9 +6,9 @@ type: case-study
 status: adopted
 client: accounting firm
 area: "cloud & AI"
-updated: 2026-11-10
+updated: 2026-11-12
 created: 2026-11-06
-edition: "1.1"
+edition: "1.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -52,6 +52,12 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), who 
 Measured on 80 representative questions, including ones the assistant should refuse, and judged by two reviewers. A fast answer from the wrong document counted as a failure.
 
 These results describe that test set, not a guarantee. In the evaluation, 92% of answers were fully supported by their source, so the rest were not. Each answer carries its citations so the source can be checked.
+
+In the client's words:
+
+> "The work helped quicken the direction that we were moving on for some time, working toward a completely centralized single cloud for our org, assets and products used. And using AI safely and intentionally. The knowledge base project was a push forward for us on both fronts. Thanks Pradeep!"
+>
+> Boris M., Boris M Tax
 
 ## Normalize
 
