@@ -7,7 +7,7 @@ topic: questions
 status: adopted
 updated: 2026-11-12
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -16,7 +16,7 @@ related: [product-you-have-20-seconds-to-comply, product-phish-out-of-water, gui
 
 # Tax preparers are financial institutions, as far as the FTC is concerned
 
-Picture a couple who've had their taxes done at the same small office for years. In February they come in, sign, and e-file, the way they always do. A day later the return bounces: one was already filed under their Social Security number. Somebody got there first, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate described identity theft victims waiting an average of more than 21 months for the IRS to sort cases like this out. That's nearly two years of a family waiting on money they were counting on.
+A couple has had their taxes done at the same small office for years. In February they come in, sign, and e-file, the way they always do. A day later the return bounces: one was already filed under their Social Security number. Somebody got there first, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate described identity theft victims waiting an average of more than 21 months for the IRS to sort cases like this out. That's nearly two years of a family waiting on money they were counting on.
 
 The thief didn't need to break into the IRS. Everything it took to file that return sits in a tax preparer's client folder: Social Security numbers for the whole household, income, prior returns, and the bank account for the refund. People hand all of that over once a year without thinking twice, because they trust the person across the desk. That trust is the business, and it's exactly what criminals go after.
 
