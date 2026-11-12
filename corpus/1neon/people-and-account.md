@@ -4,9 +4,9 @@ title: "1NEON guide: sign-in, confirming it's you, notifications, and texts"
 summary: "How people get into 1NEON, why admin actions ask to confirm it's you, the three second steps, notifications, texts, and what to do when something is lost."
 type: guide
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-10
-edition: "1.1"
+edition: "1.2"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -32,7 +32,7 @@ The three second steps, added on the profile under **Two-step verification** (`/
 - **Authenticator app**: **Set up**, scan the code with Google Authenticator, Microsoft Authenticator, 1Password, Authy, or similar, and type its 6-digit code.
 - **Text-message codes**: once a mobile number is verified for texts.
 
-A second one is a backup. Lost one: confirm with another, remove the lost one, and add a new one. Lost all of them: email hello@neon1.tech from the account's address. There's no self-service reset. Email codes still sign you in. The second step is only for admin actions.
+A second one is a backup. Lost one: confirm with another, remove the lost one, and add a new one. Lost all of them: email hello@neon1.tech from the account's address. There's no self-service reset, and email alone isn't enough, since a stolen mailbox is what the second step guards against. neon1 first confirms who it is by calling a phone number already on record for the person or their organization (never one given in the email), plus the written OK of another admin when the organization has one. Then the lost methods are removed, the removal is noted with its date, and the person is emailed; they add a new one on their profile. Email codes still sign you in meanwhile. The second step is only for admin actions.
 
 ## Notifications
 
