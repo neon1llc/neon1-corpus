@@ -4,7 +4,7 @@ title: "A password manager for your family"
 summary: "How to move a household onto a password manager, step by step, without locking anyone out."
 type: guide
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-09
 edition: "1.2"
 consumers: [knowledge, ai]
@@ -62,7 +62,7 @@ Do the rest over the following weeks, whenever each account comes up. There's no
 
 ### Apple Passwords and iCloud Keychain
 
-Your passwords are tied to your Apple Account, so recovering them means recovering that account. Apple offers a [recovery contact](https://support.apple.com/ht212513), a trusted person who can help you get a code, and an optional [recovery key](https://support.apple.com/109345). If you turn on a recovery key and later can't provide it, Apple says you can be locked out permanently, and Apple can't give it back to you. Don't store the key in the Passwords app itself.
+Your passwords are tied to your Apple Account, so recovering them means recovering that account. Apple offers a [recovery contact](https://support.apple.com/102641), a trusted person who can help you get a code, and an optional [recovery key](https://support.apple.com/109345). If you turn on a recovery key and later can't provide it, Apple says you can be locked out permanently, and Apple can't give it back to you. Don't store the key in the Passwords app itself.
 
 ### Google Password Manager
 
@@ -86,4 +86,4 @@ Sign-in uses your account password together with a Secret Key, which is printed 
 
 - [Digital identity guidelines, SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html), NIST: current advice on passwords and second steps.
 - [Passkeys](https://fidoalliance.org/passkeys/), FIDO Alliance: sign-in without passwords, and why it resists phishing.
-- [Small business guide](https://www.ncsc.gov.uk/collection/small-business-guide), UK National Cyber Security Centre: passwords and two-step sign-in, in plain terms.
+- [Small organisations guide to cyber security](https://www.ncsc.gov.uk/collection/small-organisations-guide-to-cyber-security), UK National Cyber Security Centre: passwords and two-step sign-in, in plain terms.

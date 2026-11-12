@@ -4,7 +4,7 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-01
 edition: "1.4"
 order: 1
@@ -139,8 +139,8 @@ Good writing that already works stays as it is. Shorter is only better when the 
 
 ## Sources
 
-- [Federal plain language guidelines](https://www.plainlanguage.gov/guidelines/), from the Plain Language Action and Information Network: the core rules on audience, plain words, and organization.
-- [Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk) and the [GOV.UK style guide](https://www.gov.uk/guidance/style-guide), from the UK Government Digital Service: front-loading, short sentences, and words people use.
+- [Plain language guide series](https://digital.gov/guides/plain-language), from Digital.gov, which now hosts the federal plain language guidelines: the core rules on audience, plain words, and organization.
+- [Writing to GOV.UK standards](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/) and the [GOV.UK A to Z style guide](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/), from the UK Government Digital Service: front-loading, short sentences, and words people use.
 - [How users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/) and [the F-shaped pattern](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), from Nielsen Norman Group: the research behind putting key words first.
 - [Google developer documentation style guide](https://developers.google.com/style): conventions for lists, tables, procedures, and code in technical writing.
 - [The Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html): the serial comma and other points of mechanics.

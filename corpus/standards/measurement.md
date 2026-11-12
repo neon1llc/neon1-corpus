@@ -4,7 +4,7 @@ title: Measurement
 summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
@@ -66,11 +66,11 @@ One page when possible: the result you wanted, the period and sample size, the b
 
 ## Software and website measures
 
-For software I track how often changes ship, how long they take, how often they fail, and how fast service comes back: [DORA's four key measures](https://dora.dev/guides/dora-metrics-four-keys/) of software delivery. For websites I check Google's [Core Web Vitals](https://web.dev/articles/vitals) for loading, responsiveness, and visual stability, and test accessibility on the real pages against the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. An automated accessibility score is a starting point, not a certificate.
+For software I track how often changes ship, how long they take, how often they fail, how fast a failed change is fixed, and how often unplanned fixes are needed: [DORA's five software delivery performance metrics](https://dora.dev/guides/dora-metrics/). For websites I check Google's [Core Web Vitals](https://web.dev/articles/vitals) for loading, responsiveness, and visual stability, and test accessibility on the real pages against the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. An automated accessibility score is a starting point, not a certificate.
 
 ## Sources
 
 - [e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/), NIST and SEMATECH: honest measurement, including what small samples can show.
 - [Service level objectives](https://sre.google/sre-book/service-level-objectives/), Google: choosing measures and targets for a service.
-- [DORA research](https://dora.dev/), DevOps Research and Assessment: four measures of software delivery.
+- [DORA research](https://dora.dev/), DevOps Research and Assessment: five measures of software delivery performance.
 - [Web Vitals](https://web.dev/articles/vitals), Google: measures of how fast and stable a page feels.

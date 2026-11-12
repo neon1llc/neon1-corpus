@@ -16,7 +16,7 @@ related: [guides-password-manager-for-family, guides-backups-you-can-trust, prod
 
 # Home Is Where the Smart Is
 
-*Public · v0.1.1*
+*Public · v0.1.2*
 
 **The handbook for a family's unofficial tech lead.** Every household has someone everyone calls when the Wi-Fi drops or a strange text arrives. This guide helps them set things up once so the same problems stop coming back. It's open on [GitHub](https://github.com/neon1llc/home-is-where-the-smart-is).
 
