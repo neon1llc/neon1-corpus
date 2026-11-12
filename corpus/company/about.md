@@ -1,15 +1,15 @@
 ---
 id: company-about
 title: About neon1
-summary: A one-person technology practice in New York that leaves people better off with their tech than they were before.
+summary: A technology practice that leaves people better off with their tech than they were before.
 type: page
 consumers: [site, chat, knowledge, ai]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2025-09-07
-edition: "1.3"
+edition: "1.4"
 ---
 
 # About neon1
