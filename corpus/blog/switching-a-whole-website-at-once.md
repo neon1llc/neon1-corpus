@@ -1,7 +1,7 @@
 ---
 id: blog-switching-a-whole-website-at-once
 title: "Switching a whole website at once"
-summary: "A blank page in the middle of a deploy, the lesson the year's big outages keep teaching, and the small release switch that fixed it on neon1.tech."
+summary: "Notes on a blank page in the middle of a deploy on neon1.tech, what caused it, and the small release switch that fixed it for good."
 type: post
 topic: lessons
 status: draft
@@ -16,45 +16,52 @@ related: [company-architecture, standards-reliability-and-recovery]
 
 # Switching a whole website at once
 
-It's a weeknight, a deploy of neon1.tech is running, and I load the home page on my phone. It's blank. I refresh, and a few seconds later it's fine. I knew to refresh. A visitor checking me out for the first time wouldn't, and would reasonably decide the site was broken.
+In November I loaded neon1.tech on my phone while a deploy was running and got a blank page. A refresh fixed it a few seconds later. I knew to refresh. Someone opening the site for the first time wouldn't, and they'd reasonably decide it was broken. These are my notes on why it happened and what I changed.
 
-Small sites aren't the only ones that learn this lesson. On February 20 this year, a cleanup task at Cloudflare [withdrew about 1,100 customers' network prefixes](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/) from the internet, and some of them stayed unreachable for hours. In its write-up, Cloudflare points out that changes to that system reached its whole network immediately, and that the change should have gone through the slower, health-checked rollout it already uses for software. The scale is nothing like mine, but the shape is the same: a change made of many parts, visible to people while it's still in progress.
+## What I saw
 
-This post is about why my page went blank and the small change that made it impossible.
+- A blank page, with no error on screen.
+- Gone after a refresh, a few seconds later.
+- Only while a deploy was running.
 
-## Why the page went blank
+## What caused it
 
-neon1.tech is a static site: HTML, scripts, styles, and images in a private Amazon S3 bucket, served through CloudFront. The deploy used to copy the new files over the old ones in place.
+neon1.tech is a static site: HTML, scripts, styles, and images in a private Amazon S3 bucket, served through CloudFront. The deploy copied new files over the old ones in place.
 
-Copying isn't instant. For a few seconds, the bucket holds a mix: a new page that expects a new script, next to the old script that hasn't been replaced yet, or the other way around. A visitor who arrives in that window gets a page whose parts don't match, and the page fails to draw. Caching makes it worse, since a browser or a CloudFront edge can hold on to one half of the mix for longer.
+Copying many files isn't instant. For a few seconds, the bucket held a mix: a new page that expected a new script, next to an old script that hadn't been replaced yet. My phone arrived in that window and got parts that didn't match. Caching can stretch the window, because a browser or a CloudFront edge may keep one half of the mix longer than the other.
 
-The usual answers each have a cost. A maintenance page during deploys would show every visitor a "back soon" screen several times a week. Clearing CloudFront's whole cache after each deploy costs money past the free allowance and still leaves the window open while files copy.
+I considered two quick fixes and turned both down. A maintenance page during deploys would show every visitor a "back soon" screen several times a week. Clearing CloudFront's whole cache after each deploy costs money past the free allowance, and the window stays open while the files copy anyway.
 
-## Upload everything, then flip one switch
+## What I changed
 
-The fix was to stop overwriting anything. Each deploy now uploads the whole site into a new folder named for its contents, `releases/<id>/`, next to the previous releases. Nothing a visitor can see changes while that upload runs.
+I stopped overwriting anything. Each deploy now uploads the whole site into a new folder named for its contents, `releases/<id>/`, beside the earlier releases. Nothing a visitor can see changes during the upload.
 
-Then one write flips the switch. A [CloudFront KeyValueStore](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/kvs-with-functions.html) holds a single key, `release`, naming the live folder. A small [CloudFront Function](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html) runs on every request, reads that key, and rewrites the address into the live folder. Change the key, and every visitor's next request comes from the new release, with every file in a page from the same one.
+Then a single write makes it live. A [CloudFront KeyValueStore](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/kvs-with-functions.html) holds one key, `release`, naming the live folder. A small [CloudFront Function](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html) reads that key on every request and rewrites the address into that folder:
 
-A few details made it work well:
+```
+/blog/            →  releases/9ba352e72ba3/blog/index.html
+/js/frame.js      →  releases/9ba352e72ba3/js/frame.js
+```
 
-- **New folders mean new cache addresses**, so there's nothing to invalidate. Old cached copies simply stop being asked for.
-- **Fonts and images stay shared** at the bucket's top level, because they never change at a given path. A page left open from an older release can still load them.
-- **Rollback is the same switch.** `make rollback` points the key at the previous folder, and the site is back in seconds.
-- **Old releases get pruned.** The deploy keeps the last five and removes the rest.
-- **If the key can't be read**, the function falls back to the bucket's top level instead of failing.
+Change the key, and the next request comes from the new release, with every file in the page from the same one. A few details matter:
 
-## What it taught me
+- New folders mean new cache addresses, so there's nothing to invalidate.
+- Fonts and images stay shared at the top of the bucket, since they never change at a given path. A page left open from an older release can still load them.
+- `make rollback` points the key back at the previous folder. The site is back in seconds.
+- The deploy keeps the last five releases and removes older ones.
+- If the key can't be read, the function falls back to the top of the bucket instead of failing.
 
-The bug was never really about CloudFront. Any time a change is made of many parts, and people can see it while it's in progress, someone eventually sees a broken mix. The fix is the same at every size, and it's an old idea that Martin Fowler wrote up as [blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html): prepare the whole new version where nobody is looking, then make it visible in one step that can be reversed in one step. Cloudflare's own remedy, which it calls failing small, adds the next layer up: roll the switch out to a few places first, and stop on its own if something looks wrong.
+## What I took from it
 
-The same thinking helps far from websites. A database change, a new set of office firewall rules, or a move to a new phone system all go better when the new version is ready and tested before anyone depends on it, and when going back is one step.
+The idea is old. Martin Fowler wrote it up years ago as [blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html): build the whole new version where nobody is looking, then switch to it in one step you can undo in one step.
 
-The code is open. The deploy script is in [neon1-site](https://github.com/neon1llc/neon1-site), and the router and key value store are in [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure). [How neon1 is built](../company/architecture.md) draws the whole path from a visitor's browser to the live release.
+It also holds at the far end of the scale. On February 20 this year, a cleanup task at Cloudflare [withdrew about 1,100 customers' network prefixes](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/), and some stayed unreachable for hours. Cloudflare's write-up says changes to that system reached its whole network immediately, and that they'll now roll out in stages with health checks, the same way its software does. My site serves a handful of pages, but the shape of the bug is the same: a change people can see while it's half done.
+
+The deploy script is in [neon1-site](https://github.com/neon1llc/neon1-site), and the router and key value store are in [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure). [How neon1 is built](../company/architecture.md) draws the whole path from a browser to the live release.
 
 ## Sources
 
-- [Cloudflare outage on February 20, 2026](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/), Cloudflare: the withdrawn prefixes, the immediate propagation, and the plan for health-checked configuration rollouts.
 - [Amazon CloudFront KeyValueStore](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/kvs-with-functions.html), AWS documentation: reading key values from a CloudFront Function.
 - [CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), AWS documentation: rewriting requests at the edge.
 - [Blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html), Martin Fowler: preparing a new version beside the old one and switching in one step.
+- [Cloudflare outage on February 20, 2026](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/), Cloudflare: the withdrawn prefixes, the immediate propagation, and the plan for staged, health-checked rollouts.
