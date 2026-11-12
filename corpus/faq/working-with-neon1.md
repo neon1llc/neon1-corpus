@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-07
-edition: "1.3"
+edition: "1.4"
 ---
 
 # Working with neon1
@@ -36,7 +36,11 @@ After the first call I send a short proposal with options, usually a quick fix, 
 
 ## How do you treat our data and accounts?
 
-Before any paid work, we sign a short [services agreement](../templates/services-agreement.md) once. It covers how I'll handle your systems and information: only the access the job needs, kept confidential, and handed back or removed when we're done. After that, each project is a [proposal](../examples/proposal-options.md) with options, and choosing one, on paper or in 1NEON, is what we both agree to. It works both ways, so you'll know what I need from you and why. If the work touches personal or health data, the right agreement, such as a Business Associate Agreement, comes first. [See a handover in 1NEON](https://neon1.tech/1NEON/live?play=handover).
+Before any paid work, we sign a short [service agreement](../policies/service-agreement.md) once, in 1NEON or on paper. It covers how I'll handle your systems and information: only the access the job needs, kept confidential, and handed back or removed when we're done. After that, each project is a [proposal](../examples/proposal-options.md) with options, and choosing one, signed on paper or in 1NEON, is what we both agree to. It works both ways, so you'll know what I need from you and why. If the work touches personal or health data, the right agreement, such as a Business Associate Agreement, comes first. [See a handover in 1NEON](https://neon1.tech/1NEON/live?play=handover).
+
+## How do I pay?
+
+Invoices come through [1NEON](../products/1neon.md), in the project they belong to, and are due within 15 days. A fixed-price project usually starts with a deposit of half the price, and the rest is billed once you accept the handover. You can pay online by bank transfer (ACH) or card through Stripe, or by check, Zelle, or wire. There's no surcharge for any of them. If I buy equipment or software for you, you pay back exactly what the receipt shows, with no markup.
 
 ## Do you run security training?
 

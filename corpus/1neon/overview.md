@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-12
 created: 2026-11-10
-edition: "1.1"
+edition: "1.2"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -32,6 +32,9 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 | `N1-0001`, `N1-0002` | An organization's **client ID**, numbered in the order clients joined. N1-0001 is neon1 itself. Used in the organization chooser, on All clients, and on invoices. | Chooser, All clients, organization header |
 | `acme-dental` | An organization's **slug**, its handle in addresses | `/1NEON/o/acme-dental/...` |
 | `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template plus a number counted per organization and prefix | Cards, lists, the project page, search |
+| `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal; the first 1NEON issued is 0039, and each change is issued as the next revision | The proposal strip under Options, the proposal page, its PDF and Word copies |
+| `0039-r2-B` | An **option ID**: the revision and the option's letter. A decision names the ID it approved | Options, decisions, purchases bought for an option |
+| `INV-0039-01` | An **invoice number**: the proposal's number (or the project key when there's no proposal) and the invoice's place in the project. Set when neon1 issues it | Invoices, the invoice page, card statements (`NEON1* INV003901`) |
 | Item titles | Items (requests, tasks, options, measures, and so on) are shown by title; their IDs only appear in links (`#item-…`) | Inside a project |
 
 Project key prefixes come from the template chosen in New project: Blank is `PRJ`, Cloud migration is `MIG`, Workflow automation is `FLOW`, AI assistant is `AI`, Security readiness is `SEC`, and Personal or home tech is `HOME`. The number after the dash counts up per prefix within one organization, so `MIG-1` in two organizations are two different projects.
@@ -64,6 +67,10 @@ Every signed-in page lives under `https://neon1.tech/1NEON/`. In the table, `{or
 | One project, Overview | `/1NEON/o/{org}/projects/{KEY}` |
 | One project, a layer | `/1NEON/o/{org}/projects/{KEY}/needs`, `/execute`, `/observe`, or `/normalize` |
 | Options on a project | `/1NEON/o/{org}/projects/{KEY}/needs#options` |
+| The project's proposal | `/1NEON/o/{org}/projects/{KEY}/proposal` |
+| A project's invoices | `/1NEON/o/{org}/projects/{KEY}/execute#billing` |
+| One invoice | `/1NEON/o/{org}/projects/{KEY}/invoices/{invoiceId}` |
+| The service agreement, to sign | `/1NEON/o/{org}/agreement` |
 | Files asked for on a project | `/1NEON/o/{org}/projects/{KEY}/needs#files` |
 | One item on a project | `/1NEON/o/{org}/projects/{KEY}/{layer}#item-{itemId}` |
 | One layer across all projects | `/1NEON/o/{org}/layer/needs` (also `execute`, `observe`, `normalize`) |
@@ -77,7 +84,7 @@ Every signed-in page lives under `https://neon1.tech/1NEON/`. In the table, `{or
 | Sample project, public | `/1NEON/example` |
 | Guided walkthrough, public | `/1NEON/live` (short ones: `?play=invite`, `passkey`, `authenticator`, `texts`, `start`, `needs`, `listen`, `propose`, `decide`, `build`, `observe`, `handover`, `care`, `team`, `profile`, `signin`) |
 | Interactive demo, public | `/1NEON/demo/` |
-| Privacy, terms, cookies | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies` |
+| Privacy, terms, cookies, service agreement | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies`, `/1NEON/agreement` |
 
 The address word for Execute is `execute` and for Normalize is `normalize`. Older links that say `execution` or `next` still work.
 
@@ -96,6 +103,7 @@ Tours point at named spots on a page. Each name below exists only on the page li
 | `board-column`, `board-card` | Board, All clients | A stage column, a project card |
 | `new-project`, `project-list` | Projects | New project button, the list |
 | `next-step`, `stage`, `layers` | One project | Next step box, the stage line, the layer tabs |
+| `proposal` | One project, Needs | The proposal strip under Options: the revision, its price check, and Issue or Read the proposal |
 | `wizard` | New project | The questions |
 | `layer-list` | One layer across projects | The list |
 | `invite`, `people-list` | People | Invite people, the list of people |
