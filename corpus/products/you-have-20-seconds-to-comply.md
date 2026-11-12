@@ -16,7 +16,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 
 # You Have 20 Seconds To Comply
 
-*Public · v0.1.0*
+*Public · v0.1.1*
 
 **Compliance rules explained by domain, with the training to go with them.** Open guides for the owner, office manager, or IT lead who has to work out what a rule asks and get staff trained on it, without a compliance department. It's open on [GitHub](https://github.com/neon1llc/you-have-20-seconds-to-comply).
 
