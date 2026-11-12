@@ -11,7 +11,7 @@ audience: "Developers"
 order: 7
 consumers: [knowledge, ai]
 pdf: true
-origin: "neon1's private development guide (meaning, names, and source conventions)"
+origin: "neon1's internal engineering notes (meaning, names, and source conventions)"
 related: [standards-development, standards-writing, standards-testing-and-review]
 ---
 
