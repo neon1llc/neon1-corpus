@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-13
 created: 2026-11-10
-edition: "2.1"
+edition: "2.2"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -64,7 +64,7 @@ A project page has tabs: **Overview**, **Needs**, **Execute**, **Observe**, and 
 | Change request | Execute | A change to what was agreed, with its effect on cost and dates | same |
 | Hours | Execute | Time neon1 worked on one day, in quarter hours, with what it went to. Only neon1 adds entries; the client reads them | a record, kept as logged once an invoice bills it |
 | Purchase | Execute | Something to buy for the approved option: estimate, actual cost, where it was bought, who buys it (the client or neon1), and its receipt | Open, Bought, Installed (done), Returned |
-| Invoice | Execute | A bill for the work or for purchases, numbered when issued (such as INV-0039-01) | Draft, Issued, Paid, Void. Partly paid and overdue are worked out from payments and the due date |
+| Invoice | Execute | A bill for the work or for purchases, numbered when issued (such as INV-0039-01) | Draft, Issued, Paid, Void. Partly paid, bank payment clearing, and overdue are worked out from payments and the due date |
 | Payment | Execute | Money received against one invoice, from Stripe or recorded by neon1 | a record |
 | Status update | Execute | One line on how it's going, with a health; posting it sets the project's health | a record |
 | Measure (metric) | Observe | A number that shows it worked: unit, baseline, target, which way is better, and dated readings | Done when it reaches its target |
@@ -179,19 +179,19 @@ Each invoice opens on its own page, `/1NEON/o/{org}/projects/{KEY}/invoices/{id}
 
 Paying:
 
-- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout, Stripe's own secure page, for what's left on the invoice. Bank transfer (ACH) comes first, and card is offered too. 1NEON never sees card or bank details. A card payment shows as paid in a moment; a bank payment takes a few business days to clear, and shows once it does. If a bank payment fails, the people who get billing notices are told.
+- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout, Stripe's own secure page, for what's left on the invoice. Bank transfer (ACH) comes first, and card is offered too. 1NEON never sees card or bank details. A card payment shows as paid in a moment. A bank payment shows on the invoice from the day it's started, as **bank payment clearing** with its amount and date, and as paid once the bank clears it in a few business days. While it clears, **Pay** is gone, the invoice isn't counted as overdue, and neither Next step nor Needs you asks for it, so nobody pays twice. If the bank refuses the payment, no money moved: the invoice is open again with the failed payment and its date listed, the button reads **Pay again**, and Next step and Needs you say the bank payment didn't go through. The people who get billing notices are told when a bank payment starts, clears, or fails.
 - **By check, Zelle, or wire:** neon1 records it with **Record a payment** when it arrives: the amount, how it arrived, the date, and a check number or confirmation.
 - No surcharge is added for any way of paying.
 
-An issued invoice and every payment are permanent. A mistake is fixed with a **credit** that reduces the invoice, or by **voiding** it with a reason (**Void invoice**), and both stay on record. An invoice that has payments can't be voided, so it's credited instead. A copy of every signature, issued invoice, and payment is also kept locked for seven years.
+An issued invoice and every payment are permanent. A mistake is fixed with a **credit** that reduces the invoice, or by **voiding** it with a reason (**Void invoice**), and both stay on record. An invoice that has payments, or a bank payment on its way, can't be voided, so it's credited instead; one whose only payment failed can be. A copy of every signature, issued invoice, and payment is also kept locked for seven years.
 
-The **Agreements, invoices, and payments** notification group (email on by default) covers the service agreement being signed, invoices issued or voided, and payments that arrive or fail. neon1's drafts never reach the client's bell or email.
+The **Agreements, invoices, and payments** notification group (email on by default) covers the service agreement being signed, invoices issued or voided, and payments that start, arrive, or fail. neon1's drafts never reach the client's bell or email.
 
 ## Next step
 
 The top of every project shows **Next step**: the one thing to do now and who it's waiting on. It picks the most pressing of these, in order:
 
-1. For client members, an invoice with a balance: "Invoice INV-0039-01 is ready" (or **overdue**), the amount, and the due date, with **See and pay**.
+1. For client members, an invoice with something to pay: "Invoice INV-0039-01 is ready" (or **overdue**, or "The bank payment on invoice INV-0039-01 didn't go through"), the amount, and the due date, with **See and pay**. An invoice covered by a bank payment that's clearing isn't listed.
 2. For neon1, invoice drafts: "A deposit invoice is drafted. Check it, then issue.", with **Check invoices**.
 3. For neon1, shared options not yet in an issued revision: "Issue the proposal so the client can approve an option" (or its next revision, such as r2), with **Issue the proposal** or **Issue r2**.
 4. Options are shared and you may approve: "Choose an option: {n} ready for your approval in Proposal 0039-r1", or that the estimates are due a price check, or that neon1 is preparing the proposal, with **Compare options**.
@@ -199,9 +199,9 @@ The top of every project shows **Next step**: the one thing to do now and who it
 6. Files are asked for (for client members): "Send {n} files", with **Upload**.
 7. Every handover step is done and you may accept: "Every handover step is done. Check them, then accept the handover with one signature.", with **Review and accept**.
 8. You have open items assigned to you: "You have {n} open items here", with **Open**.
-9. An option is approved and the project is at or before Decide: "{option} is approved. Next, move the project to {next stage}", with **Move to** for editors.
+9. An option is approved and the project is at or before Decide: "{option} is approved. Next, move the project to {next stage}", with **Move to** for neon1. A client reads "Next, neon1 moves the project to {next stage}".
 10. For neon1: "Add options" when none exist yet near Decide, or "Share an option" when options exist but none is shared.
-11. Otherwise the stage's goal: "To finish {stage}: {done when}", with **Move to {next stage}** for editors (not past Decide without an approval).
+11. Otherwise the stage's goal. neon1 reads "To finish {stage}: {done when}", with **Move to {next stage}** (not past Decide without an approval). A client reads who has the work: "{stage} is with neon1. It's done when: {done when}. Then neon1 moves the project to {next stage}. Nothing needs you right now." In neon1's own organization, editors get the move as neon1 does.
 12. "Nothing needs doing right now."
 
 ## Health
