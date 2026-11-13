@@ -16,20 +16,20 @@ origin: "neon1-1NEON apps/web/src/pages and components/Help.tsx"
 
 # 1NEON guide: every page, what it shows, and who can do what
 
-Access levels are cumulative. **Viewers** read, comment, add requests, and approve when they're a project's decision maker. **Editors** also add and change work. **Admins** also invite people, change access, change settings, and delete projects, files, and others' comments. Admin actions also need a recent "confirm it's you" (see the people and account guide). neon1, the operator, acts as an admin in every organization but never approves for a client.
+Access levels build on each other. **Viewers** read, comment, add requests, and approve when they're a project's decision maker. **Editors** also add and change work. **Admins** also invite people, change access and settings, and delete projects, files, and others' comments, after a recent "confirm it's you". neon1 acts as an admin everywhere but never approves for a client.
 
 ## Home
 
 `/1NEON/o/{org}/workspace`. The starting point: what needs you, and what changed lately.
 
-- **Needs you** lists things waiting on you, most pressing first, each with the one action it asks for: **See and pay** (an invoice with something to pay, with the amount and due date, marked overdue or that its bank payment didn't go through; one covered by a bank payment that's clearing isn't listed), **Compare options** (an approval), **Review and accept** (a handover with every step done), **Upload file** (a file asked for), or **Open** (your task or item). For neon1, an invoice draft waits with **Check it**. "You're all caught up" when empty.
-- **Coming up** shows this week and the next two as a strip of days, each mark a due date, milestone, or project target, then everything dated in the next six weeks listed by Overdue, This week, Next week, and Later.
-- **Get started** is a setup checklist that disappears once done: take the tour; start your first project (editors); invite your team (admins); add a second step for admin actions (admins).
+- **Needs you** lists what's waiting on you, most pressing first, each with its action: **See and pay** (an invoice due, overdue, or whose bank payment failed, but not one clearing), **Compare options**, **Review and accept** (a finished handover), **Upload file**, or **Open**. neon1 sees invoice drafts with **Check it**. Empty, it says "You're all caught up".
+- **Coming up** shows three weeks as a strip of days marked with due dates, milestones, and targets, then the next six weeks listed by Overdue, This week, Next week, and Later.
+- **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
 
 ## Board
 
-`/1NEON/o/{org}/workflow`. Every project as a card in its stage. Drag a card to move it (editors and admins), or use **Move to** on a phone. Moving forward past Decide without an approved option asks for a reason. Each column shows "Done when" and its project count, and a limit if one is set.
+`/1NEON/o/{org}/workflow`. Every project as a card in its stage. Editors and admins drag cards, or use **Move to** on a phone; passing Decide without an approval asks for a reason. Columns show "Done when", the count, and any limit.
 
 ## Projects
 
@@ -37,11 +37,11 @@ Access levels are cumulative. **Viewers** read, comment, add requests, and appro
 
 ## New project
 
-`/1NEON/o/{org}/projects/new`. A few short steps: pick a template, name it, describe it and its outcome, give one real example, an optional target date, sensitive-data flags, and optional measures. Editors and admins only.
+`/1NEON/o/{org}/projects/new`. Editors and admins pick a template, name and describe it, give its outcome and one real example, and optionally a target date, sensitive-data flags, and measures.
 
 ## One project
 
-`/1NEON/o/{org}/projects/{KEY}`, with tabs Overview, Needs, Execute, Observe, and Normalize (`/needs`, `/execute`, `/observe`, `/normalize`). The header shows the key, the stage and how long it has been there, the name with its health, and the onion. **Next step** sits on top. Details are in the projects guide. Actions:
+`/1NEON/o/{org}/projects/{KEY}`, with tabs Overview, Needs, Execute, Observe, and Normalize (`/needs`, `/execute`, `/observe`, `/normalize`). The header shows the key, stage and time in it, name, health, and the onion, under **Next step**. Details are in the projects guide. Actions:
 
 | Action | Who |
 |---|---|
@@ -60,11 +60,11 @@ Access levels are cumulative. **Viewers** read, comment, add requests, and appro
 | Draft, issue, void, or credit an invoice; record a check, Zelle, or wire payment | neon1 only |
 | Move to Trash | Admins, after confirming it's them, typing the project's key |
 
-Files asked for show under Needs with **Upload**. The proposal, purchases, invoices, and paying are described in the projects guide. Measures take dated readings. Someone else editing the same item shows as a small avatar beside the project's name.
+Files asked for show under Needs with **Upload**, and measures take dated readings. Someone else editing shows as a small avatar beside the name.
 
 ## The proposal
 
-`/1NEON/o/{org}/projects/{KEY}/proposal`. The project's proposal on neon1's letterhead: the latest issued revision (such as 0039-r2), or the draft before the first is issued, with earlier revisions marked as replaced. **Print or save as PDF** and **Download Word** keep a copy. Once an option is approved, it shows the signed approval recorded against that revision. Everyone in the organization can read it.
+`/1NEON/o/{org}/projects/{KEY}/proposal`. The proposal on neon1's letterhead, for everyone in the organization: the latest revision (such as 0039-r2), or the draft before the first, with earlier ones marked as replaced and any signed approval shown. **Print or save as PDF** and **Download Word** keep a copy.
 
 ## An invoice
 
@@ -72,25 +72,25 @@ Files asked for show under Needs with **Upload**. The proposal, purchases, invoi
 
 ## The service agreement
 
-`/1NEON/o/{org}/agreement` (signed in) and `/1NEON/agreement` (public). neon1's service agreement, its edition, and its **Signatures**: who signed which edition and when. An admin of the client organization reads it and signs it once, with a typed name and the consent box. On success: "Signed. Thank you; a copy is kept with your organization's records."
+`/1NEON/o/{org}/agreement` (signed in) and `/1NEON/agreement` (public). The agreement, its edition, and **Signatures**: who signed which edition and when. A client admin signs it once with a typed name and the consent box.
 
 ## One layer across projects
 
-`/1NEON/o/{org}/layer/{needs|execute|observe|normalize}`. Every project's items for one layer in one list. Open a project to add or change its items.
+`/1NEON/o/{org}/layer/{needs|execute|observe|normalize}`. One layer's items across every project. Open a project to change them.
 
 ## People
 
 `/1NEON/o/{org}/people`. Who's in the organization, their title, access, and status.
 
-- **Invite people** (admins): one or more emails, an access level (viewer, editor, or admin), and optional names and titles. Each person gets an email with a link and signs in with a code. Up to 50 at once.
+- **Invite people** (admins): up to 50 emails at once, with an access level and optional names and titles. Each gets an email link and signs in with a code.
 - Each invitation shows whether its email went out: queued, sent, or failed. **Resend** sends it again (rate limited).
-- Admins change someone's access or title, or **deactivate** them, which signs them out and ends their access. Reactivating brings them back.
+- Admins change access or titles, or **deactivate** someone, ending their access until reactivated.
 - Member statuses: **Invited** (hasn't signed in yet), **Joined**, **Deactivated**.
 - neon1's own access shows without a way to change it.
 
 ## Files
 
-`/1NEON/o/{org}/documents`. Every file shared in the organization. **Upload** (everyone in the organization, viewers too) a file up to 100 MB, and pick its project, or none for a general file. Each file goes through states: **Receiving** (uploading), **Checking** (virus scan and size check), **Ready** (clean, opens or downloads), **Rejected** (the scan found a threat), or **Failed** (missing, the wrong size, or a scan that couldn't finish). PDFs, pictures, and text open in a new tab; anything else downloads. The uploader and admins can delete a file. No passwords, keys, or regulated data without an agreement that covers it.
+`/1NEON/o/{org}/documents`. Every file in the organization. Anyone, viewers too, can **Upload** up to 100 MB, to a project or none. Files move through **Receiving**, **Checking** (virus and size), **Ready**, **Rejected** (a threat found), or **Failed** (missing, wrong size, or the scan didn't finish). PDFs, pictures, and text open in a tab; others download. Uploaders and admins can delete. No passwords, keys, or regulated data without an agreement that covers it.
 
 ## Insights
 
@@ -98,7 +98,7 @@ Files asked for show under Needs with **Upload**. The proposal, purchases, invoi
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. Who signed the service agreement and which edition, or "not signed yet", with **Read and sign** (or **Read it** once signed). Then the stages on the board. Each row: name, layer, "Done when", and an optional limit; **Show** or **Hide**; reorder. **Save workflow** saves all at once (admins, after confirming it's them). A stage that holds projects can't be removed.
+`/1NEON/o/{org}/settings`. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 
 ## Your profile
 
