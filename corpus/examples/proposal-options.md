@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-13
 created: 2026-11-11
-edition: "2.1"
+edition: "2.2"
 consumers: [knowledge, ai]
 pdf: true
 featured: true

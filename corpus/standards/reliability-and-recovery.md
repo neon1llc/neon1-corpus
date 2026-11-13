@@ -4,11 +4,11 @@ title: Reliability and recovery
 summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]

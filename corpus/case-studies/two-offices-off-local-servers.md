@@ -6,9 +6,9 @@ type: case-study
 status: adopted
 client: automotive business
 area: migration
-updated: 2026-11-09
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
@@ -24,11 +24,11 @@ origin: "neon1-site src/app/public/index.html#case-migration"
 
 # Two offices off local servers
 
-## Needs
+## The problem
 
 An automotive business ran its application, database, and files on two local servers, and both locations had to keep working through the move. Their technical lead supported those servers and knew them best.
 
-## Execute
+## The work
 
 He led the inventory and dependency discovery. I owned the AWS design, sizing, and migration plan.
 
@@ -37,7 +37,7 @@ He led the inventory and dependency discovery. I owned the AWS design, sizing, a
 - Sized from measured CPU, memory, database, and storage use, not the old hardware.
 - Data was seeded ahead, and the cutover kept a fallback until both offices signed off.
 
-## Observe
+## The results
 
 | Check                              | Result                           |
 |------------------------------------|----------------------------------|
@@ -46,6 +46,6 @@ He led the inventory and dependency discovery. I owned the AWS design, sizing, a
 | Backup and restore                 | Tested with the technical lead   |
 | Application changes needed         | None                             |
 
-## Normalize
+## After handover
 
 The technical lead runs it, with architecture, access, backup, restore, and monitoring written down. Containers or a bigger platform come only if measured reliability, capacity, or cost makes the case.

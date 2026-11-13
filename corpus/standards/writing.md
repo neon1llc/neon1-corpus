@@ -4,11 +4,11 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-01
-edition: "1.5"
+edition: "1.6"
 order: 1
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal handbook (writing) and the genre conventions below"
 related: [standards-development, standards-documentation, standards-code-style]

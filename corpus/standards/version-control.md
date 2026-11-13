@@ -4,12 +4,12 @@ title: Version control
 summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, and which safeguards production and client data require."
 type: standard
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-08
-edition: "2.3"
+edition: "2.4"
 audience: "Developers"
 order: 5
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "VCS-ETIQUETTE.md in Ready, Secure, Go and neon1-corpus, extended to every neon1 repository"
 related: [standards-development, standards-versioning, standards-testing-and-review]

@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]

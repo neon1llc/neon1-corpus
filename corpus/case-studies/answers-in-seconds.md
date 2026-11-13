@@ -6,9 +6,9 @@ type: case-study
 status: adopted
 client: accounting firm
 area: "cloud & AI"
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -24,13 +24,13 @@ origin: "neon1-site src/app/public/index.html#case-accounting"
 
 # Answers in seconds, with sources
 
-## Needs
+## The problem
 
 The firm's knowledge was spread across Microsoft 365: policies, manuals, Word files, PDFs, and client documents. A routine lookup took 2 to 10 minutes, often by asking a senior colleague. Drafts, old versions, and restricted files sat next to the right answer, so a simple chatbot would have been risky.
 
 The ask: let staff ask normal questions, return the approved answer with its document, and never make the AI more authoritative than the source.
 
-## Execute
+## The work
 
 This was my first project with an AWS partner, [Xenoss](https://xenoss.io), who helped with design and maintenance. I handled ingestion, embeddings, retrieval, and answer quality.
 
@@ -39,7 +39,7 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), who 
 - Each question is checked against what that person may see before retrieval, and the assistant answers from the passages, with citations, or says it doesn't know. How well it kept to that is measured below.
 - Terraform and GitHub Actions deploy it, and CloudWatch tracks ingestion, retrieval, and answer time.
 
-## Observe
+## The results
 
 | Measure                                  | Before       | After  |
 |------------------------------------------|--------------|--------|
@@ -59,6 +59,6 @@ In the client's words:
 >
 > Boris M., Boris M Tax
 
-## Normalize
+## After handover
 
 Microsoft 365 stays the source of truth, and the index can be rebuilt from it anytime. The firm decides which documents are approved and who sees them. Next is an MCP server over the same retrieval, so agents use the firm's knowledge with the same permissions, then narrow, reviewable agent actions where they save real time.

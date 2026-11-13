@@ -25,13 +25,13 @@ export const SHELF_GROUP = {
 }
 
 export const SHELVES = {
-  company: ["Company", "The charter, the names, how to get in touch, and a glossary."],
+  company: ["Company", "Who neon1 is, pricing, the state record, how to get in touch, and a glossary."],
   services: ["Services", "What neon1 offers."],
   standards: ["How I work", "How each engagement is run, from the first conversation to handover."],
   guides: ["Guides", "How-tos and typical engagements, for owners, teams, and families."],
   faq: ["Questions", "Common questions about working with neon1 and using 1NEON."],
-  "case-studies": ["Case studies", "Past projects, told as Needs, Execute, Observe, Normalize."],
-  products: ["Products", "Tools and products neon1 builds."],
+  "case-studies": ["Case studies", "Past projects: the problem, the work, and what was measured."],
+  products: ["Products", "The client portal, two open-source tools, and a security guide."],
   landscape: ["Alternatives", "Other places to get help, and open-source tools worth a look."],
   templates: ["Templates", "Blank business documents to copy and fill in."],
   forms: ["Forms", "Blank records used during an engagement."],

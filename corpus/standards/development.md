@@ -4,12 +4,12 @@ title: Development
 summary: "The main development standard for neon1: the principles in priority order, what each word means, how work moves from idea to release, and where the detailed rules live."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 audience: "Developers"
 order: 2
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal handbook (security, data, and technology decisions) and repository conventions"
 related: [standards-writing, standards-version-control, standards-versioning, standards-code-style, standards-testing-and-review, standards-documentation, policy-ai-use]

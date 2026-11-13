@@ -4,11 +4,11 @@ title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 18
 origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
