@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-11
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -200,14 +200,14 @@ The whole working portal, with 1NEON's API running in your browser: same routes,
 
 ### The guided walkthrough at /1NEON/live
 
-A walkthrough plays itself on the real portal. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery, with her thoughts beside it and subtitles at the bottom. Like the demo, it runs in your browser on made-up data, starts fresh, and saves nothing.
+A walkthrough plays itself on the real portal. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery, with her thoughts beside it and a line under the controls that says what's happening. Like the demo, it runs in your browser on made-up data, starts fresh, and saves nothing.
 
 Each walkthrough opens on a card saying who Maria is, what you'll see, and how long it takes, and waits for **Start**. It ends on a card with what happened, **Watch again**, the full story or demo, the other walkthroughs, and help. **Exit** returns you where you came from. The lengths are measured: before a release, a check plays each one in a real browser and fails if it runs much longer or shorter.
 
 There are a few kinds:
 
-- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about two minutes, with request, compare, approve, progress, and handover. Comparing opens the hours behind a price, and progress shows the hours logged.
-- **The whole story.** `?play=full` plays 14 chapters in about 13 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
+- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about three minutes, with request, compare, approve, progress, and handover. Comparing opens the hours behind a price, and progress shows the hours logged.
+- **The whole story.** `?play=full` plays 14 chapters in about 17 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
 - **Short demos.** One thing each, start to finish: joining from an invitation, adding a passkey, adding an authenticator app, and text codes. Links from the FAQ can also start partway into the whole story.
 
 Every walkthrough starts at sign-in, with Maria thinking about why she's there. She signs in with an emailed code and walks to the page click by click, as a person would.
