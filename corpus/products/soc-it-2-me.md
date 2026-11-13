@@ -18,7 +18,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 *Public · v0.1.2*
 
-**SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to a clean first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-it-2-me).
+**SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to being ready for a first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-it-2-me).
 
 - **Who it's for:** founders, operators, and the person who just became "the security owner" at a software or services company, plus trainers who want material to teach from.
 - **What's in it:** eight modules, each with an exercise on your own company; a map of 44 starter controls with owners, frequency, and evidence, tied to the SOC 2 Trust Services Criteria and ISO/IEC 27001:2022; evidence checklists by area; templates for risk, access, vendor, and incident work; a 90-day plan; and a workshop guide.
@@ -27,7 +27,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 ## Current limits
 
-It's readiness training, not audit or legal advice. Only a licensed CPA firm can issue a SOC 2 report. It doesn't yet cover the Processing Integrity or Privacy criteria.
+It's readiness training, not audit or legal advice. Only a licensed CPA firm can issue a SOC 2 report, and the audit's outcome is the auditor's call, not the course's. It doesn't yet cover the Processing Integrity or Privacy criteria.
 
 ## Next step
 
