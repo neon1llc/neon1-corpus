@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-10
-edition: "1.2"
+edition: "1.3"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -22,7 +22,7 @@ Access levels are cumulative. **Viewers** read, comment, add requests, and appro
 
 `/1NEON/o/{org}/workspace`. The starting point: what needs you, and what changed lately.
 
-- **Needs you** lists things waiting on you, each with the one action it asks for: **Compare options** (an approval), **Upload file** (a file asked for), or **Open** (your task or item). "You're all caught up" when empty.
+- **Needs you** lists things waiting on you, most pressing first, each with the one action it asks for: **See and pay** (an invoice with a balance, with the amount and due date, or marked overdue), **Compare options** (an approval), **Review and accept** (a handover with every step done), **Upload file** (a file asked for), or **Open** (your task or item). For neon1, an invoice draft waits with **Check it**. "You're all caught up" when empty.
 - **Coming up** shows this week and the next two as a strip of days, each mark a due date, milestone, or project target, then everything dated in the next six weeks listed by Overdue, This week, Next week, and Later.
 - **Get started** is a setup checklist that disappears once done: take the tour; start your first project (editors); invite your team (admins); add a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
