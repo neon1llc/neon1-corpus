@@ -4,11 +4,11 @@ title: Operating principles
 summary: "The habits behind every neon1 engagement, and what each one means in practice."
 type: standard
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-13
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "2.0"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
@@ -58,7 +58,7 @@ I refer out continuous emergency support, safety-critical equipment, regulated p
 
 ## Commercial basics
 
-- Projects have a written scope and a fixed price by default, with the assumptions written down.
+- Projects have a written scope and a price in writing, with the assumptions written down. The price is fixed when the work is well understood. Otherwise it's an estimate: billed for the hours I work, each one listed, and never above its high end unless you approve a change first.
 - Third-party subscriptions, hardware, and travel are separate, and I prefer that vendors bill you directly.
 - No extra work or spending happens without your written approval.
 - A signed agreement governs each engagement. These principles explain how I work. They don't replace it.

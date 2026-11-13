@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-11
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -196,12 +196,14 @@ The whole portal, working, with 1NEON's own API running inside your browser inst
 
 ### The guided walkthrough at /1NEON/live
 
-A walkthrough plays itself on the real portal while you watch. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery. Her thoughts appear beside the cursor, and a bar at the top narrates. Like the demo, it runs on the in-browser API, and everything is made up and stays in your browser. It starts fresh each time and saves nothing.
+A walkthrough plays itself on the real portal while you watch. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery. Her thoughts appear beside the cursor, and a line at the bottom of the screen says what's happening, like subtitles. Like the demo, it runs on the in-browser API, and everything is made up and stays in your browser. It starts fresh each time and saves nothing.
+
+Every walkthrough opens on a card that says who Maria is, what you'll see, and how long it takes, and nothing moves until you press **Start**. Each ends on a closing card that says what happened, with **Watch again**, the full story or the interactive demo, the other walkthroughs, and help. **Exit** returns to the page and the question you came from. The lengths on those cards are measured: a check plays every walkthrough in a real browser before a release and fails if one takes much longer or shorter than it says.
 
 There are a few kinds:
 
-- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about two minutes, with request, compare, approve, progress, and handover.
-- **The whole story.** `?play=full` plays 13 sections: meet Maria, sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, the work, measure it, hand over, and ongoing care.
+- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about two minutes, with request, compare, approve, progress, and handover. Comparing opens the hours behind a price, and progress shows the hours logged.
+- **The whole story.** `?play=full` plays 14 chapters in about 13 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
 - **Short demos.** One thing each, start to finish: joining from an invitation, adding a passkey, adding an authenticator app, and text codes. Links from the FAQ can also start partway into the whole story.
 
 Every walkthrough starts at the sign-in screen with Maria thinking about why she's there. She signs in with an emailed code, then walks to the page click by click: the menu, then the project's row, then its tab, the way a person would. It never starts already signed in.
@@ -224,18 +226,18 @@ With reduced motion on, the cursor jumps between places instead of gliding, and 
 
 #### Pausing, resuming, speed, and Back
 
-The bar has one segment for each section, the previous section on the left, the next on the right, and play, speed, and the current step between them. The middle opens a list of every section and the short demos.
+The bar at the top has one segment for each chapter, the previous chapter on the left, the next on the right, and play, speed, and the current chapter's name between them. The name opens a list of every chapter and the short demos.
 
 - **Pause and play.** The pause button, or Space, holds the story between any two small actions. The walkthrough keeps its own clock that stops while paused, so a pause in the middle of a step never runs out the time a step is allowed.
-- **Exploring while paused.** While it plays, the portal underneath is locked, so neither clicks nor the keyboard reach it. Paused, the portal is live, and you can click around. If you did, resuming replays the current section from its start, so the story doesn't continue from a page it didn't expect.
+- **Exploring while paused.** While it plays, the portal underneath is locked, so neither clicks nor the keyboard reach it. Paused, the portal is live, and you can click around or use the keyboard. If you did, resuming replays the current section from its start, so the story doesn't continue from a page it didn't expect.
 - **Leaving the tab.** Switching apps or tabs pauses it, so nothing plays unseen. Coming back resumes by itself after about a second, unless you paused it yourself or clicked in the portal meanwhile. Time while the phone was locked counts as paused too.
 - **Speed.** A slider from 0.5x to 2x in quarter steps. It applies from the next movement and is saved in your browser.
-- **Back and Next.** The left and right arrow keys or buttons. At the start of each section, the walkthrough saves a snapshot of all the data, the page, and who's signed in. Back restores that snapshot and plays the section again, so the screen matches the story exactly. A section not reached yet is caught up to quickly, with the cursor hidden and "Catching up…" in the bar, and then plays at normal speed.
+- **Back and Next.** The left and right arrow keys or buttons. At the start of each section, the walkthrough saves a snapshot of all the data, the page, and who's signed in. Back restores that snapshot and plays the section again, so the screen matches the story exactly. A chapter not reached yet is set up first behind a loading screen that names the chapter and fills a line, and then plays at normal speed.
 - **Browser Back.** The walkthrough changes the address as it moves, but it replaces the entry rather than adding new ones. So the browser's Back button leaves the walkthrough for the page that linked to it.
-- **Refreshing.** A refresh partway through resumes at the section you were on.
-- **When something goes wrong.** If a step can't find what it's looking for in time, the bar says "One moment…" and the section starts again from its snapshot. If that fails too, it rebuilds from the very beginning and catches up. Only after a third failure does it pause and ask you to pick a section.
+- **Refreshing.** After a refresh partway through, the opening card offers **Continue** at the chapter you were on, or **Start from the beginning**.
+- **Your screen.** A phone's screen stays lit while a walkthrough plays, and dims as usual once it's paused or over. Browsers without that ability behave as before.
+- **When something goes wrong.** If a step can't find what it's looking for in time, the bar says "One moment…" and the chapter starts again from its snapshot. If that fails too, it rebuilds from the very beginning. After a third failure it stops on a card that says so and offers to play the chapter again, start over, or try the demo. It never loops.
 
-With reduced motion on, the walkthrough doesn't start by itself. It waits for you to press play.
 
 ## How a change goes live
 
