@@ -17,7 +17,7 @@ related: [standards-writing, standards-development, standards-versioning]
 
 # Documentation
 
-Documentation lets someone use, run, or change a project without asking its author. It's written once, in one place, kept next to the code it describes, and updated in the same change as the code.
+Documentation lets someone use, run, or change a project without asking its author. It's written once, next to the code, and updated in the same change.
 
 ## Every project has
 
@@ -49,21 +49,21 @@ A README usually holds a short version of each and links out when one grows.
 
 ## Decision records
 
-Write one when a choice is costly to reverse: a database, a framework, a hosting model, a license. Keep it to a page: the context, the decision, the options rejected and why, and what would make us revisit it. Number them and never delete one. A changed decision gets a new record that replaces the old one. The [tool and architecture decision form](../forms/tool-decision.md) is a template.
+Write one when a choice is costly to reverse, such as a database, framework, hosting model, or license. One page: the context, the decision, the options rejected and why, and what would reopen it. Number them, never delete one, and record a changed decision as a new one. The [tool and architecture decision form](../forms/tool-decision.md) is a template.
 
 ## Runbooks
 
-Prerequisites come first, then commands in the order they're run, each with what you should see and what to do if you don't. Commands are copied exactly and tested. A runbook nobody has followed is a draft.
+Prerequisites first, then commands in order, each with what you should see and what to do if you don't, copied exactly and tested. A runbook nobody has followed is a draft.
 
 ## Keeping docs true
 
 - Docs change in the same commit as the behavior they describe.
 - A checked fact beats a remembered one. Commands in a README should be run before a release.
-- One source for each fact. Link to it instead of copying it, so it can't drift. That's why neon1's public words live once, in [neon1-corpus](https://github.com/neon1llc/neon1-corpus).
+- One source for each fact, linked rather than copied, so it can't drift. That's why neon1's public words live once, in [neon1-corpus](https://github.com/neon1llc/neon1-corpus).
 
 ## Documents in this Knowledge Center
 
-Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus), as Markdown, and read from there by the website, the Knowledge Center and its PDFs, and Neo. Each document is built the same way, so a reader always knows where to look.
+Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus), as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo. Every document is built the same way, so readers know where to look.
 
 ### What every document carries
 
@@ -77,7 +77,7 @@ Everything here is written once in [neon1-corpus](https://github.com/neon1llc/ne
 | Updated | When it last changed in substance, shown once it differs from Published | The facts, and the date at the top of the PDF |
 | For | Who it's written for, when that isn't everyone | The facts |
 
-Dates are never moved to look newer or older than they are. A typo fix doesn't change Updated or the edition.
+Dates are never moved, and a typo fix changes neither Updated nor the edition.
 
 ### Kinds of document
 
@@ -95,13 +95,13 @@ Dates are never moved to look newer or older than they are. A typo fix doesn't c
 
 ### Sharing and reuse
 
-- **Link to the page.** Every document has a fixed address under `neon1.tech/knowledge/`, and each section has its own anchor, so a link can point at the exact part.
-- **Hand over the PDF.** Documents marked for it print to a PDF with the same text, dated, with its edition in the footer and a link back to the live version, since a PDF travels on its own.
+- **Link to the page.** Every document has a fixed address under `neon1.tech/knowledge/`, and each section an anchor.
+- **Hand over the PDF.** Marked documents print to a dated PDF with the edition in the footer and a link back to the live version.
 - **Copy word for word.** Documents are shared under CC BY-ND 4.0, credited "© neon1 LLC (neon1.tech)". Blank templates and forms may also be filled in and adapted for your own work.
 
 ### Credit where it's due
 
-The practice described here builds on standards bodies, government guides, and practitioners who published what they learned. Documents name them where they're used and list them under Sources, following the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them in one place.
+This practice builds on standards bodies, government guides, and practitioners, named where used and under Sources, per the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them in one place.
 
 ## Sources
 

@@ -16,13 +16,13 @@ related: [forms-service-and-recovery-profile, forms-incident-and-restore, standa
 
 # Reliability and recovery
 
-Reliability means you can do the task when you need to, and get back on your feet when something goes wrong. Targets come from how much interruption and data loss your business can actually tolerate, what the design can do, what it costs, and who's available to respond. I don't start by picking an uptime percentage.
+Reliability means you can do the task when you need to, and recover when something goes wrong. Targets come from how much interruption and data loss your business can tolerate, what the design can do, its cost, and who can respond, not from a picked uptime percentage.
 
 ## Define the service first
 
-A service profile names the task that matters, operating hours, users, normal volume, dependencies, data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." We describe normal, degraded, and failed states separately, because a form that accepts a request but sends the email late hasn't lost the request.
+A service profile names the task that matters, operating hours, users, normal volume, dependencies, data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." Normal, degraded, and failed states are described separately: a form that sends its email late hasn't lost the request.
 
-Dependencies such as sign-in, email delivery, payments, and your own internet connection are listed, with which failures the design survives.
+Dependencies such as sign-in, email, payments, and your internet connection are listed, with which failures the design survives.
 
 ## The vocabulary
 
@@ -46,20 +46,20 @@ Definitions follow [Google's site reliability guidance on service level objectiv
 | 99.9% | 43 minutes |
 | 99.99% | 4 minutes |
 
-Each extra nine needs faster detection, faster response, and usually more money. A person who's unavailable until the weekend can't meet 99.9% for anything that needs a human to fix it. So I don't sell targets that the coverage can't back up.
+Each extra nine needs faster detection and response, and usually more money. Someone unavailable until the weekend can't meet 99.9% for anything a human must fix, so I don't sell targets the coverage can't back.
 
 ## Setting a target together
 
-I ask what happens if the task fails for five minutes, an hour, a day, and a weekend. When's the busy period? Is a manual process acceptable, and for how long? Then we price the design and the coverage against those answers. Targets start few, get a baseline period, and say what happens when they're missed.
+I ask what happens if the task fails for five minutes, an hour, a day, and a weekend, when the busy period is, and how long a manual process is acceptable. Then we price design and coverage against those answers. Targets start few, get a baseline period, and say what happens when missed.
 
 ## Recoverable data is more than a schedule
 
-An hourly backup doesn't guarantee an hour of data loss at most. Jobs fail, copies come out incomplete, credentials get lost, and corruption is found late. Recovery also needs uploaded files, configuration, and the keys to decrypt it all.
+An hourly backup doesn't cap data loss at an hour. Jobs fail, copies come out incomplete, credentials get lost, and corruption is found late. Recovery also needs uploaded files, configuration, and the decryption keys.
 
 > [!example] Counting data loss
 > Trouble starts at 10:15. The last backup finished at 9:00, but the data in it only goes up to 8:30. You've lost an hour and forty-five minutes of work, not an hour and fifteen.
 
-Replication copies deletions and corruption too, and file sync spreads unwanted changes. I keep an independent copy that matches the threat, following the 3-2-1 idea (several copies, different places, one off site) plus an offline or locked copy and regular test restores, as [CISA recommends](https://www.cisa.gov/stopransomware/ransomware-guide).
+Replication and file sync copy deletions and corruption too. I keep an independent copy that matches the threat, following the 3-2-1 idea (several copies, different places, one off site) plus an offline or locked copy and regular test restores, as [CISA recommends](https://www.cisa.gov/stopransomware/ransomware-guide).
 
 ## Matching recovery to the stakes
 
@@ -81,17 +81,17 @@ Replication copies deletions and corruption too, and file sync spreads unwanted 
 7. You confirm the restored result is usable.
 8. Clean up the test copy, update the instructions, and schedule the next test.
 
-Restores are tested before handover, after a big change, and at an interval we agree on.
+Restores are tested before handover, after big changes, and at an agreed interval.
 
 ## When something breaks
 
-An incident disrupts or threatens normal work. A request asks for access, advice, or a change. Severity comes from the consequences to you. For each incident we name who coordinates, who can change the system, and your contact, and keep a timestamped log. Updates say what's affected, what's known, what isn't, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep the evidence intact, and bring in the right specialist or insurer.
+An incident disrupts or threatens normal work; a request asks for access, advice, or a change. Severity comes from the consequences to you. Each incident names who coordinates, who can change the system, and your contact, with a timestamped log. Updates say what's affected, known, and unknown, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep evidence intact, and bring in the right specialist or insurer.
 
-Afterward, a short review covers what happened and what changes, focused on conditions rather than blame.
+A short review afterward covers what happened and what changes, focused on conditions, not blame.
 
 ## What ongoing care covers
 
-Ongoing care with neon1 is scheduled attention to a named workflow within an agreed allowance. It isn't a help desk, round-the-clock security monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows the allowance, we change the scope or the price.
+Ongoing care is scheduled attention to a named workflow within an agreed allowance, not a help desk, round-the-clock monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows it, we change the scope or price.
 
 ## Sources
 
