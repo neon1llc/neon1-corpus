@@ -16,47 +16,47 @@ related: [company-process, forms-discovery, templates-proposal, forms-release-an
 
 # Discovery and delivery
 
-Every project follows the same path, scaled to its size: understand one real task, measure where it stands, compare the options, agree on a bounded result, build it in small steps, teach it, and check later that it helped. The [process page](../company/process.md) is the one-minute version. This is the full one.
+Every project follows one path, scaled to size: understand one real task, measure it, compare options, agree a bounded result, build in small steps, teach it, and check later that it helped. The [process page](../company/process.md) is the one-minute version.
 
 ## Understand one real task
 
-I ask for the last finished example, the next one coming, and a recent failure. With your permission I watch the work happen, often over a short screen share. I note who starts it, what information comes in, where it waits, which steps need judgment, and what "done" means.
+I ask for the last finished example, the next one coming, and a recent failure, and with your permission watch the work happen, often over a short screen share: who starts it, what comes in, where it waits, which steps need judgment, and what "done" means.
 
 The result is a plain problem statement, such as "When a new request arrives, the receptionist copies it into two places and sometimes misses the requested date." "Build an AI agent" is a solution, not a problem statement.
 
-I don't copy private records into my notes just because they were on screen. For personal clients I ask about comfort, accessibility, shared devices, and who will help later, and I'm happy to slow down and write steps out.
+I don't copy private records into my notes because they were on screen. For personal clients I ask about comfort, accessibility, shared devices, and who will help later, and write steps out.
 
 ## Measure the starting point
 
-Before changing anything I time a few real examples. Hands-on effort and waiting time are measured separately, and so are errors and exceptions. Then we write one sentence on the outcome, one measure of success, and one guardrail. For example: cut retyping time without increasing wrong customer records.
+Before changing anything I time a few real examples, measuring effort, waiting, errors, and exceptions separately. Then we write one outcome, one measure of success, and one guardrail. For example: cut retyping time without increasing wrong customer records.
 
-Saved minutes don't automatically become money. If we put a dollar value on time, the assumption is written down next to it.
+Saved minutes aren't automatically money; any dollar value on time has its assumption written beside it.
 
 ## Compare the options
 
-I lay out at least four: improve the process, configure what you already have, adopt a new service, or build something narrow. Each gets its ongoing cost, the effort to learn it, how your data is handled, who maintains it, what happens when it fails, and how you'd leave. "Do nothing for now" is on the list too.
+At least four: improve the process, configure what you have, adopt a new service, or build something narrow, plus "do nothing for now." Each gets its ongoing cost, learning effort, data handling, maintainer, failure behavior, and exit.
 
 ## Agree on a bounded result
 
-The scope is small enough to demonstrate at handover. It lists the normal cases, what's excluded, what data and accounts you'll provide, who approves, and how we'll check it works. Uncertain work sits behind a paid discovery step or a separate spending cap. See the [proposal template](../templates/proposal.md).
+The scope is small enough to demonstrate at handover: normal cases, exclusions, the data and accounts you'll provide, who approves, and how we'll check it. Uncertain work sits behind a paid discovery step or a spending cap. See the [proposal template](../templates/proposal.md).
 
-If something new comes up, a [change request](../forms/change-request.md) says what it is, what it costs, how it moves the dates, and how it changes acceptance. Nothing extra happens before you approve it.
+Anything new goes in a [change request](../forms/change-request.md) with its cost, dates, and effect on acceptance, and nothing extra happens before you approve it.
 
 ## Build and test in small steps
 
-You see a basic working version early, using safe sample data, so you can tell me whether it matches your task. Configuration and code are versioned, test and live access are kept apart, and every release records how to roll it back.
+You see a basic working version early, on safe sample data, to check it matches your task. Configuration and code are versioned, test and live access kept apart, and every release records its rollback.
 
-Checks follow the promise: a valid request arrives once, missing fields are explained, one person can't see another's records, a duplicate doesn't create duplicate work, and an outage leaves a visible, recoverable state. I test on the browsers, devices, and accessibility needs that are in scope, including a slow connection when that's realistic.
+Checks follow the promise: a valid request arrives once, missing fields are explained, one person can't see another's records, a duplicate doesn't create duplicate work, and an outage leaves a visible, recoverable state. I test the browsers, devices, and accessibility needs in scope, including a slow connection when realistic.
 
 ## Teach and hand over
 
-I show one ordinary task. You do it. Then you fix a harmless mistake on purpose. Where you hesitate, the instructions get better.
+I show one ordinary task, you do it, then you fix a harmless mistake on purpose. Where you hesitate, the instructions improve.
 
-The handover covers the workflow, who owns each account, recurring costs, routine steps, common errors, backup and recovery, vendor contacts, support terms, how to export, and known limits. Passwords go in a password manager, never in the handover document. We record acceptance against the agreed checks, and I remove access I no longer need. The [release and handover record](../forms/release-and-handover.md) is the checklist.
+The handover covers the workflow, who owns each account, recurring costs, routine steps, common errors, backup and recovery, vendor contacts, support terms, how to export, and known limits. Passwords go in a password manager, never the handover document. We record acceptance against the agreed checks, and I remove access I no longer need. The [release and handover record](../forms/release-and-handover.md) is the checklist.
 
 ## Check later that it helped
 
-At the agreed review date we look at whether the new workflow is being used and whether it fixed the original problem, including any upkeep it added. If something new is needed, it's because of a real need, not to fill a care plan.
+At the agreed review date we check whether the workflow is used and fixed the original problem, counting any upkeep it added. New work comes from a real need, not to fill a care plan.
 
 Permission to do the work isn't permission to publish it. I ask separately before naming you, quoting you, or showing a screenshot.
 
@@ -73,7 +73,7 @@ Permission to do the work isn't permission to publish it. I ask separately befor
 | Architecture decision records | Keeping the reason for a big choice | A record for every small preference |
 | Usability testing | Checking the whole task, including recovery | Testing only looks or expert use |
 
-These are tools, not certifications. I use the parts that help and say so when I'm only using some of them.
+These are tools, not certifications. I use the parts that help, and say when it's only some.
 
 ## Sources
 

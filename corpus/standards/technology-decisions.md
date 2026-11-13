@@ -16,17 +16,17 @@ related: [forms-tool-decision, standards-security-and-data, standards-reliabilit
 
 # Technology decisions
 
-I choose technology by your task and by what it costs to run after I've handed it over. Being popular, new, or free isn't a reason on its own.
+I choose technology by your task and its running cost after handover. Popular, new, or free isn't a reason on its own.
 
 ## Start with what you already have
 
-First I list the subscriptions, devices, skills, data, and integrations you already have, and check what's built in. A feature already included in Microsoft 365 or Google Workspace is often cheaper and easier to support than a new free server.
+First I list your subscriptions, devices, skills, data, and integrations, and check what's built in. A feature already in Microsoft 365 or Google Workspace is often cheaper and easier to support than a new free server.
 
-For a decision that matters, I compare four options: improve the process, configure an existing product, adopt a managed service, or build a narrow piece. "Not yet" is an option too. Each recommendation says what evidence would change it.
+For a decision that matters, I compare improving the process, configuring an existing product, adopting a managed service, building a narrow piece, and "not yet." Each recommendation says what evidence would change it.
 
 ## Requirements first, preferences second
 
-A tool that can't meet the hard requirements is out, however good it looks. Those requirements are permissions, export, lawful use, and recovery. Only then do I compare ease of use, maintenance, total cost, fit, and how good the evidence is. A weighted score helps us talk it through. It isn't an objective fact. The [tool and architecture decision form](../forms/tool-decision.md) keeps it short.
+A tool that fails the hard requirements, permissions, export, lawful use, and recovery, is out however good it looks. Then I compare ease of use, maintenance, total cost, fit, and evidence. A weighted score helps discussion; it isn't an objective fact. The [tool and architecture decision form](../forms/tool-decision.md) keeps it short.
 
 ## Count the whole cost
 
@@ -35,7 +35,7 @@ First-year cost includes setup, subscriptions, computing, storage, data transfer
 > [!example] Why the license price isn't the price
 > A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better, and the license price is only part of the cost.
 
-I follow the [FinOps Framework](https://www.finops.org/framework/), the practice of managing cloud costs, at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
+I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud costs at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
 
 ## Architecture that fits a small business
 
@@ -48,17 +48,17 @@ I follow the [FinOps Framework](https://www.finops.org/framework/), the practice
 
 - Supported APIs over screen scraping.
 - API limits, paging, time zones, currencies, and ID formats written down.
-- Incoming data validated. Each business action gets a stable ID, so a retry doesn't send a second invoice or make a second booking.
-- Temporary failures retry a limited number of times with a delay. Permanent ones go somewhere a person will see them.
-- Partial success is kept. If a record saves but its email fails, the record stays and the failed email shows up. Reconciliation checks make missing or duplicate results visible.
+- Incoming data validated, and each business action given a stable ID, so a retry doesn't send a second invoice.
+- Temporary failures retry a few times with a delay; permanent ones go where a person will see them.
+- Partial success is kept: if a record saves but its email fails, the record stays and the failure shows. Reconciliation checks surface missing or duplicate results.
 
 ## Knowing when it's broken
 
-Every service starts with a health check on the journey that matters, a clear failure log, cost visibility, and a named person for alerts. Alerts say what's affected, what to do next, and where the instructions are. A monitor hosted on the same server as the app goes down with it, so it can't report that outage.
+Every service starts with a health check on the journey that matters, a clear failure log, cost visibility, and a named person for alerts, which say what's affected, what to do, and where the instructions are. A monitor on the app's own server goes down with it.
 
 ## Licenses and terms
 
-Open source, source available, open core, free tier, and free trial mean different things. Code licenses, hosted terms, model weights, datasets, plugins, logos, and fonts can each have their own rules. I read the actual license at the version being adopted, and note whether we're consulting on your own installation, distributing software, embedding it, or hosting it for others. Some popular automation and AI platforms allow internal use but need commercial terms for hosting or white-labeling. Notices and attribution are kept intact.
+Open source, source available, open core, free tier, and free trial differ, and code, hosted terms, model weights, datasets, plugins, logos, and fonts can each have their own rules. I read the actual license at the adopted version, for how we'll use it: your own installation, distribution, embedding, or hosting for others. Some automation and AI platforms allow internal use but need commercial terms for hosting or white-labeling. Notices and attribution stay intact.
 
 ## Qualifying a tool before you rely on it
 
@@ -70,7 +70,7 @@ Open source, source available, open core, free tier, and free trial mean differe
 6. Record the evidence and gaps, then adopt, keep testing, defer, or reject.
 7. Name the owner, update policy, review date, and exit before it goes live.
 
-Lots of stars or a recent commit isn't enough. A mature project can change rarely, and a busy one can be unstable.
+Stars or a recent commit aren't enough: a mature project can change rarely, and a busy one can be unstable.
 
 ## Sources
 
