@@ -16,11 +16,11 @@ related: [standards-development, policy-accessibility]
 
 # Design and accessibility
 
-Good design means people can do what they came to do quickly, and recover when something goes wrong. neon1 has its own look, but the task comes first.
+Good design lets people do what they came for quickly, and recover when something goes wrong. neon1 has its own look, but the task comes first.
 
 ## Start from the task
 
-Every screen and document answers three questions before anything else: what is this, what can I do here, and what happens next. Navigation is ordinary and visible. Nobody has to learn a metaphor, finish an animation, or know a film reference to get to the useful part.
+Every screen and document first answers what this is, what I can do here, and what happens next. Navigation is ordinary and visible, and nobody needs a metaphor, an animation, or a film reference to reach the useful part.
 
 ## Accessible by default
 
@@ -34,15 +34,15 @@ I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.o
 - Motion that can be paused, and a calm version for people who set their device to reduce motion.
 - Pages that work when zoomed to 200% and on a 320-pixel-wide phone without sideways scrolling.
 
-An automated accessibility score is a starting point. I also check with a keyboard, a screen reader, and a phone.
+An automated score is a starting point; I also check with a keyboard, a screen reader, and a phone.
 
 ## Fast and light
 
-Pages load what they need and nothing else: no trackers, no ad scripts, and no fonts loaded from someone else's server. Images are sized for the screen, and pages should still work on a slow connection.
+Pages load only what they need, with no trackers, ad scripts, or outside fonts. Images are sized for the screen, and pages work on a slow connection.
 
 ## Forms people can finish
 
-Short forms, one question per field, and only the questions the task needs. Inputs use the right keyboard on phones. A submitted form says it was received and what happens next. Nothing is lost if a field is wrong.
+Short forms with only the questions the task needs, one per field, and the right phone keyboard. A submitted form says it was received and what's next, and a wrong field loses nothing.
 
 ## Documents
 
@@ -58,7 +58,7 @@ Documents use one clear column, real headings, comfortable spacing, and tables o
 
 ## For your projects
 
-The same standard applies to anything I build for you. If something in scope can't meet it, such as a vendor's checkout page we can't change, I'll tell you and note it in the handover.
+The same standard applies to what I build for you. If something in scope can't meet it, such as a vendor's checkout page, I'll say so and note it in the handover.
 
 ## Sources
 

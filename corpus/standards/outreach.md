@@ -16,7 +16,7 @@ related: [standards-customers, landscape-where-else-to-get-help]
 
 # Outreach and claims
 
-Selling, for neon1, means helping you decide quickly whether I'm the right help, and telling you when I'm not.
+Selling, for neon1, means helping you decide quickly whether I'm the right help, and saying when I'm not.
 
 ## What I make clear, in order
 
@@ -48,17 +48,17 @@ Selling, for neon1, means helping you decide quickly whether I'm the right help,
 
 ## Claims and evidence
 
-Every public claim has a record behind it: the wording, what supports it, its scope, the date, permission, and its limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's still unknown. A clear result without a number beats an invented percentage.
+Every public claim has a record: wording, support, scope, date, permission, and limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's unknown. A clear result without a number beats an invented percentage.
 
-Work I did as an employee can show my background, but it isn't presented as neon1's client work. Testimonials reflect the person's real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance on reviews and testimonials](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
+Work I did as an employee shows my background but isn't presented as neon1's client work. Testimonials reflect real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance on reviews and testimonials](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
 
 ## Where I show up
 
-Local relationships and referrals, LinkedIn, GitHub, and this website. What I publish, including the Knowledge Center, is meant to be useful to anyone who reads it.
+Local relationships and referrals, LinkedIn, GitHub, and this website, where what I publish is meant to be useful to anyone.
 
 ## Follow-up
 
-One follow-up after a proposal, then the next move is yours. If you say no, that's the end of it, and you're welcome back anytime.
+One follow-up after a proposal, then the next move is yours. A no ends it, and you're welcome back anytime.
 
 ## Sources
 
