@@ -85,10 +85,11 @@ A date may follow the version. Sections are **Added**, **Changed**, **Deprecated
 
 ## Releasing
 
-1. Merge everything the release includes into main, with the checks passing.
-2. Update the changelog and every place the version appears, in one commit.
-3. Merge it to main. The pipeline deploys it, checks that what's live reports the new version, and then tags that commit: `vX.Y.Z`, annotated.
-4. A project without a pipeline tags by hand the same way: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
+1. Look at the batch on dev first, where a project has one. neon1's site and 1NEON do, at dev.neon1.tech.
+2. Merge everything the release includes into main, with the checks passing.
+3. Update the changelog and every place the version appears, in one commit.
+4. Merge it to main. The pipeline deploys it, checks that what's live reports the new version, and then tags that commit: `vX.Y.Z`, annotated.
+5. A project without a pipeline tags by hand the same way: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
 
 ## How neon1's repositories release
 
@@ -105,6 +106,7 @@ In every neon1 repository, the pipeline makes the tag, so a tag always means "th
 - **A change that people will notice ships in a release.** Its changelog entry goes in the same merge: a fix under the next patch, new capability under the next minor.
 - **A push with no new version ships under the current one.** Keep that to changes nobody would notice, such as CI or comments.
 - **Checks enforce agreement.** Each repository's checks fail when its version places disagree, and the tag step stops when the changelog names no version.
+- **Dev builds are never releases.** Work shown on dev.neon1.tech, from the `dev` branch or any other branch, is never tagged or announced, and its changelog entries wait under `## Unreleased`. The version is set, and the tag made, only when the batch reaches main.
 - **A tag that exists is never made again or moved.** If a release went wrong, the fix is the next patch.
 
 ## Documents: editions X.Y

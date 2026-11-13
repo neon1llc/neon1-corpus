@@ -18,6 +18,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - How neon1.tech works: Neo's prompt is about 32,000 tokens as measured, and Neo can trail a corpus release by up to a week.
 - Proposal with options also says which bakery orders arrive on their own, which a person checks, and which are still entered by hand once in a staff form.
 - The tax preparers post says its opening couple is an invented example. SOC It 2 Me says it prepares a company for an audit, not that it guarantees a clean one.
+- How neon1 is built (edition 1.2): **Trying a change on dev first**, with diagrams of the dev-to-production workflow and of signing in to dev.neon1.tech, what dev copies and what it doesn't, and 1NEON on a copy of production's data, open to neon1 only.
+- Versioning and releases (edition 1.5): look at a batch on dev before releasing, and dev builds are never releases.
+- Version control (edition 2.4): the two long-lived branches, `main` and `dev`, and why each work branch goes to main on its own.
 
 ### Fixed
 - The renderer and the linter refuse links with unsafe schemes (javascript:, data:, and others), with tests in CI.

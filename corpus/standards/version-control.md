@@ -40,6 +40,8 @@ Name a branch for the kind of change and what it does, in lowercase hyphenated w
 
 If a second problem turns up while working, it gets its own branch.
 
+Two branches live on. `main` is what's in production. `dev`, in a repository with a dev environment, is main plus the work waiting to ship: a workflow merges main into it after every push to main, and work branches merge into it to be seen together. `dev` is never merged into main as a whole. Each work branch goes to main on its own, so one unfinished change can't ride along with a finished one.
+
 ## Commit messages
 
 neon1 follows [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/):
