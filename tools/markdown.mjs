@@ -14,6 +14,19 @@ const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }
 export const escape = (text) => text.replace(/[&<>]/g, (c) => ESC[c])
 const attr = (text) => text.replace(/[&<>"]/g, (c) => ESC[c])
 
+// --- Link safety ---
+
+// The address schemes a link may use. Anything else (javascript:, data:, vbscript:, file:, and the rest) is
+// refused, so a link can only ever go to a page, an email, or a phone number. A relative path, a #fragment,
+// and a /path on the same site have no scheme and are always fine. The check ignores case and the spaces,
+// tabs, and control characters a browser drops before reading the scheme.
+const SAFE_SCHEMES = new Set(["http", "https", "mailto", "tel"])
+export function safeHref(href) {
+  const bare = href.replace(/[\u0000-\u0020\u007f]/g, "")
+  const scheme = bare.match(/^([a-z][a-z0-9+.-]*):/i)?.[1]
+  return scheme === undefined || SAFE_SCHEMES.has(scheme.toLowerCase())
+}
+
 // --- Diagrams ---
 
 // Drawn diagrams by key (tools/diagrams.mjs loadDiagrams), and the address their files are served from, set
@@ -63,7 +76,9 @@ export function inline(text) {
     // Code spans first, so nothing inside them is formatted
     .replace(/`([^`]+)`/g, (_, code) => keep(`<code>${escape(code)}</code>`))
     // Links and autolinks, with their text formatted and their address escaped
-    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, label, href) => keep(`<a href="${attr(href)}">${inline(label)}</a>`))
+    // An address with an unsafe scheme keeps its text and loses the link (lint.mjs also refuses it)
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, label, href) =>
+      keep(safeHref(href) ? `<a href="${attr(href)}">${inline(label)}</a>` : inline(label)))
     .replace(/<(https?:\/\/[^>\s]+)>/g, (_, href) => keep(`<a href="${attr(href)}">${escape(href)}</a>`))
     // A run of four or more underscores is a line to write on, in forms and templates
     .replace(/_{4,}/g, () => keep('<span class="blank" role="img" aria-label="blank to fill in"></span>'))

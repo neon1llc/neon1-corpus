@@ -142,21 +142,21 @@ Nothing is saved in your browser or the address. If no answer comes back in time
 
 ## Neo, the chat
 
-Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It answers questions about neon1 from its public documents, in the voice of Neo from the Matrix films.
+Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It answers questions about neon1 from its public documents in a calm, plain voice of its own. The name is a nod to the Matrix films; the words are original.
 
 **What happens when you ask something:**
 
 1. The chat window sends your question, with the conversation so far, to `neon1.tech/chat/api/chat`. Same address as the site, so the security policy needs no exception.
 2. CloudFront forwards it with a secret header, so the API can't be reached around neon1.tech's limits.
 3. The function checks your limits in a DynamoDB table before anything else.
-4. It sends the model the whole public corpus, about 12,000 tokens, with Neo's rules and your conversation. There's no search index. The model, Qwen3 Next 80B on Amazon Bedrock, won a test of several models on the same questions. A question costs under a fifth of a cent.
+4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model, Qwen3 Next 80B on Amazon Bedrock, won a test of several models on the same questions. A question costs under a fifth of a cent.
 5. The reply is checked before you see it: links are kept only if the corpus has them, and the length is capped.
 
 **Limits.** Each visitor can ask six questions a minute and 60 an hour, and the whole site gets 500 a day. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and every entry expires by itself.
 
 **Privacy.** The conversation lives only in the open page. The function never logs it, and Bedrock doesn't keep or train on it.
 
-**Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text.
+**Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a corpus release by up to a week.
 
 **Neo inside 1NEON.** Signed-in people in 1NEON get a separate Neo that knows the portal's guide and their own data, through the same permission checks as the page. It can offer a tour or a plan, which runs in their browser one normal step at a time, only after "Yes, do it."
 
