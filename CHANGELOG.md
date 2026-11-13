@@ -11,7 +11,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - 1NEON help (edition 2.1): "Can I change my mind after approving an option?" replaces "Can an approval be changed?", word for word as the portal says it.
 - 1NEON guide, projects (edition 2.3): **Changing the decision**, covering the reason, what carries over, deposits and credits, going back to a replaced option, and when a decision stays.
 - Proposal with options, filled in (edition 2.1): the bakery's hours re-estimated (A 3 to 4, B 12 to 15, C 18 to 23), and the finished work at 13.75 hours.
-- How neon1.tech works (edition 1.3): the walkthrough's narration is a line under the controls.
+- How neon1.tech works (edition 1.3): the walkthrough's narration is a line under the controls, and its lengths are restated (the preview about three minutes, the whole story about 17).
+- 1NEON help: the guided walkthrough's preview takes about three minutes.
 
 ## v0.38.1 - 2026-11-13
 
