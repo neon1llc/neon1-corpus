@@ -1,15 +1,15 @@
 ---
 id: company-architecture
 title: How neon1 is built
-summary: "Diagrams of the website, the 1NEON portal, Neo, and how a change reaches them."
+summary: "Diagrams of the website, the 1NEON portal, Neo, the private dev copy, and how a change reaches them."
 type: page
 consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-11
-edition: "1.1"
+edition: "1.2"
 ---
 
 # How neon1 is built
@@ -204,7 +204,7 @@ sequenceDiagram
 
 ## How a change ships
 
-Every repository deploys itself from its main branch. GitHub Actions signs in to AWS with short-lived credentials (OpenID Connect), so no repository holds AWS keys. Each deploy runs its checks first, confirms the live version afterwards, and tags the release.
+Every repository deploys itself from its main branch. GitHub Actions signs in to AWS with short-lived credentials (OpenID Connect), so no repository holds AWS keys. Each deploy runs its checks first, confirms the live version afterwards, and tags the release. Work is usually seen on dev first, as the next section shows.
 
 ```mermaid
 %% alt: Flowchart of a site deploy. A change is merged to main on GitHub. GitHub Actions runs the checks: HTML, links, the asset manifest, and browser tests. If any fail, nothing is deployed. If they pass, the job gets short-lived AWS credentials through OpenID Connect, uploads shared fonts and media, uploads the whole release into its own folder, and then switches the release store to it, so every visitor moves at once. It confirms the live site serves the new version, tags the release, and keeps the last ten releases for a one-step rollback.
@@ -228,6 +228,60 @@ flowchart TD
 ```
 
 The other repositories follow the same pattern. 1NEON uploads its versioned files first and its page last. Infrastructure changes are planned and applied by Terraform, except permissions, which Pradeep applies by hand, so a deploy can never widen its own access.
+
+## Trying a change on dev first
+
+Before a change reaches neon1.tech, it can be seen on dev.neon1.tech, a private copy of the whole site and of 1NEON. Dev has its own bucket, CloudFront distribution, release store, 1NEON backend, sign-in pool, and permissions, so nothing done there can reach neon1.tech or production 1NEON. Pushing any branch puts it on dev in about 30 seconds, against about 6 minutes for a production deploy, because dev runs only the quick checks and is never tagged.
+
+```mermaid
+%% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
+flowchart TD
+  branch["Push a feature branch"]:::step --> preview["Private preview<br/>dev.neon1.tech, about 30 seconds"]:::dev
+  dev["dev branch<br/>follows main"]:::step --> devrel["Dev release<br/>dev.neon1.tech"]:::dev
+  preview --> look{"Looks right?"}:::decision
+  devrel --> look
+  look -->|not yet| branch
+  look -->|"Pradeep says deploy"| main["Merge to main"]:::step
+  main --> prod["Full checks, deploy to neon1.tech,<br/>tag vX.Y.Z"]:::prod
+  prod -->|"main merged back into dev"| dev
+
+  classDef step fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef dev fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
+  classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
+```
+
+- **Branches and the dev release.** Each branch other than main gets its own preview, chosen with `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev` and rebuilds it.
+- **Drafts in place.** A run of the dev workflow can build from a corpus branch, drafts included, so a post or a page can be read where it will appear before it's adopted.
+- **Releases come only from main.** Dev builds are never tagged, announced, or counted as releases. Main rebuilds from the same commits and runs the full checks, including the browser tests and PDF printing that dev skips.
+- **1NEON on dev.** The dev portal has its own API, table, documents bucket, and sign-in pool. Its data is a copy of production's, refreshed on request, with queued messages and sessions left out. Because that copy names real clients, dev admits only neon1's own accounts, sends mail only to neon1, and never creates an account for anyone else. Texts and the malware scan are off on dev, and its locked records are kept for a day instead of seven years.
+- **What dev doesn't copy.** Dev uses the live Neo, since Neo only answers questions, and copies Knowledge Center PDFs from neon1.tech rather than printing them. Dev's infrastructure is applied by hand and never by a pipeline.
+- **Cost.** Dev costs a few dollars a month, with a $5 budget alert on everything tagged as dev.
+
+### Who can open dev
+
+Nobody can see dev without signing in, and anyone who isn't signed in gets the same bare "Not found" on every address, so nothing shows that a site is there. Signing in takes two things: a secret link, which only starts a sign-in, and a passkey or email code for an account in dev's access group. A leaked link alone lets nobody in.
+
+```mermaid
+%% alt: Sequence diagram of signing in to dev.neon1.tech. The browser opens the secret sign-in link. A small edge function checks the link and, if it's right, sends the browser to the dev sign-in page, bound to that browser. The person signs in with a passkey or an email code. The sign-in page sends the browser back with a one-time code. The edge function exchanges it, checks the person is in the dev access group, and sets a signed cookie for 30 days. From then on, CloudFront checks that cookie on every request and serves dev; without it, every address answers Not found.
+sequenceDiagram
+  autonumber
+  participant B as Browser
+  participant E as Edge sign-in function
+  participant C as Dev sign-in (Cognito)
+  participant F as CloudFront check
+  B->>E: Open the secret link
+  E-->>B: Wrong link: Not found. Right link: go to dev sign-in
+  B->>C: Passkey or email code
+  C-->>B: Back to dev with a one-time code
+  B->>E: One-time code
+  E->>C: Exchange it, check the dev access group
+  E-->>B: Signed cookie, 30 days
+  B->>F: Any dev page, with the cookie
+  F-->>B: The page (without the cookie: Not found)
+```
+
+The link and the cookie use separate keys. A new link doesn't sign anyone out, and signing every device out doesn't change the link. Taking someone out of the access group stops their next sign-in.
 
 ## One source for every word
 
@@ -281,7 +335,7 @@ stateDiagram-v2
 
 ## Where to read more
 
-- [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure): the DNS, the CloudFront distribution, its routers and release store, and the deploy permissions.
+- [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure): the DNS, the CloudFront distribution, its routers and release store, the deploy permissions, and dev.neon1.tech (`site-dev/`).
 - [neon1-site](https://github.com/neon1llc/neon1-site): the website and the Knowledge Center.
 - [neon1-1NEON](https://github.com/neon1llc/neon1-1NEON): the portal, its API, and its infrastructure.
 - [neon1-chat](https://github.com/neon1llc/neon1-chat): Neo.
