@@ -4,11 +4,11 @@ title: Customers
 summary: "Who neon1 works with, how the work differs from households to enterprises, and when it declines work."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]

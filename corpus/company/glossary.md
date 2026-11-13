@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 consumers: [knowledge, ai]
 pdf: true
 origin: "neon1's internal glossary, extended with the terms the standards use"
@@ -29,7 +29,7 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **N1 Supply LLC** | A separate company for product experiments, with the same owner |
 | **neon1-corpus** | The public repository where every neon1 document is written once |
 | **1 is glad to be of service** | neon1's slogan, from *Bicentennial Man* |
-| **Needs, Execute, Observe, Normalize** | The four parts of every neon1 case study, which spell NEON |
+| **Needs, Execute, Observe, Normalize** | The four layers of a project in 1NEON, which spell NEON |
 
 ## Working together
 

@@ -4,12 +4,12 @@ title: Code style
 summary: "How neon1 code reads: names, comments, file headers, formatting, and layout, in every language and configuration format."
 type: standard
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-09
-edition: "2.2"
+edition: "2.3"
 audience: "Developers"
 order: 7
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal engineering notes (meaning, names, and source conventions)"
 related: [standards-development, standards-writing, standards-testing-and-review]

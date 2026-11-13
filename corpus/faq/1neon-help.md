@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-13
 created: 2026-11-07
-edition: "2.1"
+edition: "2.2"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"

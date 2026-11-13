@@ -4,12 +4,12 @@ title: Versioning and releases
 summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents (X.Y), when each number goes up, and how tags, changelogs, and package files stay in agreement."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 audience: "Developers"
 order: 6
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal engineering notes (versions and releases), Semantic Versioning 2.0.0, and Keep a Changelog 1.1.0"
 related: [standards-development, standards-version-control, standards-documentation]

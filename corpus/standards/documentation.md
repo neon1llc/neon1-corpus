@@ -4,12 +4,12 @@ title: Documentation
 summary: "The documents every neon1 project keeps and how they stay true, and how the documents in this Knowledge Center are built, dated, shared, and credited."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 audience: "Developers"
 order: 9
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal handbook (knowledge and governance) and neon1's repository conventions"
 related: [standards-writing, standards-development, standards-versioning]

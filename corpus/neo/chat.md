@@ -6,9 +6,9 @@ type: directive
 consumers: [chat, ai]
 pdf: false
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-13
 created: 2026-11-08
-edition: "1.1"
+edition: "1.2"
 ---
 
 # Neo, the chat on neon1.tech

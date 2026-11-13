@@ -3,14 +3,14 @@ id: product-you-have-20-seconds-to-comply
 title: "You Have 20 Seconds To Comply"
 summary: "Plain-language compliance guides and training for small businesses, from HIPAA and GxP to PCI DSS, privacy, and accessibility."
 type: page
-consumers: [site, chat, knowledge, ai]
+consumers: [ai]
 pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-12
-edition: "1.0"
+edition: "1.1"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go, services]
 ---
 

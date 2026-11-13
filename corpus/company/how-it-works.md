@@ -6,8 +6,8 @@ type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-11
-edition: "1.3"
-consumers: [knowledge, ai]
+edition: "1.4"
+consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
 origin: "neon1-site, neon1-1NEON, neon1-chat, neon1-aws-infrastructure, and neon1-corpus source code and READMEs"

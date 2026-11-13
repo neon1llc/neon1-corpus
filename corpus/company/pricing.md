@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-13
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true

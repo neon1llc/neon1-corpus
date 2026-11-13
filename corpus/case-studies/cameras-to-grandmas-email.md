@@ -6,10 +6,10 @@ type: case-study
 status: adopted
 client: "family & friends"
 area: home tech
-updated: 2026-11-09
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.1"
-consumers: [site, chat, knowledge, ai]
+edition: "1.2"
+consumers: [chat, knowledge, ai]
 pdf: true
 key: home
 order: 5
@@ -24,19 +24,19 @@ origin: "neon1-site src/app/public/index.html#case-home"
 
 # From cameras to Grandma's email
 
-## Needs
+## The problem
 
 Not every job is a cloud migration. My parents' house had no cameras, and like most families, we reused a few passwords everywhere.
 
-## Execute
+## The work
 
 - Placed cameras around entrances and blind spots, then set up recording and alerts.
 - Moved the family onto a password manager, one person at a time, with two-factor sign-in on key accounts.
 
-## Observe
+## The results
 
 The test: could everyone use it without calling me? Recordings and alerts work, and everyone finds their passwords on their own.
 
-## Normalize
+## After handover
 
 Advice and troubleshooting when something breaks. Small jobs count too: Wi-Fi that misses a room, a new laptop, or a grandparent who can't open their email.

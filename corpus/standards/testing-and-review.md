@@ -4,12 +4,12 @@ title: Testing and review
 summary: "What neon1 tests, how changes are checked and reviewed before they ship, and what done means."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-09
-edition: "2.2"
+edition: "2.3"
 audience: "Developers"
 order: 8
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
 origin: "neon1's internal handbook (building and testing in small increments) and neon1's internal engineering notes (checks)"
 related: [standards-development, standards-version-control, standards-security-and-data, standards-design-and-accessibility]

@@ -4,11 +4,11 @@ title: Security and data
 summary: How neon1 handles your accounts, access, and information, and the baseline every project starts from.
 type: standard
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]

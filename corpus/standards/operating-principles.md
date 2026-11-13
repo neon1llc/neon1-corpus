@@ -6,9 +6,9 @@ type: standard
 status: adopted
 updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "2.0"
+edition: "2.1"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]

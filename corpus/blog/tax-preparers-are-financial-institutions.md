@@ -9,9 +9,9 @@ short:
 type: post
 topic: questions
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-12
-edition: "1.3"
+edition: "1.4"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"

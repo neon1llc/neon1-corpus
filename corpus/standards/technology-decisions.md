@@ -4,11 +4,11 @@ title: Technology decisions
 summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]

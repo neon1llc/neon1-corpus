@@ -4,11 +4,11 @@ title: Measurement
 summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-01
-consumers: [knowledge, ai]
+consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 15
 origin: "neon1's internal handbook, measurement handbook (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]

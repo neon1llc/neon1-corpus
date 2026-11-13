@@ -6,9 +6,9 @@ type: case-study
 status: adopted
 client: "schools, families, & teams"
 area: security
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
@@ -24,11 +24,11 @@ origin: "neon1-site src/app/public/index.html#case-security"
 
 # Security for non-security people
 
-## Needs
+## The problem
 
 Teachers, parents, engineers, and executives knew their accounts, homes, and businesses were exposed, but the advice they'd seen was too technical or too vague to act on.
 
-## Execute
+## The work
 
 I've run sessions from small groups of parents to Manhattan seminars for 30 or more. Topics include:
 
@@ -39,10 +39,10 @@ I've run sessions from small groups of parents to Manhattan seminars for 30 or m
 
 Each session fits that audience's devices and accounts, with time to change real settings together.
 
-## Observe
+## The results
 
 The best measure is what people do: turning on two-factor sign-in in the session, changing default camera and router passwords, and returning with questions about their own setups.
 
-## Normalize
+## After handover
 
 Threats change, so the material does too. Ready, Secure, Go, neon1's readiness guide, tracks what's worth doing for each kind of space. Companies heading into an audit get SOC 2 readiness work.

@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-13
 created: 2026-11-07
-edition: "1.5"
+edition: "1.6"
 ---
 
 # Working with neon1
@@ -24,7 +24,7 @@ Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm (until 9pm 
 
 ## What if something urgent comes up?
 
-I work in planned appointments on weekday evenings and weekends, with no 24/7 or emergency response. A security incident in progress or an outage you can't run without needs a provider with emergency coverage. Ongoing care, and any response times, are agreed in writing. Email [hello@neon1.tech](mailto:hello@neon1.tech) for anything else.
+I work in planned appointments on weekday evenings and weekends, with no 24/7 or emergency response. So for anything your business can't run without for a day, I take the work only when someone on your side runs it day to day, and the handover is written for that person: how it works, how to check it, how to restore it, and whom to call for each part. A care plan sets my response times in writing, within my working hours. A security incident in progress or an outage needs a provider with emergency coverage first. Email [hello@neon1.tech](mailto:hello@neon1.tech) for anything else.
 
 ## How long does a project take?
 
@@ -48,4 +48,4 @@ Yes, for groups from parents and teachers to engineers and executives. Sessions 
 
 ## What don't you do?
 
-I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.
+I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, and the insurance to back them, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.

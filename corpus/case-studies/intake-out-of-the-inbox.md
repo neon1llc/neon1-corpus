@@ -6,9 +6,9 @@ type: case-study
 status: adopted
 client: dermatology practice
 area: workflows
-updated: 2026-11-09
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
@@ -24,11 +24,11 @@ origin: "neon1-site src/app/public/index.html#case-dermatology"
 
 # Intake, out of the shared inbox
 
-## Needs
+## The problem
 
 A new practice and its sister location ran intake through a shared Microsoft 365 inbox. Patients sent forms, insurance cards, referrals, and phone photos. Staff downloaded, renamed, and tracked them in Outlook flags and a spreadsheet, then uploaded each into a slow EHR. Anything missing started another round of emails.
 
-## Execute
+## The work
 
 I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal, with [Xenoss](https://xenoss.io) helping on design and maintenance.
 
@@ -37,7 +37,7 @@ I mapped the process with staff, separating patient waiting time from staff hand
 - Staff see one queue of what's complete and missing. Completed documents file into the EHR by patient ID and MRN.
 - Emails never include patient details, and access, encryption, and audit logging were set up front.
 
-## Observe
+## The results
 
 | Measure                                      | Before             | After      |
 |----------------------------------------------|--------------------|------------|
@@ -48,6 +48,6 @@ I mapped the process with staff, separating patient waiting time from staff hand
 
 Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved.
 
-## Normalize
+## After handover
 
 The EHR stays the clinical record. Xenoss and I maintain the portal, watch the measures, and tune it as both locations grow.

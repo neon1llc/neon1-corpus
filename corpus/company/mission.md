@@ -1,15 +1,15 @@
 ---
 id: company-mission
 title: Mission and promise
-summary: "Why neon1 exists, what it does, and the five things every client can count on, on one page."
+summary: "Why neon1 exists and the five things every client can count on."
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-13
 created: 2026-11-11
 consumers: [site, chat, knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
+edition: "1.1"
 audience: "Anyone deciding whether to work with neon1, and anyone who wants the short version of what it stands for"
 origin: "Pradeep's mission statement, Our Mission, and Promise to You (five drafts, 2025), reconciled on November 11, 2026 with the charter, neon1.tech, the GitHub profile, and the LinkedIn page"
 related: [company-charter, company-about, company-names, company-process, company-capabilities, services]
@@ -35,27 +35,6 @@ When we work together, you can count on five things:
 - **Control that stays with you.** Your accounts, data, and documentation are yours, with a clean way out at any time.
 - **Help that leaves you able.** I show you how it runs and write it down, so you can run it without me. Ongoing care is there if you want it.
 
-## What I do
-
-| Area | For | What it looks like |
-|---|---|---|
-| **Business workflows** | Small and medium businesses | Email, spreadsheets, point of sale, booking, and accounting connected and automated |
-| **Cloud and AI engineering** | Technical teams | Infrastructure as code, deploys with checks and rollback, AI that answers from your own documents, and backups proven by restores |
-| **Networks, devices, and spaces** | Offices, homes, and physical spaces | Wi-Fi that reaches every room, cameras that record and alert, documented devices, and smart gear on its own network |
-| **Security awareness and readiness** | Organizations, teams, families, and individuals | Plain-language sessions on phishing, fraud, passwords, and data brokers, and SOC 2 readiness before an audit |
-
-Cloud services and AI are used where they make the result better. Moving everything to the cloud, or to an AI model, is never the default answer.
-
-## How it's done
-
-Every project follows five steps: listen, propose, decide, build, and hand over. You show me today's work, I propose options with costs and effort, you choose, I build in small tested changes, and I hand it over with the documentation to run it. [How a project runs](process.md) covers each step, and the [charter](charter.md) lists the values behind them as habits.
-
-## The lines you'll see
+## The line on the landing
 
 *1 is glad to be of service.* The 1 is me, Pradeep, neon1's sole owner and your dedicated deputy. [The names](names.md) tells where it comes from.
-
-*1withtechnology* is the mission in one word: people at one with the technology they depend on.
-
-## Where this comes from
-
-I first wrote neon1's mission in 2025 as a one-page letter, *Our Mission, and Promise to You*, revised five times. Its core held throughout: honesty, empathy, exactly what you need, and leaving people more capable and in control. This page keeps that core and joins it with what neon1 has since settled in its charter, on neon1.tech, GitHub, and LinkedIn, which follow this page's words.
