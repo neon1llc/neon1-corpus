@@ -1,7 +1,7 @@
 ---
 id: company-about
 title: About neon1
-summary: A technology practice that leaves people better off with their tech than they were before.
+summary: "Who does the work, what has been shipped, and how the practice is set up."
 type: page
 consumers: [site, chat, knowledge, ai]
 pdf: false

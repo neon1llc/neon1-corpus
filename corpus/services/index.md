@@ -1,7 +1,7 @@
 ---
 id: services
 title: Services
-summary: "Four kinds of help, from automating a small business to SOC 2 readiness."
+summary: "Mostly workflow projects for owner-run businesses, plus cloud engineering, office networks, and security training."
 type: page
 consumers: [site, chat, knowledge, ai]
 pdf: true
