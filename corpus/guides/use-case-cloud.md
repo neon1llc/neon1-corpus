@@ -20,13 +20,13 @@ related: [services, standards-technology-decisions, standards-reliability-and-re
 
 ## The situation
 
-A small team's cloud account grew by hand. Nobody is quite sure what every resource is for, who can change what, or what the bill pays for. Deploys work, mostly, from one person's laptop. Backups exist, probably.
+A small team's cloud account grew by hand. Nobody's sure what every resource is for, who can change what, or what the bill pays for. Deploys mostly work, from one laptop. Backups probably exist.
 
 ## How it usually goes
 
 1. **Inventory.** Every account, resource, role, and recurring cost listed with an owner, plus the unknowns.
 2. **Access first.** Named accounts, multi-factor sign-in, least privilege, and no long-lived keys on laptops.
-3. **Infrastructure as code.** The important resources are imported into Terraform and reviewed like code, so the account can be rebuilt and changes leave a record.
+3. **Infrastructure as code.** Important resources are imported into Terraform and reviewed like code, so the account can be rebuilt and changes leave a record.
 4. **Deploys from CI.** Short-lived credentials, checks before every deploy, a version you can verify live, and a known rollback.
 5. **Recovery, proven.** The data that matters gets an independent backup, and a restore is tested and timed.
 6. **Cost.** A budget, alerts, and a monthly look at cost per useful result.
@@ -40,7 +40,7 @@ A small team's cloud account grew by hand. Nobody is quite sure what every resou
 
 ## What usually doesn't
 
-The architecture usually stays recognizable. The goal is to make what you have clear, safe, and repeatable, not to rewrite it for the sake of it.
+The architecture usually stays recognizable. The goal is making what you have clear, safe, and repeatable, not a rewrite.
 
 ## Related
 

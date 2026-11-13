@@ -20,7 +20,7 @@ related: [services, standards-discovery-and-delivery, examples-proposal]
 
 ## The situation
 
-Requests arrive by web form, email, and phone. Someone copies each one into the scheduling or practice system, then into a spreadsheet to track follow-up. Things get missed or entered twice, and Monday mornings disappear into data entry.
+Requests arrive by web form, email, and phone, and someone copies each into the scheduling or practice system, then a tracking spreadsheet. Things get missed or entered twice, and Monday mornings vanish into data entry.
 
 ## How it usually goes
 
@@ -39,7 +39,7 @@ Requests arrive by web form, email, and phone. Someone copies each one into the 
 
 ## What usually doesn't
 
-The tools you depend on usually stay. Often the fix is configuring what's already there and adding one small connection.
+Your tools usually stay; often the fix is configuring what's there and adding one small connection.
 
 ## Paperwork you'd see
 

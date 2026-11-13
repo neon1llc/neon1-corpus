@@ -20,7 +20,7 @@ related: [services, guides-password-manager-for-family, standards-security-and-d
 
 ## The situation
 
-Someone in the group nearly fell for a fake invoice, a "your account is locked" text, or a call from "the bank." People want to be safer, but most training they've seen was either scary or boring.
+Someone nearly fell for a fake invoice, a "your account is locked" text, or a call from "the bank." People want to be safer, but most training they've seen was scary or boring.
 
 ## How it usually goes
 
@@ -29,7 +29,7 @@ Someone in the group nearly fell for a fake invoice, a "your account is locked" 
 3. **Hands-on time.** Everyone turns on two-step sign-in for their most important account and checks their recovery details, during the session.
 4. **A one-page takeaway** with what to do when something looks wrong and who to tell.
 
-For companies heading into an audit, a separate SOC 2 readiness engagement maps controls, gathers evidence, and fixes the basics before the auditor arrives. The audit opinion itself comes from an independent auditor.
+Companies heading into an audit can add SOC 2 readiness work: mapping controls, gathering evidence, and fixing the basics first. The audit opinion comes from an independent auditor.
 
 ## What people leave able to do
 
@@ -40,4 +40,4 @@ For companies heading into an audit, a separate SOC 2 readiness engagement maps 
 
 ## Related
 
-[A password manager for your family](password-manager-for-family.md), [security and data](../standards/security-and-data.md), [Ready, Secure, Go](../products/ready-secure-go.md), a readiness guide in development, and [Phish Out of Water](../products/phish-out-of-water.md), the open session kit behind these sessions.
+[A password manager for your family](password-manager-for-family.md), [security and data](../standards/security-and-data.md), [Ready, Secure, Go](../products/ready-secure-go.md), neon1's security readiness guide, and [Phish Out of Water](../products/phish-out-of-water.md), the open session kit behind these sessions.

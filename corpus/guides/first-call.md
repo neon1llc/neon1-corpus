@@ -15,11 +15,11 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and short, about 15 minutes. Its job is to find the main pain point and whether I'm the right help. A little preparation helps.
+The first call is free and takes about 15 minutes, to find the main pain point and whether I'm the right help. A little preparation helps.
 
 ## Bring one real example
 
-The most useful thing to bring is the last time the problem happened. Not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days." Real examples show where the work waits.
+Bring the last time the problem happened: not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days." Real examples show where work waits.
 
 ## Five questions to think about
 
@@ -37,7 +37,7 @@ You don't need exact numbers. "About 40 a week, maybe 5 minutes each" is plenty.
 - Who owns or administers each account
 - Who else should be part of the conversation, especially the person who does the work every day
 
-Please don't send passwords, health details, or payment information, before the call or during it. If the work involves health information, we'll go through the [business associate agreement request](../templates/baa-request.md) before any access.
+Please don't send passwords, health details, or payment information, before or during the call. If the work involves health information, we'll go through the [business associate agreement request](../templates/baa-request.md) before any access.
 
 ## What you'll leave with
 
@@ -46,6 +46,6 @@ Please don't send passwords, health details, or payment information, before the 
 - Whether I'm a good fit, and if not, who might be
 - The smallest useful next step, if there is one
 
-After the call, you'll get a short proposal with options and estimates if it makes sense. Nothing starts until you pick one. The [intake form](../forms/intake.md) is what I fill in from our conversation.
+If it makes sense, a short proposal with options and estimates follows, and nothing starts until you pick one. I fill in the [intake form](../forms/intake.md) from our conversation.
 
 [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../company/contact.md) for other ways to reach me.
