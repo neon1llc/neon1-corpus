@@ -8,9 +8,9 @@ pdf: false
 published: "https://neon1.tech/1NEON/"
 origin: neon1-1NEON README.md
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 ---
 
 # 1NEON
@@ -25,7 +25,7 @@ The neon1 client portal at [neon1.tech/1NEON](https://neon1.tech/1NEON/). Each p
 
 - Access is by invitation only, from neon1 or an administrator of your organization.
 - Online payments go through Stripe Checkout, by bank transfer (ACH) or card. Checks, Zelle, and wires are recorded by hand when they arrive.
-- There's no export button. A copy of your organization's data is sent on request.
+- An admin can download everything at any time, from Settings: every project's records, decisions, signatures, invoices, and payments as JSON and CSV, plus every file as uploaded.
 - Text messages work only once they're switched on and you've agreed to them on your profile.
 
 ## Next step

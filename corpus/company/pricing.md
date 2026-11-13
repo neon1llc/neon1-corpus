@@ -48,11 +48,11 @@ The [proposal for Maple Street Bakery](../examples/proposal-options.md), a ficti
 
 | Option | What it does | Estimate |
 |---|---|---|
-| A. Quick fix | An order form that feeds one order list | $300 to $400 |
-| B. Solid setup | Every order in one list however it arrived, a bake sheet for the kitchen, a dry run on a past week of real orders, and a runbook | $1,200 to $1,500 |
-| C. Fuller build | Everything in B, plus an online order page with payment and reminders | $1,800 to $2,300 |
+| A. Quick fix | An order form that feeds one order list | $400 to $600 |
+| B. Solid setup | Every order in one list however it arrived, a bake sheet for the kitchen, a dry run on a past week of real orders, and a runbook | $2,200 to $2,800 |
+| C. Fuller build | Everything in B, plus an online order page with payment and reminders | $3,200 to $3,900 |
 
-She chose B. Half of its low end, $600, was the deposit. The work came in inside the estimate, and the final invoice asked for the hours worked less that deposit. The figures are illustrative, like the bakery.
+She chose B. Half of its low end, $1,100, was the deposit. The work came in inside the estimate, and the final invoice asked for the hours worked less that deposit. The figures are illustrative, like the bakery.
 
 ## What the price includes
 
