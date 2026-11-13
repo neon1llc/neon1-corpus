@@ -34,7 +34,7 @@ An organization's workflow is a row of stages, each tied to one layer. The defau
 | Decide | Needs | An option approved |
 | Build | Execute | All milestone tasks done (limit: 3 projects at once) |
 | Verify | Observe | Checks pass, after metrics recorded |
-| Hand over | Normalize | Handoff checklist signed off |
+| Hand over | Normalize | Handover accepted |
 | Care | Normalize | Ongoing care, or closed |
 | Closed | Normalize | (the end) |
 
@@ -70,7 +70,7 @@ A project page has tabs: **Overview**, **Needs**, **Execute**, **Observe**, and 
 | Measure (metric) | Observe | A number that shows it worked: unit, baseline, target, which way is better, and dated readings | Done when it reaches its target |
 | Check | Observe | Something to test before calling it done | To do, In progress, Blocked, Done |
 | Incident | Observe | Something that broke: what people saw, when, and what fixed it | same |
-| Handoff | Normalize | A step before it's fully the client's, such as admin access transferred | same |
+| Handover step | Normalize | A step before it's fully the client's, such as admin access transferred | same |
 | Runbook | Normalize | Written steps for a job that comes up again | same |
 | Training | Normalize | Who learns what, and how | same |
 | Care | Normalize | Ongoing care after launch | same |
@@ -152,7 +152,7 @@ Purchases sit in Execute under **Purchases**, filled in from the approved option
 
 ## Handover acceptance
 
-Handoff steps in Normalize can be checked and accepted by the decision maker with **Check it and accept**: an optional note on what they checked ("What you checked"), then **Sign and accept** with a typed name and the consent box, the same way as an approval. The step is marked done with the signature, and the acceptance shows on the project's handover. When the last handoff step is accepted, neon1 gets a draft final invoice: what's left on a fixed price, or the hours worked less earlier invoices on an estimate.
+Handover steps in Normalize are ticked as they're done, by the client or by neon1. Once every step is done, the decision maker sees "Every step is done" under the steps and chooses **Accept the handover**: an optional note on what they checked ("What you checked"), then **Sign and accept the handover** with a typed name and the consent box, the same way as an approval. One signature accepts every step not yet accepted, and each step keeps its own signed record and shows "Accepted by" with the name and date. Until every step is done, the same place says how many are left. A step that isn't ticked yet can be accepted on its own with **Check it and accept**, which marks it done. An accepted step stays done: its box can't be unticked. When the handover is accepted, neon1 gets a draft final invoice: what's left on a fixed price, or the hours worked less earlier invoices on an estimate. Home's **Needs you** and the project's **Next step** both ask the decision maker to accept once every step is done.
 
 ## Hours
 
@@ -197,11 +197,12 @@ The top of every project shows **Next step**: the one thing to do now and who it
 4. Options are shared and you may approve: "Choose an option: {n} ready for your approval in Proposal 0039-r1", or that the estimates are due a price check, or that neon1 is preparing the proposal, with **Compare options**.
 5. Options are shared and someone else approves: "Waiting on {decision maker} to choose an option", with **See options**.
 6. Files are asked for (for client members): "Send {n} files", with **Upload**.
-7. You have open items assigned to you: "You have {n} open items here", with **Open**.
-8. An option is approved and the project is at or before Decide: "{option} is approved. Next, move the project to {next stage}", with **Move to** for editors.
-9. For neon1: "Add options" when none exist yet near Decide, or "Share an option" when options exist but none is shared.
-10. Otherwise the stage's goal: "To finish {stage}: {done when}", with **Move to {next stage}** for editors (not past Decide without an approval).
-11. "Nothing needs doing right now."
+7. Every handover step is done and you may accept: "Every handover step is done. Check them, then accept the handover with one signature.", with **Review and accept**.
+8. You have open items assigned to you: "You have {n} open items here", with **Open**.
+9. An option is approved and the project is at or before Decide: "{option} is approved. Next, move the project to {next stage}", with **Move to** for editors.
+10. For neon1: "Add options" when none exist yet near Decide, or "Share an option" when options exist but none is shared.
+11. Otherwise the stage's goal: "To finish {stage}: {done when}", with **Move to {next stage}** for editors (not past Decide without an approval).
+12. "Nothing needs doing right now."
 
 ## Health
 
@@ -214,13 +215,13 @@ Health is the team's assessment of how a project is going: **Not assessed**, **O
 | Template | Key | Starts with |
 |---|---|---|
 | Blank | PRJ | Nothing |
-| Cloud migration | MIG | Discovery questions, servers and files assets, a must-have requirement, cost and downtime measures, a backup restore check, and the handoff checklist |
-| Workflow automation | FLOW | Discovery questions, tools and inboxes asset, "nothing is retyped twice", turnaround and staff-time measures, and the handoff checklist |
-| AI assistant | AI | Discovery questions, document sources asset, "answers cite their source", time-to-answer and correctness measures, and the handoff checklist |
-| Security readiness | SEC | Discovery questions, systems in scope, "MFA on every admin account", an open-findings measure, an access review check, and the handoff checklist |
+| Cloud migration | MIG | Discovery questions, servers and files assets, a must-have requirement, cost and downtime measures, a backup restore check, and the handover checklist |
+| Workflow automation | FLOW | Discovery questions, tools and inboxes asset, "nothing is retyped twice", turnaround and staff-time measures, and the handover checklist |
+| AI assistant | AI | Discovery questions, document sources asset, "answers cite their source", time-to-answer and correctness measures, and the handover checklist |
+| Security readiness | SEC | Discovery questions, systems in scope, "MFA on every admin account", an open-findings measure, an access review check, and the handover checklist |
 | Personal or home tech | HOME | "What's not working, in your own words", devices and accounts involved, and "Written steps left behind" |
 
-Every template except Blank and Personal or home tech starts with this handoff checklist:
+Every template except Blank and Personal or home tech starts with this handover checklist:
 
 - Accounts are in the client's name.
 - Admin access is transferred to the client.
