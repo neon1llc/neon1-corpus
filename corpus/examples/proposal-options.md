@@ -86,7 +86,7 @@ An order form that customers fill in themselves, feeding one order list. It fixe
 
 **Target result:** orders from the form appear in the list within a minute, with nothing retyped.
 
-**neon1's time:** 3 to 4 hours **Timeline:** 1 week **Paid directly by you:** nothing. It runs in the Google account you already pay for.
+**neon1's time:** 4 to 6 hours **Timeline:** 1 week **Paid directly by you:** nothing. It runs in the Google account you already pay for.
 
 **When to pick it:** to try the form before paying for more. Emails, voicemails, and Instagram messages would still be retyped, and they are most of tonight's hour.
 
@@ -111,7 +111,7 @@ Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet
 
 **Target result:** every order is in one list by 7pm, with under 10 minutes of checking a night, and no order missed.
 
-**neon1's time:** 12 to 15 hours **Timeline:** 4 weeks, the last one side by side **Paid directly by you:** nothing each month. It runs in the Google account you already pay for.
+**neon1's time:** 22 to 28 hours **Timeline:** 4 weeks, the last one side by side **Paid directly by you:** nothing each month. It runs in the Google account you already pay for.
 
 **To buy, in the bakery's name:** a label printer for pickup bags, such as a Brother QL-820NWB, about $180 to $220. It prints a pickup tag from each order in the list.
 
@@ -134,7 +134,7 @@ Everything in B, plus an online order page where customers choose a pickup time,
 
 **Target result:** most new orders arrive paid, with a pickup time, and never pass through the inbox.
 
-**neon1's time:** 18 to 23 hours **Timeline:** 7 weeks **Paid directly by you:** about $20 a month for the service that links Square to your order list, plus Square's card fees on each online order.
+**neon1's time:** 32 to 39 hours **Timeline:** 7 weeks **Paid directly by you:** about $20 a month for the service that links Square to your order list, plus Square's card fees on each online order.
 
 **When to pick it:** if you want customers to pay when they order. It asks them to change a habit, and it would land after the holidays, which is why I'd start with B.
 
@@ -144,24 +144,26 @@ Estimated task by task, for one experienced person. Each column adds up to the h
 
 | Work | A | B | C |
 |---|---|---|---|
-| Order form with pickup rules and a confirmation to the customer | 1.5 | 1.5 | 1.5 |
+| Accounts set up in the bakery's name, and the follow-up questions from discovery | 0.5 | 1.5 | 1.5 |
+| Order form with pickup rules and a confirmation to the customer | 2 | 2 | 2 |
 | One order list with a status for each order | 0.5 | 0.5 | 0.5 |
 | The form's link on your website and Google profile, and in automatic replies | 0.5 | 0.5 | 0.5 |
 | Ten test orders with you and Sam, and a walkthrough | 1 | | |
-| Order emails and voicemail transcripts read into the list, each marked to check | | 3.5 | 3.5 |
-| Staff form for phone and Instagram orders, and a flag on possible duplicates | | 1 | 1 |
-| 7pm summary for you and Sam, and Dee's bake sheet for 4am | | 1.5 | 1.5 |
-| Pickup tags from the label printer | | 1 | 1 |
-| Safety net: a nightly copy, an alert if orders stop arriving, and a sign-in for each person | | 1 | 1 |
-| Dry run on a past week of real orders, then a week side by side with the old way | | 2 | 2 |
-| Runbook, recorded walkthrough, and handover | | 1 | 1 |
-| Online order page with your menu, pickup times, and holiday cutoffs | | | 3 |
-| Payment when ordering, deposits on custom cakes, and pickup reminders | | | 2 |
-| Paid orders into the same list, then test orders and a refund end to end | | | 2 |
-| **Expected** | **3.5** | **13.5** | **20.5** |
-| **Range** | **3 to 4** | **12 to 15** | **18 to 23** |
+| Order emails and voicemail transcripts read into the list, each marked to check | | 5 | 5 |
+| Staff form for phone and Instagram orders, and a flag on possible duplicates | | 2 | 2 |
+| 7pm summary for you and Sam, and Dee's bake sheet for 4am | | 2 | 2 |
+| Pickup tags from the label printer | | 1.5 | 1.5 |
+| Safety net: a nightly copy, an alert if orders stop arriving, and a sign-in for each person | | 2.5 | 2.5 |
+| Dry run on a past week of real orders, then a week side by side with the old way | | 3 | 3 |
+| Runbook, recorded walkthrough, training for each person, and handover | | 2.5 | 2.5 |
+| Go-live support: the first two weeks of fixes and questions | 0.5 | 2 | 2.5 |
+| Online order page with your menu, pickup times, and holiday cutoffs | | | 4 |
+| Payment when ordering, deposits on custom cakes, and pickup reminders | | | 3 |
+| Paid orders into the same list, then test orders and a refund end to end | | | 3 |
+| **Expected** | **5** | **25** | **35.5** |
+| **Range** | **4 to 6** | **22 to 28** | **32 to 39** |
 
-B needs less of A's own testing, because its dry run covers it.
+The range allows for what a vendor does that its documentation doesn't say, such as how your phone service formats transcripts or how Square names its fields. B needs less of A's own testing, because its dry run covers it.
 
 ## Price and payment
 
@@ -170,7 +172,7 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 | Item | A | B | C |
 |---|---|---|---|
 | Hourly rate | *Stated in the real proposal* | *Stated in the real proposal* | *Stated in the real proposal* |
-| Estimate | 3 to 4 hours at that rate | 12 to 15 hours at that rate | 18 to 23 hours at that rate |
+| Estimate | 4 to 6 hours at that rate | 22 to 28 hours at that rate | 32 to 39 hours at that rate |
 | Deposit when you approve | Half of the low end | Half of the low end | Half of the low end |
 | Final invoice, when you accept the handover | The hours worked, less the deposit | The hours worked, less the deposit | The hours worked, less the deposit |
 | Paid directly by you | Nothing | The label printer | The label printer, about $20 a month, and card fees |
@@ -215,7 +217,7 @@ The work is accepted when these checks pass in front of you:
 
 ## How it turned out
 
-The work took 13.75 hours, inside the 12 to 15 estimated, and the final invoice listed each one. The dry run replayed a past week of 243 real orders, and 236 landed right the first time. The other 7 were emails with two orders in one message and orders sent as a photo. Two-order emails now become two rows, and a photo order is marked to check with the photo attached.
+The work took 24.5 hours, inside the 22 to 28 estimated, and the final invoice listed each one. The dry run replayed a past week of 243 real orders, and 236 landed right the first time. The other 7 were emails with two orders in one message and orders sent as a photo. Two-order emails now become two rows, and a photo order is marked to check with the photo attached.
 
 Your trust and your privacy mean everything to me.
 

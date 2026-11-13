@@ -9,12 +9,14 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Products: SOC It 2 Me, There Are No Incidents, You Have 20 Seconds To Comply, Phish Out of Water, and Home Is Where the Smart Is leave the Knowledge Center and Neo, and Ready, Secure, Go lists them as companion guides under plain titles. The two family and school case studies stay in the Knowledge Center but leave the home page.
 - Case studies are told as The problem, The work, The results, and After handover. Needs, Execute, Observe, Normalize stays the four layers inside 1NEON.
 - Working with neon1: anything a business can't run without for a day needs someone on the client's side who runs it day to day; care plans set response times within working hours; personal or health data needs the right agreement and the insurance to back it.
-- Neo gives the published price ranges and links How I price my work, never a rate or a specific quote. Its voice is its own, not the film character's.
+- Neo gives the published price ranges and links How I price my work, never a rate or a specific quote. Its voice is its own: Neo's lines, the catalog of film quotes, is removed, and Neo doesn't quote the films.
+- 1NEON: an admin can download all of an organization's data from Settings (Download everything), and 1NEON help, the 1NEON page, and the people and account guide say so in place of "no export button".
+- Proposal with options: the bakery re-estimated with go-live support, account setup, training, and a contingency for vendor behavior: A 4 to 6 hours, B 22 to 28, C 32 to 39, and the finished work at 24.5 hours. How I price my work shows the same example at $400 to $600, $2,200 to $2,800, and $3,200 to $3,900.
 - Privacy policy (edition 2.2): which records a deletion request can't remove (signatures, issued invoices, and payments, locked seven years) and what the 3-year audit log holds.
 - How I price my work: paying for fewer hours applies to estimates, not fixed prices.
 - 1NEON help: the full walkthrough is about 17 minutes, as the portal says.
 - How neon1.tech works: Neo's prompt is about 32,000 tokens as measured, and Neo can trail a corpus release by up to a week.
-- Proposal with options: which bakery orders arrive on their own, which a person checks, and which are still entered by hand once in a staff form.
+- Proposal with options also says which bakery orders arrive on their own, which a person checks, and which are still entered by hand once in a staff form.
 - The tax preparers post says its opening couple is an invented example. SOC It 2 Me says it prepares a company for an audit, not that it guarantees a clean one.
 
 ### Fixed
