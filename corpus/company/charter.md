@@ -15,7 +15,7 @@ related: [company-mission, standards-operating-principles, company-about, compan
 
 # Charter
 
-neon1 is a one-person technology practice in New York, run by me, Pradeep. The company is neon1 LLC, formed in New York on July 24, 2025, and neon1 is the name it does business under. This charter covers why neon1 exists, who it serves, and how it works. The [How I work](../standards/operating-principles.md) documents go into detail.
+neon1 is my one-person technology practice in New York. The company is neon1 LLC, formed in New York on July 24, 2025, doing business as neon1. This charter covers why neon1 exists, who it serves, and how it works, with detail in the [How I work](../standards/operating-principles.md) documents.
 
 ## Mission
 
@@ -23,7 +23,7 @@ Help people and small organizations get their technology working together and wo
 
 ## How
 
-I work with cloud and AI software, infrastructure, and connected devices, and use them where they make the result better. For each tool or system in an engagement, the recommendation is one of seven outcomes:
+I use cloud and AI software, infrastructure, and connected devices where they make the result better. Each tool or system in an engagement gets one of seven recommendations:
 
 | Outcome | What it means |
 |---|---|
@@ -54,7 +54,7 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 ## What I refer to others
 
-Some work needs a specialist or a team with round-the-clock coverage. For these, I'll refer you to someone who fits:
+Some work needs a specialist or round-the-clock team, so I refer it to someone who fits:
 
 - 24/7 emergency support
 - Safety-critical equipment
@@ -64,7 +64,7 @@ Some work needs a specialist or a team with round-the-clock coverage. For these,
 
 ## Free help
 
-Paid work is paid. Separately, I set aside a little time each month for community help, chosen at my discretion. That's a habit, not a claim to be a nonprofit.
+Paid work is paid. Separately, I set aside a little time each month for community help, at my discretion, as a habit, not a claim to be a nonprofit.
 
 ## Products
 
