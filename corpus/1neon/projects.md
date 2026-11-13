@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-13
 created: 2026-11-10
-edition: "2.2"
+edition: "2.3"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -84,7 +84,7 @@ Who may do what with items:
 - Editors and admins add, edit, tick off, and delete other items.
 - **Options** come only from neon1, which writes, shares (Proposed), and withdraws them. A client who wants another comments or adds a request.
 - **Proposal revisions**, **invoices**, and **payments** come only from neon1, and once issued can't be edited or deleted.
-- An **approved option** and its **decision** can't be edited or deleted. To change course, neon1 proposes a new option for approval, and the earlier decision stays on record, marked as replaced.
+- An **approved option** and its **decision** can't be edited or deleted. To change course, the decision maker approves a different option, and the earlier decision stays on record, marked as replaced (see **Changing the decision**).
 
 ## Options and the proposal
 
@@ -138,6 +138,17 @@ Approving also:
 - Drafts a deposit invoice for neon1 to check and issue, when the price is in numbers: half a fixed price, or half an estimate's low end. Nothing reaches the client until it's issued.
 
 Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview; editors change everyone else. neon1 can't be decision maker outside its own organization.
+
+### Changing the decision
+
+Until the handover is accepted, the decision maker can choose a different option with **Choose this instead**. The screen says **Change to 0039-r1-C?** and adds what the change replaces (the option, when it was approved, and by whom), what was already invoiced for it, the hours already logged, and the deposit asked now. A reason is required, and the change is signed like an approval; the reason and the replaced decision go into the signed fingerprint.
+
+- Nothing is billed twice. Money invoiced for the replaced decision counts toward the new one, so its deposit asks only for the difference, or nothing. An unissued deposit draft for the replaced decision is removed, and the new option's takes its place.
+- Hours already logged count toward the new option's hours, and its high end still caps the total.
+- If what was invoiced comes to more than the new option can cost, accepting the handover drafts a credit for the difference.
+- The replaced decision stays in Needs, marked "replaced by a later decision", and its option shows **replaced**. The new decision shows **Why it changed**.
+- Going back to a replaced option waits until neon1 confirms it in the next revision, with checked prices; then it shows **Go back to this option**.
+- Once the handover is accepted, the decision stays. Everyone following Decisions and options is told of a change, and the activity record says from what, to what, and why.
 
 ## The service agreement
 

@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-13
 created: 2026-11-07
-edition: "2.0"
+edition: "2.1"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -107,8 +107,8 @@ Add it as a request. 1NEON asks whether it changes the agreed scope; if so, it w
 ### Who can approve?
 The project's named decision maker, or, if none, an admin of your organization. Only an admin can name or change the decision maker, under **People** on the overview, after confirming it's them, and each change is recorded. neon1 can't be named, since it proposes the options, except in its own organization. [Watch it](https://neon1.tech/1NEON/live?play=decide).
 
-### Can an approval be changed?
-Not edited or removed. To change course, a new option is proposed and approved, and the earlier decision stays on record, marked as replaced.
+### Can I change my mind after approving an option?
+Yes, until you accept the handover. The decision maker picks another option and presses **Choose this instead**, says why, and signs again. Before signing, the screen shows what the change replaces, what was already invoiced, the hours already logged, and the deposit asked now, if any. Nothing is billed twice: what was invoiced for the earlier option counts toward the new one, hours already worked count toward its hours, and if what you've paid comes to more than the new option can cost, the difference comes back as a credit at handover. The earlier decision isn't edited or deleted; it stays on record, marked replaced, with your reason on the new one. To go back to an option you replaced, neon1 confirms it in the next revision of the proposal, with today's prices, and you choose it again the same way. If the change needs work none of the options describe, ask neon1 for a new option. [Watch it](https://neon1.tech/1NEON/live?play=decide).
 
 ### What does approving an option commit us to?
 An approval records that your organization agreed to that option as shown: its scope, cost, timeline, and any conditions. Both sides can rely on it, alongside your signed agreement with neon1, which governs the paid work.
