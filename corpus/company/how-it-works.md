@@ -206,8 +206,8 @@ Each walkthrough opens on a card saying who Maria is, what you'll see, and how l
 
 There are a few kinds:
 
-- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about two minutes, with request, compare, approve, progress, and handover. Comparing opens the hours behind a price, and progress shows the hours logged.
-- **The whole story.** `?play=full` plays 14 chapters in about 13 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
+- **The preview.** The bare `/1NEON/live` address plays a short version first: one request becoming a handover in about three minutes, with request, compare, approve, progress, and handover. Comparing opens the hours behind a price, and progress shows the hours logged.
+- **The whole story.** `?play=full` plays 14 chapters in about 17 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
 - **Short demos.** One thing each, start to finish: joining from an invitation, adding a passkey, adding an authenticator app, and text codes. Links from the FAQ can also start partway into the whole story.
 
 Every walkthrough starts at sign-in, with Maria thinking about why she's there. She signs in with an emailed code and walks to the page click by click, as a person would.
