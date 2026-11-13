@@ -1,7 +1,7 @@
 ---
 id: case-two-offices-off-local-servers
 title: Two offices off local servers
-summary: "The app, database, and files lived on two local servers both offices relied on."
+summary: "The app, database, and files lived on two local servers both offices used."
 type: case-study
 status: adopted
 client: automotive business
@@ -15,10 +15,10 @@ key: migration
 order: 3
 stat_key: "2 servers · 2 offices"
 stat: "· no app rewrite"
-short_needs: "The app, database, and files lived on two local servers both offices relied on."
+short_needs: "The app, database, and files lived on two local servers both offices used."
 short_execute: "Moved them to AWS with their technical lead, linked over a VPN."
-short_observe: "Re-ran the real daily tasks from each office and reconciled every record."
-short_normalize: "Change more only when reliability, capacity, or cost data says so."
+short_observe: "Re-ran daily tasks from each office and reconciled every record."
+short_normalize: "Change more only when the data says so."
 origin: "neon1-site src/app/public/index.html#case-migration"
 ---
 
@@ -26,7 +26,7 @@ origin: "neon1-site src/app/public/index.html#case-migration"
 
 ## Needs
 
-An automotive business ran its application, database, and files on two local servers, and both of its locations had to keep working through any move. Their technical lead already patched and supported those servers, so he knew the environment best.
+An automotive business ran its application, database, and files on two local servers, and both locations had to keep working through the move. Their technical lead supported those servers and knew them best.
 
 ## Execute
 
@@ -34,8 +34,8 @@ He led the inventory and dependency discovery. I owned the AWS design, sizing, a
 
 - An isolated VPC built with Terraform, EC2 for the application, RDS for the database, and S3 for files that suit object storage.
 - Site-to-Site VPN connects both offices, with separate access paths for the app, the database, and management.
-- Sized from measured CPU, memory, database activity, and storage growth, not by copying the old hardware.
-- Data was seeded ahead of time, and the final cutover kept a fallback ready until both offices signed off.
+- Sized from measured CPU, memory, database, and storage use, not the old hardware.
+- Data was seeded ahead, and the cutover kept a fallback until both offices signed off.
 
 ## Observe
 
@@ -48,4 +48,4 @@ He led the inventory and dependency discovery. I owned the AWS design, sizing, a
 
 ## Normalize
 
-The technical lead runs the environment, with the architecture, access, backup, restore, and monitoring steps written down. Containers or a bigger platform come later, only if a measured reliability, capacity, or cost problem makes the case.
+The technical lead runs it, with architecture, access, backup, restore, and monitoring written down. Containers or a bigger platform come only if measured reliability, capacity, or cost makes the case.

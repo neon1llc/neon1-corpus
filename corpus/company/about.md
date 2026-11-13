@@ -14,13 +14,13 @@ edition: "1.4"
 
 # About neon1
 
-I'm [Pradeep](https://www.linkedin.com/in/pradeep-tathineni/). For about 15 years I've kept a strong curiosity and passion for technology and automation, and put them to work at home and on the job. neon1 is how I do that work for local businesses, teams, and families, so they end up better off with their tech than before.
+I'm [Pradeep](https://www.linkedin.com/in/pradeep-tathineni/). For about 15 years I've put my passion for technology and automation to work at home and on the job. neon1 brings that to local businesses, teams, and families, so they're better off with their tech than before.
 
 How I work:
 
 - I listen before I build.
 - You get your options, even if that's all you need.
-- It stays as simple as the problem allows.
+- It stays simple.
 - Your accounts, data, and documentation stay yours.
 - Costs are explained before work starts.
 - I plan for failure and test that the work does what we agreed.

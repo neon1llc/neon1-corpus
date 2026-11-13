@@ -1,12 +1,12 @@
 ---
 id: company-how-it-works
 title: How neon1.tech works
-summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
+summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-11
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -21,7 +21,7 @@ This is a tour of everything on neon1.tech and what happens behind each part, wr
 ## The short version
 
 - **The website** is plain HTML, CSS, and JavaScript files. There's no framework, no tracking, and no ads. It loads only its own files.
-- **Its words** come from one place, neon1-corpus, a set of Markdown documents. The page, the Knowledge Center, and Neo all read from it.
+- **Its words** come from one place, neon1-corpus, a set of Markdown documents. The page, the Knowledge Center, the blog, and Neo all read from it, and a new corpus release reaches the site within about 15 minutes, as plain HTML.
 - **1NEON** is the client portal at neon1.tech/1NEON. It's a React app with its own API, and it has three public ways to look around without an account.
 - **Neo** is the chat in the corner. It answers from neon1's public documents and nothing else.
 - **It all runs on AWS**, defined in Terraform, and every repository deploys itself when a change reaches its main branch.
@@ -37,11 +37,11 @@ The home page is one long page split into sections, which I call views. Each vie
 3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links to the sample project and the demo in 1NEON.
 4. **Client work.** Case study cards in a row you can slide sideways, with arrow buttons. Each card shows the four stages of the project, Needs, Execute, Observe, and Normalize, in one line each, plus the result in numbers.
 5. **p.r.o.s.e.** Short for purposeful, repeatable, open-source engineering. It lists neon1's own repositories and the tools I build for others, each with whether it's public and its current version.
-6. **About.** Who I am and how I work.
+6. **About.** My photo, who I am, and how I work, with a link to the [mission and promise](mission.md).
 7. **Questions.** The most common questions, each folded until you open it, with a link to the full set in the Knowledge Center.
 8. **Contact.** Where and when I work, a booking link for a free 15-minute call, email, phone, and the contact form.
 
-A footer closes the page with contact links, the Knowledge Center, GitHub, the policies, and the site's version number.
+A footer closes the page with contact links, the Knowledge Center, the blog, GitHub, the state registration, the policies, and the site's version number.
 
 ### Moving between views
 
@@ -59,7 +59,7 @@ If your device asks for reduced motion, or the animation library doesn't load, n
 
 ### Case studies
 
-"Read the case study" on a card grows the card into a full panel over the page. Closing it shrinks the panel back into the card, and the page hasn't moved underneath, so you're where you were. While a case study is open, everything behind it is switched off for the mouse, the keyboard, and screen readers, and Neo steps aside.
+The arrow button on a card grows the card into a full panel over the page. Closing it shrinks the panel back into the card, and the page hasn't moved underneath, so you're where you were. While a case study is open, everything behind it is switched off for the mouse, the keyboard, and screen readers, and Neo steps aside.
 
 A link to one card, such as `#case-home`, scrolls to the Client work view, slides the row to that card, marks it, and puts keyboard focus on its button. The browser's Back button returns to where the link was.
 
@@ -118,10 +118,14 @@ The room's models and textures are credited in the site's asset manifest. The ca
 
 The Knowledge Center at [neon1.tech/knowledge](https://neon1.tech/knowledge/) holds every public document neon1 has: services, the FAQ, case studies, products, standards, guides, templates, forms, examples, and policies. It's grouped into shelves, one per folder of the corpus.
 
-- **Where pages come from.** Each tagged release of neon1-corpus can export a "knowledge" bundle. The site's build turns every document in it into its own page at `/knowledge/<shelf>/<name>/`, with the same top bar and footer as the home page. The pages are committed to the site's repository, so a deploy is a plain copy of files.
+- **Where pages come from.** Each tagged release of neon1-corpus can export a "knowledge" bundle. The site's build reads the newest release and turns every document in it into its own page at `/knowledge/<shelf>/<name>/`, with the same top bar and footer as the home page. Every page is written ahead of time as plain HTML, so search engines, link previews, and readers without JavaScript get the whole page. `/knowledge/corpus.json` names the corpus release that's live.
 - **Search** runs in your browser. On your first keystroke it fetches one index file, and then matches your words against titles first, then headings, then summaries, then the text. It knows some words that mean the same thing, so "Wi-Fi" and "wireless" find each other. Nothing you type leaves the browser.
 - **PDFs.** Documents marked for it get a branded PDF, printed by a headless Chromium during each deploy. Links in a PDF point back to neon1.tech, since a PDF travels on its own.
 - **Diagrams** are written as Mermaid text inside the documents, drawn to SVG images ahead of time, and shown with their source beneath them.
+
+## The blog
+
+The blog at [neon1.tech/blog](https://neon1.tech/blog/) holds short posts written in the corpus like everything else, about one a week. Each post gets its own page with its date, topic, and who it's for, the index lists them newest first, and an RSS feed sits at `/blog/feed.xml`. Posts end with plain share links, Copy link, and your device's share sheet, with no outside scripts. They're built from the same corpus release as the Knowledge Center and share its top bar and menu.
 
 ## The contact form
 
@@ -254,7 +258,7 @@ After a successful deploy, each pipeline confirms the live version and tags the 
 
 A deploy never mixes old and new files. The site's pages, scripts, and styles go up together into a new folder, `releases/<id>/`, where the id is a fingerprint of their contents. Only once the whole folder is up does the deploy write that id to a small key value store in CloudFront. A CloudFront Function reads that key on every request and serves the file from the live folder.
 
-So every visitor moves to the new release at the same moment, and no one gets a new page with an old script. A new folder also means new cache addresses, so nothing needs clearing from the cache. The last 10 releases are kept, and a rollback is one write back to an earlier id, done in seconds.
+So every visitor moves to the new release at the same moment, and no one gets a new page with an old script. A new folder also means new cache addresses, so nothing needs clearing from the cache. The last 5 releases are kept, and a rollback is one write back to an earlier id, done in seconds.
 
 Fonts and media are shared across releases and never change at the same address. A changed image gets a new file name. That lets browsers keep them for a year.
 
@@ -281,8 +285,9 @@ neon1.tech mail runs on Google Workspace. One CloudFront distribution sends each
 neon1-corpus holds neon1's public words as Markdown documents, each with a short header saying what it is, who reads it, and its edition. A linter checks every document for its header, its links, and anything that looks private. Each tagged release exports a bundle for each reader:
 
 - **site**, for the case studies and questions on the home page
+- **blog**, for the blog and its feed
 - **knowledge**, for the Knowledge Center and its PDFs
 - **chat**, for Neo
 - **portal**, for Neo inside 1NEON
 
-Each reader pins a release, so a change to a document reaches them when they move to that release, and their checks fail if their copy drifts from it. This document lives there too.
+The site always builds from the newest release: every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release, without changing the site's own version. Neo refreshes its copy every Monday. Each reader's checks fail if its copy drifts from the release it built from. This document lives there too.
