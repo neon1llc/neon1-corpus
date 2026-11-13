@@ -17,7 +17,7 @@ related: [standards-development, standards-version-control, standards-security-a
 
 # Testing and review
 
-Tests and reviews exist to catch the problems that would hurt the people using the work. A large test count isn't the goal. Evidence that the promised behavior works, and fails safely, is.
+Tests and reviews catch problems that would hurt the people using the work. The goal isn't a large test count but evidence that the promised behavior works and fails safely.
 
 ## What gets tested
 
@@ -30,7 +30,7 @@ Tests follow the promise made to the client or user:
 - **Recovery** works: a backup restores, a deploy rolls back.
 - **Accessibility and devices** in scope: keyboard, screen reader, phone, and slow connections where they matter.
 
-When a bug is found, a test that would have caught it is written first, then the fix.
+For a bug, the test that would have caught it comes first, then the fix.
 
 ## Kinds of checks
 
@@ -44,11 +44,11 @@ When a bug is found, a test that would have caught it is written first, then the
 | Accessibility checks | Missing labels, contrast, keyboard traps | Before every release that changes an interface |
 | Live checks | The deployed version isn't the one built | After every deploy |
 
-Checks run the same way on a laptop and in CI, from one command, such as `make check`. A check that can't run somewhere says so, rather than passing quietly.
+Checks run the same on a laptop and in CI, from one command such as `make check`, and a check that can't run says so instead of passing quietly.
 
 ## Review
 
-Every change gets read in full before it merges, as a diff, by its author at minimum. Once a repository deploys to production or holds client data, from its first live release and whatever its version number, its required checks must pass and someone other than the author reviews each change when a second person is available. While neon1 has one maintainer, the [version control standard](version-control.md#how-this-works-today) describes the sole-maintainer exception. A review asks:
+Every change is read in full as a diff before it merges, by its author at least. Once a repository deploys to production or holds client data, its required checks must pass and someone other than the author reviews when a second person is available; the [version control standard](version-control.md#how-this-works-today) covers today's sole-maintainer exception. A review asks:
 
 1. Does it do what it says, and only that?
 2. Is anything unsafe: secrets, permissions, data loss, irreversible actions?
@@ -57,7 +57,7 @@ Every change gets read in full before it merges, as a diff, by its author at min
 5. Is it readable, with names and comments that follow the [code style](code-style.md)?
 6. Are the docs, changelog, and version updated?
 
-AI review tools can help find problems. They don't approve changes. A person decides.
+AI review tools help find problems but don't approve changes. A person decides.
 
 ## Definition of done
 
@@ -74,7 +74,7 @@ Merged isn't done. Deployed but unchecked isn't done either.
 
 ## Evidence
 
-Report what was actually checked and how. Keep the difference between "passes locally," "passes in CI," "deployed," and "confirmed working by the people who use it." When something wasn't checked, say so.
+Report what was checked and how, keeping "passes locally," "passes in CI," "deployed," and "confirmed by the people who use it" distinct, and say what wasn't checked.
 
 ## Sources
 
