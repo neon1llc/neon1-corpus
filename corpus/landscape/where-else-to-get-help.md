@@ -16,7 +16,7 @@ related: [company-charter, services]
 
 # Where else to get help
 
-Different needs call for different kinds of help. These are the main options, how they usually charge, and when each would serve you better. Prices change, so check each provider's site.
+Different needs call for different help. These are the main options, how they usually charge, and when each serves you better. Prices change, so check each provider.
 
 | Option | Best for | Usually charges | Better than neon1 when |
 |---|---|---|---|
@@ -32,15 +32,15 @@ Different needs call for different kinds of help. These are the main options, ho
 
 ## Things to watch for
 
-- **Freelancers:** quality varies, and handover and documentation depend on who you pick. Make sure accounts are created in your name.
-- **MSPs:** long contracts, tools and accounts held in the provider's name, and exit fees. Ask how you'd leave before you sign. Provider-written 2026 pricing guides mostly put small-business plans around $100 to $250 per user per month.
-- **Repair shops:** they fix the device in front of them, but rarely look at how your tools work together.
+- **Freelancers:** quality, handover, and documentation vary. Make sure accounts are in your name.
+- **MSPs:** long contracts, tools and accounts in the provider's name, and exit fees. Ask how you'd leave before signing. Provider-written 2026 pricing guides mostly put small-business plans around $100 to $250 per user per month.
+- **Repair shops:** they fix the device in front of them, rarely how your tools work together.
 
 ## Where neon1 fits
 
-Owner-run businesses, small practices, and households that want their tools to work together, and want to understand and own the result, with documentation at handover. neon1 works by appointment and takes at most two clients at a time. It isn't the right choice for 24/7 coverage, a large team, formal assurance, or regulated professional judgment.
+Owner-run businesses, small practices, and households that want their tools working together, and to understand and own the result, documented at handover. neon1 works by appointment with at most two clients at a time, so it isn't the choice for 24/7 coverage, a large team, formal assurance, or regulated professional judgment.
 
-If you're not sure, ask. When someone else fits better, I'll point you to them.
+If you're not sure, ask, and I'll point you elsewhere when someone fits better.
 
 ## Sources
 
