@@ -55,16 +55,16 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 ## Objectives
 
-**The result:** every order lands in one list on its own, the kitchen gets its bake sheet, and nobody retypes anything.
+**The result:** email, voicemail, and form orders land in one list on their own; phone and Instagram orders are entered once, in a short staff form, instead of copied into a spreadsheet at night; and the kitchen gets its bake sheet.
 
 **How we'll know it worked,** measured the same way for two weeks before and after:
 
-- Minutes retyping each night: from 60 to under 10
+- Minutes spent on orders after close each night: from 60 to under 10
 - Orders missed or wrong each week: from 3 to 0
 
 **Requirements**
 
-- Nothing is retyped (must have)
+- No order is copied from one place to another by hand (must have)
 - Works on a phone (must have)
 - Running before the holiday rush (should have)
 
@@ -92,7 +92,7 @@ An order form that customers fill in themselves, feeding one order list. It fixe
 
 ### B. Solid setup (recommended)
 
-Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet made from that list. Nobody retypes an order. A person checks each one that a customer didn't type in themselves.
+Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet made from that list. Form orders arrive as typed by the customer. Email and voicemail orders are read in automatically and checked by a person. Phone calls and Instagram messages are still entered by hand, once, in a 20-second staff form. Nothing is copied into a spreadsheet after close.
 
 **Includes**
 
@@ -115,7 +115,7 @@ Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet
 
 **To buy, in the bakery's name:** a label printer for pickup bags, such as a Brother QL-820NWB, about $180 to $220. It prints a pickup tag from each order in the list.
 
-**Why I recommend it:** it ends the retyping without asking one customer to change how they order, and it's running before the holiday rush. The online order page in C can follow later, and nothing in B is redone.
+**Why I recommend it:** it ends the nightly retyping without asking one customer to change how they order, and it's running before the holiday rush. The online order page in C can follow later, and nothing in B is redone.
 
 ### C. Fuller build
 
