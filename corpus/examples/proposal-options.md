@@ -103,7 +103,8 @@ Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet
 - Pickup tags printed from the list
 - A safety net: a nightly copy of the list, an alert to you if no orders arrive during opening hours, and each person signing in as themselves in place of the shared password
 - A dry run on a past week of your real orders before anything goes live, then a week side by side with the old way
-- A runbook, a recorded walkthrough for new staff, and every account in the bakery's name
+- A runbook, a recorded walkthrough for new staff, training for each person, and every account in the bakery's name
+- Two weeks of go-live support for fixes and questions
 
 **Not included:** taking payment online, and changes to your phone service or your website's design.
 
