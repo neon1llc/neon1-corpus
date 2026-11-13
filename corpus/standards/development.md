@@ -17,11 +17,11 @@ related: [standards-writing, standards-version-control, standards-versioning, st
 
 # Development
 
-This is the main development standard for neon1. It covers every project neon1 builds, for itself or for a client: websites, tools, infrastructure, automations, and AI features. It sets the principles and the order of work. The detailed rules live in the standards linked at the end, and each of them follows this one.
+neon1's main development standard, for everything it builds, for itself or a client: websites, tools, infrastructure, automations, and AI features. It sets the principles and order of work; the detailed standards linked at the end follow it.
 
 ## Principles, in priority order
 
-When two principles pull in different directions, the higher one wins. Most of the time they agree.
+When two principles conflict, the higher wins. Usually they agree.
 
 | # | Principle | What it means here |
 |---|---|---|
@@ -37,13 +37,13 @@ When two principles pull in different directions, the higher one wins. Most of t
 
 A few consequences of the order:
 
-- A simpler design that leaves a security gap loses. A faster design that's harder to use loses unless speed is the need.
-- Efficiency matters, but it comes after people can use and maintain the thing. Optimize what's measured, not what's guessed.
-- Consistency is last because a convention should give way when it would make something unsafe, wrong, or unusable. When that happens, the convention gets updated rather than quietly broken.
+- A simpler design with a security gap loses. A faster, harder-to-use design loses unless speed is the need.
+- Efficiency comes after people can use and maintain it. Optimize what's measured, not guessed.
+- Consistency is last because a convention should give way when it would make something unsafe, wrong, or unusable, and then the convention is updated, not quietly broken.
 
 ## Words neon1 uses, defined
 
-These words come up often. Each one means something specific here.
+Each of these means something specific here.
 
 | Word | Meaning |
 |---|---|
@@ -59,20 +59,20 @@ These words come up often. Each one means something specific here.
 
 ## How work moves
 
-Every piece of work follows the same order, at whatever size fits:
+All work follows the same order, at whatever size fits:
 
 1. **Reproduce.** Start from something that works: an existing tool, a known pattern, or the current behavior, with a baseline measured.
 2. **Integrate.** Connect it into the complete path a person actually uses, end to end.
 3. **Enhance.** Improve what real use shows is missing or weak.
 4. **Unify.** Once several pieces work, share their common parts and make them consistent.
 
-Reuse comes before building. Existing tools and well-maintained open-source projects come first, checked under the [technology decisions](technology-decisions.md) standard. Custom code covers only what nothing else does.
+Reuse comes before building: existing tools and well-maintained open source first, checked under the [technology decisions](technology-decisions.md) standard, and custom code only for what nothing else does.
 
 For a bug, the order is: reproduce it, find the cause, fix it narrowly, add a test that would have caught it, and check the behavior around it.
 
 ## Maturity and version 1.0.0
 
-Before `v1.0.0`, a project is under initial development, and its versions say so. `v1.0.0` is reserved for the first complete, dependable release of the whole intended scope, shown to work for the people it's for. Passing tests or finishing one feature doesn't make a project 1.0.0. The [versioning standard](versioning.md) defines every version number in detail.
+Before `v1.0.0`, a project is in initial development. `v1.0.0` is the first complete, dependable release of the whole intended scope, shown to work for its people; passing tests or finishing one feature doesn't qualify. The [versioning standard](versioning.md) has the details.
 
 ## The detailed standards
 
@@ -92,11 +92,11 @@ Before `v1.0.0`, a project is under initial development, and its versions say so
 
 ## Your code is yours
 
-Code written for a client lives in a repository the client owns, under the license agreed. The handover includes how to build, test, deploy, and roll back without me. Reused open-source code keeps its license and notices, and I explain what each license allows.
+Client code lives in a repository the client owns, under the agreed license, and the handover covers building, testing, deploying, and rolling back without me. Reused open source keeps its license and notices, and I explain what each allows.
 
 ## Review tools
 
-I use AI tools to review code for bugs, security issues, and missing tests, alongside automated checks. I review and take responsibility for every change that ships. See [How I use AI](../policies/ai-use.md).
+I use AI tools, alongside automated checks, to review code for bugs, security issues, and missing tests, and I review and take responsibility for every change that ships. See [How I use AI](../policies/ai-use.md).
 
 ## Sources
 
