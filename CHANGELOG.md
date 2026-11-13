@@ -2,10 +2,10 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## Unreleased
+## v0.40.0 - 2026-11-13
 
 ### Changed
-- Less about neon1 itself. The 18 standards, the charter, and How neon1.tech works stay in this repository but leave the Knowledge Center and Neo; links to them now open on GitHub. The mission keeps its promise and the landing line, without repeating the services and process; About says who does the work, what's been shipped, and how the practice is set up; Services leads with owner-run businesses, with cloud, networks, and security training as shorter second lines.
+- Less about neon1 itself. The 18 standards, the charter, and How neon1.tech works stay in this repository but leave the Knowledge Center and Neo; links to them now open on GitHub. The mission keeps its promise and the landing line, without repeating the services and process; About says who does the work (about 10 years of building and running systems), what's been shipped, and how the practice is set up; Services leads with owner-run businesses, with cloud, networks, and security training as shorter second lines.
 - Products: SOC It 2 Me, There Are No Incidents, You Have 20 Seconds To Comply, Phish Out of Water, and Home Is Where the Smart Is leave the Knowledge Center and Neo, and Ready, Secure, Go lists them as companion guides under plain titles. The two family and school case studies stay in the Knowledge Center but leave the home page.
 - Case studies are told as The problem, The work, The results, and After handover. Needs, Execute, Observe, Normalize stays the four layers inside 1NEON.
 - Working with neon1: anything a business can't run without for a day needs someone on the client's side who runs it day to day; care plans set response times within working hours; personal or health data needs the right agreement and the insurance to back it.
