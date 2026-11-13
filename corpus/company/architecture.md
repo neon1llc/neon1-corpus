@@ -218,7 +218,7 @@ flowchart TD
   switch --> verify{"Live site serves<br/>the new version?"}:::decision
   verify -->|yes| tag["Tag vX.Y.Z on GitHub"]:::step
   verify -->|no| rollback["make rollback:<br/>back in seconds"]:::stop
-  tag --> keep["Keep the last 10 releases"]:::step
+  tag --> keep["Keep the last 5 releases"]:::step
 
   classDef step fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
   classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
