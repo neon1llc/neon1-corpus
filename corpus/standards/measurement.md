@@ -16,7 +16,7 @@ related: [forms-metric-record, standards-discovery-and-delivery, standards-relia
 
 # Measurement
 
-Measurement shows whether the work was worth it. It starts during discovery with a baseline, gets checked at handover, and gets reviewed after real use. I keep the list short, define every number exactly, and say plainly what a small sample can't prove.
+Measurement shows whether the work was worth it: a baseline in discovery, a check at handover, and a review after real use. I keep the list short, define every number exactly, and say what a small sample can't prove.
 
 ## Terms
 
@@ -30,11 +30,11 @@ Measurement shows whether the work was worth it. It starts during discovery with
 | **Guardrail** | Something that must not get worse while we improve the main result |
 | **OKR** | An objective plus a few measurable key results by a date |
 
-Publishing a page is a task. People understanding it and acting on it is an outcome. I try to measure outcomes.
+Publishing a page is a task; people understanding and acting on it is an outcome. I measure outcomes.
 
 ## Every measure gets a definition
 
-Each measure we agree on gets a [metric record](../forms/metric-record.md): what decision it supports, exactly what counts, the formula, the source, the baseline, the target, and the review date. A zero in the denominator means "no data," not zero percent and not perfect. Missing data stays visible as unknown.
+Each agreed measure gets a [metric record](../forms/metric-record.md): the decision it supports, what counts, formula, source, baseline, target, and review date. A zero denominator means "no data," and missing data stays visible as unknown.
 
 ## Measures I reach for most
 
@@ -50,19 +50,19 @@ Each measure we agree on gets a [metric record](../forms/metric-record.md): what
 | Independent success | People finishing without help ÷ people trying | With a few people, it's qualitative evidence |
 | Benefit realized | Observed benefit ÷ estimated benefit, same period | Keep time, money, and quality apart unless the conversion is written down |
 
-Satisfaction scores such as CSAT and NPS have their place. With a handful of clients, a direct conversation about what worked and what's still hard usually tells us more.
+Satisfaction scores such as CSAT and NPS have their place, but with a handful of clients, a direct conversation about what worked usually tells us more.
 
 ## Small samples
 
-- Counts appear next to percentages. Four out of five is 80%, and one more case changes it a lot.
+- Counts appear beside percentages: four of five is 80%, and one more case changes it a lot.
 - Failed and abandoned cases stay in the data.
 - A survey only happy customers answer overstates satisfaction.
-- Zero failures in 20 representative trials still allows a failure rate near 14% at 95% confidence. A small pilot finds problems. It can't prove near-perfection. (The math follows [NIST's handbook section on estimating a proportion from a sample](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).)
-- Seasons, staff changes, and training also move numbers, so before-and-after reports name them. I don't claim cause and effect without a design that could show it.
+- Zero failures in 20 representative trials still allows a failure rate near 14% at 95% confidence. A small pilot finds problems but can't prove near-perfection. (The math follows [NIST's handbook section on estimating a proportion from a sample](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).)
+- Seasons, staff changes, and training move numbers too, so reports name them, and I don't claim cause and effect without a design that could show it.
 
 ## What a report from me looks like
 
-One page when possible: the result you wanted, the period and sample size, the baseline, what we see now, cost and effort, failures and exceptions, what the numbers can't establish, and the next decision. Quotes appear only with permission. The question it answers is whether the change is worth keeping.
+One page when possible: the result you wanted, period and sample size, baseline, what we see now, cost and effort, failures, what the numbers can't establish, and the next decision, answering whether the change is worth keeping. Quotes only with permission.
 
 ## Software and website measures
 

@@ -17,23 +17,23 @@ related: [standards-development, standards-writing, standards-testing-and-review
 
 # Code style
 
-Code is read far more often than it's written. These conventions make neon1 code quick to understand for someone who didn't write it. They apply to every language and every format that allows comments, including tests, shell scripts, Dockerfiles, CI workflows, Terraform, and templates. A project's formatter and linter win where they conflict with this page.
+Code is read far more than it's written, so these conventions make neon1 code quick to understand for someone who didn't write it. They apply to every language and commentable format, from tests and shell scripts to CI workflows, Terraform, and templates. A project's formatter and linter win where they conflict.
 
 ## Names
 
 - Use the shortest name that keeps the meaning clear: `retryLimit`, not `rl` or `maximumNumberOfRetryAttemptsAllowed`.
 - Name things for what they mean to the reader, not how they're built: `unpaidInvoices`, not `filteredList`.
 - Use the project's existing words for its concepts. If the interface says "workspace," the code says `workspace` too.
-- When renaming, rename every use in the same change, and keep public interfaces stable or version the change.
+- Rename every use in the same change, and keep public interfaces stable or version the change.
 
 ## Comments
 
-- **Explain why, not what.** A comment gives the purpose, a constraint, an invariant, or a reason that isn't visible in the code. It doesn't narrate the next line.
-- **Comment at every semantic junction**: section boundaries, exported or public functions, classes, and components, non-obvious invariants, security and tenancy rules, and configuration blocks. Usually one or two lines, without a closing period on single-line comments. Between junctions, code that already says plainly what it does needs no comment of its own.
+- **Explain why, not what.** A comment gives a purpose, constraint, invariant, or reason the code doesn't show, not a narration of the next line.
+- **Comment at every semantic junction**: section boundaries, exported or public functions, classes, and components, non-obvious invariants, security and tenancy rules, and configuration blocks. Usually one or two lines, with no closing period on single-line comments. Between junctions, plain code needs no comment.
 - **Start with the meaning.** Don't repeat the function's name or open with "This function." For example, `// Invalid records are rejected before anything is written`.
-- **Keep comments true.** A comment that no longer matches the code is a bug. Update or remove it in the same change.
-- **Comments earn their place.** In review I ask whether each comment tells a reader something they need and whether it's still accurate. More comments don't make code clearer on their own.
-- Use each language's native documentation format where tools read it: docstrings in Python, doc comments in Go, JSDoc where a project uses it. Document parameters, results, and errors only when they add something the signature doesn't say.
+- **Keep comments true.** A comment that no longer matches the code is a bug, fixed in the same change.
+- **Comments earn their place.** Review asks whether each comment tells readers something they need, and is still accurate.
+- Use each language's native documentation format where tools read it, such as docstrings, Go doc comments, or JSDoc, and document parameters, results, and errors only when they add to the signature.
 
 ## File headers
 
@@ -48,7 +48,7 @@ Every source file starts with a one-line header saying what it is and what it's 
 
 The header uses sentence case and a period.
 
-The header and junction rules apply to files people write and maintain. See the exceptions below. A `Usage:` line follows when the file can be run, showing a real invocation without closing punctuation. Full help belongs in `--help`, not the header.
+These rules apply to files people write and maintain (see the exceptions below). A runnable file adds a `Usage:` line with a real invocation and no closing punctuation; full help belongs in `--help`.
 
 ## Layout and whitespace
 
@@ -59,8 +59,8 @@ The header and junction rules apply to files people write and maintain. See the 
 
 ## Structure
 
-- Prefer plain functions and data over frameworks and abstractions until a pattern repeats at least three times.
-- Keep business logic separate from input, output, and presentation, so it can be tested on its own.
+- Prefer plain functions and data to frameworks and abstractions until a pattern repeats three times.
+- Keep business logic apart from input, output, and presentation, so it tests on its own.
 - Validate input where it enters the system, and trust it after that.
 - Fail loudly with a clear message. Never swallow an error silently.
 - Configuration comes from the environment or a config file, never from values hard-coded in several places.
@@ -76,14 +76,14 @@ The header and junction rules apply to files people write and maintain. See the 
 
 These don't get added headers or comments:
 
-- **Generated files**, such as compiled output, generated clients, and build artifacts. Document the generator and its inputs instead, and regenerate rather than editing by hand.
-- **Vendored code** copied from another project. Leave it as its authors wrote it, and record where it came from and which version in the nearest README or notice file.
+- **Generated files**, such as compiled output and generated clients. Document the generator and inputs, and regenerate rather than edit.
+- **Vendored code** from another project, left as written, with its source and version in the nearest README or notice.
 - **Lock files**, such as `package-lock.json` or `go.sum`. Their tools own them.
 - **Formats with their own authoritative description**, such as a JSON Schema with `description` fields, an OpenAPI document, or a migration tracked by its tool. The description fields are where the explanation goes.
 
 ## Formats without comments
 
-Strict JSON and similar formats can't hold comments. Don't invent them. Put the explanation in the nearest file that can hold it, such as the README or the code that reads the file.
+Strict JSON and similar formats can't hold comments, so the explanation goes in the nearest file that can, such as the README or the code that reads it.
 
 ## Sources
 
