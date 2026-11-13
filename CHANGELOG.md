@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.38.1 - 2026-11-13
+
+### Changed
+- Tighter wording across the Knowledge Center and blog, about 13% less prose overall: the FAQ, case studies, 1NEON guide, company pages, all 18 standards, guides, landscape, and the tax preparers post. Legal pages, forms, and Neo's instructions are unchanged.
+- Services, process, About, Contact, and the mission's "What I do" table match the home page's wording.
+- How neon1.tech works (edition 1.2) covers the blog, the About photo, the footer, and how the site builds the newest corpus release as static HTML, keeping the last 5 releases; its architecture diagram is redrawn to match.
+- Ready, Secure, Go (v0.1.1) and AWS CLIP (v0.1.0) show as first releases and DeployOps as a v0.14 preview, matching their repositories; the glossary and charter follow.
+
 ## v0.38.0 - 2026-11-13
 
 ### Changed
