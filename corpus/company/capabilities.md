@@ -15,11 +15,11 @@ related: [company-mission, company-registration, company-contact, services, comp
 
 # Capability statement
 
-neon1 is a technology practice run by one senior engineer, Pradeep Tathineni. It designs, builds, and hands over business workflows, cloud and AI systems, networks and devices, and security training for small and medium organizations. Every result is tested against what was agreed, documented, and owned by the client.
+neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, designing, building, and handing over business workflows, cloud and AI systems, networks and devices, and security training for small and medium organizations. Every result is tested against what was agreed, documented, and client-owned.
 
 ## Core capabilities
 
-- **Business workflows.** Connecting email, spreadsheets, point of sale, booking, accounting, and document systems, and automating the repetitive steps between them.
+- **Business workflows.** Email, spreadsheets, point of sale, booking, accounting, and document systems connected and automated.
 - **Cloud and AI engineering.** AWS foundations in Terraform, deploy pipelines with checks and rollback, retrieval-based AI assistants with citations and per-person permissions, and backup and recovery proven by test restores.
 - **Migrations.** Moving servers, files, and applications from on-premises machines to the cloud, with data intact and a tested way back.
 - **Networks, devices, and spaces.** Wi-Fi, cameras, smart devices, and office equipment configured, separated onto their own networks, and documented.
@@ -28,10 +28,10 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni. It
 ## What sets neon1 apart
 
 - **One accountable engineer** from the first call to the handover, with no hand-offs between sales and delivery.
-- **Options before commitments.** Each proposal offers a quick fix, a solid setup, and a fuller build, each with its cost, effort, and upkeep.
+- **Options before commitments.** Proposals offer a quick fix, a solid setup, and a fuller build, each with cost, effort, and upkeep.
 - **Client ownership.** Accounts, billing, data, and documentation stay with the client, with a clean exit at any time.
-- **Evidence over claims.** Work is measured against a baseline, and results are reported with how they were tested.
-- **Open work.** neon1's own tools and this site are public on [GitHub](https://github.com/neon1llc), so the engineering can be inspected before hiring.
+- **Evidence over claims.** Work is measured against a baseline, and results reported with how they were tested.
+- **Open work.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc), open to inspection before hiring.
 
 ## Delivered work
 

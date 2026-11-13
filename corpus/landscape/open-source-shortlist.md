@@ -18,15 +18,15 @@ related: [standards-technology-decisions, forms-tool-decision, guides-before-you
 # Open-source tools on my shortlist
 
 > [!warning] A shortlist, not a recommendation
-> These are projects I'd look at first when a need is real. I reviewed their repositories, purpose, and licenses in November 2026. That's discovery, not a production test, a security review, or a promise that any of them suits your business. "Free" software still costs someone's time to host, update, and back up. The [technology decisions](../standards/technology-decisions.md) standard explains how a tool earns its place.
+> Projects I'd look at first when a need is real, with repositories, purpose, and licenses reviewed in November 2026. That's discovery, not a production test, a security review, or a promise of fit. "Free" software still costs time to host, update, and back up. The [technology decisions](../standards/technology-decisions.md) standard explains how a tool earns its place.
 
 ## How to read this
 
-- **Worth a small trial** means a sensible first look when the need exists, often with a hosted version you can pay for instead of running it yourself.
-- **Needs an owner** means it can be excellent but asks for real technical or domain ownership to run well.
+- **Worth a small trial** means a sensible first look when the need exists, often as a paid hosted version.
+- **Needs an owner** means it can be excellent but needs real technical or domain ownership.
 - **In use here** means neon1's own public repositories use it today.
 
-Projects that usually cost more to run than they save at small-business scale were left off. So were any with an unresolved concern at review time.
+Projects that cost more to run than they save at small-business scale, or had an unresolved concern at review, were left off.
 
 ## Automation
 
