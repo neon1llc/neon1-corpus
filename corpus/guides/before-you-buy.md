@@ -16,11 +16,11 @@ related: [standards-technology-decisions, forms-tool-decision]
 
 # Before you buy a new tool
 
-New software can fix a problem or add a new one. These questions take about ten minutes.
+New software can fix a problem or add one. These questions take about ten minutes.
 
 ## 1. Can something you already pay for do it?
 
-Microsoft 365, Google Workspace, your accounting software, and your point of sale often have forms, automation, booking, or reports built in. Check first.
+Microsoft 365, Google Workspace, accounting software, and point of sale often have forms, automation, booking, or reports built in.
 
 ## 2. What exactly will it fix?
 
@@ -28,23 +28,23 @@ Write one sentence: "When X happens, we currently do Y, and Z goes wrong." If yo
 
 ## 3. Who will use it every day?
 
-Ask them. A tool the staff avoid won't fix the problem, however much the owner likes it.
+Ask them. A tool the staff avoid won't fix anything, however much the owner likes it.
 
 ## 4. What does it cost per year, all in?
 
-Subscription per user, add-ons, payment fees, setup, training, and the hours someone will spend looking after it. Free trials end, and introductory prices rise.
+Per-user subscriptions, add-ons, payment fees, setup, training, and upkeep hours. Trials end, and introductory prices rise.
 
 ## 5. Can you get your data out?
 
-Look for an export to a standard format, such as CSV or PDF. Try it during the trial. If leaving is hard, that's a cost.
+Look for export to a standard format, such as CSV or PDF, and try it during the trial. Hard to leave is a cost.
 
 ## 6. Whose account is it?
 
-The account should be in your business's name, billed to you, with at least two people who can get in. Not a contractor's personal account.
+In your business's name, billed to you, with at least two people who can get in, never a contractor's personal account.
 
 ## 7. How is your data handled?
 
-Where it's stored, who at the company can see it, how long it's kept, and whether it's used to train AI. For health information, ask whether they'll sign a business associate agreement.
+Where it's stored, who there sees it, how long it's kept, and whether it trains AI. For health information, ask if they'll sign a business associate agreement.
 
 ## 8. What happens when it's down?
 
@@ -52,11 +52,11 @@ Is there a way to keep working by hand for a day? Who do you contact, and when d
 
 ## 9. Does it connect to what you have?
 
-Look for a built-in integration or an official API, rather than copying data by hand or a fragile workaround.
+Look for a built-in integration or official API, not hand copying or a fragile workaround.
 
 ## 10. What will tell you it worked?
 
-Pick one thing to measure before you start, such as time spent, errors, or missed requests, and check it again in a month.
+Measure one thing before you start, such as time, errors, or missed requests, and again in a month.
 
 ## A simple decision
 

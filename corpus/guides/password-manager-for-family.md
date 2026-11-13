@@ -19,13 +19,13 @@ related: [case-cameras-to-grandmas-email, standards-security-and-data]
 
 # A password manager for your family
 
-A password manager remembers a different strong password for every account, so nobody has to reuse one. Reused passwords are one of the most common ways accounts get taken over. Here's how to set one up for a household without anyone getting locked out.
+A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over. Here's how to set one up for a household without anyone getting locked out.
 
 ## Pick one together
 
-Choose a well-known manager with family sharing and apps for every device you use. Many good ones exist, including the ones built into Apple and Google devices. Pick the one everyone in the household will use.
+Choose a well-known manager with family sharing and apps for all your devices, including those built into Apple and Google devices, that everyone will use.
 
-Recovery works differently in each one, and in most of them it only works if it was set up before anything went wrong. Before you move important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
+Recovery differs in each, and in most only works if set up beforehand. Before moving important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
 
 ## Before you start
 
@@ -39,19 +39,19 @@ Recovery works differently in each one, and in most of them it only works if it 
 
 1. **The organizer creates the family account** and sets a long master password: four or five random words are easy to remember and hard to guess.
 2. **Turn on two-step sign-in** for the password manager itself.
-3. **Set up recovery now, the way your product does it** (see [recovery by product](#recovery-by-product)), and write down anything it gives you on paper. Keep it somewhere safe at home, such as with other important papers. This is the one thing to protect most.
-4. **Invite each family member.** Each person gets their own vault and master password. Shared things, like streaming and Wi-Fi, go in a shared vault.
+3. **Set up recovery now, the way your product does it** (see [recovery by product](#recovery-by-product)), and write anything it gives you on paper, kept safe at home with other important papers. This is the one thing to protect most.
+4. **Invite each family member.** Each person gets their own vault and master password, and shared things like streaming and Wi-Fi go in a shared vault.
 5. **Install it on every device**, then turn on autofill in the phone's settings.
 
 ## Move the important accounts first
 
-Start with email, banking, and the phone carrier. These are the accounts that can reset everything else. For each one:
+Start with email, banking, and the phone carrier, the accounts that can reset everything else. For each:
 
 1. Sign in with the old password.
 2. Let the manager generate a new one and save it.
 3. Turn on two-step sign-in while you're there.
 
-Do the rest over the following weeks, whenever each account comes up. There's no need to change everything in one evening.
+Do the rest over the following weeks as each account comes up, not all in one evening.
 
 ## For older relatives
 
@@ -62,11 +62,11 @@ Do the rest over the following weeks, whenever each account comes up. There's no
 
 ## Recovery by product
 
-*Reviewed 2026-11-10.* Each product changes its options over time, so follow its own instructions, linked below, rather than this summary. In every case, recovery may be impossible if nothing was set up beforehand. Don't try a recovery just to test it: some steps reset your password or keys, or can't be undone. Instead, check that what you set up is still in place.
+*Reviewed 2026-11-10.* Products change their options, so follow each one's instructions, linked below, over this summary. Recovery may be impossible if nothing was set up beforehand. Don't test by recovering, since some steps reset passwords or keys or can't be undone; check that your setup is still in place instead.
 
 ### Apple Passwords and iCloud Keychain
 
-Your passwords are tied to your Apple Account, so recovering them means recovering that account. Apple offers a [recovery contact](https://support.apple.com/102641), a trusted person who can help you get a code, and an optional [recovery key](https://support.apple.com/109345). If you turn on a recovery key and later can't provide it, Apple says you can be locked out permanently, and Apple can't give it back to you. Don't store the key in the Passwords app itself.
+Recovering your passwords means recovering your Apple Account. Apple offers a [recovery contact](https://support.apple.com/102641), a trusted person who can help you get a code, and an optional [recovery key](https://support.apple.com/109345). If you turn on a recovery key and later can't provide it, Apple says you can be locked out permanently, and Apple can't give it back to you. Don't store the key in the Passwords app itself.
 
 ### Google Password Manager
 
