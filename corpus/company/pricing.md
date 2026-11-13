@@ -13,7 +13,7 @@ featured: true
 audience: "Owners and managers deciding whether to ask for a proposal"
 related: [examples-proposal-options, policy-service-agreement, faq-working-with-neon1, templates-care-plan]
 short:
-  - "Most small fixes cost a few hundred dollars, and most workflow projects $1,000 to $3,000. Each proposal shows the hours behind every price, a fixed price or an estimate with a ceiling, and what you pay up front. Nothing is added without your approval, and if the work comes to less, you pay less."
+  - "Most small fixes cost a few hundred dollars, and most workflow projects $1,000 to $3,000. Each proposal shows the hours behind every price, a fixed price or an estimate with a ceiling, and what you pay up front. Nothing is added without your approval, and on an estimate, if the work takes fewer hours, you pay for fewer."
 ---
 
 # How I price my work

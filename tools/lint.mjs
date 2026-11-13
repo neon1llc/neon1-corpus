@@ -8,7 +8,7 @@
 import { readFileSync, existsSync } from "node:fs"
 import { join, dirname, resolve } from "node:path"
 import { root, load, SECTIONS } from "./corpus.mjs"
-import { sections } from "./markdown.mjs"
+import { sections, safeHref } from "./markdown.mjs"
 
 
 
@@ -118,6 +118,7 @@ for (const doc of docs) {
 
   // Relative links must land on a real file
   for (const [, href] of doc.body.matchAll(/\]\(([^)\s]+)\)/g)) {
+    if (!safeHref(href)) { err(`unsafe link scheme ${href}`); continue }
     if (/^[a-z]+:/i.test(href) || href.startsWith("#")) continue
     const target = resolve(dirname(doc.file), href.split("#")[0])
     if (!existsSync(target)) err(`broken link ${href}`)
