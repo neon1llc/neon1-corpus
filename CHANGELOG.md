@@ -2,6 +2,16 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.38.0 - 2026-11-13
+
+### Changed
+- Service agreement (edition 2.0), word for word as 1NEON shows it: a price is fixed or an estimate, an estimate is billed for the hours worked and never passes its high end unless you approve a change first, and a deposit counts toward the final invoice, with any difference refunded.
+- Proposal with options, filled in (edition 2.0): Maple Street Bakery's proposal rebuilt as the 1NEON walkthrough now tells it. A team of eight, orders by email, voicemail, and Instagram, limits found before any option was written, three options with why to pick each, the hours behind each price task by task, when the client pays, and how the work turned out.
+- 1NEON help (edition 2.0) matches the portal's FAQ word for word, with three new answers: whether a price is fixed or an estimate, where the hours worked are listed, and what happens if the work needs more or fewer hours than estimated.
+- 1NEON guide, projects (edition 2.1): the two kinds of price, **How this adds up**, the Hours section, and how deposits, progress invoices, and final invoices are worked out for each kind.
+- Operating principles (edition 2.0), the services agreement template (edition 1.2), and Working with neon1 (edition 1.5) describe pricing the same way: fixed when the work is well understood, otherwise an estimate with a ceiling.
+- How neon1.tech works (edition 1.1) describes the walkthroughs as they are now: a Start card, a closing card, narration at the bottom, a loading screen when jumping ahead, a screen that stays lit, and the full story's 14 chapters.
+
 ## v0.37.2 - 2026-11-13
 
 ### Changed

@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-07
-edition: "1.4"
+edition: "1.5"
 ---
 
 # Working with neon1
@@ -40,7 +40,7 @@ Before any paid work, we sign a short [service agreement](../policies/service-ag
 
 ## How do I pay?
 
-Invoices come through [1NEON](../products/1neon.md), in the project they belong to, and are due within 15 days. A fixed-price project usually starts with a deposit of half the price, and the rest is billed once you accept the handover. You can pay online by bank transfer (ACH) or card through Stripe, or by check, Zelle, or wire. There's no surcharge for any of them. If I buy equipment or software for you, you pay back exactly what the receipt shows, with no markup.
+Invoices come through [1NEON](../products/1neon.md), in the project they belong to, and are due within 15 days. Each option in a proposal is priced one of two ways, and says which: a fixed price for work that's well understood, or an estimate, which is billed for the hours I work, lists each one, and never passes its high end unless you approve a change first. A project usually starts with a deposit (half of a fixed price, or half of an estimate's low end), and the rest is billed once you accept the handover. You can pay online by bank transfer (ACH) or card through Stripe, or by check, Zelle, or wire. There's no surcharge for any of them. If I buy equipment or software for you, you pay back exactly what the receipt shows, with no markup.
 
 ## Do you run security training?
 

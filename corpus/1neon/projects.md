@@ -1,12 +1,12 @@
 ---
 id: 1neon-guide-projects
 title: "1NEON guide: projects, stages, layers, and items"
-summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, purchases, handover acceptance, invoices, and payments."
+summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-13
 created: 2026-11-10
-edition: "2.0"
+edition: "2.1"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -62,6 +62,7 @@ A project page has tabs: **Overview**, **Needs**, **Execute**, **Observe**, and 
 | Task | Execute | One piece of work someone can finish | To do, In progress, Blocked, Done |
 | Milestone | Execute | A point everyone can see, such as a launch | same |
 | Change request | Execute | A change to what was agreed, with its effect on cost and dates | same |
+| Hours | Execute | Time neon1 worked on one day, in quarter hours, with what it went to. Only neon1 adds entries; the client reads them | a record, kept as logged once an invoice bills it |
 | Purchase | Execute | Something to buy for the approved option: estimate, actual cost, where it was bought, who buys it (the client or neon1), and its receipt | Open, Bought, Installed (done), Returned |
 | Invoice | Execute | A bill for the work or for purchases, numbered when issued (such as INV-0039-01) | Draft, Issued, Paid, Void. Partly paid and overdue are worked out from payments and the due date |
 | Payment | Execute | Money received against one invoice, from Stripe or recorded by neon1 | a record |
@@ -87,7 +88,14 @@ Who may do what with items:
 
 ## Options and the proposal
 
-Options are compared on the Needs tab under Options (`#options`). Each shows its cost (one-time and recurring charges apart, with a first-year total when there are both), timeline, the three scores, and a Recommended mark. Each option can also carry neon1's estimated hours, the costs paid directly to vendors, the purchases it expects (what, why, an example, an estimated price, and whether the client or neon1 buys it), and the result the client can check.
+Options are compared on the Needs tab under Options (`#options`). Each shows its cost (one-time and recurring charges apart, with a first-year total when there are both), timeline, the three scores, and a Recommended mark. Each option can also carry neon1's hours, the costs paid directly to vendors, the purchases it expects (what, why, an example, an estimated price, and whether the client or neon1 buys it), and the result the client can check.
+
+An option's price is one of two kinds, and the option says which:
+
+- **Fixed** ("$6,500 fixed"): the whole price for the work described. It changes only if the client approves a change to the work.
+- **Estimate** ("$3,500 to $4,200 estimate"): a range of hours at an hourly rate. The client pays for the hours worked, each one listed under Hours, and the total never passes the high end unless they approve a change first. Fewer hours cost less.
+
+Under either price, **How this adds up** opens the work behind it line by line with the hours each piece should take, the expected total, and **When you pay**: the deposit at approval and the rest at handover. Each option also says why neon1 recommends it, or when it's the right one to pick. The proposal prints the same breakdown.
 
 A project has one proposal, issued in numbered revisions. While neon1 is still shaping the options, the proposal is a **draft**: the client can read it and the options, but can't approve yet. When the options are ready, neon1 chooses **Issue the proposal**, which freezes a copy of everything the proposal shows and numbers it. The first proposal 1NEON issued is 0039, and its first revision is **0039-r1**. Every option in a revision gets an ID made of the revision and a letter, such as **0039-r1-B**, and the decision names that ID.
 
@@ -127,13 +135,13 @@ The decision records the option ID, the approver's name and email, the time, the
 Approving also does two things on its own:
 
 - The option's expected purchases join Execute, marked with its ID.
-- If the option's price is fixed, neon1 gets a draft deposit invoice to check and issue. Nothing is sent to the client until neon1 issues it.
+- If the option's price is in numbers, neon1 gets a draft deposit invoice to check and issue: half of a fixed price, or half of an estimate's low end. Nothing is sent to the client until neon1 issues it.
 
 Only an admin of the client, after confirming it's them, can name or change a project's decision maker, under People on the project's Overview. Editors can change everyone else on the project. neon1 can't be named decision maker, except in its own organization.
 
 ## The service agreement
 
-neon1's service agreement covers every project with an organization: how work is agreed, purchases, paying, what the client provides, ownership, confidentiality, regulated data, records, quality, limits, ending, and signing. Anyone can read it at `/1NEON/agreement`. An admin of the client organization signs it once on `/1NEON/o/{org}/agreement`, reached from **Settings** or from the notice under the options ("Before approving, sign neon1's service agreement"), with a typed name and the consent box, before the first option can be approved. The signature records the edition (now 1.0), a SHA-256 fingerprint of its exact text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature always keeps the text it was given. The agreement's full text is in the [service agreement](../policies/service-agreement.md).
+neon1's service agreement covers every project with an organization: how work is agreed, purchases, paying, what the client provides, ownership, confidentiality, regulated data, records, quality, limits, ending, and signing. Anyone can read it at `/1NEON/agreement`. An admin of the client organization signs it once on `/1NEON/o/{org}/agreement`, reached from **Settings** or from the notice under the options ("Before approving, sign neon1's service agreement"), with a typed name and the consent box, before the first option can be approved. The signature records the edition (now 2.0, which added how estimates are billed and that a deposit counts toward the final invoice), a SHA-256 fingerprint of its exact text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature always keeps the text it was given. The agreement's full text is in the [service agreement](../policies/service-agreement.md).
 
 ## Purchases
 
@@ -144,7 +152,13 @@ Purchases sit in Execute under **Purchases**, filled in from the approved option
 
 ## Handover acceptance
 
-Handoff steps in Normalize can be checked and accepted by the decision maker with **Check it and accept**: an optional note on what they checked ("What you checked"), then **Sign and accept** with a typed name and the consent box, the same way as an approval. The step is marked done with the signature, and the acceptance shows on the project's handover. When the last handoff step is accepted, neon1 gets a draft final invoice for what's left on the approved price.
+Handoff steps in Normalize can be checked and accepted by the decision maker with **Check it and accept**: an optional note on what they checked ("What you checked"), then **Sign and accept** with a typed name and the consent box, the same way as an approval. The step is marked done with the signature, and the acceptance shows on the project's handover. When the last handoff step is accepted, neon1 gets a draft final invoice: what's left on a fixed price, or the hours worked less earlier invoices on an estimate.
+
+## Hours
+
+Hours are in Execute under **Hours** (`#hours`). neon1 logs each entry with its date, the hours in quarter hours, and what the time went to. The client reads them and can't add or change any. With an estimate approved, the section shows the hours logged against the range, what they come to at the rate, and a bar that runs to the high end with a mark at the low end. Hours past the high end are listed and not billed. With a fixed price, hours are a record of the work, not a bill.
+
+Issuing a progress or final invoice on an estimate marks every hour not yet billed with that invoice's number ("billed on INV-0039-02"). From then on those entries stay as logged, and a mistake is corrected with a credit.
 
 ## Invoices and paying
 
@@ -152,16 +166,16 @@ Invoices are under the project's **Execute** layer, in **Invoices** (`#billing`)
 
 | Type | When it comes up |
 |---|---|
-| Deposit | Drafted when a fixed-price option is approved: half the price by default |
-| Progress | Added by neon1 for a stage of the work |
-| Final | Drafted when the last handover step is accepted: what's left on the approved price |
+| Deposit | Drafted when an option with a price in numbers is approved: half of a fixed price, or half of an estimate's low end |
+| Progress | Added by neon1 for a stage of the work. On an estimate: the hours worked so far, less earlier invoices |
+| Final | Drafted when the last handover step is accepted: what's left on a fixed price, or the hours worked (never past the high end) less earlier invoices |
 | Purchases at cost | Reimbursement for what neon1 bought, from the receipts |
 | Care plan | The monthly fee for ongoing care |
 | Credit | Reduces an issued invoice it names |
 
 **New invoice** (neon1) picks a type. Leaving its lines empty lets 1NEON fill them from the approved option or the receipts. **Save draft** keeps it private. **Issue** numbers it (such as **INV-0039-01**: the proposal's number, or the project key when there's no proposal, and its place in the project), sets its due date (15 days by default), addresses it to the decision maker, or else a client admin, and fixes its contents with a SHA-256 fingerprint. The client is told through the bell and email.
 
-Each invoice opens on its own page, `/1NEON/o/{org}/projects/{KEY}/invoices/{id}`, on neon1's letterhead: from, bill to, the lines, sales tax, the total, credits, payments, the balance due, the terms, and how to pay. It's ready to print or save as a PDF. An invoice reads as **Draft**, **Open**, **Partly paid**, **Overdue** (past its due date with a balance), **Paid in full**, **Void**, or **Credit**.
+Each invoice opens on its own page, `/1NEON/o/{org}/projects/{KEY}/invoices/{id}`, on neon1's letterhead: from, bill to, the lines, sales tax, the total, credits, payments, the balance due, the terms, and how to pay. An invoice for hours lists each entry it covers under the lines, so its quantity can be checked, and its subtraction names the earlier invoices by number. If the work comes to less than a deposit already paid, neon1 refunds the difference and records it as a credit against that invoice. It's ready to print or save as a PDF. An invoice reads as **Draft**, **Open**, **Partly paid**, **Overdue** (past its due date with a balance), **Paid in full**, **Void**, or **Credit**.
 
 Paying:
 
