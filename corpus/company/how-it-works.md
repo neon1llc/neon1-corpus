@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-13
 created: 2026-11-11
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -200,7 +200,7 @@ The whole working portal, with 1NEON's API running in your browser: same routes,
 
 ### The guided walkthrough at /1NEON/live
 
-A walkthrough plays itself on the real portal. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery, with her thoughts beside it and subtitles at the bottom. Like the demo, it runs in your browser on made-up data, starts fresh, and saves nothing.
+A walkthrough plays itself on the real portal. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery, with her thoughts beside it and a line under the controls that says what's happening. Like the demo, it runs in your browser on made-up data, starts fresh, and saves nothing.
 
 Each walkthrough opens on a card saying who Maria is, what you'll see, and how long it takes, and waits for **Start**. It ends on a card with what happened, **Watch again**, the full story or demo, the other walkthroughs, and help. **Exit** returns you where you came from. The lengths are measured: before a release, a check plays each one in a real browser and fails if it runs much longer or shorter.
 
