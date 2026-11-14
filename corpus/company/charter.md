@@ -4,11 +4,11 @@ title: Charter
 summary: What neon1 is for, who it serves first, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
@@ -68,7 +68,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public and growing toward v1.0. It also publishes open teaching material: [SOC It 2 Me](../products/soc-it-2-me.md) for SOC 2 readiness, [Phish Out of Water](../products/phish-out-of-water.md) for security awareness sessions, [Home Is Where the Smart Is](../products/home-is-where-the-smart-is.md) for households, [You Have 20 Seconds To Comply](../products/you-have-20-seconds-to-comply.md) for compliance guides and training, and [There Are No Incidents](../products/there-are-no-incidents.md) for incident response training. None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public and growing toward v1.0. It also publishes teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 

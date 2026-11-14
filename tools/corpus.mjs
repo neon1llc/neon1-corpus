@@ -39,7 +39,7 @@ export const SHELVES = {
   policies: ["Policies", "Privacy, terms, cookies, accessibility, and security reporting."],
   neo: ["Neo", "How Neo, the chat on neon1.tech, behaves."],
   "1neon": ["1NEON guide", "Every 1NEON page, state, and action, for Neo inside the portal."],
-  blog: ["Blog", "Posts on neon1.tech/blog/: local clients' questions, the whats and whys of neon1, and lessons from its open repositories."],
+  blog: ["Blog", "Posts on neon1.tech/blog/: local clients' questions, the whats and whys of neon1, and lessons from its public repositories."],
 }
 
 

@@ -1,6 +1,6 @@
 ---
 id: product-you-have-20-seconds-to-comply
-title: "You Have 20 Seconds To Comply"
+title: "Compliance basics for small businesses"
 summary: "Plain-language compliance guides and training for small businesses, from HIPAA and GxP to PCI DSS, privacy, and accessibility."
 type: page
 consumers: [ai]
@@ -8,13 +8,13 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
-# You Have 20 Seconds To Comply
+# Compliance basics for small businesses
 
 *Public · v0.1.1*
 
@@ -24,7 +24,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 - **How it's laid out:** a one-page overview you can read in 20 seconds; a walkthrough of each rule that takes 20 minutes or less, covering who it applies to, what it asks, what staff need to know, and the penalties; and a 20-day plan for each domain, one task a day.
 - **What it covers:** healthcare (HIPAA), life sciences (GxP and Part 11), payments (PCI DSS), financial services (the FTC Safeguards Rule), education (FERPA and COPPA), privacy (state privacy laws and New York's SHIELD Act), security (the NIST Cybersecurity Framework, CIS Controls, and SOC 2), accessibility (ADA and WCAG), marketing (CAN-SPAM and TCPA), and AI use (the NIST AI RMF and NYC Local Law 144).
 - **Training kit:** a facilitator guide for self-study, a 30-minute session, or a workshop; an acknowledgment form; and a training log. Each walkthrough ends with questions you can use as a quiz.
-- **How it relates to SOC It 2 Me:** the SOC 2 walkthrough here explains the report in brief. [SOC It 2 Me](soc-it-2-me.md) is the full readiness course.
+- **How it relates to SOC 2 readiness, step by step:** the SOC 2 walkthrough here explains the report in brief. [SOC 2 readiness, step by step](soc-it-2-me.md) is the full readiness course.
 - **Licenses:** written material under CC BY-SA 4.0, code under MIT, and the names reserved.
 
 ## Current limits

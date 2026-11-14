@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: "schools, families, & teams"
 area: security
-updated: 2026-11-13
+role: "TBD"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.3"
+edition: "1.4"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
 order: 4
 stat_key: "30+ people"
 stat: "per seminar · every level"
-short_needs: "People knew they were exposed online, but not where to start."
-short_execute: "Plain-language sessions on networks, cameras, fraud, and data brokers."
-short_observe: "Live checkups, and the questions people brought back."
-short_normalize: "Kept current with Ready, Secure, Go as threats change."
+short_problem: "People knew they were exposed online, but not where to start."
+short_work: "Plain-language sessions on networks, cameras, fraud, and data brokers."
+short_results: "Live checkups, and the questions people brought back."
+short_after: "Kept current with Ready, Secure, Go as threats change."
 origin: "neon1-site src/app/public/index.html#case-security"
 ---
 

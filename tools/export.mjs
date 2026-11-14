@@ -39,6 +39,9 @@ const sha = (text) => createHash("sha256").update(text).digest("hex")
 // The body without its H1, since the title travels in the front matter
 const bodyOf = (doc) => doc.body.trim().replace(/^# .+\n+/, "")
 
+// A front-matter value that has been confirmed, as opposed to the TBD placeholder
+const confirmed = (v) => typeof v === "string" && v.trim() !== "" && v.trim() !== "TBD"
+
 // What a type keeps in front matter, written out as Markdown so the .md file reads whole on its own
 function lead(d) {
   if (d.type !== "case-study") return ""
@@ -46,14 +49,16 @@ function lead(d) {
   return [
     `*${d.client} · ${d.area}*`,
     "",
+    // Role and years, once confirmed; a TBD placeholder is left out of every bundle
+    ...(confirmed(d.role) ? [`${[d.role, confirmed(d.when) ? d.when : null].filter(Boolean).join(", ")}`, ""] : []),
     `**${d.stat_key}** ${d.stat}`,
     "",
     "| | In short |",
     "|---|---|",
-    row("The problem", d.short_needs),
-    row("The work", d.short_execute),
-    row("The results", d.short_observe),
-    row("After handover", d.short_normalize),
+    row("The problem", d.short_problem),
+    row("The work", d.short_work),
+    row("The results", d.short_results),
+    row("After handover", d.short_after),
     "",
     "",
   ].join("\n")
@@ -78,7 +83,8 @@ function json(doc) {
     summary: doc.data.summary,
     ...(doc.data.short?.length ? { shortHtml: doc.data.short.map(inline) } : {}),
     source: `corpus/${doc.path}`,
-    data: doc.data,
+    // TBD placeholders stay in the source for lint to flag, never in a bundle a reader can see
+    data: Object.fromEntries(Object.entries(doc.data).filter(([, v]) => v !== "TBD")),
     html: toHtml(body),
     sections: sections(body).map(({ key, heading, html }) => ({ key, heading, headingHtml: heading ? inline(heading) : "", html })),
   }

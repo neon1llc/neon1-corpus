@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "1.4"
+edition: "1.5"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -34,9 +34,9 @@ The home page is one long page of sections, called views, each about one screen.
 
 1. **The landing.** The neon1 wordmark over the rain, with "1 is glad to be of service." under it. Its letters scramble and lock in one at a time, left to right.
 2. **Services.** Four kinds of help, each with who it's for, and a note that the first call is free and takes 15 minutes.
-3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links to the sample project and the demo in 1NEON.
-4. **Client work.** A sideways row of case study cards. Each shows the project's four stages, Needs, Execute, Observe, and Normalize, in a line each, plus the result in numbers.
-5. **p.r.o.s.e.** Purposeful, repeatable, open-source engineering: neon1's own repositories and the tools I build for others, each with its status and version.
+3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links once to the sample project in 1NEON.
+4. **Client work.** A sideways row of case study cards. Each shows my role and the years when confirmed, the problem, the work, the results, and what came after, in a line each, plus the result in numbers.
+5. **Public code.** neon1's public repositories and the tools I build for others, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source; the rest are source-available under FSL-1.1, with text under CC BY-ND.
 6. **About.** My photo, who I am, and how I work, with a link to the [mission and promise](mission.md).
 7. **Questions.** The common questions, folded until opened, with a link to the full set.
 8. **Contact.** Where and when I work, a booking link for a free 15-minute call, email, phone, and the contact form.

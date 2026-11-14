@@ -21,7 +21,7 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/policies/`](corpus/policies) | Privacy policy, terms of use, cookie notice |
 | [`corpus/neo/`](corpus/neo) | Neo, the chat: its character and directives (`chat.md`) |
 | [`corpus/1neon/`](corpus/1neon) | The 1NEON guide: every page, state, ID, and action in the portal, for Neo inside 1NEON (the `portal` bundle) |
-| [`corpus/blog/`](corpus/blog) | Posts for [neon1.tech/blog](https://neon1.tech/blog/) (the `blog` bundle): local clients' questions, the whats and whys of neon1, and lessons from its open repositories. Unpublished posts stay drafts |
+| [`corpus/blog/`](corpus/blog) | Posts for [neon1.tech/blog](https://neon1.tech/blog/) (the `blog` bundle): local clients' questions, the whats and whys of neon1, and lessons from its public repositories. Unpublished posts stay drafts |
 
 Everything here is public. Nothing private belongs in this repository, even as a draft.
 

@@ -1,6 +1,6 @@
 ---
 id: product-there-are-no-incidents
-title: "There Are No Incidents"
+title: "Incident response for small teams"
 summary: "Incident response training for small businesses: a runbook, playbooks, tabletop exercises, and templates."
 type: page
 consumers: [ai]
@@ -8,13 +8,13 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go]
 ---
 
-# There Are No Incidents
+# Incident response for small teams
 
 *Public · v0.1.0*
 
@@ -33,4 +33,4 @@ Notification rules cover U.S. federal requirements and New York. Other states ar
 
 ## Next step
 
-Want neon1 to run a tabletop exercise with your team? [Get in touch](../company/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC It 2 Me](soc-it-2-me.md).
+Want neon1 to run a tabletop exercise with your team? [Get in touch](../company/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC 2 readiness, step by step](soc-it-2-me.md).

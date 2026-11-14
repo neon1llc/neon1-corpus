@@ -1,6 +1,6 @@
 ---
 id: product-soc-it-2-me
-title: "SOC It 2 Me"
+title: "SOC 2 readiness, step by step"
 summary: "Hands-on SOC 2 readiness training for small and growing companies."
 type: page
 consumers: [ai]
@@ -8,13 +8,13 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
-# SOC It 2 Me
+# SOC 2 readiness, step by step
 
 *Public · v0.1.2*
 
@@ -22,7 +22,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 - **Who it's for:** founders, operators, and the person who just became "the security owner" at a software or services company, plus trainers who want material to teach from.
 - **What's in it:** eight modules, each with an exercise on your own company; a map of 44 starter controls with owners, frequency, and evidence, tied to the SOC 2 Trust Services Criteria and ISO/IEC 27001:2022; evidence checklists by area; templates for risk, access, vendor, and incident work; a 90-day plan; and a workshop guide.
-- **How it relates to Ready, Secure, Go:** [Ready, Secure, Go](ready-secure-go.md) explains what SOC 2 is in plain words. SOC It 2 Me is the hands-on part: the work, the forms, and the evidence.
+- **How it relates to Ready, Secure, Go:** [Ready, Secure, Go](ready-secure-go.md) explains what SOC 2 is in plain words. This course is the hands-on part: the work, the forms, and the evidence.
 - **Licenses:** written material under CC BY-SA 4.0, code under MIT, and the names reserved.
 
 ## Current limits

@@ -1,6 +1,6 @@
 ---
 id: product-phish-out-of-water
-title: "Phish Out of Water"
+title: "Phishing awareness session kit"
 summary: "A security awareness session kit: slides, hands-on exercises, and a one-page takeaway."
 type: page
 consumers: [ai]
@@ -8,13 +8,13 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is, product-ready-secure-go]
 ---
 
-# Phish Out of Water
+# Phishing awareness session kit
 
 *Public · v0.1.2*
 

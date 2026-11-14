@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.5"
+edition: "1.6"
 ---
 
 # Ready, Secure, Go
@@ -22,10 +22,11 @@ edition: "1.5"
 - **Who it's for:** households, teachers, small offices, and companies preparing for a security review, who want to know what to do first without the jargon.
 - **What's in it:** ten spaces, from Me to Builders, each with five first steps; a readiness check; practices by level; playbooks for when something goes wrong; teach kits; and printable handouts. It was called neon1 Ready until November 2026.
 - **An example:** a family opens Home & Family and gets five first steps, such as turning on two-step sign-in for email.
+- **Licenses:** written material under CC BY-SA 4.0, code under MIT.
 
 ## Companion guides
 
-Five deeper guides sit alongside it, each open on GitHub. They're training material, not legal or audit advice, and a qualified specialist should review anything you rely on for a regulated decision.
+Five deeper guides sit alongside it, each on GitHub under the same licenses. They're training material, not legal or audit advice, and a qualified specialist should review anything you rely on for a regulated decision.
 
 - [SOC 2 readiness, step by step](https://github.com/neon1llc/soc-2-readiness): modules, starter controls, and evidence checklists for a company preparing for its first audit.
 - [Incident response for small teams](https://github.com/neon1llc/incident-response-for-small-teams): a runbook, playbooks, and tabletop exercises.

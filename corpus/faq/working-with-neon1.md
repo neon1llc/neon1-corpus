@@ -7,16 +7,16 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-07
-edition: "1.6"
+edition: "1.7"
 ---
 
 # Working with neon1
 
 ## Do you come on site?
 
-Yes, within about 30 miles of Queens, NY. I also work remotely, or on your own network through a secure connection that I set up for the job and that's removed when it's done.
+Yes, within about 30 miles of Queens, NY. I also work remotely, or on your own network through a connection that I set up for the job and remove when it's done.
 
 ## When do you work?
 
@@ -32,11 +32,11 @@ Small jobs take a week or two, medium ones two to four weeks, and bigger project
 
 ## How is the cost worked out?
 
-After the first call I send a short proposal with options, usually a quick fix, a solid setup, and a fuller build. Each gives a cost estimate, what it covers, the effort, the upkeep, and how it copes with failure. Every option meets the same security and quality baseline; a smaller one does less, not worse. You pick. If the scope changes, I'll tell you before the cost does. [See how options look in 1NEON](https://neon1.tech/1NEON/live?play=propose).
+After the first call I send a short proposal with options, usually a quick fix, a solid setup, and a fuller build. Each gives a cost estimate, what it covers, the effort, the upkeep, and how it copes with failure. Every option starts from the same security baseline: multi-factor sign-in, the least access the job needs, encryption that fits the data, a tested restore, and a way back from every big change. A smaller option does less, not worse. You pick. If the scope changes, I'll tell you before the cost does.
 
 ## How do you treat our data and accounts?
 
-Before any paid work, we sign a short [service agreement](../policies/service-agreement.md) once, in 1NEON or on paper. It covers your systems and information: only the access the job needs, kept confidential, and removed when we're done. Each project is then a [proposal](../examples/proposal-options.md) with options, and choosing one, signed on paper or in 1NEON, is what we both agree to, including what I need from you. Work with personal or health data needs the right agreement first, such as a Business Associate Agreement. [See a handover in 1NEON](https://neon1.tech/1NEON/live?play=handover).
+Before any paid work, we sign a short [service agreement](../policies/service-agreement.md) once, in 1NEON or on paper. It covers your systems and information: only the access the job needs, kept confidential, and removed when we're done. Each project is then a [proposal](../examples/proposal-options.md) with options, and choosing one, signed on paper or in 1NEON, is what we both agree to, including what I need from you. Work with personal or health data needs the right agreement first, such as a Business Associate Agreement.
 
 ## How do I pay?
 

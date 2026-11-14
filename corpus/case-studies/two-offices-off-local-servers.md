@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: automotive business
 area: migration
-updated: 2026-11-13
+role: "TBD"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.1"
+edition: "1.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
 order: 3
 stat_key: "2 servers · 2 offices"
 stat: "· no app rewrite"
-short_needs: "The app, database, and files lived on two local servers both offices used."
-short_execute: "Moved them to AWS with their technical lead, linked over a VPN."
-short_observe: "Re-ran daily tasks from each office and reconciled every record."
-short_normalize: "Change more only when the data says so."
+short_problem: "The app, database, and files lived on two local servers both offices used."
+short_work: "Moved them to AWS with their technical lead, linked over a VPN."
+short_results: "Re-ran daily tasks from each office and reconciled every record."
+short_after: "Change more only when the data says so."
 origin: "neon1-site src/app/public/index.html#case-migration"
 ---
 

@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: "family & friends"
 area: home tech
-updated: 2026-11-13
+role: "For my own family"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
 order: 5
 stat_key: "small jobs welcome"
 stat: "· patience included"
-short_needs: "A house with no cameras, and passwords reused everywhere."
-short_execute: "A camera system at my parents' house, and a password manager for the family."
-short_observe: "Checked recordings, alerts, and logins work without me."
-short_normalize: "Advice and troubleshooting when something acts up."
+short_problem: "A house with no cameras, and passwords reused everywhere."
+short_work: "A camera system at my parents' house, and a password manager for the family."
+short_results: "Checked recordings, alerts, and logins work without me."
+short_after: "Advice and troubleshooting when something acts up."
 origin: "neon1-site src/app/public/index.html#case-home"
 ---
 
