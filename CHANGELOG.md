@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- Neo, the chat on neon1.tech (edition 2.0): Neo is a concise business-information assistant that finishes the task first. It answers general technology questions as general information where neon1-chat's scope setting allows, keeps facts about neon1, prices, and commitments to neon1's pages, and when it can't answer, says what's missing and offers Pradeep by email or the free 15-minute call instead of refusing. The rules on reply length, varied wording, and scripted moments are gone, and the pricing page is linked by its address so Neo can link it.
+- AI quality and oversight (edition 1.3), How neon1 is built (edition 1.3), How neon1.tech works (edition 1.5), and the glossary (edition 1.6) describe Neo the same way: every fact about neon1 from neon1's public documents, and general technology questions answered only as general information.
+
 ## v0.40.0 - 2026-11-13
 
 ### Changed
