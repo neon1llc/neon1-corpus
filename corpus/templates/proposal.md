@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-14
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.2"
+edition: "1.3"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -79,7 +79,7 @@ ____ (what it is, in a sentence)
 
 | You will | I will |
 |---|---|
-| Decide through ____, and answer questions within ____ business days | Say when I'm working and what I'll do, and answer within one business day |
+| Decide through ____, and answer questions within ____ business days | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
 | Give access to ____, in your own accounts | Use only that access, keep it confidential, and remove it at handover |
 | Provide safe sample data, or approve real data under the agreed safeguards | Keep what you send in this project only, and use it only for this work |
 | Make time for testing and training: ____ | Test against the acceptance checks, show you the result, and train your team |

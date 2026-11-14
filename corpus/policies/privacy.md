@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-14
 created: 2026-11-06
-edition: "2.3"
+edition: "2.4"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/privacy-policy.md
 
 # Privacy policy
 
-*Last updated November 14, 2026.* This update gives neon1's business address. The November 13 update spelled out which records a deletion request can't remove: signatures, issued invoices, and payments, which stay locked for seven years. It adds no new use of your information.
+*Last updated November 14, 2026.* This update describes what the signed-in Neo sends to an Anthropic model on Amazon Bedrock when it's turned on, says more carefully what Amazon does and doesn't do with Neo's questions, and says which records are kept on a schedule and which aren't. It also gives neon1's business address. Signatures, issued invoices, and payments are still write-protected for seven years.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client portal at neon1.tech/1NEON. This policy explains what information I collect, why, and what you can do about it.
 
@@ -27,7 +27,7 @@ neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client 
 
 ## What I collect
 
-**On the website.** No accounts, analytics, or tracking. Like any website, the servers that deliver it (Amazon CloudFront) handle your IP address and browser details to send you the pages, and AWS may keep them briefly for security and operations. Your browser saves the rain display settings you pick, on your device only. If you use Neo, the assistant on the website and in the portal, your questions are answered by a model (Qwen3 Next 80B) on Amazon Bedrock, in AWS's US East (N. Virginia) region, which writes an answer from neon1's public pages. Neo's service doesn't log or store the text of your questions or its answers; its logs hold only details such as timing, length, and errors. Bedrock's own logging of questions and answers is turned off in my AWS account. To notice the same question sent over and over, Neo keeps a one-way fingerprint of it for ten minutes, and the question limits count visitors by a one-way code, not by IP address. Amazon Bedrock doesn't keep your questions or Neo's answers, and doesn't use them to train models; [Amazon's Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html) has the details. Please don't type anything sensitive into Neo. If you email me or book a call through Calendly, I receive what you send, such as your name, email address, and message. Calendly handles bookings under its own privacy policy.
+**On the website.** No accounts, analytics, or tracking. Like any website, the servers that deliver it (Amazon CloudFront) handle your IP address and browser details to send you the pages, and AWS may keep them briefly for security and operations. Your browser saves the rain display settings you pick, on your device only. If you use Neo, the assistant on the website and in the portal, your questions are answered by a model (Qwen3 Next 80B) on Amazon Bedrock, in AWS's US East (N. Virginia) region, which writes an answer from neon1's public pages. Neo's service doesn't log or store the text of your questions or its answers; its logs hold only details such as timing, length, and errors. Bedrock's own logging of questions and answers is turned off in my AWS account. To notice the same question sent over and over, Neo keeps a one-way fingerprint of it for ten minutes, and the question limits count visitors by a one-way code, not by IP address. Amazon says Bedrock doesn't use prompts or answers to train models, and that depending on the model and account settings it may keep them for abuse detection; [Amazon's Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html) has the details. Please don't type anything sensitive into Neo. The signed-in Neo inside the portal is different, and is used only when it's enabled: when you ask it a question, it sends your question and what it reads in 1NEON as you, such as the projects, items, options, files' names, and comments you can already see, to an Anthropic model on Amazon Bedrock so it can answer. It can't change anything itself; nothing happens until you approve it. It doesn't send anything about organizations you can't see, and it sends nothing when you aren't asking it a question. If you email me or book a call through Calendly, I receive what you send, such as your name, email address, and message. Calendly handles bookings under its own privacy policy.
 
 **In the 1NEON portal**, which is available only to people invited by me or by an administrator of their organization:
 
@@ -65,9 +65,10 @@ I disclose information only to these providers, when the law requires it, or to 
 
 Portal data is stored in the United States on AWS, encrypted in transit and at rest. Each organization's data is kept separate from every other organization's.
 
-- **Account and project data:** kept as the record of our work together, including after an engagement ends, so either of us can refer back to it. Your organization can ask me to delete it at any time, and I will, except for the signed and financial records below and anything else the law requires me to keep.
+- **Account and project data:** projects and the files you upload are never deleted on a schedule. They're kept as the record of our work together, including after an engagement ends, so either of us can refer back to it. Your organization can ask me to delete it at any time, and I will, except for the signed and financial records below and anything else the law requires me to keep.
+- **System records** are kept for the periods in the items below, which are the only deletion on a schedule.
 - **Deleted items:** projects moved to the trash are hidden from everyone but kept, and erased if your organization asks. Deleted files are removed right away. Database backups roll off after 35 days, and earlier copies of deleted or replaced files after 90 days.
-- **Signed and financial records:** every signature (an approved option, the service agreement, an accepted handover), issued invoice, and payment is locked for seven years from the day it's made, because tax and contract law expect those records kept. A deletion request removes everything else, and I tell you in writing which locked records remain and when each one expires.
+- **Signed and financial records:** every signature (an approved option, the service agreement, an accepted handover), issued invoice, and payment is write-protected for seven years from the day it's made (S3 Object Lock), because tax and contract law expect those records kept. Only an administrator with a special permission can shorten that. A deletion request removes everything else, and I tell you in writing which write-protected records remain and when each one expires.
 - **Audit records:** the log of sign-ins and changes is kept for up to 3 years, then deleted.
 - **Messages on their way:** emails and texts wait in a short queue until they're sent. A record that one was delivered, or that one failed after its retries, is kept for 30 days so I can find and fix delivery problems, then removed.
 
