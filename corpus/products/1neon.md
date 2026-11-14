@@ -25,7 +25,7 @@ The neon1 client portal at [neon1.tech/1NEON](https://neon1.tech/1NEON/). Each p
 
 - Access is by invitation only, from neon1 or an administrator of your organization.
 - Online payments go through Stripe Checkout, by bank transfer (ACH) or card. Checks, Zelle, and wires are recorded by hand when they arrive.
-- An admin can download everything at any time, from Settings: every project's records, decisions, signatures, invoices, and payments as JSON and CSV, plus every file as uploaded.
+- An admin can download everything at any time, from Settings: every project's records, decisions, signatures, invoices, and payments as JSON and CSV, plus every comment, the activity history, projects in Trash, and every file as uploaded, with a manifest.json listing what's included or left out. The zip's name ends in -complete or -partial.
 - Text messages work only once they're switched on and you've agreed to them on your profile.
 
 ## Next step

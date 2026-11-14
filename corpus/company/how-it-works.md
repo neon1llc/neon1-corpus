@@ -154,7 +154,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It
 
 **Limits.** Each visitor can ask six questions a minute and 60 an hour, and the whole site gets 500 a day. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and every entry expires by itself.
 
-**Privacy.** The conversation lives only in the open page. The function never logs it, and Bedrock doesn't keep or train on it.
+**Privacy.** The conversation lives only in the open page. The function never logs it. Amazon says Bedrock doesn't train on it, and that some models may keep it for abuse detection.
 
 **Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a corpus release by up to a week.
 

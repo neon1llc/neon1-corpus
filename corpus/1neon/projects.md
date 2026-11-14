@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-10
-edition: "2.3"
+edition: "2.4"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -194,7 +194,7 @@ Paying:
 - **By check, Zelle, or wire:** neon1 records it with **Record a payment** when it arrives: the amount, how it arrived, the date, and a check number or confirmation.
 - No surcharge is added for any way of paying.
 
-Issued invoices and payments are permanent. A mistake is fixed with a **credit** or by voiding with a reason (**Void invoice**), both kept on record. An invoice with payments, or one clearing, is credited rather than voided; one whose only payment failed can be voided. Every signature, issued invoice, and payment is also kept locked for seven years.
+Issued invoices and payments are permanent. A mistake is fixed with a **credit** or by voiding with a reason (**Void invoice**), both kept on record. An invoice with payments, or one clearing, is credited rather than voided; one whose only payment failed can be voided. Every signature, issued invoice, and payment is also kept write-protected for seven years.
 
 The **Agreements, invoices, and payments** notification group (email on by default) covers the agreement signed, invoices issued or voided, and payments started, arrived, or failed. Drafts never reach the client.
 
