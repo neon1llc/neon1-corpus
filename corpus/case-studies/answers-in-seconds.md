@@ -6,8 +6,8 @@ type: case-study
 status: adopted
 client: accounting firm
 area: "cloud & AI"
-role: "TBD"
-when: "TBD"
+role: "As neon1, designed with Xenoss and handed over to them"
+when: "2026"
 updated: 2026-11-14
 created: 2026-11-06
 edition: "1.4"
