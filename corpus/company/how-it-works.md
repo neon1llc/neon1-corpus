@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "1.4"
+edition: "1.5"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -154,7 +154,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It
 
 **Limits.** Each visitor can ask six questions a minute and 60 an hour, and the whole site gets 500 a day. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and every entry expires by itself.
 
-**Privacy.** The conversation lives only in the open page. The function never logs it, and Bedrock doesn't keep or train on it.
+**Privacy.** The conversation lives only in the open page. The function never logs it. Amazon says Bedrock doesn't train on it, and that some models may keep it for abuse detection.
 
 **Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a corpus release by up to a week.
 

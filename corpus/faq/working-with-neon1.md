@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-14
 created: 2026-11-07
-edition: "1.7"
+edition: "1.8"
 ---
 
 # Working with neon1
@@ -48,4 +48,4 @@ Yes, for groups from parents and teachers to engineers and executives. Sessions 
 
 ## What don't you do?
 
-I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, and the insurance to back them, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.
+I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, and appropriate insurance in place before that work starts, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.

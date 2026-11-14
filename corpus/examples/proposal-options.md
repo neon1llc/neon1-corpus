@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional bakery's order list: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "2.2"
+edition: "2.3"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -184,7 +184,7 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 
 | You will | I will |
 |---|---|
-| Decide, as owner, and answer questions within two business days | Say when I'm working and what I'll do, and answer within one business day |
+| Decide, as owner, and answer questions within two business days | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
 | Give editor access to the order spreadsheet and the order inbox's filters | Use only that access, and remove it at handover |
 | Send a week of order emails and voicemail transcripts with names removed, for the dry run | Keep them in this project only, and use them only for this work |
 | Have Sam and Dee join a 30-minute walkthrough | Test against the measures above, show you the result, and train you all |

@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "1.2"
+edition: "1.3"
 ---
 
 # How neon1 is built
@@ -47,7 +47,7 @@ The colours follow AWS's own groups: purple for networking, orange for compute, 
 
 - **Website.** Plain HTML, CSS, and JavaScript, with no framework and no tracking. The page loads only its own files, and its security policy blocks everything else.
 - **1NEON.** A single-page app with its own API. Sign-in uses email codes, passkeys, authenticator apps, or Google, through Cognito. Data is kept per organization, and files go straight from the browser to a private documents bucket, where every upload is scanned for malware. Invoices are paid on Stripe's own checkout page, so card and bank details never reach neon1.
-- **Neo.** A small function that answers questions from neon1's public documents, using a language model on Amazon Bedrock. Amazon doesn't keep the questions or answers, or train on them. Per-visitor limits keep it fair and cheap.
+- **Neo.** A small function that answers questions from neon1's public documents, using a language model on Amazon Bedrock. Amazon says Bedrock doesn't train on them, and that some models may keep them for abuse detection. Per-visitor limits keep it fair and cheap.
 - **Watching it.** Alarms and monthly budgets email Pradeep when something fails or costs more than expected.
 
 ### Inside 1NEON
@@ -55,7 +55,7 @@ The colours follow AWS's own groups: purple for networking, orange for compute, 
 The portal's own pieces, from the browser's direct paths (sign-in, file uploads, and paying on Stripe) to the API's storage, records, and messages.
 
 ```mermaid
-%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, writes locked copies of signatures, invoices, and payments to an S3 records bucket under Object Lock, reads Stripe keys from SSM Parameter Store, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly, uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware, and pays invoices on Stripe Checkout, which calls the API's webhook at /1NEON/api/billing/stripe.
+%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, writes write-protected copies of signatures, invoices, and payments to an S3 records bucket under Object Lock, reads Stripe keys from SSM Parameter Store, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly, uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware, and pays invoices on Stripe Checkout, which calls the API's webhook at /1NEON/api/billing/stripe.
 flowchart TB
   browser(["Browser"]):::person --> cf["CloudFront"]:::network
   cf -->|"/1NEON"| app[("S3 app bucket<br/>the 1NEON app")]:::storage
@@ -81,7 +81,7 @@ flowchart TB
   classDef external fill:#f1f3f5,stroke:#7b8794,color:#1f2933
 ```
 
-Signed approvals, handover acceptances, the service agreement's signatures, issued invoices, and payments live in DynamoDB like everything else, and a copy of each is also written to a records bucket under S3 Object Lock in governance mode, which keeps every copy unchanged for seven years. Nothing in that bucket expires on a schedule. Stripe's restricted key and its webhook signing secret are SecureString parameters under `/1neon/prod/stripe/`. Terraform creates them with placeholder values and never sees the real ones, and until they're set, online payment stays off.
+Signed approvals, handover acceptances, the service agreement's signatures, issued invoices, and payments live in DynamoDB like everything else, and a copy of each is also written to a records bucket under S3 Object Lock in governance mode, which write-protects every copy for seven years. Governance mode can be overridden by an administrator with a special permission. Stripe's restricted key and its webhook signing secret are SecureString parameters under `/1neon/prod/stripe/`. Terraform creates them with placeholder values and never sees the real ones, and until they're set, online payment stays off.
 
 ## Paying an invoice
 
@@ -106,7 +106,7 @@ sequenceDiagram
   S->>X: signed webhook, /1NEON/api/billing/stripe
   X->>X: check signature and age
   X->>D: record payment once, mark paid if nothing is left
-  X->>R: locked copy
+  X->>R: write-protected copy
   X-->>C: bell and email to the organization
   Note over S,X: A bank (ACH) payment clears days later and arrives as its own signed event
 ```
@@ -254,7 +254,7 @@ flowchart TD
 - **Branches and the dev release.** Each branch other than main gets its own preview, chosen with `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev` and rebuilds it.
 - **Drafts in place.** A run of the dev workflow can build from a corpus branch, drafts included, so a post or a page can be read where it will appear before it's adopted.
 - **Releases come only from main.** Dev builds are never tagged, announced, or counted as releases. Main rebuilds from the same commits and runs the full checks, including the browser tests and PDF printing that dev skips.
-- **1NEON on dev.** The dev portal has its own API, table, documents bucket, and sign-in pool. Its data is a copy of production's, refreshed on request, with queued messages and sessions left out. Because that copy names real clients, dev admits only neon1's own accounts, sends mail only to neon1, and never creates an account for anyone else. Texts and the malware scan are off on dev, and its locked records are kept for a day instead of seven years.
+- **1NEON on dev.** The dev portal has its own API, table, documents bucket, and sign-in pool. Its data is a copy of production's, refreshed on request, with queued messages and sessions left out. Because that copy names real clients, dev admits only neon1's own accounts, sends mail only to neon1, and never creates an account for anyone else. Texts and the malware scan are off on dev, and its write-protected records are kept for a day instead of seven years.
 - **What dev doesn't copy.** Dev uses the live Neo, since Neo only answers questions, and copies Knowledge Center PDFs from neon1.tech rather than printing them. Dev's infrastructure is applied by hand and never by a pipeline.
 - **Cost.** Dev costs a few dollars a month, with a $5 budget alert on everything tagged as dev.
 
