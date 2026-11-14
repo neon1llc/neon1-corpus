@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-07
-edition: "1.6"
+edition: "1.7"
 ---
 
 # Working with neon1
@@ -20,7 +20,7 @@ Yes, within about 30 miles of Queens, NY. I also work remotely, or on your own n
 
 ## When do you work?
 
-Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm (until 9pm Monday to Thursday, 8pm on Friday), Eastern time, typically with 10 to 20 hours a week for project work. The booking calendar shows what's open.
+Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm to 9pm, Eastern time, typically with 10 to 20 hours a week for project work. The booking calendar shows what's open.
 
 ## What if something urgent comes up?
 
