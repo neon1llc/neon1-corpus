@@ -14,6 +14,10 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Working with neon1: the security baseline every option starts from is named, the on-site connection is described without an unexplained "secure", and the links to 1NEON's walkthrough leave the home page questions.
 - Proposal with options: Instagram messages stay manual for now, because official messaging access costs more to set up and keep than it saves at about six orders a night, not because it can't be done.
 - 1NEON help: paying opens Stripe's hosted payment page.
+- The guided walkthrough is the way into 1NEON: 1NEON help's "Can I try it first?" matches the portal word for word, and the 1NEON page, the 1NEON overview, How a project runs, and How neon1.tech works lead with it, with the sample project and demo second. The preview is about three minutes and the full story about 17 everywhere.
+- DeployOps (edition 1.5): a local developer preview, not production-supported. The page lists what has run live on AWS and Azure, what hasn't, that Google Cloud hasn't been deployed live, and how to run the demo without a cloud account. The glossary no longer says "any major cloud".
+- Ready, Secure, Go and its five companion guides show their retagged releases (v0.1.2; SOC 2 readiness, the phishing kit, and the household handbook v0.1.3; incident response v0.1.1; compliance basics v0.1.2), and Ready, Secure, Go says their scope is stable: accuracy and source updates only, with no new modules for now.
+- Compliance basics: the plans are 20-day learning plans, a pace and not a deadline; finishing one doesn't make a business compliant, and it's training, not legal advice or a compliance determination. SOC 2 readiness helps a team prepare, and the audit opinion belongs to the auditor. Incident response gives deadlines as examples from named rules, and says notification requirements vary by jurisdiction, sector, and contract, with a lawyer deciding.
 
 ## v0.40.0 - 2026-11-13
 
