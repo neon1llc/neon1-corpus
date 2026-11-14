@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 14, 2026.* This update says more exactly what the demo and walkthrough send: nothing you do in them leaves your browser, though their pages and files load from neon1.tech first. It adds no new storage or tracking.
+*Last updated November 14, 2026.* This update says more exactly what the demo and walkthrough send: nothing you do in them leaves your browser, though their pages and files load from neon1.tech first. It also lists the file storage an admin's Download everything uses while the zip is built; nothing in it is sent anywhere, and there's no new tracking.
 
 Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
@@ -53,6 +53,7 @@ The portal also saves, on your device only:
 | `neon1.rain` (local storage) | The same rain settings as the website, on the sign-in screen | Until you clear it |
 | `1neon.projects.view`, `1neon.projects.view.sort` (local storage) | Whether you last looked at projects as a list or a timeline, and how you sorted them | Until you clear it |
 | `1neon.tour-offered` (session storage) | That the welcome tour was already offered, so it isn't offered again in this tab | Until the tab closes |
+| `1neon-export` (the browser's private file storage) | Admins only: the zip from **Download everything** while it's built, so a large export doesn't fill memory. Never sent anywhere; your browser copies it to your downloads | 30 minutes after it's saved; if you close the tab sooner, the next time you open Settings or start an export |
 
 Your other preferences, such as your theme, are saved with your account.
 
