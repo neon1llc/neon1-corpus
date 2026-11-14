@@ -69,5 +69,5 @@ The North American Industry Classification System (NAICS) codes that describe th
 
 ## Sources
 
-- [Sample capability statement](https://www.hhs.gov/grants/contracts/get-ready-to-do-business/sample-capability-statement/index.html), U.S. Department of Health and Human Services: the sections a capability statement is expected to have.
+- [Sample capability statement](https://www.hhs.gov/grants-contracts/contracts/get-ready-to-do-business/sample-capability-statement/index.html), U.S. Department of Health and Human Services: the sections a capability statement is expected to have.
 - [North American Industry Classification System](https://www.census.gov/naics/), U.S. Census Bureau: the codes and their titles.
