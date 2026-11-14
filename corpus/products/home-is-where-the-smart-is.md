@@ -16,7 +16,7 @@ related: [guides-password-manager-for-family, guides-backups-you-can-trust, prod
 
 # Household tech handbook
 
-*Public · v0.1.2*
+*Public · v0.1.3*
 
 **The handbook for a family's unofficial tech lead.** Every household has someone everyone calls when the Wi-Fi drops or a strange text arrives. This guide helps them set things up once so the same problems stop coming back. It's open on [GitHub](https://github.com/neon1llc/household-tech-handbook).
 

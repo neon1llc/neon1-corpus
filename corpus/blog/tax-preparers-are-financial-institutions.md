@@ -85,7 +85,7 @@ Keep the plan where you can find it, and revisit it when something changes: a ne
 
 ## Going further
 
-For a longer walkthrough of the rule, with a staff checklist, a paperwork list, and a 20-day plan, see [Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md). For the training piece, the [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour session kit anyone can teach from. Both are free on GitHub, and you're welcome to use them without ever talking to me.
+For a longer walkthrough of the rule, with a staff checklist, a paperwork list, and a 20-day learning plan, see [Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md). For the training piece, the [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour session kit anyone can teach from. Both are free on GitHub, and you're welcome to use them without ever talking to me.
 
 If you'd rather have help, this is work I do for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [15-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
 

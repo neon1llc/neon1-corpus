@@ -34,7 +34,7 @@ The home page is one long page of sections, called views, each about one screen.
 
 1. **The landing.** The neon1 wordmark over the rain, with "1 is glad to be of service." under it. Its letters scramble and lock in one at a time, left to right.
 2. **Services.** Four kinds of help, each with who it's for, and a note that the first call is free and takes 15 minutes.
-3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links once to the sample project in 1NEON.
+3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links once to the guided walkthrough in 1NEON.
 4. **Client work.** A sideways row of case study cards. Each shows my role and the years when confirmed, the problem, the work, the results, and what came after, in a line each, plus the result in numbers.
 5. **Public code.** neon1's public repositories and the tools I build for others, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source; the rest are source-available under FSL-1.1, with text under CC BY-ND.
 6. **About.** My photo, who I am, and how I work, with a link to the [mission and promise](mission.md).
@@ -183,7 +183,7 @@ Every change writes an audit record, and its messages go into an outbox in the s
 
 ## Trying 1NEON without an account
 
-Three public pages show the real portal without signing in, with made-up people and a made-up bakery.
+Three public pages show the real portal without signing in, with made-up people and a made-up bakery. The guided walkthrough at `/1NEON/live` is the way in, and the one the site links to; the sample project and the interactive demo are there for reading at your own pace or clicking around.
 
 ### The sample project at /1NEON/example
 

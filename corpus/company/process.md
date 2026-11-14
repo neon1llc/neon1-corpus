@@ -20,4 +20,4 @@ edition: "1.2"
 4. **Build.** Small changes, each checked against the agreed measures and shown to you as it lands.
 5. **Hand over.** I check it does what we agreed, then show you and write it down, so you can run it without me. Ongoing care is optional.
 
-[See an example project](https://neon1.tech/1NEON/example) in 1NEON, with made-up data.
+[See how it works](https://neon1.tech/1NEON/live): a guided walkthrough of a fictional project in 1NEON.

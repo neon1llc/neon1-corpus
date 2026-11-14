@@ -15,7 +15,7 @@ edition: "1.6"
 
 # Ready, Secure, Go
 
-*Public · v0.1.1*
+*Public · v0.1.2*
 
 **Security steps for each kind of space.** Plain-language guidance for a phone, a home network, a classroom, a small office, or a company heading into SOC 2: five things worth doing first, then what's next. It's open on [GitHub](https://github.com/neon1llc/ready-secure-go).
 
@@ -36,7 +36,7 @@ Five deeper guides sit alongside it, each on GitHub under the same licenses. The
 
 ## Current limits
 
-It's a first release (v0.1), so what it covers will grow before v1.0. Settings menus change; it names where to look, and vendors' help pages have the latest steps.
+Its scope is stable: updates fix accuracy and sources, with no new modules for now, and the same goes for the five companion guides. Settings menus change; it names where to look, and vendors' help pages have the latest steps.
 
 ## Next step
 
