@@ -4,9 +4,9 @@ title: Documentation
 summary: "The documents every neon1 project keeps and how they stay true, and how the documents in this Knowledge Center are built, dated, shared, and credited."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 audience: "Developers"
 order: 9
 consumers: [ai]
@@ -86,7 +86,7 @@ Dates are never moved, and a typo fix changes neither Updated nor the edition.
 | Page | Say what neon1 is or offers | Short sections, in the order a newcomer asks |
 | Standard | Say how neon1 works and why | What I do, then the reason, then Sources |
 | Guide | Help someone finish a task | Who it's for, steps, what to do when it goes wrong, Sources |
-| Case study | Show real work honestly | Needs, Execute, Observe, Normalize, with limits stated |
+| Case study | Show real work honestly | My role and the years, then the problem, the work, the results, and after handover, with limits stated |
 | FAQ | Answer the questions people ask | One question per heading, the answer in its first sentence |
 | Policy | Say what's done with information, and rights | Short version first, then sections by question |
 | Template and form | Be filled in | Labeled blanks and checkboxes, no advice mixed in |

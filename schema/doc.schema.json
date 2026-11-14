@@ -164,23 +164,31 @@
         "whats-and-whys",
         "lessons"
       ],
-      "description": "Post: which of the blog's three kinds it is. questions answers a real question from local clients, whats-and-whys explains a neon1 choice, and lessons shares what building neon1's open repositories taught."
+      "description": "Post: which of the blog's three kinds it is. questions answers a real question from local clients, whats-and-whys explains a neon1 choice, and lessons shares what building neon1's public repositories taught."
     },
-    "short_needs": {
+    "role": {
+      "type": "string",
+      "description": "Case study: in what capacity I did the work, in a few words, such as \"As neon1\", \"Through partner Xenoss\", or \"Before neon1, as an employee\". Shown on cards and pages. TBD until confirmed: lint warns, and consumers leave it out."
+    },
+    "when": {
+      "type": "string",
+      "description": "Case study: the year or years of the work, such as \"2025\" or \"2024 to 2025\". TBD until confirmed: lint warns, and consumers leave it out."
+    },
+    "short_problem": {
       "type": "string",
       "description": "Case study: one line on the problem, for cards and the at-a-glance table."
     },
-    "short_execute": {
+    "short_work": {
       "type": "string",
       "description": "Case study: one line on what was done, for cards and the at-a-glance table."
     },
-    "short_observe": {
+    "short_results": {
       "type": "string",
       "description": "Case study: one line on how it was measured, for cards and the at-a-glance table."
     },
-    "short_normalize": {
+    "short_after": {
       "type": "string",
-      "description": "Case study: one line on what happens next, for cards and the at-a-glance table."
+      "description": "Case study: one line on what happens after handover, for cards and the at-a-glance table."
     }
   },
   "additionalProperties": false,
@@ -194,10 +202,12 @@
         "order",
         "stat_key",
         "stat",
-        "short_needs",
-        "short_execute",
-        "short_observe",
-        "short_normalize"
+        "role",
+        "when",
+        "short_problem",
+        "short_work",
+        "short_results",
+        "short_after"
       ],
       "sections": [
         "The problem",

@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "1.4"
+edition: "1.5"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -23,7 +23,7 @@ A tour of everything on neon1.tech and what happens behind it, with no code read
 - **The website** is plain HTML, CSS, and JavaScript files. There's no framework, no tracking, and no ads. It loads only its own files.
 - **Its words** come from one place, neon1-corpus, a set of Markdown documents. The page, the Knowledge Center, the blog, and Neo all read from it, and a new corpus release reaches the site within about 15 minutes, as plain HTML.
 - **1NEON** is the client portal at neon1.tech/1NEON. It's a React app with its own API, and it has three public ways to look around without an account.
-- **Neo** is the chat in the corner. It answers from neon1's public documents and nothing else.
+- **Neo** is the chat in the corner. It takes what it says about neon1 from neon1's public documents, and answers general technology questions as general information.
 - **It all runs on AWS**, defined in Terraform, and every repository deploys itself when a change reaches its main branch.
 
 ## The home page
@@ -34,9 +34,9 @@ The home page is one long page of sections, called views, each about one screen.
 
 1. **The landing.** The neon1 wordmark over the rain, with "1 is glad to be of service." under it. Its letters scramble and lock in one at a time, left to right.
 2. **Services.** Four kinds of help, each with who it's for, and a note that the first call is free and takes 15 minutes.
-3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links to the sample project and the demo in 1NEON.
-4. **Client work.** A sideways row of case study cards. Each shows the project's four stages, Needs, Execute, Observe, and Normalize, in a line each, plus the result in numbers.
-5. **p.r.o.s.e.** Purposeful, repeatable, open-source engineering: neon1's own repositories and the tools I build for others, each with its status and version.
+3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links once to the guided walkthrough in 1NEON.
+4. **Client work.** A sideways row of case study cards. Each shows my role and the years when confirmed, the problem, the work, the results, and what came after, in a line each, plus the result in numbers.
+5. **Public code.** neon1's public repositories and the tools I build for others, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source; the rest are source-available under FSL-1.1, with text under CC BY-ND.
 6. **About.** My photo, who I am, and how I work, with a link to the [mission and promise](mission.md).
 7. **Questions.** The common questions, folded until opened, with a link to the full set.
 8. **Contact.** Where and when I work, a booking link for a free 15-minute call, email, phone, and the contact form.
@@ -154,7 +154,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It
 
 **Limits.** Each visitor can ask six questions a minute and 60 an hour, and the whole site gets 500 a day. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and every entry expires by itself.
 
-**Privacy.** The conversation lives only in the open page. The function never logs it, and Bedrock doesn't keep or train on it.
+**Privacy.** The conversation lives only in the open page. The function never logs it. Amazon says Bedrock doesn't train on it, and that some models may keep it for abuse detection.
 
 **Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a corpus release by up to a week.
 
@@ -183,7 +183,7 @@ Every change writes an audit record, and its messages go into an outbox in the s
 
 ## Trying 1NEON without an account
 
-Three public pages show the real portal without signing in, with made-up people and a made-up bakery.
+Three public pages show the real portal without signing in, with made-up people and a made-up bakery. The guided walkthrough at `/1NEON/live` is the way in, and the one the site links to; the sample project and the interactive demo are there for reading at your own pace or clicking around.
 
 ### The sample project at /1NEON/example
 

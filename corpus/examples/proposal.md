@@ -4,9 +4,9 @@ title: "Proposal, filled in"
 summary: "A complete neon1 proposal for a fictional physical therapy practice's intake project."
 type: example
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-14
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -54,7 +54,7 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 | You will | I will |
 |---|---|
-| Decide through Dana, within two business days of a question | Say when I'm working and what I'll do, and answer within one business day |
+| Decide through Dana, within two business days of a question | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
 | Give admin access to the practice management system, business email, and website | Use only that access, and remove it at handover |
 | Approve using a few real requests during go-live checks, under the signed business associate agreement | Test with made-up patients first, and handle real requests only as that agreement allows |
 | Give an hour of Sam's time for testing and 45 minutes for training | Show you every acceptance check passing, and train the front desk |

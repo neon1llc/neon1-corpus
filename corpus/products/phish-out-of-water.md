@@ -1,6 +1,6 @@
 ---
 id: product-phish-out-of-water
-title: "Phish Out of Water"
+title: "Phishing awareness session kit"
 summary: "A security awareness session kit: slides, hands-on exercises, and a one-page takeaway."
 type: page
 consumers: [ai]
@@ -8,17 +8,17 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is, product-ready-secure-go]
 ---
 
-# Phish Out of Water
+# Phishing awareness session kit
 
-*Public · v0.1.2*
+*Public · v0.1.3*
 
-**An hour on scams and safer accounts, ready to run.** The kit behind neon1's [security awareness sessions](../guides/use-case-security-awareness.md), open on [GitHub](https://github.com/neon1llc/phish-out-of-water) for anyone to teach from: a team, a family, a senior center, or a classroom.
+**An hour on scams and safer accounts, ready to run.** The kit behind neon1's [security awareness sessions](../guides/use-case-security-awareness.md), open on [GitHub](https://github.com/neon1llc/phishing-awareness-kit) for anyone to teach from: a team, a family, a senior center, or a classroom.
 
 - **What people leave able to do:** spot the four pressures every scam uses (hurry, fear, secrecy, and an odd way to pay), hang up and call back on a number they found themselves, show that two-step sign-in is on for their email, and say who they'd tell.
 - **What's in it:** a slide deck in Markdown, a facilitator script, a run sheet, spot-the-scam cards, role-plays, a two-step sign-in lab, a family code word activity, the one-page takeaway, a who-to-call card, a before-and-after quiz, a field guide to eleven common scams, and notes for families and seniors, workplace teams, and students.

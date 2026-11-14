@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-01
-edition: "1.6"
+edition: "1.7"
 order: 1
 consumers: [ai]
 pdf: true
@@ -111,7 +111,7 @@ Structure follows each document's job.
 | Reference | Be looked up, not read through | Tables and short entries, exact values, consistent order |
 | Explanation | Help someone understand a topic | One idea per section, in the order the reader needs them |
 | Proposal | Help a client decide | Their problem, the result, what's in and out, price, schedule, acceptance, next step |
-| Case study | Show real work honestly | Needs, Execute, Observe, Normalize, with scope and limits stated |
+| Case study | Show real work honestly | My role and the years, then the problem, the work, the results, and after handover, with scope and limits stated |
 | Form | Capture facts | Labeled blanks and checkboxes. An empty field is an open question |
 | README | Help someone use or contribute to a project | What it is, who it's for, status, how to run, deploy, and contribute, license |
 | Changelog | Tell people what changed for them | Newest first, grouped by version, written for users |

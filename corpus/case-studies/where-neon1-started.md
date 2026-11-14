@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: grade school
 area: community
-updated: 2026-11-13
+role: "As a volunteer, before neon1"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
 order: 6
 stat_key: "free for the school"
 stat: "· where it began"
-short_needs: "A grade school wanted real STEM tools on a small budget."
-short_execute: "Budgeted and set up a new STEM edtech system, free of charge."
-short_observe: "Watched how classes used it, and adjusted."
-short_normalize: "Free security sessions for teachers and parents became neon1."
+short_problem: "A grade school wanted real STEM tools on a small budget."
+short_work: "Budgeted and set up a new STEM edtech system, free of charge."
+short_results: "Watched how classes used it, and adjusted."
+short_after: "Free security sessions for teachers and parents became neon1."
 origin: "neon1-site src/app/public/index.html#case-community"
 ---
 

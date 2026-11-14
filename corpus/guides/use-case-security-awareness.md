@@ -4,9 +4,9 @@ title: "Use case: security awareness for a team or family"
 summary: "How a typical plain-language security session goes, and what people leave able to do."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-14
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Teams, organizations, and families"
@@ -40,4 +40,4 @@ Companies heading into an audit can add SOC 2 readiness work: mapping controls, 
 
 ## Related
 
-[A password manager for your family](password-manager-for-family.md), [security and data](../standards/security-and-data.md), [Ready, Secure, Go](../products/ready-secure-go.md), neon1's security readiness guide, and [Phish Out of Water](../products/phish-out-of-water.md), the open session kit behind these sessions.
+[A password manager for your family](password-manager-for-family.md), [security and data](../standards/security-and-data.md), [Ready, Secure, Go](../products/ready-secure-go.md), neon1's security readiness guide, and the [phishing awareness session kit](../products/phish-out-of-water.md) behind these sessions.

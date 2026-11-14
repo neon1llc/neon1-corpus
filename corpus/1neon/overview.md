@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-14
 created: 2026-11-10
-edition: "1.2"
+edition: "1.3"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -81,8 +81,8 @@ Every signed-in page lives under `https://neon1.tech/1NEON/`. In the table, `{or
 | Your profile | `/1NEON/me` (two-step verification at `/1NEON/me#security`) |
 | All clients (neon1 only) | `/1NEON/all/workflow` |
 | FAQs, public | `/1NEON/faqs` |
+| Guided walkthrough, public, the way in | `/1NEON/live` (short ones: `?play=invite`, `passkey`, `authenticator`, `texts`, `start`, `needs`, `listen`, `propose`, `decide`, `build`, `observe`, `handover`, `care`, `team`, `profile`, `signin`) |
 | Sample project, public | `/1NEON/example` |
-| Guided walkthrough, public | `/1NEON/live` (short ones: `?play=invite`, `passkey`, `authenticator`, `texts`, `start`, `needs`, `listen`, `propose`, `decide`, `build`, `observe`, `handover`, `care`, `team`, `profile`, `signin`) |
 | Interactive demo, public | `/1NEON/demo/` |
 | Privacy, terms, cookies, service agreement | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies`, `/1NEON/agreement` |
 
