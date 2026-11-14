@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
-- Legal and policy consistency pass. Working with neon1 (edition 1.7) and Contact (edition 1.3) give weekday hours as 6pm to 9pm, matching every other page. The services agreement template (edition 1.3) says that anything a business can't run without for a day is taken only when someone on the client's side runs it day to day, names that person in the service and recovery profile, and points to care plans for response times, in the same words as Working with neon1. The business associate agreement example (edition 1.1) writes the notice address as "Ste R", as the state registration does.
+- Legal and policy consistency pass. Working with neon1 (edition 1.7) and Contact (edition 1.3) give weekday hours as 6pm to 9pm, matching every other page. The services agreement template (edition 1.3) says that anything a business can't run without for a day is taken only when someone on the client's side runs it day to day, names that person in the service and recovery profile, and points to care plans for response times, in the same words as Working with neon1. The business associate agreement example (edition 1.1) writes the notice address as "Ste R", as the state registration does. The cookie notice (edition 1.3) says exactly what the demo and walkthrough send: their pages and files load from neon1.tech, and after that nothing you do in them leaves your browser.
 
 ## v0.40.0 - 2026-11-13
 

@@ -4,9 +4,9 @@ title: Cookie and browser storage notice
 summary: "The only cookies and browser storage neon1.tech and 1NEON use, and why."
 type: policy
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 13, 2026.* This update adds one item the guided walkthrough saves in your tab, so its Exit returns you to the answer you opened it from.
+*Last updated November 14, 2026.* This update says more exactly what the demo and walkthrough send: nothing you do in them leaves your browser, though their pages and files load from neon1.tech first. It adds no new storage or tracking.
 
 Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
@@ -56,7 +56,7 @@ The portal also saves, on your device only:
 
 Your other preferences, such as your theme, are saved with your account.
 
-The interactive demo (neon1.tech/1NEON/demo) and the guided walkthrough (neon1.tech/1NEON/live) run entirely in your browser and send nothing to me. The interactive demo keeps your changes where your browser allows it; if it doesn't, the demo still works and lasts until you close or reload the tab. The guided walkthrough starts from fresh fictional data on every load and never saves its data.
+The interactive demo (neon1.tech/1NEON/demo) and the guided walkthrough (neon1.tech/1NEON/live) run entirely in your browser. Once their pages and files have loaded from neon1.tech, which is how any page reaches you, they make no further calls: nothing you do in them is sent to me or to anyone else, and they use no analytics, fonts, or media from other sites. The interactive demo keeps your changes where your browser allows it; if it doesn't, the demo still works and lasts until you close or reload the tab. The guided walkthrough starts from fresh fictional data on every load and never saves its data.
 
 | Saved item | What it's for | How long it lasts |
 |---|---|---|
