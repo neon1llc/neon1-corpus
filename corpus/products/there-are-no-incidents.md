@@ -18,7 +18,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 
 *Public · v0.1.0*
 
-**Plan for a security incident, practice it, and handle a real one.** Open on [GitHub](https://github.com/neon1llc/there-are-no-incidents) for owners, office managers, IT providers, and trainers at businesses with 2 to 50 people, especially those holding client financial, tax, or health information.
+**Plan for a security incident, practice it, and handle a real one.** Open on [GitHub](https://github.com/neon1llc/incident-response-for-small-teams) for owners, office managers, IT providers, and trainers at businesses with 2 to 50 people, especially those holding client financial, tax, or health information.
 
 - **The runbook:** get ready, decide whether it's an incident (with four severity levels), the first hour, contain, investigate, notify, recover, and learn, following NIST SP 800-61 Rev. 3.
 - **Playbooks** for the six incidents small businesses see most: business email compromise, ransomware, a lost or stolen device, a compromised account, a vendor breach, and client data sent to the wrong person.

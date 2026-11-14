@@ -2,6 +2,10 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+- Links to the five companion guides use their new GitHub names (soc-2-readiness, incident-response-for-small-teams, compliance-basics, phishing-awareness-kit, household-tech-handbook); the old addresses still redirect.
+
 ## v0.40.0 - 2026-11-13
 
 ### Changed

@@ -27,11 +27,11 @@ edition: "1.5"
 
 Five deeper guides sit alongside it, each open on GitHub. They're training material, not legal or audit advice, and a qualified specialist should review anything you rely on for a regulated decision.
 
-- [SOC 2 readiness, step by step](https://github.com/neon1llc/soc-it-2-me): modules, starter controls, and evidence checklists for a company preparing for its first audit.
-- [Incident response for small teams](https://github.com/neon1llc/there-are-no-incidents): a runbook, playbooks, and tabletop exercises.
-- [Compliance basics for small businesses](https://github.com/neon1llc/you-have-20-seconds-to-comply): short explanations of HIPAA, PCI DSS, privacy, accessibility, and more, as a starting point.
-- [A phishing awareness session kit](https://github.com/neon1llc/phish-out-of-water): slides, exercises, and a one-page takeaway.
-- [A household tech handbook](https://github.com/neon1llc/home-is-where-the-smart-is): for the person who looks after a family's devices and accounts.
+- [SOC 2 readiness, step by step](https://github.com/neon1llc/soc-2-readiness): modules, starter controls, and evidence checklists for a company preparing for its first audit.
+- [Incident response for small teams](https://github.com/neon1llc/incident-response-for-small-teams): a runbook, playbooks, and tabletop exercises.
+- [Compliance basics for small businesses](https://github.com/neon1llc/compliance-basics): short explanations of HIPAA, PCI DSS, privacy, accessibility, and more, as a starting point.
+- [A phishing awareness session kit](https://github.com/neon1llc/phishing-awareness-kit): slides, exercises, and a one-page takeaway.
+- [A household tech handbook](https://github.com/neon1llc/household-tech-handbook): for the person who looks after a family's devices and accounts.
 
 ## Current limits
 

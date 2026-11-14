@@ -18,7 +18,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 
 *Public · v0.1.1*
 
-**Compliance rules explained by domain, with the training to go with them.** Open guides for the owner, office manager, or IT lead who has to work out what a rule asks and get staff trained on it, without a compliance department. It's open on [GitHub](https://github.com/neon1llc/you-have-20-seconds-to-comply).
+**Compliance rules explained by domain, with the training to go with them.** Open guides for the owner, office manager, or IT lead who has to work out what a rule asks and get staff trained on it, without a compliance department. It's open on [GitHub](https://github.com/neon1llc/compliance-basics).
 
 - **Who it's for:** small and midsize businesses and the vendors who serve them, plus trainers and consultants who want open material to teach from.
 - **How it's laid out:** a one-page overview you can read in 20 seconds; a walkthrough of each rule that takes 20 minutes or less, covering who it applies to, what it asks, what staff need to know, and the penalties; and a 20-day plan for each domain, one task a day.
