@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-14
 created: 2026-11-07
-edition: "1.7"
+edition: "1.8"
 ---
 
 # Working with neon1
@@ -20,7 +20,7 @@ Yes, within about 30 miles of Queens, NY. I also work remotely, or on your own n
 
 ## When do you work?
 
-Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm (until 9pm Monday to Thursday, 8pm on Friday), Eastern time, typically with 10 to 20 hours a week for project work. The booking calendar shows what's open.
+Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm to 9pm, Eastern time, typically with 10 to 20 hours a week for project work. The booking calendar shows what's open.
 
 ## What if something urgent comes up?
 
@@ -48,4 +48,4 @@ Yes, for groups from parents and teachers to engineers and executives. Sessions 
 
 ## What don't you do?
 
-I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, and the insurance to back them, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.
+I don't repair electronics, though I debug software and hardware installs and get them working together. I don't handle personal or health data without the right agreements, such as a Business Associate Agreement, and appropriate insurance in place before that work starts, but I can help you get them. I'm not a lawyer, but I'll work with yours on the technical side.

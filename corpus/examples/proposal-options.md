@@ -184,7 +184,7 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 
 | You will | I will |
 |---|---|
-| Decide, as owner, and answer questions within two business days | Say when I'm working and what I'll do, and answer within one business day |
+| Decide, as owner, and answer questions within two business days | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
 | Give editor access to the order spreadsheet and the order inbox's filters | Use only that access, and remove it at handover |
 | Send a week of order emails and voicemail transcripts with names removed, for the dry run | Keep them in this project only, and use them only for this work |
 | Have Sam and Dee join a 30-minute walkthrough | Test against the measures above, show you the result, and train you all |

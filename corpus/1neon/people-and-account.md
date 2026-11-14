@@ -4,9 +4,9 @@ title: "1NEON guide: sign-in, confirming it's you, notifications, and texts"
 summary: "How people get into 1NEON, why admin actions ask to confirm it's you, the three second steps, notifications, texts, and what to do when something is lost."
 type: guide
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-10
-edition: "1.4"
+edition: "1.5"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -54,4 +54,4 @@ Once texts are switched on for the portal, a person adds a mobile number on the 
 
 ## Your data, billing, and urgent problems
 
-Invoices and payments are in each project's Execute layer, under Invoices (see the projects guide). An admin can download all of the organization's data at any time from Settings, under Your data, with **Download everything**: one zip of JSON and CSV records plus every uploaded file, with a README. Data is kept as the record of the work unless the organization asks for deletion. neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.
+Invoices and payments are in each project's Execute layer, under Invoices (see the projects guide). An admin can download all of the organization's data at any time from Settings, under Your data, with **Download everything**: one zip of JSON and CSV records plus every uploaded file, every comment, the activity history, and projects in Trash, with a README and a manifest.json that lists every file. Its name ends in -complete.zip, or -partial.zip if anything couldn't be included. Data is kept as the record of the work unless the organization asks for deletion. neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.
