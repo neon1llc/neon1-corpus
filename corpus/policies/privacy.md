@@ -32,7 +32,7 @@ neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client 
 **In the 1NEON portal**, which is available only to people invited by me or by an administrator of their organization:
 
 - **Account details:** your email address, and optionally your name, job title, phone number, and profile photo.
-- **Sign-in data:** your sign-in methods (email codes, passkeys, Google sign-in, an authenticator app, or a password) and security events, such as sign-in times, the IP address and browser used, and when a sign-in method was added or removed. Passwords, passkeys, and email codes are handled by Amazon Cognito, and I never see your password.
+- **Sign-in data:** your sign-in methods (email codes, passkeys, Google sign-in, or an authenticator app; there's no password to set or remember) and security events, such as sign-in times, the IP address and browser used, and when a sign-in method was added or removed. Passkeys and email codes are handled by Amazon Cognito.
 - **Authenticator app key:** if you set up an authenticator app, the portal itself creates the app's secret key and keeps it so it can check your 6-digit codes. It's stored in the portal's database, encrypted at rest, read only by the portal's server to check a code, shown to you once during setup and never again, and deleted when you remove the app. An unfinished setup is discarded after 10 minutes.
 - **Project content:** what you and your colleagues add to the portal, such as requirements, decisions, tasks, metrics, comments, and files.
 - **Activity records:** who changed what and when, kept as an audit trail so both sides have a reliable history of the work.
