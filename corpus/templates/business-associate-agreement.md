@@ -4,12 +4,12 @@ title: Business associate agreement
 summary: "An example HIPAA business associate agreement with neon1 LLC as the business associate, modeled on the HHS sample provisions."
 type: template
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-14
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.0"
+edition: "1.1"
 origin: "Modeled on the HHS Office for Civil Rights sample business associate agreement provisions (January 2013), adapted for neon1 LLC"
 related: [templates-baa-request, examples-baa-request, standards-security-and-data, policy-privacy]
 ---
@@ -100,4 +100,4 @@ These commitments describe how Business Associate meets Section 2 for typical ne
 | Title | ____ | Owner, neon1 LLC |
 | Signature | ____ | ____ |
 | Date | ____ | ____ |
-| Notice address | ____ | neon1 LLC, 418 Broadway, STE R, Albany, NY 12207 |
+| Notice address | ____ | neon1 LLC, 418 Broadway, Ste R, Albany, NY 12207 |

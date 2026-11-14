@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.2"
+edition: "1.3"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -48,6 +48,8 @@ Each proposal lists its own responsibilities. On every project:
 | Pay for outside accounts and subscriptions directly, in your name | Keep every account, login, and record in your name |
 
 If something outside either of our control holds the work up, I'll pause the timeline, tell you the same day, and give you a new date.
+
+**Systems your business can't run without.** I work in planned appointments on weekday evenings and weekends, with no 24/7 or emergency response. So for anything your business can't run without for a day, I take the work only when someone on your side runs it day to day. That person is named in the [service and recovery profile](../forms/service-and-recovery-profile.md), and the handover is written for them: how it works, how to check it, how to restore it, and whom to call for each part. A [care plan](care-plan.md) sets my response times in writing, within my working hours. A security incident in progress or an outage needs a provider with emergency coverage first.
 
 ## 3. Price and payment
 
