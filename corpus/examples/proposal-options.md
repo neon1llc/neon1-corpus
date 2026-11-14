@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional bakery's order list: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-11
-edition: "2.2"
+edition: "2.3"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -49,7 +49,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 **Limits found before any option was written**
 
-- Instagram messages can't be read automatically. Instagram doesn't give outside tools dependable access to a business's messages. An instant reply sends the order form's link, and staff enter the rest in a short staff form.
+- **Instagram messages stay manual for now.** Instagram does offer official messaging access for business accounts, but setting it up (a Meta developer app, its permissions, and upkeep as Meta's rules change) costs more than it saves for about six orders a night. An instant reply sends the order form's link, and staff enter the rest in a short staff form. It can be added later if Instagram orders grow.
 - Voicemail orders depend on the phone service emailing transcripts. Most services do. If the bakery's doesn't, a free Google Voice number can take the after-hours calls.
 - The week side by side with the old way has to finish before the holiday rush starts.
 
@@ -108,7 +108,7 @@ Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet
 
 **Not included:** taking payment online, and changes to your phone service or your website's design.
 
-**Depends on:** your phone service emailing voicemail transcripts. Instagram messages can't be read automatically, so an instant reply sends the order form's link, and staff use the staff form for the rest.
+**Depends on:** your phone service emailing voicemail transcripts. Instagram messages stay manual for now, since official access costs more to set up and keep than it saves at about six a night: an instant reply sends the order form's link, and staff use the staff form for the rest.
 
 **Target result:** every order is in one list by 7pm, with under 10 minutes of checking a night, and no order missed.
 

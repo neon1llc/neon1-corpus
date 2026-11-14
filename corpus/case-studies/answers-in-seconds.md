@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: accounting firm
 area: "cloud & AI"
-updated: 2026-11-13
+role: "TBD"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.3"
+edition: "1.4"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
 order: 1
 stat_key: "~5 min → 14 s"
 stat: "lookup · recall 72% → 94%"
-short_needs: "Staff spent minutes searching Microsoft 365, or asked a senior colleague."
-short_execute: "An AWS Bedrock assistant that answers from approved documents each person may see."
-short_observe: "Timed real lookups before and after, and scored 80 test questions."
-short_normalize: "Next, an MCP server so agents search with the same permissions."
+short_problem: "Staff spent minutes searching Microsoft 365, or asked a senior colleague."
+short_work: "An AWS Bedrock assistant that answers from approved documents each person may see."
+short_results: "Timed real lookups before and after, and scored 80 test questions."
+short_after: "Next, an MCP server so agents search with the same permissions."
 origin: "neon1-site src/app/public/index.html#case-accounting"
 ---
 

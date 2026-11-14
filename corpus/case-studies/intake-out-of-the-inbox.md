@@ -6,19 +6,21 @@ type: case-study
 status: adopted
 client: dermatology practice
 area: workflows
-updated: 2026-11-13
+role: "TBD"
+when: "TBD"
+updated: 2026-11-14
 created: 2026-11-06
-edition: "1.1"
+edition: "1.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
 order: 2
 stat_key: "2.6 days → 3.4 hours"
 stat: "· 24 → 8 min staff time"
-short_needs: "Intake ran through one inbox, with staff chasing and retyping documents."
-short_execute: "An AWS portal where patients upload once and staff see what's complete."
-short_observe: "Compared four weeks before and after."
-short_normalize: "Maintained with Xenoss, tuned as the practice grows."
+short_problem: "Intake ran through one inbox, with staff chasing and retyping documents."
+short_work: "An AWS portal where patients upload once and staff see what's complete."
+short_results: "Compared four weeks before and after."
+short_after: "Maintained with Xenoss, tuned as the practice grows."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
 

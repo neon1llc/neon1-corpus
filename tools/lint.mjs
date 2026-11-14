@@ -39,6 +39,8 @@ const PUBLIC_NUMBERS = new Set(["250724003758", "260702004758"])
 const withoutPublic = (text) => text.replace(/\b\d{9,17}\b/g, (n) => (PUBLIC_NUMBERS.has(n) ? "" : n))
 
 const errors = []
+// Placeholders waiting on a confirmed fact: reported on every run, but not a failure, so other work can ship
+const warnings = []
 const ids = new Map()
 // key and order must be unique within a type, since consumers use them for anchors and positions
 const seen = new Map()
@@ -102,6 +104,7 @@ for (const doc of docs) {
   // Rules for this type: extra required keys, and the H2 sections it must have, in order
   const rules = TYPES[d.type] ?? {}
   for (const key of rules.required ?? []) if (d[key] === undefined || d[key] === "") err(`a ${d.type} needs ${key}`)
+  for (const [key, v] of Object.entries(d)) if (v === "TBD") warnings.push(`corpus/${doc.path}: ${key} is TBD; confirm it before release`)
   if (rules.sections) {
     const found = sections(doc.body).filter((s) => s.heading).map((s) => s.heading)
     if (found.join("|") !== rules.sections.join("|")) err(`a ${d.type} needs the sections ${rules.sections.join(", ")} in that order, found ${found.join(", ") || "none"}`)
@@ -147,6 +150,7 @@ for (const doc of docs) {
   }
 }
 
+if (warnings.length) console.warn(`${warnings.join("\n")}\n${warnings.length} TBD placeholder(s); exports leave them out.\n`)
 if (errors.length) {
   console.error(errors.join("\n"))
   console.error(`\n${errors.length} problem(s) in ${docs.length} document(s).`)

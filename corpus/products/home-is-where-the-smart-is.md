@@ -1,6 +1,6 @@
 ---
 id: product-home-is-where-the-smart-is
-title: "Home Is Where the Smart Is"
+title: "Household tech handbook"
 summary: "A household tech handbook for the person who looks after a family's devices and accounts."
 type: page
 consumers: [ai]
@@ -8,13 +8,13 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-12
-edition: "1.1"
+edition: "1.2"
 related: [guides-password-manager-for-family, guides-backups-you-can-trust, product-phish-out-of-water]
 ---
 
-# Home Is Where the Smart Is
+# Household tech handbook
 
 *Public · v0.1.2*
 

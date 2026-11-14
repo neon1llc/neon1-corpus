@@ -5,6 +5,15 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 - Links to the five companion guides use their new GitHub names (soc-2-readiness, incident-response-for-small-teams, compliance-basics, phishing-awareness-kit, household-tech-handbook); the old addresses still redirect.
+- The five companion guide pages carry their new names as titles: SOC 2 readiness, step by step; Incident response for small teams; Compliance basics for small businesses; Phishing awareness session kit; and Household tech handbook. Their ids and file names stay. The charter, the security awareness guide, and the tax preparers post use the new names too.
+- Case studies have `role` and `when` fields: in what capacity I did the work, and the years. Cards and pages show them once confirmed. A `TBD` value is flagged by `tools/lint.mjs` as a warning and left out of every bundle. Four cases still have role TBD, and all six have when TBD.
+- The case study one-line fields are renamed `short_problem`, `short_work`, `short_results`, and `short_after`, matching the sections. Needs, Execute, Observe, Normalize stays only in 1NEON's own pages; the glossary, the writing and documentation standards, and How neon1.tech works no longer use it for case studies.
+- "Open source" is used only for what is: the capability statement and How neon1.tech works name each license (MIT, Apache-2.0, CC BY-SA 4.0, FSL-1.1, CC BY-ND 4.0), AWS CLIP and Ready, Secure, Go state theirs, and the blog's lessons come from neon1's public repositories.
+- Less about neon1: the capability statement drops its "what sets neon1 apart" list for how engagements work, and the mission drops lines that praised rather than informed. The mission stays the one place that promises your accounts and data stay yours.
+- How a project runs: Build says each change is checked against the agreed measures, and the page links one example project in 1NEON.
+- Working with neon1: the security baseline every option starts from is named, the on-site connection is described without an unexplained "secure", and the links to 1NEON's walkthrough leave the home page questions.
+- Proposal with options: Instagram messages stay manual for now, because official messaging access costs more to set up and keep than it saves at about six orders a night, not because it can't be done.
+- 1NEON help: paying opens Stripe's hosted payment page.
 
 ## v0.40.0 - 2026-11-13
 

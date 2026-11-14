@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-07
-edition: "2.2"
+edition: "2.3"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -182,7 +182,7 @@ The high end is the most you pay for the approved work; hours past it are listed
 In **Invoices**, under Execute, with what's paid and left on each. **Next step** links to one that's ready or overdue. Each opens on neon1's letterhead with its number, lines, due date, and how to pay, ready to print or save as a PDF. [Watch it](https://neon1.tech/1NEON/live?play=pay).
 
 ### How do I pay an invoice?
-Choose **Pay**. Stripe's secure page opens for bank transfer (ACH, preferred) or card, and 1NEON never sees your details. A card shows as paid within a minute. A bank transfer shows as started that day and paid once it clears, usually in a few business days, with **Pay** gone meanwhile. Check, Zelle, or wire work too, with the invoice number in the memo, and neon1 records them on arrival. [Watch it](https://neon1.tech/1NEON/live?play=pay).
+Choose **Pay**. Stripe's hosted payment page opens for bank transfer (ACH, preferred) or card, and 1NEON never sees your details. A card shows as paid within a minute. A bank transfer shows as started that day and paid once it clears, usually in a few business days, with **Pay** gone meanwhile. Check, Zelle, or wire work too, with the invoice number in the memo, and neon1 records them on arrival. [Watch it](https://neon1.tech/1NEON/live?play=pay).
 
 ### What if my bank payment doesn't go through?
 No money moved. The invoice reopens with the failed payment listed, 1NEON tells you and neon1 that day, and **Next step** and **Needs you** point to it. Choose **Pay again** or another way to pay. Nothing is added to what you owe.

@@ -4,18 +4,18 @@ title: Capability statement
 summary: "neon1 on one page for a buyer, partner, or procurement office: what it does, how it differs, work it has delivered, and the company's details."
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-14
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
 
 # Capability statement
 
-neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, designing, building, and handing over business workflows, cloud and AI systems, networks and devices, and security training for small and medium organizations. Every result is tested against what was agreed, documented, and client-owned.
+neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, designing, building, and handing over business workflows, cloud and AI systems, networks and devices, and security training for small and medium organizations.
 
 ## Core capabilities
 
@@ -25,13 +25,12 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 - **Networks, devices, and spaces.** Wi-Fi, cameras, smart devices, and office equipment configured, separated onto their own networks, and documented.
 - **Security awareness and readiness.** Training for groups from families to executives, and SOC 2 readiness for companies heading into an audit.
 
-## What sets neon1 apart
+## How engagements work
 
-- **One accountable engineer** from the first call to the handover, with no hand-offs between sales and delivery.
+- **One engineer** from the first call to the handover. Pradeep does the work himself.
 - **Options before commitments.** Proposals offer a quick fix, a solid setup, and a fuller build, each with cost, effort, and upkeep.
-- **Client ownership.** Accounts, billing, data, and documentation stay with the client, with a clean exit at any time.
-- **Evidence over claims.** Work is measured against a baseline, and results reported with how they were tested.
-- **Open work.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc), open to inspection before hiring.
+- **Measured results.** Work is measured against a baseline, and results are reported with how they were tested.
+- **Public code.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
 
 ## Delivered work
 
