@@ -6,8 +6,8 @@ type: case-study
 status: adopted
 client: "schools, families, & teams"
 area: security
-role: "TBD"
-when: "TBD"
+role: "As neon1"
+when: "2025"
 updated: 2026-11-14
 created: 2026-11-06
 edition: "1.4"

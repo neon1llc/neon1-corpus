@@ -6,8 +6,8 @@ type: case-study
 status: adopted
 client: dermatology practice
 area: workflows
-role: "TBD"
-when: "TBD"
+role: "As neon1"
+when: "2026"
 updated: 2026-11-14
 created: 2026-11-06
 edition: "1.2"
