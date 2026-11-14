@@ -23,7 +23,7 @@ A tour of everything on neon1.tech and what happens behind it, with no code read
 - **The website** is plain HTML, CSS, and JavaScript files. There's no framework, no tracking, and no ads. It loads only its own files.
 - **Its words** come from one place, neon1-corpus, a set of Markdown documents. The page, the Knowledge Center, the blog, and Neo all read from it, and a new corpus release reaches the site within about 15 minutes, as plain HTML.
 - **1NEON** is the client portal at neon1.tech/1NEON. It's a React app with its own API, and it has three public ways to look around without an account.
-- **Neo** is the chat in the corner. It answers from neon1's public documents and nothing else.
+- **Neo** is the chat in the corner. It takes what it says about neon1 from neon1's public documents, and answers general technology questions as general information.
 - **It all runs on AWS**, defined in Terraform, and every repository deploys itself when a change reaches its main branch.
 
 ## The home page
