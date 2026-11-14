@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -69,7 +69,7 @@ We track task success, corrections, review minutes, cost per success, and speed,
 
 Only scoped statements with their conditions: "In a twenty-case test using made-up records, it completed eighteen without correction," if that's what happened. Never "reliable AI for every business."
 
-Neo, the chat on this site, answers only from neon1's public documents, is run against a set of test questions before each change, and has its directives published in [the corpus](../neo/chat.md).
+Neo, the chat on this site, takes every fact about neon1 from neon1's public documents and answers general technology questions only as general information. It's run against a set of test questions before each change, and has its directives published in [the corpus](../neo/chat.md).
 
 ## Sources
 
