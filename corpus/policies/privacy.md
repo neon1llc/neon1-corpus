@@ -4,9 +4,9 @@ title: Privacy policy
 summary: "What neon1.tech and the 1NEON portal collect, why, and what you can do about it."
 type: policy
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-14
 created: 2026-11-06
-edition: "2.2"
+edition: "2.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/privacy-policy.md
 
 # Privacy policy
 
-*Last updated November 13, 2026.* This update spells out which records a deletion request can't remove: signatures, issued invoices, and payments, which stay locked for seven years. It adds no new use of your information.
+*Last updated November 14, 2026.* This update gives neon1's business address. The November 13 update spelled out which records a deletion request can't remove: signatures, issued invoices, and payments, which stay locked for seven years. It adds no new use of your information.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech and the 1NEON client portal at neon1.tech/1NEON. This policy explains what information I collect, why, and what you can do about it.
 
@@ -95,4 +95,4 @@ If I change this policy in a way that matters, I'll update the effective date an
 
 ## Contact
 
-neon1 LLC, New York, NY · [privacy@neon1.tech](mailto:privacy@neon1.tech)
+neon1 LLC, 418 Broadway, Ste R, Albany, NY 12207 · [privacy@neon1.tech](mailto:privacy@neon1.tech)
