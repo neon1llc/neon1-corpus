@@ -79,7 +79,7 @@ Please don't put passwords, keys, or other secrets in the portal.
 You can make your own 1NEON account from neon1.tech to describe your projects' needs before we work together. When you sign up, I collect:
 
 - **What you type:** your email address, your name, and your organization's name, and that you accepted the terms of use (with the date of the edition you saw).
-- **A bot check:** the sign-up form runs Cloudflare Turnstile, which looks at your browser and connection to tell a person from an automated script. Cloudflare receives your IP address and browser details for that check only. Turnstile runs only on the sign-up form.
+- **A bot check:** the sign-up form runs Cloudflare Turnstile, which looks at your browser and connection to tell a person from an automated script. Cloudflare receives your IP address and browser details for that check only. Turnstile runs only on the sign-up form. Cloudflare's [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/) says how Cloudflare handles that data.
 - **A one-way fingerprint of your IP address,** used to limit how many sign-ups come from one place, and kept with your account's sign-up record. The address itself isn't stored.
 - **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account.
 
