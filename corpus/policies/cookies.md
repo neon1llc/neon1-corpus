@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 15, 2026.* This update makes the notice part of the [privacy and data policy](https://neon1.tech/1NEON/privacy), says sign-in with Google is turned off today, and adds `1neon.email`, which keeps the email you signed in with when you tick Remember me. There's no new tracking.
+*Last updated November 15, 2026.* This update adds `1neon.signup`, which keeps whether free-account sign-up was open so the sign-in page draws the right wording at once, and the note that remembers an admin's **Not now** on Home. There's no new tracking.
 
 This notice is part of the [privacy and data policy](https://neon1.tech/1NEON/privacy) and lists, in detail, every cookie and item neon1 saves in your browser. Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
