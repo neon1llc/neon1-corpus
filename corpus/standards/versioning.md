@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.6"
+edition: "1.7"
 audience: "Developers"
 order: 6
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-development, standards-version-control, standards-documentat
 
 # Versioning and releases
 
-A version number tells people what changed and whether they need to act, if the numbers follow rules. neon1 uses one scheme for software and one for documents.
+neon1 uses one scheme for software and one for documents.
 
 ## Software: vX.Y.Z
 
@@ -61,7 +61,7 @@ Checks fail when these disagree. Every changelog version has a tag and every tag
 
 ## When versions have drifted
 
-If numbers have drifted, such as a package file at `0.42.0` and the latest tag `v0.13.0`, don't rewrite old tags. Pick the next correct number, make every place agree in that release, and note it in the changelog.
+If numbers have drifted, such as a package file at `0.42.0` and the latest tag `v0.13.0`, don't rewrite old tags. Pick the next correct number, make every place agree, and note it in the changelog.
 
 ## When a project shipped before it was tagged
 

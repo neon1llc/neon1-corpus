@@ -4,9 +4,9 @@ title: Documentation
 summary: "The documents every neon1 project keeps and how they stay true, and how the documents in this Knowledge Center are built, dated, shared, and credited."
 type: standard
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 audience: "Developers"
 order: 9
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-writing, standards-development, standards-versioning]
 
 # Documentation
 
-Documentation lets someone use, run, or change a project without asking its author. It's written once, next to the code, and updated in the same change.
+Documentation lets someone use, run, or change a project without asking its author. It lives next to the code and changes with it.
 
 ## Every project has
 
@@ -45,7 +45,7 @@ Following [Diátaxis](https://diataxis.fr/), each document does one of four jobs
 - **Reference:** exact facts to look up, such as commands, settings, and fields.
 - **Explanation:** why things are the way they are.
 
-A README usually holds a short version of each and links out when one grows.
+A README holds a short version of each and links out when one grows.
 
 ## Decision records
 
@@ -63,7 +63,7 @@ Prerequisites first, then commands in order, each with what you should see and w
 
 ## Documents in this Knowledge Center
 
-Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus), as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo. Every document is built the same way, so readers know where to look.
+Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus), as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo.
 
 ### What every document carries
 
@@ -101,7 +101,7 @@ Dates are never moved, and a typo fix changes neither Updated nor the edition.
 
 ### Credit where it's due
 
-This practice builds on standards bodies, government guides, and practitioners, named where used and under Sources, per the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them in one place.
+Sources are named where used and under Sources, per the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them.
 
 ## Sources
 

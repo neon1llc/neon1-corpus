@@ -4,9 +4,9 @@ title: Testing and review
 summary: "What neon1 tests, how changes are checked and reviewed before they ship, and what done means."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-09
-edition: "2.3"
+edition: "2.4"
 audience: "Developers"
 order: 8
 consumers: [ai]
@@ -17,11 +17,9 @@ related: [standards-development, standards-version-control, standards-security-a
 
 # Testing and review
 
-Tests and reviews catch problems that would hurt the people using the work. The goal isn't a large test count but evidence that the promised behavior works and fails safely.
-
 ## What gets tested
 
-Tests follow the promise made to the client or user:
+Tests follow the promise made to the user:
 
 - **The main task** works end to end.
 - **The common failure** is handled: missing input, an outage, a timeout.
@@ -57,7 +55,7 @@ Every change is read in full as a diff before it merges, by its author at least.
 5. Is it readable, with names and comments that follow the [code style](code-style.md)?
 6. Are the docs, changelog, and version updated?
 
-AI review tools help find problems but don't approve changes. A person decides.
+AI review tools help find problems. A person approves.
 
 ## Definition of done
 
@@ -70,7 +68,7 @@ A change is done when all of these are true:
 - [ ] It's merged, released, and running where it should be
 - [ ] Someone has checked it works there
 
-Merged isn't done. Deployed but unchecked isn't done either.
+Merged isn't done, and neither is deployed but unchecked.
 
 ## Evidence
 

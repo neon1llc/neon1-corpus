@@ -4,9 +4,9 @@ title: Development
 summary: "The main development standard for neon1: the principles in priority order, what each word means, how work moves from idea to release, and where the detailed rules live."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 audience: "Developers"
 order: 2
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-writing, standards-version-control, standards-versioning, st
 
 # Development
 
-neon1's main development standard, for everything it builds, for itself or a client: websites, tools, infrastructure, automations, and AI features. It sets the principles and order of work; the detailed standards linked at the end follow it.
+For everything neon1 builds, for itself or a client: websites, tools, infrastructure, automations, and AI features. The detailed standards linked at the end follow it.
 
 ## Principles, in priority order
 
@@ -35,15 +35,13 @@ When two principles conflict, the higher wins. Usually they agree.
 | 8 | **Efficiency** | It uses time, money, and computing in proportion to its value. Fast enough, cheap enough, measured before optimized |
 | 9 | **Consistency** | It follows the conventions of its project and of neon1, so nothing has to be relearned |
 
-A few consequences of the order:
+Consequences of the order:
 
 - A simpler design with a security gap loses. A faster, harder-to-use design loses unless speed is the need.
 - Efficiency comes after people can use and maintain it. Optimize what's measured, not guessed.
 - Consistency is last because a convention should give way when it would make something unsafe, wrong, or unusable, and then the convention is updated, not quietly broken.
 
 ## Words neon1 uses, defined
-
-Each of these means something specific here.
 
 | Word | Meaning |
 |---|---|
@@ -59,7 +57,7 @@ Each of these means something specific here.
 
 ## How work moves
 
-All work follows the same order, at whatever size fits:
+All work follows this order, at whatever size fits:
 
 1. **Reproduce.** Start from something that works: an existing tool, a known pattern, or the current behavior, with a baseline measured.
 2. **Integrate.** Connect it into the complete path a person actually uses, end to end.

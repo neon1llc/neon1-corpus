@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.3"
+edition: "1.4"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -17,7 +17,7 @@ related: [examples-proposal-options, examples-proposal, templates-services-agree
 # Proposal
 
 > [!note] How to use this template
-> Fill every blank. A blank left empty is an open question to settle before signing. This is a commercial proposal. It works under the [services agreement](services-agreement.md), signed once before any paid work, and doesn't replace it. One way to do the work fills in "Included" and "Not included"; two or three fill in "Options" instead, one block each. Hours are estimated task by task for one experienced person, with no padding.
+> Fill every blank. An empty blank is an open question to settle before signing. This proposal works under the [services agreement](services-agreement.md), signed once before paid work, and doesn't replace it. One way to do the work: fill in "Included" and "Not included." Two or three: fill in "Options" instead, one block each. Hours are estimated task by task for one experienced person, with no padding.
 
 **neon1 proposal for:** ____
 
@@ -57,7 +57,7 @@ ____
 
 ## Options
 
-Instead of "Included" and "Not included", when there's a real choice. For each option:
+Use instead of "Included" and "Not included" when there's a real choice. For each option:
 
 ### ____ (A, B, C)
 

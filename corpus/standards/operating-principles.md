@@ -4,19 +4,17 @@ title: Operating principles
 summary: "The habits behind every neon1 engagement, and what each one means in practice."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "2.1"
+edition: "2.2"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
 ---
 
 # Operating principles
-
-A good engagement leaves you better able to run your own technology without me for every small change. These habits get there.
 
 ## Begin with the work
 
@@ -32,7 +30,7 @@ Scoping, testing, documentation, and training are part of the work and the price
 
 ## State uncertainty early
 
-I keep apart what we observed, what someone remembers, what we estimated, what a demo showed, and what we propose. Mixing them causes late surprises.
+I keep apart what we observed, what someone remembers, what we estimated, what a demo showed, and what we propose, so nothing surprises you late.
 
 ## Match promises to coverage
 
@@ -61,8 +59,8 @@ I refer out continuous emergency support, safety-critical equipment, regulated p
 - Projects have a written scope, price, and assumptions. The price is fixed when the work is well understood; otherwise it's an estimate, billed for listed hours and never above its high end without your approval.
 - Third-party subscriptions, hardware, and travel are separate, and I prefer that vendors bill you directly.
 - No extra work or spending happens without your written approval.
-- A signed agreement governs each engagement; these principles explain how I work, not replace it.
+- A signed agreement governs each engagement. These principles don't replace it.
 
 ## Partnerships
 
-Work with other firms follows the [partners](partners.md) standard: who does what is written down before work starts, and any referral fee is disclosed to you.
+Work with other firms follows the [partners](partners.md) standard.

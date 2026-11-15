@@ -4,9 +4,9 @@ title: "Business associate agreement request, filled in"
 summary: "The BAA questionnaire completed for a fictional physical therapy practice, showing how the decision gets made."
 type: example
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-baa-request
@@ -17,7 +17,7 @@ related: [templates-baa-request]
 # Business associate agreement request, filled in
 
 > [!example] A fictional example
-> Fernwood Physical Therapy, its staff, and every detail below are invented to show what a finished document looks like. Any resemblance to a real practice is a coincidence. Prices are left out of public examples. A real proposal states them.
+> Fernwood Physical Therapy, its staff, and every detail below are invented. Prices are left out of public examples. A real proposal states them.
 
 **Organization:** Fernwood Physical Therapy
 

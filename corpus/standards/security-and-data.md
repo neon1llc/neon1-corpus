@@ -4,11 +4,11 @@ title: Security and data
 summary: How neon1 handles your accounts, access, and information, and the baseline every project starts from.
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -16,7 +16,7 @@ related: [standards-ai-quality, standards-reliability-and-recovery, policy-priva
 
 # Security and data
 
-Security work protects your task, your information, and your way back when something goes wrong. It starts with who owns what and who can get in, then adds controls to match the data and stakes. A tool or a scan doesn't make a system secure, so I never say it does.
+Security starts with who owns what and who can get in, then adds controls to match the data and stakes. A tool or a scan doesn't make a system secure, so I never say it does.
 
 ## Frameworks, used for what they're for
 
@@ -67,7 +67,7 @@ For each project I sketch what's built, where information changes hands, what co
 | Changes | Big changes reviewed, with a way back | Version, approval, and release record |
 | Incidents | Contacts, authority, and a fallback are written down | A current incident procedure |
 
-This is neon1's starting point, not a full standard or a guarantee against compromise. When the stakes call for it, I bring in a specialist.
+This is a starting point, not a guarantee against compromise. When the stakes call for it, I bring in a specialist.
 
 ## Software and secrets
 

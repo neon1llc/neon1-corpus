@@ -4,18 +4,18 @@ title: Incident and restore record
 summary: "A timestamped record of an interruption or restore test, what was affected, what was done, and what changes next."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's internal handbook, incident and restore form"
 related: [standards-reliability-and-recovery, forms-service-and-recovery-profile]
 ---
 
 # Incident and restore record
 
-Use it for a real incident or a planned restore test. Focus on conditions and decisions, not blame.
+For a real incident or a planned restore test. Record conditions and decisions, not blame.
 
 **Service:** ____ **Record number:** ____
 

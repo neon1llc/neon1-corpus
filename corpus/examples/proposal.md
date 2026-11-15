@@ -4,9 +4,9 @@ title: "Proposal, filled in"
 summary: "A complete neon1 proposal for a fictional physical therapy practice's intake project."
 type: example
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -17,7 +17,7 @@ related: [templates-proposal, examples-proposal-options, templates-services-agre
 # Proposal, filled in
 
 > [!example] A fictional example
-> Fernwood Physical Therapy, its staff, and every detail below are invented to show what a finished document looks like. Any resemblance to a real practice is a coincidence. Prices are left out of public examples. A real proposal states them.
+> Fernwood Physical Therapy, its staff, and every detail below are invented. Prices are left out of public examples. A real proposal states them.
 
 **neon1 proposal for:** Fernwood Physical Therapy
 
