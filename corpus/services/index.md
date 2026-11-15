@@ -44,7 +44,7 @@ Each case study is labeled with its kind: founder experience, a neon1 engagement
 
 | Service | Similar work |
 |---|---|
-| Business workflows | [One view of the business](../case-studies/one-view-of-the-shop.md), a neon1 engagement, and [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md), a partner engagement |
+| Business workflows | [One view of the shop](../case-studies/one-view-of-the-shop.md), a neon1 engagement, and [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md), a partner engagement |
 | Cloud and AI engineering | [Two offices off local servers](../case-studies/two-offices-off-local-servers.md), a neon1 engagement, and [Answers in seconds, with sources](../case-studies/answers-in-seconds.md), a partner engagement |
 | Networks and devices | [From cameras to Grandma's email](../case-studies/cameras-to-grandmas-email.md), founder experience |
 | Security training and readiness | [Security for non-security people](../case-studies/security-for-non-security-people.md), a neon1 engagement |
