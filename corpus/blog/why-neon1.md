@@ -8,10 +8,10 @@ short:
   - "You can now open a free 1NEON account and write down what you need, whenever you have the time. [Start one](#starting-is-now-free)."
 type: post
 topic: whats-and-whys
-status: draft
+status: adopted
 updated: 2026-11-15
 created: 2026-11-15
-edition: "0.2"
+edition: "1.0"
 consumers: [blog, ai]
 pdf: false
 audience: "Small business owners deciding whether neon1 is worth a conversation"
