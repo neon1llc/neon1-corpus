@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- Publishing client work (edition 1.0): client permission, named or anonymous, quotes, figures, and private details, linked from About neon1.
+
 ### Changed
 - About neon1 (edition 1.7): a more general opening that names no client project, "established July 2025 in New York" in place of "registered", "Some case studies of my work" in place of "Recent work includes", and a line that client work is published only with permission, in the form the client chooses.
 - A free account's website and city are optional, so people who'd rather stay private can still start: the free-accounts guide (edition 1.1), the privacy and data policy (edition 3.3), and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7, with Home's **Not now**).
