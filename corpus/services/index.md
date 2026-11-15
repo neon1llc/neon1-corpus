@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-15
 created: 2025-09-07
-edition: "1.5"
+edition: "1.6"
 ---
 
 # Services
@@ -25,7 +25,7 @@ I also take three other kinds of work, each for a different reader. Find the lin
 | **You run a small business**, and orders, forms, or invoices get typed into more than one place | **Business workflows.** Connect one flow end to end, with the steps written down | 2 to 4 weeks. Most workflow projects cost $1,000 to $3,000 | [How a workflow project goes](../guides/use-case-workflows.md) |
 | **You lead a technical team**, and your cloud setup, deploys, or documents need an engineer for a few weeks | **Cloud and AI engineering.** One service moved to infrastructure as code with checked, reversible deploys, or a document assistant on one approved library | 4 to 6 weeks. Larger builds start from $3,000, in phases | [How a cloud project goes](../guides/use-case-cloud.md) |
 | **Your office or home** has Wi-Fi that misses rooms, cameras that don't alert, or devices nobody wrote down | **Networks and devices.** Coverage checked room by room, devices on their own network, everything documented | 1 to 2 weeks for one office. A small fix or setup costs $150 to $750 | [Getting ready for a first call](../guides/first-call.md) |
-| **Your team or group** needs to spot phishing and fraud, or your company is heading into a SOC 2 audit | **Security training and readiness.** A plain-language session, or a SOC 2 readiness review that lists what to fix before the audit | 1 to 3 weeks. Priced in a proposal after the free call | [How a session goes](../guides/use-case-security-awareness.md) |
+| **Your team or group** needs to spot phishing and fraud, or your company is heading into a SOC 2 audit | **Security training and readiness.** A plain-language session on phishing, fraud, and passwords, or a SOC 2 readiness review that lists what to fix before the audit | 1 to 3 weeks. Priced in a proposal after the free call | [How a session goes](../guides/use-case-security-awareness.md) |
 
 Prices are the published ranges in [how I price my work](../company/pricing.md). Your exact price comes in a proposal, after we've talked.
 
