@@ -48,18 +48,18 @@ const confirmed = (v) => typeof v === "string" && v.trim() !== "" && v.trim() !=
 const KINDS = {
   founder: "Founder experience",
   neon1: "neon1 engagement",
-  partner: "Partner engagement",
+  partner: "neon1 subcontracted engagement",
   demonstration: "Independent demonstration",
 }
 // An unconfirmed role or year says so plainly instead of disappearing, so a reader always has the context
 const UNCONFIRMED = { role: "role not yet confirmed", when: "year not yet confirmed" }
 const shown = (d, key) => (confirmed(d[key]) ? d[key] : UNCONFIRMED[key])
 
-// A case study's kind, role, and years in one line, such as "Partner engagement: as neon1, with Xenoss, 2026"
-// A neon1 engagement's plain "As neon1" role is left to the label, which already says it
+// A case study's kind, role, and years in one line, such as "neon1 subcontracted engagement, 2026"
+// A neon1 or subcontracted engagement's role is left to the label, which already says it (Client work assumes neon1)
 const caseLine = (d) => {
   const label = KINDS[d.kind] ?? KINDS.founder
-  return d.kind === "neon1" && d.role === "As neon1" ? `${label}, ${shown(d, "when")}` : `${label}: ${shown(d, "role")}, ${shown(d, "when")}`
+  return d.kind === "neon1" || d.kind === "partner" ? `${label}, ${shown(d, "when")}` : `${label}: ${shown(d, "role")}, ${shown(d, "when")}`
 }
 
 // What a type keeps in front matter, written out as Markdown so the .md file reads whole on its own

@@ -5,6 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
+- Case study labels are shorter: "neon1 engagement, 2025" and "neon1 subcontracted engagement, 2026". The role text no longer repeats on the card, since client work is neon1 work. The kind "partner" keeps its name in the files, and Xenoss is still named in the cases and the capability statement.
 - Shorter, plainer wording across the public documents, standards, templates, forms, examples, the 1NEON guide, and Neo's directive, with a new "Fewer words" section in the writing standard. Policies and agreements keep their wording. The cookie notice (edition 1.5) adds `1neon.email`, the sign-in email kept when Remember me is ticked.
 
 ## v0.42.3 - 2026-11-15
