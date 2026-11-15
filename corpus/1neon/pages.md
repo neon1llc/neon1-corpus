@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-10
-edition: "1.6"
+edition: "1.7"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -98,11 +98,15 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
+`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added or they choose **Not now**. Both are optional. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 
 ## Your profile
 
 `/1NEON/me`. Name, title, phone (only you see it), theme (Awake, Matrix, or Device), menu (Default or Mini), and **Notifications**: for each group (files; people and access; decisions and options; agreements, invoices, and payments; workflow and stages; comments; updates and items; sign-ins) whether it reaches you by email, by text, or neither. Then **Save**. Also here: texts (add a mobile number, agree to texts, confirm the code), **Two-step verification** at `#security` (passkey, authenticator app, text-message codes), **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
+
+## Contact
+
+`/1NEON/contact`. **Contact neon1**, in the menu for every account, free accounts included: email hello@neon1.tech, call or text (424) 32-neon1, or book a free 15-minute call, with the hours I answer. Anything about a project is best written in that project.
 
 ## All clients
 

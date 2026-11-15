@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- A free account's website and city are optional, so people who'd rather stay private can still start: the free-accounts guide (edition 1.1), the privacy and data policy (edition 3.3), and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7, with Home's **Not now**).
+- 1NEON guide: the new **Contact neon1** page, and the guide mentions it.
+
 ## v0.45.1 - 2026-11-15
 
 ### Fixed

@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-15
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: false
 audience: "Anyone with a project in mind who'd rather write it down first"
@@ -17,11 +17,13 @@ related: [product-1neon, faq-working-with-neon1, policy-terms, policy-privacy]
 
 You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, before we talk. Write down what your project needs, and I'll reply with what I'd do. No call, no card, no password.
 
+Once you're in, **Contact neon1** in the menu has every way to reach me: email, call or text, or a booked call.
+
 [Start a free account](https://neon1.tech/1NEON/?signup=1)
 
 ## How it goes
 
-1. **Sign up** with your email, your name, your organization, and your website or where you're based. A code sent to your email finishes it.
+1. **Sign up** with your email, your name, and your organization. Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
 2. **Add a project** and list what it needs, in your own words.
 3. **I read it** and reply in the portal or by email with what I'd do and what I'd ask first.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.

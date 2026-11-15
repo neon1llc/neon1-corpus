@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-15
 created: 2026-11-06
-edition: "3.2"
+edition: "3.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -61,7 +61,7 @@ Please don't type anything sensitive into Neo.
 The portal is available to people invited by me or by an administrator of their organization, and to anyone who makes their own free account (below). It holds:
 
 - **Account details:** your email address, and optionally your name, job title, phone number, and profile photo.
-- **Organization details:** your organization's name, and where it's based or a link to its website or a public page (Google, Yelp, LinkedIn). I use these to see who I'm working with.
+- **Organization details:** your organization's name, and, if you add them, where it's based and a link to its website or a public page (Google, Yelp, LinkedIn). I use these to see who I'm working with.
 - **Sign-in data:** your sign-in methods (an emailed code or a passkey, with an authenticator app as an optional second step; there's no password) and security events, such as sign-in times, the IP address and browser used, and when a sign-in method was added or removed. Passkeys and email codes are handled by Amazon Cognito.
 - **Authenticator app key:** if you set up an authenticator app, the portal creates the app's secret key and keeps it, encrypted, so it can check your 6-digit codes. Only the portal's server reads it, you see it once during setup, and it's deleted when you remove the app. An unfinished setup is discarded after 10 minutes.
 - **Project content:** what you and your colleagues add, such as requirements, decisions, tasks, metrics, comments, and files. Every uploaded file is scanned for malware (Amazon GuardDuty) before anyone can download it, and a file that fails the scan is blocked.
@@ -79,7 +79,7 @@ Please don't put passwords, keys, or other secrets in the portal.
 
 You can make your own 1NEON account from neon1.tech to describe your projects' needs before we work together. When you sign up, I collect:
 
-- **What you type:** your email address, your name, your organization's name, where it's based or a link to its website or a public page (at least one), and that you accepted the terms of use (with the date of the edition you saw).
+- **What you type:** your email address, your name, your organization's name, where it's based and a link to its website or a public page (both optional), and that you accepted the terms of use (with the date of the edition you saw).
 - **A bot check:** the sign-up form runs Cloudflare Turnstile, which looks at your browser and connection to tell a person from an automated script. Cloudflare receives your IP address and browser details for that check only. Turnstile runs only on the sign-up form. Cloudflare's [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/) says how Cloudflare handles that data.
 - **A one-way fingerprint of your IP address,** used to limit how many sign-ups come from one place, and kept with your account's sign-up record. The address itself isn't stored.
 - **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account.
