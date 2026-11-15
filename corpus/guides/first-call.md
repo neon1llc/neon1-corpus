@@ -4,9 +4,9 @@ title: "Getting ready for a first call"
 summary: "What to bring to a free 15-minute call with neon1."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -15,11 +15,11 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and takes about 15 minutes, to find the main pain point and whether I'm the right help. A little preparation helps.
+The first call is free and takes about 15 minutes. We find the main pain point and whether I'm the right help.
 
 ## Bring one real example
 
-Bring the last time the problem happened: not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days." Real examples show where work waits.
+Bring the last time the problem happened. Not "our intake is messy," but "on Tuesday a referral sat in the inbox for three days."
 
 ## Five questions to think about
 
@@ -37,7 +37,7 @@ You don't need exact numbers. "About 40 a week, maybe 5 minutes each" is plenty.
 - Who owns or administers each account
 - Who else should be part of the conversation, especially the person who does the work every day
 
-Please don't send passwords, health details, or payment information, before or during the call. If the work involves health information, we'll go through the [business associate agreement request](../templates/baa-request.md) before any access.
+Don't send passwords, health details, or payment information, before or during the call. If the work involves health information, we'll go through the [business associate agreement request](../templates/baa-request.md) before any access.
 
 ## What you'll leave with
 

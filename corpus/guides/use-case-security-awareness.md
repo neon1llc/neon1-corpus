@@ -4,9 +4,9 @@ title: "Use case: security awareness for a team or family"
 summary: "How a typical plain-language security session goes, and what people leave able to do."
 type: guide
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Teams, organizations, and families"
@@ -14,7 +14,7 @@ related: [services, guides-password-manager-for-family, standards-security-and-d
 ---
 
 > [!note] A typical pattern, not a client story
-> This page describes how this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+> How this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
 
 # Use case: security awareness for a team or family
 

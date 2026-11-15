@@ -4,9 +4,9 @@ title: Code style
 summary: "How neon1 code reads: names, comments, file headers, formatting, and layout, in every language and configuration format."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-09
-edition: "2.3"
+edition: "2.4"
 audience: "Developers"
 order: 7
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-development, standards-writing, standards-testing-and-review
 
 # Code style
 
-Code is read far more than it's written, so these conventions make neon1 code quick to understand for someone who didn't write it. They apply to every language and commentable format, from tests and shell scripts to CI workflows, Terraform, and templates. A project's formatter and linter win where they conflict.
+These conventions apply to every language and commentable format, from tests and shell scripts to CI workflows, Terraform, and templates. A project's formatter and linter win where they conflict.
 
 ## Names
 
@@ -32,7 +32,6 @@ Code is read far more than it's written, so these conventions make neon1 code qu
 - **Comment at every semantic junction**: section boundaries, exported or public functions, classes, and components, non-obvious invariants, security and tenancy rules, and configuration blocks. Usually one or two lines, with no closing period on single-line comments. Between junctions, plain code needs no comment.
 - **Start with the meaning.** Don't repeat the function's name or open with "This function." For example, `// Invalid records are rejected before anything is written`.
 - **Keep comments true.** A comment that no longer matches the code is a bug, fixed in the same change.
-- **Comments earn their place.** Review asks whether each comment tells readers something they need, and is still accurate.
 - Use each language's native documentation format where tools read it, such as docstrings, Go doc comments, or JSDoc, and document parameters, results, and errors only when they add to the signature.
 
 ## File headers
@@ -46,9 +45,7 @@ Every source file starts with a one-line header saying what it is and what it's 
 // Usage: node tools/export.mjs --target chat|site|knowledge|ai
 ```
 
-The header uses sentence case and a period.
-
-These rules apply to files people write and maintain (see the exceptions below). A runnable file adds a `Usage:` line with a real invocation and no closing punctuation; full help belongs in `--help`.
+The header uses sentence case and a period. A runnable file adds a `Usage:` line with a real invocation and no closing punctuation. Full help belongs in `--help`.
 
 ## Layout and whitespace
 
@@ -83,7 +80,7 @@ These don't get added headers or comments:
 
 ## Formats without comments
 
-Strict JSON and similar formats can't hold comments, so the explanation goes in the nearest file that can, such as the README or the code that reads it.
+Strict JSON can't hold comments, so the explanation goes in the nearest file that can, such as the README or the code that reads it.
 
 ## Sources
 

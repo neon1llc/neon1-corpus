@@ -4,11 +4,11 @@ title: Discovery and delivery
 summary: How a neon1 project moves from your problem to a result you can run, step by step.
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 4
 origin: "neon1's internal handbook, discovery and delivery"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
@@ -16,11 +16,11 @@ related: [company-process, forms-discovery, templates-proposal, forms-release-an
 
 # Discovery and delivery
 
-Every project follows one path, scaled to size: understand one real task, measure it, compare options, agree a bounded result, build in small steps, teach it, and check later that it helped. The [process page](../company/process.md) is the one-minute version.
+Every project follows one path, scaled to size. The [process page](../company/process.md) is the one-minute version.
 
 ## Understand one real task
 
-I ask for the last finished example, the next one coming, and a recent failure, and with your permission watch the work happen, often over a short screen share: who starts it, what comes in, where it waits, which steps need judgment, and what "done" means.
+I ask for the last finished example, the next one coming, and a recent failure. With your permission I watch the work happen, often over a short screen share: who starts it, what comes in, where it waits, which steps need judgment, and what "done" means.
 
 The result is a plain problem statement, such as "When a new request arrives, the receptionist copies it into two places and sometimes misses the requested date." "Build an AI agent" is a solution, not a problem statement.
 
@@ -58,7 +58,7 @@ The handover covers the workflow, who owns each account, recurring costs, routin
 
 At the agreed review date we check whether the workflow is used and fixed the original problem, counting any upkeep it added. New work comes from a real need, not to fill a care plan.
 
-Permission to do the work isn't permission to publish it. I ask separately before naming you, quoting you, or showing a screenshot.
+Permission to do the work isn't permission to publish it. I ask separately before naming or quoting you or showing a screenshot.
 
 ## Methods I borrow from
 
@@ -73,7 +73,7 @@ Permission to do the work isn't permission to publish it. I ask separately befor
 | Architecture decision records | Keeping the reason for a big choice | A record for every small preference |
 | Usability testing | Checking the whole task, including recovery | Testing only looks or expert use |
 
-These are tools, not certifications. I use the parts that help, and say when it's only some.
+These are tools, not certifications. I use the parts that help, and say so.
 
 ## Sources
 

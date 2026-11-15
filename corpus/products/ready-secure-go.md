@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.6"
+edition: "1.7"
 ---
 
 # Ready, Secure, Go
@@ -26,7 +26,7 @@ edition: "1.6"
 
 ## Companion guides
 
-Five deeper guides sit alongside it, each on GitHub under the same licenses. They're training material, not legal or audit advice, and a qualified specialist should review anything you rely on for a regulated decision.
+Five deeper guides sit alongside it, each on GitHub under the same licenses. They're training material, not legal or audit advice. Have a qualified specialist review anything you rely on for a regulated decision.
 
 - [SOC 2 readiness, step by step](https://github.com/neon1llc/soc-2-readiness): modules, starter controls, and evidence checklists for a company preparing for its first audit.
 - [Incident response for small teams](https://github.com/neon1llc/incident-response-for-small-teams): a runbook, playbooks, and tabletop exercises.
@@ -36,8 +36,8 @@ Five deeper guides sit alongside it, each on GitHub under the same licenses. The
 
 ## Current limits
 
-Its scope is stable: updates fix accuracy and sources, with no new modules for now, and the same goes for the five companion guides. Settings menus change; it names where to look, and vendors' help pages have the latest steps.
+Its scope is stable. Updates fix accuracy and sources, with no new modules for now, and the same goes for the five companion guides. Settings menus change, so it names where to look, and vendors' help pages have the latest steps.
 
 ## Next step
 
-For help now, [security awareness and readiness](../services/index.md) sessions cover the same ground in person, and the guide to [a password manager for your family](../guides/password-manager-for-family.md) is a good first step. [Get in touch](../company/contact.md) to ask about a session.
+[Security awareness and readiness](../services/index.md) sessions cover the same ground in person, and [a password manager for your family](../guides/password-manager-for-family.md) is a good first step. [Get in touch](../company/contact.md) to ask about a session.

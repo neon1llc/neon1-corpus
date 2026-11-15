@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional bakery's order list: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-11
-edition: "2.3"
+edition: "2.5"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -19,7 +19,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 # Proposal with options, filled in
 
 > [!example] A fictional example
-> Maple Street Bakery, its people, and every detail below are invented. It's the same bakery as the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide), where this proposal is one tap away from the options. Hours are real estimates for the work described. The hourly rate and the dollar amounts are left out of public examples. A real proposal states them.
+> Maple Street Bakery, its people, and every detail below are invented. It's the bakery from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide). Hours are real estimates for the work described. The hourly rate and dollar amounts are left out of public examples. A real proposal states them.
 
 **neon1 proposal for:** Maple Street Bakery, "Orders without retyping"
 
@@ -50,7 +50,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 **Limits found before any option was written**
 
-- **Instagram messages stay manual for now.** Instagram does offer official messaging access for business accounts, but setting it up (a Meta developer app, its permissions, and upkeep as Meta's rules change) costs more than it saves for about six orders a night. An instant reply sends the order form's link, and staff enter the rest in a short staff form. It can be added later if Instagram orders grow.
+- **Instagram messages stay manual for now.** Official Instagram messaging access needs a Meta developer app, permissions, and upkeep as Meta's rules change. That costs more than it saves for about six orders a night. An instant reply sends the order form's link, and staff enter the rest in a short staff form. It can be added later if Instagram orders grow.
 - Voicemail orders depend on the phone service emailing transcripts. Most services do. If the bakery's doesn't, a free Google Voice number can take the after-hours calls.
 - The week side by side with the old way has to finish before the holiday rush starts.
 
@@ -73,7 +73,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 ### A. Quick fix
 
-An order form that customers fill in themselves, feeding one order list. It fixes new orders made through the form. It doesn't touch the ones that still arrive by email, voicemail, or Instagram.
+An order form that customers fill in themselves, feeding one order list. It doesn't touch orders that still arrive by email, voicemail, or Instagram.
 
 **Includes**
 
@@ -109,7 +109,7 @@ Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet
 
 **Not included:** taking payment online, and changes to your phone service or your website's design.
 
-**Depends on:** your phone service emailing voicemail transcripts. Instagram messages stay manual for now, since official access costs more to set up and keep than it saves at about six a night: an instant reply sends the order form's link, and staff use the staff form for the rest.
+**Depends on:** your phone service emailing voicemail transcripts. Instagram messages stay manual for now (see the limits above).
 
 **Target result:** every order is in one list by 7pm, with under 10 minutes of checking a night, and no order missed.
 
@@ -142,7 +142,7 @@ Everything in B, plus an online order page where customers choose a pickup time,
 
 ## How the hours add up
 
-Estimated task by task, for one experienced person. Each column adds up to the hours I expect, and the range around it allows for what can't be known until the work starts, such as how your phone service formats its transcripts.
+Estimated task by task, for one experienced person. Each column adds up to the hours I expect. The range allows for what can't be known until the work starts, such as how your phone service formats its transcripts or how Square names its fields.
 
 | Work | A | B | C |
 |---|---|---|---|
@@ -165,7 +165,7 @@ Estimated task by task, for one experienced person. Each column adds up to the h
 | **Expected** | **5** | **25** | **35.5** |
 | **Range** | **4 to 6** | **22 to 28** | **32 to 39** |
 
-The range allows for what a vendor does that its documentation doesn't say, such as how your phone service formats transcripts or how Square names its fields. B needs less of A's own testing, because its dry run covers it.
+B needs less of A's own testing, because its dry run covers it.
 
 ## Price and payment
 
@@ -207,7 +207,7 @@ The work is accepted when these checks pass in front of you:
 ## Comments and agreement
 
 - This proposal is valid for 30 days from the date at the top.
-- It works under our [service agreement](../policies/service-agreement.md), signed once before any paid work. That agreement covers payment, ownership, confidentiality, and how either of us can end the work.
+- It works under our [service agreement](../policies/service-agreement.md), signed once before any paid work.
 - Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
 - For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.
 
@@ -220,7 +220,5 @@ The work is accepted when these checks pass in front of you:
 ## How it turned out
 
 The work took 24.5 hours, inside the 22 to 28 estimated, and the final invoice listed each one. The dry run replayed a past week of 243 real orders, and 236 landed right the first time. The other 7 were emails with two orders in one message and orders sent as a photo. Two-order emails now become two rows, and a photo order is marked to check with the photo attached.
-
-Your trust and your privacy mean everything to me.
 
 *1 is glad to be of service.*

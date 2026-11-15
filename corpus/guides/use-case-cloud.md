@@ -4,9 +4,9 @@ title: "Use case: a cloud account you can trust"
 summary: "How a typical cloud engineering engagement goes for a small technical team: inventory, infrastructure as code, deploys, and tested recovery."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Technical small businesses and startups"
@@ -14,7 +14,7 @@ related: [services, standards-technology-decisions, standards-reliability-and-re
 ---
 
 > [!note] A typical pattern, not a client story
-> This page describes how this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+> How this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
 
 # Use case: a cloud account you can trust
 

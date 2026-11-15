@@ -4,11 +4,11 @@ title: Reliability and recovery
 summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -16,7 +16,7 @@ related: [forms-service-and-recovery-profile, forms-incident-and-restore, standa
 
 # Reliability and recovery
 
-Reliability means you can do the task when you need to, and recover when something goes wrong. Targets come from how much interruption and data loss your business can tolerate, what the design can do, its cost, and who can respond, not from a picked uptime percentage.
+Targets come from how much interruption and data loss your business can tolerate, what the design can do, its cost, and who can respond, not from a picked uptime percentage.
 
 ## Define the service first
 
@@ -85,7 +85,7 @@ Restores are tested before handover, after big changes, and at an agreed interva
 
 ## When something breaks
 
-An incident disrupts or threatens normal work; a request asks for access, advice, or a change. Severity comes from the consequences to you. Each incident names who coordinates, who can change the system, and your contact, with a timestamped log. Updates say what's affected, known, and unknown, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep evidence intact, and bring in the right specialist or insurer.
+An incident disrupts or threatens normal work. A request asks for access, advice, or a change. Severity comes from the consequences to you. Each incident names who coordinates, who can change the system, and your contact, with a timestamped log. Updates say what's affected, known, and unknown, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep evidence intact, and bring in the right specialist or insurer.
 
 A short review afterward covers what happened and what changes, focused on conditions, not blame.
 

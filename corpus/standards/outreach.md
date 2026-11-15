@@ -4,19 +4,17 @@ title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 18
 origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
 ---
 
 # Outreach and claims
-
-Selling, for neon1, means helping you decide quickly whether I'm the right help, and saying when I'm not.
 
 ## What I make clear, in order
 
@@ -54,7 +52,7 @@ Work I did as an employee shows my background but isn't presented as neon1's cli
 
 ## Where I show up
 
-Local relationships and referrals, LinkedIn, GitHub, and this website, where what I publish is meant to be useful to anyone.
+Local relationships and referrals, LinkedIn, GitHub, and this website.
 
 ## Follow-up
 

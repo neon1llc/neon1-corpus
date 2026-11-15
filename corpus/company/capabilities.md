@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -27,7 +27,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 
 ## How engagements work
 
-- **One engineer** from the first call to the handover. Pradeep does the work himself, and any partner on a project is named in the proposal and on the case study.
+- **One engineer** from the first call to the handover. Pradeep does the work himself. Any partner on a project is named in the proposal and on the case study.
 - **Options before commitments.** Proposals offer a quick fix, a solid setup, and a fuller build, each with cost, effort, and upkeep.
 - **Measured results.** Work is measured against a baseline, and results are reported with how they were tested.
 - **Public code.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
@@ -36,9 +36,9 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 
 | Client | Kind | Work | Result |
 |---|---|---|---|
-| Accounting firm | Partner engagement, subcontracted by Xenoss | [Answers in seconds, with sources](../case-studies/answers-in-seconds.md): an AI assistant over the firm's Microsoft 365 documents | Median lookup from about 5 minutes to 14 seconds, and recall from 72% to 94% |
-| Dermatology practice | Partner engagement, subcontracted by Xenoss | [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md): a serverless patient intake portal | Intake from 2.6 days to 3.4 hours, and staff time from 24 to 8 minutes each |
-| Dry cleaner | neon1 engagement | [One view of the shop](../case-studies/one-view-of-the-shop.md): POS, garment tags, and cameras in one view, on the floor and remotely | The owner acts on shop problems much sooner than on site alone |
+| Accounting firm | neon1 subcontracted engagement, for Xenoss | [Answers in seconds, with sources](../case-studies/answers-in-seconds.md): an AI assistant over the firm's Microsoft 365 documents | Median lookup from about 5 minutes to 14 seconds, and recall from 72% to 94% |
+| Dermatology practice | neon1 subcontracted engagement, for Xenoss | [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md): a serverless patient intake portal | Intake from 2.6 days to 3.4 hours, and staff time from 24 to 8 minutes each |
+| Small local business | neon1 engagement | [One view of the business](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras in one view, on site and remotely | The owner acts on problems much sooner than on site alone |
 | Automotive business | neon1 engagement | [Two offices off local servers](../case-studies/two-offices-off-local-servers.md): two offices' servers moved to the cloud | Both offices moved with no application rewrite |
 | Schools, families, and teams | neon1 engagement | [Security for non-security people](../case-studies/security-for-non-security-people.md): security awareness seminars | Sessions fitted to every level, from parents to engineers |
 

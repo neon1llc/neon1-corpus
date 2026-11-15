@@ -4,9 +4,9 @@ title: "Backups you can trust"
 summary: "How a small office or household checks that its backups would restore what it needs."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -16,11 +16,11 @@ related: [standards-reliability-and-recovery, forms-incident-and-restore]
 
 # Backups you can trust
 
-Until you've restored from a backup, you don't know it works. This guide helps you find out before you need it.
+Until you've restored from a backup, you don't know it works. Find out before you need it.
 
 ## Know what you'd lose
 
-Make a short list of what would hurt to lose:
+List what would hurt to lose:
 
 - Documents and shared folders
 - Email
@@ -56,12 +56,12 @@ Write down what happened, especially anything that was confusing or slow.
 
 ## Make it a habit
 
-- Check monthly that backups still run; most tools report a last-backup date.
+- Check monthly that backups still run. Most tools report a last-backup date.
 - Do a test restore every few months, and after any big change.
 - Keep the instructions somewhere you can reach if your main computer is the thing that failed.
 - Make sure more than one person knows how to get the data back.
 
-A backup review is one of the smallest projects I take on, and the instructions are yours either way.
+A backup review is one of the smallest projects I take on.
 
 ## Sources
 

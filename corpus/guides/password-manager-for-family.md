@@ -8,9 +8,9 @@ short:
   - "Move email, banking, and the phone carrier first, and the rest over the following weeks. [Recovery by product](#recovery-by-product)."
 type: guide
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -19,13 +19,13 @@ related: [case-cameras-to-grandmas-email, standards-security-and-data]
 
 # A password manager for your family
 
-A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over. Here's how to set one up for a household without anyone getting locked out.
+A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over. Here's how to set one up without anyone getting locked out.
 
 ## Pick one together
 
 Choose a well-known manager with family sharing and apps for all your devices, including those built into Apple and Google devices, that everyone will use.
 
-Recovery differs in each, and in most only works if set up beforehand. Before moving important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
+Recovery differs in each and in most only works if set up beforehand. Before moving important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
 
 ## Before you start
 
@@ -62,7 +62,7 @@ Do the rest over the following weeks as each account comes up, not all in one ev
 
 ## Recovery by product
 
-*Reviewed 2026-11-10.* Products change their options, so follow each one's instructions, linked below, over this summary. Recovery may be impossible if nothing was set up beforehand. Don't test by recovering, since some steps reset passwords or keys or can't be undone; check that your setup is still in place instead.
+*Reviewed 2026-11-10.* Products change their options, so follow each one's instructions, linked below, over this summary. Recovery may be impossible if nothing was set up beforehand. Don't test by recovering, since some steps reset passwords or keys or can't be undone. Check that your setup is still in place instead.
 
 ### Apple Passwords and iCloud Keychain
 
@@ -78,7 +78,7 @@ Bitwarden [can't reset or recover a forgotten master password](https://bitwarden
 
 ### 1Password
 
-Sign-in uses your account password together with a Secret Key, which is printed on your Emergency Kit. The Secret Key isn't a recovery method: you need it to sign in on a new device. Separately, you can generate a [recovery code](https://support.1password.com/recovery-codes/) on individual and family accounts and keep it safe; it lets you recover your own account with access to your email, and it doesn't exist until you create it. In a family account, the [family organizer can also recover](https://support.1password.com/recovery/) a member's account. After either kind of recovery you get a new Secret Key, so save the new Emergency Kit.
+Sign-in uses your account password together with a Secret Key, which is printed on your Emergency Kit. The Secret Key isn't a recovery method: you need it to sign in on a new device. Separately, you can generate a [recovery code](https://support.1password.com/recovery-codes/) on individual and family accounts and keep it safe. It lets you recover your own account with access to your email, and it doesn't exist until you create it. In a family account, the [family organizer can also recover](https://support.1password.com/recovery/) a member's account. After either kind of recovery you get a new Secret Key, so save the new Emergency Kit.
 
 ## If something goes wrong
 

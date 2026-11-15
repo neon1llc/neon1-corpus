@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-10
-edition: "1.3"
+edition: "1.4"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -16,20 +16,20 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 
 # 1NEON guide: overview, names, and addresses
 
-1NEON is neon1's client portal at neon1.tech/1NEON. Each client organization runs its projects there with neon1. Every project moves through four layers, N E O N: **Needs** (what's wanted, and the options to get there), **Execute** (the work), **Observe** (the results checked against the goals), and **Normalize** (handover, training, and care, so the change lasts). This guide describes every page, state, and action, so Neo can explain any of them, link to them, show them in a tour, and plan any action with a signed-in person.
+1NEON is neon1's client portal at neon1.tech/1NEON. Each client organization runs its projects there with neon1. Every project moves through four layers, N E O N: **Needs** (what's wanted, and the options), **Execute** (the work), **Observe** (results checked against the goals), and **Normalize** (handover, training, and care). This guide covers every page, state, and action, so Neo can explain, link, tour, and plan any action.
 
 ## Who's who
 
-- **neon1** is Pradeep's one-person business. In 1NEON, neon1 is the *operator*: it proposes options, does the work, and can enter every client organization. The operator role comes from sign-in configuration, never from data in the portal.
-- **A client organization** (also called an organization, a client, or a tenant) is one business or household neon1 works with. Its people are invited by its admins or by neon1.
-- **neon1's own organization** has the slug `neon1` and the client ID **N1-0001**. There neon1 is also the client, so neon1's people may approve options and name decision makers, which they can't do in any other organization.
+- **neon1** is the *operator*: it proposes options, does the work, and can enter every client organization. The operator role comes from sign-in configuration, never from portal data.
+- **A client organization** (also an organization, a client, or a tenant) is one business or household neon1 works with. Its admins or neon1 invite its people.
+- **neon1's own organization** has the slug `neon1` and the client ID **N1-0001**. There neon1 is also the client, so its people may approve options and name decision makers, which they can't do in any other organization.
 - **A member** is a person in an organization, with one access level there: viewer, editor, or admin. One person can belong to several organizations with a different level in each.
 
 ## IDs and names people see
 
 | Looks like | What it is | Where it shows |
 |---|---|---|
-| `N1-0001`, `N1-0002` | An organization's **client ID**, numbered in the order clients joined. N1-0001 is neon1 itself. Used in the organization chooser, on All clients, and on invoices. | Chooser, All clients, organization header |
+| `N1-0001`, `N1-0002` | An organization's **client ID**, numbered in the order clients joined. N1-0001 is neon1 itself. | Chooser, All clients, organization header |
 | `acme-dental` | An organization's **slug**, its handle in addresses | `/1NEON/o/acme-dental/...` |
 | `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template plus a number counted per organization and prefix | Cards, lists, the project page, search |
 | `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal; the first 1NEON issued is 0039, and each change is issued as the next revision | The proposal strip under Options, the proposal page, its PDF and Word copies |
@@ -37,7 +37,7 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 | `INV-0039-01` | An **invoice number**: the proposal's number (or the project key when there's no proposal) and the invoice's place in the project. Set when neon1 issues it | Invoices, the invoice page, card statements (`NEON1* INV003901`) |
 | Item titles | Items (requests, tasks, options, measures, and so on) are shown by title; their IDs only appear in links (`#item-…`) | Inside a project |
 
-Project key prefixes come from the template chosen in New project: Blank is `PRJ`, Cloud migration is `MIG`, Workflow automation is `FLOW`, AI assistant is `AI`, Security readiness is `SEC`, and Personal or home tech is `HOME`. The number after the dash counts up per prefix within one organization, so `MIG-1` in two organizations are two different projects.
+Key prefixes come from the New project template: Blank is `PRJ`, Cloud migration `MIG`, Workflow automation `FLOW`, AI assistant `AI`, Security readiness `SEC`, and Personal or home tech `HOME`. The number counts up per prefix within one organization, so `MIG-1` in two organizations are two projects.
 
 ## The frame around every signed-in page
 
@@ -51,11 +51,11 @@ Project key prefixes come from the template chosen in New project: Blank is `PRJ
 
 ## Themes
 
-A person picks a look on their profile: **Awake** (light, the default), **Matrix** (dark, green on black, like the landing page's rain), or **Device** (follows the device's light or dark setting). Neo's window follows the same look as the page around it.
+Set on the profile: **Awake** (light, the default), **Matrix** (dark, green on black), or **Device** (follows the device setting). Neo's window follows the page.
 
 ## Addresses
 
-Every signed-in page lives under `https://neon1.tech/1NEON/`. In the table, `{org}` is the organization's slug and `{KEY}` a project key.
+Signed-in pages live under `https://neon1.tech/1NEON/`. `{org}` is the organization's slug and `{KEY}` a project key.
 
 | Page | Address |
 |---|---|
@@ -90,7 +90,7 @@ The address word for Execute is `execute` and for Normalize is `normalize`. Olde
 
 ## Spotlight anchors
 
-Tours point at named spots on a page. Each name below exists only on the page listed, and only while that part is on screen.
+Tours point at named spots, which exist only on the page listed and only while on screen.
 
 | Anchor | Page | What it is |
 |---|---|---|

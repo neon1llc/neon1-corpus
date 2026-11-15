@@ -4,9 +4,9 @@ title: Open-source tools on my shortlist
 summary: "The open-source projects I'd look at first for common small-business needs, what each is for, and what to check before relying on one."
 type: comparison
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
-edition: "1.0"
+edition: "1.1"
 reviewed: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
@@ -18,7 +18,7 @@ related: [standards-technology-decisions, forms-tool-decision, guides-before-you
 # Open-source tools on my shortlist
 
 > [!warning] A shortlist, not a recommendation
-> Projects I'd look at first when a need is real, with repositories, purpose, and licenses reviewed in November 2026. That's discovery, not a production test, a security review, or a promise of fit. "Free" software still costs time to host, update, and back up. The [technology decisions](../standards/technology-decisions.md) standard explains how a tool earns its place.
+> These are projects I'd look at first when a need is real, with repositories, purpose, and licenses reviewed in November 2026. That's discovery, not a production test, a security review, or a promise of fit. "Free" software still costs time to host, update, and back up. The [technology decisions](../standards/technology-decisions.md) standard explains how a tool earns its place.
 
 ## How to read this
 
@@ -26,7 +26,7 @@ related: [standards-technology-decisions, forms-tool-decision, guides-before-you
 - **Needs an owner** means it can be excellent but needs real technical or domain ownership.
 - **In use here** means neon1's own public repositories use it today.
 
-Projects that cost more to run than they save at small-business scale, or had an unresolved concern at review, were left off.
+I left off projects that cost more to run than they save at small-business scale, or had an unresolved concern at review.
 
 ## Automation
 

@@ -7,16 +7,16 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-15
 created: 2025-09-07
-edition: "1.2"
+edition: "1.3"
 ---
 
 # The names
 
 ## neon1
 
-The name nods to Neo from *The Matrix*, who brought peace between man and machine. Neo means new. Neon is unmissable. It's always written with a lowercase n.
+The name nods to Neo from *The Matrix*, who brought peace between man and machine. Neo means new, and neon is unmissable. It's always written with a lowercase n.
 
 ## "1 is glad to be of service."
 

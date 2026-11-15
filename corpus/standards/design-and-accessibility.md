@@ -4,11 +4,11 @@ title: Design and accessibility
 summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 11
 origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -16,15 +16,13 @@ related: [standards-development, policy-accessibility]
 
 # Design and accessibility
 
-Good design lets people do what they came for quickly, and recover when something goes wrong. neon1 has its own look, but the task comes first.
-
 ## Start from the task
 
-Every screen and document first answers what this is, what I can do here, and what happens next. Navigation is ordinary and visible, and nobody needs a metaphor, an animation, or a film reference to reach the useful part.
+Every screen and document first answers what this is, what I can do here, and what happens next. Navigation is ordinary and visible. Nobody needs a metaphor, an animation, or a film reference to reach the useful part.
 
 ## Accessible by default
 
-I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. That means designing and checking for:
+I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three levels. I design and check for:
 
 - Semantic headings and landmarks, so screen readers can jump around.
 - Every control is reachable and usable with a keyboard, with a visible focus ring.
@@ -46,7 +44,7 @@ Short forms with only the questions the task needs, one per field, and the right
 
 ## Documents
 
-Documents use one clear column, real headings, comfortable spacing, and tables only for real comparisons. PDFs from the [Knowledge Center](https://neon1.tech/knowledge/) are tagged for screen readers and carry their title and edition.
+Documents use one column, real headings, and tables only for real comparisons. PDFs from the [Knowledge Center](https://neon1.tech/knowledge/) are tagged for screen readers and carry their title and edition.
 
 ## The neon1 look, used with restraint
 
@@ -58,7 +56,7 @@ Documents use one clear column, real headings, comfortable spacing, and tables o
 
 ## For your projects
 
-The same standard applies to what I build for you. If something in scope can't meet it, such as a vendor's checkout page, I'll say so and note it in the handover.
+The same standard applies to what I build for you. If something in scope can't meet it, such as a vendor's checkout page, I say so and note it in the handover.
 
 ## Sources
 

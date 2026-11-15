@@ -4,11 +4,11 @@ title: Partners
 summary: "How neon1 works with other firms, vendors, and referrals, and how responsibilities and fees are disclosed."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 order: 17
 origin: "neon1's internal handbook, operating principles (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
@@ -16,11 +16,9 @@ related: [templates-partner-responsibilities, standards-operating-principles]
 
 # Partners
 
-Some projects need another firm, vendor, or specialist alongside me. That works when everyone knows who's responsible for what, so these rules keep it written down.
-
 ## Before any shared work
 
-A [partner responsibilities](../templates/partner-responsibilities.md) sheet is filled in and shared with the client. It names who sells, builds, supports, invoices, sees the data, owns the deliverables, and carries insurance, and what happens if the work ends.
+I fill in a [partner responsibilities](../templates/partner-responsibilities.md) sheet and share it with the client. It names who sells, builds, supports, invoices, sees the data, owns the deliverables, and carries insurance, and what happens if the work ends.
 
 ## Fees and incentives
 
@@ -47,4 +45,4 @@ When someone else is better placed, I refer you to them, with no fee or obligati
 
 ## Referrals in
 
-Other firms are welcome to send me work that fits, such as a small business workflow or a security awareness session. The same rules apply in both directions.
+Other firms can send me work that fits, such as a small business workflow or a security awareness session. The same rules apply both ways.

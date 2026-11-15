@@ -4,18 +4,18 @@ title: Intake
 summary: "The first record of a possible project: the problem, who's involved, and whether it's a fit."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's November 2026 planning notes, working templates"
 related: [forms-discovery, standards-discovery-and-delivery, examples-intake]
 ---
 
 # Intake
 
-Filled in during or right after the free first call. It decides whether there's a fit and what the smallest useful next step is. Please don't write passwords, health details, or payment information on this form.
+Filled in during or right after the free first call. Don't write passwords, health details, or payment information here.
 
 ## You
 

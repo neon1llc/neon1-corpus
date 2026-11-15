@@ -1,14 +1,12 @@
 # Version control etiquette
 
-How changes get into neon1-corpus. neon1's [version control](corpus/standards/version-control.md) and [versioning](corpus/standards/versioning.md) standards apply here, and this file adds the corpus's own details. The rules get stricter at `v1.0.0`, because the site, Neo and the Knowledge Center depend on what's here.
+How changes get into neon1-corpus. neon1's [version control](corpus/standards/version-control.md) and [versioning](corpus/standards/versioning.md) standards apply, and this file adds the corpus's own details. The rules get stricter at `v1.0.0`, because the site, Neo and the Knowledge Center depend on what's here.
 
 ## Always
 
-These hold before and after `v1.0.0`.
-
 ### Branch names
 
-Name a branch after the kind of change and what it does, in lowercase words joined by hyphens:
+Name a branch for the kind of change, in lowercase hyphenated words:
 
 | Prefix | For | Example |
 |---|---|---|
@@ -19,7 +17,7 @@ Name a branch after the kind of change and what it does, in lowercase words join
 | `chore/` | CI and housekeeping | `chore/node-24` |
 | `release/` | Preparing a tagged release | `release/v1.0.0` |
 
-One branch holds one change. If you find a second problem while working, start a second branch for it.
+One branch holds one change. A second problem gets a second branch.
 
 ### Commit messages
 
@@ -32,15 +30,15 @@ feat(tools): export a bundle for the knowledge area
 docs: add version control etiquette
 ```
 
-Types are `feat`, `fix`, `docs`, `refactor`, `chore` and `test`. A new document is a `feat`, and a corrected fact is a `fix`. Write the subject as a plain instruction, in lowercase, with no period. Add a body when the reason for the change isn't obvious from the diff.
+Types are `feat`, `fix`, `docs`, `refactor`, `chore` and `test`. A new document is a `feat`, and a corrected fact is a `fix`. Write the subject as a plain lowercase instruction with no period. Add a body when the reason isn't obvious from the diff.
 
 ### Commit boundaries
 
-Commit at a point that makes sense on its own: a finished document, a working tool, a fixed link set. `node tools/lint.mjs` should pass on every commit.
+Commit at a point that stands on its own. `node tools/lint.mjs` should pass on every commit.
 
 ### Public only
 
-Every commit is public the moment it's pushed, and history keeps it even after it's deleted. Nothing private goes in, not even briefly: no client names without written consent, no account numbers, no personal contact details, no drafts of internal strategy.
+Every commit is public once pushed, and history keeps it even after deletion. Nothing private goes in, not even briefly: no client names without written consent, no account numbers, no personal contact details, no drafts of internal strategy.
 
 ### History
 
@@ -48,7 +46,7 @@ Never rewrite history on `main` or on someone else's branch. Rebasing your own u
 
 ## Before `v1.0.0`: good habits
 
-Until the first full release, the project moves fast and the rules are recommendations.
+These are recommendations until the first full release.
 
 - Work on a named branch for anything larger than a typo. Merge it into `main` with `git merge --no-ff` so the branch stays visible in history, then delete it.
 - Small fixes such as typos and broken links may go straight to `main`.
@@ -58,7 +56,7 @@ Until the first full release, the project moves fast and the rules are recommend
 
 ## From `v1.0.0` on: required
 
-`v1.0.0` is reserved for the first complete release: the finalized Organization library translated in, templates and forms published, and the site, Neo and the knowledge area all reading from tagged releases. From that release on, these rules are required.
+`v1.0.0` is reserved for the first complete release: the finalized Organization library translated in, templates and forms published, and the site, Neo and the knowledge area all reading from tagged releases. From then on, these rules are required.
 
 - **`main` is protected.** No direct pushes. Every change arrives through a pull request from a named branch.
 - **Review.** Every pull request needs at least one approving review from someone other than the author. Changes to policies need a reviewer who can check them against the live agreements.

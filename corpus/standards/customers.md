@@ -4,11 +4,11 @@ title: Customers
 summary: "Who neon1 works with, how the work differs from households to enterprises, and when it declines work."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
@@ -16,7 +16,7 @@ related: [company-charter, standards-operating-principles, landscape-where-else-
 
 # Customers
 
-For every customer, I listen first, say plainly what I can and can't do, keep you in control of what you own, and leave you able to run it. The shape of the work varies by customer.
+For every customer, I listen first, say plainly what I can and can't do, keep you in control of what you own, and leave you able to run it.
 
 ## Everyone
 
@@ -28,11 +28,11 @@ For every customer, I listen first, say plainly what I can and can't do, keep yo
 
 ## Households and individuals
 
-Home networks, cameras, devices, passwords, and security habits for families, in plain steps, at your pace, with thought for who helps when I'm not there. For older relatives, a printed one-page guide often beats an app.
+Home networks, cameras, devices, passwords, and security habits, in plain steps at your pace, with thought for who helps when I'm not there. For older relatives, a printed one-page guide often beats an app.
 
 ## Small businesses and practices
 
-My main focus: owner-run businesses, offices, and practices where information is typed into several places, nobody quite understands the setup, or the person who knew it left. A first engagement is usually a paid review or one workflow, finished and checked in a few weeks, with both the owner and the person doing the work.
+My main focus: owner-run businesses, offices, and practices where information is typed into several places, nobody quite understands the setup, or the person who knew it left. A first engagement is usually a paid review or one workflow, finished and checked in a few weeks, with the owner and the person doing the work.
 
 ## Technical teams and B2B
 
@@ -52,4 +52,4 @@ I turn down or refer work needing emergency coverage, safety-critical equipment,
 
 ## Community help
 
-Apart from paid work, I set aside a little time each month to help people and groups in my community, at my discretion, never as a sales tool.
+I set aside a little time each month to help people and groups in my community, at my discretion, never as a sales tool.

@@ -4,9 +4,9 @@ title: "Do you need a business associate agreement?"
 summary: "A plain guide for health practices on when a vendor needs a BAA, and what to check before signing one."
 type: guide
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Health practices and their vendors"
@@ -16,7 +16,7 @@ related: [templates-baa-request, templates-business-associate-agreement, example
 # Do you need a business associate agreement?
 
 > [!warning] General information, not legal advice
-> This guide explains the idea in plain words. Your privacy officer or counsel makes the call for your practice.
+> Your privacy officer or counsel makes the call for your practice.
 
 Under HIPAA, a health practice can share patient information with a vendor working on its behalf only after the vendor signs a business associate agreement (BAA), saying how it will protect the information and what it will do if something goes wrong.
 
@@ -46,7 +46,7 @@ Common examples: your practice management or electronic health record system, a 
 
 ## Working with neon1
 
-Many projects never touch patient information, by design when I can. When one does, we go through the [BAA request](../templates/baa-request.md) together first, and the agreement is signed before any access. You can read [neon1's example agreement](../templates/business-associate-agreement.md) and a [filled-out request](../examples/baa-request.md) for a fictional practice.
+Many projects never touch patient information, by design when I can. When one does, we go through the [BAA request](../templates/baa-request.md) first, and the agreement is signed before any access. You can read [neon1's example agreement](../templates/business-associate-agreement.md) and a [filled-out request](../examples/baa-request.md) for a fictional practice.
 
 ## Sources
 
