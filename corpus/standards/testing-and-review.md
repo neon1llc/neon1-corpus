@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "2.4"
+edition: "2.5"
 audience: "Developers"
 order: 8
 consumers: [ai]
@@ -67,8 +67,6 @@ A change is done when all of these are true:
 - [ ] Docs, changelog, and version are updated
 - [ ] It's merged, released, and running where it should be
 - [ ] Someone has checked it works there
-
-Merged isn't done, and neither is deployed but unchecked.
 
 ## Evidence
 

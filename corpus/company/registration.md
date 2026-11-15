@@ -7,7 +7,7 @@ status: adopted
 updated: 2026-11-15
 created: 2026-11-11
 reviewed: 2026-11-11
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Clients, partners, and anyone confirming that neon1 LLC is a registered, active business"
@@ -17,7 +17,7 @@ related: [company-names, company-contact, company-charter]
 
 # State registration
 
-neon1 LLC is an active domestic limited liability company registered with the New York Department of State, DOS ID 7668765. This page is copied from the state's public record. If the two ever differ, the record is right. See [Check the live record](#check-the-live-record).
+Copied from the state's public record. If the two differ, the [live record](#check-the-live-record) is right.
 
 ## The record at a glance
 
@@ -35,11 +35,7 @@ neon1 LLC is an active domestic limited liability company registered with the Ne
 | Assumed name | NEON1, assumed name ID 7690257, active |
 | Mergers | None |
 
-The state writes names in capitals. I write the company as neon1 LLC and the business as neon1 ([the names](names.md)).
-
 ## Filings
-
-Every document filed with the state, newest first:
 
 | Filed | Document | What it did | File number |
 |---|---|---|---|
@@ -49,21 +45,13 @@ Every document filed with the state, newest first:
 
 ## Registered agent and legal papers
 
-Legal papers go to the registered agent, which keeps a fixed business address in Albany:
-
 - **Registered agent.** Registered Agents Inc., 418 Broadway, Ste R, Albany, NY 12207.
 - **Service of process.** When the Secretary of State is served on neon1 LLC's behalf, the state mails a copy to the same agent and address.
 - **Electronic service.** Not permitted on this record, so papers arrive by mail.
 
-For everything else, including questions about this page, use [contact](contact.md).
-
-## What comes next
-
-New York asks every LLC to file a biennial statement every two years, in the month it was formed. neon1 LLC's next is due by July 31, 2027. Once it's filed, I check this page again.
-
 ## Check the live record
 
-The state's database is free to search but has no links to single records, so you search for it:
+The state's database has no links to single records, so search for it:
 
 1. Open the [New York Department of State's public inquiry](https://apps.dos.ny.gov/publicInquiry/).
 2. Leave **Search By** on **EntityName**.
@@ -78,14 +66,14 @@ To search by number instead, set **Search By** to **DOS ID** and enter `7668765`
 
 Search results aren't a certified document. When a bank, agency, or client needs official proof, the Department of State issues it:
 
-- **Certificate of status.** The state's proof that the company exists, also called a certificate of good standing. It's requested in writing, and the fee is $25.
-- **Copies of filed documents.** Plain or certified copies of the articles of organization, the certificate of change, or any other filing.
+- **Certificate of status** (good standing): requested in writing, $25.
+- **Copies of filed documents**, plain or certified.
 
 I can request either one for you. Ask through [contact](contact.md) and say who needs it.
 
 ## How this page is kept true
 
-The facts-checked date at the top is the last time every field here was compared with the live record. It can be newer than the updated date, because a check that finds nothing changed leaves the page as it is. I check after every state filing, and at least every six months.
+I compare every field with the live record after each state filing and at least every six months. The facts-checked date at the top is the last check.
 
 ## Sources
 

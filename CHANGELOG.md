@@ -2,6 +2,18 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.45.0 - 2026-11-15
+
+### Added
+- Blog post "Why I started neon1, and a free way to start with me": why neon1 exists, how a project runs, and free 1NEON accounts.
+- Guide [Free 1NEON accounts](corpus/guides/free-accounts.md) (`guides-free-accounts`): how to start without a call, what a free account holds next to a client account, and how long it lasts. Both FAQ entries link to it.
+
+### Changed
+- "Prospect accounts" are now "free accounts": terms of use (edition 1.5, section 3), privacy and data policy (edition 3.2), the 1NEON guide, and the product page. The privacy policy links Cloudflare's Turnstile Privacy Addendum and covers the website or place sign-up now asks for. Both policies still wait for the lawyer's review.
+- 1NEON guide: the "New here? Start a free account" label, the sign-up's website-or-place field, and the Settings page's Where row (pages, edition 1.6).
+- Versioning and releases (edition 1.8): every tag has a GitHub release whose notes are its changelog entry, and a release merge's message names the version and what it brings.
+- Cut wording that repeats a table, list, or linked page.
+
 ## v0.44.0 - 2026-11-15
 
 ### Added

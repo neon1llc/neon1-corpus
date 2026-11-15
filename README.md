@@ -27,8 +27,6 @@ Everything here is public. Nothing private belongs here, even as a draft.
 
 ## How a document looks
 
-Each file is Markdown with front matter that says what it is and who reads it:
-
 ```yaml
 ---
 id: services
@@ -84,7 +82,7 @@ git clone --quiet --depth 1 --branch v0.2.0 https://github.com/neon1llc/neon1-co
 node .corpus/tools/export.mjs --target site
 ```
 
-Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`. The export runs in well under a second, needs nothing installed, and fetches nothing while a page is viewed.
+Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`.
 
 ## As context for AI tools
 
@@ -94,7 +92,7 @@ The corpus is, with some levity, neon1's context window: everything neon1 has wr
 node tools/export.mjs --target ai --sections standards
 ```
 
-That's about 80,000 characters, roughly 20,000 tokens. The export already drops front matter. Stripping Markdown further would save only about 5% and cost the structure that helps a model read it, so the bundles stay as Markdown. Narrowing by shelf saves more. Each release also attaches `standards.bundle.json`.
+That's about 80,000 characters, roughly 20,000 tokens. The export already drops front matter, and narrowing by shelf saves more. Each release also attaches `standards.bundle.json`.
 
 ## Contributing
 

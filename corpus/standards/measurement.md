@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 15
 origin: "neon1's internal handbook, measurement handbook (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
@@ -60,7 +60,7 @@ With a handful of clients, a conversation about what worked usually beats a sati
 
 ## What a report from me looks like
 
-One page when possible: the result you wanted, period and sample size, baseline, what we see now, cost and effort, failures, what the numbers can't establish, and whether the change is worth keeping. Quotes only with permission.
+One page when possible: the result you wanted, period and sample size, baseline, what we see now, cost and effort, failures, what the numbers can't establish, and whether the change is worth keeping.
 
 ## Software and website measures
 

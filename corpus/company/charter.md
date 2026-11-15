@@ -8,18 +8,18 @@ updated: 2026-11-15
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
 
-neon1 is my one-person technology practice in New York. The company is neon1 LLC, formed in New York on July 24, 2025, doing business as neon1. Detail is in the [How I work](../standards/operating-principles.md) documents.
+neon1 is my one-person technology practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in the [How I work](../standards/operating-principles.md) documents.
 
 ## Mission
 
-Help people and small organizations get their technology working together and working for them, explained honestly and at a human level, so they're left more capable, confident, and in control than before. See [Mission and promise](mission.md).
+See [Mission and promise](mission.md).
 
 ## How
 
@@ -76,4 +76,4 @@ N1 Supply LLC is a separate company for product experiments. It shares an owner 
 
 ## Signature lines
 
-*1 is glad to be of service*, from the film *Bicentennial Man*, and *1withtechnology*. They're part of neon1's personality, not a description of its services.
+*1 is glad to be of service*. It's part of neon1's personality, not a description of its services. See [the names](names.md).

@@ -8,14 +8,14 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 origin: "neon1's internal handbook, incident and restore form"
 related: [standards-reliability-and-recovery, forms-service-and-recovery-profile]
 ---
 
 # Incident and restore record
 
-For a real incident or a planned restore test. Record conditions and decisions, not blame.
+Record conditions and decisions, not blame.
 
 **Service:** ____ **Record number:** ____
 

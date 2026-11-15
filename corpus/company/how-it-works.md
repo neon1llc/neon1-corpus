@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "1.7"
+edition: "1.8"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -16,11 +16,11 @@ related: [company-architecture]
 
 # How neon1.tech works
 
-What's on neon1.tech and what runs behind it. The code is public in neon1's [GitHub repositories](https://github.com/neon1llc). For diagrams, see [How neon1 is built](architecture.md).
+The code is public in neon1's [GitHub repositories](https://github.com/neon1llc). For diagrams, see [How neon1 is built](architecture.md).
 
 ## The short version
 
-- **The website** is plain HTML, CSS, and JavaScript. There's no framework, no tracking, and no ads. It loads only its own files.
+- **The website** is plain HTML, CSS, and JavaScript. There's no framework, no tracking, and no ads.
 - **Its words** come from neon1-corpus, a set of Markdown documents. The page, the Knowledge Center, the blog, and Neo all read from it, and a new release reaches the site within about 15 minutes.
 - **1NEON** is the client portal at neon1.tech/1NEON. It's a React app with its own API, and it has three public ways to look around without an account.
 - **Neo** is the chat in the corner. It answers about neon1 from neon1's public documents, and answers general technology questions as general information.
@@ -67,11 +67,11 @@ Now and then a white rabbit drops into the rain. Catching it by click or tap sto
 
 ## The blog
 
-[neon1.tech/blog](https://neon1.tech/blog/) holds short posts, about one a week, written in the corpus. There's an RSS feed at `/blog/feed.xml`. Share links are plain, with no outside scripts.
+[neon1.tech/blog](https://neon1.tech/blog/) holds short posts, about one a week, written in the corpus. There's an RSS feed at `/blog/feed.xml`.
 
 ## The contact form
 
-The form sits under "send me your use case" in Contact. When you press send:
+The form sits under "send me your use case" in Contact.
 
 1. The page checks the fields.
 2. It sends the message to one public route on 1NEON's API.
@@ -82,7 +82,7 @@ Nothing is saved in your browser. If no answer comes back in time, the page says
 
 ## Neo, the chat
 
-Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. The name is a nod to the Matrix films. When you ask something:
+Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. When you ask something:
 
 1. The chat window sends your question and the conversation so far to `neon1.tech/chat/api/chat`.
 2. CloudFront forwards it with a secret header, so the API can't be reached around neon1.tech's limits.
@@ -113,7 +113,7 @@ Three public pages show the real portal with made-up people and a made-up bakery
 
 ### The sample project at /1NEON/example
 
-One finished project, start to end, for reading.
+One finished project, for reading.
 
 ### The interactive demo at /1NEON/demo
 

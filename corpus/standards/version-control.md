@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-08
-edition: "2.5"
+edition: "2.6"
 audience: "Developers"
 order: 5
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-development, standards-versioning, standards-testing-and-rev
 
 # Version control
 
-Every neon1 project lives in git, on GitHub. A repository's own `VCS-ETIQUETTE.md` can add stricter rules, not looser ones. Rules tighten once a repository deploys to production or holds client data, whatever its version.
+Every neon1 project lives in git, on GitHub. A repository's own `VCS-ETIQUETTE.md` can add stricter rules, not looser ones.
 
 ## Before you commit
 
@@ -94,7 +94,7 @@ That bypass is for when no second reviewer exists, not for skipping checks. I us
 
 ## Tags
 
-Every released version has an annotated `vX.Y.Z` tag on the commit it was built from, never moved or deleted once pushed. See [versioning and releases](versioning.md).
+Every released version has an annotated `vX.Y.Z` tag, never moved or deleted once pushed. See [versioning and releases](versioning.md).
 
 ## Sources
 

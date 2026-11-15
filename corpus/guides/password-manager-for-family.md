@@ -10,7 +10,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -19,13 +19,13 @@ related: [case-cameras-to-grandmas-email, standards-security-and-data]
 
 # A password manager for your family
 
-A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over. Here's how to set one up without anyone getting locked out.
+A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over.
 
 ## Pick one together
 
 Choose a well-known manager with family sharing and apps for all your devices, including those built into Apple and Google devices, that everyone will use.
 
-Recovery differs in each and in most only works if set up beforehand. Before moving important accounts, read the [recovery section](#recovery-by-product) for the one you picked.
+Recovery differs in each and in most only works if set up beforehand. Read the [recovery section](#recovery-by-product) for the one you picked before moving important accounts.
 
 ## Before you start
 
@@ -82,7 +82,7 @@ Sign-in uses your account password together with a Secret Key, which is printed 
 
 ## If something goes wrong
 
-- **Forgot the master password:** follow your product's own recovery steps from [recovery by product](#recovery-by-product), using what you set up in step 3.
+- **Forgot the master password:** use your product's [recovery steps](#recovery-by-product) and what you set up in step 3.
 - **Lost a phone:** sign in on another device and remove the lost one from the account.
 - **A site says the password is wrong:** check that you're on the real site, not a look-alike from a link in an email.
 

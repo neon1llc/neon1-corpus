@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Owners of small service businesses"
@@ -14,7 +14,7 @@ related: [services, standards-discovery-and-delivery, examples-proposal]
 ---
 
 > [!note] A typical pattern, not a client story
-> How this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+> For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
 
 # Use case: one workflow, no more retyping
 

@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -59,7 +59,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 
 ## Industry codes
 
-The North American Industry Classification System (NAICS) codes that describe this work:
+NAICS codes:
 
 | Code | Title |
 |---|---|

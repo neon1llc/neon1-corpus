@@ -101,7 +101,11 @@ jobs:
         if: env.VERSION != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "v$VERSION" assets/*.bundle.json --verify-tag --title "v$VERSION" --notes "Bundles for each consumer. Each one holds the manifest and every document's Markdown. See CHANGELOG.md for what changed and the README for the format."
+        # The notes are the version's changelog entry, then a line about the attached bundles
+        run: |
+          awk -v v="v$VERSION" '$0 ~ "^## "v"( |$)" {f=1; if ($4) print "Released "$4"."; next} /^## / {f=0} f' CHANGELOG.md > "$RUNNER_TEMP/notes.md"
+          printf '\n---\nBundles for each consumer are attached. Each one holds the manifest and every document'"'"'s Markdown (see the README for the format).\n' >> "$RUNNER_TEMP/notes.md"
+          gh release create "v$VERSION" assets/*.bundle.json --verify-tag --title "v$VERSION" --notes-file "$RUNNER_TEMP/notes.md"
 
       # neon1.tech builds from the newest release, so it's asked to publish this one now rather than waiting
       # for its own watch. SITE_DEPLOY_TOKEN is a fine-grained token limited to neon1-site's Actions (read and

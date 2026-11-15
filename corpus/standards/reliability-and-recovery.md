@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -46,7 +46,7 @@ Definitions follow [Google's site reliability guidance on service level objectiv
 | 99.9% | 43 minutes |
 | 99.99% | 4 minutes |
 
-Each extra nine needs faster detection and response, and usually more money. Someone unavailable until the weekend can't meet 99.9% for anything a human must fix, so I don't sell targets the coverage can't back.
+Someone unavailable until the weekend can't meet 99.9% for anything a human must fix, so I don't sell targets the coverage can't back.
 
 ## Setting a target together
 

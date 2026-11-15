@@ -4,11 +4,11 @@ title: Decision review
 summary: "A two-page written review of one technology decision: the situation, the options with their costs, a recommendation, and the next step."
 type: template
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's November 2026 planning notes, working templates"
 related: [standards-technology-decisions, templates-proposal]
 ---
@@ -18,8 +18,6 @@ related: [standards-technology-decisions, templates-proposal]
 **For:** ____ **Date:** ____ **Version:** ____
 
 ## The decision
-
-One sentence on the choice to make:
 
 ____
 

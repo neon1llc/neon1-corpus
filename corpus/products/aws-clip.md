@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at c90f09
 status: adopted
 updated: 2026-11-15
 created: 2026-09-13
-edition: "1.4"
+edition: "1.5"
 ---
 
 # AWS CLIP
@@ -19,7 +19,7 @@ edition: "1.4"
 
 **AWS CLI Plus.** Account guards and approval checks around the AWS CLI. It doesn't replace the AWS CLI, which still handles sign-in, credentials, requests, and output.
 
-- **Available now:** the code is public under the MIT license and runs from source. It's a first release (v0.1), so commands and settings may still change before v1.0.
+- **Available now:** the [code](https://github.com/neon1llc/aws-clip) is public under the MIT license and runs from source. It's a first release (v0.1), so commands and settings may still change before v1.0.
 - **Who it helps:** people who work across several AWS profiles and want to see which account they're in, and confirm before anything risky runs.
 
 ## What it does
@@ -38,4 +38,4 @@ For example, `aws-clip --profile production exec -- ec2 terminate-instances ...`
 
 ## Next step
 
-Read the [README](https://github.com/neon1llc/aws-clip/blob/c90f092292cd2dd60be89ea906777c667666b4c5/README.md) for install steps and the full list of safety limits, or browse the code at [neon1llc/aws-clip](https://github.com/neon1llc/aws-clip).
+Install steps and the full list of safety limits are in the [README](https://github.com/neon1llc/aws-clip/blob/c90f092292cd2dd60be89ea906777c667666b4c5/README.md).

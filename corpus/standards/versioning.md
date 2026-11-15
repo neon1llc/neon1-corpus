@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.7"
+edition: "1.8"
 audience: "Developers"
 order: 6
 consumers: [ai]
@@ -16,8 +16,6 @@ related: [standards-development, standards-version-control, standards-documentat
 ---
 
 # Versioning and releases
-
-neon1 uses one scheme for software and one for documents.
 
 ## Software: vX.Y.Z
 
@@ -52,7 +50,7 @@ A release's number must agree in:
 - The **package file**, if there is one (`package.json`, `pyproject.toml`).
 - Anything the release shows people, such as a site's footer or a `--version` flag.
 
-Checks fail when these disagree. Every changelog version has a tag and every tag an entry, and tags are never moved or reused. If numbers have drifted, don't rewrite old tags. Pick the next correct number, make every place agree, and note it in the changelog.
+Checks fail when these disagree. Every changelog version has a tag and every tag an entry. If numbers have drifted, don't rewrite old tags. Pick the next correct number, make every place agree, and note it in the changelog.
 
 ## When a project shipped before it was tagged
 
@@ -79,7 +77,7 @@ A date may follow the version. Sections are **Added**, **Changed**, **Deprecated
 1. Look at the batch on dev first, where a project has one. neon1's site and 1NEON do, at dev.neon1.tech.
 2. Merge everything the release includes into main, with the checks passing.
 3. Update the changelog and every place the version appears, in one commit.
-4. Merge it to main. The pipeline deploys it, checks that what's live reports the new version, and then tags that commit: `vX.Y.Z`, annotated.
+4. Merge it to main with `--no-ff`, the merge message naming the version and what it brings in one line. The pipeline deploys it, checks that what's live reports the new version, tags that commit (`vX.Y.Z`, annotated), and publishes the version's changelog entry as its GitHub release.
 5. A project without a pipeline tags by hand: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
 
 ## How neon1's repositories release
@@ -98,11 +96,12 @@ In every neon1 repository the pipeline makes the tag, so a tag means this exact 
 - **A push with no new version** is for changes nobody would notice, such as CI or comments.
 - **Checks enforce agreement.** The tag step stops when the changelog names no version.
 - **Dev builds are never releases.** Their changelog entries wait under `## Unreleased` until the batch reaches main.
+- **Every tag has a GitHub release** whose notes are its changelog entry, so each repository's Releases page reads newest first.
 - **A tag is never made again or moved.** If a release went wrong, the fix is the next patch.
 
 ## Release levels
 
-A release level says how far a change has been proven. Each needs its own evidence:
+A release level says how far a change has been proven:
 
 | Level | Means | Evidence |
 |---|---|---|

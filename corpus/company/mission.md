@@ -9,7 +9,7 @@ created: 2026-11-11
 consumers: [site, chat, knowledge, ai]
 pdf: true
 featured: true
-edition: "1.3"
+edition: "1.4"
 audience: "Anyone deciding whether to work with neon1, and anyone who wants the short version of what it stands for"
 origin: "Pradeep's mission statement, Our Mission, and Promise to You (five drafts, 2025), reconciled on November 11, 2026 with the charter, neon1.tech, the GitHub profile, and the LinkedIn page"
 related: [company-charter, company-about, company-names, company-process, company-capabilities, services]
@@ -35,4 +35,4 @@ You can count on five things:
 
 ## The line on the landing
 
-*1 is glad to be of service.* The 1 is me, Pradeep, neon1's sole owner and your dedicated deputy. [The names](names.md) tells where it comes from.
+*1 is glad to be of service.* [Where it comes from](names.md).
