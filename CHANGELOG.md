@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.44.0 - 2026-11-15
+
+### Added
+- Prospect accounts in 1NEON. The terms of use (edition 1.4) add section 3, Prospect accounts: who can sign up, what the account is for, its limits, who sees it, check-ins and deletion after 30 days without changes, becoming a client, and suspension; acceptable use adds rights to shared material, abusive content, getting around limits, and automated sign-ups. The privacy and data policy (edition 3.1) says what a sign-up collects, adds Cloudflare Turnstile as a provider, and lists the prospect retention periods. The 1NEON guide and product page say how to join without an invitation. Both policies wait for the lawyer's review.
+
 ## v0.43.0 - 2026-11-15
 
 ### Changed
