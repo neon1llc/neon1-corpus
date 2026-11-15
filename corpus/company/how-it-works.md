@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-11
-edition: "1.5"
+edition: "1.6"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -245,14 +245,14 @@ The top bar has a segment per chapter, previous and next buttons, play, speed, a
 
 ## How a change goes live
 
-Each repository deploys itself when a change merges to main. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, so no repository holds AWS keys, and every deploy stops if a check fails.
+Work starts on its own branch, where checks run on every push, and changes to the site and 1NEON can be seen first on dev.neon1.tech, a private copy only neon1's admins can sign in to. Dev's 1NEON runs on generated test data, never a copy of production. Nothing reaches neon1.tech until I say deploy. Then each repository deploys itself when the change merges to main. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, so no repository holds AWS keys, and every deploy stops if a check fails.
 
 - **The site** checks its HTML, links, assets, sizes, and secrets, drives the page and chat in a headless browser with faked APIs, builds the PDFs, and deploys.
 - **1NEON** runs its type checks, tests, and build, applies its Terraform, and ships, uploading versioned files first and its page last.
 - **Neo** runs its tests, and its Terraform ships the code.
 - **Infrastructure** is applied by Terraform, except the deploy permissions, which I apply by hand so a deploy can never widen its own access.
 
-After a deploy, each pipeline confirms the live version and tags the release from the changelog's top entry.
+After a deploy, each pipeline confirms the live version and tags the release from the changelog's top entry. A production release of the site, the corpus, and Neo takes about 12 to 18 minutes, and 1NEON about 26, because every guided walkthrough is played first. [How neon1 is built](architecture.md) has the diagrams, production and dev part by part, and what data each part keeps.
 
 ### The release switch
 
@@ -290,4 +290,4 @@ neon1-corpus holds neon1's public words as Markdown, each document with a header
 - **chat**, for Neo
 - **portal**, for Neo inside 1NEON
 
-The site always builds from the newest release: every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release, without changing the site's own version. Neo refreshes its copy every Monday. Each reader's checks fail if its copy drifts from the release it built from. This document lives there too.
+The site always builds from the newest release: every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release, without changing the site's own version. Every Monday, Neo's refresh opens a pull request with any change, which ships like any other change. Each reader's checks fail if its copy drifts from the release it built from. This document lives there too.

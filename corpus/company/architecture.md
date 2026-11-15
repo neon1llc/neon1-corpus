@@ -1,7 +1,7 @@
 ---
 id: company-architecture
 title: How neon1 is built
-summary: "Diagrams of the website, the 1NEON portal, Neo, the private dev copy, how every repository goes from a push to production, and what data each environment holds."
+summary: "Diagrams of the website, the Knowledge Center, the 1NEON portal, Neo, and the infrastructure: how each runs in production and on the private dev copy, what data each keeps and why, and how a change reaches them."
 type: page
 consumers: [knowledge, ai]
 pdf: false
@@ -14,7 +14,7 @@ edition: "1.4"
 
 # How neon1 is built
 
-neon1 runs on a small set of AWS services, sized to cost a few dollars a month while it's quiet. Everything below is defined in code in public repositories on [GitHub](https://github.com/neon1llc), so each box here matches something you can read. The diagrams are drawn from Mermaid text, and each one has its source underneath it.
+neon1 runs on a small set of AWS services, sized to cost a few dollars a month while it's quiet. Everything below is defined in code in public repositories on [GitHub](https://github.com/neon1llc), so each box here matches something you can read. It covers how a visit, a question, a sign-in, and a payment flow through the system, how each part runs in production and on the private dev copy, what data each part keeps and for how long, and how a change gets from a branch to neon1.tech. The diagrams are drawn from Mermaid text, and each one has its source underneath it.
 
 ## The whole picture
 
@@ -46,7 +46,7 @@ flowchart TB
 The colours follow AWS's own groups: purple for networking, orange for compute, green for storage, red for security, pink for messaging, and teal for machine learning.
 
 - **Website.** Plain HTML, CSS, and JavaScript, with no framework and no tracking. The page loads only its own files, and its security policy blocks everything else.
-- **1NEON.** A single-page app with its own API. Sign-in uses email codes, passkeys, authenticator apps, or Google, through Cognito. Data is kept per organization, and files go straight from the browser to a private documents bucket, where every upload is scanned for malware. Invoices are paid on Stripe's own checkout page, so card and bank details never reach neon1.
+- **1NEON.** A single-page app with its own API. Sign-in uses an emailed code or a passkey through Cognito, with an authenticator app as an optional second step, and there are no passwords. Data is kept per organization, and files go straight from the browser to a private documents bucket, where every upload is scanned for malware. Invoices are paid on Stripe's own checkout page, so card and bank details never reach neon1.
 - **Neo.** A small function that answers questions from neon1's public documents, using a language model on Amazon Bedrock. Amazon says Bedrock doesn't train on them, and that some models may keep them for abuse detection. Per-visitor limits keep it fair and cheap.
 - **Watching it.** Alarms and monthly budgets email Pradeep when something fails or costs more than expected.
 
@@ -175,7 +175,7 @@ sequenceDiagram
 
 ## Signing in to 1NEON
 
-The portal has no passwords. Here is the email-code sign-in, the one the guided walkthrough shows. Passkeys and authenticator apps work the same way, with the code coming from the device.
+The portal has no passwords. Here is the email-code sign-in, the one the guided walkthrough shows. A passkey replaces the code with the device's own check, and an authenticator app, for anyone who sets one up, adds a 6-digit code as a second step.
 
 ```mermaid
 %% alt: Sequence diagram of 1NEON sign-in. The person enters their email in the 1NEON app. The app asks Cognito to start a sign-in. Cognito emails a branded message with an 8-digit code through SES. The person reads the code and enters it. Cognito checks the code and returns tokens. The app calls the 1NEON API through CloudFront with the token, and the API verifies it and returns the person's Home page data from DynamoDB.
@@ -202,12 +202,137 @@ sequenceDiagram
   A-->>P: signed in
 ```
 
-## How a change ships
+## Production and dev, part by part
 
-Every repository deploys itself from its main branch. GitHub Actions signs in to AWS with short-lived credentials (OpenID Connect), so no repository holds AWS keys. Each deploy runs its checks first, confirms the live version afterwards, and tags the release. Work is usually seen on dev first, as the next section shows.
+Every part of neon1 has a production side, which is what clients and visitors use, and most have a private dev side for trying a change first. Nothing on dev can reach production or client data, because dev has its own buckets, CloudFront distribution, release store, 1NEON backend, sign-in pool, and permissions. Production changes only when Pradeep says deploy and the change merges to main. Dev changes whenever a branch is pushed, and it's never released.
 
 ```mermaid
-%% alt: Flowchart of a site deploy. A change is merged to main on GitHub. GitHub Actions runs the checks: HTML, links, the asset manifest, and browser tests. If any fail, nothing is deployed. If they pass, the job gets short-lived AWS credentials through OpenID Connect, uploads shared fonts and media, uploads the whole release into its own folder, and then switches the release store to it, so every visitor moves at once. It confirms the live site serves the new version, tags the release, and keeps the last ten releases for a one-step rollback.
+%% alt: Diagram of production and dev side by side. Production, at neon1.tech, is open to everyone: CloudFront serves the website's releases, 1NEON with its own API, table, buckets, and sign-in pool holding real client data, and Neo. Dev, at dev.neon1.tech, sits behind a sign-in gate that needs a secret link and then a passkey or email code from a neon1 admin. Its own CloudFront serves branch previews and the dev release of the website, and a separate 1NEON with its own API, table, buckets, and sign-in pool holding generated test data only. Dev sends chat questions to the live Neo. Production's client data is never copied to dev.
+flowchart TB
+  subgraph prod["Production: neon1.tech, open to everyone"]
+    direction TB
+    pcf["CloudFront<br/>neon1.tech"]:::network
+    pcf --> psite[("Website releases<br/>and Knowledge Center")]:::storage
+    pcf --> pportal["1NEON<br/>API, table, buckets,<br/>sign-in pool"]:::compute
+    pportal --> pdata[("Real client data")]:::storage
+    pcf --> neo["Neo, the chat"]:::ai
+  end
+  subgraph dev["Dev: dev.neon1.tech, neon1 admins only"]
+    direction TB
+    gate["Sign-in gate<br/>secret link, then<br/>passkey or email code"]:::security --> dcf["CloudFront<br/>dev.neon1.tech"]:::network
+    dcf --> dsite[("Branch previews<br/>and the dev release")]:::storage
+    dcf --> dportal["1NEON dev<br/>its own API, table,<br/>buckets, sign-in pool"]:::compute
+    dportal --> ddata[("Generated test data")]:::storage
+  end
+  dcf -->|"chat questions"| neo
+  pdata -.-x|"never copied"| ddata
+
+  classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700
+  classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef security fill:#fdecec,stroke:#c83b3b,color:#4d1010
+  classDef ai fill:#e6f4f7,stroke:#1f8a9e,color:#0c3a43
+```
+
+| Part | Production | Dev |
+|---|---|---|
+| **Website** | neon1.tech, served from whole releases in the site bucket. Changes only when main deploys. | dev.neon1.tech, with its own bucket, distribution, and release store. Every branch push builds a preview, and the `dev` branch is the dev release. |
+| **Knowledge Center and blog** | Built from the newest corpus release with every site deploy, and republished on their own within about 15 minutes of a new corpus release. PDFs are printed during the deploy. | Built from the newest corpus release, or from a corpus branch so drafts can be read in place. PDFs are copied from neon1.tech rather than printed. |
+| **1NEON** | neon1.tech/1NEON, with its own API, table, documents and records buckets, and sign-in pool. Malware scanning and seven-year record protection are on. | dev.neon1.tech/1NEON, a separate API, table, buckets, and sign-in pool holding generated test data only. Only neon1's own accounts can sign in, mail goes only to neon1, texts and the malware scan are off, and test records are write-protected for a day. |
+| **Neo** | neon1.tech/chat/api, answering from the corpus copy it was last released with. | No dev copy. Dev sends questions to the live Neo, since Neo only answers from public pages and keeps no question text. |
+| **Infrastructure** | The neon1.tech distribution and the shared DNS records are applied by the pipeline from main. Deploy permissions are applied by Pradeep by hand. | dev.neon1.tech's distribution, gate, and permissions are applied by hand only, never by a pipeline. |
+| **Corpus** | A merge to main tags a release and publishes its bundles to every reader. | No environment of its own. A corpus branch is previewed through the website's dev build. |
+
+## What data each part keeps
+
+Everything runs in one AWS account in us-east-1 (US East, N. Virginia), encrypted in transit and at rest. Each part keeps only what it needs to do its job, and the public parts keep almost nothing. Production holds real client data. Dev holds generated test data only, made up for testing, and never a copy of production, so no real client's name, project, or file is ever on dev.
+
+```mermaid
+%% alt: Diagram of where data lives. The website keeps no visitor data and emails contact form messages to neon1's inbox. Neo keeps no question text, only one-way fingerprints and visitor counts in DynamoDB for minutes, and two weeks of logs without message text. 1NEON keeps accounts, projects, and activity in DynamoDB with 35 days of backups, files in the documents bucket with 90 days of earlier versions, and write-protected copies of signatures, invoices, and payments in the records bucket for seven years. Card and bank details go only to Stripe. Dev 1NEON keeps generated test data only, with test records protected for one day. The corpus holds public documents only.
+flowchart LR
+  site["Website"]:::compute -->|"contact form"| inbox["neon1's inbox<br/>hello@neon1.tech"]:::comms
+  neo["Neo"]:::ai --> limits[("DynamoDB<br/>fingerprints and counts,<br/>minutes, no question text")]:::storage
+  portal["1NEON"]:::compute --> table[("DynamoDB<br/>accounts, projects, activity<br/>35 days of backups")]:::storage
+  portal --> docs[("Documents bucket<br/>files, 90 days of<br/>earlier versions")]:::storage
+  portal --> records[("Records bucket<br/>signatures, invoices,<br/>payments: 7 years")]:::storage
+  portal -.->|"card and bank details<br/>go only to Stripe"| stripe["Stripe"]:::external
+  devportal["1NEON dev"]:::compute --> devdata[("Generated test data<br/>records: 1 day")]:::storage
+  corpus["neon1-corpus"]:::compute --> public[("Public documents only")]:::storage
+
+  classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700
+  classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef comms fill:#fde9f3,stroke:#c2408a,color:#4a1030
+  classDef ai fill:#e6f4f7,stroke:#1f8a9e,color:#0c3a43
+  classDef external fill:#f1f3f5,stroke:#7b8794,color:#1f2933
+```
+
+| Part | What it keeps | Why | How long |
+|---|---|---|---|
+| **Website** | No accounts, cookies, analytics, or trackers. Contact form messages are emailed to hello@neon1.tech and not stored by the site. | A visitor shouldn't be tracked to read a page. | CloudFront handles each request's IP address and browser details to deliver the page, and AWS may keep them briefly for security and operations. |
+| **Neo** | No question or answer text. A one-way fingerprint of each question, to notice repeats, and visitor counts by a one-way code, for the question limits. Logs hold timing, length, and errors. Bedrock's own logging is off. | Enough to keep Neo fair and cheap, and to debug it, without keeping what people ask. | Fingerprints ten minutes. Logs two weeks. |
+| **1NEON projects** | Accounts, projects, items, decisions, comments, and activity in DynamoDB, and uploaded files in the documents bucket, each organization's kept separate. | They're the record of the work, for both sides, during and after an engagement. | Never deleted on a schedule, and deleted when an organization asks. Database backups roll off after 35 days, and earlier copies of replaced or deleted files after 90. |
+| **1NEON records** | A copy of every signature, issued invoice, and payment, under S3 Object Lock in governance mode. | Tax and contract law expect these kept. | Write-protected for seven years. |
+| **1NEON system records** | The audit log of sign-ins and changes, and delivery records for emails and texts. | Security, and finding delivery problems. | Audit log up to three years, delivery records 30 days, API logs 90 days. |
+| **Payments** | Stripe's restricted key and webhook secret, as encrypted parameters in SSM Parameter Store. | So 1NEON can open a checkout and trust Stripe's events. | Card and bank details go only to Stripe and never reach neon1. |
+| **Dev** | Generated test data in dev's own table and buckets, and dev's sign-in pool, which holds only neon1's own accounts. | To try every screen and state without any client's data in reach. | Test records are write-protected for a day. |
+| **Infrastructure** | Terraform state, in a versioned S3 bucket. No client data. | So each stack knows what it manages. | Earlier versions are kept for recovery. |
+| **Corpus** | Public documents only. Its linter fails on anything that looks private. | Everything in it is published. | Kept in Git history. |
+
+The [privacy policy](../policies/privacy.md) is the full statement of what's collected and how long it's kept, and it wins if anything here differs.
+
+## How a change ships
+
+neon1's public repositories fall into three groups: the ones that run neon1.tech, the documents, and the tools and guides. Every repository follows the same path, though only the first group deploys anything. A change starts on its own branch, where checks run on every push. Changes to the website and 1NEON can be seen on dev. A batch goes to production only when Pradeep says deploy: then it merges to main, the main pipeline runs every check again, deploys, confirms the live version, and tags the release from the changelog's top entry. GitHub Actions signs in to AWS with short-lived credentials through OpenID Connect, and each role trusts only its own repository, so no repository holds AWS keys.
+
+```mermaid
+%% alt: Flowchart of how any change ships. A change is pushed to a work branch, and checks run on every push. The website and 1NEON can show the branch on dev.neon1.tech. If it isn't right yet, the work continues on the branch. When Pradeep says deploy, the branch merges to main. Main runs every check again: secret scans, tests, browser and walkthrough checks, and Terraform checks. If any fail, nothing deploys. If they pass, the pipeline gets a short-lived AWS role through OpenID Connect, deploys, and confirms the live version. Once it's confirmed, the release is tagged vX.Y.Z from the changelog. After that, main is merged back into dev.
+flowchart TD
+  push["Push a work branch"]:::step --> ci["Checks on every push"]:::check
+  ci --> devsee["Seen on dev.neon1.tech<br/>website and 1NEON"]:::dev
+  devsee --> ready{"Right yet?"}:::decision
+  ready -->|not yet| push
+  ready -->|"Pradeep says deploy"| main["Merge to main"]:::step
+  main --> gates{"Every check again:<br/>secrets, tests, browser,<br/>walkthroughs, Terraform"}:::decision
+  gates -->|any fail| stop["Nothing deploys"]:::stop
+  gates -->|all pass| oidc["Short-lived AWS role<br/>through OpenID Connect"]:::security
+  oidc --> deploy["Deploy"]:::prod
+  deploy --> verify{"Live version<br/>confirmed?"}:::decision
+  verify -->|yes| tag["Tag vX.Y.Z<br/>from the changelog"]:::step
+  verify -->|no| back["Roll back"]:::stop
+  tag --> sync["Main merged back into dev"]:::dev
+
+  classDef step fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef check fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
+  classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
+  classDef stop fill:#fdecec,stroke:#c83b3b,color:#4d1010
+  classDef security fill:#fdecec,stroke:#c83b3b,color:#4d1010
+  classDef dev fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
+```
+
+| Repository | Checks on every push | Where a branch can be seen | What main does | About how long |
+|---|---|---|---|---|
+| **neon1-site** | HTML, scripts, links, the asset manifest, sizes, secret scan, and the built corpus pages; browser checks of the contact form, case studies, white rabbit, and chat with every API faked | A private preview on dev.neon1.tech, in about 30 seconds | Prints the Knowledge Center PDFs, uploads a whole new release, switches the release store, confirms the live version, and tags | Together with the corpus and Neo, about 12 to 18 minutes |
+| **neon1-1NEON** | Types, unit and contract tests, the production build, secret scan, Terraform checks, and every guided walkthrough played to its end card in a real browser, on a desktop and a phone screen | The `dev` branch ships to dev.neon1.tech/1NEON; any other branch on request | Applies its production Terraform first, ships the API, then the app with its page last, confirms the live version, and tags | About 26 minutes, most of it the walkthroughs |
+| **neon1-chat** (Neo) | Tests with AWS faked, Terraform checks, and a secret scan | No dev copy | Applies its Terraform, which ships the function, checks the live endpoint through neon1.tech, and tags | Part of the 12 to 18 minutes above |
+| **neon1-corpus** | Front matter, links, anything that looks private, the Markdown renderer, and every diagram drawn with alt text | A branch can be built into a dev preview of the website | Tags the release, publishes a bundle for each reader, and asks neon1.tech to publish it | Part of the 12 to 18 minutes above |
+| **neon1-aws-infrastructure** | Formatting, validation, lint, misconfiguration scan, and secret scan | Dev's stack is applied by hand | Plans every stack and applies the neon1.tech distribution and the shared DNS records; deploy permissions only plan, and Pradeep applies them by hand | A few minutes |
+| **Tools**: [DeployOps](https://github.com/neon1llc/deploy-ops), [AWS CLIP](https://github.com/neon1llc/aws-clip), and [refmark](https://github.com/neon1llc/refmark) | Their own checks and tests | No dev copy | Nothing deploys; each changelog version is tagged only if the checks pass, and refmark also checks the sources neon1 cites every Monday | A few minutes |
+| **Education**: Ready, Secure, Go and its five companion guides | Front matter, links, and each guide's own rules | No dev copy | Nothing deploys; each changelog version is tagged | A few minutes |
+
+A few details hold across all of them:
+
+- **One release at a time.** Each pipeline runs in a lock and never cancels a release halfway. 1NEON and Neo also stop a queued release if main has already moved on, so an older commit can't overwrite a newer one.
+- **Tags follow the changelog.** Each change adds an entry under `## Unreleased`. On deploy, that entry becomes the new version, and the tag is made by the pipeline once the live version is confirmed, never by hand. Dev builds are never tagged.
+- **Permissions stay outside the pipeline.** Each pipeline's role can't change its own access, so a deploy can never widen it.
+- **Corpus words reach readers on their own.** A corpus release asks the website to rebuild, and the website also checks every 15 minutes whether it shows the newest release. Every Monday, Neo's refresh job opens a pull request with any change from the newest release, which ships like any other change.
+
+### Deploying the website
+
+The website's deploy, step by step. The release switch means every visitor moves from one complete release to the next at once.
+
+```mermaid
+%% alt: Flowchart of a site deploy. A change is merged to main on GitHub. GitHub Actions runs the checks: HTML, links, the asset manifest, and browser tests. If any fail, nothing is deployed. If they pass, the job gets short-lived AWS credentials through OpenID Connect, uploads shared fonts and media, uploads the whole release into its own folder, and then switches the release store to it, so every visitor moves at once. It confirms the live site serves the new version, tags the release, and keeps the last five releases for a one-step rollback.
 flowchart TD
   merge["Merge to main"]:::step --> checks{"Checks pass?<br/>HTML, links, assets,<br/>browser tests"}:::decision
   checks -->|no| stop["Nothing deploys"]:::stop
@@ -227,11 +352,22 @@ flowchart TD
   classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
 ```
 
-The other repositories follow the same pattern. 1NEON uploads its versioned files first and its page last. Infrastructure changes are planned and applied by Terraform, except permissions, which Pradeep applies by hand, so a deploy can never widen its own access.
+### How far a change has been proven
+
+A version number says what changed. A release level says how far it has been proven, and descriptions of the work never get ahead of its level.
+
+| Level | Means | Evidence |
+|---|---|---|
+| **Implemented** | The code exists | Merged with its checks passing, and a changelog entry |
+| **Verified** | Named acceptance tests passed | The scenarios it affects pass in CI, plus a check on dev or in the demo for anything people see |
+| **Released** | The right version is live | Pradeep said deploy, the pipeline deployed it, the live version matches, and the tag exists |
+| **Qualified** | Real use and recovery are established | Representative real use, a safe check in production, and its recovery path, such as a rollback or a restore, tested at least once |
+
+A tag means Released, never Qualified on its own. The [versioning standard](../standards/versioning.md) has the full rules.
 
 ## Trying a change on dev first
 
-Before a change reaches neon1.tech, it can be seen on dev.neon1.tech, a private copy of the whole site and of 1NEON. Dev has its own bucket, CloudFront distribution, release store, 1NEON backend, sign-in pool, and permissions, so nothing done there can reach neon1.tech or production 1NEON. Pushing any branch puts it on dev in about 30 seconds, against about 6 minutes for a production deploy, because dev runs only the quick checks and is never tagged.
+Before a change reaches neon1.tech, it can be seen on dev.neon1.tech, a private copy of the whole site and of 1NEON. Pushing any branch puts it on dev in about 30 seconds, because dev runs only the quick checks and is never tagged. A production release takes longer because it runs every check.
 
 ```mermaid
 %% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
@@ -251,11 +387,10 @@ flowchart TD
   classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
 ```
 
-- **Branches and the dev release.** Each branch other than main gets its own preview, chosen with `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev` and rebuilds it.
+- **Branches and the dev release.** Each branch other than main gets its own preview, chosen with `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev` and rebuilds it, and a merge that conflicts stops and says so rather than forcing anything.
 - **Drafts in place.** A run of the dev workflow can build from a corpus branch, drafts included, so a post or a page can be read where it will appear before it's adopted.
-- **Releases come only from main.** Dev builds are never tagged, announced, or counted as releases. Main rebuilds from the same commits and runs the full checks, including the browser tests and PDF printing that dev skips.
-- **1NEON on dev.** The dev portal has its own API, table, documents bucket, and sign-in pool. Its data is a copy of production's, refreshed on request, with queued messages and sessions left out. Because that copy names real clients, dev admits only neon1's own accounts, sends mail only to neon1, and never creates an account for anyone else. Texts and the malware scan are off on dev, and its write-protected records are kept for a day instead of seven years.
-- **What dev doesn't copy.** Dev uses the live Neo, since Neo only answers questions, and copies Knowledge Center PDFs from neon1.tech rather than printing them. Dev's infrastructure is applied by hand and never by a pipeline.
+- **Releases come only from main.** Dev builds are never tagged, announced, or counted as releases. Each work branch goes to main on its own, never the `dev` branch as a whole, and main rebuilds from the same commits and runs the full checks, including the browser tests and PDF printing that dev skips.
+- **1NEON on dev.** The dev portal runs on generated test data, never a copy of production, so every screen and state can be tried without a real client's data in reach. Even so, dev admits only neon1's own accounts, sends mail only to neon1, and never creates an account for anyone else.
 - **Cost.** Dev costs a few dollars a month, with a $5 budget alert on everything tagged as dev.
 
 ### Who can open dev
@@ -282,59 +417,6 @@ sequenceDiagram
 ```
 
 The link and the cookie use separate keys. A new link doesn't sign anyone out, and signing every device out doesn't change the link. Taking someone out of the access group stops their next sign-in.
-
-## Every repository, from a push to production
-
-neon1's public repositories fall into three groups: the ones that run neon1.tech, the documents, and the tools and guides. Every push to every one of them runs its checks first. What happens next depends on what the repository is.
-
-```mermaid
-%% alt: Flowchart of how every neon1 repository moves from a push to production. Any push to any repository runs that repository's checks, and nothing goes further if they fail. The site and 1NEON have a dev stage: a branch push puts the site on a private preview, and the dev branch is the dev release of the site and the dev backend of 1NEON, both at dev.neon1.tech. When Pradeep says deploy, the work is merged to main, and main runs the full checks, deploys to production with short-lived AWS credentials, confirms the live version, and tags vX.Y.Z. Neo and the infrastructure have no dev stage: Neo's main deploys to production after its checks, and the infrastructure plans every stack on a pull request and applies main, except the permissions stack and the dev stack, which Pradeep applies by hand. The corpus tags a release from main, and the site, the Knowledge Center, 1NEON's guide, and Neo read that release; dev can read a corpus branch instead. The tools and education repositories run their checks and tag a release, and deploy nothing.
-flowchart TD
-  push["Push to any repository"]:::step --> checks{"That repository's<br/>checks pass?"}:::decision
-  checks -->|no| stop["Goes no further"]:::stop
-  checks -->|"site, 1NEON"| dev["dev.neon1.tech<br/>branch preview or dev release"]:::dev
-  dev -->|"Pradeep says deploy"| main["Merge to main"]:::step
-  checks -->|"Neo, infrastructure"| main
-  main --> gates["Full checks on main"]:::step
-  gates --> prod["Deploy with short-lived<br/>AWS credentials (OIDC)"]:::prod
-  prod --> tag["Confirm the live version,<br/>tag vX.Y.Z"]:::step
-  checks -->|corpus| corpus["Tag a corpus release<br/>from main"]:::step
-  corpus -->|"read at the next build"| prod
-  checks -->|"tools, education"| rel["Tag a release,<br/>deploy nothing"]:::step
-
-  classDef step fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
-  classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
-  classDef stop fill:#fdecec,stroke:#c83b3b,color:#4d1010
-  classDef dev fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
-  classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
-```
-
-| Repository | On any push | Dev | Production | Release |
-|---|---|---|---|---|
-| [neon1-site](https://github.com/neon1llc/neon1-site) | Quick checks | A branch push is a private preview; the `dev` branch is the dev release | Main runs the full checks, including browser tests and PDF printing, then switches every visitor to the new release at once | Tagged after the live site serves it |
-| [neon1-1NEON](https://github.com/neon1llc/neon1-1NEON) | Types, tests, build, the guided walkthroughs, and Terraform | The `dev` branch ships to the dev backend | Main applies Terraform and ships the API and web app from the build the checks made | Tagged after the live portal serves it |
-| [neon1-chat](https://github.com/neon1llc/neon1-chat) (Neo) | Tests, Terraform, and a secret scan | None; dev uses the live Neo, which only answers questions | Main applies the stack and checks the live endpoint | Tagged after the check. A weekly job opens a pull request when the corpus has a new release |
-| [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure) | Format, validation, lint, misconfiguration, and secret checks | The `site-dev` stack, applied by hand | Plans every stack on a pull request and applies main; the permissions stack is applied by hand, so a deploy can't widen its own access | Tagged once every stack passes |
-| [neon1-corpus](https://github.com/neon1llc/neon1-corpus) | Lint and tests | Dev can read any corpus branch, drafts included | Nothing deploys; each reader takes the newest release at its next build | Each changelog version is tagged, with its bundles attached |
-| Tools: [DeployOps](https://github.com/neon1llc/deploy-ops), [AWS CLIP](https://github.com/neon1llc/aws-clip), and [refmark](https://github.com/neon1llc/refmark) | Their own checks and tests | None | Nothing deploys; refmark also checks the sources neon1 cites every Monday | Each changelog version is tagged, only if the checks pass |
-| Education: Ready, Secure, Go and its five companion guides | Front matter, links, and each guide's own rules | None | Nothing deploys | Each changelog version is tagged |
-
-No pipeline holds AWS keys: each deploy signs in through OpenID Connect to a role that trusts only that repository's main branch, and dev has its own role. A release is tagged only after the live version is confirmed, so a tag always names what's running.
-
-## What data lives where
-
-Production and dev hold different data, and each kind of data has one home.
-
-| Data | Production | Dev |
-|---|---|---|
-| Website visitors | No accounts, analytics, or tracking. CloudFront handles your IP address and browser details to send the pages | The same, plus a signed sign-in cookie for neon1's own people |
-| Questions to Neo | Answered from neon1's public pages; Neo's service doesn't log or store the text | Dev uses the production Neo |
-| 1NEON projects, files, and people | Production's table and documents bucket, behind production's sign-in pool | A copy of production's, refreshed only when Pradeep asks, without queued messages, sessions, or sign-in links. Because it names real clients, dev admits only neon1's own accounts |
-| Signed and financial records | Write-protected for seven years (S3 Object Lock) | Kept for a day |
-| Email and texts | Sent to the people they're for | Mail goes only to neon1, and texts are off |
-| Documents and case studies | neon1-corpus releases, public by design | Any corpus branch, drafts included |
-
-Dev holds a copy of production's 1NEON data so that a change is tried on the same records it will meet. That's also why dev is closed to everyone outside neon1, and why it sends nothing to clients. The [privacy policy](../policies/privacy.md) says what's collected and for how long.
 
 ## One source for every word
 
