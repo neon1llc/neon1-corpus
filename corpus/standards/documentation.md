@@ -23,26 +23,20 @@ Documentation lets someone use, run, or change a project without asking its auth
 
 | File | For | Contains |
 |---|---|---|
-| `README.md` | Anyone arriving at the project | What it is, who it's for, its status, how to run, test, and deploy it, and its license |
+| `README.md` | Anyone arriving | What it is, who it's for, status, how to run, test, and deploy it, and its license |
 | `CHANGELOG.md` | People using it | What changed in each release, newest first. See [versioning](versioning.md) |
 | `LICENSE` | Anyone reusing it | The license text, plus `NOTICE` when required |
 | `SECURITY.md` | Anyone who finds a problem | How to report it privately. See the [security disclosure policy](../policies/security.md) |
 
-Larger projects add:
-
-| File | For | Contains |
-|---|---|---|
-| `VCS-ETIQUETTE.md` or `CONTRIBUTING.md` | Contributors | Any rules stricter than the [version control standard](version-control.md) |
-| Decision records | Future maintainers | Why a significant choice was made, the options considered, and what would change it |
-| Runbooks | Whoever operates it | Step-by-step tasks such as deploy, roll back, restore, and rotate a secret |
+Larger projects add `VCS-ETIQUETTE.md` or `CONTRIBUTING.md` for rules stricter than the [version control standard](version-control.md), decision records, and runbooks.
 
 ## Write by purpose
 
-Following [Diátaxis](https://diataxis.fr/), each document does one of four jobs, and doesn't mix them:
+Following [Diátaxis](https://diataxis.fr/), each document does one job:
 
 - **Tutorial:** learning by doing, for a newcomer.
-- **How-to:** steps to finish a specific task.
-- **Reference:** exact facts to look up, such as commands, settings, and fields.
+- **How-to:** steps to finish a task.
+- **Reference:** exact facts to look up.
 - **Explanation:** why things are the way they are.
 
 A README holds a short version of each and links out when one grows.
@@ -58,24 +52,24 @@ Prerequisites first, then commands in order, each with what you should see and w
 ## Keeping docs true
 
 - Docs change in the same commit as the behavior they describe.
-- A checked fact beats a remembered one. Commands in a README should be run before a release.
-- One source for each fact, linked rather than copied, so it can't drift. That's why neon1's public words live once, in [neon1-corpus](https://github.com/neon1llc/neon1-corpus).
+- Run a README's commands before a release.
+- Keep one source for each fact, linked rather than copied. That's why neon1's public words live once, in [neon1-corpus](https://github.com/neon1llc/neon1-corpus).
 
 ## Documents in this Knowledge Center
 
-Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus), as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo.
+Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus) as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo.
 
 ### What every document carries
 
-| Part | What it says | Where readers see it |
-|---|---|---|
-| Title | What the document is, in plain words | The page heading and the PDF's title |
-| Summary | One sentence on what it covers and who it helps | Under the title, on its card, and in search results |
-| Type | Which kind of document it is (below) | The facts under the title |
-| Edition | `X.Y`, raised as described in [versioning](versioning.md) | The facts, and the PDF's footer |
-| Published | When the content first appeared, from its real history | The facts |
-| Updated | When it last changed in substance, shown once it differs from Published | The facts, and the date at the top of the PDF |
-| For | Who it's written for, when that isn't everyone | The facts |
+| Part | What it says |
+|---|---|
+| Title | What the document is, in plain words |
+| Summary | One sentence on what it covers and who it helps |
+| Type | Which kind of document it is (below) |
+| Edition | `X.Y`, raised as described in [versioning](versioning.md) |
+| Published | When the content first appeared, from its real history |
+| Updated | When it last changed in substance |
+| For | Who it's written for, when that isn't everyone |
 
 Dates are never moved, and a typo fix changes neither Updated nor the edition.
 
@@ -96,10 +90,8 @@ Dates are never moved, and a typo fix changes neither Updated nor the edition.
 ### Sharing and reuse
 
 - **Link to the page.** Every document has a fixed address under `neon1.tech/knowledge/`, and each section an anchor.
-- **Hand over the PDF.** Marked documents print to a dated PDF with the edition in the footer and a link back to the live version.
+- **Hand over the PDF.** Marked documents print to a dated PDF with the edition in the footer.
 - **Copy word for word.** Documents are shared under CC BY-ND 4.0, credited "© neon1 LLC (neon1.tech)". Blank templates and forms may also be filled in and adapted for your own work.
-
-### Credit where it's due
 
 Sources are named where used and under Sources, per the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them.
 

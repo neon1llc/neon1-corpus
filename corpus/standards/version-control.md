@@ -21,26 +21,24 @@ Every neon1 project lives in git, on GitHub. A repository's own `VCS-ETIQUETTE.m
 
 ## Before you commit
 
-- Check which branch you're on, what's staged, and whether anyone else's changes are in the working tree.
-- Keep unrelated changes out. One branch holds one change.
-- Run the project's checks and read the full diff before committing.
+- Check your branch, what's staged, and whether anyone else's changes are in the working tree.
+- One branch holds one change. A second problem gets its own branch.
+- Run the project's checks and read the full diff.
 
 ## Branch names
 
-Name a branch for the kind of change, in lowercase hyphenated words:
+Lowercase hyphenated words, prefixed for the kind of change:
 
 | Prefix | For | Example |
 |---|---|---|
 | `feat/` | New capability, documents, or tools | `feat/knowledge-center` |
-| `fix/` | Something wrong: a bug, a wrong fact, a broken link | `fix/office-hours` |
+| `fix/` | A bug, a wrong fact, a broken link | `fix/office-hours` |
 | `docs/` | Documentation about the project itself | `docs/vcs-etiquette` |
-| `refactor/` | Restructuring that changes no behavior | `refactor/split-services` |
+| `refactor/` | Restructuring with no behavior change | `refactor/split-services` |
 | `chore/` | CI, dependencies, and housekeeping | `chore/node-24` |
 | `release/` | Preparing a release | `release/v1.0.0` |
 
-If a second problem turns up while working, it gets its own branch.
-
-Two branches live on. `main` is what's in production. `dev`, in a repository with a dev environment, is main plus the work waiting to ship: a workflow merges main into it after every push to main, and work branches merge into it to be seen together. `dev` is never merged into main as a whole. Each work branch goes to main on its own, so one unfinished change can't ride along with a finished one.
+`main` is what's in production. `dev`, where a repository has a dev environment, is main plus work waiting to ship. A workflow merges main into it after every push to main. `dev` is never merged into main as a whole. Each work branch goes to main on its own, so an unfinished change can't ride along.
 
 ## Commit messages
 
@@ -54,64 +52,49 @@ Optional body: why the change was made, when the diff doesn't say.
 Optional footers, such as BREAKING CHANGE: what breaks and how to move.
 ```
 
-- **Types:** `feat` (a new capability), `fix` (a correction), `docs`, `refactor`, `test`, `chore`, `perf`, `build`, `ci`.
-- **Scope** is optional and names the area, such as `fix(settings)` or `feat(templates)`.
+- **Types:** `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `perf`, `build`, `ci`.
+- **Scope** is optional, such as `fix(settings)`.
 - **A breaking change** gets a `!` after the type or scope, such as `feat(api)!:`, and a `BREAKING CHANGE:` footer.
 - The summary is an instruction: `fix(contact): correct weekday hours`, not `fixed stuff`.
 - Write for someone reading the history a year later, per the [writing standard](writing.md).
 
-## Commit boundaries
+Commit at a point that stands on its own, with its source, tests, and documentation together. Every commit on main passes the checks. Commits carry the name and email of the person who has read and stands behind every line.
 
-Commit at a point that stands on its own, with its source, tests, and documentation together. Every commit on main passes the checks.
+## Merging and history
 
-## Authorship
-
-Commits carry the name and email of the person responsible, who has read and stands behind every line.
-
-## Merging
-
-- Merge a feature branch with `git merge --no-ff`, so the branch stays visible in history, then delete it.
-- Small pull requests may be squash-merged once the repository is protected (see below) when the individual commits don't matter.
+- Merge a feature branch with `git merge --no-ff`, then delete it. Small pull requests may be squash-merged once the repository is protected.
 - Keep main releasable. Failing checks on main come first.
-
-## History
-
-- Never rewrite history on the main branch, on a shared branch, or on anyone else's branch.
-- Rebasing your own unpushed work is fine.
-- Never force-push to main. A mistake on main is fixed by a new commit, such as a `git revert`.
-- A leaked secret is revoked and rotated first. Removing it, or a wrong author, from history is a separate, deliberate owner decision, with branch protection paused only for that change.
+- Never rewrite history on main, a shared branch, or anyone else's branch. Rebasing your own unpushed work is fine.
+- Never force-push to main. Fix a mistake with a new commit, such as `git revert`.
+- A leaked secret is revoked and rotated first. Removing it, or a wrong author, from history is a separate owner decision, with branch protection paused only for that change.
 
 ## Before anything is live
 
-A repository with nothing in production and no client data moves fast, on habits rather than gates:
-
-- Named branches for anything bigger than a typo, merged with `--no-ff`.
-- Typos and broken links may go straight to main.
-- Pull requests are optional. Read your own diff before merging.
+A repository with nothing in production and no client data moves on habits, not gates. Anything bigger than a typo gets a named branch merged with `--no-ff`. Typos and broken links may go straight to main. Pull requests are optional, but read your own diff.
 
 ## From the first live release, or when client data is at stake
 
 Production and client data decide when safeguards apply, not the version number. A `v0.x` repository that deploys a live site or holds client data follows these from its first live release:
 
-- **The main branch is protected** against force pushes and deletion, with no one allowed to bypass that.
+- **The main branch is protected** against force pushes and deletion, with no bypass.
 - **Required checks pass** before a change reaches main.
-- **Every change is reviewed** as a full diff before it merges, approved by someone other than the author when a second person is available. Policies and agreements also need a reviewer who can check them against what's live.
-- **Rollback is ready:** the previous release can be put back, written down before the release goes out.
+- **Every change is reviewed** as a full diff, approved by someone other than the author when a second person is available. Policies and agreements also need a reviewer who can check them against what's live.
+- **Rollback is ready:** the previous release can be put back, written down before release.
 - **Signed commits and tags** on main, from `v1.0.0` on.
-- **Urgent fixes**, such as a wrong policy or contact detail, go on a `fix/urgent-...` branch, merged with one review and released as a same-day patch.
+- **Urgent fixes**, such as a wrong policy or contact detail, go on a `fix/urgent-...` branch with one review and a same-day patch.
 
 ### How this works today
 
-neon1 has one maintainer today. On the repositories that deploy to production (the website, 1NEON, the chat, and the AWS infrastructure), main has two rulesets:
+neon1 has one maintainer. On the repositories that deploy to production (the website, 1NEON, the chat, and the AWS infrastructure), main has two rulesets:
 
 - **No force push or deletion**, with no bypass for anyone, including me.
-- **Required checks** must pass before a change lands on main. As sole maintainer and admin, I can bypass this one, and GitHub warns whenever I do.
+- **Required checks** must pass before a change lands. As sole maintainer and admin, I can bypass this one, and GitHub warns whenever I do.
 
-That bypass is the sole-maintainer exception, for when no second reviewer exists, not for skipping checks. I use it for small changes I've reviewed as a full diff with the checks run locally, and for urgent fixes when waiting would cause more harm. Each bypass shows in the warnings and history, and I review it once it's live. When a second maintainer joins, review by someone other than the author becomes required.
+That bypass is for when no second reviewer exists, not for skipping checks. I use it for small changes I've reviewed as a full diff with the checks run locally, and for urgent fixes when waiting would cause more harm. I review each bypass once it's live. When a second maintainer joins, review by someone other than the author becomes required.
 
 ## Tags
 
-Every released version has an annotated `vX.Y.Z` tag on the commit it was built from, never moved or deleted once pushed. See [versioning and releases](versioning.md) for when to tag.
+Every released version has an annotated `vX.Y.Z` tag on the commit it was built from, never moved or deleted once pushed. See [versioning and releases](versioning.md).
 
 ## Sources
 
