@@ -6,6 +6,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 - Cut text that describes the site or its documents instead of helping the reader: post cadence, document and PDF counts, and notes on how a page is kept.
+- Free-account copy: write down your needs, then ask for an assessment or a call from your account. Reminders the portal sends are no longer worded as mine.
 
 ## v0.45.1 - 2026-11-15
 
