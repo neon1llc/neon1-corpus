@@ -99,7 +99,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added or they choose **Not now**. Both are optional. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
+`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based (a city and state, or a state alone), checked the same way as on sign-up; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added or they choose **Not now**. Both are optional. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 
 ## Your profile
 

@@ -23,7 +23,7 @@ Once you're in, **Contact neon1** in the menu has every way to reach me: email, 
 
 ## How it goes
 
-1. **Sign up** with your email, your name, and your organization. Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
+1. **Sign up** with your email, your name, and which describes you best (with your organization's name, unless you're signing up for yourself). Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
 2. **Add a project** and list what it needs, in your own words.
 3. **I read it** and reply in the portal or by email with what I'd do and what I'd ask first.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.

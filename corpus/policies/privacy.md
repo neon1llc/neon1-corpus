@@ -37,7 +37,7 @@ There are no accounts, analytics, or tracking on neon1.tech. Like any website, t
 
 ### The contact form and email
 
-When you send the contact form, your name, email address, organization, message, and, if you pick one, how you found neon1 are emailed to my inbox (hello@neon1.tech) through Amazon's email service, with your address set as the one I reply to. The form doesn't save your message anywhere else. To stop floods of messages, it counts how many arrive from each sender using a one-way code made from the IP address, not the address itself. The counter holds only that code and a count, and is deleted a day after its first count.
+When you send the contact form, your name, email address, organization, message, and, if you pick one, how you found neon1 (in your own words if you choose "Somewhere else") are emailed to my inbox (hello@neon1.tech) through Amazon's email service, with your address set as the one I reply to. The form doesn't save your message anywhere else. To stop floods of messages, it counts how many arrive from each sender using a one-way code made from the IP address, not the address itself. The counter holds only that code and a count, and is deleted a day after its first count. Before sending, the form checks your email address the same way sign-up does (below).
 
 Emails you send me, through the form or directly, are kept in my business email (Google Workspace) as correspondence, for as long as they're useful for our work together or the law requires. You can ask me to delete them.
 
@@ -79,7 +79,8 @@ Please don't put passwords, keys, or other secrets in the portal.
 
 You can make your own 1NEON account from neon1.tech to describe your projects' needs before we work together. When you sign up, I collect:
 
-- **What you type:** your email address, your name, your organization's name, where it's based, a link to its website or a public page, and how you found neon1 (all three optional), and that you accepted the terms of use (with the date of the edition you saw).
+- **What you type:** your email address, your name, which describes you best (an individual, a business by size, a technical team, a nonprofit, a school or public agency, or your own words), your organization's name unless you're an individual, and that you accepted the terms of use (with the date of the edition you saw). Optional: a link to your website or a public page, where you're based (a city and state, or a state alone), and how you found neon1 (in your own words if you choose "Somewhere else").
+- **Checks on what you type:** the portal looks up your email address's domain in public DNS to see that it takes mail, and compares it with a public list of temporary-mailbox services; it never contacts your mailbox. If you give a link, neon1's server visits it once to see that it answers, without reading the page. A city is matched against a public list of US places (GeoNames). None of these results are stored.
 - **A bot check:** the sign-up form runs Cloudflare Turnstile, which looks at your browser and connection to tell a person from an automated script. Cloudflare receives your IP address and browser details for that check only. Turnstile runs only on the sign-up form. Cloudflare's [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/) says how Cloudflare handles that data.
 - **A one-way fingerprint of your IP address,** used to limit how many sign-ups come from one place, and kept with your account's sign-up record. The address itself isn't stored.
 - **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account, and any assessment or call you ask for from it, which reaches me by email.
