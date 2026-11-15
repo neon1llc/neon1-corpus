@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
-- Shorter, plainer wording in the README and in the company, services, case study, blog, product, landscape, FAQ, and guide documents.
+- Shorter, plainer wording across the public documents, standards, templates, forms, examples, the 1NEON guide, and Neo's directive, with a new "Fewer words" section in the writing standard. Policies and agreements are unchanged.
 
 ## v0.42.3 - 2026-11-15
 

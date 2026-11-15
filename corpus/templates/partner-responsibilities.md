@@ -4,18 +4,18 @@ title: Partner responsibilities
 summary: "Who does what when neon1 works alongside another firm: selling, building, support, billing, data, insurance, and exit."
 type: template
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's November 2026 planning notes, working templates"
 related: [standards-operating-principles]
 ---
 
 # Partner responsibilities
 
-An introduction or a past project together isn't an agreement for future work. This sheet is filled in before a shared engagement starts, and the client sees it.
+Fill this in before a shared engagement starts. The client sees it. An introduction or past project together isn't an agreement for future work.
 
 **Client:** ____ **neon1 LLC** and **partner:** ____
 

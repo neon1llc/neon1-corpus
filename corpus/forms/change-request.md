@@ -4,18 +4,18 @@ title: Change request
 summary: "How a change to agreed scope is written down, priced, and approved before any work happens."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's November 2026 planning notes, working templates"
 related: [templates-proposal, standards-discovery-and-delivery]
 ---
 
 # Change request
 
-No extra work or spending starts until this is approved in writing. The original scope stays readable. This sits beside it.
+No extra work or spending starts until this is approved in writing. The original scope stays unchanged.
 
 **Project:** ____ **Request number:** ____ **Date:** ____
 

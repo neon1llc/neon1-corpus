@@ -4,19 +4,17 @@ title: Measurement
 summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 15
 origin: "neon1's internal handbook, measurement handbook (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
 ---
 
 # Measurement
-
-Measurement shows whether the work was worth it: a baseline in discovery, a check at handover, and a review after real use. I keep the list short, define every number exactly, and say what a small sample can't prove.
 
 ## Terms
 
@@ -50,7 +48,7 @@ Each agreed measure gets a [metric record](../forms/metric-record.md): the decis
 | Independent success | People finishing without help ÷ people trying | With a few people, it's qualitative evidence |
 | Benefit realized | Observed benefit ÷ estimated benefit, same period | Keep time, money, and quality apart unless the conversion is written down |
 
-Satisfaction scores such as CSAT and NPS have their place, but with a handful of clients, a direct conversation about what worked usually tells us more.
+With a handful of clients, a conversation about what worked usually beats a satisfaction score such as CSAT or NPS.
 
 ## Small samples
 
@@ -62,11 +60,11 @@ Satisfaction scores such as CSAT and NPS have their place, but with a handful of
 
 ## What a report from me looks like
 
-One page when possible: the result you wanted, period and sample size, baseline, what we see now, cost and effort, failures, what the numbers can't establish, and the next decision, answering whether the change is worth keeping. Quotes only with permission.
+One page when possible: the result you wanted, period and sample size, baseline, what we see now, cost and effort, failures, what the numbers can't establish, and whether the change is worth keeping. Quotes only with permission.
 
 ## Software and website measures
 
-For software I track how often changes ship, how long they take, how often they fail, how fast a failed change is fixed, and how often unplanned fixes are needed: [DORA's five software delivery performance metrics](https://dora.dev/guides/dora-metrics/). For websites I check Google's [Core Web Vitals](https://web.dev/articles/vitals) for loading, responsiveness, and visual stability, and test accessibility on the real pages against the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three conformance levels. An automated accessibility score is a starting point, not a certificate.
+For software I track how often changes ship, how long they take, how often they fail, how fast a failed change is fixed, and how often unplanned fixes are needed: [DORA's five software delivery performance metrics](https://dora.dev/guides/dora-metrics/). For websites I check Google's [Core Web Vitals](https://web.dev/articles/vitals) for loading, responsiveness, and visual stability, and test accessibility on the real pages against [WCAG 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels). An automated score is a starting point, not a certificate.
 
 ## Sources
 

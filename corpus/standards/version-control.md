@@ -4,9 +4,9 @@ title: Version control
 summary: "How neon1 uses git: branch names, commit messages, merges, protected branches, and the history rules, and which safeguards production and client data require."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-08
-edition: "2.4"
+edition: "2.5"
 audience: "Developers"
 order: 5
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-development, standards-versioning, standards-testing-and-rev
 
 # Version control
 
-Every neon1 project lives in git, on GitHub, under these rules. A repository's own `VCS-ETIQUETTE.md` can add stricter rules, not looser ones. Rules tighten once a repository deploys to production or holds client data, whatever its version.
+Every neon1 project lives in git, on GitHub. A repository's own `VCS-ETIQUETTE.md` can add stricter rules, not looser ones. Rules tighten once a repository deploys to production or holds client data, whatever its version.
 
 ## Before you commit
 
@@ -27,7 +27,7 @@ Every neon1 project lives in git, on GitHub, under these rules. A repository's o
 
 ## Branch names
 
-Name a branch for the kind of change and what it does, in lowercase hyphenated words:
+Name a branch for the kind of change, in lowercase hyphenated words:
 
 | Prefix | For | Example |
 |---|---|---|
@@ -44,7 +44,7 @@ Two branches live on. `main` is what's in production. `dev`, in a repository wit
 
 ## Commit messages
 
-neon1 follows [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/):
+Messages follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/):
 
 ```
 type(scope): plain summary in lowercase with no period
@@ -58,11 +58,11 @@ Optional footers, such as BREAKING CHANGE: what breaks and how to move.
 - **Scope** is optional and names the area, such as `fix(settings)` or `feat(templates)`.
 - **A breaking change** gets a `!` after the type or scope, such as `feat(api)!:`, and a `BREAKING CHANGE:` footer.
 - The summary is an instruction: `fix(contact): correct weekday hours`, not `fixed stuff`.
-- Messages follow the [writing standard](writing.md), for someone reading the history a year later.
+- Write for someone reading the history a year later, per the [writing standard](writing.md).
 
 ## Commit boundaries
 
-Commit at a point that stands on its own: a finished workflow, a narrow fix, a complete document, with its source, tests, and documentation together. Every commit on main passes the checks.
+Commit at a point that stands on its own, with its source, tests, and documentation together. Every commit on main passes the checks.
 
 ## Authorship
 
@@ -83,7 +83,7 @@ Commits carry the name and email of the person responsible, who has read and sta
 
 ## Before anything is live
 
-A repository with nothing in production and no client data moves fast, with habits rather than gates:
+A repository with nothing in production and no client data moves fast, on habits rather than gates:
 
 - Named branches for anything bigger than a typo, merged with `--no-ff`.
 - Typos and broken links may go straight to main.
@@ -102,7 +102,7 @@ Production and client data decide when safeguards apply, not the version number.
 
 ### How this works today
 
-neon1 has one maintainer today, and the controls fit that. On the repositories that deploy to production (the website, 1NEON, the chat, and the AWS infrastructure), main has two rulesets:
+neon1 has one maintainer today. On the repositories that deploy to production (the website, 1NEON, the chat, and the AWS infrastructure), main has two rulesets:
 
 - **No force push or deletion**, with no bypass for anyone, including me.
 - **Required checks** must pass before a change lands on main. As sole maintainer and admin, I can bypass this one, and GitHub warns whenever I do.

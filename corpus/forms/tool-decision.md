@@ -4,11 +4,11 @@ title: Tool and architecture decision
 summary: "A short record of a technology choice: the problem, the options, the evidence, the cost, and the way out."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's internal handbook, tool and architecture decision form"
 related: [standards-technology-decisions]
 ---
@@ -23,7 +23,7 @@ Short for ordinary choices, longer when data, dependence, or risk call for it.
 
 ## Hard requirements
 
-A candidate that fails any of these is out, however well it scores elsewhere.
+A candidate that fails any of these is out.
 
 - [ ] Permissions and access fit the data
 - [ ] Data can be exported in a usable form

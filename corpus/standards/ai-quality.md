@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -28,13 +28,13 @@ I use the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-m
 
 Before choosing a model we write down the user, task, approved data, output, allowed actions, forbidden decisions, reviewer, and fallback, and whether the output is a draft, a search aid, a recommendation, or an action, since each needs different checks.
 
-A document-search assistant can find an invoice or policy passage without being fit for accounting or legal conclusions, and the interface should make that plain. We also set a spending limit, a response time, and acceptable review effort.
+A document-search assistant can find an invoice or policy passage without being fit for accounting or legal conclusions, and the interface says so. We also set a spending limit, a response time, and acceptable review effort.
 
 ## A test set that looks like the real work
 
 We collect permitted examples and write expected answers before tuning: ordinary and vague requests, missing information, outdated documents, conflicting sources, odd formats, and cases to refuse or send to a person. Building examples stay separate from final-check examples.
 
-Twenty or thirty cases find early problems but don't support a broad reliability claim.
+Twenty or thirty cases find early problems but can't support a broad reliability claim.
 
 ## Testing the whole task
 
@@ -63,7 +63,7 @@ Release is blocked by a serious unauthorized disclosure or action in testing, un
 
 ## After launch
 
-We track task success, corrections, review minutes, cost per success, and speed, and look for groups it might be failing. Any change to the model, prompt, documents, or permissions reruns the test set; a provider's benchmark says nothing about your documents.
+We track task success, corrections, review minutes, cost per success, and speed, and look for groups it might be failing. Any change to the model, prompt, documents, or permissions reruns the test set. A provider's benchmark says nothing about your documents.
 
 ## What I'll say publicly
 

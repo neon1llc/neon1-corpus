@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-10
-edition: "1.4"
+edition: "1.5"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -16,11 +16,11 @@ origin: "neon1-1NEON apps/web/src/pages and components/Help.tsx"
 
 # 1NEON guide: every page, what it shows, and who can do what
 
-Access levels build on each other. **Viewers** read, comment, add requests, and approve when they're a project's decision maker. **Editors** also add and change work. **Admins** also invite people, change access and settings, and delete projects, files, and others' comments, after a recent "confirm it's you". neon1 acts as an admin everywhere but never approves for a client.
+Access levels build up. **Viewers** read, comment, add requests, and approve when they're a project's decision maker. **Editors** also add and change work. **Admins** also invite people, change access and settings, and delete projects, files, and others' comments, after a recent "confirm it's you". neon1 acts as an admin everywhere but never approves for a client.
 
 ## Home
 
-`/1NEON/o/{org}/workspace`. The starting point: what needs you, and what changed lately.
+`/1NEON/o/{org}/workspace`.
 
 - **Needs you** lists what's waiting on you, most pressing first, each with its action: **See and pay** (an invoice due, overdue, or whose bank payment failed, but not one clearing), **Compare options**, **Review and accept** (a finished handover), **Upload file**, or **Open**. neon1 sees invoice drafts with **Check it**. Empty, it says "You're all caught up".
 - **Coming up** shows three weeks as a strip of days marked with due dates, milestones, and targets, then the next six weeks listed by Overdue, This week, Next week, and Later.
@@ -94,7 +94,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Insights
 
-`/1NEON/o/{org}/insights`. Charts from the organization's own data: open and overdue work, the on-time rate, days to a decision, measures at target, items finished per week for the last eight weeks, projects by layer, and health. Work counts as finished on the day it was marked done. The page explains how each number is counted.
+`/1NEON/o/{org}/insights`. Charts from the organization's data: open and overdue work, the on-time rate, days to a decision, measures at target, items finished per week for eight weeks, projects by layer, and health. Work counts as finished the day it was marked done.
 
 ## Settings
 
@@ -110,4 +110,4 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Public pages
 
-The sign-in screen (`/1NEON/`), FAQs, the service agreement, the sample project, the guided walkthrough, the interactive demo, and the policies need no account. Neo on the sign-in screen is the public Neo, which only knows neon1's public pages.
+The sign-in screen (`/1NEON/`), FAQs, service agreement, sample project, guided walkthrough, interactive demo, and policies need no account. Neo on the sign-in screen is the public Neo, which only knows neon1's public pages.

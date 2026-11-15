@@ -4,11 +4,11 @@ title: Care plan
 summary: "The monthly agreement for ongoing care after a project: what's looked after, what's included each month, how fast I respond, what it costs, and how it ends."
 type: template
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-15
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 related: [templates-services-agreement, templates-proposal, forms-service-and-recovery-profile, forms-incident-and-restore, standards-reliability-and-recovery]
 ---
 
@@ -17,7 +17,7 @@ related: [templates-services-agreement, templates-proposal, forms-service-and-re
 > [!warning] An example, not legal advice
 > This shows the terms ongoing care runs under. Your own counsel should review it before you sign, and the signed copy is the one that counts.
 
-Care is optional. After a project is handed over, you can run it yourself with its documentation, or I can keep looking after it for a monthly fee. This plan works under our [services agreement](services-agreement.md), and where the two disagree, the services agreement wins.
+Care is optional. After handover, you can run the project yourself with its documentation, or I can keep looking after it for a monthly fee. This plan works under our [services agreement](services-agreement.md), which wins where the two disagree.
 
 **Client:** ____ **Plan starts:** ____
 
@@ -32,7 +32,7 @@ Each system below has a [service and recovery profile](../forms/service-and-reco
 | ____ | ____ | ____ |
 | ____ | ____ | ____ |
 
-Anything not listed here isn't covered, though I'll still tell you if I notice a problem with it.
+Anything not listed isn't covered, though I'll tell you if I notice a problem with it.
 
 ## 2. What's included each month
 

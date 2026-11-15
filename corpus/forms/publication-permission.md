@@ -4,18 +4,18 @@ title: Publication permission record
 summary: "Your specific permission before anything about your project is published."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's internal handbook, evidence and publication form and the November 2026 planning notes, working templates"
 related: [standards-outreach]
 ---
 
 # Publication permission record
 
-Knowing that I worked on your project isn't permission to publish it. Permission for a name, a quote, a screenshot, a logo, and a number can each be different, so each gets its own box.
+Working on your project isn't permission to publish it. A name, quote, screenshot, logo, and number each need their own permission, so each gets its own box.
 
 **Project:** ____ **Date:** ____
 

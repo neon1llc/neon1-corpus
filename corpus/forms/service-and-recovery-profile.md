@@ -4,18 +4,18 @@ title: Service and recovery profile
 summary: "What a running service must do, how it's measured, who supports it, and how it comes back after a failure."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's internal handbook, service and recovery profile form"
 related: [standards-reliability-and-recovery, forms-incident-and-restore]
 ---
 
 # Service and recovery profile
 
-A target without a believable design, an operator, and a tested restore is only a hope. It isn't sold as a capability.
+A target without a believable design, an operator, and a tested restore is only a hope, and isn't sold as a capability.
 
 **Service:** ____ **Version:** ____ **Client:** ____
 
