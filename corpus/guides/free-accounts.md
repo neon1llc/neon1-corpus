@@ -1,7 +1,7 @@
 ---
 id: guides-free-accounts
 title: "Free 1NEON accounts"
-summary: "Start without a call: make a free 1NEON account, write down what your project needs, and I'll reply with what I'd do."
+summary: "Start without a call: make a free 1NEON account, write down what your project needs, then ask for an assessment or a call from your account."
 type: guide
 status: adopted
 updated: 2026-11-15
@@ -15,7 +15,7 @@ related: [product-1neon, faq-working-with-neon1, policy-terms, policy-privacy]
 
 # Free 1NEON accounts
 
-You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, before we talk. Write down what your project needs, and I'll reply with what I'd do. No call, no card, no password.
+You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, before we talk. Write down what your project needs, then ask for an assessment or a call from your account. No card, no password.
 
 Once you're in, **Contact neon1** in the menu has every way to reach me: email, call or text, or a booked call.
 
@@ -25,7 +25,7 @@ Once you're in, **Contact neon1** in the menu has every way to reach me: email, 
 
 1. **Sign up** with your email, your name, and which describes you best (with your organization's name, unless you're signing up for yourself). Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
 2. **Add a project** and list what it needs, in your own words.
-3. **I read it** and reply in the portal or by email with what I'd do and what I'd ask first.
+3. **Ask for an assessment or a call** from **Next step** on Home. An assessment is an approach and the first questions to settle.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.
 
 I work remotely with anyone in the US when the work allows, and on site within about 30 miles of Queens, NY.
@@ -43,7 +43,7 @@ I work remotely with anyone in the US when the work allows, and on site within a
 
 ## How long it lasts
 
-As long as you're using it. After 7 and 14 days without changes, I check in by email. At 21 days you get a final notice, and at 30 days the account and what's in it are deleted. You can sign up again any time.
+As long as you're using it. After 7 and 14 days without changes, you get a reminder by email. At 21 days you get a final notice, and at 30 days the account and what's in it are deleted. You can sign up again any time.
 
 ## The fine print
 

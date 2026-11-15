@@ -7,7 +7,7 @@ status: adopted
 updated: 2026-11-15
 created: 2026-11-11
 reviewed: 2026-11-11
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Clients, partners, and anyone confirming that neon1 LLC is a registered, active business"
@@ -70,10 +70,6 @@ Search results aren't a certified document. When a bank, agency, or client needs
 - **Copies of filed documents**, plain or certified.
 
 I can request either one for you. Ask through [contact](contact.md) and say who needs it.
-
-## How this page is kept true
-
-I compare every field with the live record after each state filing and at least every six months. The facts-checked date at the top is the last check.
 
 ## Sources
 

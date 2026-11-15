@@ -10,6 +10,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Free accounts: sign-up asks, optionally, how you found neon1, and Home's **Next step** asks for an assessment or a call. The website's contact form asks how you found neon1 too. The privacy and data policy (edition 3.3) covers all three; the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describes them.
 - Free accounts: sign-up asks which describes you best (an organization's name for all but individuals), takes a city and state separately, and checks each field (the email's domain takes mail and isn't a temporary mailbox, a website answers, a city is a real place). The privacy and data policy (edition 3.3) says what's checked and that nothing from the checks is stored, and covers the same email check on the contact form; the free-accounts guide (edition 1.1) and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describe it.
 - Cookies and browser storage (edition 1.6): adds `1neon.signup` and Home's **Not now** for an organization's details.
+- Cut text that describes the site or its documents instead of helping the reader: post cadence, document and PDF counts, and notes on how a page is kept.
+- Free-account copy: write down your needs, then ask for an assessment or a call from your account. Reminders the portal sends are no longer worded as mine.
 
 ## v0.45.1 - 2026-11-15
 

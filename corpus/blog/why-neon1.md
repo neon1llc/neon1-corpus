@@ -11,7 +11,7 @@ topic: whats-and-whys
 status: adopted
 updated: 2026-11-15
 created: 2026-11-15
-edition: "1.0"
+edition: "1.1"
 consumers: [blog, ai]
 pdf: false
 audience: "Small business owners deciding whether neon1 is worth a conversation"
@@ -36,7 +36,7 @@ This blog will carry about one post a week: answers to questions small offices a
 
 The hardest step has always been the first one. An owner who runs the shop all day doesn't have 15 free minutes at two in the afternoon. They have them at ten at night, after closing, when they finally sit down and think about what's been bothering them.
 
-So now anyone can open a [free 1NEON account](../guides/free-accounts.md). 1NEON is the portal where I run every client project. You write down what your projects need, in your own words, whenever you have the time. Sign-up asks where your business is based or for a link to it, so I can see it the way your customers do. I read what you wrote and reply with what I'd do. When we talk, the call starts at the answer instead of the question.
+So now anyone can open a [free 1NEON account](../guides/free-accounts.md). 1NEON is the portal where I run every client project. You write down what your projects need, in your own words, whenever you have the time. Sign-up asks where your business is based or for a link to it, so I can see it the way your customers do. From the account you can ask for an assessment or a call. When we talk, the call starts at the answer instead of the question.
 
 A free account holds up to 3 projects. Inviting your team, approvals, and billing open once we agree to work together. An account left unchanged for 30 days is removed after a few reminders, and you can start again anytime. To see the portal first, the [guided walkthrough](https://neon1.tech/1NEON/live) plays a made-up project in about three minutes, with no account.
 

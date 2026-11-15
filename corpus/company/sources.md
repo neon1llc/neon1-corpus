@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone who wants to go past neon1's documents to where the practice comes from"
@@ -15,8 +15,6 @@ related: [standards-writing, standards-documentation, standards-operating-princi
 ---
 
 # Where I learn from
-
-Each document in this Knowledge Center also names its own sources. Where I use only part of one, or do something differently, the document that cites it says so.
 
 ## Writing and documentation
 
