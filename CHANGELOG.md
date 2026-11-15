@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- Blog post "Why I started neon1, and a free way to start with me": why neon1 exists, how a project runs, and free 1NEON accounts. Publish it in the release that opens sign-up.
+
 ### Changed
 - FAQ: "Can I start without a call?" (Working with neon1, edition 1.10) and "Can I start without an invite?" (1NEON help) point to the free 1NEON account, and the 1NEON guide uses the sign-in screen's new "New here? Start a free account" label. Release this once 1NEON's sign-up opens in production.
 - New guide, [Free 1NEON accounts](corpus/guides/free-accounts.md) (`guides-free-accounts`, neon1.tech/knowledge/guides/free-accounts/): how to start without a call, what a free account holds next to a client account, and how long it lasts. Both FAQ entries link to it instead of repeating its details.
