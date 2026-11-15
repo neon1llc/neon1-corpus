@@ -76,4 +76,4 @@ N1 Supply LLC is a separate company for product experiments. It shares an owner 
 
 ## Signature lines
 
-*1 is glad to be of service* and *1withtechnology*. They're part of neon1's personality, not a description of its services. See [the names](names.md).
+*1 is glad to be of service*. It's part of neon1's personality, not a description of its services. See [the names](names.md).
