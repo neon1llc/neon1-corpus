@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-15
 created: 2026-11-06
-edition: "3.1"
+edition: "3.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -16,7 +16,7 @@ related: [policy-cookies, policy-ai-use, policy-terms, policy-service-agreement,
 
 # Privacy and data policy
 
-*Last updated November 15, 2026.* This edition adds prospect accounts: what I collect when you make your own 1NEON account, the bot check on the sign-up form (Cloudflare Turnstile), the check-in emails, and that a prospect account is deleted 30 days after its last change. Nothing changes for clients.
+*Last updated November 15, 2026.* This edition adds free accounts: what I collect when you make your own 1NEON account, the bot check on the sign-up form (Cloudflare Turnstile), the check-in emails, and that a free account is deleted 30 days after its last change. Nothing changes for clients.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant on the website), and the 1NEON client portal at neon1.tech/1NEON, and does technology work for clients. This policy covers all of them. The [cookie and browser storage notice](https://neon1.tech/1NEON/cookies) is part of it and lists every cookie and saved item in detail. How the systems themselves are built is described in [How neon1 is built](https://neon1.tech/knowledge/company/architecture/).
 
@@ -24,7 +24,7 @@ neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant o
 
 - The website has no analytics, ads, or trackers, and sets no cookies.
 - I collect only what's needed to answer you, run your projects, and get paid, and I never sell, rent, or advertise with it.
-- Clients' projects and files are never deleted on a schedule. They're deleted when your organization asks. A prospect account you make yourself is deleted 30 days after its last change, unless we're working together.
+- Clients' projects and files are never deleted on a schedule. They're deleted when your organization asks. A free account you make yourself is deleted 30 days after its last change, unless we're working together.
 - Tests and development never use your information. They run on made-up data.
 - Payment card and bank details go to Stripe, not to me.
 - You can download your organization's data at any time, and ask me to correct or delete it.
@@ -58,7 +58,7 @@ Please don't type anything sensitive into Neo.
 
 ### The 1NEON portal
 
-The portal is available to people invited by me or by an administrator of their organization, and to prospects who make their own account (below). It holds:
+The portal is available to people invited by me or by an administrator of their organization, and to anyone who makes their own free account (below). It holds:
 
 - **Account details:** your email address, and optionally your name, job title, phone number, and profile photo.
 - **Sign-in data:** your sign-in methods (an emailed code or a passkey, with an authenticator app as an optional second step; there's no password) and security events, such as sign-in times, the IP address and browser used, and when a sign-in method was added or removed. Passkeys and email codes are handled by Amazon Cognito.
@@ -74,7 +74,7 @@ The portal is available to people invited by me or by an administrator of their 
 
 Please don't put passwords, keys, or other secrets in the portal.
 
-### Prospect accounts
+### Free accounts
 
 You can make your own 1NEON account from neon1.tech to describe your projects' needs before we work together. When you sign up, I collect:
 
@@ -83,7 +83,7 @@ You can make your own 1NEON account from neon1.tech to describe your projects' n
 - **A one-way fingerprint of your IP address,** used to limit how many sign-ups come from one place, and kept with your account's sign-up record. The address itself isn't stored.
 - **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account.
 
-Only you and I see a prospect account. I use it to understand your needs, advise you, suggest options, and offer to talk. I don't add you to a mailing list. The portal emails you your sign-in codes, and, if nothing in the account changes, a short check-in after 7 and 14 days and a final notice after 21. If you don't confirm your email within a day of signing up, the unfinished sign-up is removed.
+Only you and I see a free account. I use it to understand your needs, advise you, suggest options, and offer to talk. I don't add you to a mailing list. The portal emails you your sign-in codes, and, if nothing in the account changes, a short check-in after 7 and 14 days and a final notice after 21. If you don't confirm your email within a day of signing up, the unfinished sign-up is removed.
 
 
 ### Work on your own systems
@@ -148,7 +148,7 @@ Clients' projects and files are never deleted on a schedule. The table lists eve
 | Portal server logs (request time, route, IP address, status, and errors, never what you sent) | 90 days |
 | Neo's logs (timing, length, and errors, never the text) | 14 days |
 | Contact form counters | A day after their first count |
-| Prospect accounts (everything in them, including files) | Deleted 30 days after the last change anyone in the account made, unless we're working together or I've told you I'm keeping it. You can ask me to delete one sooner |
+| Free accounts (everything in them, including files) | Deleted 30 days after the last change anyone in the account made, unless we're working together or I've told you I'm keeping it. You can ask me to delete one sooner |
 | An unconfirmed sign-up (what you typed, and the sign-in account it started) | One day |
 | Sign-up counters (one-way fingerprints of addresses and emails) | Two days |
 | Neo's question fingerprints | Ten minutes |
