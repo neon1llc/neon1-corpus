@@ -56,7 +56,11 @@ const UNCONFIRMED = { role: "role not yet confirmed", when: "year not yet confir
 const shown = (d, key) => (confirmed(d[key]) ? d[key] : UNCONFIRMED[key])
 
 // A case study's kind, role, and years in one line, such as "Partner engagement: as neon1, with Xenoss, 2026"
-const caseLine = (d) => `${KINDS[d.kind] ?? KINDS.founder}: ${shown(d, "role")}, ${shown(d, "when")}`
+// A neon1 engagement's plain "As neon1" role is left to the label, which already says it
+const caseLine = (d) => {
+  const label = KINDS[d.kind] ?? KINDS.founder
+  return d.kind === "neon1" && d.role === "As neon1" ? `${label}, ${shown(d, "when")}` : `${label}: ${shown(d, "role")}, ${shown(d, "when")}`
+}
 
 // What a type keeps in front matter, written out as Markdown so the .md file reads whole on its own
 function lead(d) {
