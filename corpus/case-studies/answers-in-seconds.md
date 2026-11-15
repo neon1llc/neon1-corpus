@@ -58,7 +58,7 @@ These results describe that test set, not a guarantee: 8% of answers weren't ful
 
 In the client's words:
 
-> "For a while now we've been working on getting the whole firm onto one cloud: our files, our client documents, and the software we run on. We also wanted to start using AI, but carefully, and on our terms. The knowledge base moved us forward on both. Thanks, Pradeep."
+> "For a while now we've been working on getting the whole firm onto one cloud: our files, our client documents, and the software we run on. We also wanted to start using AI, but carefully, and on our terms. The knowledge base moved us forward on both."
 >
 > Boris M., Boris M Tax
 

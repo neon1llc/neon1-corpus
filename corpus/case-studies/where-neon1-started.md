@@ -29,11 +29,11 @@ origin: "neon1-site src/app/public/index.html#case-community"
 
 ## The problem
 
-A local grade school needed a STEM edtech setup teachers would use, on a budget with no room for mistakes. I'd long wanted to do this work in my community.
+A local grade school, P.S. 33 Edward M. Funk in Queens, needed a STEM edtech setup teachers would use, on a budget with no room for mistakes. I'd long wanted to do this work in my community.
 
 ## The work
 
-I was working there after school as a counselor, teacher's aide, and tech assistant, at a school where I'd volunteered in high school. On my own time, I compared options, budgeted the system, and set it up for the classrooms, then invited teachers and parents to free sessions on staying safe online.
+I'd volunteered there in high school, and in 2025 I was working there after school as a counselor, teacher's aide, and tech assistant. On my own time, I compared options, budgeted the system, and set it up for the classrooms, then invited teachers and parents to free sessions on staying safe online.
 
 ## The results
 
