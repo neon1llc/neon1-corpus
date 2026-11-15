@@ -268,7 +268,7 @@ flowchart LR
 
 | Part | What it keeps | Why | How long |
 |---|---|---|---|
-| **Website** | No accounts, cookies, analytics, or trackers. Contact form messages are emailed to hello@neon1.tech and not stored by the site. | A visitor shouldn't be tracked to read a page. | CloudFront handles each request's IP address and browser details to deliver the page, and AWS may keep them briefly for security and operations. |
+| **Website** | No accounts, cookies, analytics, or trackers. Contact form messages are emailed to hello@neon1.tech and not stored by the site. The form's limits count each sender per hour by a one-way code of their address, in 1NEON's table, so no address is stored. | A visitor shouldn't be tracked to read a page. | CloudFront handles each request's IP address and browser details to deliver the page, and AWS may keep them briefly for security and operations. The contact form's hourly counters don't expire yet. |
 | **Neo** | No question or answer text. A one-way fingerprint of each question, to notice repeats, and visitor counts by a one-way code, for the question limits. Logs hold timing, length, and errors. Bedrock's own logging is off. | Enough to keep Neo fair and cheap, and to debug it, without keeping what people ask. | Fingerprints ten minutes. Logs two weeks. |
 | **1NEON projects** | Accounts, projects, items, decisions, comments, and activity in DynamoDB, and uploaded files in the documents bucket, each organization's kept separate. | They're the record of the work, for both sides, during and after an engagement. | Never deleted on a schedule, and deleted when an organization asks. Database backups roll off after 35 days, and earlier copies of replaced or deleted files after 90. |
 | **1NEON records** | A copy of every signature, issued invoice, and payment, under S3 Object Lock in governance mode. | Tax and contract law expect these kept. | Write-protected for seven years. |
@@ -278,7 +278,7 @@ flowchart LR
 | **Infrastructure** | Terraform state, in a versioned S3 bucket. No client data. | So each stack knows what it manages. | Earlier versions are kept for recovery. |
 | **Corpus** | Public documents only. Its linter fails on anything that looks private. | Everything in it is published. | Kept in Git history. |
 
-The [privacy policy](../policies/privacy.md) is the full statement of what's collected and how long it's kept, and it wins if anything here differs.
+The [privacy and data policy](../policies/privacy.md) is the full statement of what's collected and how long it's kept, and it wins if anything here differs.
 
 ## How a change ships
 
