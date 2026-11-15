@@ -7,7 +7,7 @@ status: adopted
 client: dermatology practice
 area: workflows
 kind: partner
-role: "As neon1, subcontracted by Xenoss"
+role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-15
 created: 2026-11-06
@@ -21,7 +21,7 @@ stat: "· 24 → 8 min staff time"
 short_problem: "Intake ran through one inbox, with staff chasing and retyping documents."
 short_work: "An AWS portal where patients upload once and staff see what's complete."
 short_results: "Compared four weeks before and after."
-short_after: "Maintained with Xenoss, tuned as the practice grows."
+short_after: "I maintain it and tune it as the practice grows."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
 

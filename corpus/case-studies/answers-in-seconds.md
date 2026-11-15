@@ -7,7 +7,7 @@ status: adopted
 client: accounting firm
 area: "cloud & AI"
 kind: partner
-role: "As neon1, subcontracted by Xenoss"
+role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-15
 created: 2026-11-06

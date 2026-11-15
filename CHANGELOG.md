@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- The two partner cases read "As neon1, as a subcontractor" on the home page cards and in the case lead, with no partner name there. The partner is still named, with a link, in the case itself and in the capability statement.
+
 ### Fixed
 - The first client case is fully anonymous: the case calls the client a small local business, and nothing in it, the capability statement, or the services page names the real industry or its equipment.
 
