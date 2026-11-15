@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.5"
+edition: "1.6"
 audience: "Developers"
 order: 9
 consumers: [ai]
@@ -17,7 +17,7 @@ related: [standards-writing, standards-development, standards-versioning]
 
 # Documentation
 
-Documentation lets someone use, run, or change a project without asking its author. It lives next to the code and changes with it.
+Documentation lets someone use, run, or change a project without asking its author.
 
 ## Every project has
 
@@ -53,7 +53,7 @@ Prerequisites first, then commands in order, each with what you should see and w
 
 - Docs change in the same commit as the behavior they describe.
 - Run a README's commands before a release.
-- Keep one source for each fact, linked rather than copied. That's why neon1's public words live once, in [neon1-corpus](https://github.com/neon1llc/neon1-corpus).
+- Keep one source for each fact, linked rather than copied.
 
 ## Documents in this Knowledge Center
 
@@ -93,7 +93,7 @@ Dates are never moved, and a typo fix changes neither Updated nor the edition.
 - **Hand over the PDF.** Marked documents print to a dated PDF with the edition in the footer.
 - **Copy word for word.** Documents are shared under CC BY-ND 4.0, credited "© neon1 LLC (neon1.tech)". Blank templates and forms may also be filled in and adapted for your own work.
 
-Sources are named where used and under Sources, per the [writing standard](writing.md). [Where I learn from](../company/sources.md) gathers them.
+[Where I learn from](../company/sources.md) gathers every source.
 
 ## Sources
 

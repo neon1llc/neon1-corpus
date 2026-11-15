@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 11
 origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -22,7 +22,7 @@ Every screen and document first answers what this is, what I can do here, and wh
 
 ## Accessible by default
 
-I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels), the middle of its three levels. I design and check for:
+I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) at [level AA](https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels). I design and check for:
 
 - Semantic headings and landmarks, so screen readers can jump around.
 - Every control is reachable and usable with a keyboard, with a visible focus ring.

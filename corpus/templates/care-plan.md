@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 related: [templates-services-agreement, templates-proposal, forms-service-and-recovery-profile, forms-incident-and-restore, standards-reliability-and-recovery]
 ---
 
@@ -25,7 +25,7 @@ Care is optional. After handover, you can run the project yourself with its docu
 
 ## 1. What's looked after
 
-Each system below has a [service and recovery profile](../forms/service-and-recovery-profile.md) that says what it must do and how it comes back after a failure.
+Each system has a [service and recovery profile](../forms/service-and-recovery-profile.md).
 
 | System | Profile | Accounts it runs in, owned by you |
 |---|---|---|

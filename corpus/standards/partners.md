@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 order: 17
 origin: "neon1's internal handbook, operating principles (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
@@ -18,7 +18,7 @@ related: [templates-partner-responsibilities, standards-operating-principles]
 
 ## Before any shared work
 
-I fill in a [partner responsibilities](../templates/partner-responsibilities.md) sheet and share it with the client. It names who sells, builds, supports, invoices, sees the data, owns the deliverables, and carries insurance, and what happens if the work ends.
+I fill in a [partner responsibilities](../templates/partner-responsibilities.md) sheet and share it with the client.
 
 ## Fees and incentives
 

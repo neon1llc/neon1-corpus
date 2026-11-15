@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -40,7 +40,7 @@ I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud cos
 - A brochure website is usually a static site on managed hosting with versioned source and a documented redeploy.
 - Client workflows use a few clearly owned parts and supported integrations. A modular app or a managed workflow usually beats microservices or Kubernetes at this size.
 - Infrastructure as code is worth it when repeatability and recovery justify the setup.
-- The [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) pillars (operations, security, reliability, performance, cost, sustainability) are a useful lens even when nothing runs on AWS.
+- The [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) pillars are a useful lens even when nothing runs on AWS.
 
 ## Integrations that don't break quietly
 

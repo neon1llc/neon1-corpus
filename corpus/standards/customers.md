@@ -8,15 +8,13 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
 
 # Customers
-
-For every customer, I listen first, say plainly what I can and can't do, keep you in control of what you own, and leave you able to run it.
 
 ## Everyone
 

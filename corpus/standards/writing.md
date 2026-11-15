@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-01
-edition: "1.8"
+edition: "1.9"
 order: 1
 consumers: [ai]
 pdf: true
@@ -15,8 +15,6 @@ related: [standards-development, standards-documentation, standards-code-style]
 ---
 
 # Writing
-
-How I write everything neon1 publishes or ships: documents, proposals, emails, READMEs, changelogs, commits, code comments, and interface text.
 
 ## The core rules
 
@@ -79,8 +77,6 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 
 ## Structure
 
-Readers scan the start of each heading, paragraph, and list item first.
-
 | When the items are | Use |
 |---|---|
 | Parallel and in no order | A bulleted list |
@@ -120,7 +116,7 @@ Readers scan the start of each heading, paragraph, and list item first.
 | Interface text | Help someone act in the moment | Short labels, verbs on buttons, errors that say what happened and how to fix it |
 | Email or message | Get something done | The ask or answer first, context after, one next step |
 
-The guide and reference split follows [Diátaxis](https://diataxis.fr/). The [documentation standard](documentation.md) covers READMEs, changelogs, and decision records, and the [code style standard](code-style.md) covers comments and names.
+The [documentation standard](documentation.md) covers READMEs, changelogs, and decision records, and the [code style standard](code-style.md) covers comments and names.
 
 ## Checking a draft
 
@@ -132,7 +128,7 @@ The guide and reference split follows [Diátaxis](https://diataxis.fr/). The [do
 6. Check names, numbers, dates, links, and code.
 7. Read it aloud. Rewrite any sentence that's hard to say.
 
-Writing that already works stays as it is. Shorter is only better when the meaning survives.
+Writing that already works stays as it is.
 
 ## Sources
 

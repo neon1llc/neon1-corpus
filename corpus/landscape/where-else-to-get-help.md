@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 reviewed: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
@@ -16,7 +16,7 @@ related: [company-charter, services]
 
 # Where else to get help
 
-The main options, how they usually charge, and when each serves you better. Prices change, so check each provider.
+Prices change, so check each provider.
 
 | Option | Best for | Usually charges | Better than neon1 when |
 |---|---|---|---|
@@ -38,7 +38,7 @@ The main options, how they usually charge, and when each serves you better. Pric
 
 ## Where neon1 fits
 
-Owner-run businesses, small practices, and households that want their tools working together, and to understand and own the result, documented at handover. I work by appointment with at most two clients at a time, so neon1 isn't the choice for 24/7 coverage, a large team, formal assurance, or regulated professional judgment. If you're not sure, ask, and I'll point you elsewhere when someone fits better.
+Owner-run businesses, small practices, and households that want their tools working together, and to understand and own the result, documented at handover. neon1 isn't the choice for 24/7 coverage, a large team, formal assurance, or regulated professional judgment. If you're not sure, ask, and I'll point you elsewhere when someone fits better.
 
 ## Sources
 

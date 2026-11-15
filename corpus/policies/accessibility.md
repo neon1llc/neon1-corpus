@@ -4,9 +4,9 @@ title: Accessibility statement
 summary: "neon1.tech aims for WCAG 2.2 AA. What's in place, what isn't yet, and how to report a barrier."
 type: policy
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/accessibility/"
@@ -15,7 +15,7 @@ related: [standards-design-and-accessibility, policy-security]
 
 # Accessibility statement
 
-*Last updated November 9, 2026.*
+*Last updated November 15, 2026.*
 
 I want everyone to be able to use neon1.tech, the 1NEON portal, and the documents in the Knowledge Center, including people who use a screen reader, a keyboard, magnification, voice control, or reduced motion.
 
@@ -33,7 +33,7 @@ neon1.tech aims to meet the [Web Content Accessibility Guidelines (WCAG) 2.2](ht
 
 ## Known limitations
 
-- The white rabbit scene is a 3D animation. It has keyboard controls and a way back that needs no gesture, but it can't be described to a screen reader. Nothing important is only available there.
+- The white rabbit scene is a 3D animation. It has keyboard controls and a way back that needs no gesture, but it can't be described to a screen reader.
 - Contrast over the animated rain and the full keyboard path haven't been formally tested against every WCAG criterion yet.
 - Third-party services linked from the site, such as Calendly for booking a call, have their own accessibility. If one doesn't work for you, email or call, and I'll book the call for you.
 

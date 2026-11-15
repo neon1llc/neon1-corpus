@@ -4,9 +4,9 @@ title: How I use AI
 summary: "Where neon1 uses AI tools in its own work, where a person stays responsible, and how your information is kept out of them."
 type: policy
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/ai-use/"
@@ -15,9 +15,9 @@ related: [standards-ai-quality, standards-development, standards-security-and-da
 
 # How I use AI
 
-*Last updated November 9, 2026.*
+*Last updated November 15, 2026.*
 
-I use AI tools in my own work, mainly for research and review. This page says where I use them, where I don't, and what stays my responsibility.
+I use AI tools in my own work, mainly for research and review.
 
 ## Where I use it
 

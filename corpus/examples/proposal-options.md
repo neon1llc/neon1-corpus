@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "2.5"
+edition: "2.6"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -73,7 +73,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 ### A. Quick fix
 
-An order form that customers fill in themselves, feeding one order list. It doesn't touch orders that still arrive by email, voicemail, or Instagram.
+An order form that customers fill in themselves, feeding one order list.
 
 **Includes**
 
@@ -93,7 +93,7 @@ An order form that customers fill in themselves, feeding one order list. It does
 
 ### B. Solid setup (recommended)
 
-Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet made from that list. Form orders arrive as typed by the customer. Email and voicemail orders are read in automatically and checked by a person. Phone calls and Instagram messages are still entered by hand, once, in a 20-second staff form. Nothing is copied into a spreadsheet after close.
+Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet made from that list.
 
 **Includes**
 
@@ -142,7 +142,7 @@ Everything in B, plus an online order page where customers choose a pickup time,
 
 ## How the hours add up
 
-Estimated task by task, for one experienced person. Each column adds up to the hours I expect. The range allows for what can't be known until the work starts, such as how your phone service formats its transcripts or how Square names its fields.
+Estimated task by task, for one experienced person. The range allows for what can't be known until the work starts, such as how your phone service formats its transcripts or how Square names its fields.
 
 | Work | A | B | C |
 |---|---|---|---|
@@ -206,7 +206,6 @@ The work is accepted when these checks pass in front of you:
 
 ## Comments and agreement
 
-- This proposal is valid for 30 days from the date at the top.
 - It works under our [service agreement](../policies/service-agreement.md), signed once before any paid work.
 - Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
 - For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.

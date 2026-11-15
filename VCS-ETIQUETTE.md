@@ -6,7 +6,7 @@ How changes get into neon1-corpus. neon1's [version control](corpus/standards/ve
 
 ### Branch names
 
-Name a branch for the kind of change, in lowercase hyphenated words:
+Lowercase, hyphenated, prefixed for the kind of change:
 
 | Prefix | For | Example |
 |---|---|---|
@@ -30,7 +30,7 @@ feat(tools): export a bundle for the knowledge area
 docs: add version control etiquette
 ```
 
-Types are `feat`, `fix`, `docs`, `refactor`, `chore` and `test`. A new document is a `feat`, and a corrected fact is a `fix`. Write the subject as a plain lowercase instruction with no period. Add a body when the reason isn't obvious from the diff.
+Types are `feat`, `fix`, `docs`, `refactor`, `chore` and `test`. Write the subject as a plain lowercase instruction with no period. Add a body when the reason isn't obvious from the diff.
 
 ### Commit boundaries
 

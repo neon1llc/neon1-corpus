@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 example_of: forms-release-and-handover
@@ -17,7 +17,7 @@ related: [forms-release-and-handover]
 # Release and handover record, filled in
 
 > [!example] A fictional example
-> Fernwood Physical Therapy, its staff, and every detail below are invented. Prices are left out of public examples. A real proposal states them.
+> Fernwood Physical Therapy, its staff, and every detail below are invented.
 
 **Project:** FPT-01, new patient intake **Release version:** 1.0 **Date:** April 5
 
