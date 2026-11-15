@@ -4,7 +4,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
-## v0.45.2 - 2026-11-15
+## v0.46.0 - 2026-11-15
 
 ### Added
 - Publishing client work (edition 1.0): permission, named or anonymous, quotes, figures, and private details.
