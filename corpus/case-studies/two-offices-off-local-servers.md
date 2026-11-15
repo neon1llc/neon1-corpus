@@ -15,7 +15,7 @@ edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
-order: 3
+order: 4
 stat_key: "2 servers · 2 offices"
 stat: "· no app rewrite"
 short_problem: "The app, database, and files lived on two local servers both offices used."

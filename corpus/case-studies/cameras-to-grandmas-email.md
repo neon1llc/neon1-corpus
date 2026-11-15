@@ -8,14 +8,14 @@ client: "family & friends"
 area: home tech
 kind: founder
 role: "For my own family"
-when: "TBD"
+when: "2025"
 updated: 2026-11-15
 created: 2026-11-06
 edition: "1.4"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
-order: 5
+order: 6
 stat_key: "small jobs welcome"
 stat: "· patience included"
 short_problem: "A house with no cameras, and passwords reused everywhere."

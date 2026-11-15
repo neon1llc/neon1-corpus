@@ -36,8 +36,9 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 
 | Client | Kind | Work | Result |
 |---|---|---|---|
-| Accounting firm | Partner engagement, with Xenoss | [Answers in seconds, with sources](../case-studies/answers-in-seconds.md): an AI assistant over the firm's Microsoft 365 documents | A routine lookup from 2 to 10 minutes to under 30 seconds |
-| Dermatology practice | Partner engagement, with Xenoss | [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md): a serverless patient intake portal | A complete intake in hours instead of days |
+| Accounting firm | Partner engagement, subcontracted by Xenoss | [Answers in seconds, with sources](../case-studies/answers-in-seconds.md): an AI assistant over the firm's Microsoft 365 documents | Median lookup from about 5 minutes to 14 seconds, and recall from 72% to 94% |
+| Dermatology practice | Partner engagement, subcontracted by Xenoss | [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md): a serverless patient intake portal | Intake from 2.6 days to 3.4 hours, and staff time from 24 to 8 minutes each |
+| Dry cleaner | neon1 engagement | [One view of the shop](../case-studies/one-view-of-the-shop.md): POS, garment tags, and cameras in one view, on the floor and remotely | The owner acts on shop problems much sooner than on site alone |
 | Automotive business | neon1 engagement | [Two offices off local servers](../case-studies/two-offices-off-local-servers.md): two offices' servers moved to the cloud | Both offices moved with no application rewrite |
 | Schools, families, and teams | neon1 engagement | [Security for non-security people](../case-studies/security-for-non-security-people.md): security awareness seminars | Sessions fitted to every level, from parents to engineers |
 

@@ -7,7 +7,7 @@ status: adopted
 client: dermatology practice
 area: workflows
 kind: partner
-role: "As neon1"
+role: "As neon1, subcontracted by Xenoss"
 when: "2026"
 updated: 2026-11-15
 created: 2026-11-06
@@ -16,11 +16,11 @@ consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
 order: 2
-stat_key: "days → hours"
-stat: "· to a complete intake"
+stat_key: "2.6 days → 3.4 hours"
+stat: "· 24 → 8 min staff time"
 short_problem: "Intake ran through one inbox, with staff chasing and retyping documents."
 short_work: "An AWS portal where patients upload once and staff see what's complete."
-short_results: "A complete intake went from days to hours."
+short_results: "Compared four weeks before and after."
 short_after: "Maintained with Xenoss, tuned as the practice grows."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
@@ -33,7 +33,7 @@ A new practice and its sister location ran intake through a shared Microsoft 365
 
 ## The work
 
-I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal, with [Xenoss](https://xenoss.io) helping on design and maintenance.
+I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. [Xenoss](https://xenoss.io) held the contract and brought me in as a subcontractor, and helped on design and maintenance.
 
 - CloudFront, WAF, and a private S3 site serve the portal. API Gateway, Cognito, and Python Lambda run the workflow.
 - Each intake has one state in DynamoDB. Documents upload to an encrypted S3 vault, locked until a malware scan passes.
@@ -42,9 +42,14 @@ I mapped the process with staff, separating patient waiting time from staff hand
 
 ## The results
 
-A complete intake went from days of email back and forth to hours, and staff stopped downloading and renaming each document by hand.
+| Measure                                      | Before             | After      |
+|----------------------------------------------|--------------------|------------|
+| Median time to a complete intake             | ~2.6 business days | ~3.4 hours |
+| Staff time per intake                        | ~24 min            | ~8 min     |
+| Finding and opening a document               | ~2 min 18 s        | ~12 s      |
+| Intakes needing a missing-document follow-up | ~34%               | ~10%       |
 
-I'm keeping this page to that result until the detailed measurements behind it are confirmed and the practice has approved publishing them.
+Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved. The portal records when each intake starts and when it's complete, as metrics only, with no patient details; the practice keeps them for its own dashboards and emails, and can turn them off. Where the old inbox left no record, such as staff time per intake before launch, the figure is the staff's own estimate from a short survey.
 
 ## After handover
 

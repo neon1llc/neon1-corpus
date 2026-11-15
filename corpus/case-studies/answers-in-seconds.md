@@ -7,7 +7,7 @@ status: adopted
 client: accounting firm
 area: "cloud & AI"
 kind: partner
-role: "As neon1, designed with Xenoss and handed over to them"
+role: "As neon1, subcontracted by Xenoss"
 when: "2026"
 updated: 2026-11-15
 created: 2026-11-06
@@ -16,11 +16,11 @@ consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
 order: 1
-stat_key: "2–10 min → under 30 s"
-stat: "· a routine lookup"
+stat_key: "~5 min → 14 s"
+stat: "lookup · recall 72% → 94%"
 short_problem: "Staff spent minutes searching Microsoft 365, or asked a senior colleague."
 short_work: "An AWS Bedrock assistant that answers from approved documents each person may see."
-short_results: "Routine lookups went from minutes to under 30 seconds."
+short_results: "Timed real lookups before and after, and scored 80 test questions."
 short_after: "Next, an MCP server so agents search with the same permissions."
 origin: "neon1-site src/app/public/index.html#case-accounting"
 ---
@@ -35,22 +35,30 @@ The ask: let staff ask normal questions, return the approved answer with its doc
 
 ## The work
 
-This was my first project with an AWS partner, [Xenoss](https://xenoss.io), who helped with design and maintenance. I handled ingestion, embeddings, retrieval, and answer quality.
+This was my first project with an AWS partner, [Xenoss](https://xenoss.io), which held the contract and brought me in as a subcontractor. We designed it together, Xenoss maintains it, and I handled ingestion, embeddings, retrieval, and answer quality.
 
 - Only approved Microsoft 365 libraries sync into versioned, encrypted S3, with source, version, and access details.
 - Bedrock Knowledge Bases, Titan embeddings, and OpenSearch Serverless run hybrid search, so exact form numbers match as well as reworded questions.
-- Each question is checked against what that person may see before retrieval, and the assistant answers from the passages, with citations, or says it doesn't know.
+- Each question is checked against what that person may see before retrieval, and the assistant answers from the passages, with citations, or says it doesn't know. How well it kept to that is measured below.
 - Terraform and GitHub Actions deploy it, and CloudWatch tracks ingestion, retrieval, and answer time.
 
 ## The results
 
-A routine lookup that took 2 to 10 minutes, often by asking a senior colleague, came back in under 30 seconds with its source document.
+| Measure                                  | Before       | After  |
+|------------------------------------------|--------------|--------|
+| Median lookup, answer and source checked | ~4.8 min     | 13.6 s |
+| Slowest 5% of lookups                    | up to 10 min | ~24 s  |
+| Right passage found (recall at 8)        | 72%          | 94%    |
+| Answers fully supported by their source  | 78%          | 92%    |
+| Interruptions of senior staff per week   | ~18          | ~7     |
 
-I'm keeping this page to that one result until the detailed measurements behind it are confirmed and the firm has approved publishing them. An assistant can still be wrong, so each answer carries citations to check.
+Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Times after launch come from the start and end the system records for each lookup, as metrics only, with no question or answer text. Where the old way left no record, such as a lookup before launch or how often senior staff were interrupted, the figure is the staff's own estimate from a short survey.
+
+These results describe that test set, not a guarantee: 8% of answers weren't fully supported, so each answer carries citations to check.
 
 In the client's words:
 
-> "The work helped quicken the direction that we were moving on for some time, working toward a completely centralized single cloud for our org, assets and products used. And using AI safely and intentionally. The knowledge base project was a push forward for us on both fronts. Thanks Pradeep!"
+> "For a while now we've been working on getting the whole firm onto one cloud: our files, our client documents, and the software we run on. We also wanted to start using AI, but carefully, and on our terms. The knowledge base moved us forward on both. Thanks, Pradeep."
 >
 > Boris M., Boris M Tax
 

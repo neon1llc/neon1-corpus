@@ -8,14 +8,14 @@ client: grade school
 area: community
 kind: founder
 role: "As a volunteer, before neon1"
-when: "TBD"
+when: "2025"
 updated: 2026-11-15
 created: 2026-11-06
 edition: "1.4"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
-order: 6
+order: 7
 stat_key: "free for the school"
 stat: "· where it began"
 short_problem: "A grade school wanted real STEM tools on a small budget."
@@ -33,7 +33,7 @@ A local grade school needed a STEM edtech setup teachers would use, on a budget 
 
 ## The work
 
-I compared options, budgeted the system, and set it up for the classrooms as a volunteer, then invited teachers and parents to free sessions on staying safe online.
+I was working there after school as a counselor, teacher's aide, and tech assistant, at a school where I'd volunteered in high school. On my own time, I compared options, budgeted the system, and set it up for the classrooms, then invited teachers and parents to free sessions on staying safe online.
 
 ## The results
 

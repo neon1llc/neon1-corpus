@@ -15,9 +15,9 @@ edition: "1.5"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
-order: 4
-stat_key: "30+ people"
-stat: "at the largest seminars · every level"
+order: 5
+stat_key: "parents to executives"
+stat: "· every level"
 short_problem: "People knew they were exposed online, but not where to start."
 short_work: "Plain-language sessions on networks, cameras, fraud, and data brokers."
 short_results: "Live checkups, and the questions people brought back."
@@ -33,7 +33,7 @@ Teachers, parents, engineers, and executives knew their accounts, homes, and bus
 
 ## The work
 
-I've run sessions from small groups of parents to Manhattan seminars for 30 or more. Topics include:
+I've run sessions for groups of parents, teachers, engineers, and executives. Most were hosted by small and medium businesses for their own people; others I held in a rented WeWork room for people who came through my Retro NY meetups. Topics include:
 
 - Securing home and business networks, cameras, and connected devices.
 - Fraud, phishing, data brokers, and what's sold on the dark web.
