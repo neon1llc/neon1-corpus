@@ -28,20 +28,20 @@ short_after: "I manage it remotely, and computer vision is next."
 
 ## The problem
 
-A dry cleaner ran on systems that didn't know about each other: a cloud point-of-sale and garment-tagging system, a camera system, and what the staff kept in their heads about where each order stood. To see whether the shop was on track, the owner had to be there, or open each system in turn.
+A dry cleaner ran on systems that didn't know about each other: a cloud point-of-sale and garment-tagging system, a camera system, and what the staff kept in their heads about where each order stood. To see whether the shop was on track, the owner had to be there or open each system in turn.
 
-The ask: see what's happening in the shop, from the floor or from home, without giving the staff one more screen to look after.
+The ask: see what's happening in the shop, from the floor or from home, without one more screen for the staff to look after.
 
 ## The work
 
-- Kept each system as the record for what it does best: the POS for sales, the tags for where each garment is, and the cameras for video. Nothing was replaced.
-- Their events come in through each vendor's API or webhooks, into a small AWS middleware with a Node.js app, which keeps a history and ties them together, such as an order, its garments, and the counter at pickup.
+- Each system stays the record for what it does best: the POS for sales, the tags for where each garment is, and the cameras for video. Nothing was replaced.
+- Their events come in through each vendor's API or webhooks into a small AWS middleware with a Node.js app. It keeps a history and ties events together, such as an order, its garments, and the counter at pickup.
 - Wall-mounted tablets show the shop's state, and the owner sees the same view remotely through an authenticated browser page.
 - Cameras, tablets, and other devices sit on their own network, apart from staff computers. No camera is exposed to the internet, and each vendor key has only the access it needs.
-- Every automated action is logged, so nothing the system does is invisible.
-- It fails safe: if the cameras or a vendor API stop answering, the POS keeps working and the view says its data is stale. If the AWS part fails, the shop carries on as before.
+- Every automated action is logged.
+- It fails safe. If the cameras or a vendor API stop answering, the POS keeps working and the view says its data is stale. If the AWS part fails, the shop carries on as before.
 
-I chose middleware only where it earned its place: joining events across systems and keeping their history. For anything else, each vendor's own app was cheaper, so that's what the staff still use.
+I used middleware only to join events across systems and keep their history. For anything else, each vendor's own app was cheaper, so the staff still use it.
 
 ## The results
 
@@ -49,4 +49,4 @@ The measure was the owner's time to act: how long it took to notice and deal wit
 
 ## After handover
 
-I manage the setup remotely, and the owner and staff use the tablets and the remote view day to day. Next is computer vision, starting with one event the owner wants to see, the camera view that shows it, and a check on false alarms and misses before anyone relies on it. The POS stays the record, and the shop keeps working if the new part is down.
+I manage the setup remotely, and the owner and staff use the tablets and the remote view day to day. Next is computer vision, starting with one event the owner wants to see and the camera view that shows it, with false alarms and misses checked before anyone relies on it. The POS stays the record, and the shop keeps working if the new part is down.

@@ -33,7 +33,7 @@ A new practice and its sister location ran intake through a shared Microsoft 365
 
 ## The work
 
-I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. [Xenoss](https://xenoss.io) held the contract and brought me in as a subcontractor, and helped on design and maintenance.
+I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. [Xenoss](https://xenoss.io) held the contract, brought me in as a subcontractor, and helped on design and maintenance.
 
 - CloudFront, WAF, and a private S3 site serve the portal. API Gateway, Cognito, and Python Lambda run the workflow.
 - Each intake has one state in DynamoDB. Documents upload to an encrypted S3 vault, locked until a malware scan passes.
@@ -49,7 +49,7 @@ I mapped the process with staff, separating patient waiting time from staff hand
 | Finding and opening a document               | ~2 min 18 s        | ~12 s      |
 | Intakes needing a missing-document follow-up | ~34%               | ~10%       |
 
-Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved. The portal records when each intake starts and when it's complete, as metrics only, with no patient details; the practice keeps them for its own dashboards and emails, and can turn them off. Where the old inbox left no record, such as staff time per intake before launch, the figure is the staff's own estimate from a short survey.
+Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved. The portal records when each intake starts and when it's complete, as metrics only, with no patient details. The practice keeps them for its own dashboards and emails, and can turn them off. Where the old inbox left no record, such as staff time per intake before launch, the figure is the staff's own estimate from a short survey.
 
 ## After handover
 
