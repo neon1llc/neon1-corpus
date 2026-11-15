@@ -23,7 +23,7 @@ You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, 
 
 1. **Sign up** with your email, your name, your organization, and your website or where you're based. A code sent to your email finishes it.
 2. **Add a project** and list what it needs, in your own words.
-3. **Ask for an assessment or a call.** The assessment arrives in the portal and by email: an approach, and the first questions to settle.
+3. **Ask for an assessment or a call** from **Next step** on Home. An assessment is an approach and the first questions to settle.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.
 
 I work remotely with anyone in the US when the work allows, and on site within about 30 miles of Queens, NY.
