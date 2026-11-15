@@ -42,6 +42,22 @@ const bodyOf = (doc) => doc.body.trim().replace(/^# .+\n+/, "")
 // A front-matter value that has been confirmed, as opposed to the TBD placeholder
 const confirmed = (v) => typeof v === "string" && v.trim() !== "" && v.trim() !== "TBD"
 
+// The four kinds of case study, labeled on every card and page so one is never mistaken for another: my own work
+// outside a neon1 contract, work contracted through neon1 LLC, work delivered with a partner, and things neon1
+// built outside any client engagement (ChatGPT's third audit, 2026-11-14)
+const KINDS = {
+  founder: "Founder experience",
+  neon1: "neon1 engagement",
+  partner: "Partner engagement",
+  demonstration: "Independent demonstration",
+}
+// An unconfirmed role or year says so plainly instead of disappearing, so a reader always has the context
+const UNCONFIRMED = { role: "role not yet confirmed", when: "year not yet confirmed" }
+const shown = (d, key) => (confirmed(d[key]) ? d[key] : UNCONFIRMED[key])
+
+// A case study's kind, role, and years in one line, such as "Partner engagement: as neon1, with Xenoss, 2026"
+const caseLine = (d) => `${KINDS[d.kind] ?? KINDS.founder}: ${shown(d, "role")}, ${shown(d, "when")}`
+
 // What a type keeps in front matter, written out as Markdown so the .md file reads whole on its own
 function lead(d) {
   if (d.type !== "case-study") return ""
@@ -49,8 +65,8 @@ function lead(d) {
   return [
     `*${d.client} · ${d.area}*`,
     "",
-    // Role and years, once confirmed; a TBD placeholder is left out of every bundle
-    ...(confirmed(d.role) ? [`${[d.role, confirmed(d.when) ? d.when : null].filter(Boolean).join(", ")}`, ""] : []),
+    caseLine(d),
+    "",
     `**${d.stat_key}** ${d.stat}`,
     "",
     "| | In short |",
@@ -62,6 +78,16 @@ function lead(d) {
     "",
     "",
   ].join("\n")
+}
+
+// Front matter as a bundle carries it. TBD placeholders stay in the source for lint to flag, never in a bundle a
+// reader can see; a case study's unconfirmed role or year is replaced by the plain words above, and its kind
+// travels with its label
+function dataOf(d) {
+  const data = Object.fromEntries(Object.entries(d).filter(([, v]) => v !== "TBD"))
+  if (d.type === "case-study") Object.assign(data, { role: shown(d, "role"), when: shown(d, "when"), kind_label: KINDS[d.kind] ?? KINDS.founder })
+  else if (d.kind) data.kind_label = KINDS[d.kind]
+  return data
 }
 
 // The short version, when a document has one, as a labeled list under the summary
@@ -83,8 +109,7 @@ function json(doc) {
     summary: doc.data.summary,
     ...(doc.data.short?.length ? { shortHtml: doc.data.short.map(inline) } : {}),
     source: `corpus/${doc.path}`,
-    // TBD placeholders stay in the source for lint to flag, never in a bundle a reader can see
-    data: Object.fromEntries(Object.entries(doc.data).filter(([, v]) => v !== "TBD")),
+    data: dataOf(doc.data),
     html: toHtml(body),
     sections: sections(body).map(({ key, heading, html }) => ({ key, heading, headingHtml: heading ? inline(heading) : "", html })),
   }

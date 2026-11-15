@@ -6,20 +6,21 @@ type: case-study
 status: adopted
 client: dermatology practice
 area: workflows
+kind: partner
 role: "As neon1"
 when: "2026"
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
 order: 2
-stat_key: "2.6 days → 3.4 hours"
-stat: "· 24 → 8 min staff time"
+stat_key: "days → hours"
+stat: "· to a complete intake"
 short_problem: "Intake ran through one inbox, with staff chasing and retyping documents."
 short_work: "An AWS portal where patients upload once and staff see what's complete."
-short_results: "Compared four weeks before and after."
+short_results: "A complete intake went from days to hours."
 short_after: "Maintained with Xenoss, tuned as the practice grows."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
@@ -41,14 +42,9 @@ I mapped the process with staff, separating patient waiting time from staff hand
 
 ## The results
 
-| Measure                                      | Before             | After      |
-|----------------------------------------------|--------------------|------------|
-| Median time to a complete intake             | ~2.6 business days | ~3.4 hours |
-| Staff time per intake                        | ~24 min            | ~8 min     |
-| Finding and opening a document               | ~2 min 18 s        | ~12 s      |
-| Intakes needing a missing-document follow-up | ~34%               | ~10%       |
+A complete intake went from days of email back and forth to hours, and staff stopped downloading and renaming each document by hand.
 
-Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved.
+I'm keeping this page to that result until the detailed measurements behind it are confirmed and the practice has approved publishing them.
 
 ## After handover
 

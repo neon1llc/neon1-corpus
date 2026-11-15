@@ -6,11 +6,12 @@ type: case-study
 status: adopted
 client: grade school
 area: community
+kind: founder
 role: "As a volunteer, before neon1"
 when: "TBD"
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.3"
+edition: "1.4"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community

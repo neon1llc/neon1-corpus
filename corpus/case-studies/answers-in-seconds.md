@@ -6,20 +6,21 @@ type: case-study
 status: adopted
 client: accounting firm
 area: "cloud & AI"
+kind: partner
 role: "As neon1, designed with Xenoss and handed over to them"
 when: "2026"
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.4"
+edition: "1.5"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
 order: 1
-stat_key: "~5 min → 14 s"
-stat: "lookup · recall 72% → 94%"
+stat_key: "2–10 min → under 30 s"
+stat: "· a routine lookup"
 short_problem: "Staff spent minutes searching Microsoft 365, or asked a senior colleague."
 short_work: "An AWS Bedrock assistant that answers from approved documents each person may see."
-short_results: "Timed real lookups before and after, and scored 80 test questions."
+short_results: "Routine lookups went from minutes to under 30 seconds."
 short_after: "Next, an MCP server so agents search with the same permissions."
 origin: "neon1-site src/app/public/index.html#case-accounting"
 ---
@@ -38,22 +39,14 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), who 
 
 - Only approved Microsoft 365 libraries sync into versioned, encrypted S3, with source, version, and access details.
 - Bedrock Knowledge Bases, Titan embeddings, and OpenSearch Serverless run hybrid search, so exact form numbers match as well as reworded questions.
-- Each question is checked against what that person may see before retrieval, and the assistant answers from the passages, with citations, or says it doesn't know. How well it kept to that is measured below.
+- Each question is checked against what that person may see before retrieval, and the assistant answers from the passages, with citations, or says it doesn't know.
 - Terraform and GitHub Actions deploy it, and CloudWatch tracks ingestion, retrieval, and answer time.
 
 ## The results
 
-| Measure                                  | Before       | After  |
-|------------------------------------------|--------------|--------|
-| Median lookup, answer and source checked | ~4.8 min     | 13.6 s |
-| Slowest 5% of lookups                    | up to 10 min | ~24 s  |
-| Right passage found (recall at 8)        | 72%          | 94%    |
-| Answers fully supported by their source  | 78%          | 92%    |
-| Interruptions of senior staff per week   | ~18          | ~7     |
+A routine lookup that took 2 to 10 minutes, often by asking a senior colleague, came back in under 30 seconds with its source document.
 
-Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure.
-
-These results describe that test set, not a guarantee: 8% of answers weren't fully supported, so each answer carries citations to check.
+I'm keeping this page to that one result until the detailed measurements behind it are confirmed and the firm has approved publishing them. An assistant can still be wrong, so each answer carries citations to check.
 
 In the client's words:
 

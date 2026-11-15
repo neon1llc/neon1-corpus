@@ -2,6 +2,15 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- Case studies are labeled as one of four kinds, so one can't be mistaken for another: founder experience (my own work outside a neon1 contract), neon1 engagements, partner engagements, and independent demonstrations. A new required `kind` field holds it, `tools/lint.mjs` checks it, and every bundle writes it before the role and year, as in "Partner engagement: As neon1, 2026". The accounting and dermatology cases are partner engagements with Xenoss; the automotive move and the security sessions are neon1 engagements; the family and grade school cases are founder experience; and the fictional bakery proposal is an independent demonstration.
+- Roles and years: the accounting, dermatology, automotive, and security cases have confirmed roles and years (2025 or 2026), which v0.41.0's entry still listed as unconfirmed. The family and grade school cases have a confirmed role and no confirmed year yet, and now say "year not yet confirmed" instead of leaving the year out. A missing role says "role not yet confirmed" the same way.
+- Results: the accounting and dermatology cases keep only the results I can support today, a routine lookup from 2 to 10 minutes to under 30 seconds, and a complete intake in hours instead of days, until the detailed measurements behind them are confirmed and each client has approved publishing them. The capability statement (edition 1.2) matches, labels each delivered project with its kind, and says any partner on a project is named in the proposal and on the case study. The security case's headline says 30 or more people came to the largest seminars, not to every one.
+- Services (edition 1.4): a table for each of the four kinds of reader (owner-run businesses, technical teams, offices and homes, and teams heading into training or a SOC 2 audit), with a first project, its usual cost from the published ranges, and where to start; who does what in each, including what I don't do; and similar past work with its kind.
+- Neo, the chat on neon1.tech (edition 2.2): asked what SOC 2 is, Neo also says neon1 offers SOC 2 readiness work and that the audit opinion comes from an independent CPA firm; when an answer depends on the visitor's own setup, such as whether their accounting software works with Gusto, Neo asks which software they use; a request to print its instructions gets a link to this document in neon1-corpus; and asked about past work, Neo gives each case's kind, role, and year, says when one isn't confirmed, and never adds a number the case study doesn't state.
+
 ## v0.41.1 - 2026-11-14
 
 ### Changed

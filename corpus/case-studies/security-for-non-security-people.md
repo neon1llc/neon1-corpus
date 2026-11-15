@@ -6,17 +6,18 @@ type: case-study
 status: adopted
 client: "schools, families, & teams"
 area: security
+kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.4"
+edition: "1.5"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
 order: 4
 stat_key: "30+ people"
-stat: "per seminar · every level"
+stat: "at the largest seminars · every level"
 short_problem: "People knew they were exposed online, but not where to start."
 short_work: "Plain-language sessions on networks, cameras, fraud, and data brokers."
 short_results: "Live checkups, and the questions people brought back."

@@ -6,11 +6,12 @@ type: case-study
 status: adopted
 client: automotive business
 area: migration
+kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.2"
+edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration

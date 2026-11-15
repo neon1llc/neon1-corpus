@@ -168,11 +168,20 @@
     },
     "role": {
       "type": "string",
-      "description": "Case study: in what capacity I did the work, in a few words, such as \"As neon1\", \"Through partner Xenoss\", or \"Before neon1, as an employee\". Shown on cards and pages. TBD until confirmed: lint warns, and consumers leave it out."
+      "description": "Case study: in what capacity I did the work, in a few words, such as \"As neon1\", \"Through partner Xenoss\", or \"Before neon1, as an employee\". Shown on cards and pages. TBD until confirmed: lint warns, and bundles say \"role not yet confirmed\"."
+    },
+    "kind": {
+      "enum": [
+        "founder",
+        "neon1",
+        "partner",
+        "demonstration"
+      ],
+      "description": "Case study, or an example shown beside the case studies: which of four kinds of work it is, labeled wherever it's shown so one can't be mistaken for another. founder is my own work outside a neon1 contract (career, family, or volunteering), neon1 is work contracted through neon1 LLC, partner is work delivered with or through a partner, and demonstration is something neon1 built outside any client engagement."
     },
     "when": {
       "type": "string",
-      "description": "Case study: the year or years of the work, such as \"2025\" or \"2024 to 2025\". TBD until confirmed: lint warns, and consumers leave it out."
+      "description": "Case study: the year or years of the work, such as \"2025\" or \"2024 to 2025\". TBD until confirmed: lint warns, and bundles say \"year not yet confirmed\"."
     },
     "short_problem": {
       "type": "string",
@@ -198,6 +207,7 @@
       "required": [
         "client",
         "area",
+        "kind",
         "key",
         "order",
         "stat_key",

@@ -60,6 +60,8 @@ for (const doc of docs) {
   if (d.id && !new RegExp(P.id.pattern).test(d.id)) err(`id "${d.id}" should be lowercase words joined by hyphens`)
   if (d.type && !P.type.enum.includes(d.type)) err(`type "${d.type}" isn't one of ${P.type.enum.join(", ")}`)
   if (d.status && !P.status.enum.includes(d.status)) err(`status "${d.status}" isn't one of ${P.status.enum.join(", ")}`)
+  // A case study's kind is one of four, so a card can never be mistaken for another kind of work
+  if (d.kind !== undefined && !P.kind.enum.includes(d.kind)) err(`kind "${d.kind}" isn't one of ${P.kind.enum.join(", ")}`)
   if (d.updated && !new RegExp(P.updated.pattern).test(d.updated)) err("updated should be YYYY-MM-DD")
   if (d.created && d.updated && d.created > d.updated) err("created is after updated")
   // A "Last updated" line in the text must say the same day as updated
@@ -150,7 +152,7 @@ for (const doc of docs) {
   }
 }
 
-if (warnings.length) console.warn(`${warnings.join("\n")}\n${warnings.length} TBD placeholder(s); exports leave them out.\n`)
+if (warnings.length) console.warn(`${warnings.join("\n")}\n${warnings.length} TBD placeholder(s); exports leave them out, and show a case study's missing role or year as not yet confirmed.\n`)
 if (errors.length) {
   console.error(errors.join("\n"))
   console.error(`\n${errors.length} problem(s) in ${docs.length} document(s).`)
