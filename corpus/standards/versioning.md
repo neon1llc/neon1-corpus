@@ -4,9 +4,9 @@ title: Versioning and releases
 summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents (X.Y), when each number goes up, and how tags, changelogs, and package files stay in agreement."
 type: standard
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.5"
+edition: "1.6"
 audience: "Developers"
 order: 6
 consumers: [ai]
@@ -108,6 +108,19 @@ In every neon1 repository, the pipeline makes the tag, so a tag always means "th
 - **Checks enforce agreement.** Each repository's checks fail when its version places disagree, and the tag step stops when the changelog names no version.
 - **Dev builds are never releases.** Work shown on dev.neon1.tech, from the `dev` branch or any other branch, is never tagged or announced, and its changelog entries wait under `## Unreleased`. The version is set, and the tag made, only when the batch reaches main.
 - **A tag that exists is never made again or moved.** If a release went wrong, the fix is the next patch.
+
+## Release levels
+
+A version number says what changed. A release level says how far a change has been proven. neon1 tracks four, and each needs its own evidence:
+
+| Level | Means | Evidence |
+|---|---|---|
+| **Implemented** | The code exists | Merged with its checks passing, and a changelog entry under `## Unreleased` |
+| **Verified** | Named acceptance tests passed | The scenarios the change affects pass: automated tests in CI, plus a check on dev or in the demo for anything people see |
+| **Released** | The right version is live | The pipeline deployed it, the live version matches, and the tag exists |
+| **Qualified** | Real use and recovery are established | Representative real use, a safe check in production, and its recovery path (a rollback, a restore, or a re-run) tested at least once |
+
+A tag means Released, never Qualified on its own. Descriptions don't get ahead of the level: Implemented work is "in development", Verified work is "in testing" or "a preview", Released work is "available", and only Qualified work is called "in use" or "supported".
 
 ## Documents: editions X.Y
 
