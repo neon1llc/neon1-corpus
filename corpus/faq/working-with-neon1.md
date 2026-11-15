@@ -28,7 +28,7 @@ I work in planned appointments on weekday evenings and weekends, with no 24/7 or
 
 ## Can I start without a call?
 
-Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), write down what your project needs, and I'll reply with what I'd do. A new account holds up to 3 projects, and I lift its limits once we agree to work together. An account with no changes for 30 days is removed, after reminders, and you can start again anytime.
+Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), write down what your project needs, and I'll reply with what I'd do. [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
 
 ## How long does a project take?
 
