@@ -29,7 +29,7 @@ Yes, with no account. The [guided walkthrough](https://neon1.tech/1NEON/live) ta
 With an invite, or a free account you start yourself. Open the link in your invite email and enter your email address. Sign in with a code sent to your email, or with a passkey. No password needed. [Watch it](https://neon1.tech/1NEON/live?play=invite).
 
 ### Can I start without an invite?
-Yes. Choose **New here? Start a free account** on the [sign-in page](https://neon1.tech/1NEON/?signup=1), and confirm your email with a code. A new account can add up to 3 projects, their needs, and 10 files (documents and pictures). Inviting people, approvals, and billing open once we agree to work together.
+Yes. Choose **New here? Start a free account** on the [sign-in page](https://neon1.tech/1NEON/?signup=1), and confirm your email with a code. A new account can add up to 3 projects and what each one needs. Inviting people, approvals, and billing open once we agree to work together.
 
 ### I didn't get the sign-in code.
 Check spam or promotions, wait a minute, and choose **Send a new code**. Codes work for a few minutes, in the browser that asked. [Watch it](https://neon1.tech/1NEON/live?play=invite).
