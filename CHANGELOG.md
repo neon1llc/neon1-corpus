@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
-- FAQ: "Can I start without a call?" (Working with neon1, edition 1.10) and "Can I start without an invitation?" (1NEON help) point to the free 1NEON account. Release this once 1NEON's sign-up opens in production.
+- FAQ: "Can I start without a call?" (Working with neon1, edition 1.10) and "Can I start without an invite?" (1NEON help) point to the free 1NEON account. Release this once 1NEON's sign-up opens in production.
 
 ## v0.44.0 - 2026-11-15
 
