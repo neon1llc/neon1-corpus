@@ -4,9 +4,9 @@ title: "Use case: one workflow, no more retyping"
 summary: "How a typical business workflow engagement goes, from the first call to a handover the staff can run."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-15
 created: 2026-11-09
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Owners of small service businesses"
@@ -14,7 +14,7 @@ related: [services, standards-discovery-and-delivery, examples-proposal]
 ---
 
 > [!note] A typical pattern, not a client story
-> This page describes how this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+> How this kind of work usually goes. For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
 
 # Use case: one workflow, no more retyping
 
@@ -39,7 +39,7 @@ Requests arrive by web form, email, and phone, and someone copies each into the 
 
 ## What usually doesn't
 
-Your tools usually stay; often the fix is configuring what's there and adding one small connection.
+Your tools usually stay. Often the fix is configuring what's there and adding one small connection.
 
 ## Paperwork you'd see
 

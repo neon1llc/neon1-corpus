@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-12
-edition: "1.2"
+edition: "1.3"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -18,7 +18,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 *Public · v0.1.3*
 
-**SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to being ready for a first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-2-readiness).
+**SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to ready for a first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-2-readiness).
 
 - **Who it's for:** founders, operators, and the person who just became "the security owner" at a software or services company, plus trainers who want material to teach from.
 - **What's in it:** eight modules, each with an exercise on your own company; a map of 44 starter controls with owners, frequency, and evidence, tied to the SOC 2 Trust Services Criteria and ISO/IEC 27001:2022; evidence checklists by area; templates for risk, access, vendor, and incident work; a 90-day plan; and a workshop guide.
@@ -27,7 +27,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 ## Current limits
 
-It's readiness training, not audit or legal advice. It helps a team prepare; only a licensed CPA firm can issue a SOC 2 report, and the audit opinion belongs to the auditor. It doesn't yet cover the Processing Integrity or Privacy criteria.
+It's readiness training, not audit or legal advice. Only a licensed CPA firm can issue a SOC 2 report, and the audit opinion belongs to the auditor. It doesn't yet cover the Processing Integrity or Privacy criteria.
 
 ## Next step
 

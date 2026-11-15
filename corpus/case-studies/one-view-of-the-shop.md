@@ -11,7 +11,7 @@ role: "As neon1, my first client"
 when: "2025"
 updated: 2026-11-15
 created: 2026-11-15
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: drycleaner

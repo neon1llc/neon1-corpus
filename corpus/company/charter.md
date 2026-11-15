@@ -4,11 +4,11 @@ title: Charter
 summary: What neon1 is for, who it serves first, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---

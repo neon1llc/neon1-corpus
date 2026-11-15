@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at c90f092"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-09-13
-edition: "1.3"
+edition: "1.4"
 ---
 
 # AWS CLIP
@@ -25,7 +25,7 @@ edition: "1.3"
 ## What it does
 
 - **Shows where you are.** It reports the profile, Region, and the account and role AWS says you're signed in as, and it never prints credential values.
-- **Asks before risky commands.** Before a command runs, it shows the target profile and Region, the service and operation, and how its policy rules classify it. It doesn't explain every argument: its own previews and plans list option names and leave argument values out, because they can hold sensitive data. Anything that isn't a known read, or that returns credentials or secrets, needs your confirmation.
+- **Asks before risky commands.** Before a command runs, it shows the target profile and Region, the service and operation, and how its policy rules classify it. Its previews and plans list option names and leave argument values out, because they can hold sensitive data. Anything that isn't a known read, or that returns credentials or secrets, needs your confirmation.
 - **Guards production accounts.** A profile can be bound to the account it must resolve to. If it resolves to a different account, the command is refused, and a confirmation can't override that.
 
 For example, `aws-clip --profile production exec -- ec2 terminate-instances ...` shows the target and `ec2:terminate-instances`, then waits for a yes. If the production profile is bound to an account and resolves to another one, it stops.

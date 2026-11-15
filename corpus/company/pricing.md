@@ -4,9 +4,9 @@ title: How I price my work
 summary: "How a neon1 project is priced: a fixed price or a capped estimate, what most projects cost, what the price includes, when it can change, how paying works, and why the website shows ranges while each proposal shows the hours."
 type: page
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2026-11-13
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true

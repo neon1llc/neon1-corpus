@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-12
-edition: "1.2"
+edition: "1.3"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go]
 ---
 
@@ -29,7 +29,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 
 ## Current limits
 
-Notification rules cover U.S. federal requirements and New York. Other states are linked through the NCSL list rather than summarized. Notification requirements vary by jurisdiction, sector, and contract, and a lawyer decides what applies. It's training, not legal advice.
+Notification rules cover U.S. federal requirements and New York. Other states are linked through the NCSL list rather than summarized. Requirements vary by jurisdiction, sector, and contract, and a lawyer decides what applies. It's training, not legal advice.
 
 ## Next step
 

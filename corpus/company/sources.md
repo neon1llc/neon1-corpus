@@ -4,9 +4,9 @@ title: Where I learn from
 summary: "The standards bodies, government guides, and practitioners whose published work shapes how neon1 works, grouped by topic, with what each one is for."
 type: page
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-15
 created: 2026-11-11
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone who wants to go past neon1's documents to where the practice comes from"

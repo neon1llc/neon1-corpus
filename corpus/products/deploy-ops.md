@@ -8,16 +8,16 @@ pdf: false
 stage: "local developer preview, not production-supported"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-03
-edition: "1.5"
+edition: "1.6"
 ---
 
 # DeployOps
 
 *Public · v0.14.0 · local developer preview, not production-supported*
 
-**Deploy pipelines with checks, approvals, and rollback.** The code is on [GitHub](https://github.com/neon1llc/deploy-ops) under the Apache-2.0 license. It runs end to end on your own machine today. Some cloud paths have been run live and others haven't, as listed below.
+**Deploy pipelines with checks, approvals, and rollback.** The code is on [GitHub](https://github.com/neon1llc/deploy-ops) under the Apache-2.0 license. It runs end to end on your own machine today. Some cloud paths have been run live and others haven't.
 
 - **Who it's for:** small technical teams that deploy by hand today, or whose pipelines grew piece by piece.
 - **What it does:** builds, deploys, releases only the app when only the app changed, promotes between stages, runs an HTTP check, and rolls back.
@@ -31,7 +31,7 @@ edition: "1.5"
 
 ## Try the demo
 
-The demo runs on a clean machine with Python 3, with no cloud account needed. CI runs it on every push. From a clone of the repository:
+The demo needs Python 3 and no cloud account. CI runs it on every push. From a clone of the repository:
 
 ```sh
 python3 -m venv .venv && source .venv/bin/activate && python -m pip install -r requirements-dev.txt -e .
@@ -40,7 +40,7 @@ deploy-ops demo ../deploy-ops-demo
 
 ## Current limits
 
-It's a preview for developers, not supported for production. Commands and settings may change before a stable release.
+It's a developer preview, not supported for production. Commands and settings may change before a stable release.
 
 ## Next step
 

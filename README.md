@@ -1,6 +1,6 @@
 # neon1-corpus
 
-neon1's public information, written once in Markdown. The website, Neo (the chat on neon1.tech), the knowledge area and its PDF downloads all read from here, so a change made here reaches every one of them and nothing gets copied by hand.
+neon1's public information, written once in Markdown. The website, Neo (the chat on neon1.tech), the knowledge area, and its PDF downloads all read from here, so one change reaches all of them.
 
 From [neon1](https://neon1.tech). *1 is glad to be of service.*
 
@@ -23,11 +23,11 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 | [`corpus/1neon/`](corpus/1neon) | The 1NEON guide: every page, state, ID, and action in the portal, for Neo inside 1NEON (the `portal` bundle) |
 | [`corpus/blog/`](corpus/blog) | Posts for [neon1.tech/blog](https://neon1.tech/blog/) (the `blog` bundle): local clients' questions, the whats and whys of neon1, and lessons from its public repositories. Unpublished posts stay drafts |
 
-Everything here is public. Nothing private belongs in this repository, even as a draft.
+Everything here is public. Nothing private belongs here, even as a draft.
 
 ## How a document looks
 
-Each file is Markdown with front matter that tells tools what it is and who reads it:
+Each file is Markdown with front matter that says what it is and who reads it:
 
 ```yaml
 ---
@@ -45,7 +45,7 @@ origin: "neon1-site src/app/public/index.html#services"
 ---
 ```
 
-The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json). Its `x-types` part adds rules per type. A case study, for example, keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat` and one `short_` line for each stage) and must have the sections Needs, Execute, Observe and Normalize, in that order. The body stays free Markdown inside those sections. Templates and forms mark lines to write on with four or more underscores (`____`) and choices with task items (`- [ ] Option`). An `example` names the blank it fills in (`example_of`) and says whether it's `fictional`. A quote that starts with `[!note]`, `[!tip]`, `[!warning]` or `[!example]` becomes a callout box. Each folder is a shelf in the Knowledge Center, labeled in `tools/corpus.mjs`. A `post` is a blog post: it names its `topic` (`questions`, `whats-and-whys` or `lessons`) and `audience`, its `created` date is the day it's published, and it ends with Sources. Any document can carry `short`, the short version: one to three sentences, 60 words at most, on what the reader should do or know, written as a block list (one `  - "..."` line each) and shown in a box between the page's facts and its text. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
+The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json), whose `x-types` part adds rules per type. A case study keeps its card facts in front matter (`key`, `order`, `stat_key`, `stat`, and one `short_` line for each stage) and must have the sections Needs, Execute, Observe, and Normalize, in that order. The body is free Markdown inside those sections. Templates and forms mark lines to write on with four or more underscores (`____`) and choices with task items (`- [ ] Option`). An `example` names the blank it fills in (`example_of`) and says whether it's `fictional`. A quote that starts with `[!note]`, `[!tip]`, `[!warning]` or `[!example]` becomes a callout box. Each folder is a shelf in the Knowledge Center, labeled in `tools/corpus.mjs`. A `post` is a blog post: it names its `topic` (`questions`, `whats-and-whys` or `lessons`) and `audience`, its `created` date is the day it's published, and it ends with Sources. Any document can carry `short`, the short version: one to three sentences, 60 words at most, on what the reader should do or know, written as a block list (one `  - "..."` line each) and shown in a box between the page's facts and its text. A `directive` says how a consumer behaves rather than what it says about neon1, such as Neo's voice and rules, so consumers keep it apart from the facts they answer from.
 
 ## Tools
 
@@ -59,7 +59,7 @@ node tools/diagrams.mjs check           # every diagram is drawn and has alt tex
 
 ### Diagrams
 
-A diagram is a ```` ```mermaid ```` block in a document, so GitHub shows it too. Its first line is `%% alt: ...`, describing it for anyone who can't see it. The drawings are committed in [`diagrams/`](diagrams), named by a hash of their source, so exporting stays dependency-free. Exports copy the drawings their documents use into `<bundle>/diagrams/`, and the Knowledge Center shows each one as an image with its source beneath it. After adding or editing a diagram, draw it (this one step needs Playwright and Mermaid):
+A diagram is a ```` ```mermaid ```` block in a document, so GitHub shows it too. Its first line is `%% alt: ...`, describing it for anyone who can't see it. The drawings are committed in [`diagrams/`](diagrams), named by a hash of their source, so exporting needs no dependencies. Exports copy the drawings their documents use into `<bundle>/diagrams/`, and the Knowledge Center shows each as an image with its source beneath it. After adding or editing a diagram, draw it (this step needs Playwright and Mermaid):
 
 ```
 npm i --prefix tools/.diagram-deps mermaid@11 playwright
@@ -68,7 +68,7 @@ node tools/diagrams.mjs draw            # draws new or changed diagrams and remo
 
 ## Reading the corpus from another repo
 
-Consumers never parse Markdown. The export does it once, the same way for every document, and writes each one twice, flat and named by `id`:
+Consumers never parse Markdown. The export does it once and writes each document twice, flat and named by `id`:
 
 | File | What's in it | Who it suits |
 |---|---|---|
@@ -84,17 +84,17 @@ git clone --quiet --depth 1 --branch v0.2.0 https://github.com/neon1llc/neon1-co
 node .corpus/tools/export.mjs --target site
 ```
 
-Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`. The export runs in well under a second and needs nothing installed, and nothing is fetched while a page is being viewed.
+Then read only what you need. One document is one small JSON file, and a set such as the case studies is a filter on `manifest.json` by `type`. The export runs in well under a second, needs nothing installed, and fetches nothing while a page is viewed.
 
 ## As context for AI tools
 
-The corpus is, with some levity, neon1's context window: everything neon1 has written down about itself, in one place, in a form people and AI tools read equally well. The `ai` bundle holds every adopted document. For development work, the standards alone are enough:
+The corpus is, with some levity, neon1's context window: everything neon1 has written down about itself, in a form people and AI tools read equally well. The `ai` bundle holds every adopted document. For development work, the standards alone are enough:
 
 ```
 node tools/export.mjs --target ai --sections standards
 ```
 
-That's about 80,000 characters, roughly 20,000 tokens. The export already drops front matter. Stripping Markdown further would save only about 5%, mostly link addresses and table padding, and would cost the structure that helps a model read it, so the bundles stay as Markdown. Narrowing by shelf is the better way to save context. Each release also attaches `standards.bundle.json`.
+That's about 80,000 characters, roughly 20,000 tokens. The export already drops front matter. Stripping Markdown further would save only about 5% and cost the structure that helps a model read it, so the bundles stay as Markdown. Narrowing by shelf saves more. Each release also attaches `standards.bundle.json`.
 
 ## Contributing
 

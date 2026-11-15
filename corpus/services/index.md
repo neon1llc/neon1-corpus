@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-15
 created: 2025-09-07
-edition: "1.6"
+edition: "1.7"
 ---
 
 # Services

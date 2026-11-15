@@ -4,10 +4,10 @@ title: State registration
 summary: "neon1 LLC's public record with the New York Department of State: its ID, status, filings, registered agent, and assumed name, and how to check the live record yourself."
 type: page
 status: adopted
-updated: 2026-11-11
+updated: 2026-11-15
 created: 2026-11-11
 reviewed: 2026-11-11
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Clients, partners, and anyone confirming that neon1 LLC is a registered, active business"

@@ -4,12 +4,12 @@ title: Mission and promise
 summary: "Why neon1 exists and the five things every client can count on."
 type: page
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-11
 consumers: [site, chat, knowledge, ai]
 pdf: true
 featured: true
-edition: "1.2"
+edition: "1.3"
 audience: "Anyone deciding whether to work with neon1, and anyone who wants the short version of what it stands for"
 origin: "Pradeep's mission statement, Our Mission, and Promise to You (five drafts, 2025), reconciled on November 11, 2026 with the charter, neon1.tech, the GitHub profile, and the LinkedIn page"
 related: [company-charter, company-about, company-names, company-process, company-capabilities, services]

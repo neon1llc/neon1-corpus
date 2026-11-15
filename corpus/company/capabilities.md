@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---

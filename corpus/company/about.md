@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-15
 created: 2025-09-07
-edition: "1.5"
+edition: "1.6"
 ---
 
 # About neon1

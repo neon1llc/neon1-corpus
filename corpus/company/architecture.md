@@ -9,7 +9,7 @@ origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "1.4"
+edition: "1.5"
 ---
 
 # How neon1 is built

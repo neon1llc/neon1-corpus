@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "1.6"
+edition: "1.7"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -45,21 +45,13 @@ A footer closes the page with contact links, the Knowledge Center, the blog, Git
 
 ### Moving between views
 
-With motion on, the page moves one view at a time:
-
-- At a view's edge, the page resists a little, like a rubber band. A view you've seen before fades in as you pull.
-- Pull past a set point and it settles into the next view, slowing as it arrives. Stop short and it springs back.
-- A view taller than the screen scrolls normally until you reach its edge.
-- On a first visit, a view's heading fades in and each piece rises into place. Later visits just fade it in.
-- One swipe never skips two views.
-- The arrow keys, Page Up, Page Down, Home, and End work the same way. Tabbing into a section shows it at once, so focus never lands on something hidden.
-- A link to a section, from the menu for example, glides there and leaves keyboard focus at the start of it.
+With motion on, the page moves one view at a time. At a view's edge it resists a little, like a rubber band. Pull past a set point and it settles into the next view. Stop short and it springs back. A view taller than the screen scrolls normally until you reach its edge. The arrow keys, Page Up, Page Down, Home, and End work the same way, and tabbing into a section shows it at once. A link to a section glides there and leaves keyboard focus at its start.
 
 With reduced motion on, or if the animation library doesn't load, the page scrolls like any page with everything visible.
 
 ### Case studies
 
-The arrow button on a card grows the card into a full panel. Closing it shrinks back into the card, and the page hasn't moved underneath. While it's open, everything behind is off for the mouse, keyboard, and screen readers, and Neo steps aside.
+The arrow button on a card grows the card into a full panel. Closing it shrinks back into the card. While it's open, everything behind is off for the mouse, keyboard, and screen readers, and Neo steps aside.
 
 A link to one card, such as `#case-home`, scrolls to the Client work view, slides the row to that card, and puts keyboard focus on its button. The browser's Back button returns to where the link was.
 
@@ -76,8 +68,8 @@ CloudFront serves every page with a strict content security policy. Scripts, sty
 The falling green characters are drawn on a canvas by one shared file, `shared/rain.js`, which also draws the rain behind 1NEON's sign-in and the not-found page.
 
 - **Columns.** Each column drops a bright character and leaves a fading trail, about 15 steps a second.
-- **Words.** Now and then a column spells a word and holds it for about two seconds. Values like "listen," "ownership," and "recovery" come in gold. neon1's own names, such as "neon1," "1NEON," and "1isgladtobeofservice," come in neon1's green.
-- **Waking up.** Scrolling past the landing fades the rain out and turns the page light. Then the rain stops drawing, so it costs nothing while you read.
+- **Words.** Now and then a column spells a word and holds it for about two seconds. Values like "listen," "ownership," and "recovery" come in gold, and neon1's own names in neon1's green.
+- **Waking up.** Scrolling past the landing fades the rain out and turns the page light.
 
 Three buttons at the bottom of the landing control it:
 
@@ -95,9 +87,9 @@ Now and then a white rabbit drops into the rain as a single character, never und
 
 What happens after a catch:
 
-1. **The rain stops** with a two-second glitch: freezes, skipped frames, sliding bands, a flash, then stillness.
+1. **The rain stops** with a two-second glitch.
 2. **The 3D scene loads.** The scene and its 3D library download only now, so nobody else pays for them.
-3. **Scrolling down plays the scene.** The landing turns out to be the picture on an old tube TV. The view pulls back out of the set into a sunlit room with two leather wingback chairs, turns to the window, gets up, walks over with the bob of each step, glances at a model car on the sill, and goes out through the opening to a view of a back yard, a road, a park around a pond, and hills. It ends on "go touch grass."
+3. **Scrolling down plays the scene.** The landing turns out to be the picture on an old tube TV. The view pulls back into a sunlit room with two leather wingback chairs, turns to the window, walks over, glances at a model car on the sill, and goes out through the opening to a view of a back yard, a park, and hills. It ends on "go touch grass."
 4. **Scrolling up plays it backward**, back into the TV, and the rain starts again.
 
 Only scrolling moves the scene. It never plays on its own. A full walk takes about ten quick swipes on a phone, nine screens on a touchpad, 45 mouse wheel clicks, or 25 arrow key presses.
@@ -109,7 +101,7 @@ A few details inside the scene:
 - **The sky** has drifting clouds, and the room dims when one covers the sun.
 - **The plaque** over the window reads "Temet Nosce."
 
-With reduced motion, no WebGL, or a failed load, you get a silent still card instead. Esc leaves any time and returns focus where it was, and a line for screen readers explains how to move and leave.
+With reduced motion, no WebGL, or a failed load, you get a silent still card instead. Esc leaves any time.
 
 The room's models and textures are credited in the site's asset manifest. The car is based on a Creative Commons model, unbranded and recolored, and the trees and textures come from Poly Haven.
 
@@ -118,7 +110,7 @@ The room's models and textures are credited in the site's asset manifest. The ca
 The Knowledge Center at [neon1.tech/knowledge](https://neon1.tech/knowledge/) holds every public neon1 document, from services and the FAQ to standards, templates, and policies, on shelves that match the corpus folders.
 
 - **Where pages come from.** The site's build reads the newest corpus release and turns every document in it into its own page at `/knowledge/<shelf>/<name>/`. Every page is written ahead of time as plain HTML, so search engines, link previews, and readers without JavaScript get the whole page. `/knowledge/corpus.json` names the corpus release that's live.
-- **Search** runs in your browser. Your first keystroke fetches one index file, then your words match titles, headings, summaries, and text, in that order, with some synonyms, so "Wi-Fi" finds "wireless." Nothing you type leaves the browser.
+- **Search** runs in your browser. Your first keystroke fetches one index file, then your words match titles, headings, summaries, and text, with some synonyms, so "Wi-Fi" finds "wireless." Nothing you type leaves the browser.
 - **PDFs.** Marked documents get a branded PDF, printed by headless Chromium at each deploy, with links back to neon1.tech.
 - **Diagrams** are written as Mermaid text inside the documents, drawn to SVG images ahead of time, and shown with their source beneath them.
 
@@ -219,16 +211,12 @@ When Pradeep shares options or the like, it goes through the same API as his own
 
 The top bar has a segment per chapter, previous and next buttons, play, speed, and the chapter's name, which opens a list of every chapter and short demo.
 
-- **Pause and play.** The pause button or Space holds the story between any two actions, and the walkthrough's own clock stops while paused.
-- **Exploring while paused.** While playing, the portal is locked. Paused, it's live to click and type in, and resuming afterward replays the section from its start.
-- **Leaving the tab.** Switching apps or tabs, or locking the phone, pauses it. Coming back resumes after about a second, unless you paused it or clicked in the portal.
+- **Pause and play.** The pause button or Space holds the story between any two actions. While playing, the portal is locked. Paused, it's live to click and type in, and resuming replays the section from its start.
+- **Leaving the tab.** Switching apps or tabs, or locking the phone, pauses it. Coming back resumes after about a second.
 - **Speed.** A slider from 0.5x to 2x, saved in your browser.
-- **Back and Next.** The arrow keys or buttons. Each section starts by saving a snapshot of the data, the page, and who's signed in, and Back restores it, so the screen matches the story. A chapter not reached yet is set up behind a loading screen, then plays at normal speed.
-- **Browser Back.** The walkthrough replaces the address as it moves rather than adding entries, so the browser's Back button returns to the page that linked to it.
+- **Back and Next.** The arrow keys or buttons. Each section saves a snapshot of the data, the page, and who's signed in, and Back restores it. Browser Back returns to the page that linked to the walkthrough.
 - **Refreshing.** After a refresh, the opening card offers **Continue** or **Start from the beginning**.
-- **Your screen.** A phone's screen stays lit while it plays, where the browser allows.
 - **When something goes wrong.** If a step can't find its target in time, the bar says "One moment…" and the chapter restarts from its snapshot, then from the very beginning. A third failure stops on a card offering to replay, start over, or try the demo. It never loops.
-
 
 ## How a change goes live
 
