@@ -16,7 +16,7 @@ related: [policy-cookies, policy-ai-use, policy-terms, policy-service-agreement,
 
 # Privacy and data policy
 
-*Last updated November 15, 2026.* This edition adds free accounts: what I collect when you make your own 1NEON account (including where your business is based or a link to it), the bot check on the sign-up form (Cloudflare Turnstile), the check-in emails, and that a free account is deleted 30 days after its last change. Nothing changes for clients.
+*Last updated November 15, 2026.* This edition adds free accounts: what I collect when you make your own 1NEON account (including where your business is based, a link to it, and how you found neon1, all optional), the bot check on the sign-up form (Cloudflare Turnstile), the check-in emails, and that a free account is deleted 30 days after its last change. Nothing changes for clients.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant on the website), and the 1NEON client portal at neon1.tech/1NEON, and does technology work for clients. This policy covers all of them. The [cookie and browser storage notice](https://neon1.tech/1NEON/cookies) is part of it and lists every cookie and saved item in detail. How the systems themselves are built is described in [How neon1 is built](https://neon1.tech/knowledge/company/architecture/).
 
@@ -79,10 +79,10 @@ Please don't put passwords, keys, or other secrets in the portal.
 
 You can make your own 1NEON account from neon1.tech to describe your projects' needs before we work together. When you sign up, I collect:
 
-- **What you type:** your email address, your name, your organization's name, where it's based and a link to its website or a public page (both optional), and that you accepted the terms of use (with the date of the edition you saw).
+- **What you type:** your email address, your name, your organization's name, where it's based, a link to its website or a public page, and how you found neon1 (all three optional), and that you accepted the terms of use (with the date of the edition you saw).
 - **A bot check:** the sign-up form runs Cloudflare Turnstile, which looks at your browser and connection to tell a person from an automated script. Cloudflare receives your IP address and browser details for that check only. Turnstile runs only on the sign-up form. Cloudflare's [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/) says how Cloudflare handles that data.
 - **A one-way fingerprint of your IP address,** used to limit how many sign-ups come from one place, and kept with your account's sign-up record. The address itself isn't stored.
-- **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account.
+- **What you add:** the projects, needs, comments, and files you put in the account, as in any portal account, and any assessment or call you ask for from it, which reaches me by email.
 
 Only you and I see a free account. I use it to understand your needs, advise you, suggest options, and offer to talk. I don't add you to a mailing list. The portal emails you your sign-in codes, and, if nothing in the account changes, a short check-in after 7 and 14 days and a final notice after 21. If you don't confirm your email within a day of signing up, the unfinished sign-up is removed.
 

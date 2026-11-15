@@ -26,6 +26,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Coming up** shows three weeks as a strip of days marked with due dates, milestones, and targets, then the next six weeks listed by Overdue, This week, Next week, and Later.
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
+- **Next step**, in a free account only: **Ask for an assessment** or **Ask for a call**, with an optional note. Each emails neon1, and the reply comes by email.
 
 ## Board
 
