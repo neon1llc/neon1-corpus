@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-10
-edition: "1.6"
+edition: "1.7"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -18,7 +18,7 @@ origin: "neon1-1NEON apps/api/src (auth, factors, me, notifications) and apps/we
 
 ## Getting in
 
-You join 1NEON by invitation, or by making your own prospect account. An admin of the organization, or neon1, invites a person by email; they open the link and enter their email. A prospect chooses **New here? Start in 1NEON** on the sign-in screen (or **start in 1NEON** on neon1.tech) and gives an email, their name, and their organization's name. Either way, they sign in with an 8-digit code sent there (valid a few minutes, in the browser that asked), or with a passkey once added. There are no passwords. If a code doesn't arrive, check spam or promotions, wait a minute, then **Send a new code**. The first sign-in offers a one-minute welcome tour, with **Remind me next time** and **Skip**. Replay it from **?** or the profile.
+You join 1NEON by invitation, or by making your own prospect account. An admin of the organization, or neon1, invites a person by email; they open the link and enter their email. A prospect chooses **New here? Start a free account** on the sign-in screen (or **start a free 1NEON account** on neon1.tech) and gives an email, their name, and their organization's name. Either way, they sign in with an 8-digit code sent there (valid a few minutes, in the browser that asked), or with a passkey once added. There are no passwords. If a code doesn't arrive, check spam or promotions, wait a minute, then **Send a new code**. The first sign-in offers a one-minute welcome tour, with **Remind me next time** and **Skip**. Replay it from **?** or the profile.
 
 A prospect account is free and limited: up to 3 projects, 50 items in a project, and 10 documents or pictures (10 MB each), with no inviting, approvals, proposals, billing, or Neo until neon1 converts it to a client account. If nothing in it changes for 30 days, it's deleted, after check-ins at 7 and 14 days and a final notice at 21.
 
