@@ -15,15 +15,15 @@ related: [company-mission, standards-operating-principles, company-about, compan
 
 # Charter
 
-neon1 is my one-person technology practice in New York. The company is neon1 LLC, formed in New York on July 24, 2025, doing business as neon1. This charter covers why neon1 exists, who it serves, and how it works, with detail in the [How I work](../standards/operating-principles.md) documents.
+neon1 is my one-person technology practice in New York. The company is neon1 LLC, formed in New York on July 24, 2025, doing business as neon1. Detail is in the [How I work](../standards/operating-principles.md) documents.
 
 ## Mission
 
-Help people and small organizations get their technology working together and working for them, explained honestly and at a human level, so they're left more capable, confident, and in control than before. [Mission and promise](mission.md) puts it on one page.
+Help people and small organizations get their technology working together and working for them, explained honestly and at a human level, so they're left more capable, confident, and in control than before. See [Mission and promise](mission.md).
 
 ## How
 
-I use cloud and AI software, infrastructure, and connected devices where they make the result better. Each tool or system in an engagement gets one of seven recommendations:
+I use cloud and AI software, infrastructure, and connected devices where they make the result better. Each tool or system gets one of seven recommendations:
 
 | Outcome | What it means |
 |---|---|
@@ -54,7 +54,7 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 ## What I refer to others
 
-Some work needs a specialist or round-the-clock team, so I refer it to someone who fits:
+I refer work that needs a specialist or round-the-clock team to someone who fits:
 
 - 24/7 emergency support
 - Safety-critical equipment
@@ -64,11 +64,11 @@ Some work needs a specialist or round-the-clock team, so I refer it to someone w
 
 ## Free help
 
-Paid work is paid. Separately, I set aside a little time each month for community help, at my discretion, as a habit, not a claim to be a nonprofit.
+Paid work is paid. Separately, I set aside a little time each month for community help, at my discretion. It's a habit, not a claim to be a nonprofit.
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public and growing toward v1.0. It also publishes teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public and growing toward v1.0. I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 

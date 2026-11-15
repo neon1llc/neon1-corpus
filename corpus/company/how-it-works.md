@@ -16,7 +16,7 @@ related: [company-architecture]
 
 # How neon1.tech works
 
-A tour of everything on neon1.tech and what happens behind it, with no code reading needed. Details such as scroll distances and pauses come from the code itself, all public in neon1's [GitHub repositories](https://github.com/neon1llc). For the diagrams of the same system, see [How neon1 is built](architecture.md).
+A tour of everything on neon1.tech and what happens behind it. The code is public in neon1's [GitHub repositories](https://github.com/neon1llc). For diagrams of the same system, see [How neon1 is built](architecture.md).
 
 ## The short version
 
@@ -28,7 +28,7 @@ A tour of everything on neon1.tech and what happens behind it, with no code read
 
 ## The home page
 
-The home page is one long page of sections, called views, each about one screen.
+The home page is one long page of views, each about one screen.
 
 ### The sections
 
@@ -36,7 +36,7 @@ The home page is one long page of sections, called views, each about one screen.
 2. **Services.** Four kinds of help, each with who it's for, and a note that the first call is free and takes 15 minutes.
 3. **Process.** The five steps of a project: listen, propose, decide, build, and hand over. It links once to the guided walkthrough in 1NEON.
 4. **Client work.** A sideways row of case study cards. Each shows my role and the years when confirmed, the problem, the work, the results, and what came after, in a line each, plus the result in numbers.
-5. **Public code.** neon1's public repositories and the tools I build for others, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source; the rest are source-available under FSL-1.1, with text under CC BY-ND.
+5. **Public code.** neon1's public repositories and the tools I build for others, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source. The rest are source-available under FSL-1.1, with text under CC BY-ND.
 6. **About.** My photo, who I am, and how I work, with a link to the [mission and promise](mission.md).
 7. **Questions.** The common questions, folded until opened, with a link to the full set.
 8. **Contact.** Where and when I work, a booking link for a free 15-minute call, email, phone, and the contact form.
@@ -51,25 +51,25 @@ With motion on, the page moves one view at a time:
 - Pull past a set point and it settles into the next view, slowing as it arrives. Stop short and it springs back.
 - A view taller than the screen scrolls normally until you reach its edge.
 - On a first visit, a view's heading fades in and each piece rises into place. Later visits just fade it in.
-- Leftover momentum is absorbed, so one swipe never skips two views. A finger that keeps pushing carries on.
+- One swipe never skips two views.
 - The arrow keys, Page Up, Page Down, Home, and End work the same way. Tabbing into a section shows it at once, so focus never lands on something hidden.
 - A link to a section, from the menu for example, glides there and leaves keyboard focus at the start of it.
 
-With reduced motion on, or if the animation library doesn't load, the page scrolls like any page, with everything visible, and switching it on mid-visit takes effect at once.
+With reduced motion on, or if the animation library doesn't load, the page scrolls like any page with everything visible.
 
 ### Case studies
 
 The arrow button on a card grows the card into a full panel. Closing it shrinks back into the card, and the page hasn't moved underneath. While it's open, everything behind is off for the mouse, keyboard, and screen readers, and Neo steps aside.
 
-A link to one card, such as `#case-home`, scrolls to the Client work view, slides the row to that card, marks it, and puts keyboard focus on its button. The browser's Back button returns to where the link was.
+A link to one card, such as `#case-home`, scrolls to the Client work view, slides the row to that card, and puts keyboard focus on its button. The browser's Back button returns to where the link was.
 
 ### The menu and the trip to 1NEON
 
-Links sit in the top bar on a wide screen and behind a menu button on a phone. Following a link to 1NEON fades the site to black rain and leaves a one-time note, so the portal stays black as it loads and then fades in its sign-in. The two feel like one place.
+Links sit in the top bar on a wide screen and behind a menu button on a phone. A link to 1NEON fades the site to black rain, and the portal fades in its sign-in from black, so the two feel like one place.
 
 ### Security rules on the page
 
-CloudFront serves every page with a strict content security policy: scripts, styles, fonts, and network calls may only come from neon1.tech, and inline scripts and styles are blocked. So every script and stylesheet is its own file, and nothing can call an outside service or load a tracker.
+CloudFront serves every page with a strict content security policy. Scripts, styles, fonts, and network calls may only come from neon1.tech, and inline scripts and styles are blocked, so nothing can call an outside service or load a tracker.
 
 ## The rain
 
@@ -77,7 +77,6 @@ The falling green characters are drawn on a canvas by one shared file, `shared/r
 
 - **Columns.** Each column drops a bright character and leaves a fading trail, about 15 steps a second.
 - **Words.** Now and then a column spells a word and holds it for about two seconds. Values like "listen," "ownership," and "recovery" come in gold. neon1's own names, such as "neon1," "1NEON," and "1isgladtobeofservice," come in neon1's green.
-- **The glass.** The landing's text panel, top bar links, and rain buttons act like thick glass, magnifying the rain behind with a rim that bends it inward.
 - **Waking up.** Scrolling past the landing fades the rain out and turns the page light. Then the rain stops drawing, so it costs nothing while you read.
 
 Three buttons at the bottom of the landing control it:
@@ -101,35 +100,35 @@ What happens after a catch:
 3. **Scrolling down plays the scene.** The landing turns out to be the picture on an old tube TV. The view pulls back out of the set into a sunlit room with two leather wingback chairs, turns to the window, gets up, walks over with the bob of each step, glances at a model car on the sill, and goes out through the opening to a view of a back yard, a road, a park around a pond, and hills. It ends on "go touch grass."
 4. **Scrolling up plays it backward**, back into the TV, and the rain starts again.
 
-Only scrolling moves the scene; it never plays on its own. A full walk takes about ten quick swipes on a phone, nine screens on a touchpad, 45 mouse wheel clicks, or 25 arrow key presses, spread evenly over how much the view changes, so a quick turn doesn't rush by.
+Only scrolling moves the scene. It never plays on its own. A full walk takes about ten quick swipes on a phone, nine screens on a touchpad, 45 mouse wheel clicks, or 25 arrow key presses.
 
-Some details inside the scene:
+A few details inside the scene:
 
-- **Sound** is made live with the Web Audio API: the TV's hum and static, the room's air, wind in the leaves, and birds. It starts quietly as you leave the TV and stops back at the landing.
-- **The car** on the sill starts when clicked: the headlights flash twice, the starter cranks, and the engine idles. The sound is a real V8 recording, downloaded on the first click and blended so the idle never audibly repeats.
+- **Sound** is made live: the TV's hum and static, the room's air, wind, and birds. It stops back at the landing.
+- **The car** on the sill starts when clicked, with headlights, a starter crank, and a real V8 idle recording.
 - **The sky** has drifting clouds, and the room dims when one covers the sun.
-- **The plaque** over the window reads "Temet Nosce," drawn with a pen stroke in code, so no font file is needed.
+- **The plaque** over the window reads "Temet Nosce."
 
 With reduced motion, no WebGL, or a failed load, you get a silent still card instead. Esc leaves any time and returns focus where it was, and a line for screen readers explains how to move and leave.
 
-The room's models and textures are credited in the site's asset manifest. The car is based on a Creative Commons model, unbranded and recolored, and the trees and photographed textures come from Poly Haven.
+The room's models and textures are credited in the site's asset manifest. The car is based on a Creative Commons model, unbranded and recolored, and the trees and textures come from Poly Haven.
 
 ## The Knowledge Center
 
 The Knowledge Center at [neon1.tech/knowledge](https://neon1.tech/knowledge/) holds every public neon1 document, from services and the FAQ to standards, templates, and policies, on shelves that match the corpus folders.
 
-- **Where pages come from.** Each tagged release of neon1-corpus can export a "knowledge" bundle. The site's build reads the newest release and turns every document in it into its own page at `/knowledge/<shelf>/<name>/`, with the same top bar and footer as the home page. Every page is written ahead of time as plain HTML, so search engines, link previews, and readers without JavaScript get the whole page. `/knowledge/corpus.json` names the corpus release that's live.
+- **Where pages come from.** The site's build reads the newest corpus release and turns every document in it into its own page at `/knowledge/<shelf>/<name>/`. Every page is written ahead of time as plain HTML, so search engines, link previews, and readers without JavaScript get the whole page. `/knowledge/corpus.json` names the corpus release that's live.
 - **Search** runs in your browser. Your first keystroke fetches one index file, then your words match titles, headings, summaries, and text, in that order, with some synonyms, so "Wi-Fi" finds "wireless." Nothing you type leaves the browser.
 - **PDFs.** Marked documents get a branded PDF, printed by headless Chromium at each deploy, with links back to neon1.tech.
 - **Diagrams** are written as Mermaid text inside the documents, drawn to SVG images ahead of time, and shown with their source beneath them.
 
 ## The blog
 
-The blog at [neon1.tech/blog](https://neon1.tech/blog/) holds short posts written in the corpus like everything else, about one a week. Each post gets its own page with its date, topic, and who it's for, the index lists them newest first, and an RSS feed sits at `/blog/feed.xml`. Posts end with plain share links, Copy link, and your device's share sheet, with no outside scripts. They're built from the same corpus release as the Knowledge Center and share its top bar and menu.
+The blog at [neon1.tech/blog](https://neon1.tech/blog/) holds short posts, about one a week, written in the corpus like everything else. Each post has its own page with its date, topic, and who it's for. The index lists them newest first, and an RSS feed sits at `/blog/feed.xml`. Posts end with plain share links, Copy link, and your device's share sheet, with no outside scripts.
 
 ## The contact form
 
-The form folds under "send me your use case" in Contact. Pick any services or none, add "something else," say what's going on, and give your name, email, and organization if you like.
+The form folds under "send me your use case" in Contact. Pick any services or none, say what's going on, and give your name, email, and organization if you like.
 
 When you press send:
 
@@ -138,25 +137,25 @@ When you press send:
 3. It emails hello@neon1.tech with your address as Reply-To, so I reply straight to you. It only ever mails neon1's inbox, so it can't be used to mail anyone else.
 4. A hidden field catches simple bots. Each sender gets five messages an hour, and the form takes 50 a day.
 
-Nothing is saved in your browser or the address. If no answer comes back in time, the page says it can't tell whether the message went and keeps your draft; it never resends by itself. Without JavaScript, the email and phone links do the job.
+Nothing is saved in your browser. If no answer comes back in time, the page says it can't tell whether the message went and keeps your draft. It never resends by itself. Without JavaScript, the email and phone links do the job.
 
 ## Neo, the chat
 
-Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It answers questions about neon1 from its public documents in a calm, plain voice of its own. The name is a nod to the Matrix films; the words are original.
+Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. It answers questions about neon1 from its public documents in a calm, plain voice of its own. The name is a nod to the Matrix films.
 
 **What happens when you ask something:**
 
-1. The chat window sends your question, with the conversation so far, to `neon1.tech/chat/api/chat`. Same address as the site, so the security policy needs no exception.
+1. The chat window sends your question, with the conversation so far, to `neon1.tech/chat/api/chat`.
 2. CloudFront forwards it with a secret header, so the API can't be reached around neon1.tech's limits.
 3. The function checks your limits in a DynamoDB table before anything else.
-4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model, Qwen3 Next 80B on Amazon Bedrock, won a test of several models on the same questions. A question costs under a fifth of a cent.
+4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen in a test of several models on the same questions. A question costs under a fifth of a cent.
 5. The reply is checked before you see it: links are kept only if the corpus has them, and the length is capped.
 
 **Limits.** Each visitor can ask six questions a minute and 60 an hour, and the whole site gets 500 a day. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and every entry expires by itself.
 
 **Privacy.** The conversation lives only in the open page. The function never logs it. Amazon says Bedrock doesn't train on it, and that some models may keep it for abuse detection.
 
-**Staying current.** Every Monday, the chat's repository rebuilds its copy of the corpus from the latest corpus release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a corpus release by up to a week.
+**Staying current.** Every Monday, Neo's repository rebuilds its copy of the corpus from the latest release and opens a pull request if anything changed. Merging it deploys the new text, so Neo can trail a release by up to a week.
 
 **Neo inside 1NEON.** Signed-in people in 1NEON get a separate Neo that knows the portal's guide and their own data, through the same permission checks as the page. It can offer a tour or a plan, which runs in their browser one normal step at a time, only after "Yes, do it."
 
@@ -179,11 +178,11 @@ There are no passwords: an eight-digit code arrives by email from notify.neon1.t
 - **?** at the top right explains the page in view and can spotlight its parts.
 - **Themes.** Awake is light and the default. Matrix is green on black. Device follows your device.
 
-Every change writes an audit record, and its messages go into an outbox in the same transaction. A worker sends the outbox every minute and retries failures, so a saved change can't lose its email.
+Every change writes an audit record. Its messages go into an outbox in the same transaction, and a worker sends the outbox every minute and retries failures, so a saved change can't lose its email.
 
 ## Trying 1NEON without an account
 
-Three public pages show the real portal without signing in, with made-up people and a made-up bakery. The guided walkthrough at `/1NEON/live` is the way in, and the one the site links to; the sample project and the interactive demo are there for reading at your own pace or clicking around.
+Three public pages show the real portal without signing in, with made-up people and a made-up bakery. The site links to the guided walkthrough at `/1NEON/live`. The sample project and the interactive demo are for reading or clicking around at your own pace.
 
 ### The sample project at /1NEON/example
 
@@ -202,7 +201,7 @@ The whole working portal, with 1NEON's API running in your browser: same routes,
 
 A walkthrough plays itself on the real portal. A cursor moves, clicks, types, and drags as Maria, who owns Maple Street Bakery, with her thoughts beside it and a line under the controls that says what's happening. Like the demo, it runs in your browser on made-up data, starts fresh, and saves nothing.
 
-Each walkthrough opens on a card saying who Maria is, what you'll see, and how long it takes, and waits for **Start**. It ends on a card with what happened, **Watch again**, the full story or demo, the other walkthroughs, and help. **Exit** returns you where you came from. The lengths are measured: before a release, a check plays each one in a real browser and fails if it runs much longer or shorter.
+Each walkthrough opens on a card saying who Maria is, what you'll see, and how long it takes, and waits for **Start**. It ends on a card with **Watch again**, the full story or demo, the other walkthroughs, and help. **Exit** returns you where you came from. Before a release, a check plays each one in a real browser and fails if its length is off.
 
 There are a few kinds:
 
@@ -210,23 +209,11 @@ There are a few kinds:
 - **The whole story.** `?play=full` plays 14 chapters in about 17 minutes: sign in, profile and alerts, invite the team, start a project, tell neon1 what's needed, neon1 listens, options arrive, choose an option, pay the deposit, the work, measure it, hand over, pay the final invoice, and ongoing care.
 - **Short demos.** One thing each, start to finish: joining from an invitation, adding a passkey, adding an authenticator app, and text codes. Links from the FAQ can also start partway into the whole story.
 
-Every walkthrough starts at sign-in, with Maria thinking about why she's there. She signs in with an emailed code and walks to the page click by click, as a person would.
-
 #### How the cursor moves
 
-The cursor is drawn over the page, an arrow that becomes an I-beam over fields.
+The cursor is drawn over the page. It glides to each target a little off center, as a hand would, hovers, clicks with a small ring, and types about 60 to 75 milliseconds a letter, setting values the way React expects. To upload, it drags a file from a pretend desktop to the drop area. If a link isn't on screen, it opens the menu first. Maria's thought bubble follows the cursor, and screen readers hear each new thought.
 
-- **Moving.** It scrolls a hidden target into view, then glides to it, a little off center as a hand would, easing in and out over a quarter second to a second. If the target moves mid-glide, it aims again, up to three times.
-- **Hovering.** Buttons and rows light up as it passes.
-- **Clicking.** It rests a moment, presses with a small ring, and clicks the element.
-- **Typing.** It types one character at a time, about 60 to 75 milliseconds a letter, pausing at spaces and punctuation, and sets values the way React expects, so the page reacts as it would to you.
-- **Dragging.** To upload, it carries a file from a pretend desktop to the drop area, sending the same events a real drag does.
-- **Menus.** If a link isn't on screen, it opens the menu first.
-- **Thoughts.** Maria's thought bubble follows the cursor and stays on screen, each one up long enough to read. Screen readers hear each new thought.
-- **The other side.** When Pradeep shares options or the like, it goes through the same API as his own browser would, and a note by the bell says who did it.
-- **Mail, phone, and passkeys.** The short demos draw Maria's mail, phone, and passkey prompt as windows over the portal, with 1NEON's real email templates and a real authenticator code. Passkey requests go to the pretend prompt, so nothing on your device is touched.
-
-With reduced motion on, the cursor jumps instead of gliding, and still shows each click.
+When Pradeep shares options or the like, it goes through the same API as his own browser would, and a note by the bell says who did it. The short demos draw Maria's mail, phone, and passkey prompt as windows over the portal, with 1NEON's real email templates. Passkey requests go to the pretend prompt, so nothing on your device is touched. With reduced motion on, the cursor jumps instead of gliding.
 
 #### Pausing, resuming, speed, and Back
 
@@ -245,7 +232,7 @@ The top bar has a segment per chapter, previous and next buttons, play, speed, a
 
 ## How a change goes live
 
-Work starts on its own branch, where checks run on every push, and changes to the site and 1NEON can be seen first on dev.neon1.tech, a private copy only neon1's admins can sign in to. Dev's 1NEON runs on generated test data, never a copy of production. Nothing reaches neon1.tech until I say deploy. Then each repository deploys itself when the change merges to main. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, so no repository holds AWS keys, and every deploy stops if a check fails.
+Work starts on its own branch, where checks run on every push. Changes to the site and 1NEON can be seen first on dev.neon1.tech, a private copy only neon1's admins can sign in to, with generated test data. Nothing reaches neon1.tech until I say deploy. Then each repository deploys itself when the change merges to main, and every deploy stops if a check fails. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, so no repository holds AWS keys.
 
 - **The site** checks its HTML, links, assets, sizes, and secrets, drives the page and chat in a headless browser with faked APIs, builds the PDFs, and deploys.
 - **1NEON** runs its type checks, tests, and build, applies its Terraform, and ships, uploading versioned files first and its page last.
@@ -256,11 +243,7 @@ After a deploy, each pipeline confirms the live version and tags the release fro
 
 ### The release switch
 
-A deploy never mixes old and new files. Pages, scripts, and styles go up together into `releases/<id>/`, named by a fingerprint of their contents. Only then does the deploy write that id to a small CloudFront key value store, which a CloudFront Function reads on every request.
-
-Every visitor moves to the new release at once, and new folders mean new cache addresses, so nothing needs clearing. The last 5 releases are kept, and a rollback is one write back to an earlier id, done in seconds.
-
-Fonts and media are shared and never change at the same address, so browsers keep them for a year.
+A deploy never mixes old and new files. Pages, scripts, and styles go up together into `releases/<id>/`, named by a fingerprint of their contents. Only then does the deploy write that id to a small CloudFront key value store, which a CloudFront Function reads on every request. Every visitor moves to the new release at once, and nothing needs clearing from caches. The last 5 releases are kept, and a rollback is one write back to an earlier id, done in seconds. Fonts and media never change at the same address, so browsers keep them for a year.
 
 ## Where it runs
 
@@ -290,4 +273,4 @@ neon1-corpus holds neon1's public words as Markdown, each document with a header
 - **chat**, for Neo
 - **portal**, for Neo inside 1NEON
 
-The site always builds from the newest release: every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release, without changing the site's own version. Every Monday, Neo's refresh opens a pull request with any change, which ships like any other change. Each reader's checks fail if its copy drifts from the release it built from. This document lives there too.
+The site builds from the newest release. Every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release, without changing the site's own version. Every Monday, Neo's refresh opens a pull request with any change, which ships like any other change.

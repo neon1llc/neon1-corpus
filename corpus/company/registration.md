@@ -17,7 +17,7 @@ related: [company-names, company-contact, company-charter]
 
 # State registration
 
-neon1 LLC is an active domestic limited liability company registered with the New York Department of State, DOS ID 7668765. Everything below is copied from the state's public record. The state's record is the authority. If this page and the record ever differ, the record is right, and the steps under [Check the live record](#check-the-live-record) show where to find it.
+neon1 LLC is an active domestic limited liability company registered with the New York Department of State, DOS ID 7668765. This page is copied from the state's public record. If the two ever differ, the record is right. See [Check the live record](#check-the-live-record).
 
 ## The record at a glance
 
@@ -35,7 +35,7 @@ neon1 LLC is an active domestic limited liability company registered with the Ne
 | Assumed name | NEON1, assumed name ID 7690257, active |
 | Mergers | None |
 
-The state writes names in capitals. This site writes the company as neon1 LLC and the business as neon1, and [the names](names.md) explains why.
+The state writes names in capitals. I write the company as neon1 LLC and the business as neon1 ([the names](names.md)).
 
 ## Filings
 
@@ -47,11 +47,9 @@ Every document filed with the state, newest first:
 | August 18, 2025 | Certificate of assumed name | Registered NEON1 as the name the company does business under | Assumed name ID 7690257 |
 | July 24, 2025 | Articles of organization | Formed the company | 250724003758 |
 
-The certificate of change and the articles of organization are two pages each in the state's file.
-
 ## Registered agent and legal papers
 
-Legal papers for neon1 LLC go to its registered agent, which keeps a fixed business address in Albany:
+Legal papers go to the registered agent, which keeps a fixed business address in Albany:
 
 - **Registered agent.** Registered Agents Inc., 418 Broadway, Ste R, Albany, NY 12207.
 - **Service of process.** When the Secretary of State is served on neon1 LLC's behalf, the state mails a copy to the same agent and address.
@@ -61,11 +59,11 @@ For everything else, including questions about this page, use [contact](contact.
 
 ## What comes next
 
-New York asks every LLC to file a biennial statement every two years, in the month it was formed, to keep its record current. neon1 LLC's next one is due by July 31, 2027. Once it's filed, this page is checked again and its facts-checked date moves.
+New York asks every LLC to file a biennial statement every two years, in the month it was formed. neon1 LLC's next is due by July 31, 2027. Once it's filed, I check this page again.
 
 ## Check the live record
 
-The state's database is public and free to search, but it doesn't offer links to a single record, so you search for it:
+The state's database is free to search but has no links to single records, so you search for it:
 
 1. Open the [New York Department of State's public inquiry](https://apps.dos.ny.gov/publicInquiry/).
 2. Leave **Search By** on **EntityName**.
@@ -74,13 +72,11 @@ The state's database is public and free to search, but it doesn't offer links to
 5. Under **Entity list**, tick **LimitedLiabilityCompany**.
 6. Select **Search the Database**, then open **NEON1 LLC** in the results.
 
-The record's tabs (Entity Display, Name History, Filing History, Merger History, and Assumed Name History) hold the facts on this page.
-
 To search by number instead, set **Search By** to **DOS ID** and enter `7668765`.
 
 ## Official proof
 
-The search results are public information, not a certified document. When a bank, agency, or client needs official proof, the Department of State issues it:
+Search results aren't a certified document. When a bank, agency, or client needs official proof, the Department of State issues it:
 
 - **Certificate of status.** The state's proof that the company exists, also called a certificate of good standing. It's requested in writing, and the fee is $25.
 - **Copies of filed documents.** Plain or certified copies of the articles of organization, the certificate of change, or any other filing.
@@ -89,7 +85,7 @@ I can request either one for you. Ask through [contact](contact.md) and say who 
 
 ## How this page is kept true
 
-The facts-checked date at the top is the last time every field here was compared with the live record. It can be newer than the updated date: a check that finds nothing changed moves the facts-checked date and leaves the page as it is. The page is checked after every filing with the state, and at least every six months.
+The facts-checked date at the top is the last time every field here was compared with the live record. It can be newer than the updated date, because a check that finds nothing changed leaves the page as it is. I check after every state filing, and at least every six months.
 
 ## Sources
 

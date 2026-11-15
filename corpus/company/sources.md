@@ -16,9 +16,7 @@ related: [standards-writing, standards-documentation, standards-operating-princi
 
 # Where I learn from
 
-neon1's methods build on the published work of standards bodies, government agencies, and practitioners who wrote down what they learned so others could use it. This page lists the ones I rely on most, so you can go straight to the source and read further. Each document in this Knowledge Center also names the sources it uses, where it uses them.
-
-Almost all of these are free to read. Where I use only part of one, or do something differently, the document that cites it says so.
+These are the standards bodies, agencies, and practitioners whose published work I rely on most. Each document in this Knowledge Center also names its own sources. Almost all of these are free to read. Where I use only part of one, or do something differently, the document that cites it says so.
 
 ## Writing and documentation
 
@@ -102,4 +100,4 @@ Methods for finding what slows a task down and changing one thing at a time.
 
 ## When a link breaks
 
-These pages move now and then. If one here doesn't open, tell me at [hello@neon1.tech](mailto:hello@neon1.tech) and I'll find where it went.
+If a link here doesn't open, tell me at [hello@neon1.tech](mailto:hello@neon1.tech) and I'll find where it went.
