@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-15
 created: 2026-11-07
-edition: "1.9"
+edition: "1.10"
 ---
 
 # Working with neon1
@@ -25,6 +25,10 @@ Saturdays and Sundays from 8am to 8pm, and weekday evenings from 6pm to 9pm, Eas
 ## What if something urgent comes up?
 
 I work in planned appointments on weekday evenings and weekends, with no 24/7 or emergency response. For anything your business can't run without for a day, I take the work only when someone on your side runs it day to day. The handover is written for that person: how it works, how to check it, how to restore it, and whom to call for each part. A care plan sets my response times in writing, within my working hours. A security incident in progress or an outage needs a provider with emergency coverage first. Email [hello@neon1.tech](mailto:hello@neon1.tech) for anything else.
+
+## Can I start without a call?
+
+Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), add your project's needs and files, and I'll reply with what I'd do. A new account holds up to 3 projects and 10 files, and I lift those limits once we agree to work together. An account with no changes for 30 days is removed, after reminders, and you can start again anytime.
 
 ## How long does a project take?
 
