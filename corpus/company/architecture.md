@@ -1,15 +1,15 @@
 ---
 id: company-architecture
 title: How neon1 is built
-summary: "Diagrams of the website, the 1NEON portal, Neo, the private dev copy, and how a change reaches them."
+summary: "Diagrams of the website, the 1NEON portal, Neo, the private dev copy, how every repository goes from a push to production, and what data each environment holds."
 type: page
 consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-11
-edition: "1.3"
+edition: "1.4"
 ---
 
 # How neon1 is built
@@ -282,6 +282,59 @@ sequenceDiagram
 ```
 
 The link and the cookie use separate keys. A new link doesn't sign anyone out, and signing every device out doesn't change the link. Taking someone out of the access group stops their next sign-in.
+
+## Every repository, from a push to production
+
+neon1's public repositories fall into three groups: the ones that run neon1.tech, the documents, and the tools and guides. Every push to every one of them runs its checks first. What happens next depends on what the repository is.
+
+```mermaid
+%% alt: Flowchart of how every neon1 repository moves from a push to production. Any push to any repository runs that repository's checks, and nothing goes further if they fail. The site and 1NEON have a dev stage: a branch push puts the site on a private preview, and the dev branch is the dev release of the site and the dev backend of 1NEON, both at dev.neon1.tech. When Pradeep says deploy, the work is merged to main, and main runs the full checks, deploys to production with short-lived AWS credentials, confirms the live version, and tags vX.Y.Z. Neo and the infrastructure have no dev stage: Neo's main deploys to production after its checks, and the infrastructure plans every stack on a pull request and applies main, except the permissions stack and the dev stack, which Pradeep applies by hand. The corpus tags a release from main, and the site, the Knowledge Center, 1NEON's guide, and Neo read that release; dev can read a corpus branch instead. The tools and education repositories run their checks and tag a release, and deploy nothing.
+flowchart TD
+  push["Push to any repository"]:::step --> checks{"That repository's<br/>checks pass?"}:::decision
+  checks -->|no| stop["Goes no further"]:::stop
+  checks -->|"site, 1NEON"| dev["dev.neon1.tech<br/>branch preview or dev release"]:::dev
+  dev -->|"Pradeep says deploy"| main["Merge to main"]:::step
+  checks -->|"Neo, infrastructure"| main
+  main --> gates["Full checks on main"]:::step
+  gates --> prod["Deploy with short-lived<br/>AWS credentials (OIDC)"]:::prod
+  prod --> tag["Confirm the live version,<br/>tag vX.Y.Z"]:::step
+  checks -->|corpus| corpus["Tag a corpus release<br/>from main"]:::step
+  corpus -->|"read at the next build"| prod
+  checks -->|"tools, education"| rel["Tag a release,<br/>deploy nothing"]:::step
+
+  classDef step fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef decision fill:#fff8e6,stroke:#d9b44a,color:#3d2f05
+  classDef stop fill:#fdecec,stroke:#c83b3b,color:#4d1010
+  classDef dev fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
+```
+
+| Repository | On any push | Dev | Production | Release |
+|---|---|---|---|---|
+| [neon1-site](https://github.com/neon1llc/neon1-site) | Quick checks | A branch push is a private preview; the `dev` branch is the dev release | Main runs the full checks, including browser tests and PDF printing, then switches every visitor to the new release at once | Tagged after the live site serves it |
+| [neon1-1NEON](https://github.com/neon1llc/neon1-1NEON) | Types, tests, build, the guided walkthroughs, and Terraform | The `dev` branch ships to the dev backend | Main applies Terraform and ships the API and web app from the build the checks made | Tagged after the live portal serves it |
+| [neon1-chat](https://github.com/neon1llc/neon1-chat) (Neo) | Tests, Terraform, and a secret scan | None; dev uses the live Neo, which only answers questions | Main applies the stack and checks the live endpoint | Tagged after the check. A weekly job opens a pull request when the corpus has a new release |
+| [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure) | Format, validation, lint, misconfiguration, and secret checks | The `site-dev` stack, applied by hand | Plans every stack on a pull request and applies main; the permissions stack is applied by hand, so a deploy can't widen its own access | Tagged once every stack passes |
+| [neon1-corpus](https://github.com/neon1llc/neon1-corpus) | Lint and tests | Dev can read any corpus branch, drafts included | Nothing deploys; each reader takes the newest release at its next build | Each changelog version is tagged, with its bundles attached |
+| Tools: [DeployOps](https://github.com/neon1llc/deploy-ops), [AWS CLIP](https://github.com/neon1llc/aws-clip), and [refmark](https://github.com/neon1llc/refmark) | Their own checks and tests | None | Nothing deploys; refmark also checks the sources neon1 cites every Monday | Each changelog version is tagged, only if the checks pass |
+| Education: Ready, Secure, Go and its five companion guides | Front matter, links, and each guide's own rules | None | Nothing deploys | Each changelog version is tagged |
+
+No pipeline holds AWS keys: each deploy signs in through OpenID Connect to a role that trusts only that repository's main branch, and dev has its own role. A release is tagged only after the live version is confirmed, so a tag always names what's running.
+
+## What data lives where
+
+Production and dev hold different data, and each kind of data has one home.
+
+| Data | Production | Dev |
+|---|---|---|
+| Website visitors | No accounts, analytics, or tracking. CloudFront handles your IP address and browser details to send the pages | The same, plus a signed sign-in cookie for neon1's own people |
+| Questions to Neo | Answered from neon1's public pages; Neo's service doesn't log or store the text | Dev uses the production Neo |
+| 1NEON projects, files, and people | Production's table and documents bucket, behind production's sign-in pool | A copy of production's, refreshed only when Pradeep asks, without queued messages, sessions, or sign-in links. Because it names real clients, dev admits only neon1's own accounts |
+| Signed and financial records | Write-protected for seven years (S3 Object Lock) | Kept for a day |
+| Email and texts | Sent to the people they're for | Mail goes only to neon1, and texts are off |
+| Documents and case studies | neon1-corpus releases, public by design | Any corpus branch, drafts included |
+
+Dev holds a copy of production's 1NEON data so that a change is tried on the same records it will meet. That's also why dev is closed to everyone outside neon1, and why it sends nothing to clients. The [privacy policy](../policies/privacy.md) says what's collected and for how long.
 
 ## One source for every word
 
