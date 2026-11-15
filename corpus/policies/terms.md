@@ -67,7 +67,7 @@ Your organization can stop using 1NEON at any time, and anyone with a free accou
 To the extent the law allows:
 
 - neon1 isn't liable for indirect, incidental, or consequential losses, such as lost profits or lost data, arising from use of the website or portal.
-- neon1's total liability relating to the portal is limited to the fees your organization paid neon1 in the 12 months before the claim. A prospect account is provided free and as is.
+- neon1's total liability relating to the portal is limited to the fees your organization paid neon1 in the 12 months before the claim. A free account is provided as is, at no charge.
 
 Nothing in these terms limits liability that can't be limited by law.
 
