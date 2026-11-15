@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-15
 created: 2026-11-11
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone who wants to go past neon1's documents to where the practice comes from"
@@ -16,11 +16,9 @@ related: [standards-writing, standards-documentation, standards-operating-princi
 
 # Where I learn from
 
-These are the standards bodies, agencies, and practitioners whose published work I rely on most. Each document in this Knowledge Center also names its own sources. Almost all of these are free to read. Where I use only part of one, or do something differently, the document that cites it says so.
+Each document in this Knowledge Center also names its own sources. Where I use only part of one, or do something differently, the document that cites it says so.
 
 ## Writing and documentation
-
-How documents are worded, organized, and kept true.
 
 - **[Plain language guide series](https://digital.gov/guides/plain-language)**, Digital.gov, which now hosts the federal plain language guidelines. Writing for the reader: audience first, plain words, short sections.
 - **[Writing to GOV.UK standards](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/)**, UK Government Digital Service. Front-loading the important words, and writing the way people search.
@@ -31,8 +29,6 @@ How documents are worded, organized, and kept true.
 - **[Write the Docs guide](https://www.writethedocs.org/guide/)**, the Write the Docs community. Keeping documentation next to what it describes, and changing both together.
 
 ## Security and privacy
-
-What a sensible baseline looks like for a household, a small office, and a software team.
 
 - **[NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework)**, US National Institute of Standards and Technology. A shared outline of what security covers: govern, identify, protect, detect, respond, and recover.
 - **[Small business cybersecurity](https://www.nist.gov/itl/smallbusinesscyber)**, NIST. Plain guides sized for a small organization.
@@ -47,8 +43,6 @@ What a sensible baseline looks like for a household, a small office, and a softw
 
 ## Reliability and recovery
 
-Keeping things running, and getting them back when they stop.
-
 - **[Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)** and **[The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)**, Google. Service levels, error budgets, incident response, and blameless reviews.
 - **[Reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)** of the **[AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)**, Amazon Web Services. Designing cloud systems to recover from failure.
 - **[Contingency planning guide, SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final)**, NIST. Recovery objectives and plans that get tested.
@@ -56,8 +50,6 @@ Keeping things running, and getting them back when they stop.
 - **[Incident management handbook](https://www.atlassian.com/incident-management/handbook)**, Atlassian. A clear, practical incident process for small teams.
 
 ## Building and shipping software
-
-How code is written, checked, released, and kept.
 
 - **[The Twelve-Factor App](https://12factor.net/)**, Adam Wiggins and contributors at Heroku. Settings outside code, and builds that can be repeated.
 - **[Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final)**, NIST. Security practices across the whole development cycle.
@@ -70,14 +62,10 @@ How code is written, checked, released, and kept.
 
 ## AI
 
-Using language models where they help, and testing them like anything else.
-
 - **[AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)** and its **[generative AI profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)**, NIST. Mapping, measuring, and managing the risks of an AI system.
 - **[Top 10 for LLM applications](https://genai.owasp.org/llm-top-10/)**, OWASP. The common ways an AI feature gets misused, starting with prompt injection.
 
 ## Design and accessibility
-
-Interfaces and documents that work for everyone, on any device.
 
 - **[Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22/)** and the **[introduction to accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)**, W3C Web Accessibility Initiative. The accessibility standard, and a plain start on why it matters.
 - **[Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)** and **[usability testing 101](https://www.nngroup.com/articles/usability-testing-101/)**, Nielsen Norman Group. Judging an interface, and testing it with real people.
@@ -85,8 +73,6 @@ Interfaces and documents that work for everyone, on any device.
 - **[Web Vitals](https://web.dev/articles/vitals)**, Google. Measures of how fast and stable a page feels.
 
 ## Improving how work gets done
-
-Methods for finding what slows a task down and changing one thing at a time.
 
 - **[Lean lexicon](https://www.lean.org/lexicon-terms/muda-mura-muri/)**, Lean Enterprise Institute. Waste, flow, and asking [why five times](https://www.lean.org/lexicon-terms/5-whys/).
 - **[The Kanban guide](https://kanban.university/kanban-guide/)**, Kanban University. Making work visible and limiting what's in progress.

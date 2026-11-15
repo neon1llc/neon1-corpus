@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 audience: "Developers"
 order: 2
 consumers: [ai]
@@ -64,7 +64,7 @@ For a bug: reproduce it, find the cause, fix it narrowly, add a test that would 
 
 ## Maturity and version 1.0.0
 
-Before `v1.0.0`, a project is in initial development. `v1.0.0` is the first complete, dependable release of the whole intended scope. Passing tests or one finished feature doesn't qualify. See [versioning](versioning.md).
+Before `v1.0.0`, a project is in initial development. `v1.0.0` is the first complete, dependable release of the whole intended scope; passing tests or one finished feature doesn't qualify. See [versioning](versioning.md).
 
 ## The detailed standards
 

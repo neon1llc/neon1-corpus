@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -43,8 +43,6 @@ Plus at least one copy ransomware can't reach: an unplugged drive, or a cloud ba
 Dropbox, OneDrive, and iCloud Drive keep files the same everywhere, so a deleted or scrambled file is gone everywhere too. Version history helps only as long as they keep it, so check how long.
 
 ## Do a test restore
-
-Pick a quiet time and try it:
 
 - [ ] Choose a file from last week and restore it to a different folder
 - [ ] Open it and check it's the right version and not damaged

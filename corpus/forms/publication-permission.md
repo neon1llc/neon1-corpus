@@ -8,14 +8,14 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.1"
+edition: "1.2"
 origin: "neon1's internal handbook, evidence and publication form and the November 2026 planning notes, working templates"
 related: [standards-outreach]
 ---
 
 # Publication permission record
 
-Working on your project isn't permission to publish it. A name, quote, screenshot, logo, and number each need their own permission, so each gets its own box.
+Working on your project isn't permission to publish it.
 
 **Project:** ____ **Date:** ____
 

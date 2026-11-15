@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.7"
+edition: "1.8"
 audience: "Developers"
 order: 6
 consumers: [ai]
@@ -16,8 +16,6 @@ related: [standards-development, standards-version-control, standards-documentat
 ---
 
 # Versioning and releases
-
-neon1 uses one scheme for software and one for documents.
 
 ## Software: vX.Y.Z
 
@@ -52,7 +50,7 @@ A release's number must agree in:
 - The **package file**, if there is one (`package.json`, `pyproject.toml`).
 - Anything the release shows people, such as a site's footer or a `--version` flag.
 
-Checks fail when these disagree. Every changelog version has a tag and every tag an entry, and tags are never moved or reused. If numbers have drifted, don't rewrite old tags. Pick the next correct number, make every place agree, and note it in the changelog.
+Checks fail when these disagree. Every changelog version has a tag and every tag an entry. If numbers have drifted, don't rewrite old tags. Pick the next correct number, make every place agree, and note it in the changelog.
 
 ## When a project shipped before it was tagged
 
@@ -102,7 +100,7 @@ In every neon1 repository the pipeline makes the tag, so a tag means this exact 
 
 ## Release levels
 
-A release level says how far a change has been proven. Each needs its own evidence:
+A release level says how far a change has been proven:
 
 | Level | Means | Evidence |
 |---|---|---|

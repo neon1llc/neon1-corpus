@@ -8,7 +8,7 @@ updated: 2026-11-15
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 4
 origin: "neon1's internal handbook, discovery and delivery"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
@@ -73,7 +73,7 @@ Permission to do the work isn't permission to publish it. I ask separately befor
 | Architecture decision records | Keeping the reason for a big choice | A record for every small preference |
 | Usability testing | Checking the whole task, including recovery | Testing only looks or expert use |
 
-These are tools, not certifications. I use the parts that help, and say so.
+These are tools, not certifications.
 
 ## Sources
 

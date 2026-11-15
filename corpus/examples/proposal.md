@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -110,7 +110,6 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 ## Comments and agreement
 
-- This proposal is valid until April 14.
 - Signing below means we both agree to the work, price, and schedule above, and to what each of us will do.
 
 ## Acceptance of this proposal

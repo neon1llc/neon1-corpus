@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-09
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -46,6 +46,6 @@ Don't send passwords, health details, or payment information, before or during t
 - Whether I'm a good fit, and if not, who might be
 - The smallest useful next step, if there is one
 
-If it makes sense, a short proposal with options and estimates follows, and nothing starts until you pick one. I fill in the [intake form](../forms/intake.md) from our conversation.
+If it makes sense, a short proposal with options follows. I fill in the [intake form](../forms/intake.md) from our conversation.
 
 [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../company/contact.md) for other ways to reach me.

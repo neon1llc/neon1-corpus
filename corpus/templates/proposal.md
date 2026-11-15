@@ -9,7 +9,7 @@ created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.4"
+edition: "1.5"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -56,8 +56,6 @@ ____
 - Third-party subscriptions, hardware, travel, and taxes, which are billed separately and preferably straight to you
 
 ## Options
-
-Use instead of "Included" and "Not included" when there's a real choice. For each option:
 
 ### ____ (A, B, C)
 
@@ -139,7 +137,6 @@ The work is accepted when these checks pass in front of you:
 
 ## Comments and agreement
 
-- This proposal is valid until the date at the top.
 - Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
 - For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.
 

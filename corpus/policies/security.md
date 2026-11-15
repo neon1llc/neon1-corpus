@@ -4,9 +4,9 @@ title: Security disclosure
 summary: "How to report a security problem in neon1.tech, the 1NEON portal, or a neon1 repository, and what happens after you do."
 type: policy
 status: adopted
-updated: 2026-11-12
+updated: 2026-11-15
 created: 2026-11-08
-edition: "1.3"
+edition: "1.4"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/security/"
@@ -16,7 +16,7 @@ related: [standards-security-and-data, policy-privacy]
 
 # Security disclosure
 
-*Last updated November 12, 2026.* This update adds a short summary at the top. Nothing else changes.
+*Last updated November 15, 2026.*
 
 If you think you've found a security problem in neon1.tech, the 1NEON portal, Neo, or any [neon1llc repository](https://github.com/neon1llc), thank you. Please tell me privately so it can be fixed before anyone else finds it.
 
@@ -28,7 +28,7 @@ If you think you've found a security problem in neon1.tech, the 1NEON portal, Ne
 
 ## How to report
 
-Email [security@neon1.tech](mailto:security@neon1.tech). If that bounces, use [hello@neon1.tech](mailto:hello@neon1.tech). Please don't open a public issue. Helpful details include:
+Email [security@neon1.tech](mailto:security@neon1.tech). If that bounces, use [hello@neon1.tech](mailto:hello@neon1.tech). Helpful details include:
 
 - What you found and where (the URL, repository, or file)
 - Steps to reproduce it
@@ -40,7 +40,6 @@ Email [security@neon1.tech](mailto:security@neon1.tech). If that bounces, use [h
 - I'll acknowledge your report within a few days.
 - I'll keep you updated while I investigate and fix it.
 - Once it's fixed, I'll credit you publicly if you want.
-- There's no bug bounty or paid reward.
 
 ## Please don't
 
