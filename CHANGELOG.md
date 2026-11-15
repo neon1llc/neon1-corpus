@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- Prospect accounts in 1NEON. The terms of use (edition 1.4) add section 3, Prospect accounts: who can sign up, what the account is for, its limits, who sees it, check-ins and deletion after 30 days without changes, becoming a client, and suspension; acceptable use adds rights to shared material, abusive content, getting around limits, and automated sign-ups. The privacy and data policy (edition 3.1) says what a sign-up collects, adds Cloudflare Turnstile as a provider, and lists the prospect retention periods. The 1NEON guide and product page say how to join without an invitation. Both policies wait for the lawyer's review.
+
 ### Changed
 - Shorter, plainer wording across the public documents, standards, templates, forms, examples, the 1NEON guide, and Neo's directive, with a new "Fewer words" section in the writing standard. Policies and agreements keep their wording. The cookie notice (edition 1.5) adds `1neon.email`, the sign-in email kept when Remember me is ticked.
 
