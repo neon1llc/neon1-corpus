@@ -77,7 +77,7 @@ A date may follow the version. Sections are **Added**, **Changed**, **Deprecated
 1. Look at the batch on dev first, where a project has one. neon1's site and 1NEON do, at dev.neon1.tech.
 2. Merge everything the release includes into main, with the checks passing.
 3. Update the changelog and every place the version appears, in one commit.
-4. Merge it to main. The pipeline deploys it, checks that what's live reports the new version, and then tags that commit: `vX.Y.Z`, annotated.
+4. Merge it to main with `--no-ff`, the merge message naming the version and what it brings in one line. The pipeline deploys it, checks that what's live reports the new version, tags that commit (`vX.Y.Z`, annotated), and publishes the version's changelog entry as its GitHub release.
 5. A project without a pipeline tags by hand: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
 
 ## How neon1's repositories release
@@ -96,6 +96,7 @@ In every neon1 repository the pipeline makes the tag, so a tag means this exact 
 - **A push with no new version** is for changes nobody would notice, such as CI or comments.
 - **Checks enforce agreement.** The tag step stops when the changelog names no version.
 - **Dev builds are never releases.** Their changelog entries wait under `## Unreleased` until the batch reaches main.
+- **Every tag has a GitHub release** whose notes are its changelog entry, so each repository's Releases page reads newest first.
 - **A tag is never made again or moved.** If a release went wrong, the fix is the next patch.
 
 ## Release levels
