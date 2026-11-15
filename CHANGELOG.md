@@ -4,18 +4,16 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.46.0 - 2026-11-15
+
 ### Added
-- Publishing client work (edition 1.0): client permission, named or anonymous, quotes, figures, and private details, linked from About neon1.
+- Publishing client work (edition 1.0): permission, named or anonymous, quotes, figures, and private details.
 
 ### Changed
-- About neon1 (edition 1.7): a more general opening that names no client project, "established July 2025 in New York" in place of "registered", "Some case studies of my work" in place of "Recent work includes", and a line that client work is published only with permission, in the form the client chooses.
-- A free account's website and city are optional, so people who'd rather stay private can still start: the free-accounts guide (edition 1.1), the privacy and data policy (edition 3.3), and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7, with Home's **Not now**).
-- 1NEON guide: the new **Contact neon1** page, and the guide mentions it.
-- Free accounts: sign-up asks, optionally, how you found neon1, and Home's **Next step** asks for an assessment or a call. The website's contact form asks how you found neon1 too. The privacy and data policy (edition 3.3) covers all three; the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describes them.
-- Free accounts: sign-up asks which describes you best (an organization's name for all but individuals), takes a city and state separately, and checks each field (the email's domain takes mail and isn't a temporary mailbox, a website answers, a city is a real place). The privacy and data policy (edition 3.3) says what's checked and that nothing from the checks is stored, and covers the same email check on the contact form; the free-accounts guide (edition 1.1) and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describe it.
-- Cookies and browser storage (edition 1.6): adds `1neon.signup`, Home's **Not now** for an organization's details, and `1neon.motion` for the profile's **Reduced** motion.
-- Cut text that describes the site or its documents instead of helping the reader: post cadence, document and PDF counts, and notes on how a page is kept.
-- Free-account copy: write down your needs, then ask for an assessment or a call from your account. Reminders the portal sends are no longer worded as mine.
+- About neon1 (edition 1.7): names no client project, "established July 2025 in New York", case studies published with permission.
+- Free accounts: a website and city are optional, sign-up asks how you found neon1 and what describes you, and each field is checked. Updated in the free-accounts guide (edition 1.1), the privacy and data policy (edition 3.3), and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7, with the new **Contact neon1** page).
+- Cookies and browser storage (edition 1.6): adds `1neon.signup` and `1neon.motion`.
+- Cut text that describes the site or its documents instead of helping the reader.
 
 ## v0.45.1 - 2026-11-15
 
