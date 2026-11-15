@@ -7,7 +7,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - A free account's website and city are optional, so people who'd rather stay private can still start: the free-accounts guide (edition 1.1), the privacy and data policy (edition 3.3), and the 1NEON guide (people and account, edition 1.8; pages, edition 1.7, with Home's **Not now**).
 - 1NEON guide: the new **Contact neon1** page, and the guide mentions it.
-- Free accounts: sign-up asks, optionally, how you found neon1, and Home's **Next step** asks for an assessment or a call. The website's contact form asks the same. The privacy and data policy (edition 3.3) covers all three; the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describes them.
+- Free accounts: sign-up asks, optionally, how you found neon1, and Home's **Next step** asks for an assessment or a call. The website's contact form asks how you found neon1 too. The privacy and data policy (edition 3.3) covers all three; the 1NEON guide (people and account, edition 1.8; pages, edition 1.7) describes them.
 - Cookies and browser storage (edition 1.6): adds `1neon.signup` and Home's **Not now** for an organization's details.
 
 ## v0.45.1 - 2026-11-15
