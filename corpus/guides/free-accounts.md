@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-15
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: false
 audience: "Anyone with a project in mind who'd rather write it down first"
@@ -23,7 +23,7 @@ Once you're in, **Contact neon1** in the menu has every way to reach me: email, 
 
 ## How it goes
 
-1. **Sign up** with your email, your name, and which describes you best (with your organization's name, unless you're signing up for yourself). Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
+1. **Sign up** with your email, your name, and which describes you best (with your organization's name, if you have one). Your website or where you're based helps me, but it's optional. A code sent to your email finishes it.
 2. **Add a project** and list what it needs, in your own words.
 3. **Ask for an assessment or a call** from **Next step** on Home. An assessment is an approach and the first questions to settle.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.

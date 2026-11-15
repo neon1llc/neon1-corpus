@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Free accounts: the organization's name is optional for **Something else**. Updated in the free-accounts guide (edition 1.2), the privacy and data policy (edition 3.4) and the 1NEON guide (people and account, edition 1.9).
+
 ## v0.46.0 - 2026-11-15
 
 ### Added
