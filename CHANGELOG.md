@@ -2,6 +2,17 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Added
+- Blog post "Why I started neon1, and a free way to start with me": why neon1 exists, how a project runs, and free 1NEON accounts.
+
+### Changed
+- FAQ: "Can I start without a call?" (Working with neon1, edition 1.10) and "Can I start without an invite?" (1NEON help) point to the free 1NEON account, and the 1NEON guide uses the sign-in screen's new "New here? Start a free account" label. Release this once 1NEON's sign-up opens in production.
+- New guide, [Free 1NEON accounts](corpus/guides/free-accounts.md) (`guides-free-accounts`, neon1.tech/knowledge/guides/free-accounts/): how to start without a call, what a free account holds next to a client account, and how long it lasts. Both FAQ entries link to it instead of repeating its details.
+- Sign-up asks for the organization's website or where it's based (at least one): in the privacy and data policy (portal "Organization details" and free-account sign-up), the 1NEON guide's sign-up steps, and the Settings page description (1NEON pages, edition 1.6).
+- "Prospect accounts" are now "free accounts" everywhere a visitor reads: terms of use (edition 1.5, section 3 "Free accounts"), privacy and data policy (edition 3.2), the 1NEON guide, and the product page. Same rules, friendlier name. The privacy policy also links Cloudflare's Turnstile Privacy Addendum, which Turnstile's invisible mode requires. Both policies still wait for the lawyer's review.
+
 ## v0.44.0 - 2026-11-15
 
 ### Added

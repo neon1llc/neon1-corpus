@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-15
 created: 2026-11-10
-edition: "1.5"
+edition: "1.6"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -98,7 +98,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
+`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 
 ## Your profile
 
