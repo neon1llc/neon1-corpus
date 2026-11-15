@@ -4,7 +4,7 @@ title: One view of the shop
 summary: "An alterations shop's point-of-sale, order tracking, and cameras each had their own screen, and none showed the shop as a whole."
 type: case-study
 status: adopted
-client: alterations
+client: alterations shop
 area: workflows
 kind: neon1
 role: "As neon1, my first client"
