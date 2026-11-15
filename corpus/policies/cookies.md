@@ -4,9 +4,9 @@ title: Cookie and browser storage notice
 summary: "The only cookies and browser storage neon1.tech and 1NEON use, and why."
 type: policy
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-15
 created: 2026-11-06
-edition: "1.3"
+edition: "1.4"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -15,9 +15,9 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 14, 2026.* This update says more exactly what the demo and walkthrough send: nothing you do in them leaves your browser, though their pages and files load from neon1.tech first. It also lists the file storage an admin's Download everything uses while the zip is built; nothing in it is sent anywhere, and there's no new tracking.
+*Last updated November 15, 2026.* This update makes the notice part of the [privacy and data policy](https://neon1.tech/1NEON/privacy), and says sign-in with Google is turned off today. Nothing new is saved, and there's no new tracking.
 
-Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
+This notice is part of the [privacy and data policy](https://neon1.tech/1NEON/privacy) and lists, in detail, every cookie and item neon1 saves in your browser. Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
 ## neon1.tech
 
@@ -38,7 +38,7 @@ The portal uses only the cookies it needs to sign you in and keep you signed in:
 | `__Secure-1neon_rt` | Renews your sign-in without asking again | Up to 30 days, or until you sign out. Without "remember me", until you close the browser |
 | `__Secure-1neon_step` | Holds a sign-in in progress between steps | 5 minutes |
 | `__Secure-1neon_rm` | Remembers your "remember me" choice during sign-in | 5 minutes |
-| `__Secure-1neon_flow` | Protects sign-in with Google | 10 minutes |
+| `__Secure-1neon_flow` | Protects sign-in with Google, which is turned off today, so it isn't set | 10 minutes |
 | Sign-in service cookies on auth.neon1.tech | Protect the sign-in step (Amazon Cognito) | Your sign-in session |
 
 These cookies are strictly necessary, can only be read by the portal's own server, are never used for advertising or analytics, and are never shared. Because of that, the portal doesn't show a cookie consent banner. If you block them, you won't be able to sign in.
