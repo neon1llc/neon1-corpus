@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.46.2 - 2026-11-16
+
 ### Added
 - A business-facts check (`tools/facts.mjs`, run by the lint): who can sign up, what sign-up asks for, a free account's limits, the service area, and the hours. It flags wording that's out of date and numbers that differ, and other repos can run it over their own pages.
 
@@ -14,6 +16,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Service area, the same everywhere: remote across the US, on site within about 30 miles of Queens, NY, and outside the US, ask. In contact (edition 1.5), capabilities (edition 1.5), the free-accounts guide (edition 1.3), and the blog.
 - Publishing client work (edition 1.1): a client agrees to each detail a study shows, and can allow a broad sector without being named. Anonymous studies still leave out the industry.
 - Privacy and data policy, and cookies and browser storage: the "Last updated" line matches the November 16 edition.
+- Cookies and browser storage (edition 1.8): adds `neon1.theme`, the dark or light look chosen on 1NEON's sign-in and public pages.
 
 ## v0.46.1 - 2026-11-16
 

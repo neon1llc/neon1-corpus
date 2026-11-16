@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-16
 created: 2026-11-06
-edition: "1.7"
+edition: "1.8"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 16, 2026.* This update adds `1neon.signup`, which keeps whether free-account sign-up was open so the sign-in page draws the right wording at once, the note that remembers an admin's **Not now** on Home, and `1neon.motion`, which keeps the profile's **Reduced** motion choice. There's no new tracking.
+*Last updated November 16, 2026.* This update adds `neon1.theme`, which keeps the dark or light look you chose on the sign-in and public pages, shared with neon1.tech. There's no new tracking.
 
 This notice is part of the [privacy and data policy](https://neon1.tech/1NEON/privacy) and lists, in detail, every cookie and item neon1 saves in your browser. Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 
@@ -50,6 +50,7 @@ The portal also saves, on your device only:
 | `1neon.email` (local storage) | With Remember me ticked, the email you signed in with, so it's filled in next time. Unticked, it's cleared | Until you sign in with Remember me unticked, or clear it |
 | `1neon.lastOrg` (local storage) | The organization you last had open, so pages outside one (your profile, the FAQs) keep its menu | Until you clear it |
 | `1neon.signup` (local storage) | Whether free-account sign-up was open when you last opened sign-in, so the page shows the right wording at once | Until you clear it |
+| `neon1.theme` (local storage) | That you chose the dark (matrix) or light (awake) look with the switch on sign-in and the public pages. Shared with neon1.tech | Until you clear it |
 | `1neon.motion` (local storage) | That you chose **Reduced** motion on your profile, which turns 1NEON's animations off in this browser | Until you choose **Smooth** again, or clear it |
 | `1neon.face-ask.` and an organization's ID (local storage) | Admins only: that you chose **Not now** when Home asked where to see your business, so it stops asking in this browser | Until you clear it |
 | `1neon.signin` (session storage) | Your email and the sign-in step in progress, so a reload mid sign-in returns to the code step. The code itself is never saved | 5 minutes, or until the tab closes |
