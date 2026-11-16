@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-16
 created: 2026-11-07
-edition: "1.13"
+edition: "1.14"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -48,7 +48,7 @@ For anything your business can't go a day without, I take the work only when som
 
 ## How long does a project take?
 
-Small jobs take a week or two, medium ones two to four weeks, and bigger ones four to six. I take up to two clients at a time.
+Small jobs take a week or two, medium ones two to four weeks, and bigger ones four to six. I take a few clients at a time, so each gets my full attention.
 
 ## How is the cost worked out?
 
