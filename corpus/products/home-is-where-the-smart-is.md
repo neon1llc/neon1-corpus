@@ -31,4 +31,4 @@ Credit freeze and reporting steps are for the United States. Settings menus chan
 
 ## Next step
 
-Start with the guides to [a password manager for your family](../guides/password-manager-for-family.md) and [backups you can trust](../guides/backups-you-can-trust.md). For hands-on help at home, [get in touch](../company/contact.md).
+Start with the guides to [a password manager for your family](../guides/password-manager-for-family.md) and [backups you can trust](../guides/backups-you-can-trust.md). For hands-on help at home, [get in touch](../engagement/contact.md).

@@ -33,4 +33,4 @@ It explains rules in plain words and points to the official text. It's training,
 
 ## Next step
 
-For help applying it, neon1's [security awareness and readiness](../services/index.md) work turns a walkthrough into training sessions, policies, and records that fit your business. [Get in touch](../company/contact.md) to talk it through.
+For help applying it, neon1's [security awareness and readiness](../engagement/index.md) work turns a walkthrough into training sessions, policies, and records that fit your business. [Get in touch](../engagement/contact.md) to talk it through.

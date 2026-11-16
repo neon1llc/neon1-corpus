@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
 updated: 2026-11-16
 created: 2025-09-07
-edition: "1.5"
+edition: "1.6"
 ---
 
 # Contact
@@ -27,7 +27,7 @@ Tell me what's on your mind, or ask for an opinion on how your operations run to
 ## What to expect
 
 - **Where:** remote across the US, or on site within about 30 miles of Queens, NY. Outside the US, ask.
-- **When:** weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time.
+- **When:** Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time.
 - **Size:** a week or two up to six weeks, with at most two clients at a time.
 - **First call:** free and 15 minutes. The main pain points and your options.
 - **After:** a short proposal with options and estimates. Nothing starts until you pick one.

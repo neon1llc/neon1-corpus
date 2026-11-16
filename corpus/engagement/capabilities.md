@@ -49,7 +49,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 | **Legal name** | neon1 LLC, doing business as neon1 |
 | **Type** | Limited liability company, owner-operated small business |
 | **Formed** | July 24, 2025, in New York |
-| **New York DOS ID** | 7668765, active ([state registration](registration.md)) |
+| **New York DOS ID** | 7668765, active ([state registration](../company/registration.md)) |
 | **Business address** | 418 Broadway, Ste R, Albany, NY 12207 |
 | **Service area** | Remote across the US, or on site within about 30 miles of Queens, NY. Outside the US, ask |
 | **Owner** | Pradeep Tathineni |

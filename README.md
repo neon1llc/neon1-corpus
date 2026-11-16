@@ -8,8 +8,8 @@ From [neon1](https://neon1.tech). *1 is glad to be of service.*
 
 | Folder | What it holds |
 |---|---|
-| [`corpus/company/`](corpus/company) | Who neon1 is, the names, how a project runs, how it's built (diagrams), how to get in touch |
-| [`corpus/services/`](corpus/services) | The four kinds of help and where to start |
+| [`corpus/company/`](corpus/company) | Who neon1 is, the names, how it's built (diagrams), the state record |
+| [`corpus/engagement/`](corpus/engagement) | Working with neon1: the services, pricing, how a project runs, contact, the agreement |
 | [`corpus/faq/`](corpus/faq) | Working with neon1, and help for the 1NEON portal |
 | [`corpus/case-studies/`](corpus/case-studies) | Past projects, each told as Needs, Execute, Observe, Normalize |
 | [`corpus/products/`](corpus/products) | 1NEON, AWS CLIP, DeployOps, Ready, Secure, Go |

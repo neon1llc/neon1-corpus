@@ -69,7 +69,7 @@ Search results aren't a certified document. When a bank, agency, or client needs
 - **Certificate of status** (good standing): requested in writing, $25.
 - **Copies of filed documents**, plain or certified.
 
-I can request either one for you. Ask through [contact](contact.md) and say who needs it.
+I can request either one for you. Ask through [contact](../engagement/contact.md) and say who needs it.
 
 ## Sources
 

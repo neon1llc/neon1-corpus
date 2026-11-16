@@ -206,7 +206,7 @@ The work is accepted when these checks pass in front of you:
 
 ## Comments and agreement
 
-- It works under our [service agreement](../policies/service-agreement.md), signed once before any paid work.
+- It works under our [service agreement](../engagement/service-agreement.md), signed once before any paid work.
 - Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
 - For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.
 
