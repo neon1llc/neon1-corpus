@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.47.0 - 2026-11-16
+
 ### Added
 - An faq can name the questions the site's home page shows (`home` in the front matter). The home page shows only each answer's first paragraph, and the lint keeps that paragraph to 45 words, so the short and full answers come from the same text.
 
