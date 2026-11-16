@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Free accounts: one name is fine, a website is never visited (only its form is checked), a US town not on the places list is kept as typed, and places outside the US are welcome. Home shows the date an account is kept until, with one 30-day extension and a download. Updated in the privacy and data policy (edition 3.5), the free-accounts guide (edition 1.3), and the 1NEON guide (people and account, edition 1.10; pages, edition 1.8).
+
 ## v0.46.1 - 2026-11-16
 
 ### Changed
