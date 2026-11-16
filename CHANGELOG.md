@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.47.1 - 2026-11-16
+
 ### Changed
 - Terms (edition 1.6) and privacy and data policy (edition 3.6): a suspended free account isn't deleted on the 30-day schedule and waits for review, and **Keep it** adds 30 days to the date Home shows.
 
