@@ -9,6 +9,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Neo (edition 2.5): the price link points at the Engagement shelf.
 - Contact (edition 1.7) and Working with neon1 (edition 1.14): no client cap ("a few clients at a time, so each gets my full attention"), and hours are Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time.
 - The site's public code section is now called code and resources; how it works and capabilities use the same name.
+- Contact (edition 1.8): a "Report a bug" section links neon1.tech/report-bug/, so Neo can point to it when someone describes something broken.
 
 ## v0.47.1 - 2026-11-16
 
