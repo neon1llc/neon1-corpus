@@ -50,7 +50,8 @@ The full rules are in [`schema/doc.schema.json`](schema/doc.schema.json), whose 
 Node 22, no dependencies.
 
 ```
-node tools/lint.mjs                     # front matter, per-type rules, links, and checks for anything that looks private
+node tools/lint.mjs                     # front matter, per-type rules, links, business facts, and anything that looks private
+node tools/facts.mjs <file>             # the same business facts over another repo's copy (site, 1NEON help)
 node tools/export.mjs --target site     # writes dist/site/. Also chat, knowledge, ai, portal or blog
 node tools/diagrams.mjs check           # every diagram is drawn and has alt text
 ```

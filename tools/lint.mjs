@@ -9,6 +9,7 @@ import { readFileSync, existsSync } from "node:fs"
 import { join, dirname, resolve } from "node:path"
 import { root, load, SECTIONS } from "./corpus.mjs"
 import { sections, safeHref } from "./markdown.mjs"
+import { checkText, checkRequired } from "./facts.mjs"
 
 
 
@@ -136,6 +137,9 @@ for (const doc of docs) {
     for (const [re, why] of PRIVATE) if (re.test(withoutPublic(text))) err(`line ${i + 1}: ${why}`)
   })
 
+  // The business facts every page states the same way (tools/facts.mjs)
+  for (const p of checkText(doc.body)) err(p)
+
   // origin is published in the raw repository too, so it names sources in words, never a private folder or file
   if (typeof d.origin === "string") for (const [re, why] of ORIGIN_PRIVATE) if (re.test(d.origin)) err(`origin ${why}`)
 }
@@ -151,6 +155,9 @@ for (const doc of docs) {
     else if (!["template", "form"].includes(blank.data.type)) err(`example_of ${d.example_of} is a ${blank.data.type}, not a template or form`)
   }
 }
+
+// Documents that must state a business fact in so many words
+errors.push(...checkRequired(docs))
 
 if (warnings.length) console.warn(`${warnings.join("\n")}\n${warnings.length} TBD placeholder(s); exports leave them out, and show a case study's missing role or year as not yet confirmed.\n`)
 if (errors.length) {

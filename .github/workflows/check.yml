@@ -17,7 +17,7 @@ jobs:
         run: node tools/lint.mjs
       # The renderer escapes raw HTML and refuses unsafe link schemes
       - name: Test the renderer
-        run: node --test tools/markdown.test.mjs
+        run: node --test tools/markdown.test.mjs tools/facts.test.mjs
       # Every mermaid diagram is drawn, has alt text, and no drawing is left over
       - name: Check diagrams
         run: node tools/diagrams.mjs check
