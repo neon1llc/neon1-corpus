@@ -4,7 +4,7 @@ title: Privacy and data policy
 summary: "What neon1 collects on neon1.tech, in Neo, in the 1NEON portal, and in client work, where it goes, how long it's kept, and what you can do about it."
 type: policy
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-06
 edition: "3.4"
 consumers: [site, chat, knowledge, ai]

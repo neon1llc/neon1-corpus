@@ -4,7 +4,7 @@ title: Cookie and browser storage notice
 summary: "The only cookies and browser storage neon1.tech and 1NEON use, and why."
 type: policy
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-06
 edition: "1.7"
 consumers: [site, chat, knowledge, ai]

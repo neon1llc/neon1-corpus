@@ -4,7 +4,7 @@ title: "Free 1NEON accounts"
 summary: "Start without a call: make a free 1NEON account, write down what your project needs, then ask for an assessment or a call from your account."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-15
 edition: "1.2"
 consumers: [knowledge, ai]

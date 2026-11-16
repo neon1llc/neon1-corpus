@@ -4,8 +4,10 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.46.1 - 2026-11-16
+
 ### Changed
-- Free accounts: the organization's name is optional for **Something else**. Updated in the free-accounts guide (edition 1.2), the privacy and data policy (edition 3.4) and the 1NEON guide (people and account, edition 1.9).
+- Free accounts: the organization's name is optional for **Something else**. Updated in the free-accounts guide (edition 1.2), the privacy and data policy (edition 3.4), and the 1NEON guide (people and account, edition 1.9).
 - Cookies and browser storage (edition 1.7): drops `neon1.handoff`, which the site no longer sets.
 
 ## v0.46.0 - 2026-11-15

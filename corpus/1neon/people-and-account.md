@@ -4,7 +4,7 @@ title: "1NEON guide: sign-in, confirming it's you, notifications, and texts"
 summary: "How people get into 1NEON, why admin actions ask to confirm it's you, the three second steps, notifications, texts, and what to do when something is lost."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-10
 edition: "1.9"
 consumers: [portal, ai]
