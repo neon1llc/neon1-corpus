@@ -6,7 +6,7 @@ type: policy
 status: adopted
 updated: 2026-11-15
 created: 2026-11-06
-edition: "1.6"
+edition: "1.7"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -26,7 +26,6 @@ The website sets no cookies. Your browser saves two small things, on your device
 | Saved item | What it's for | How long it lasts |
 |---|---|---|
 | `neon1.rain` (local storage) | The rain settings you pick: grid or free, the characters, and pause | Until you clear it |
-| `neon1.handoff` (session storage) | Lets the portal fade in when you open it from the website | Removed as soon as the portal opens |
 
 ## The 1NEON portal
 
