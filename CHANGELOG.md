@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.48.0 - 2026-11-16
+
 ### Changed
 - The Services shelf is now **Engagement**, and takes the documents that are about working with neon1: Services, How I price my work, Capability statement, Contact, How a project runs, Publishing client work, and the Service agreement (from Policies). Company keeps who neon1 is: About neon1, Mission and promise, The names, State registration, How neon1 is built, the Glossary, and Where I learn from. The folder is `corpus/engagement/`, links between documents follow the moves, and the facts check reads the new paths.
 - Neo (edition 2.5): the price link points at the Engagement shelf.
