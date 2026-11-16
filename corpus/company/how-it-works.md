@@ -34,7 +34,7 @@ One long page of views, each about one screen:
 2. **Services.** Four kinds of help, and a note that the first 15-minute call is free.
 3. **Process.** The five steps: listen, propose, decide, build, and hand over.
 4. **Client work.** Case study cards with my role, the problem, the work, and the results.
-5. **Public code.** neon1's public repositories and tools, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source. The rest are source-available under FSL-1.1, with text under CC BY-ND.
+5. **Code and resources.** neon1's public repositories and tools, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source. The rest are source-available under FSL-1.1, with text under CC BY-ND.
 6. **About.** Who I am and how I work, with a link to the [mission and promise](mission.md).
 7. **Questions.** Common questions, with a link to the full set.
 8. **Contact.** Where and when I work, a booking link, email, phone, and the contact form.

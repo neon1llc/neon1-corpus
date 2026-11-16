@@ -31,4 +31,4 @@ It's readiness training, not audit or legal advice. Only a licensed CPA firm can
 
 ## Next step
 
-For help applying it, neon1's [SOC 2 readiness](../services/index.md) work maps controls, gathers evidence, and fixes the basics before the auditor arrives. [Get in touch](../company/contact.md) to talk it through.
+For help applying it, neon1's [SOC 2 readiness](../engagement/index.md) work maps controls, gathers evidence, and fixes the basics before the auditor arrives. [Get in touch](../engagement/contact.md) to talk it through.

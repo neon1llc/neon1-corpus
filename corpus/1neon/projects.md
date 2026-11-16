@@ -126,7 +126,7 @@ Approving needs all of these, and 1NEON says which is missing:
 1. neon1 has issued the proposal, and the option is in the latest revision.
 2. The option hasn't changed since that revision was issued.
 3. The revision is within its price check.
-4. An admin of the client organization has signed neon1's [service agreement](../policies/service-agreement.md) at its current edition. (Not needed in N1-0001.)
+4. An admin of the client organization has signed neon1's [service agreement](../engagement/service-agreement.md) at its current edition. (Not needed in N1-0001.)
 
 Approving restates exactly what's accepted: the option and its ID, its proposal, estimate, timeline, neon1's hours, vendor costs, purchases, and the result to check. The approver may add conditions ("only after 6pm"), then types their full name and ticks the consent box: "I agree to sign electronically. My typed name is my signature, and I can ask neon1 for a paper copy at any time."
 
@@ -152,7 +152,7 @@ Until the handover is accepted, the decision maker can choose a different option
 
 ## The service agreement
 
-neon1's service agreement covers every project with an organization. Anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement`, from **Settings** or the notice under the options, with a typed name and the consent box, before the first approval. The signature records the edition (now 2.0, which added how estimates are billed and that a deposit counts toward the final invoice), a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given. The full text is in the [service agreement](../policies/service-agreement.md).
+neon1's service agreement covers every project with an organization. Anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement`, from **Settings** or the notice under the options, with a typed name and the consent box, before the first approval. The signature records the edition (now 2.0, which added how estimates are billed and that a deposit counts toward the final invoice), a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given. The full text is in the [service agreement](../engagement/service-agreement.md).
 
 ## Purchases
 

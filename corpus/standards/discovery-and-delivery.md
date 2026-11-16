@@ -16,7 +16,7 @@ related: [company-process, forms-discovery, templates-proposal, forms-release-an
 
 # Discovery and delivery
 
-Every project follows one path, scaled to size. The [process page](../company/process.md) is the one-minute version.
+Every project follows one path, scaled to size. The [process page](../engagement/process.md) is the one-minute version.
 
 ## Understand one real task
 

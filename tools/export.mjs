@@ -125,7 +125,7 @@ useDiagrams(loadDiagrams())
 
 // --sections narrows a bundle to some shelves, such as only the standards as context for development work
 const only = option("--sections", "").split(",").filter(Boolean)
-const docs = load().filter((d) => d.data.status === "adopted" && d.data.consumers.includes(target) && (!only.length || only.includes(d.section)))
+const docs = load().filter((d) => ["adopted", "draft"].includes(d.data.status) && d.data.consumers.includes(target) && (!only.length || only.includes(d.section)))
 rmSync(outDir, { recursive: true, force: true })
 mkdirSync(outDir, { recursive: true })
 

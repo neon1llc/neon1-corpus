@@ -48,4 +48,4 @@ Don't send passwords, health details, or payment information, before or during t
 
 If it makes sense, a short proposal with options follows. I fill in the [intake form](../forms/intake.md) from our conversation.
 
-[Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../company/contact.md) for other ways to reach me.
+[Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../engagement/contact.md) for other ways to reach me.

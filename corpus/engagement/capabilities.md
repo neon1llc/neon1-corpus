@@ -30,7 +30,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 - **One engineer** from the first call to the handover. Pradeep does the work himself. Any partner on a project is named in the proposal and on the case study.
 - **Options before commitments.** Proposals offer a quick fix, a solid setup, and a fuller build, each with cost, effort, and upkeep.
 - **Measured results.** Work is measured against a baseline, and results are reported with how they were tested.
-- **Public code.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
+- **Code and resources.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
 
 ## Delivered work
 
@@ -49,7 +49,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 | **Legal name** | neon1 LLC, doing business as neon1 |
 | **Type** | Limited liability company, owner-operated small business |
 | **Formed** | July 24, 2025, in New York |
-| **New York DOS ID** | 7668765, active ([state registration](registration.md)) |
+| **New York DOS ID** | 7668765, active ([state registration](../company/registration.md)) |
 | **Business address** | 418 Broadway, Ste R, Albany, NY 12207 |
 | **Service area** | Remote across the US, or on site within about 30 miles of Queens, NY. Outside the US, ask |
 | **Owner** | Pradeep Tathineni |

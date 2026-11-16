@@ -26,9 +26,9 @@ A company of a few hundred people has an IT department. A three-person tax offic
 
 I'm Pradeep. For about 10 years I've built and run systems, and I've been the person people call when their technology stops cooperating. The fix was rarely the hard part. The hard part was that nobody had explained the problem in words that made sense. So the same thing broke again, or the owner paid for something much bigger than they needed, because a bigger thing was the only thing anyone offered.
 
-neon1 is my answer to that. Most of my work is [business workflows](../services/index.md): orders, forms, and invoices that get typed into more than one place, connected end to end and written down. I also do cloud engineering for technical teams, office networks and devices, and plain-language security training. I work remotely across the US, and on site within about 30 miles of Queens. Outside the US, ask.
+neon1 is my answer to that. Most of my work is [business workflows](../engagement/index.md): orders, forms, and invoices that get typed into more than one place, connected end to end and written down. I also do cloud engineering for technical teams, office networks and devices, and plain-language security training. I work remotely across the US, and on site within about 30 miles of Queens. Outside the US, ask.
 
-Every project runs through [five steps](../company/process.md): listen, propose, decide, build, and hand over. I learn how the work gets done today before I suggest anything. Then you get a few options, from the quickest fix to the fuller build, and you choose. Sometimes the right option is a setting, a cleanup, or leaving something alone. When we're done, you have the documentation and the accounts, and everything stays yours.
+Every project runs through [five steps](../engagement/process.md): listen, propose, decide, build, and hand over. I learn how the work gets done today before I suggest anything. Then you get a few options, from the quickest fix to the fuller build, and you choose. Sometimes the right option is a setting, a cleanup, or leaving something alone. When we're done, you have the documentation and the accounts, and everything stays yours.
 
 This blog will carry about one post a week: answers to questions small offices ask, like [what a federal security rule means for a tax office](tax-preparers-are-financial-institutions.md), why I run neon1 the way I do, and what building neon1 in the open has taught me. Each post links what it relies on, so you can check it yourself.
 
@@ -46,5 +46,5 @@ Small Business Saturday is November 28. If something about your technology has b
 
 - [Small Business Saturday](https://www.sba.gov/Saturday), U.S. Small Business Administration: the November 28, 2026 date and the count of more than 36.2 million independent businesses.
 - [Free accounts](../guides/free-accounts.md), neon1: what a free 1NEON account holds and how it becomes a client account.
-- [How a project runs](../company/process.md), neon1: the five steps.
-- [Services](../services/index.md), neon1: the four kinds of work and their usual costs.
+- [How a project runs](../engagement/process.md), neon1: the five steps.
+- [Services](../engagement/index.md), neon1: the four kinds of work and their usual costs.
