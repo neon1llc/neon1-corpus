@@ -26,7 +26,7 @@ A company of a few hundred people has an IT department. A three-person tax offic
 
 I'm Pradeep. For about 10 years I've built and run systems, and I've been the person people call when their technology stops cooperating. The fix was rarely the hard part. The hard part was that nobody had explained the problem in words that made sense. So the same thing broke again, or the owner paid for something much bigger than they needed, because a bigger thing was the only thing anyone offered.
 
-neon1 is my answer to that. Most of my work is [business workflows](../services/index.md): orders, forms, and invoices that get typed into more than one place, connected end to end and written down. I also do cloud engineering for technical teams, office networks and devices, and plain-language security training. I work remotely with anyone in the US when the work allows it, and on site within about 30 miles of Queens.
+neon1 is my answer to that. Most of my work is [business workflows](../services/index.md): orders, forms, and invoices that get typed into more than one place, connected end to end and written down. I also do cloud engineering for technical teams, office networks and devices, and plain-language security training. I work remotely across the US, and on site within about 30 miles of Queens. Outside the US, ask.
 
 Every project runs through [five steps](../company/process.md): listen, propose, decide, build, and hand over. I learn how the work gets done today before I suggest anything. Then you get a few options, from the quickest fix to the fuller build, and you choose. Sometimes the right option is a setting, a cleanup, or leaving something alone. When we're done, you have the documentation and the accounts, and everything stays yours.
 

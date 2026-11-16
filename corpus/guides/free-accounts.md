@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-16
 created: 2026-11-15
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai]
 pdf: false
 audience: "Anyone with a project in mind who'd rather write it down first"
@@ -28,7 +28,7 @@ Once you're in, **Contact neon1** in the menu has every way to reach me: email, 
 3. **Ask for an assessment or a call** from **Next step** on Home. An assessment is an approach and the first questions to settle.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.
 
-I work remotely with anyone in the US when the work allows, and on site within about 30 miles of Queens, NY.
+I work remotely across the US, and on site within about 30 miles of Queens, NY. Outside the US, ask.
 
 ## What it holds
 

@@ -4,11 +4,11 @@ title: Capability statement
 summary: "neon1 on one page for a buyer, partner, or procurement office: what it does, how it differs, work it has delivered, and the company's details."
 type: page
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -51,7 +51,7 @@ neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, de
 | **Formed** | July 24, 2025, in New York |
 | **New York DOS ID** | 7668765, active ([state registration](registration.md)) |
 | **Business address** | 418 Broadway, Ste R, Albany, NY 12207 |
-| **Service area** | Remote from anywhere, or on site within about 30 miles of Queens, NY |
+| **Service area** | Remote across the US, or on site within about 30 miles of Queens, NY. Outside the US, ask |
 | **Owner** | Pradeep Tathineni |
 | **Email** | hello@neon1.tech |
 | **Phone** | [(424) 32-neon1](tel:+14243263661), that's (424) 326-3661 |
