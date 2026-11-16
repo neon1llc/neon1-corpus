@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-10
-edition: "1.7"
+edition: "1.8"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -26,6 +26,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Coming up** shows three weeks as a strip of days marked with due dates, milestones, and targets, then the next six weeks listed by Overdue, This week, Next week, and Later.
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
+- **Your free account**, in a free account only: the date it's deleted if nothing changes, **Keep it 30 more days** (once), and **Download a copy** (Settings, Your data).
 - **Next step**, in a free account only: **Ask for an assessment** or **Ask for a call**, with an optional note. Each emails neon1, and the reply comes by email.
 
 ## Board
@@ -99,7 +100,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Settings
 
-`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based (a city and state, or a state alone), checked the same way as on sign-up; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added or they choose **Not now**. Both are optional. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
+`/1NEON/o/{org}/settings`. **Where**: the organization's website or public page and where it's based (a city and state, a state alone, or a place outside the US), checked the same way as on sign-up; any admin can **Change** it without confirming it's them, and Home asks the organization's admins for it until one is added or they choose **Not now**. Both are optional. The service agreement's signer and edition, or "not signed yet", with **Read and sign**. Then the board's stages, each with name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 
 ## Your profile
 

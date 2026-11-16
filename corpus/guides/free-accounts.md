@@ -28,7 +28,7 @@ Once you're in, **Contact neon1** in the menu has every way to reach me: email, 
 3. **Ask for an assessment or a call** from **Next step** on Home. An assessment is an approach and the first questions to settle.
 4. **If it fits,** we talk and agree on the work, and your account becomes a client account. Everything you wrote stays.
 
-I work remotely across the US, and on site within about 30 miles of Queens, NY. Outside the US, ask.
+I work remotely across the US, and on site within about 30 miles of Queens, NY. Outside the US, ask: you're welcome to sign up or get in touch, and we'll see if it fits.
 
 ## What it holds
 
@@ -43,7 +43,7 @@ I work remotely across the US, and on site within about 30 miles of Queens, NY. 
 
 ## How long it lasts
 
-As long as you're using it. After 7 and 14 days without changes, you get a reminder by email. At 21 days you get a final notice, and at 30 days the account and what's in it are deleted. You can sign up again any time.
+As long as you're using it. Home shows the date it's kept until. After 7 and 14 days without changes, you get a reminder by email. At 21 days you get a final notice, and at 30 days the account and what's in it are deleted. Need more time? **Keep it 30 more days** on Home (once), and **Download a copy** any time. You can sign up again any time.
 
 ## The fine print
 
