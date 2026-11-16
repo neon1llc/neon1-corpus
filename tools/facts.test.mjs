@@ -20,5 +20,5 @@ test("old wording and wrong numbers are flagged", () => {
 })
 
 test("a required document without its phrase is flagged", () => {
-  assert.equal(checkRequired([{ path: "company/contact.md", body: "Remote." }, { path: "company/capabilities.md", body: "Outside the US, ask" }, { path: "guides/free-accounts.md", body: "Outside the US, ask" }]).length, 1)
+  assert.equal(checkRequired([{ path: "engagement/contact.md", body: "Remote." }, { path: "engagement/capabilities.md", body: "Outside the US, ask" }, { path: "guides/free-accounts.md", body: "Outside the US, ask" }]).length, 1)
 })

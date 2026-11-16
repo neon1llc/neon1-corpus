@@ -26,7 +26,7 @@ export const FACTS = [
     name: "Service area: remote across the US, on site within about 30 miles of Queens, NY; outside the US, ask",
     stale: [/\bremote (work )?from anywhere\b/i, /\banyone in the US when\b/i],
     values: [[/within about (\d+) miles/gi, ["30"]]],
-    required: [["company/contact.md", "Outside the US, ask"], ["company/capabilities.md", "Outside the US, ask"], ["guides/free-accounts.md", "Outside the US, ask"]],
+    required: [["engagement/contact.md", "Outside the US, ask"], ["engagement/capabilities.md", "Outside the US, ask"], ["guides/free-accounts.md", "Outside the US, ask"]],
   },
   {
     name: "A free account holds up to 3 projects, and is removed 30 days after its last change",

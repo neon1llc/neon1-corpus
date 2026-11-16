@@ -30,4 +30,4 @@ Reporting numbers and websites are for the United States. The slides need Marp, 
 
 ## Next step
 
-Want neon1 to run a session for your group? [Get in touch](../company/contact.md). For the reference behind it, see [Ready, Secure, Go](ready-secure-go.md).
+Want neon1 to run a session for your group? [Get in touch](../engagement/contact.md). For the reference behind it, see [Ready, Secure, Go](ready-secure-go.md).

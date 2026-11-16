@@ -33,4 +33,4 @@ Notification rules cover U.S. federal requirements and New York. Other states ar
 
 ## Next step
 
-Want neon1 to run a tabletop exercise with your team? [Get in touch](../company/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC 2 readiness, step by step](soc-it-2-me.md).
+Want neon1 to run a tabletop exercise with your team? [Get in touch](../engagement/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC 2 readiness, step by step](soc-it-2-me.md).
