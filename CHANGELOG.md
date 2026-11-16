@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Contact (edition 1.6): a "Report a bug" section links neon1.tech/report-bug/, so Neo can point to it when someone describes something broken.
+
 ## v0.47.1 - 2026-11-16
 
 ### Changed

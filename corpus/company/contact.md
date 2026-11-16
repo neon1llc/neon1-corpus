@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
 updated: 2026-11-16
 created: 2025-09-07
-edition: "1.5"
+edition: "1.6"
 ---
 
 # Contact
@@ -35,5 +35,9 @@ Tell me what's on your mind, or ask for an opinion on how your operations run to
 ## Availability and urgent issues
 
 I work in planned appointments on weekday evenings and weekends. There's no 24/7 or emergency response. If something can't wait, such as a security incident in progress, an outage, or fraud on an account, contact a provider with emergency coverage, and your bank or the service involved, first. Ongoing care after a project, with any response times, is agreed in writing before it starts.
+
+## Report a bug
+
+Something broken on neon1.tech, 1NEON, or Neo? [Report a bug](https://neon1.tech/report-bug/) says where it happened and what happened, with an optional email and screenshots. Don't include passwords, health details, or payment information.
 
 Leave passwords, health details, and payment information out of any first message.
