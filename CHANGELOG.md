@@ -4,6 +4,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Blog, "Why neon1" (edition 1.2): where your business is based and a link to it are optional at sign-up, as the form and the free-accounts guide say.
+- Phishing awareness session kit (edition 1.4): the four pressures are what most scams use, not every scam.
+- Privacy and data policy, and cookies and browser storage: the "Last updated" line matches the November 16 edition.
+
 ## v0.46.1 - 2026-11-16
 
 ### Changed

@@ -8,9 +8,9 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-16
 created: 2026-11-12
-edition: "1.3"
+edition: "1.4"
 related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is, product-ready-secure-go]
 ---
 
@@ -20,7 +20,7 @@ related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is
 
 **An hour on scams and safer accounts, ready to run.** The kit behind neon1's [security awareness sessions](../guides/use-case-security-awareness.md), open on [GitHub](https://github.com/neon1llc/phishing-awareness-kit) for anyone to teach from, whether a team, a family, a senior center, or a classroom.
 
-- **What people leave able to do:** spot the four pressures every scam uses (hurry, fear, secrecy, and an odd way to pay), hang up and call back on a number they found themselves, show that two-step sign-in is on for their email, and say who they'd tell.
+- **What people leave able to do:** spot the four pressures most scams use (hurry, fear, secrecy, and an odd way to pay), hang up and call back on a number they found themselves, show that two-step sign-in is on for their email, and say who they'd tell.
 - **What's in it:** a slide deck in Markdown, a facilitator script, a run sheet, spot-the-scam cards, role-plays, a two-step sign-in lab, a family code word activity, the one-page takeaway, a who-to-call card, a before-and-after quiz, a field guide to eleven common scams, and notes for families and seniors, workplace teams, and students.
 - **Licenses:** written material under CC BY-SA 4.0, code under MIT, and the names reserved.
 
