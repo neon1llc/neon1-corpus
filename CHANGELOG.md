@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- The site's public code section is now called code and resources; how it works and capabilities use the same name.
+
 ## v0.47.1 - 2026-11-16
 
 ### Changed
