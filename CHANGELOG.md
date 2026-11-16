@@ -4,6 +4,15 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- An faq can name the questions the site's home page shows (`home` in the front matter). The home page shows only each answer's first paragraph, and the lint keeps that paragraph to 45 words, so the short and full answers come from the same text.
+
+### Changed
+- Working with neon1 (edition 1.12): answers cut by about a third, each opening with a one or two sentence answer. "How do I pay?" is now "How do invoices work?" and leaves the home page, which shows five questions.
+- Services (edition 1.9): no prices in the table; each project is priced in a proposal, and the page closes with a free 1NEON account or a call.
+- How I price my work (edition 1.4): ranges read as a rough guide, the worked example drops the deposit arithmetic, and the line placing neon1 at the low end of the market is gone.
+- Neo (edition 2.4): gives price ranges only when asked about cost.
+
 ## v0.46.2 - 2026-11-16
 
 ### Added

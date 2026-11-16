@@ -97,6 +97,20 @@ for (const doc of docs) {
     for (const [, hash] of d.short.join(" ").matchAll(/\]\(#([^)\s]+)\)/g)) if (!keys.has(hash)) err(`short links to #${hash}, which isn't a section`)
   }
 
+  // The home page's questions: an faq's own H2s, each answered in a first paragraph short enough to stand alone
+  if (Array.isArray(d.home)) {
+    if (d.type !== "faq") err("home is only for an faq")
+    if (d.home.length > P.home.maxItems) err(`home lists ${d.home.length} questions, over ${P.home.maxItems}`)
+    const found = sections(doc.body).filter((s) => s.heading)
+    for (const q of d.home) {
+      const s = found.find((x) => x.heading === q)
+      if (!s) { err(`home names "${q}", which isn't a question here`); continue }
+      const first = (s.html.match(/<p>([\s\S]*?)<\/p>/) ?? [, ""])[1].replace(/<[^>]+>/g, "")
+      const words = first.split(/\s+/).filter(Boolean).length
+      if (words > 45) err(`"${q}" opens with ${words} words; the home page shows that paragraph, so keep it to 45`)
+    }
+  }
+
   for (const field of ["key", "order"]) {
     if (d[field] === undefined) continue
     const tag = `${d.type}:${field}:${d[field]}`

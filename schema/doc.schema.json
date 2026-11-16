@@ -36,6 +36,14 @@
       "maxItems": 3,
       "description": "The short version: one to three sentences, 60 words at most in all, on what the reader should do or know. Shown in a box between a page's facts and its text, and at the top of the Markdown export. Inline links are allowed, including to the document's own sections (#heading-key). Written as a block list, one \"  - item\" line per sentence."
     },
+    "home": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6,
+      "description": "An faq only: the questions the site's home page shows, in that order, each exactly as its H2 reads. The home page shows only an answer's first paragraph, so that paragraph stands on its own in one or two sentences, 45 words at most. The Knowledge Center and Neo carry every question in full."
+    },
     "type": {
       "enum": [
         "page",
