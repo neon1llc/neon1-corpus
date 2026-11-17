@@ -4,6 +4,10 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+- Record measured deployment times, dependency ordering, and the limits of dev/production synchronization in the architecture reference.
+- Document the shared Matrix/Sentinel family and independent light/dark preference, including migration from older browser keys.
+
+
 ## v0.48.1 - 2026-11-17
 
 ### Changed

@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-17
 created: 2026-11-11
-edition: "1.6"
+edition: "1.7"
 ---
 
 # How neon1 is built
@@ -308,16 +308,45 @@ flowchart TD
 
 | Repository | Checks on every push | What main does | About how long |
 |---|---|---|---|
-| **neon1-site** | HTML, scripts, links, assets, sizes, secret scan, built corpus pages, and browser checks with every API faked | Prints PDFs, uploads a new release, switches the release store, confirms the live version, and tags | With the corpus and Neo, about 12 to 18 minutes |
-| **neon1-1NEON** | Types, tests, build, secret scan, Terraform checks, and every guided walkthrough played to its end in a real browser | Applies Terraform, ships the API, then the app with its page last, confirms, and tags | About 26 minutes, mostly the walkthroughs |
-| **neon1-chat** (Neo) | Tests with AWS faked, Terraform checks, and a secret scan | Applies Terraform, which ships the function, checks the live endpoint, and tags | Within the 12 to 18 minutes above |
-| **neon1-corpus** | Front matter, links, anything that looks private, the renderer, and every diagram with alt text | Tags the release, publishes a bundle for each reader, and asks neon1.tech to publish it | Within the 12 to 18 minutes above |
+| **neon1-site** | HTML, scripts, links, assets, sizes, secret scan, built corpus pages, and browser checks with every API faked | Prints PDFs, uploads a new release, switches the release store, confirms the live version, and tags | Measured separately below |
+| **neon1-1NEON** | Types, tests, build, secret scan, Terraform checks, and every guided walkthrough played to its end in a real browser | Applies Terraform, ships the API, then the app with its page last, confirms, and tags | About 20 minutes, mostly the walkthroughs |
+| **neon1-chat** (Neo) | Tests with AWS faked, Terraform checks, and a secret scan | Applies Terraform, which ships the function, checks the live endpoint, and tags | Measured separately below |
+| **neon1-corpus** | Front matter, links, anything that looks private, the renderer, and every diagram with alt text | Tags the release, publishes a bundle for each reader, and asks neon1.tech to publish it | Measured separately below |
 | **neon1-aws-infrastructure** | Formatting, validation, lint, misconfiguration and secret scans | Plans every stack and applies the distribution and shared DNS records. Pradeep applies deploy permissions by hand | A few minutes |
 | **Tools**: [DeployOps](https://github.com/neon1llc/deploy-ops), [AWS CLIP](https://github.com/neon1llc/aws-clip), and [refmark](https://github.com/neon1llc/refmark) | Their own checks and tests | Nothing deploys. Each changelog version is tagged if checks pass | A few minutes |
 | **Education**: Ready, Secure, Go and its five companion guides | Front matter, links, and each guide's rules | Nothing deploys. Each changelog version is tagged | A few minutes |
 
 - **One release at a time.** Pipelines never cancel a release halfway. 1NEON and Neo also stop a queued release if main has moved on.
 - **Tags follow the changelog.** Each change adds an entry under `## Unreleased`. On deploy it becomes the new version, and the pipeline tags it once the live version is confirmed. Dev builds are never tagged.
+
+### Deployment time, measured November 17, 2026
+
+These samples come from successful GitHub Actions runs on November 16 and 17. They measure the pipeline, including checks and the dev rebuild where present. They are observations, not a deployment promise. A rerun of only failed jobs and a scheduled check that finds no change are excluded from full-release estimates.
+
+| Component | Production path | Dev path | What takes the time |
+|---|---|---|---|
+| Website | 3 minutes 31 seconds to 4 minutes 16 seconds in three full push runs | 46 to 77 seconds in three standalone runs | Parallel browser checks, PDF printing, then upload and release-store switching. Dev builds HTML with quick checks and reuses production PDFs |
+| 1NEON | 19 minutes 46 seconds to 20 minutes 12 seconds in three runs | 54 to 73 seconds in three runs | Guided browser walkthroughs take about 17 minutes 53 seconds. The production release job itself takes 46 to 64 seconds after the gates |
+| Public Neo | 74 to 100 seconds in three runs | No separate runtime: dev routes to production Neo | Package and Terraform checks, plan/apply, then live identity verification |
+| Corpus | 14 to 29 seconds to publish bundles in three runs | A branch can be selected by the site's dev build | Markdown lint/export is fast. Publishing the website is a separate downstream build; Neo refresh opens a reviewed PR |
+| Infrastructure | 1 minute 53 seconds to 1 minute 57 seconds in three runs | Dev stack changes are applied separately | Validation and scans, then parallel stack plans/applies. These samples do not measure a new distribution rollout or a dev-stack apply |
+
+A corpus release requests a site build. If that request does not start a build, the site's scheduled check runs every 15 minutes, subject to runner delays. Neo's refresh is weekly or manual and opens a pull request. A corpus release alone does not immediately update Neo. Dev uses production Neo, so testing that endpoint consumes the production service's limits.
+
+For combined work, order by dependency. Publish the corpus before building consumers that need it. Apply required infrastructure before applications that rely on it. Independent site, portal, and Neo pipelines can run together: total elapsed time is the longest dependency path, not the sum of all jobs. Their deployment is not atomic.
+
+| Combination | Planning estimate from these samples | Limit |
+|---|---|---|
+| Site and portal on dev | About one to two minutes if started together | Both must finish and be checked; branch push alone is not evidence |
+| Corpus then site production | About four to five minutes after an immediate dispatch | Add scheduler/queue delay if the dispatch is absent |
+| Site, portal, and Neo production | About 20 to 21 minutes if independent and started together | Portal walkthroughs dominate; dependencies can require serial steps |
+| Corpus and infrastructure, then all consumers | About 22 to 24 minutes if the prerequisite runs resemble these samples | An estimate, not a measured coordinated release; cloud propagation and review wait are unbounded here |
+
+Production attempts the site and portal dev rebuild alongside the production release, after their gates. A dev merge or build failure can leave it behind even when production succeeds. Completion requires checking both environments and their selected commits.
+
+Record the workflow URL, commit, corpus/release pins, start and completion times, outcome, and any retry in each future release receipt. Keep this central table as a dated baseline and replace it only with comparable measurements.
+
+Source: the [dated measurement record](https://github.com/neon1llc/neon1-corpus/blob/19641c7a263db7ebc19abb3f25d3536de552c81b/docs/deployment-timings.md), with the exact GitHub Actions runs and measurement method.
 
 ### Deploying the website
 
@@ -357,12 +386,12 @@ A tag means Released, never Qualified on its own. The [versioning standard](../s
 
 ## Trying a change on dev first
 
-Pushing any branch puts it on dev.neon1.tech, a private copy of the site and 1NEON, in about 30 seconds, because dev runs only the quick checks. A production release runs every check.
+A site feature branch gets its own preview on dev.neon1.tech. The site and 1NEON `dev` branches update their shared dev deployments in about a minute. Another portal branch requires a manual dev run and replaces that one shared backend. Production runs the full checks.
 
 ```mermaid
-%% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
+%% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about one minute. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, then attempts to rebuild dev alongside production.
 flowchart TD
-  branch["Push a feature branch"]:::step --> preview["Private preview<br/>dev.neon1.tech, about 30 seconds"]:::dev
+  branch["Push a feature branch"]:::step --> preview["Private preview<br/>dev.neon1.tech, about one minute"]:::dev
   dev["dev branch<br/>follows main"]:::step --> devrel["Dev release<br/>dev.neon1.tech"]:::dev
   preview --> look{"Looks right?"}:::decision
   devrel --> look
@@ -377,7 +406,7 @@ flowchart TD
   classDef prod fill:#fff1e3,stroke:#e07b14,color:#4a2700
 ```
 
-- **Branches and the dev release.** Each branch has its own preview at `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev`, and a conflict stops it rather than forcing anything.
+- **Branches and the dev release.** Each site branch has its own preview at `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev`, and a conflict stops it rather than forcing anything.
 - **Releases come only from main.** Main rebuilds with the full checks, including the browser tests and PDF printing dev skips.
 - **Cost.** A few dollars a month, with a $5 budget alert on everything tagged dev.
 
@@ -408,7 +437,7 @@ The link and the cookie use separate keys. A new link doesn't sign anyone out. R
 
 ## One source for every word
 
-The website, the Knowledge Center, 1NEON's guide, and Neo all read from neon1-corpus, a repository of Markdown documents. Each tagged release publishes a bundle for each reader, so one correction reaches all of them.
+The website, the Knowledge Center, 1NEON's guide, and Neo read from neon1-corpus, a repository of Markdown documents. Tagged releases publish bundles. Each consumer must then rebuild or refresh its pinned copy before a correction reaches it.
 
 ```mermaid
 %% alt: Flowchart of the corpus. Markdown documents in neon1-corpus are checked by a linter for front matter, links, and anything private. A tagged release exports a bundle for each reader. The site bundle feeds the case studies and questions on neon1.tech. The knowledge bundle feeds the Knowledge Center and its PDFs. The chat bundle feeds Neo, refreshed weekly. The portal bundle feeds the 1NEON guide used by Neo inside 1NEON.
