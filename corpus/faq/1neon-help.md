@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-17
 created: 2026-11-07
-edition: "2.5"
+edition: "2.6"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -128,7 +128,7 @@ neon1's 1 to 5 rating of each option, where more dots is always better. **Cost**
 ## Files
 
 ### How do I send a file?
-Use **Upload** next to a file I asked for, or upload in **Files** and pick its project. [Watch it](https://neon1.tech/1NEON/live?play=listen).
+Use **Upload** next to a file I asked for, or upload in **Files**. Files filed at **Organization level** belong to your whole organization. Choose a project to file under it, in one of its layers or at **Project level** for the project as a whole. [Watch it](https://neon1.tech/1NEON/live?play=listen).
 
 ### Are files safe?
 Every file is virus-checked before anyone can download it and stays private to your organization.
