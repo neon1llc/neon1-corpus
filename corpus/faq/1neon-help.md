@@ -130,6 +130,9 @@ neon1's 1 to 5 rating of each option, where more dots is always better. **Cost**
 ### How do I send a file?
 Use **Upload** next to a file I asked for, or upload in **Files**. Files filed at **Organization level** belong to your whole organization. Choose a project to file under it, in one of its layers or at **Project level** for the project as a whole. [Watch it](https://neon1.tech/1NEON/live?play=listen).
 
+### Can I move a file later?
+Yes. Choose **Move** on a file, and pick Organization level, a project, or a layer of a project. The file itself isn't touched, only where it's listed.
+
 ### Are files safe?
 Every file is virus-checked before anyone can download it and stays private to your organization.
 
