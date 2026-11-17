@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- 1NEON help (edition 2.6): "How do I send a file?" names where a file can be filed, Organization level or Project level, as 1NEON's Files now does, and a new "Can I move a file later?" says Move re-files it without touching the file.
+
 ## v0.48.0 - 2026-11-16
 
 ### Changed
