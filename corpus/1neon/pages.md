@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-16
+updated: 2026-11-17
 created: 2026-11-10
-edition: "1.8"
+edition: "1.9"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -104,7 +104,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Your profile
 
-`/1NEON/me`. Name, title, phone (only you see it), theme (Awake, Matrix, or Device), menu (Default or Mini), and **Notifications**: for each group (files; people and access; decisions and options; agreements, invoices, and payments; workflow and stages; comments; updates and items; sign-ins) whether it reaches you by email, by text, or neither. Then **Save**. Also here: texts (add a mobile number, agree to texts, confirm the code), **Two-step verification** at `#security` (passkey, authenticator app, text-message codes), **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
+`/1NEON/me`. Name, title, phone (only you see it), theme (Matrix: Awake or Plugged; Sentinel: Providence or Desert of the real; or Match my device), menu (Default or Mini), and **Notifications**: for each group (files; people and access; decisions and options; agreements, invoices, and payments; workflow and stages; comments; updates and items; sign-ins) whether it reaches you by email, by text, or neither. Then **Save**. Also here: texts (add a mobile number, agree to texts, confirm the code), **Two-step verification** at `#security` (passkey, authenticator app, text-message codes), **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
 
 ## Contact
 

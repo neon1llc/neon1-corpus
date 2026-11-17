@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-17
 created: 2026-11-10
-edition: "1.4"
+edition: "1.5"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -51,7 +51,7 @@ Key prefixes come from the New project template: Blank is `PRJ`, Cloud migration
 
 ## Themes
 
-Set on the profile: **Awake** (light, the default), **Matrix** (dark, green on black), or **Device** (follows the device setting). Neo's window follows the page.
+Matrix offers **Awake** (light, the default) and **Plugged** (dark). Sentinel offers **Providence** (light) and **Desert of the real** (dark). The landing theme switch changes the family without changing the mode. Profile choices use the same names; **Match my device** follows the device setting within the chosen family. Neo's window follows the page.
 
 ## Addresses
 
