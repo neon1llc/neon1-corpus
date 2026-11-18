@@ -5,8 +5,13 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 - Record measured deployment times, dependency ordering, and the limits of dev/production synchronization in the architecture reference.
-- Document the shared Matrix/Sentinel family and independent light/dark preference, including migration from older browser keys.
 
+## v0.49.0 - 2026-11-18
+
+### Changed
+- The cookie notice explains the separate theme family and light or dark mode choices, migration from older browser keys, and saved portal scroll position.
+- 1NEON's guide and neon1's public overview describe the four named looks and how switching families preserves the current mode.
+- Document the shared Matrix/Sentinel family and independent light/dark preference, including migration from older browser keys.
 
 ## v0.48.1 - 2026-11-17
 
