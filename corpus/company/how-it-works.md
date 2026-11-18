@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-17
 created: 2026-11-11
-edition: "1.8"
+edition: "1.9"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -103,7 +103,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 - **Projects.** Each has an overview and a tab per layer. Needs holds the request and my options, each with cost, quality, and effort. The client's decision maker approves one, kept as a record that can't be edited.
 - **Files** upload straight to a private bucket and can't be downloaded until a malware scan passes.
 - **Notifications.** A bell, plus email or text for the events you choose.
-- **Themes.** Awake (light, the default), Matrix, and Device.
+- **Themes and modes.** Matrix has Awake (light) and Plugged (dark). Sentinel has Providence (light) and Desert of the real (dark). Switching the family preserves the mode. The profile also offers Match my device.
 
 Every change writes an audit record. Its messages go into an outbox in the same transaction, and a worker sends the outbox every minute and retries failures, so a saved change can't lose its email.
 
