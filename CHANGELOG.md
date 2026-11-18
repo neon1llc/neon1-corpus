@@ -5,6 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
+- 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
 - Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
 - Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision.
 - Where else to get help (edition 1.4): remove marketplace fee figures and an unsourced managed-IT price range that can change.
