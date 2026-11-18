@@ -5,6 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
+- Tax preparers are financial institutions (edition 1.7): replace the passed November 16 IP PIN deadline with current outage and reopening guidance, checked against the IRS.
 - 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
 - Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
 - Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision.
