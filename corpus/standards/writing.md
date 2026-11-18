@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-18
 created: 2026-11-01
-edition: "1.9"
+edition: "2.0"
 order: 1
 consumers: [ai]
 pdf: true
@@ -39,7 +39,7 @@ The test: would a capable professional say this across a table to a peer? If it 
 
 ## Fewer words
 
-Concise, scannable, objective text is 124% more usable than promotional writing, and users read about a fifth of the words on a page (Nielsen Norman Group). So I cut by default.
+Cut by default. People scan a page to find the answer or the next action.
 
 1. **Would the reader miss it?** Ask of every sentence. If not, cut it, even when it's true. Detail stays only if the reader needs it to act, decide, or stay safe.
 2. **Cut, then cut again.** Try removing half the words, then half of what's left (Steve Krug). Stop when meaning would go.
@@ -47,7 +47,7 @@ Concise, scannable, objective text is 124% more usable than promotional writing,
 4. **Verbs, not nouns.** "Decide," not "make a decision." Active voice.
 5. **Drop padding.** "In order to" is "to." "Please note that," "As mentioned above," and "In this document, I will" go entirely.
 6. **Say it once.** No repeated summary, closing recap, or restated heading. The one-sentence summary at the top is the only summary.
-7. **Interface text is shortest.** Buttons are a verb and an object. Labels are one to three words. Errors say what happened and what to do. No "please," no "successfully."
+7. **Interface text is shortest.** Buttons name the action. Labels are one to three words where possible. Errors say what happened and what to do. No "please," no "successfully." Don't explain what a visible control already says, or repeat a whole policy beside it. Keep a consequence, condition, or fee visible before the decision it affects.
 
 Never cut a cause, a limit, a cost, a consequence, or a legal obligation.
 
@@ -137,7 +137,7 @@ Writing that already works stays as it is.
 - [How users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/) and [the F-shaped pattern](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), from Nielsen Norman Group: the research behind putting key words first.
 - [Mailchimp Content Style Guide](https://styleguide.mailchimp.com/), from Mailchimp: concise, clear interface and help text.
 - [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/welcome/): "bigger ideas, fewer words" and scannable text.
-- [Concise, scannable, and objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) and [How little do users read?](https://www.nngroup.com/articles/how-little-do-users-read/), from Nielsen Norman Group: the usability numbers behind cutting.
+- [Concise, scannable, and objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) and [How little do users read?](https://www.nngroup.com/articles/how-little-do-users-read/), from Nielsen Norman Group: how people scan and read web pages.
 - Steve Krug, *Don't Make Me Think*: "Get rid of half the words on each page, then get rid of half of what's left."
 - [Google developer documentation style guide](https://developers.google.com/style): conventions for lists, tables, procedures, and code in technical writing.
 - [The Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html): the serial comma and other points of mechanics.

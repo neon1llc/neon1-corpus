@@ -4,6 +4,10 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
+- Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision.
+
 ## v0.49.0 - 2026-11-18
 
 ### Changed
