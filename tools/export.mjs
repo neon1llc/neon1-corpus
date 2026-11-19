@@ -42,14 +42,16 @@ const bodyOf = (doc) => doc.body.trim().replace(/^# .+\n+/, "")
 // A front-matter value that has been confirmed, as opposed to the TBD placeholder
 const confirmed = (v) => typeof v === "string" && v.trim() !== "" && v.trim() !== "TBD"
 
-// The four kinds of case study, labeled on every card and page so one is never mistaken for another: my own work
-// outside a neon1 contract, work contracted through neon1 LLC, work delivered with a partner, and things neon1
-// built outside any client engagement (ChatGPT's third audit, 2026-11-14)
+// The kinds of case study, labeled on every card and page so one is never mistaken for another: work contracted
+// through neon1 LLC, work delivered as a subcontractor, the founder's previous employment, personal or volunteer work,
+// independent projects, and reconstructed demonstrations
 const KINDS = {
-  founder: "Founder experience",
   neon1: "neon1 engagement",
   partner: "neon1 subcontracted engagement",
-  demonstration: "Independent demonstration",
+  employment: "Founder's previous employment",
+  founder: "Personal or volunteer work",
+  demonstration: "Independent project",
+  reconstructed: "Reconstructed demonstration",
 }
 // An unconfirmed role or year says so plainly instead of disappearing, so a reader always has the context
 const UNCONFIRMED = { role: "role not yet confirmed", when: "year not yet confirmed" }

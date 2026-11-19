@@ -12,11 +12,18 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Customers (edition 2.0): buyers described by their situation, not their size or technical skill, with separate sections for businesses, technical teams, and individuals.
 - Mission and promise, Charter, About neon1, and Capability statement (edition 2.0): neon1 described as an independent engineering and technology consulting practice; About gives the founder's prior employment separately from neon1's work; experience stated as more than eight years.
 - How a project runs (edition 1.3): a proposal makes one recommendation, or sets out options when there's a real choice.
+- Case studies get descriptive titles: Permission-aware document assistant (1.8), Patient intake portal (1.5), Operations integration and monitoring (1.1), Two-site server migration (1.5), Security awareness sessions (1.9), and Home cameras and family accounts (1.5). Measurement notes now match the project records: lookups and staff time were timed, and interruptions tallied over two weeks. The intake portal links each intake to the EHR record rather than filing documents into it.
+- Case-study kinds add the founder's previous employment and reconstructed demonstrations; founder experience is now labeled personal or volunteer work, and independent demonstrations independent projects.
+- How I price my work (edition 1.5): examples in each range cover all four services. The ranges are unchanged.
+- Technology decisions (edition 1.5) and Partners (edition 1.4): architecture guidance scaled to the client rather than to small businesses only.
+- Neo (edition 3.0): the four services, the full set of case-study kinds, and how to answer visitors who are comparing alternatives or already have engineers.
+- Working with neon1 (edition 1.15): project length follows the proposal; security sessions are described as informational.
+- Where else to get help (edition 2.0): adds in-house work with AI tools, integration platforms, compliance platforms, and hiring, and restates where neon1 fits.
 - Workflow automation and Cloud and AI engineering (edition 2.0): the use-case guides become service pages. Security awareness sessions (edition 2.0) are described as informational, not certified training.
 - Tax preparers are financial institutions (edition 1.7): replace the passed November 16 IP PIN deadline with current outage and reopening guidance, checked against the IRS.
 - 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
 - Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
-- Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision.
+- Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision; use the terms the reader's field uses, write as an engineer to a client or peer, and describe people by their situation rather than their size or assumed skill.
 - Where else to get help (edition 1.4): remove marketplace fee figures and an unsourced managed-IT price range that can change.
 
 ## v0.49.0 - 2026-11-18

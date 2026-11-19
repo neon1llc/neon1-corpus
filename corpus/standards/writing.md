@@ -4,7 +4,7 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-18
+updated: 2026-11-19
 created: 2026-11-01
 edition: "2.0"
 order: 1
@@ -19,7 +19,7 @@ related: [standards-development, standards-documentation, standards-code-style]
 ## The core rules
 
 1. **Lead with what the reader needs.** Answer, decision, or action first. Background after, if it helps.
-2. **Use plain words.** Everyday verbs, short sentences, natural contractions. Keep an exact technical term when it carries meaning, and explain it once.
+2. **Use the reader's words.** Everyday verbs, short sentences, natural contractions. Use the term the reader's field uses, such as deployment, migration, integration, or scope, and explain it only when the reader may not know it. Plain and professional aren't opposites.
 3. **Be concrete.** Name who does what, when, and what happens next.
 4. **Say only what's true and supported.** Keep planned, built, tested, released, and shown to help distinct. Don't invent experience, numbers, quotes, or results. Say when something is unknown.
 5. **Use the fewest words that keep the full meaning.**
@@ -27,13 +27,14 @@ related: [standards-development, standards-documentation, standards-code-style]
 
 ## Voice
 
-Direct, candid, and specific, the way one business owner talks to another.
+Direct, candid, and specific, the way an engineer talks to a client or a peer.
 
 - **Say it and stop.** State what's true, what it costs, and what happens next.
 - **Don't solicit.** No pitch, no urgency, no telling readers what they deserve.
 - **Argue from evidence.** A number, method, or real example beats an adjective. When the evidence is thin, say so.
 - **Leave the decision with the reader.** Give options and tradeoffs, and recommend plainly, with why.
 - **Be candid about limits.** Say what neon1 doesn't do, when someone else is a better fit, and what might not work.
+- **Respect the reader.** Describe people by their situation, not their size, age, or assumed skill. Don't explain what a competent reader already knows, and don't announce honesty or humility; show them through specifics.
 
 The test: would a capable professional say this across a table to a peer? If it sounds like an ad, rewrite it.
 

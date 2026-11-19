@@ -30,7 +30,7 @@ export const SHELVES = {
   standards: ["How I work", "How each engagement is run, from the first conversation to handover."],
   guides: ["Guides", "How-tos and typical engagements, for owners, teams, and families."],
   faq: ["Questions", "Common questions about working with neon1 and using 1NEON."],
-  "case-studies": ["Case studies", "Past work, each labeled as one of four kinds: founder experience, neon1 engagements, neon1 subcontracted engagements, and independent demonstrations."],
+  "case-studies": ["Case studies", "Past work, each labeled by kind: neon1 engagements, neon1 subcontracted engagements, the founder's previous employment, personal or volunteer work, independent projects, and reconstructed demonstrations."],
   products: ["Products", "The client portal, two open-source tools, and a security guide."],
   landscape: ["Alternatives", "Other places to get help, and open-source tools worth a look."],
   templates: ["Templates", "Blank business documents to copy and fill in."],

@@ -1,6 +1,6 @@
 ---
 id: case-one-view-of-the-shop
-title: One view of the business
+title: Operations integration and monitoring
 summary: "A small business's point-of-sale, order tracking, and cameras each had their own screen, and none showed the business as a whole."
 type: case-study
 status: adopted
@@ -9,9 +9,9 @@ area: workflows
 kind: neon1
 role: "As neon1, my first client"
 when: "2025"
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-15
-edition: "1.0"
+edition: "1.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: business
@@ -24,7 +24,7 @@ short_results: "Compared how quickly the owner could act on a problem, before an
 short_after: "I manage it remotely, and computer vision is next."
 ---
 
-# One view of the business
+# Operations integration and monitoring
 
 ## The problem
 
