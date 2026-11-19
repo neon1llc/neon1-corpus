@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-19
 created: 2026-11-10
-edition: "1.10"
+edition: "1.11"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -27,7 +27,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
 - **Your free account**, in a free account only: the date it's deleted if nothing changes, **Keep it 30 more days** (once), and **Download a copy** (Settings, Your data).
-- **Next step**, in a free account only: **Ask for an assessment** or **Ask for a call**, with an optional note. Each emails neon1, and the reply comes by email. The assessment is free: neon1's written read of the project as written, with a likely approach and the first questions to settle. neon1 reads it before the 15-minute call, which is about needs.
+- **Next step**, in a free account only: **Ask for an assessment**, with an optional note, then **Book the 15-minute call**. The request emails neon1, and the reply comes by email. The assessment is free: neon1's written read of the project as written, with a likely approach and the first questions to settle. neon1 reads it before the call, which is about needs.
 
 ## Board
 

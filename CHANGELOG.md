@@ -4,6 +4,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.50.1 - 2026-11-19
+
+### Changed
+- 1NEON guide pages (edition 1.11) and people and account (edition 1.12): Home's Next step asks for the free assessment and then links to booking the free 15-minute call, instead of offering the two as separate requests.
+
 ## v0.50.0 - 2026-11-19
 
 ### Added
