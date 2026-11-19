@@ -1,12 +1,12 @@
 ---
 id: examples-proposal-options
 title: "Proposal with options, filled in"
-summary: "A complete neon1 proposal with three options for a fictional bakery's order list: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
+summary: "A complete neon1 proposal with three options for a fictional retailer whose stock counts disagree: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-11
-edition: "2.6"
+edition: "3.0"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -19,153 +19,151 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 # Proposal with options, filled in
 
 > [!example] A fictional example
-> Maple Street Bakery, its people, and every detail below are invented. It's the bakery from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide). Hours are real estimates for the work described. The hourly rate and dollar amounts are left out of public examples. A real proposal states them.
+> Harborline Outfitters, its people, and every detail below are invented. It's the retailer from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide&scenario=harborline). Hours are real estimates for the work described. The hourly rate and dollar amounts for neon1's time are left out of public examples. A real proposal states them.
 
-**neon1 proposal for:** Maple Street Bakery, "Orders without retyping"
+**neon1 proposal for:** Harborline Outfitters, "One stock count across stores and web"
 
 **Proposal number:** 0039 **Revision:** r1 **Date:** October 1
 
 **Valid until:** October 31
 
-**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** Maria Lopez, owner
+**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** Priya Raman, operations director
 
 ## Discovery
 
 **How it works today**
 
-- Orders arrive by email, after-hours voicemail, and Instagram message. Every night after close, Maria and Sam, who runs the counter, retype about 40 of them into a spreadsheet. It takes about an hour.
-- Last Friday had 41 orders: 27 emails, 8 voicemails, and 6 Instagram messages, typed in from 8 to 9pm.
-- Dee, the head baker, tallies the next day's bake from that spreadsheet by hand at 4am.
-- About three orders a week are missed or typed wrong, most often a pickup date or a cake message, and someone finds out at pickup.
-- Everything runs on the bakery's Google account, and everyone signs in with one shared password.
+- Harborline is an outdoor-gear retailer with three stores, a web store, and about thirty people.
+- Stock is counted in five places: the POS in each store, the web store, and the warehouse partner's portal, with the accounting system holding value. Each names an item differently: 7-digit POS numbers, web variant IDs, and UPCs at the warehouse. About 1,900 items are active, and roughly 140 have no UPC on file.
+- Tomas, the inventory lead, reconciles the counts by hand every Monday. It takes about three hours.
+- About 38 items disagree in a typical week, from returns taken at a counter that never reach the web store, transfers between stores, and stock the warehouse received late. About 11 web orders a month are for stock that isn't there.
 
-**What "better" means, in Maria's words**
+**What "better" means, in Priya's words**
 
-"Nobody retypes an order, Dee's bake sheet is waiting for her at 4am, and we don't have to stop taking holiday orders two days early like last year."
+"A count we can trust by 7am, a short list of what to check instead of a spreadsheet to build, and no apologies to customers for stock we don't have."
 
 **What can't change**
 
-- Customers keep ordering the way they do now.
-- Sam and Dee don't learn a new app. Whatever is built lives in the Google account the bakery already pays for.
+- The stores keep their POS, which is under contract for two more years. The warehouse partner stays.
+- Nobody on the floor learns a new tool for daily work.
+- Nothing touches the web store's checkout during the holiday weeks.
 
 **Limits found before any option was written**
 
-- **Instagram messages stay manual for now.** Official Instagram messaging access needs a Meta developer app, permissions, and upkeep as Meta's rules change. That costs more than it saves for about six orders a night. An instant reply sends the order form's link, and staff enter the rest in a short staff form. It can be added later if Instagram orders grow.
-- Voicemail orders depend on the phone service emailing transcripts. Most services do. If the bakery's doesn't, a free Google Voice number can take the after-hours calls.
-- The week side by side with the old way has to finish before the holiday rush starts.
+- **The POS can be read every night, but writing to it is limited.** Its API accepts 60 updates a minute, which a busy Saturday would exceed. A live two-way sync would have to queue its writes and could lag by minutes.
+- **The warehouse has no API.** It publishes one stock file each morning, ready by 6:30am, reporting what is available to sell.
 
 ## Objectives
 
-**The result:** email, voicemail, and form orders land in one list on their own; phone and Instagram orders are entered once, in a short staff form, instead of copied into a spreadsheet at night; and the kitchen gets its bake sheet.
+**The result:** the counts agree, and anything that doesn't is on one short exception list by 7am, without replacing a system.
 
-**How we'll know it worked,** measured the same way for two weeks before and after:
+**How we'll know it worked,** measured the same way before and after:
 
-- Minutes spent on orders after close each night: from 60 to under 10
-- Orders missed or wrong each week: from 3 to 0
+- Items whose counts disagree for no known reason, each week: from 38 to 5 or fewer
+- Oversold web orders each month: from 11 to 1 or fewer
 
 **Requirements**
 
-- No order is copied from one place to another by hand (must have)
-- Works on a phone (must have)
-- Running before the holiday rush (should have)
+- Staff can use it after a short walkthrough (must have)
+- Every account stays in Harborline's name (must have)
+- Running before the holiday weeks (should have)
 
 ## Options
 
-### A. Quick fix
+### A. Exception report first (recommended)
 
-An order form that customers fill in themselves, feeding one order list.
+Match every item across the POS, the web store, and the warehouse once. Each morning, compare their counts and email a short exception list by 7am, each with its likely reason. Read-only: nothing is written back to any system.
 
 **Includes**
 
-- An order form with your items, quantities, pickup day and time, and notes. It refuses a pickup you can't make, such as a Monday, or a custom cake with less than two days' notice
-- A confirmation to the customer with what they ordered
-- One order list, sorted by pickup, with a status for each order: new, baked, picked up
-- The form's link on your website and Google profile, and in an automatic reply to order emails and Instagram messages
-- Ten test orders with you and Sam, then a walkthrough
+- One item ID map across the POS number, the web variant, and the UPC, with the roughly 140 items that have no UPC listed for Tomas to fill in
+- A nightly comparison of the three stores' POS counts, the web store, and the warehouse file
+- A reason beside each difference: transfer in transit, return not posted, or no item match
+- A 7am email to Priya and Tomas, and an exceptions sheet with what changed since yesterday
+- An alert when any feed doesn't arrive
+- A dry run on a week of real exports, then two weeks beside Tomas's Monday count
+- A runbook, training for Tomas and the store leads, and every account in Harborline's name
 
-**Not included:** orders that still come by email, voicemail, or Instagram message, which are typed in as today, and the 7pm summary and the kitchen's bake sheet.
+**Not included:** writing counts back to any system, and any change to checkout.
 
-**Target result:** orders from the form appear in the list within a minute, with nothing retyped.
+**Depends on:** read access to the POS back offices, the web store, and the warehouse portal, and the warehouse's file arriving by 6:30am.
 
-**neon1's time:** 4 to 6 hours **Timeline:** 1 week **Paid directly by you:** nothing. It runs in the Google account you already pay for.
+**Target result:** counts are compared every morning, and unexplained differences fall from about 38 a week to 5 or fewer.
 
-**When to pick it:** to try the form before paying for more. Emails, voicemails, and Instagram messages would still be retyped, and they are most of tonight's hour.
+**neon1's time:** 26 to 34 hours **Timeline:** 4 weeks, the last two beside Monday's count **Paid directly by you:** about $15 a month for an AWS account in Harborline's name.
 
-### B. Solid setup (recommended)
+**Why I recommend it:** it shows how much of the drift is process and how much is sync before anything writes into a POS that limits writes. Option B can follow, and nothing in A is redone.
 
-Every order in one list by 7pm, however it arrived, and the kitchen's bake sheet made from that list.
+### B. Two-way sync with queued writes
+
+Everything in A, plus counts written back to the web store and the POS as sales and returns happen, through a queue that stays inside the POS's write limit, with a rule for which system wins and a log of every change.
 
 **Includes**
 
 - Everything in A
-- Order emails and voicemail transcripts read into the same list as they arrive. Each is marked to check, with a link to the original, so a person confirms it in seconds and nothing is trusted blindly
-- A 20-second staff form for phone calls and Instagram messages, and a flag when the same order seems to have arrived twice
-- A 7pm email to you and Sam with tomorrow's pickups and anything still to check, and a bake sheet for Dee with tomorrow's totals by item, ready before 4am
-- Pickup tags printed from the list
-- A safety net: a nightly copy of the list, an alert to you if no orders arrive during opening hours, and each person signing in as themselves in place of the shared password
-- A dry run on a past week of your real orders before anything goes live, then a week side by side with the old way
-- A runbook, a recorded walkthrough for new staff, training for each person, and every account in the bakery's name
-- Two weeks of go-live support for fixes and questions
+- A queue that retries writes to the POS at no more than 60 a minute
+- Write-back to the web store, held while a cart is open
+- Conflict rules, and a log of every change with who or what made it
+- A load test at holiday volume, and a switch that stops all writing at once
 
-**Not included:** taking payment online, and changes to your phone service or your website's design.
+**Not included:** changes to checkout, and replacing the POS or the warehouse partner.
 
-**Depends on:** your phone service emailing voicemail transcripts. Instagram messages stay manual for now (see the limits above).
+**Depends on:** the POS's write limit. At holiday volume the queue could lag by minutes, which is the cost of this option.
 
-**Target result:** every order is in one list by 7pm, with under 10 minutes of checking a night, and no order missed.
+**Target result:** counts correct themselves within minutes, at normal volume.
 
-**neon1's time:** 22 to 28 hours **Timeline:** 4 weeks, the last one side by side **Paid directly by you:** nothing each month. It runs in the Google account you already pay for.
+**neon1's time:** 58 to 74 hours **Timeline:** 10 weeks, after the holiday weeks **Paid directly by you:** about $45 a month for the queue and its runtime, in Harborline's AWS account.
 
-**To buy, in the bakery's name:** a label printer for pickup bags, such as a Brother QL-820NWB, about $180 to $220. It prints a pickup tag from each order in the list.
+**When to pick it:** once A shows how many differences are real and the holiday weeks are over. It writes to a POS that limits writes, so it's the riskier of the two to build first.
 
-**Why I recommend it:** it ends the nightly retyping without asking one customer to change how they order, and it's running before the holiday rush. The online order page in C can follow later, and nothing in B is redone.
+### C. Move the stores to the web store's own POS
 
-### C. Fuller build
-
-Everything in B, plus an online order page where customers choose a pickup time, pay ahead, and get a reminder, so most new orders never pass through the inbox at all.
+Replace the three stores' POS with the web store's, so one system holds one count.
 
 **Includes**
 
-- Everything in B
-- An order page on Square's online store, with your menu, pickup times, and holiday cutoffs
-- Payment when ordering, a deposit on custom cakes, and an email or text reminder the day before pickup
-- Paid orders copied into the same list, tested with real test orders and one refund from end to end
+- A store-by-store cutover plan
+- Catalog and customer import
+- Card-reader and hardware testing
+- Staff training at each store
+- A parallel run and cutover support
 
-**Not included:** delivery, and photography. I set up the photos you send.
+**Not included:** new hardware, and the cost of leaving the current POS contract, which Harborline pays.
 
-**Depends on:** your menu with prices, two weeks before go-live, and customers choosing to order online. The email, voicemail, and Instagram paths from B stay open.
+**Depends on:** the current POS contract, which runs two more years.
 
-**Target result:** most new orders arrive paid, with a pickup time, and never pass through the inbox.
+**Target result:** one system holds one count in every store and online.
 
-**neon1's time:** 32 to 39 hours **Timeline:** 7 weeks **Paid directly by you:** about $20 a month for the service that links Square to your order list, plus Square's card fees on each online order.
+**neon1's time:** 80 to 100 hours **Timeline:** 14 weeks, and not before the contract ends **Paid directly by you:** new hardware, and the cost of leaving the POS contract early.
 
-**When to pick it:** if you want customers to pay when they order. It asks them to change a habit, and it would land after the holidays, which is why I'd start with B.
+**When to pick it:** only if the POS contract is ending anyway. It removes the problem by removing a system, at the largest cost and the most disruption.
 
 ## How the hours add up
 
-Estimated task by task, for one experienced person. The range allows for what can't be known until the work starts, such as how your phone service formats its transcripts or how Square names its fields.
+Estimated task by task, for one experienced person. The range allows for what can't be known until the work starts, such as how each system formats its exports.
 
 | Work | A | B | C |
 |---|---|---|---|
-| Accounts set up in the bakery's name, and the follow-up questions from discovery | 0.5 | 1.5 | 1.5 |
-| Order form with pickup rules and a confirmation to the customer | 2 | 2 | 2 |
-| One order list with a status for each order | 0.5 | 0.5 | 0.5 |
-| The form's link on your website and Google profile, and in automatic replies | 0.5 | 0.5 | 0.5 |
-| Ten test orders with you and Sam, and a walkthrough | 1 | | |
-| Order emails and voicemail transcripts read into the list, each marked to check | | 5 | 5 |
-| Staff form for phone and Instagram orders, and a flag on possible duplicates | | 2 | 2 |
-| 7pm summary for you and Sam, and Dee's bake sheet for 4am | | 2 | 2 |
-| Pickup tags from the label printer | | 1.5 | 1.5 |
-| Safety net: a nightly copy, an alert if orders stop arriving, and a sign-in for each person | | 2.5 | 2.5 |
-| Dry run on a past week of real orders, then a week side by side with the old way | | 3 | 3 |
-| Runbook, recorded walkthrough, training for each person, and handover | | 2.5 | 2.5 |
-| Go-live support: the first two weeks of fixes and questions | 0.5 | 2 | 2.5 |
-| Online order page with your menu, pickup times, and holiday cutoffs | | | 4 |
-| Payment when ordering, deposits on custom cakes, and pickup reminders | | | 3 |
-| Paid orders into the same list, then test orders and a refund end to end | | | 3 |
-| **Expected** | **5** | **25** | **35.5** |
-| **Range** | **4 to 6** | **22 to 28** | **32 to 39** |
-
-B needs less of A's own testing, because its dry run covers it.
+| Read access in all five systems, and the follow-up questions from discovery | 2 | 2 | |
+| Item matching across the POS, the web store, and the warehouse's UPCs, with the gaps listed | 6 | 6 | |
+| Nightly comparison of counts across the POS, the web store, and the warehouse file | 6 | 6 | |
+| A reason for each difference: transfers, returns not posted, unknown items | 4 | 4 | |
+| The 7am exception email and the exceptions sheet | 3 | 3 | |
+| An alert when a feed doesn't arrive | 2 | 2 | |
+| Dry run on a week of real exports, then two weeks beside Tomas's Monday count | 4 | 4 | |
+| Runbook, training for Tomas and the store leads, and handover | 3 | 3 | |
+| A queue that retries POS writes within its limit | | 12 | |
+| Write-back to the web store, held while a cart is open | | 9 | |
+| Conflict rules and a log of every change | | 8 | |
+| Load test at holiday volume, and the stop-all switch | | 5 | |
+| Extra training and go-live support | | 2 | |
+| Store-by-store cutover plan | | | 14 |
+| Catalog and customer import | | | 22 |
+| Card-reader and hardware testing | | | 12 |
+| Staff training at the three stores | | | 18 |
+| Parallel run and cutover support | | | 24 |
+| **Expected** | **30** | **66** | **90** |
+| **Range** | **26 to 34** | **58 to 74** | **80 to 100** |
 
 ## Price and payment
 
@@ -174,10 +172,10 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 | Item | A | B | C |
 |---|---|---|---|
 | Hourly rate | *Stated in the real proposal* | *Stated in the real proposal* | *Stated in the real proposal* |
-| Estimate | 4 to 6 hours at that rate | 22 to 28 hours at that rate | 32 to 39 hours at that rate |
+| Estimate | 26 to 34 hours at that rate | 58 to 74 hours at that rate | 80 to 100 hours at that rate |
 | Deposit when you approve | Half of the low end | Half of the low end | Half of the low end |
 | Final invoice, when you accept the handover | The hours worked, less the deposit | The hours worked, less the deposit | The hours worked, less the deposit |
-| Paid directly by you | Nothing | The label printer | The label printer, about $20 a month, and card fees |
+| Paid directly by you | About $15 a month for AWS | About $45 a month for the queue and runtime | New hardware, and the cost of leaving the POS contract |
 
 **Changes:** no extra work or spending without a written, approved [change request](../forms/change-request.md).
 
@@ -185,24 +183,23 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 
 | You will | I will |
 |---|---|
-| Decide, as owner, and answer questions within two business days | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
-| Give editor access to the order spreadsheet and the order inbox's filters | Use only that access, and remove it at handover |
-| Send a week of order emails and voicemail transcripts with names removed, for the dry run | Keep them in this project only, and use them only for this work |
-| Have Sam and Dee join a 30-minute walkthrough | Test against the measures above, show you the result, and train you all |
-| Buy the label printer and pay any outside costs directly, in the bakery's name | Leave a runbook and every login in the bakery's name, and fix defects found in the first 30 days at no charge |
+| Decide, as operations director, and answer questions within two business days | Say when I'm working and what I'll do, and answer in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
+| Give read-only access to the POS back offices, the web store, and the warehouse portal | Use only that access, and remove it at handover |
+| Send a week of stock exports from each system, item names only, for the dry run | Keep them in this project only, and use them only for this work |
+| Have Tomas and the store leads join a 30-minute walkthrough | Test against the measures above, show you the result, and train you all |
+| Open the AWS account in Harborline's name and pay it directly | Leave a runbook and every login in Harborline's name, and fix defects found in the first 30 days at no charge |
 
-If something outside either of our control holds the work up, such as a vendor or a delivery, I'll pause the timeline, tell you the same day, and give you a new date.
+If something outside either of our control holds the work up, such as a vendor or a late file, I'll pause the timeline, tell you the same day, and give you a new date.
 
 ## Acceptance
 
 The work is accepted when these checks pass in front of you:
 
-- [ ] A test order from the form appears in the list once, with every field right
-- [ ] A test order email and a test voicemail appear in the list, marked to check (B and C)
-- [ ] The 7pm summary arrives for you and Sam, and Dee's bake sheet is waiting before 4am (B and C)
-- [ ] A pickup tag prints from an order in the list (B and C)
-- [ ] A paid test order with a pickup time appears in the list, and a refund works (C)
-- [ ] Sam checks a night's orders without help
+- [ ] Every active item has one ID across the POS, the web store, and the warehouse, and items with no UPC are listed
+- [ ] The 7am email arrives with each difference and its reason
+- [ ] A missing feed raises an alert that names the system
+- [ ] Two weeks beside Tomas's Monday count agree on every item the report flags
+- [ ] Tomas works a morning's exceptions without help
 
 ## Comments and agreement
 
@@ -210,14 +207,16 @@ The work is accepted when these checks pass in front of you:
 - Choosing an option, by signing below or approving it in 1NEON, means we both agree to that option's work, price, and timeline, and to what each of us will do.
 - For questions or adjustments, reply in 1NEON, write to hello@neon1.tech, or call +1 424-326-3661.
 
-**Option chosen:** B **For the client:** Maria Lopez **Title:** Owner **Date:** October 3
+**Option chosen:** A **For the client:** Priya Raman **Title:** Operations director **Date:** October 3
 
-**Approved in 1NEON** with the condition "Go live after the Saturday rush."
+**Approved in 1NEON** with the condition "Nothing changes at checkout until after the holiday weeks." Option C was declined.
 
 **For neon1 LLC:** Pradeep Tathineni **Date:** October 3
 
 ## How it turned out
 
-The work took 24.5 hours, inside the 22 to 28 estimated, and the final invoice listed each one. The dry run replayed a past week of 243 real orders, and 236 landed right the first time. The other 7 were emails with two orders in one message and orders sent as a photo. Two-order emails now become two rows, and a photo order is marked to check with the photo attached.
+The first dry run flagged 118 items, and 61 weren't real. I had assumed the warehouse's file showed stock on hand, but it counts only stock available to sell, so anything allocated to an order or still being received looked missing. Reading the warehouse's second daily file was outside what Priya approved, so I sent revised terms, 0039-r2-A: 10 more hours, a range of 34 to 44, and nothing else changed. She approved them.
+
+With the second file, the same week flagged 57 items, 53 with a reason and 4 for Tomas to check, which meets the target. Two weeks beside the Monday count agreed on every flagged item. The work took 39.5 hours, inside the revised range, and the final invoice listed each one. Option B stays on hold until the POS's write limit changes.
 
 *1 is glad to be of service.*

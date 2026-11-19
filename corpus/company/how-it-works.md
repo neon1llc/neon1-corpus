@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-17
+updated: 2026-11-19
 created: 2026-11-11
-edition: "1.9"
+edition: "1.10"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -109,11 +109,11 @@ Every change writes an audit record. Its messages go into an outbox in the same 
 
 ## Trying 1NEON without an account
 
-Three public pages show the real portal with made-up people and a made-up bakery. Nothing runs against real data, and nothing leaves your browser.
+Three public pages show the real portal with made-up people and companies. Nothing runs against real data, and nothing leaves your browser.
 
 ### The sample project at /1NEON/example
 
-One finished project, for reading.
+A finished project for each of three fictional clients, for reading: Harborline Outfitters (business systems integration), Quillwork Software (cloud modernization), and Fenwick & Marsh Architects (networks and security readiness). Each shows what went wrong along the way.
 
 ### The interactive demo at /1NEON/demo
 
@@ -121,9 +121,9 @@ The whole portal, with 1NEON's API running in your browser. You pick who to be. 
 
 ### The guided walkthrough at /1NEON/live
 
-A cursor plays through the real portal as Maria, who owns Maple Street Bakery. It saves nothing and has pause, speed, Back, and Next.
+A cursor plays through the real portal as one of the same three clients. Priya at Harborline Outfitters wants the stock counts of three stores, a web store, and a warehouse to agree, and a failed dry run changes the scope. Elena at Quillwork Software wants report workers off hand-managed hosts, and a canary is rolled back. Daniel at Fenwick & Marsh Architects needs a segmented network and evidence for a client's security questionnaire, and two tests fail before they pass. `?scenario=harborline`, `quillwork`, or `fenwick` picks one, and Harborline plays when none is named. It saves nothing and has pause, speed, Back, and Next.
 
-The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays 14 chapters in about 17 minutes, from sign-in to ongoing care. Short demos cover joining from an invitation, adding a passkey, adding an authenticator app, and text codes. Passkey requests go to a pretend prompt, so nothing on your device is touched. If a step fails, the chapter restarts twice, then stops on a card instead of looping. Before a release, a check plays each walkthrough in a real browser and fails if its length is off.
+The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays the whole engagement in about 17 minutes, from sign-in to ongoing care. `?play=free` follows Noor Haddad, who runs Calder Building Supply, from a free account to client. Short demos cover joining from an invitation, adding a passkey, adding an authenticator app, text codes, and the calendar. Passkey requests go to a pretend prompt, so nothing on your device is touched. If a step fails, the chapter restarts twice, then stops on a card instead of looping. Before a release, a check plays each walkthrough in a real browser and fails if its length is off.
 
 ## How a change goes live
 

@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-10
-edition: "2.5"
+edition: "2.6"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -228,6 +228,7 @@ Health is **Not assessed** (the start), **On track**, **At risk**, or **Off trac
 | Blank | PRJ | Nothing |
 | Cloud migration | MIG | Discovery questions, servers and files assets, a must-have requirement, cost and downtime measures, a backup restore check, and the handover checklist |
 | Workflow automation | FLOW | Discovery questions, tools and inboxes asset, "nothing is retyped twice", turnaround and staff-time measures, and the handover checklist |
+| Networks and connected systems | NET | Discovery questions, sites, devices, and connections asset, "guest and device traffic can't reach business systems", an unplanned-outages measure, a failover or restore check, and the handover checklist |
 | AI assistant | AI | Discovery questions, document sources asset, "answers cite their source", time-to-answer and correctness measures, and the handover checklist |
 | Security readiness | SEC | Discovery questions, systems in scope, "MFA on every admin account", an open-findings measure, an access review check, and the handover checklist |
 | Personal or home tech | HOME | "What's not working, in your own words", devices and accounts involved, and "Written steps left behind" |
