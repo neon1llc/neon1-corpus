@@ -4,9 +4,9 @@ title: "Getting ready for a first call"
 summary: "What to bring to a free 15-minute call with neon1."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -42,10 +42,10 @@ Don't send passwords, health details, or payment information, before or during t
 ## What you'll leave with
 
 - A plain description of the problem
-- A few options, including doing nothing and using what you already have
+- What I'd recommend, including doing nothing or using what you already have when that's enough
 - Whether I'm a good fit, and if not, who might be
 - The smallest useful next step, if there is one
 
-If it makes sense, a short proposal with options follows. I fill in the [intake form](../forms/intake.md) from our conversation.
+If it makes sense, a short proposal follows, with options only when there's a real choice. I fill in the [intake form](../forms/intake.md) from our conversation.
 
 [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../engagement/contact.md) for other ways to reach me.

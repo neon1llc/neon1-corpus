@@ -28,6 +28,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Tax preparers are financial institutions (edition 1.7): replace the passed November 16 IP PIN deadline with current outage and reopening guidance, checked against the IRS.
 - 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
 - Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
+- Why I started neon1 (edition 1.3): the experience figure (more than eight years) and the four services match the rest of the site, and a proposal makes one recommendation or sets out options when there's a real choice, with a dated note on the post.
+- Contact (edition 1.9), Getting ready for a first call (edition 1.4), and Working with neon1: a proposal makes one recommendation, or sets out options when there's a real choice.
 - Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision; use the terms the reader's field uses, write as an engineer to a client or peer, and describe people by their situation rather than their size or assumed skill.
 - Where else to get help (edition 1.4): remove marketplace fee figures and an unsourced managed-IT price range that can change.
 
