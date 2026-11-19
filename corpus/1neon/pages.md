@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-17
+updated: 2026-11-19
 created: 2026-11-10
-edition: "1.9"
+edition: "1.10"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -27,7 +27,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
 - **Your free account**, in a free account only: the date it's deleted if nothing changes, **Keep it 30 more days** (once), and **Download a copy** (Settings, Your data).
-- **Next step**, in a free account only: **Ask for an assessment** or **Ask for a call**, with an optional note. Each emails neon1, and the reply comes by email.
+- **Next step**, in a free account only: **Ask for an assessment** or **Ask for a call**, with an optional note. Each emails neon1, and the reply comes by email. The assessment is free: neon1's written read of the project as written, with a likely approach and the first questions to settle. neon1 reads it before the 15-minute call, which is about needs.
 
 ## Board
 

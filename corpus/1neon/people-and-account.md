@@ -4,9 +4,9 @@ title: "1NEON guide: sign-in, confirming it's you, notifications, and texts"
 summary: "How people get into 1NEON, why admin actions ask to confirm it's you, the three second steps, notifications, texts, and what to do when something is lost."
 type: guide
 status: adopted
-updated: 2026-11-16
+updated: 2026-11-19
 created: 2026-11-10
-edition: "1.10"
+edition: "1.11"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -20,7 +20,7 @@ origin: "neon1-1NEON apps/api/src (auth, factors, me, notifications) and apps/we
 
 You join 1NEON by invitation, or by making your own free account. An admin of the organization, or neon1, invites a person by email; they open the link and enter their email. Someone new chooses **Start for free** on the sign-in screen (or **start a free 1NEON account** on neon1.tech) and gives an email, their name (one name is fine), which describes them best, their organization's name (not asked of an individual, and optional for **Something else**), and, optionally, a website or public page, a city and state (a state alone, or a place outside the US), and how they found neon1. Each field is checked as it's filled in: the email's domain must take mail and can't be a temporary mailbox, a website must look like a web address (it's never visited), and a US city is spelled properly when it's on the public places list and kept as typed when it isn't. A problem shows under its field. Either way, they sign in with an 8-digit code sent there (valid a few minutes, in the browser that asked), or with a passkey once added. There are no passwords. If a code doesn't arrive, check spam or promotions, wait a minute, then **Send a new code**. The first sign-in offers a one-minute welcome tour, with **Remind me next time** and **Skip**. Replay it from **?** or the profile.
 
-A free account is limited: up to 3 projects, 50 items in a project, and 10 documents or pictures (10 MB each), with no inviting, approvals, proposals, billing, or Neo until neon1 converts it to a client account. Home's **Next step** sends neon1 a request for an assessment (an approach and the first questions to settle, based on the needs written there) or a free 15-minute call, with an optional note; the reply comes by email, and Home shows when each was last asked for. If nothing in it changes for 30 days, it's deleted, after check-ins at 7 and 14 days and a final notice at 21. Home's **Your free account** shows the date, with **Keep it 30 more days** (once) and **Download a copy**.
+A free account is limited: up to 3 projects, 50 items in a project, and 10 documents or pictures (10 MB each), with no inviting, approvals, proposals, billing, or Neo until neon1 converts it to a client account. Home's **Next step** sends neon1 a request for a free assessment (neon1's written read of the project as written: a likely approach and the first questions to settle) or a free 15-minute call about needs, with an optional note; the reply comes by email, and Home shows when each was last asked for. If nothing in it changes for 30 days, it's deleted, after check-ins at 7 and 14 days and a final notice at 21. Home's **Your free account** shows the date, with **Keep it 30 more days** (once) and **Download a copy**.
 
 Your email address can't be changed on the profile. A new address means an admin invites the new one and deactivates the old one.
 

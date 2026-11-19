@@ -15,7 +15,7 @@ related: [company-mission, company-registration, company-contact, services, comp
 
 # Capability statement
 
-neon1 is an independent engineering and technology consulting practice run by Pradeep Tathineni, an engineer with more than eight years in cloud infrastructure, automation, and software delivery. It assesses, designs, builds, integrates, and improves technology systems for businesses, technical teams, and individuals.
+neon1 is an independent engineering and technology consulting practice run by Pradeep Tathineni, its lead engineer, with more than eight years in cloud infrastructure, automation, and software delivery. It assesses, designs, builds, integrates, and improves technology systems for businesses, technical teams, and individuals.
 
 ## Core capabilities
 

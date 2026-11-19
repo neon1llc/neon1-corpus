@@ -8,6 +8,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Networks and connected systems, and Security readiness: service pages for the two services that had none, with buying situations, deliverables, alternatives, and limits.
 
 ### Changed
+- Free accounts (edition 1.4), First call, Contact, How a project runs, Services, Working with neon1, Why neon1, Neo, and the 1NEON guide (pages 1.10, people and account 1.11): a free account's project gets a free assessment, my written read of that one project, reviewed before the free 15-minute call. The call is about your needs, and options come afterward in writing.
+- Capability statement: names Pradeep as neon1's lead engineer.
 - Services (edition 2.0): four services of equal standing (workflow automation, cloud and AI engineering, networks and connected systems, security readiness), engagement types from assessment to ongoing care, who keeps what, and past work labeled by kind.
 - Customers (edition 2.0): buyers described by their situation, not their size or technical skill, with separate sections for businesses, technical teams, and individuals.
 - Mission and promise, Charter, About neon1, and Capability statement (edition 2.0): neon1 described as an independent engineering and technology consulting practice; About gives the founder's prior employment separately from neon1's work; experience stated as more than eight years.

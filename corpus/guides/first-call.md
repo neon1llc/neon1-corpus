@@ -15,7 +15,7 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and takes about 15 minutes. We find the main pain point and whether I'm the right help.
+The first call is free and takes about 15 minutes. It's about your needs: the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've written your project down in a [free 1NEON account](free-accounts.md) and asked for an assessment, I read it before we talk.
 
 ## Bring one real example
 
@@ -42,9 +42,8 @@ Don't send passwords, health details, or payment information, before or during t
 ## What you'll leave with
 
 - A plain description of the problem
-- What I'd recommend, including doing nothing or using what you already have when that's enough
 - Whether I'm a good fit, and if not, who might be
-- The smallest useful next step, if there is one
+- The next step, if there is one. If the answer is plainly a setting or something you already have, I'll say so
 
 If it makes sense, a short proposal follows, with options only when there's a real choice. I fill in the [intake form](../forms/intake.md) from our conversation.
 
