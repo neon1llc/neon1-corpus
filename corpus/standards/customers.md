@@ -1,14 +1,14 @@
 ---
 id: standards-customers
 title: Customers
-summary: "Who neon1 works with, how the work differs from households to enterprises, and when it declines work."
+summary: "Who neon1 works with, the situations that bring them, and when it declines work."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "2.0"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
@@ -16,29 +16,27 @@ related: [company-charter, standards-operating-principles, landscape-where-else-
 
 # Customers
 
+I work with businesses, technical teams, and individuals. I describe them by what they're trying to do, not by their size or how much they know about technology. A five-person firm can run a mature stack, and a household can run a better network than many offices.
+
 ## Everyone
 
-- No shaming an old spreadsheet, a cheap tool, or anyone's comfort level with technology.
-- You see the task done, then you do it, then you fix a harmless mistake yourself.
-- Monitoring, recording, AI use, and data access are always visible. Efficiency never becomes hidden surveillance of your staff.
-- "Do nothing," "use the support you already have," and "hire a specialist" are always on the table.
-- Your accounts, data, and documents stay yours, with a clean way out.
+- Start from what's already there. Existing systems, vendors, staff, and procedures usually stay, and paper or a spreadsheet can be the right tool.
+- Compare the alternatives: doing it in-house, a feature you already pay for, an established product, an AI tool, another provider, or not doing it yet.
+- Monitoring, recording, AI use, and data access are always visible. Efficiency never becomes hidden surveillance of staff.
+- Accounts, data, and documentation stay with the client, with a clean way out.
+- Handover fits the person taking over: a technical review for an engineer, hands-on practice for anyone who wants it.
 
-## Households and individuals
+## Businesses and organizations
 
-Home networks, cameras, devices, passwords, and security habits, in plain steps at your pace, with thought for who helps when I'm not there. For older relatives, a printed one-page guide often beats an app.
+Most have established software, vendors, and procedures, and often technical staff or a provider. They come to me to integrate systems that work well alone, see operations across them, add a capability their products don't cover, cut a recurring cost, consolidate after growth, evaluate an investment, apply AI where it fits, or hand off a project they could do but would rather not.
 
-## Small businesses and practices
+## Technical teams
 
-My main focus: owner-run businesses, offices, and practices where information is typed into several places, nobody quite understands the setup, or the person who knew it left. A first engagement is usually a paid review or one workflow, finished and checked in a few weeks, with the owner and the person doing the work.
+Teams often know their systems, and sometimes their field, better than I do. They don't need more hands. They bring me a bounded result: an architecture or cost review, a migration with a rollback plan, a specialist integration, production readiness, an AI evaluation, a customer's security requirement, or a project outside their main commitments. I work in their repositories and change process, follow their conventions, agree how they'll judge the result, and hand it back to them.
 
-## Technical teams and B2B
+## Individuals and households
 
-Startups and technical small businesses needing clearer cloud accounts, trustworthy deploys, infrastructure as code, AI grounded in their documents, or SOC 2 readiness. I work in your repositories and processes, follow your conventions, and document decisions, so your team owns the result.
-
-## Larger organizations and enterprises
-
-I'm most useful on one focused piece, such as a proof of concept, review, automation, or training, alongside your teams and within your security, procurement, and change processes. I don't take on round-the-clock operations, team-sized migrations, or formal assurance. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed for those.
+Some want a reliable home network, secure remote access, a home lab, local storage and backup, privacy-conscious devices, or automation across them. Others want one thing fixed or explained. Both get the same care. I don't assume what someone knows from their age or their questions.
 
 ## Health care and other regulated work
 
@@ -46,7 +44,7 @@ When a project touches health information, a [business associate agreement](../t
 
 ## When I say no
 
-I turn down or refer work needing emergency coverage, safety-critical equipment, regulated professional judgment, hidden employee monitoring, or support I can't give. I also say no when something simpler than what you asked for will do, and point you to it.
+I turn down or refer work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, a larger delivery team, hidden employee monitoring, or support I can't give. I also say so when something simpler or already available will do. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed.
 
 ## Community help
 

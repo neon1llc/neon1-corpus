@@ -1,26 +1,26 @@
 ---
 id: guides-use-case-security-awareness
-title: "Use case: security awareness for a team or family"
-summary: "How a typical plain-language security session goes, and what people leave able to do."
+title: "Security awareness sessions"
+summary: "How an informational security awareness session for a team or group runs, and what people leave able to do."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-09
-edition: "1.5"
+edition: "2.0"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Teams, organizations, and families"
-related: [services, guides-password-manager-for-family, standards-security-and-data]
+related: [services, guides-use-case-security-readiness, guides-password-manager-for-family, standards-security-and-data]
 ---
 
 > [!note] A typical pattern, not a client story
 > For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
 
-# Use case: security awareness for a team or family
+# Security awareness sessions
 
 ## The situation
 
-Someone nearly fell for a fake invoice, a "your account is locked" text, or a call from "the bank." People want to be safer, but most training they've seen was scary or boring.
+A group wants practical security habits: after a near-miss with a fake invoice or support call, before a busy season, or alongside a wider security project. These sessions are informational and hands-on. They aren't certified training, and they don't replace a security program.
 
 ## How it usually goes
 
@@ -29,7 +29,7 @@ Someone nearly fell for a fake invoice, a "your account is locked" text, or a ca
 3. **Hands-on time.** Everyone turns on two-step sign-in for their most important account and checks their recovery details, during the session.
 4. **A one-page takeaway** with what to do when something looks wrong and who to tell.
 
-Companies heading into an audit can add SOC 2 readiness work: mapping controls, gathering evidence, and fixing the basics first. The audit opinion comes from an independent auditor.
+Organizations that need controls changed, not just habits, can pair a session with [security readiness](use-case-security-readiness.md) work.
 
 ## What people leave able to do
 

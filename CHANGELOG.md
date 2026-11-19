@@ -4,7 +4,15 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- Networks and connected systems, and Security readiness: service pages for the two services that had none, with buying situations, deliverables, alternatives, and limits.
+
 ### Changed
+- Services (edition 2.0): four services of equal standing (workflow automation, cloud and AI engineering, networks and connected systems, security readiness), engagement types from assessment to ongoing care, who keeps what, and past work labeled by kind.
+- Customers (edition 2.0): buyers described by their situation, not their size or technical skill, with separate sections for businesses, technical teams, and individuals.
+- Mission and promise, Charter, About neon1, and Capability statement (edition 2.0): neon1 described as an independent engineering and technology consulting practice; About gives the founder's prior employment separately from neon1's work; experience stated as more than eight years.
+- How a project runs (edition 1.3): a proposal makes one recommendation, or sets out options when there's a real choice.
+- Workflow automation and Cloud and AI engineering (edition 2.0): the use-case guides become service pages. Security awareness sessions (edition 2.0) are described as informational, not certified training.
 - Tax preparers are financial institutions (edition 1.7): replace the passed November 16 IP PIN deadline with current outage and reopening guidance, checked against the IRS.
 - 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
 - Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.

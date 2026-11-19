@@ -4,43 +4,42 @@ title: Capability statement
 summary: "neon1 on one page for a buyer, partner, or procurement office: what it does, how it differs, work it has delivered, and the company's details."
 type: page
 status: adopted
-updated: 2026-11-16
+updated: 2026-11-19
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.5"
+edition: "2.0"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
 
 # Capability statement
 
-neon1 is a technology practice run by one senior engineer, Pradeep Tathineni, designing, building, and handing over business workflows, cloud and AI systems, networks and devices, and security training for small and medium organizations.
+neon1 is an independent engineering and technology consulting practice run by Pradeep Tathineni, an engineer with more than eight years in cloud infrastructure, automation, and software delivery. It assesses, designs, builds, integrates, and improves technology systems for businesses, technical teams, and individuals.
 
 ## Core capabilities
 
-- **Business workflows.** Email, spreadsheets, point of sale, booking, accounting, and document systems connected and automated.
-- **Cloud and AI engineering.** AWS foundations in Terraform, deploy pipelines with checks and rollback, retrieval-based AI assistants with citations and per-person permissions, and backup and recovery proven by test restores.
-- **Migrations.** Moving servers, files, and applications from on-premises machines to the cloud, with data intact and a tested way back.
-- **Networks, devices, and spaces.** Wi-Fi, cameras, smart devices, and office equipment configured, separated onto their own networks, and documented.
-- **Security awareness and readiness.** Training for groups from families to executives, and SOC 2 readiness for companies heading into an audit.
+- **Workflow automation.** Systems integration through APIs and events, data synchronization and reconciliation, custom applications, reporting, and AI-assisted document processing.
+- **Cloud and AI engineering.** AWS architecture and foundations in Terraform, delivery pipelines with checks and rollback, migrations, production readiness, cost reviews, and retrieval-based AI applications with permissions, citations, and evaluation.
+- **Networks and connected systems.** Network design and segmentation, multi-site and remote access, connected devices and cameras, monitoring, and documented recovery.
+- **Security readiness.** Technical risk assessments, identity and access, hardening, backup and recovery testing, and control and evidence preparation before a SOC 2, HIPAA, or customer review. Audit opinions come from independent auditors.
 
 ## How engagements work
 
 - **One engineer** from the first call to the handover. Pradeep does the work himself. Any partner on a project is named in the proposal and on the case study.
-- **Options before commitments.** Proposals offer a quick fix, a solid setup, and a fuller build, each with cost, effort, and upkeep.
-- **Measured results.** Work is measured against a baseline, and results are reported with how they were tested.
+- **Defined scope.** Assessments, scoped projects, and phased work, each with deliverables, acceptance criteria, and a price agreed before work starts.
+- **Measured results.** Work is checked against agreed criteria, and published results say how they were measured.
 - **Code and resources.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
 
 ## Delivered work
 
 | Client | Kind | Work | Result |
 |---|---|---|---|
-| Accounting firm | neon1 subcontracted engagement, for Xenoss | [Answers in seconds, with sources](../case-studies/answers-in-seconds.md): an AI assistant over the firm's Microsoft 365 documents | Median lookup from about 5 minutes to 14 seconds, and recall from 72% to 94% |
-| Dermatology practice | neon1 subcontracted engagement, for Xenoss | [Intake, out of the shared inbox](../case-studies/intake-out-of-the-inbox.md): a serverless patient intake portal | Intake from 2.6 days to 3.4 hours, and staff time from 24 to 8 minutes each |
-| Small local business | neon1 engagement | [One view of the business](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras in one view, on site and remotely | The owner acts on problems much sooner than on site alone |
-| Automotive business | neon1 engagement | [Two offices off local servers](../case-studies/two-offices-off-local-servers.md): two offices' servers moved to the cloud | Both offices moved with no application rewrite |
-| Schools, families, and teams | neon1 engagement | [Security for non-security people](../case-studies/security-for-non-security-people.md): security awareness seminars | Sessions fitted to every level, from parents to engineers |
+| Accounting firm | neon1 subcontracted engagement, for Xenoss | [Permission-aware document assistant](../case-studies/answers-in-seconds.md) over the firm's Microsoft 365 documents, on Amazon Bedrock | Median lookup from about 5 minutes to 14 seconds, and recall from 72% to 94%, on an 80-question test set |
+| Dermatology practice | neon1 subcontracted engagement, for Xenoss | [Patient intake portal](../case-studies/intake-out-of-the-inbox.md), serverless on AWS | Median intake from 2.6 business days to 3.4 hours, and staff time from 24 to 8 minutes each |
+| Automotive business | neon1 engagement | [Two-site server migration](../case-studies/two-offices-off-local-servers.md) to AWS, with the client's technical lead | Both locations moved with no application rewrite, records reconciled, and restore tested |
+| Small local business | neon1 engagement | [Operations integration and monitoring](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras joined on AWS, on a separate device network | The owner acts on problems from anywhere, not only on site |
+| Schools, families, and teams | neon1 engagement | [Security awareness sessions](../case-studies/security-for-non-security-people.md) | Informational sessions, with accounts and devices secured during the session |
 
 ## Company data
 
