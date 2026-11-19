@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.50.0 - 2026-11-19
+
 ### Added
 - Networks and connected systems, and Security readiness: service pages for the two services that had none, with buying situations, deliverables, alternatives, and limits.
 
