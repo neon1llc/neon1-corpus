@@ -52,7 +52,7 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), whic
 | Answers fully supported by their source  | 78%          | 92%    |
 | Interruptions of senior staff per week   | ~18          | ~7     |
 
-Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Lookups were timed from question to a usable, source-checked answer, before and after. After launch, the system records each lookup's start and end as metrics only, with no question or answer text. Interruptions come from a two-week staff tally before and after, and leave out judgment calls that still belong with senior staff.
+Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Times after launch come from the start and end the system records for each lookup, as metrics only, with no question or answer text. Where the old way left no record, such as lookups before launch or interruptions of senior staff, the figure is the staff's own estimate from a short survey.
 
 These results describe that test set, not a guarantee, so each answer carries citations to check.
 
