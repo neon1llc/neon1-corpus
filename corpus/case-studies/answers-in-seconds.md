@@ -56,11 +56,7 @@ Measured on 80 representative questions, including ones it should refuse, judged
 
 These results describe that test set, not a guarantee, so each answer carries citations to check.
 
-In the client's words:
-
-> "For a while now we've been working on getting the whole firm onto one cloud: our files, our client documents, and the software we run on. We also wanted to start using AI, but carefully, and on our terms. The knowledge base moved us forward on both."
->
-> Boris M., Boris M Tax
+Boris M., who owns Boris M Tax, said the firm had been moving its files, client documents, and software onto one cloud, and wanted to start using AI carefully and on its own terms. In his view, the knowledge base moved the firm forward on both. This is my summary of our conversation, with his agreement to publish it.
 
 ## After handover
 

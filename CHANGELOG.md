@@ -14,7 +14,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - How a project runs (edition 1.3): a proposal makes one recommendation, or sets out options when there's a real choice.
 - Case studies get descriptive titles: Permission-aware document assistant (1.8), Patient intake portal (1.5), Operations integration and monitoring (1.1), Two-site server migration (1.5), Security awareness sessions (1.9), and Home cameras and family accounts (1.5). The intake portal links each intake to the EHR record rather than filing documents into it, and the operations case names its client as the first business client.
 - Case-study kinds add the founder's previous employment and reconstructed demonstrations; founder experience is now labeled personal or volunteer work, and independent demonstrations independent projects; the sample bakery proposal is labeled a fictional example.
-- How I price my work (edition 1.5): examples in each range cover all four services. The ranges are unchanged.
+- How I price my work (edition 1.5): examples in each range cover all four services, and the bakery worked example gives way to four fictional examples, one per service, including one with a real choice. The ranges are unchanged.
+- Capability statement: lists the AWS Certified Cloud Practitioner certification and drops the training industry code. The accounting case gives the owner's comments as a summary rather than a quotation. Networks work names cabling and physical installation as done by a qualified installer.
 - Technology decisions (edition 1.5) and Partners (edition 1.4): architecture guidance scaled to the client rather than to small businesses only.
 - Neo (edition 3.0): the four services, the full set of case-study kinds, and how to answer visitors who are comparing alternatives or already have engineers.
 - Working with neon1 (edition 1.15): project length follows the proposal; security sessions are described as informational.

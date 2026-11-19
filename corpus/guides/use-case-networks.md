@@ -50,7 +50,7 @@ Access to the current equipment and accounts, the ISP details, and a decision on
 
 ## Limits
 
-I design and configure. Physical installation is arranged per project with a qualified installer where the work needs one. No licensed electrical or alarm-system work, safety-critical systems, or electronics repair. On-site work is within about 30 miles of Queens, NY.
+I design and configure. Cabling and physical installation are done by a qualified installer, arranged per project. No licensed electrical or alarm-system work, safety-critical systems, or electronics repair. On-site work is within about 30 miles of Queens, NY.
 
 ## Related work
 
