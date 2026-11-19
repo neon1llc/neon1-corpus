@@ -7,7 +7,7 @@ status: adopted
 updated: 2026-11-19
 created: 2026-11-09
 edition: "2.0"
-consumers: [knowledge, ai]
+consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Engineering leads, technical founders, and businesses running software in the cloud"
 related: [services, standards-technology-decisions, standards-reliability-and-recovery, standards-development, standards-ai-quality]

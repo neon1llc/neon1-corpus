@@ -8,7 +8,7 @@ updated: 2026-11-19
 created: 2026-11-09
 edition: "2.0"
 reviewed: 2026-11-18
-consumers: [knowledge, ai]
+consumers: [chat, knowledge, ai]
 pdf: true
 featured: true
 related: [company-charter, services]

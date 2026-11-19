@@ -8,6 +8,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ### Changed
 - The free first call is 30 minutes, not 15, everywhere it's mentioned: Services (edition 2.1), Contact (edition 1.10), How a project runs (edition 1.4), Getting ready for a first call (edition 1.5), Free 1NEON accounts (edition 1.5), Working with neon1 (edition 1.16), How neon1.tech works (edition 1.11), Neo (edition 3.1), the 1NEON guide pages (edition 1.12) and people and account (edition 1.13), and Tax preparers are financial institutions (edition 1.8).
+- Neo's bundle includes Where else to get help, the capability statement, and the four service pages (workflow automation, cloud and AI engineering, networks and connected systems, security readiness).
 
 ## v0.50.1 - 2026-11-19
 
