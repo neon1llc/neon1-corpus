@@ -9,9 +9,9 @@ short:
 type: post
 topic: questions
 status: adopted
-updated: 2026-11-18
+updated: 2026-11-19
 created: 2026-11-12
-edition: "1.7"
+edition: "1.8"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -87,7 +87,7 @@ Keep the plan where you can find it, and revisit it when something changes, such
 
 For a longer walkthrough of the rule, with a staff checklist, a paperwork list, and a 20-day learning plan, see [Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md). For training, the [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are free on GitHub, and you can use them without ever talking to me.
 
-If you'd like help, I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [15-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+If you'd like help, I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
 
 This post isn't legal advice. An attorney can tell you how the rule applies to your practice.
 

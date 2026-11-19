@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-19
 created: 2026-11-11
-edition: "1.10"
+edition: "1.11"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -31,7 +31,7 @@ The code is public in neon1's [GitHub repositories](https://github.com/neon1llc)
 One long page of views, each about one screen:
 
 1. **Landing.** The neon1 wordmark over the rain, with "1 is glad to be of service."
-2. **Services.** Four kinds of help, and a note that the first 15-minute call is free.
+2. **Services.** Four kinds of help, and a note that the first 30-minute call is free.
 3. **Process.** The five steps: listen, propose, decide, build, and hand over.
 4. **Client work.** Case study cards with my role, the problem, the work, and the results.
 5. **Code and resources.** neon1's public repositories and tools, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source. The rest are source-available under FSL-1.1, with text under CC BY-ND.

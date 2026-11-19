@@ -7,7 +7,7 @@ status: adopted
 updated: 2026-11-19
 created: 2026-11-19
 edition: "1.0"
-consumers: [knowledge, ai]
+consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Organizations facing a security review, a customer requirement, or a risk they want closed"
 related: [services, standards-security-and-data, standards-reliability-and-recovery, product-ready-secure-go, product-soc-it-2-me, guides-do-you-need-a-baa]

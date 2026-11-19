@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-19
 created: 2026-11-11
-consumers: [knowledge, ai]
+consumers: [chat, knowledge, ai]
 pdf: true
 edition: "2.0"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
