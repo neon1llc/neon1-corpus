@@ -11,7 +11,7 @@ role: "For my own family"
 when: "2025"
 updated: 2026-11-19
 created: 2026-11-06
-edition: "1.5"
+edition: "1.6"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
@@ -29,7 +29,7 @@ origin: "neon1-site src/app/public/index.html#case-home"
 
 ## The problem
 
-My parents' house had no cameras, and the family reused a few passwords across accounts.
+My parents' house had no cameras, and the family reused a few passwords across accounts. I did this work in February 2025, for my own family, before neon1 was formed.
 
 ## The work
 

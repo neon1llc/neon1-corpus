@@ -11,7 +11,7 @@ role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-19
 created: 2026-11-06
-edition: "1.8"
+edition: "1.9"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -52,7 +52,7 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), whic
 | Answers fully supported by their source  | 78%          | 92%    |
 | Interruptions of senior staff per week   | ~18          | ~7     |
 
-Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Times after launch come from the start and end the system records for each lookup, as metrics only, with no question or answer text. Where the old way left no record, such as lookups before launch or interruptions of senior staff, the figure is the staff's own estimate from a short survey.
+Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Lookup times before launch were timed automatically and checked against the staff's own estimates in a short survey. After launch, the system records the start and end of each lookup, as metrics only, with no question or answer text. Interruptions of senior staff left no record, so that figure comes from the survey.
 
 These results describe that test set, not a guarantee, so each answer carries citations to check.
 
