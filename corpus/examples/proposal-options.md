@@ -12,7 +12,7 @@ pdf: true
 featured: true
 example_of: templates-proposal
 fictional: true
-kind: demonstration
+kind: fictional
 related: [templates-proposal, templates-services-agreement, examples-proposal, forms-change-request]
 ---
 

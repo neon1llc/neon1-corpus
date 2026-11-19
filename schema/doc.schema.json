@@ -185,9 +185,10 @@
         "employment",
         "founder",
         "demonstration",
-        "reconstructed"
+        "reconstructed",
+        "fictional"
       ],
-      "description": "Case study, or an example shown beside the case studies: which kind of work it is, labeled wherever it is shown so one is never mistaken for another. neon1 is work contracted through neon1 LLC, partner is work neon1 delivered as a subcontractor or with a partner, employment is the founder's work for a previous employer, founder is personal, family, or volunteer work outside a neon1 contract, demonstration is an independent project neon1 built outside any client engagement, and reconstructed is a demonstration rebuilt to show how past work was done, without client data. Fictional examples use `fictional` instead."
+      "description": "Case study, or an example shown beside the case studies: which kind of work it is, labeled wherever it is shown so one is never mistaken for another. neon1 is work contracted through neon1 LLC, partner is work neon1 delivered as a subcontractor or with a partner, employment is the founder's work for a previous employer, founder is personal, family, or volunteer work outside a neon1 contract, demonstration is an independent project neon1 built outside any client engagement, reconstructed is a demonstration rebuilt to show how past work was done, without client data, and fictional is a made-up example such as a sample proposal, which also sets `fictional: true`."
     },
     "when": {
       "type": "string",

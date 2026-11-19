@@ -44,7 +44,7 @@ const confirmed = (v) => typeof v === "string" && v.trim() !== "" && v.trim() !=
 
 // The kinds of case study, labeled on every card and page so one is never mistaken for another: work contracted
 // through neon1 LLC, work delivered as a subcontractor, the founder's previous employment, personal or volunteer work,
-// independent projects, and reconstructed demonstrations
+// independent projects, reconstructed demonstrations, and fictional examples
 const KINDS = {
   neon1: "neon1 engagement",
   partner: "neon1 subcontracted engagement",
@@ -52,6 +52,7 @@ const KINDS = {
   founder: "Personal or volunteer work",
   demonstration: "Independent project",
   reconstructed: "Reconstructed demonstration",
+  fictional: "Fictional example",
 }
 // An unconfirmed role or year says so plainly instead of disappearing, so a reader always has the context
 const UNCONFIRMED = { role: "role not yet confirmed", when: "year not yet confirmed" }
