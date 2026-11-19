@@ -7,7 +7,7 @@ status: adopted
 client: small local business
 area: workflows
 kind: neon1
-role: "As neon1, my first client"
+role: "As neon1, my first business client"
 when: "2025"
 updated: 2026-11-19
 created: 2026-11-15
