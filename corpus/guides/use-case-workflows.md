@@ -1,46 +1,62 @@
 ---
 id: guides-use-case-workflows
-title: "Use case: one workflow, no more retyping"
-summary: "How a typical business workflow engagement goes, from the first call to a handover the staff can run."
+title: "Workflow automation"
+summary: "Integrating business systems, automating processes, and building the software in between: when it's worth doing, what I deliver, and when something else fits better."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-09
-edition: "1.2"
+edition: "2.0"
 consumers: [knowledge, ai]
 pdf: true
-audience: "Owners of small service businesses"
-related: [services, standards-discovery-and-delivery, examples-proposal]
+audience: "Businesses and organizations whose systems need to work together, and the people who run them"
+related: [services, standards-discovery-and-delivery, standards-technology-decisions, examples-proposal]
 ---
 
-> [!note] A typical pattern, not a client story
-> For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+# Workflow automation
 
-# Use case: one workflow, no more retyping
+Integrate existing systems, automate operations that cross them, and build the software a business needs where its products stop.
 
-## The situation
+## When it's worth doing
 
-Requests arrive by web form, email, and phone, and someone copies each into the scheduling or practice system, then a tracking spreadsheet. Things get missed or entered twice, and Monday mornings vanish into data entry.
+- Two or more systems of record disagree, such as inventory, orders, customers, or invoices, and exceptions are reconciled by hand.
+- A vendor sync or script breaks quietly, and nobody owns it.
+- Reporting needs data from several systems that don't export cleanly.
+- Approvals, reconciliation, or handoffs span teams or tools.
+- Documents arrive in volume and need structured extraction with human review.
+- A customer-facing or internal application is needed beside the existing stack.
 
-## How it usually goes
+## What I do
 
-1. **First call, 15 minutes.** We find the one workflow that costs the most and check that I'm the right fit.
-2. **Discovery, a session or two.** I watch the real task, time a few examples, and write down what "fixed" looks like and what must not change.
-3. **Proposal.** Options, from a better procedure to configuring what you already pay for to a small integration, each with its ongoing cost and a way out.
-4. **Build, in small steps.** You see a working version early, with made-up data, before anything touches real records.
-5. **Handover.** The person who does the work runs it alone, fixes a deliberate mistake, and keeps a one-page guide.
-6. **Follow-up, a month later.** We compare missed and duplicate requests with the baseline.
+- **Integration.** APIs, webhooks, and event-driven sync between CRM, ERP, point-of-sale, accounting, scheduling, and document systems, with identifiers mapped and a clear source of truth for each record.
+- **Exception handling.** Retries, idempotency, reconciliation reports, and a queue for anything that needs a person, so failures are visible rather than silent.
+- **Custom applications.** Portals, internal tools, and services where configuration and integration can't meet the requirement.
+- **Reporting and visibility.** Data consolidated into dashboards and reports that people use.
+- **AI where it earns its place.** Document classification and extraction with review, measured against real samples.
 
-## What usually changes
+## What you get
 
-- Requests land once, in one place, and reach the system of record without retyping.
-- Nothing waits unseen, because a daily summary lists anything unanswered.
-- The tracking spreadsheet is retired, or kept as an export rather than a second copy.
+An integration map and data ownership rules, a working implementation in your accounts, tests against agreed acceptance criteria including failure cases, monitoring, and a runbook for each integration.
 
-## What usually doesn't
+## What it needs from you
 
-Your tools usually stay. Often the fix is configuring what's there and adding one small connection.
+Admin access to the systems involved, vendor API terms and limits, a person who knows the process, and sample data that shows the exceptions as well as the normal case.
 
-## Paperwork you'd see
+## When something else fits better
 
-[Intake](../forms/intake.md), [discovery record](../forms/discovery.md), [proposal](../templates/proposal.md), [release and handover record](../forms/release-and-handover.md), and a [business associate agreement](../templates/business-associate-agreement.md) if health information is involved. The [filled-out examples](https://neon1.tech/knowledge/#examples) show all of them for a fictional practice.
+- A native integration or marketplace app already covers it.
+- An integration platform such as n8n, Zapier, or Make handles the volume and rules. I'll recommend one, and can set it up.
+- The volume is low and a documented manual step costs less than software.
+- You want a long-term managed integration service with round-the-clock support.
+
+## Limits
+
+I don't replace a system of record that works, or hold your accounts or data. Vendor API limits and data quality set what's possible, so discovery checks both before a price is fixed.
+
+## Related work
+
+- [Patient intake portal](../case-studies/intake-out-of-the-inbox.md), a neon1 subcontracted engagement.
+- [Operations integration and monitoring](../case-studies/one-view-of-the-shop.md), a neon1 engagement.
+- The [filled-out examples](https://neon1.tech/knowledge/#examples) show an intake, proposal, and handover for a fictional client.
+
+[Book a call](../engagement/contact.md) with the systems involved and where the process breaks.

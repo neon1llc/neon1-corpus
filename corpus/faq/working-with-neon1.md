@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-16
+updated: 2026-11-19
 created: 2026-11-07
-edition: "1.14"
+edition: "1.15"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -30,7 +30,7 @@ Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Easte
 
 ## Can I start without a call?
 
-Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), write down what you need, and ask for an assessment or a call when you're ready.
+Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1) and write down what you need, on your own time. When it's ready, ask for a free assessment and book the 15-minute call. I read your project before we talk.
 
 [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
 
@@ -38,7 +38,7 @@ Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), write dow
 
 I use only the access the job needs, keep your information confidential, and remove my access when we're done. We sign a short [service agreement](../engagement/service-agreement.md) once, before any paid work.
 
-Each project is then a [proposal](../examples/proposal-options.md) with options, and the one you choose is what we both agree to. Personal or health data needs the right agreement first, such as a Business Associate Agreement.
+Each project is then a [proposal](../examples/proposal.md): one recommendation, or options when there's a real choice. What you approve is what we both agree to. Personal or health data needs the right agreement first, such as a Business Associate Agreement.
 
 ## What if something urgent comes up?
 
@@ -48,11 +48,11 @@ For anything your business can't go a day without, I take the work only when som
 
 ## How long does a project take?
 
-Small jobs take a week or two, medium ones two to four weeks, and bigger ones four to six. I take a few clients at a time, so each gets my full attention.
+It depends on the scope, so the proposal gives the schedule. Larger projects run in phases you approve one at a time. I take a few clients at a time, so each gets my full attention.
 
 ## How is the cost worked out?
 
-After we talk, I send a short proposal with a few options, each with what it covers, its upkeep, and its cost. You pick, and the cost changes only if you approve a change.
+After we talk, I send a short proposal: one recommendation, or options when there's a real choice, each with what it covers, its upkeep, and its cost. You approve it, and the cost changes only if you approve a change.
 
 Every option has the same security baseline: multi-factor sign-in, the least access the job needs, encryption that fits the data, a tested restore, and a way back from every big change. A smaller option does less, not worse. See [how I price my work](../engagement/pricing.md).
 
@@ -64,8 +64,8 @@ A project usually starts with a deposit, and the rest is billed when you accept 
 
 ## Do you run security training?
 
-Yes, for groups from parents and teachers to engineers and executives: phishing, fraud, data brokers, passwords, networks, cameras, and physical security. For organizations I add privacy, data handling, and incident response.
+I run informational security awareness sessions for groups, from parents and teachers to engineers and executives: phishing, fraud, passwords, networks, and cameras. They're practical, not certified training. For controls, evidence, and audit preparation, see [security readiness](../guides/use-case-security-readiness.md).
 
 ## What don't you do?
 
-I don't repair electronics, give legal advice, or handle personal or health data before the right agreements and insurance are in place. I can help you get those agreements, and I'll work with your lawyer on the technical side.
+I don't repair electronics, do licensed electrical or alarm work, issue audit opinions, give legal advice, or handle personal or health data before the right agreements and insurance are in place. I can help you get those agreements.

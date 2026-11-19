@@ -1,6 +1,6 @@
 ---
 id: case-two-offices-off-local-servers
-title: Two offices off local servers
+title: Two-site server migration
 summary: "The app, database, and files lived on two local servers both offices used."
 type: case-study
 status: adopted
@@ -9,9 +9,9 @@ area: migration
 kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-06
-edition: "1.4"
+edition: "1.5"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
@@ -25,7 +25,7 @@ short_after: "Change more only when the data says so."
 origin: "neon1-site src/app/public/index.html#case-migration"
 ---
 
-# Two offices off local servers
+# Two-site server migration
 
 ## The problem
 

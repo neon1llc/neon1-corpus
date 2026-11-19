@@ -4,11 +4,11 @@ title: Technology decisions
 summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -35,10 +35,10 @@ First-year cost includes setup, subscriptions, computing, storage, data transfer
 
 I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud costs at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
 
-## Architecture that fits a small business
+## Architecture that fits the scale
 
 - A brochure website is usually a static site on managed hosting with versioned source and a documented redeploy.
-- Client workflows use a few clearly owned parts and supported integrations. A modular app or a managed workflow usually beats microservices or Kubernetes at this size.
+- Integrations use a few clearly owned parts and supported APIs. For one team's workload, a modular app or a managed workflow usually beats microservices or Kubernetes. A client that already runs a platform keeps it, and new work follows its conventions.
 - Infrastructure as code is worth it when repeatability and recovery justify the setup.
 - The [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) pillars are a useful lens even when nothing runs on AWS.
 

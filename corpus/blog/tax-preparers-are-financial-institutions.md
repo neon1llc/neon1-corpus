@@ -5,13 +5,13 @@ summary: "What the FTC Safeguards Rule asks of a small tax or accounting office,
 short:
   - "If you prepare taxes, even alone at a kitchen table, the FTC counts you as a financial institution that needs a written security plan."
   - "The plan comes down to one person in charge, multi-factor sign-in, encryption, and reporting large breaches within 30 days."
-  - "The IRS IP PIN tool goes offline November 16, so start now. [Jump to the checklist](#what-to-get-done-before-january)."
+  - "The IRS IP PIN tool is offline until mid-January. Finish other protections now. [See the checklist](#what-to-get-done-before-january)."
 type: post
 topic: questions
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-18
 created: 2026-11-12
-edition: "1.6"
+edition: "1.7"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -20,11 +20,11 @@ related: [product-you-have-20-seconds-to-comply, product-phish-out-of-water, gui
 
 # Tax preparers are financial institutions, as far as the FTC is concerned
 
-A couple, invented for this example, has had their taxes done at the same small office for years. In February they sign and e-file, as always. A day later it bounces. Someone already filed under their Social Security number, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate found identity theft victims waiting an average of more than 21 months for the IRS to resolve cases like this. That's nearly two years without money they were counting on.
+A couple, invented for this example, has had their taxes done at the same small office for years. In February they sign and e-file, as always. A day later it bounces. Someone already filed under their Social Security number, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate found identity theft victims waiting nearly two years for the IRS to resolve cases like this. That's nearly two years without money they were counting on.
 
 The thief didn't need to break into the IRS. Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account. People hand it over every year because they trust the person across the desk, and criminals go after that trust.
 
-The IRS [just reminded taxpayers](https://www.irs.gov/newsroom/irs-reminder-take-steps-now-to-protect-tax-information) that its online tool for getting an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), the six-digit number that stops anyone else filing under a person's Social Security number, goes offline on Monday, November 16, until mid-January. The 2027 filing season opens soon after, so the next ten weeks are the window to get an office's defenses in order.
+The IRS says its online tool for getting an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), a six-digit number that helps stop someone else filing under a person's Social Security number, is offline from November 16, 2026, until mid-January 2027. As of November 18, use the gap to get an office's other defenses in order.
 
 Those defenses aren't optional. The Federal Trade Commission [names tax preparation services](https://www.ecfr.gov/current/title-16/section-314.2) as a "financial institution" under its [Safeguards Rule](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), whether you work alone at a kitchen table or run a ten-person firm.
 
@@ -62,9 +62,9 @@ Each time you apply for or renew your PTIN, [Form W-12](https://www.irs.gov/pub/
 - **[Publication 5708](https://www.irs.gov/pub/irs-pdf/p5708.pdf)** is a sample WISP written for small tax and accounting practices. It's the best place to start.
 - **[Publication 4557](https://www.irs.gov/pub/irs-pdf/p4557.pdf)** is the IRS guide to safeguarding taxpayer data, with checklists for the office.
 
-## One thing to tell your clients this week
+## While the IRS IP PIN system is offline
 
-Clients who want an IP PIN for the coming season should request one through their [IRS online account](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) before Monday, when the tool goes offline. Clients who already have one needn't do anything, because the IRS issues a new number each year, visible in their account from mid-January. A short note from you this week could spare one of them that 21-month wait. Remind them the IRS never calls, emails, or texts asking for an IP PIN, and to share it only with you, at filing.
+The IRS's online IP PIN system is offline until mid-January 2027. Clients who already have a 2026 PIN should keep it with their tax records; the IRS issues a new number each calendar year. Anyone seeking a 2027 PIN can request one through their [IRS online account](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) when the system returns. Remind clients that the IRS never calls, emails, or texts asking for an IP PIN, and to share it with their preparer only when ready to file.
 
 ## What to get done before January
 

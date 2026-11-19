@@ -7,17 +7,17 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#process"
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-19
 created: 2025-08-08
-edition: "1.2"
+edition: "1.3"
 ---
 
 # How a project runs
 
-1. **Listen.** Show me how the work gets done today. One real example is enough.
-2. **Propose.** Options from quickest fix to fuller build, each with an estimate, the effort, and the result.
-3. **Decide.** You pick. Often it's a setting, a cleanup, or leaving it alone.
-4. **Build.** Small changes, each checked against the agreed measures and shown to you as it lands.
-5. **Hand over.** I check it does what we agreed, then show you and write it down, so you can run it without me. Ongoing care is optional.
+1. **Listen.** The goal, the systems and people involved, the constraints, and who will own the result. It starts with a free 15-minute call about your needs, and I read anything you've written in a free 1NEON account before we talk.
+2. **Propose.** A recommendation, or options when there's a real choice, each with scope, acceptance criteria, cost to build and run, and alternatives considered.
+3. **Decide.** You approve the scope and price. Sometimes the answer is a setting, an existing product, or leaving things as they are.
+4. **Build.** Reviewable changes, tested against the acceptance criteria, including failure and rollback. Scope changes need your approval.
+5. **Hand over.** Evidence that it meets the criteria, documentation, and a walkthrough for whoever runs it. Ongoing care is optional.
 
 [See how it works](https://neon1.tech/1NEON/live): a guided walkthrough of a fictional project in 1NEON.

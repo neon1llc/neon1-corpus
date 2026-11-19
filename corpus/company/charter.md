@@ -1,21 +1,21 @@
 ---
 id: company-charter
 title: Charter
-summary: What neon1 is for, who it serves first, the values it works by, and what it leaves to others.
+summary: What neon1 is for, who it works with, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "1.7"
+edition: "2.0"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
 
-neon1 is my one-person technology practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in the [How I work](../standards/operating-principles.md) documents.
+neon1 is my independent engineering and technology consulting practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in the [How I work](../standards/operating-principles.md) documents.
 
 ## Mission
 
@@ -39,18 +39,25 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 ## Values, as behavior
 
-- **Listen first.** I write down the real workflow before proposing anything.
+- **Understand first.** I learn the goal, the systems, and the constraints before proposing anything.
 - **Simplicity.** I pick the option with the smallest ongoing burden that still meets the need.
 - **Quality.** The result works, can be recovered when it breaks, and you can run it.
 - **Transparency.** Scope, price, evidence, and limits are clear before work starts.
 - **Your independence.** You own your accounts and billing. You get the docs, the exports, and a clean way out.
 - **Reuse before building.** Existing tools and open-source software come first. I build only the part nothing else covers.
 
-## Who I serve first
+## Who I work with
 
-1. **Owner-operated service businesses and small practices** losing time between email, spreadsheets, point of sale, documents, and apps that don't talk to each other.
-2. **Technical small businesses** that need clarity on their cloud accounts, repeatable deployments, and recovery.
-3. **Individuals, homes, and connected devices**, when the travel, safety, and upkeep make sense.
+Businesses, technical teams, and individuals with a defined goal, described by their situation rather than their size. [Customers](../standards/customers.md) has the detail.
+
+| Service | Typical buyer |
+|---|---|
+| **Workflow automation** | A business whose systems work alone but not together, or whose process has outgrown them |
+| **Cloud and AI engineering** | A technical team or software business that wants a bounded, independent result in its own environment |
+| **Networks and connected systems** | A business or household that needs networks and devices designed, segmented, and monitored |
+| **Security readiness** | An organization facing a review, a customer requirement, or a risk it wants closed |
+
+Larger organizations get one focused piece of work, inside their own security, procurement, and change processes.
 
 ## What I refer to others
 
@@ -68,7 +75,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public and growing toward v1.0. I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
+neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public, each with its own license and release status. I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 

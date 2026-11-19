@@ -4,6 +4,40 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.50.0 - 2026-11-19
+
+### Added
+- Networks and connected systems, and Security readiness: service pages for the two services that had none, with buying situations, deliverables, alternatives, and limits.
+
+### Changed
+- Free accounts (edition 1.4), First call, Contact, How a project runs, Services, Working with neon1, Why neon1, Neo, and the 1NEON guide (pages 1.10, people and account 1.11): a free account's project gets a free assessment, my written read of that one project, reviewed before the free 15-minute call. The call is about your needs, and options come afterward in writing.
+- Capability statement: names Pradeep as neon1's lead engineer.
+- Services (edition 2.0): four services of equal standing (workflow automation, cloud and AI engineering, networks and connected systems, security readiness), engagement types from assessment to ongoing care, who keeps what, and past work labeled by kind.
+- Customers (edition 2.0): buyers described by their situation, not their size or technical skill, with separate sections for businesses, technical teams, and individuals.
+- Mission and promise, Charter, About neon1, and Capability statement (edition 2.0): neon1 described as an independent engineering and technology consulting practice; About gives the founder's prior employment separately from neon1's work; experience stated as more than eight years.
+- How a project runs (edition 1.3): a proposal makes one recommendation, or sets out options when there's a real choice.
+- Case studies get descriptive titles: Permission-aware document assistant (1.8), Patient intake portal (1.5), Operations integration and monitoring (1.1), Two-site server migration (1.5), Security awareness sessions (1.9), and Home cameras and family accounts (1.5). The intake portal links each intake to the EHR record rather than filing documents into it, and the operations case names its client as the first business client.
+- Case-study kinds add the founder's previous employment and reconstructed demonstrations; founder experience is now labeled personal or volunteer work, and independent demonstrations independent projects; the sample proposal is labeled a fictional example.
+- Patient intake portal (edition 1.6): time to a complete intake is timed from record timestamps, from the patient's most recent contact to the scheduled appointment, and staff time before launch was worked out by hand from the old records as well as surveyed.
+- Permission-aware document assistant (edition 1.9): lookup times before launch were timed automatically as well as surveyed. Home cameras and family accounts (edition 1.6): dated February 2025, before neon1 was formed.
+- Proposal with options, filled in (edition 3.0): the fictional bakery gives way to Harborline Outfitters, the retailer from the 1NEON walkthrough, with its three options, the failed dry run, and the revised terms.
+- 1NEON guide: projects (edition 2.6): adds the Networks and connected systems template (NET).
+- How neon1.tech works (edition 1.10) and 1NEON guide: overview (edition 1.6): the sample project and walkthrough follow three fictional clients (Harborline Outfitters, Quillwork Software, and Fenwick & Marsh Architects), and the free-account walkthrough follows Noor Haddad at Calder Building Supply; the walkthrough link list matches the portal.
+- How I price my work (edition 1.5): examples in each range cover all four services, and the bakery worked example gives way to four fictional examples, one per service, including one with a real choice. The ranges are unchanged.
+- Capability statement: lists the AWS Certified Cloud Practitioner certification and drops the training industry code. The accounting case gives the owner's comments as a summary rather than a quotation. Networks work names cabling and physical installation as done by a qualified installer.
+- Technology decisions (edition 1.5) and Partners (edition 1.4): architecture guidance scaled to the client rather than to small businesses only.
+- Neo (edition 3.0): the four services, the full set of case-study kinds, and how to answer visitors who are comparing alternatives or already have engineers.
+- Working with neon1 (edition 1.15): project length follows the proposal; security sessions are described as informational.
+- Where else to get help (edition 2.0): adds in-house work with AI tools, integration platforms, compliance platforms, and hiring, and restates where neon1 fits.
+- Workflow automation and Cloud and AI engineering (edition 2.0): the use-case guides become service pages. Security awareness sessions (edition 2.0) are described as informational, not certified training.
+- Tax preparers are financial institutions (edition 1.7): replace the passed November 16 IP PIN deadline with current outage and reopening guidance, checked against the IRS.
+- 1NEON help (edition 2.7): syncs the free-account walkthrough and current **Start for free** sign-in language, removing the duplicate no-invite question.
+- Design and accessibility (edition 2.0): distinct navigation and link behavior, coordinated disclosure motion, history restoration, and the Matrix and Sentinel looks; correct the web font names.
+- Why I started neon1 (edition 1.3): the experience figure (more than eight years) and the four services match the rest of the site, and a proposal makes one recommendation or sets out options when there's a real choice, with a dated note on the post.
+- Contact (edition 1.9), Getting ready for a first call (edition 1.4), and Working with neon1: a proposal makes one recommendation, or sets out options when there's a real choice.
+- Writing (edition 2.0): shorter guidance on interface text, with consequences kept at the point of decision; use the terms the reader's field uses, write as an engineer to a client or peer, and describe people by their situation rather than their size or assumed skill.
+- Where else to get help (edition 1.4): remove marketplace fee figures and an unsourced managed-IT price range that can change.
+
 ## v0.49.0 - 2026-11-18
 
 ### Changed

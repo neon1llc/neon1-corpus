@@ -180,12 +180,15 @@
     },
     "kind": {
       "enum": [
-        "founder",
         "neon1",
         "partner",
-        "demonstration"
+        "employment",
+        "founder",
+        "demonstration",
+        "reconstructed",
+        "fictional"
       ],
-      "description": "Case study, or an example shown beside the case studies: which of four kinds of work it is, labeled wherever it's shown so one can't be mistaken for another. founder is my own work outside a neon1 contract (career, family, or volunteering), neon1 is work contracted through neon1 LLC, partner is work delivered with or through a partner, and demonstration is something neon1 built outside any client engagement."
+      "description": "Case study, or an example shown beside the case studies: which kind of work it is, labeled wherever it is shown so one is never mistaken for another. neon1 is work contracted through neon1 LLC, partner is work neon1 delivered as a subcontractor or with a partner, employment is the founder's work for a previous employer, founder is personal, family, or volunteer work outside a neon1 contract, demonstration is an independent project neon1 built outside any client engagement, reconstructed is a demonstration rebuilt to show how past work was done, without client data, and fictional is a made-up example such as a sample proposal, which also sets `fictional: true`."
     },
     "when": {
       "type": "string",

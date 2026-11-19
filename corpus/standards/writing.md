@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-01
-edition: "1.9"
+edition: "2.0"
 order: 1
 consumers: [ai]
 pdf: true
@@ -19,7 +19,7 @@ related: [standards-development, standards-documentation, standards-code-style]
 ## The core rules
 
 1. **Lead with what the reader needs.** Answer, decision, or action first. Background after, if it helps.
-2. **Use plain words.** Everyday verbs, short sentences, natural contractions. Keep an exact technical term when it carries meaning, and explain it once.
+2. **Use the reader's words.** Everyday verbs, short sentences, natural contractions. Use the term the reader's field uses, such as deployment, migration, integration, or scope, and explain it only when the reader may not know it. Plain and professional aren't opposites.
 3. **Be concrete.** Name who does what, when, and what happens next.
 4. **Say only what's true and supported.** Keep planned, built, tested, released, and shown to help distinct. Don't invent experience, numbers, quotes, or results. Say when something is unknown.
 5. **Use the fewest words that keep the full meaning.**
@@ -27,19 +27,20 @@ related: [standards-development, standards-documentation, standards-code-style]
 
 ## Voice
 
-Direct, candid, and specific, the way one business owner talks to another.
+Direct, candid, and specific, the way an engineer talks to a client or a peer.
 
 - **Say it and stop.** State what's true, what it costs, and what happens next.
 - **Don't solicit.** No pitch, no urgency, no telling readers what they deserve.
 - **Argue from evidence.** A number, method, or real example beats an adjective. When the evidence is thin, say so.
 - **Leave the decision with the reader.** Give options and tradeoffs, and recommend plainly, with why.
 - **Be candid about limits.** Say what neon1 doesn't do, when someone else is a better fit, and what might not work.
+- **Respect the reader.** Describe people by their situation, not their size, age, or assumed skill. Don't explain what a competent reader already knows, and don't announce honesty or humility; show them through specifics.
 
 The test: would a capable professional say this across a table to a peer? If it sounds like an ad, rewrite it.
 
 ## Fewer words
 
-Concise, scannable, objective text is 124% more usable than promotional writing, and users read about a fifth of the words on a page (Nielsen Norman Group). So I cut by default.
+Cut by default. People scan a page to find the answer or the next action.
 
 1. **Would the reader miss it?** Ask of every sentence. If not, cut it, even when it's true. Detail stays only if the reader needs it to act, decide, or stay safe.
 2. **Cut, then cut again.** Try removing half the words, then half of what's left (Steve Krug). Stop when meaning would go.
@@ -47,7 +48,7 @@ Concise, scannable, objective text is 124% more usable than promotional writing,
 4. **Verbs, not nouns.** "Decide," not "make a decision." Active voice.
 5. **Drop padding.** "In order to" is "to." "Please note that," "As mentioned above," and "In this document, I will" go entirely.
 6. **Say it once.** No repeated summary, closing recap, or restated heading. The one-sentence summary at the top is the only summary.
-7. **Interface text is shortest.** Buttons are a verb and an object. Labels are one to three words. Errors say what happened and what to do. No "please," no "successfully."
+7. **Interface text is shortest.** Buttons name the action. Labels are one to three words where possible. Errors say what happened and what to do. No "please," no "successfully." Don't explain what a visible control already says, or repeat a whole policy beside it. Keep a consequence, condition, or fee visible before the decision it affects.
 
 Never cut a cause, a limit, a cost, a consequence, or a legal obligation.
 
@@ -137,7 +138,7 @@ Writing that already works stays as it is.
 - [How users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/) and [the F-shaped pattern](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), from Nielsen Norman Group: the research behind putting key words first.
 - [Mailchimp Content Style Guide](https://styleguide.mailchimp.com/), from Mailchimp: concise, clear interface and help text.
 - [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/welcome/): "bigger ideas, fewer words" and scannable text.
-- [Concise, scannable, and objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) and [How little do users read?](https://www.nngroup.com/articles/how-little-do-users-read/), from Nielsen Norman Group: the usability numbers behind cutting.
+- [Concise, scannable, and objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) and [How little do users read?](https://www.nngroup.com/articles/how-little-do-users-read/), from Nielsen Norman Group: how people scan and read web pages.
 - Steve Krug, *Don't Make Me Think*: "Get rid of half the words on each page, then get rid of half of what's left."
 - [Google developer documentation style guide](https://developers.google.com/style): conventions for lists, tables, procedures, and code in technical writing.
 - [The Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html): the serial comma and other points of mechanics.

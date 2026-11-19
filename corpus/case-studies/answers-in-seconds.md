@@ -1,6 +1,6 @@
 ---
 id: case-answers-in-seconds
-title: "Answers in seconds, with sources"
+title: "Permission-aware document assistant"
 summary: "Staff spent minutes searching Microsoft 365, or asked a senior colleague."
 type: case-study
 status: adopted
@@ -9,9 +9,9 @@ area: "cloud & AI"
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-06
-edition: "1.7"
+edition: "1.9"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -25,7 +25,7 @@ short_after: "Next, an MCP server so agents search with the same permissions."
 origin: "neon1-site src/app/public/index.html#case-accounting"
 ---
 
-# Answers in seconds, with sources
+# Permission-aware document assistant
 
 ## The problem
 
@@ -52,15 +52,11 @@ This was my first project with an AWS partner, [Xenoss](https://xenoss.io), whic
 | Answers fully supported by their source  | 78%          | 92%    |
 | Interruptions of senior staff per week   | ~18          | ~7     |
 
-Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Times after launch come from the start and end the system records for each lookup, as metrics only, with no question or answer text. Where the old way left no record, such as lookups before launch or interruptions of senior staff, the figure is the staff's own estimate from a short survey.
+Measured on 80 representative questions, including ones it should refuse, judged by two reviewers. A fast answer from the wrong document counted as a failure. Lookup times before launch were timed automatically and checked against the staff's own estimates in a short survey. After launch, the system records the start and end of each lookup, as metrics only, with no question or answer text. Interruptions of senior staff left no record, so that figure comes from the survey.
 
 These results describe that test set, not a guarantee, so each answer carries citations to check.
 
-In the client's words:
-
-> "For a while now we've been working on getting the whole firm onto one cloud: our files, our client documents, and the software we run on. We also wanted to start using AI, but carefully, and on our terms. The knowledge base moved us forward on both."
->
-> Boris M., Boris M Tax
+Boris M., who owns Boris M Tax, said the firm had been moving its files, client documents, and software onto one cloud, and wanted to start using AI carefully and on its own terms. In his view, the knowledge base moved the firm forward on both. This is my summary of our conversation, with his agreement to publish it.
 
 ## After handover
 

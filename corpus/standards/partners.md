@@ -4,11 +4,11 @@ title: Partners
 summary: "How neon1 works with other firms, vendors, and referrals, and how responsibilities and fees are disclosed."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 17
 origin: "neon1's internal handbook, operating principles (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
@@ -45,4 +45,4 @@ When someone else is better placed, I refer you to them, with no fee or obligati
 
 ## Referrals in
 
-Other firms can send me work that fits, such as a small business workflow or a security awareness session. The same rules apply both ways.
+Other firms can send me work that fits, such as an integration, a migration, a network design, or security readiness work. The same rules apply both ways.

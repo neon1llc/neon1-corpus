@@ -1,47 +1,62 @@
 ---
 id: guides-use-case-cloud
-title: "Use case: a cloud account you can trust"
-summary: "How a typical cloud engineering engagement goes for a small technical team: inventory, infrastructure as code, deploys, and tested recovery."
+title: "Cloud and AI engineering"
+summary: "Cloud architecture, infrastructure as code, delivery, migrations, and AI applications: when an independent engineer is worth bringing in, what I deliver, and how ownership stays with your team."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-19
 created: 2026-11-09
-edition: "1.2"
+edition: "2.0"
 consumers: [knowledge, ai]
 pdf: true
-audience: "Technical small businesses and startups"
-related: [services, standards-technology-decisions, standards-reliability-and-recovery, standards-development]
+audience: "Engineering leads, technical founders, and businesses running software in the cloud"
+related: [services, standards-technology-decisions, standards-reliability-and-recovery, standards-development, standards-ai-quality]
 ---
 
-> [!note] A typical pattern, not a client story
-> For real projects, see the [case studies](https://neon1.tech/knowledge/#case-studies).
+# Cloud and AI engineering
 
-# Use case: a cloud account you can trust
+Design, build, and improve cloud infrastructure, software delivery, and AI applications, with attention to reliability, security, cost, and fit with the environment you already run.
 
-## The situation
+## When it's worth doing
 
-A small team's cloud account grew by hand. Nobody's sure what every resource is for, who can change what, or what the bill pays for. Deploys mostly work, from one laptop. Backups probably exist.
+- A launch, migration, or major change needs an independent review or a rollback plan.
+- An architecture or cost decision is coming, such as a renewal, a new region, or a platform choice.
+- Infrastructure built by hand should move to infrastructure as code, or existing code needs cleaning up.
+- A customer requirement, such as a security questionnaire or data residency, lands outside the team's main work.
+- A proof of concept or isolated modernization would distract the team from product commitments.
+- An AI feature has to answer from your own data, respect who may see what, cite its sources, and be evaluated before people rely on it.
 
-## How it usually goes
+## What I do
 
-1. **Inventory.** Every account, resource, role, and recurring cost listed with an owner, plus the unknowns.
-2. **Access first.** Named accounts, multi-factor sign-in, least privilege, and no long-lived keys on laptops.
-3. **Infrastructure as code.** Important resources are imported into Terraform and reviewed like code, so the account can be rebuilt and changes leave a record.
-4. **Deploys from CI.** Short-lived credentials, checks before every deploy, a version you can verify live, and a known rollback.
-5. **Recovery, proven.** The data that matters gets an independent backup, and a restore is tested and timed.
-6. **Cost.** A budget, alerts, and a monthly look at cost per useful result.
+- **Architecture and foundations.** Account structure, identity, networking, and guardrails, reviewed against the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+- **Infrastructure as code.** Terraform for new resources, and imports of existing ones, so changes are reviewed and environments can be rebuilt.
+- **Delivery.** CI/CD with short-lived credentials, checks before deploy, a verifiable live version, and a tested rollback.
+- **Migrations.** Sizing from measured use, seeded data, a cutover with a fallback, and reconciliation afterward.
+- **Reliability and cost.** Observability, backup and restore tests, budgets, and a review of what the bill pays for.
+- **AI applications.** Retrieval over approved sources, permission checks before retrieval, citations, and an evaluation set that includes questions the system should refuse. I compare existing products and plain software first.
 
-## What usually changes
+## What you get
 
-- The account can be explained on one page, and rebuilt from the repository.
-- Deploys stop depending on one person's machine.
-- There's a measured recovery time instead of a guess.
-- The bill has fewer surprises, and often fewer forgotten resources.
+Depending on scope: written findings and options, reviewed changes in your repositories, test and evaluation results, rollback and recovery procedures, and a handover to the engineers who'll run it.
 
-## What usually doesn't
+## How it fits your team
 
-The architecture usually stays recognizable. The goal is making what you have clear, safe, and repeatable, not a rewrite.
+I work in your repositories, follow your conventions and change process, and agree up front how the team will review and accept the work. The team keeps ownership and on-call.
 
-## Related
+## When something else fits better
 
-[Technology decisions](../standards/technology-decisions.md), [reliability and recovery](../standards/reliability-and-recovery.md), [development](../standards/development.md), and the [tool decision form](../forms/tool-decision.md).
+- The team needs sustained capacity, not a bounded result. A hire or a staffing partner fits better.
+- You need 24/7 operations, or a vendor with partner status or compliance attestations of its own.
+- A managed platform or an existing AI product already meets the need at lower cost.
+
+## Limits
+
+No round-the-clock operations or migrations that need a team. An AI demo isn't a production system, so AI work includes evaluation, access control, and a named human owner, or it doesn't ship.
+
+## Related work
+
+- [Permission-aware document assistant](../case-studies/answers-in-seconds.md), a neon1 subcontracted engagement.
+- [Two-site server migration](../case-studies/two-offices-off-local-servers.md), a neon1 engagement.
+- [AWS CLIP](../products/aws-clip.md) and [DeployOps](../products/deploy-ops.md), neon1's own open-source tools.
+
+[Book a call](../engagement/contact.md) with the system, the decision or change ahead, and how your team will judge the result.

@@ -4,11 +4,11 @@ title: Design and accessibility
 summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-18
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "2.0"
 order: 11
 origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -18,7 +18,15 @@ related: [standards-development, policy-accessibility]
 
 ## Start from the task
 
-Every screen and document first answers what this is, what I can do here, and what happens next. Navigation is ordinary and visible. Nobody needs a metaphor, an animation, or a film reference to reach the useful part.
+Every screen and document says what it is, what you can do here, and what happens next. Put the main task first. Keep related controls and facts together, with the same names, order, and layout wherever they recur. No metaphor or animation stands between a person and the task. Follow the [writing standard](writing.md) for the words.
+
+## Navigation and controls
+
+- Links go somewhere; buttons do something. A link that opens another tab has a different mark from one that stays in this tab. Keep that distinction on a phone, with a keyboard, and in either light or dark mode.
+- Navigation has its own presentation: a compact desktop bar, a menu that fits or scrolls on a phone, and named destinations in an application. Keep the current place clear and the controls reachable.
+- Back and Forward return to the place you left, even if you visited the same page more than once. A new link to a section goes to that section.
+- Choices in a field open toward available space; expanding sections open in place. The indicator and content move together, reverse together, and settle together. Native controls remain usable when the browser can't draw the same motion.
+- Keep focus visible and return it to the control that opened a dismissed menu when appropriate. Don't hide errors or move a person's place while they read or type.
 
 ## Accessible by default
 
@@ -48,8 +56,8 @@ Documents use one column, real headings, and tables only for real comparisons. P
 
 ## The neon1 look, used with restraint
 
-- Dark Matrix green over black for personality, light paper and brand green #035704 for reading.
-- Inter for text, JetBrains Mono for labels and code, Aptos in Office documents.
+- Matrix and Sentinel are separate looks, each with a light and dark mode. Changing one choice keeps the other. Use shared brand colors, spacing, type, controls, and motion rather than a new pattern on each page.
+- Figtree for web text, JetBrains Mono for labels and code, Aptos in Office documents. Each face has its own available weights.
 - The rain animation is decoration. It pauses on request, stops when the tab is hidden, and becomes a still image for reduced motion.
 - Easter eggs, like the white rabbit, are optional and never stand between you and the content.
 - The logo isn't redrawn, stretched, or recolored. neon1 is always lowercase. The legal name, neon1 LLC, is kept to the copyright line and legal text.
