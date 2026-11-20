@@ -4,6 +4,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.51.1 - 2026-11-20
+
 ### Changed
 - "No account needed" is gone from the 1NEON pages and the questions. The first call is called the first call or "book a call" in place of "the free 30-minute call", and the assessment, 1NEON account, and call links say "free" only where it defines something: the free account, its assessment, and the first-call page.
 
