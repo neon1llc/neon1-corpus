@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "1.13"
+edition: "1.14"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -99,7 +99,7 @@ Files asked for show under Needs with **Upload**, and measures take dated readin
 
 ## Files
 
-`/1NEON/o/{org}/documents`. Every file in the organization. Anyone, viewers too, can **Upload** up to 100 MB, to a project or none. Files move through **Receiving**, **Checking** (virus and size), **Ready**, **Rejected** (a threat found), or **Failed** (missing, wrong size, or the scan didn't finish). PDFs, pictures, and text open in a tab; others download. Uploaders and admins can delete. No passwords, keys, or regulated data without an agreement that covers it.
+`/1NEON/o/{org}/documents`. Every file in the organization. Anyone, viewers too, can **Upload** up to 100 MB, to a project or none. Files move through **Receiving**, **Checking** (virus and size), **Ready**, **Rejected** (a threat found), or **Failed** (missing, wrong size, or the scan didn't finish). PDFs, pictures, and text open in a tab; others download. Uploaders and admins can delete.
 
 ## Insights
 

@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-20
 created: 2026-11-07
-edition: "2.8"
+edition: "2.9"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -155,7 +155,7 @@ Yes. Choose **Move** on a file, and pick Organization level, a project, or a lay
 Every file is virus-checked before anyone can download it and stays private to your organization.
 
 ### What can I upload?
-Any file up to 100 MB. Don't upload passwords, keys, or other secrets, malware, or regulated data such as health or payment card details unless we have a written agreement that covers it.
+Any file up to 100 MB. What not to upload is in the [terms of use](../policies/terms.md).
 
 ## People and access
 
