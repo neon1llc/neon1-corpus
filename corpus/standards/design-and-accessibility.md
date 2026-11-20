@@ -4,11 +4,11 @@ title: Design and accessibility
 summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
-updated: 2026-11-18
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "2.0"
+edition: "2.1"
 order: 11
 origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -22,10 +22,10 @@ Every screen and document says what it is, what you can do here, and what happen
 
 ## Navigation and controls
 
-- Links go somewhere; buttons do something. A link that opens another tab has a different mark from one that stays in this tab. Keep that distinction on a phone, with a keyboard, and in either light or dark mode.
+- Links go somewhere, and buttons do something. A link that opens another tab has a different mark from one that stays in this tab. Keep that distinction on a phone, with a keyboard, and in either light or dark mode.
 - Navigation has its own presentation: a compact desktop bar, a menu that fits or scrolls on a phone, and named destinations in an application. Keep the current place clear and the controls reachable.
 - Back and Forward return to the place you left, even if you visited the same page more than once. A new link to a section goes to that section.
-- Choices in a field open toward available space; expanding sections open in place. The indicator and content move together, reverse together, and settle together. Native controls remain usable when the browser can't draw the same motion.
+- Choices in a field open toward available space, and expanding sections open in place. The indicator and content move together, reverse together, and settle together. Native controls remain usable when the browser can't draw the same motion.
 - Keep focus visible and return it to the control that opened a dismissed menu when appropriate. Don't hide errors or move a person's place while they read or type.
 
 ## Accessible by default
@@ -40,7 +40,7 @@ I aim for the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.o
 - Motion that can be paused, and a calm version for people who set their device to reduce motion.
 - Pages that work when zoomed to 200% and on a 320-pixel-wide phone without sideways scrolling.
 
-An automated score is a starting point; I also check with a keyboard, a screen reader, and a phone.
+An automated score is a starting point. I also check with a keyboard, a screen reader, and a phone.
 
 ## Fast and light
 

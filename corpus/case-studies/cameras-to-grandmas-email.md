@@ -9,9 +9,9 @@ area: home tech
 kind: founder
 role: "For my own family"
 when: "2025"
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.6"
+edition: "1.7"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
@@ -43,4 +43,4 @@ The test: could everyone use it without calling me? Recordings and alerts work, 
 
 ## After handover
 
-Advice and troubleshooting when something breaks. Household work ranges from one device to a full home network, and both are welcome.
+Advice and troubleshooting when something breaks. Household work ranges from one device to a full home network.

@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-19
-edition: "1.1"
+edition: "1.2"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Organizations facing a security review, a customer requirement, or a risk they want closed"
@@ -14,8 +14,6 @@ related: [services, standards-security-and-data, standards-reliability-and-recov
 ---
 
 # Security readiness
-
-Assess technical risks, strengthen security controls, and prepare systems for security reviews and audits, through practical recommendations and hands-on implementation.
 
 ## When it's worth doing
 
@@ -52,7 +50,7 @@ Work with health information starts only after a [business associate agreement](
 
 ## Awareness sessions
 
-I also run informational [security awareness sessions](use-case-security-awareness.md) for groups. They're practical, not certified training.
+I also run [security awareness sessions](use-case-security-awareness.md) for groups.
 
 ## Related work
 

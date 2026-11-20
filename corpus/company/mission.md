@@ -4,12 +4,12 @@ title: Mission and promise
 summary: "What neon1 is for and the five things every client can count on."
 type: page
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-11
 consumers: [site, chat, knowledge, ai]
 pdf: true
 featured: true
-edition: "2.0"
+edition: "2.1"
 audience: "Anyone deciding whether to work with neon1, and anyone who wants the short version of what it stands for"
 origin: "Pradeep's mission statement, Our Mission, and Promise to You (five drafts, 2025), reconciled on November 11, 2026 with the charter, neon1.tech, the GitHub profile, and the LinkedIn page"
 related: [company-charter, company-about, company-names, company-process, company-capabilities, services]
@@ -23,9 +23,7 @@ Design, build, and improve technology that does a defined job well, and leave th
 
 ## The promise
 
-I'm Pradeep. neon1 is my independent engineering and technology consulting practice, for businesses, technical teams, and individuals.
-
-You can count on five things:
+I'm Pradeep. neon1 is my independent engineering and technology consulting practice, for businesses, technical teams, and individuals. You can count on five things:
 
 - **A clear recommendation.** What will help, what it costs to build and to run, and what it won't do, before you decide. Sometimes that's a product you already have, or leaving things as they are.
 - **Scope you approve.** Deliverables, acceptance criteria, and price agreed before work starts, and changed only with your approval.

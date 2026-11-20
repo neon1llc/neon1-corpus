@@ -4,9 +4,9 @@ title: How I price my work
 summary: "How a neon1 project is priced: a fixed price or a capped estimate, rough ranges, what the price includes, when it can change, and how paying works."
 type: page
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-13
-edition: "1.5"
+edition: "1.6"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true
@@ -18,18 +18,18 @@ short:
 
 # How I price my work
 
-Every setup is different, so these are rough ranges. The real figure comes in a proposal after we talk, and saying no costs nothing.
+Every setup is different, so these are rough ranges. The real figure comes in a proposal after we talk.
 
 ## Two ways to price a project
 
-Each option in a proposal says which of two ways it's priced.
+Each option in a proposal says which.
 
-- **A fixed price** is for well-understood work. It's the whole price for the work described and changes only if you approve a change to the work.
-- **An estimate** is for work with an unknown in it. It's a range of hours at the rate the proposal states. You pay for the hours I work, each listed in [1NEON](../products/1neon.md). The total never passes the high end unless you approve a change first.
+- **A fixed price** is for well-understood work. It's the whole price for the work described, and changes only if you approve a change to the work.
+- **An estimate** is for work with an unknown in it: a range of hours at the proposal's rate. You pay for the hours I work, each listed in [1NEON](../products/1neon.md). The total never passes the high end without your approval.
 
 ## What projects usually cost
 
-As of November 2026. A rough guide, not a quote.
+As of November 2026.
 
 | Kind of work | Often around | For example |
 |---|---|---|
@@ -40,7 +40,7 @@ As of November 2026. A rough guide, not a quote.
 
 ## Examples across the four services
 
-Fictional, with illustrative figures. Three are single recommendations, and one offers a real choice.
+Fictional, with illustrative figures. One offers a real choice.
 
 | Service | Situation | Recommended work | Priced as |
 |---|---|---|---|
@@ -54,7 +54,7 @@ Fictional, with illustrative figures. Three are single recommendations, and one 
 A price covers the whole result:
 
 - Working out what's needed, and testing it with your real cases before it goes live
-- A plain runbook, a walkthrough for your staff, and every account left in your name
+- A runbook, a walkthrough for your staff, and every account left in your name
 - A free fix if something I delivered doesn't work as agreed and you tell me within 30 days of handover
 
 ## What's paid separately
@@ -66,7 +66,7 @@ A price covers the whole result:
 
 Only with your approval. If the work turns out bigger, I tell you before it costs more, and a revised proposal shows the new price. If an estimate's work takes fewer hours, you pay for fewer, and if the deposit came to more than the finished work, I refund the difference.
 
-You can change your mind after approving an option until you accept the handover. Pick another option, say why, and sign again. What you've paid counts toward it, and nothing is billed twice. The [1NEON help](../faq/1neon-help.md) walks through it.
+Until you accept the handover, you can pick another option, say why, and sign again. What you've paid counts toward it, and nothing is billed twice. See the [1NEON help](../faq/1neon-help.md).
 
 ## Paying
 
@@ -74,11 +74,7 @@ A project usually starts with a deposit of half a fixed price, or half an estima
 
 ## Room to adjust
 
-These ranges aren't a floor. I sometimes price below them for a neighborhood business, a nonprofit, or work that helps people who'd otherwise go without, and the proposal says so. Saying no to a proposal costs nothing.
-
-## Why ranges here and hours in the proposal
-
-A website can't see your setup, so one number here would be wrong for most readers. Every proposal shows the hours behind each price.
+These ranges aren't a floor. I sometimes price below them for a neighborhood business, a nonprofit, or work that helps people who'd otherwise go without, and the proposal says so. Every proposal shows the hours behind each price, and saying no costs nothing.
 
 ## How this compares
 

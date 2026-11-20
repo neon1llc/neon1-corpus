@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -46,7 +46,7 @@ A model used as judge is checked against a small person-graded set.
 
 Access is enforced by the application and search layer, never by a prompt. Retrieved documents, emails, web pages, and tool output are untrusted input, since [prompt injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) is a real risk even with retrieval.
 
-Tools start read-only. Sending, spending, changing permissions, or deleting needs a person to review the actual recipient, content, or change first; an approve button protects little if you can't see what it approves. Run time, retries, output size, and spend all have limits.
+Tools start read-only. Sending, spending, changing permissions, or deleting needs a person to review the actual recipient, content, or change first, because an approve button protects little if you can't see what it approves. Run time, retries, output size, and spend all have limits.
 
 ## Releasing in stages
 

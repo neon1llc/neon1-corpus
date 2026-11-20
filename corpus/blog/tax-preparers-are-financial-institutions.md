@@ -11,7 +11,7 @@ topic: questions
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.9"
+edition: "1.10"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -24,7 +24,7 @@ A couple, invented for this example, has had their taxes done at the same small 
 
 The thief didn't need to break into the IRS. Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account. People hand it over every year because they trust the person across the desk, and criminals go after that trust.
 
-The IRS says its online tool for getting an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), a six-digit number that helps stop someone else filing under a person's Social Security number, is offline from November 16, 2026, until mid-January 2027. As of November 18, use the gap to get an office's other defenses in order.
+The IRS's online tool for an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), a six-digit number that helps stop someone else filing under a person's Social Security number, is offline until mid-January 2027. Use the gap to get your office's other defenses in order.
 
 Those defenses aren't optional. The Federal Trade Commission [names tax preparation services](https://www.ecfr.gov/current/title-16/section-314.2) as a "financial institution" under its [Safeguards Rule](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), whether you work alone at a kitchen table or run a ten-person firm.
 
@@ -36,7 +36,7 @@ The FTC [rewrote the rule in 2021](https://www.federalregister.gov/documents/202
 
 ## What the rule asks for
 
-The rule asks for a [written information security program](https://www.ecfr.gov/current/title-16/section-314.4) that fits your size and what you hold, called a WISP (written information security plan) in the tax world. For a small office, it comes down to:
+The rule asks for a [written information security program](https://www.ecfr.gov/current/title-16/section-314.4) that fits your size and what you hold, called a WISP (written information security plan) in the tax world. For a small office:
 
 - **One person in charge.** The rule calls this person the Qualified Individual: you, someone on staff, or an outside provider. With a provider, you still own the result and name someone senior to oversee them.
 - **Multi-factor authentication** on every system holding client information: email, tax software, the client portal, cloud storage, and remote access.
@@ -53,22 +53,22 @@ If you keep information on [fewer than 5,000 consumers](https://www.ecfr.gov/cur
 
 Since May 13, 2024, if unencrypted information on 500 or more people is taken, you must tell the FTC through its online form within 30 days of finding out. Encrypted data counts as unencrypted if the key was taken too. The FTC can publish these reports. New York's own [breach notification law](https://ag.ny.gov/resources/organizations/data-breach-reporting) applies on top of that, with notices to the people affected and to the state.
 
-Encryption matters here. A stolen laptop with an encrypted disk is a bad day and a police report. Without encryption, it can mean a federal filing and letters to every client on it.
+A stolen laptop with an encrypted disk means a police report. Without encryption, it can mean a federal filing and letters to every client on it.
 
 ## The IRS asks too
 
-Each time you apply for or renew your PTIN, [Form W-12](https://www.irs.gov/pub/irs-pdf/fw12.pdf) asks you to confirm that you know paid preparers are required by law to create and maintain a written information security plan. The form points to two free IRS publications:
+Each time you apply for or renew your PTIN, [Form W-12](https://www.irs.gov/pub/irs-pdf/fw12.pdf) asks you to confirm that you know paid preparers are required by law to create and maintain a written information security plan. It points to two IRS publications:
 
 - **[Publication 5708](https://www.irs.gov/pub/irs-pdf/p5708.pdf)** is a sample WISP written for small tax and accounting practices. It's the best place to start.
 - **[Publication 4557](https://www.irs.gov/pub/irs-pdf/p4557.pdf)** is the IRS guide to safeguarding taxpayer data, with checklists for the office.
 
 ## While the IRS IP PIN system is offline
 
-The IRS's online IP PIN system is offline until mid-January 2027. Clients who already have a 2026 PIN should keep it with their tax records; the IRS issues a new number each calendar year. Anyone seeking a 2027 PIN can request one through their [IRS online account](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) when the system returns. Remind clients that the IRS never calls, emails, or texts asking for an IP PIN, and to share it with their preparer only when ready to file.
+The system is offline from November 16, 2026, until mid-January 2027. Clients who already have a 2026 PIN should keep it with their tax records, since the IRS issues a new number each calendar year. Anyone seeking a 2027 PIN can request one through their [IRS online account](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) when the system returns. Remind clients that the IRS never calls, emails, or texts asking for an IP PIN, and that they share it with their preparer only when ready to file.
 
 ## What to get done before January
 
-None of this takes a large budget, just a few evenings. If I were in your office, I'd go in this order:
+It takes a few evenings, not a large budget. In your office, I'd go in this order:
 
 - [ ] Decide who your Qualified Individual is, and write the name down.
 - [ ] Download Publication 5708 and fill it in with how your office actually works today, not how you wish it worked.
@@ -81,13 +81,13 @@ None of this takes a large budget, just a few evenings. If I were in your office
 - [ ] Do a test restore from your backup, so you know you can get files back.
 - [ ] Write down who to call, and in what order, if a laptop goes missing or an account gets taken over.
 
-Keep the plan where you can find it, and revisit it when something changes, such as a new hire, new software, or a second location.
+Revisit the plan when something changes, such as a new hire, new software, or a second location.
 
 ## Going further
 
-For a longer walkthrough of the rule, with a staff checklist, a paperwork list, and a 20-day learning plan, see [Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md). For training, the [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are free on GitHub, and you can use them without ever talking to me.
+[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) is a longer walkthrough with a staff checklist, a paperwork list, and a 20-day learning plan. The [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are on GitHub, and you can use them without talking to me.
 
-If you'd like help, I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
 
 ## Sources
 

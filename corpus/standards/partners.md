@@ -4,11 +4,11 @@ title: Partners
 summary: "How neon1 works with other firms, vendors, and referrals, and how responsibilities and fees are disclosed."
 type: standard
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 17
 origin: "neon1's internal handbook, operating principles (service and partnership boundaries)"
 related: [templates-partner-responsibilities, standards-operating-principles]
@@ -22,7 +22,7 @@ I fill in a [partner responsibilities](../templates/partner-responsibilities.md)
 
 ## Fees and incentives
 
-Any referral fee or benefit for recommending a vendor is disclosed before you decide. I don't recommend tools for affiliate programs, and I recommend free or built-in options when they fit.
+I disclose any referral fee or benefit for recommending a vendor before you decide. I don't recommend tools for affiliate programs, and I recommend free or built-in options when they fit.
 
 ## Accurate titles
 

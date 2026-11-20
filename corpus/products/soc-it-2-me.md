@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.5"
+edition: "1.6"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -21,8 +21,8 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 **SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to ready for a first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-2-readiness).
 
 - **Who it's for:** founders, operators, and the person who just became "the security owner" at a software or services company, plus trainers who want material to teach from.
-- **What's in it:** eight modules, each with an exercise on your own company; a map of 44 starter controls with owners, frequency, and evidence, tied to the SOC 2 Trust Services Criteria and ISO/IEC 27001:2022; evidence checklists by area; templates for risk, access, vendor, and incident work; a 90-day plan; and a workshop guide.
-- **How it relates to Ready, Secure, Go:** [Ready, Secure, Go](ready-secure-go.md) explains what SOC 2 is in plain words. This course is the hands-on part: the work, the forms, and the evidence.
+- **What's in it:** eight modules, each with an exercise on your own company. A map of 44 starter controls with owners, frequency, and evidence, tied to the SOC 2 Trust Services Criteria and ISO/IEC 27001:2022. Evidence checklists by area, templates for risk, access, vendor, and incident work, a 90-day plan, and a workshop guide.
+- **Next to Ready, Secure, Go:** [Ready, Secure, Go](ready-secure-go.md) explains what SOC 2 is. This course is the hands-on part: the work, the forms, and the evidence.
 - **Licenses:** written material under CC BY-SA 4.0, code under MIT, and the names reserved.
 
 ## Current limits
@@ -31,4 +31,4 @@ Only a licensed CPA firm can issue a SOC 2 report. It doesn't yet cover the Proc
 
 ## Next step
 
-For help applying it, neon1's [SOC 2 readiness](../engagement/index.md) work maps controls, gathers evidence, and fixes the basics before the auditor arrives. [Get in touch](../engagement/contact.md) to talk it through.
+For help applying it, my [SOC 2 readiness](../engagement/index.md) work maps controls, gathers evidence, and fixes the basics before the auditor arrives. [Contact me](../engagement/contact.md).

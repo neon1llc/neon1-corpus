@@ -4,9 +4,9 @@ title: Testing and review
 summary: "What neon1 tests, how changes are checked and reviewed before they ship, and what done means."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.5"
+edition: "2.6"
 audience: "Developers"
 order: 8
 consumers: [ai]
@@ -46,7 +46,7 @@ Checks run the same on a laptop and in CI, from one command such as `make check`
 
 ## Review
 
-Every change is read in full as a diff before it merges, by its author at least. Once a repository deploys to production or holds client data, its required checks must pass and someone other than the author reviews when a second person is available; the [version control standard](version-control.md#how-this-works-today) covers today's sole-maintainer exception. A review asks:
+Every change is read in full as a diff before it merges, by its author at least. Once a repository deploys to production or holds client data, its required checks must pass and someone other than the author reviews when a second person is available. The [version control standard](version-control.md#how-this-works-today) covers today's sole-maintainer exception. A review asks:
 
 1. Does it do what it says, and only that?
 2. Is anything unsafe: secrets, permissions, data loss, irreversible actions?

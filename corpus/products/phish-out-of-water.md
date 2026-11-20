@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.5"
+edition: "1.6"
 related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is, product-ready-secure-go]
 ---
 
@@ -30,4 +30,4 @@ Reporting numbers and websites are for the United States. The slides need Marp, 
 
 ## Next step
 
-Want neon1 to run a session for your group? [Get in touch](../engagement/contact.md). For the reference behind it, see [Ready, Secure, Go](ready-secure-go.md).
+To have me run a session for your group, [contact me](../engagement/contact.md). The reference behind it is [Ready, Secure, Go](ready-secure-go.md).

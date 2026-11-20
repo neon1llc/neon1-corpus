@@ -4,9 +4,9 @@ title: "Workflow automation"
 summary: "Integrating business systems, automating processes, and building the software in between: when it's worth doing, what I deliver, and when something else fits better."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Businesses and organizations whose systems need to work together, and the people who run them"
@@ -14,8 +14,6 @@ related: [services, standards-discovery-and-delivery, standards-technology-decis
 ---
 
 # Workflow automation
-
-Integrate existing systems, automate operations that cross them, and build the software a business needs where its products stop.
 
 ## When it's worth doing
 

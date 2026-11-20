@@ -9,9 +9,9 @@ area: community
 kind: founder
 role: "As a volunteer, before neon1"
 when: "2025"
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.4"
+edition: "1.5"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
@@ -41,4 +41,4 @@ Teachers used it in class, and parents left with specific steps. That showed the
 
 ## After handover
 
-That's how neon1 began, and community work is still part of it. Schools and community groups can ask through [contact](../engagement/contact.md).
+That's how neon1 began, and community work is still part of it. Schools and community groups can [contact me](../engagement/contact.md).

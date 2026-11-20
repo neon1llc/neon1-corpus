@@ -8,9 +8,9 @@ short:
   - "Move email, banking, and the phone carrier first, and the rest over the following weeks. [Recovery by product](#recovery-by-product)."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.5"
+edition: "1.6"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Families and households"
@@ -19,28 +19,28 @@ related: [case-cameras-to-grandmas-email, standards-security-and-data]
 
 # A password manager for your family
 
-A password manager remembers a different strong password for every account, so nobody reuses one, a common way accounts get taken over.
+A password manager remembers a different strong password for every account, so nobody reuses one. Reuse is a common way accounts get taken over.
 
 ## Pick one together
 
-Choose a well-known manager with family sharing and apps for all your devices, including those built into Apple and Google devices, that everyone will use.
+Choose a well-known manager with family sharing and apps for all your devices, including the ones built into Apple and Google devices.
 
-Recovery differs in each and in most only works if set up beforehand. Read the [recovery section](#recovery-by-product) for the one you picked before moving important accounts.
+Recovery differs in each, and in most it only works if set up beforehand. Read the [recovery section](#recovery-by-product) for yours before moving important accounts.
 
 ## Before you start
 
-- [ ] Decide who will be the family organizer
+- [ ] Decide who the family organizer is
 - [ ] Pick a time when everyone has their phone and computer nearby
-- [ ] Have a pen and paper ready for the recovery details
-- [ ] Know which product and plan you're using, and which recovery options it offers on that plan
-- [ ] Make sure each person can get into the email address and phone number their account uses for recovery, on their own
+- [ ] Have pen and paper ready for the recovery details
+- [ ] Know your product and plan, and which recovery options that plan offers
+- [ ] Make sure each person can get into the email address and phone number their account uses for recovery
 
 ## Set it up
 
-1. **The organizer creates the family account** and sets a long master password: four or five random words are easy to remember and hard to guess.
+1. **The organizer creates the family account** and sets a long master password. Four or five random words are easy to remember and hard to guess.
 2. **Turn on two-step sign-in** for the password manager itself.
-3. **Set up recovery now, the way your product does it** (see [recovery by product](#recovery-by-product)), and write anything it gives you on paper, kept safe at home with other important papers. This is the one thing to protect most.
-4. **Invite each family member.** Each person gets their own vault and master password, and shared things like streaming and Wi-Fi go in a shared vault.
+3. **Set up recovery now, the way your product does it** (see [recovery by product](#recovery-by-product)), and write anything it gives you on paper, kept at home with other important papers. Protect this most.
+4. **Invite each family member.** Each person gets their own vault and master password. Streaming and Wi-Fi go in a shared vault.
 5. **Install it on every device**, then turn on autofill in the phone's settings.
 
 ## Move the important accounts first
@@ -51,18 +51,18 @@ Start with email, banking, and the phone carrier, the accounts that can reset ev
 2. Let the manager generate a new one and save it.
 3. Turn on two-step sign-in while you're there.
 
-Do the rest over the following weeks as each account comes up, not all in one evening.
+Do the rest over the following weeks as each account comes up.
 
 ## For older relatives
 
 - Keep it to one device at first.
 - Show it, then let them do it, then let them fix a mistake on purpose.
-- Leave a one-page printed guide with the three things they'll do most: open the manager, find a password, and fill it in.
-- If your product has a trusted contact or family recovery feature, set it up now so a family member can help if they get stuck.
+- Leave a one-page printed guide for what they'll do most: open the manager, find a password, and fill it in.
+- If your product has a trusted contact or family recovery feature, set it up now.
 
 ## Recovery by product
 
-*Reviewed 2026-11-10.* Products change their options, so follow each one's instructions, linked below, over this summary. Recovery may be impossible if nothing was set up beforehand. Don't test by recovering, since some steps reset passwords or keys or can't be undone. Check that your setup is still in place instead.
+*Reviewed 2026-11-10.* Products change their options, so follow each one's linked instructions over this summary. Recovery may be impossible if nothing was set up beforehand. Don't test by recovering, since some steps reset passwords or keys or can't be undone. Check that your setup is still in place instead.
 
 ### Apple Passwords and iCloud Keychain
 

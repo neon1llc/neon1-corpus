@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.5"
+edition: "1.6"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go]
 ---
 
@@ -33,4 +33,4 @@ Notification rules cover U.S. federal requirements and New York. Other states ar
 
 ## Next step
 
-Want neon1 to run a tabletop exercise with your team? [Get in touch](../engagement/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC 2 readiness, step by step](soc-it-2-me.md).
+To have me run a tabletop exercise with your team, [contact me](../engagement/contact.md). For SOC 2 evidence built on the same plan and records, see [SOC 2 readiness, step by step](soc-it-2-me.md).

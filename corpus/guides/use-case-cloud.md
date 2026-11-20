@@ -4,9 +4,9 @@ title: "Cloud and AI engineering"
 summary: "Cloud architecture, infrastructure as code, delivery, migrations, and AI applications: when an independent engineer is worth bringing in, what I deliver, and how ownership stays with your team."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Engineering leads, technical founders, and businesses running software in the cloud"
@@ -14,8 +14,6 @@ related: [services, standards-technology-decisions, standards-reliability-and-re
 ---
 
 # Cloud and AI engineering
-
-Design, build, and improve cloud infrastructure, software delivery, and AI applications, with attention to reliability, security, cost, and fit with the environment you already run.
 
 ## When it's worth doing
 
@@ -41,11 +39,11 @@ Depending on scope: written findings and options, reviewed changes in your repos
 
 ## How it fits your team
 
-I work in your repositories, follow your conventions and change process, and agree up front how the team will review and accept the work. The team keeps ownership and on-call.
+I work in your repositories, follow your conventions and change process, and agree up front how the team will accept the work. The team keeps ownership and on-call.
 
 ## When something else fits better
 
-- The team needs sustained capacity, not a bounded result. A hire or a staffing partner fits better.
+- The team needs sustained capacity, not a bounded result. A hire or staffing partner fits better.
 - You need 24/7 operations, or a vendor with partner status or compliance attestations of its own.
 - A managed platform or an existing AI product already meets the need at lower cost.
 

@@ -4,9 +4,9 @@ title: Where else to get help
 summary: "The other ways a business, technical team, or household can get technology work done, who each suits, and when they'd serve you better than neon1."
 type: comparison
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 reviewed: 2026-11-18
 consumers: [chat, knowledge, ai]
 pdf: true
@@ -42,7 +42,7 @@ Prices change, so check each provider.
 
 ## Where neon1 fits
 
-A bounded result that needs judgment across systems: an assessment, an integration, a migration, a network design, or security work, built in your accounts, tested against agreed criteria, and handed over to whoever runs it. neon1 isn't the choice for 24/7 coverage, sustained team capacity, formal assurance, or regulated professional judgment. If you're not sure, ask, and I'll point you elsewhere when someone fits better.
+A bounded result that needs judgment across systems: an assessment, an integration, a migration, a network design, or security work, built in your accounts, tested against agreed criteria, and handed over to whoever runs it. For 24/7 coverage, sustained team capacity, formal assurance, or regulated professional judgment, choose someone else. If you're not sure, ask, and I'll point you elsewhere when someone fits better.
 
 ## Sources
 

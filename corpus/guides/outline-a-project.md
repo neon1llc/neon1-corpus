@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-20
-edition: "1.0"
+edition: "1.1"
 consumers: [knowledge, ai, portal]
 pdf: false
 audience: "Anyone writing a project down in a free or client 1NEON account"
@@ -15,7 +15,7 @@ related: [guides-free-accounts, guides-first-call, product-1neon, faq-1neon-help
 
 # Outlining a project in 1NEON
 
-An outline is what you write down about a project before I assess it. Every part is optional, and a short answer is enough. Each part you add makes my read of the project, and our call, sharper.
+An outline is what you write down about a project before I assess it. Every part is optional, and a short answer is enough.
 
 1NEON reads the outline from what the project already holds, so there is no separate form. Home's **Next step** and a project's **Overview** show what's written, what's missing, and a tip for each missing part.
 
@@ -30,7 +30,7 @@ An outline is what you write down about a project before I assess it. Every part
 | **How we'll know it worked** | A measure with where it is now, added in Observe. | Tracked in Observe, before and after. |
 | **Timing and limits** | A target date, or limits such as budget or must-nots. | The proposal's schedule and constraints. |
 
-A part counts when it holds real words, about a dozen characters or more. An unanswered starter question doesn't count, because it still asks instead of tells. A project is **outlined** with the first three parts and **fully outlined** with all six.
+A part counts when it holds real words, about a dozen characters or more. An unanswered starter question doesn't count. A project is **outlined** with the first three parts and **fully outlined** with all six.
 
 ## What a good answer looks like
 
@@ -52,12 +52,10 @@ Each project's Overview shows **Ready for Execute**, a percent from 0 to 100 bef
 - 10 when I've shared options.
 - 20 when one option is approved with a signature.
 
-It reaches 100% only with a decision, and then it goes away: Execute starts, the outline becomes the plan, the measure is tracked in Observe, and the people and tools shape the handover in Normalize. None of the outline is required, and I can work with whatever is written.
+It reaches 100% only with a decision, and then it goes away: Execute starts, and the outline becomes the plan. I can work with whatever is written.
 
 ## Then ask for the assessment
 
-Choose one to three outlined projects under **Next step** on Home and add a note. The note is required, a sentence or two (at least 20 characters), for anything you want me to keep in mind. A last look shows what a project could still say, and you can submit anyway. The request goes to me 30 minutes after your last change, so you can edit or withdraw it until then, and an edit after it's sent goes out as an update.
+Choose one to three outlined projects under **Next step** on Home and add a required note of a sentence or two (at least 20 characters). A last look shows what a project could still say, and you can submit anyway. The request goes to me 30 minutes after your last change, so you can edit or withdraw it until then, and an edit after it's sent goes out as an update.
 
-In a free account, 1NEON also emails tips about 3 and 7 days after your last change while an outline is unfinished and nothing is waiting for me. Turn them off under Outline tips in your profile's Notifications.
-
-Prefer to talk first? [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation). The call doesn't need an assessment first, and an assessment doesn't need a call first. Details are in [free 1NEON accounts](free-accounts.md).
+Prefer to talk first? [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation). Neither the call nor the assessment needs the other first. Details are in [free 1NEON accounts](free-accounts.md).

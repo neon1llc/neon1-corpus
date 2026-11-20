@@ -4,11 +4,11 @@ title: Security and data
 summary: How neon1 handles your accounts, access, and information, and the baseline every project starts from.
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.3"
+edition: "1.4"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -67,11 +67,11 @@ For each project I sketch what's built, where information changes hands, what co
 | Changes | Big changes reviewed, with a way back | Version, approval, and release record |
 | Incidents | Contacts, authority, and a fallback are written down | A current incident procedure |
 
-This is a starting point, not a guarantee against compromise. When the stakes call for it, I bring in a specialist.
+When the stakes call for it, I bring in a specialist.
 
 ## Software and secrets
 
-Code follows the [development](development.md) standard. A leaked secret is revoked or rotated and the old one confirmed dead; deleting the visible copy isn't enough. A scan of a live system can change data, so its scope is agreed first.
+Code follows the [development](development.md) standard. A leaked secret is revoked or rotated and the old one confirmed dead, because deleting the visible copy isn't enough. A scan of a live system can change data, so its scope is agreed first.
 
 ## Fixing vulnerabilities
 

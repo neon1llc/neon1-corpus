@@ -4,9 +4,9 @@ title: "Security awareness sessions"
 summary: "How an informational security awareness session for a team or group runs, and what people leave able to do."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.0"
+edition: "2.1"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Teams, organizations, and families"
@@ -20,16 +20,16 @@ related: [services, guides-use-case-security-readiness, guides-password-manager-
 
 ## The situation
 
-A group wants practical security habits: after a near-miss with a fake invoice or support call, before a busy season, or alongside a wider security project. These sessions are informational and hands-on. They aren't certified training, and they don't replace a security program.
+A group wants practical security habits: after a near-miss with a fake invoice or support call, before a busy season, or alongside a wider security project. The sessions are informational and hands-on, not certified training.
 
 ## How it usually goes
 
-1. **A short conversation first** about who's in the room, what devices and accounts matter most, and anything that has already happened.
-2. **One session, about an hour,** in plain language, built around real examples: phishing emails and texts, fake support calls, payment fraud, password reuse, and data brokers.
-3. **Hands-on time.** Everyone turns on two-step sign-in for their most important account and checks their recovery details, during the session.
+1. **A short conversation first** about who's in the room, which devices and accounts matter most, and anything that has already happened.
+2. **One session, about an hour,** built around real examples: phishing emails and texts, fake support calls, payment fraud, password reuse, and data brokers.
+3. **Hands-on time.** Everyone turns on two-step sign-in for their most important account and checks their recovery details.
 4. **A one-page takeaway** with what to do when something looks wrong and who to tell.
 
-Organizations that need controls changed, not just habits, can pair a session with [security readiness](use-case-security-readiness.md) work.
+To change controls as well as habits, pair a session with [security readiness](use-case-security-readiness.md) work.
 
 ## What people leave able to do
 

@@ -4,9 +4,9 @@ title: "Backups you can trust"
 summary: "How a small office or household checks that its backups would restore what it needs."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -28,7 +28,7 @@ List what would hurt to lose:
 - Photos
 - Settings and passwords for important systems
 
-Next to each, note how much recent work you could lose (an hour, a day, or a week) and how long you could manage without it.
+Next to each, note how much recent work you could lose (an hour, a day, a week) and how long you could manage without it.
 
 ## The 3-2-1 idea
 
@@ -36,11 +36,11 @@ Next to each, note how much recent work you could lose (an hour, a day, or a wee
 - **2 different kinds of storage**, such as a cloud service and an external drive.
 - **1 copy away from the building**, so a fire or theft doesn't take everything.
 
-Plus at least one copy ransomware can't reach: an unplugged drive, or a cloud backup whose version history can't be quickly deleted.
+Keep at least one copy ransomware can't reach: an unplugged drive, or a cloud backup whose version history can't be quickly deleted.
 
 ## Sync isn't backup
 
-Dropbox, OneDrive, and iCloud Drive keep files the same everywhere, so a deleted or scrambled file is gone everywhere too. Version history helps only as long as they keep it, so check how long.
+Dropbox, OneDrive, and iCloud Drive keep files the same everywhere, so a deleted or scrambled file is gone everywhere. Version history helps only while they keep it, so check how long.
 
 ## Do a test restore
 
@@ -50,13 +50,13 @@ Dropbox, OneDrive, and iCloud Drive keep files the same everywhere, so a deleted
 - [ ] Time how long it takes
 - [ ] Check you can do it without the person who set it up
 
-Write down what happened, especially anything that was confusing or slow.
+Write down anything confusing or slow.
 
 ## Make it a habit
 
 - Check monthly that backups still run. Most tools report a last-backup date.
 - Do a test restore every few months, and after any big change.
-- Keep the instructions somewhere you can reach if your main computer is the thing that failed.
+- Keep the instructions somewhere you can reach if your main computer fails.
 - Make sure more than one person knows how to get the data back.
 
 A backup review is one of the smallest projects I take on.

@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-20
 created: 2026-11-07
-edition: "2.9"
+edition: "2.10"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -23,10 +23,10 @@ Signed in? Tap **?** at the top right of any page for help with that page.
 The portal where we run your projects together: what you need, the work, the results, and the handover. [Watch it](https://neon1.tech/1NEON/live).
 
 ### Can I try it first?
-Yes, without signing in. The [guided walkthrough](https://neon1.tech/1NEON/live) takes about three minutes and plays a made-up project on the real portal, and the full story takes about 17 minutes. The [sample project](https://neon1.tech/1NEON/example) is one made-up project to read. The [interactive demo](https://neon1.tech/1NEON/demo/) is a working copy where you pick who to be, and changes stay in your browser until **Start over**. [From free account to client](https://neon1.tech/1NEON/live?play=free) follows one free account from sign-up to client. Short walkthroughs show one thing: [joining from an invitation](https://neon1.tech/1NEON/live?play=invite), [adding a passkey](https://neon1.tech/1NEON/live?play=passkey), [adding an authenticator app](https://neon1.tech/1NEON/live?play=authenticator), and [texts and text codes](https://neon1.tech/1NEON/live?play=texts).
+Yes, without signing in. The [guided walkthrough](https://neon1.tech/1NEON/live) plays a made-up project on the real portal in about three minutes, or 17 for the full story. The [sample project](https://neon1.tech/1NEON/example) is a made-up project to read. The [interactive demo](https://neon1.tech/1NEON/demo/) is a working copy where you pick who to be, and changes stay in your browser until **Start over**. [From free account to client](https://neon1.tech/1NEON/live?play=free) follows one account from sign-up to client. Short walkthroughs show one thing: [joining from an invitation](https://neon1.tech/1NEON/live?play=invite), [adding a passkey](https://neon1.tech/1NEON/live?play=passkey), [adding an authenticator app](https://neon1.tech/1NEON/live?play=authenticator), and [texts and text codes](https://neon1.tech/1NEON/live?play=texts).
 
 ### How do I get in?
-Start a free account from **Start for free** on the sign-in screen, or open the link in an invite email from neon1 or your organization. Sign in with a code sent to your email, or with a passkey. No password needed. Watch [starting a free account](https://neon1.tech/1NEON/live?play=free) or [joining from an invite](https://neon1.tech/1NEON/live?play=invite). [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) says what it holds.
+Start a free account from **Start for free** on the sign-in screen, or open the link in an invite email from neon1 or your organization. Sign in with a code sent to your email, or with a passkey. No password. Watch [starting a free account](https://neon1.tech/1NEON/live?play=free) or [joining from an invite](https://neon1.tech/1NEON/live?play=invite). [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) says what it holds.
 
 ### I didn't get the sign-in code.
 Check spam or promotions, wait a minute, and choose **Send a new code**. Codes work for a few minutes, in the browser that asked. [Watch it](https://neon1.tech/1NEON/live?play=invite).
@@ -38,19 +38,19 @@ Yes, at your first sign-in. Replay it from **?** or your profile. [Watch it](htt
 Outline up to three projects, then ask for an assessment under **Next step** on Home. **Get to know 1NEON**, beside it, links to a sample project, a walkthrough, the demo, and these FAQs. [Watch it](https://neon1.tech/1NEON/live?play=free).
 
 ### What is an outline?
-What you write down about a project before I assess it, in six parts: what it is, how it works today, what done looks like, who and what it touches, a measure, and timing and limits. Every part is optional, and a short answer is enough. **Next step** on Home and a project's **Overview** show what's written, with a tip for each missing part. [Outlining a project](https://neon1.tech/knowledge/guides/outline-a-project/) has examples.
+What you write down about a project before I assess it, in six optional parts: what it is, how it works today, what done looks like, who and what it touches, a measure, and timing and limits. A short answer is enough. **Next step** on Home and a project's **Overview** show what's written, with a tip for each missing part. [Outlining a project](https://neon1.tech/knowledge/guides/outline-a-project/) has examples.
 
 ### What is Ready for Execute?
-The percent on a project's **Overview**, before the work starts. Each outline part is 10, the assessment 10, options 10, and an approved option 20, so 100% needs a decision. Then the outline carries into the work: its measure is tracked in **Observe**, its people and tools shape the handover in **Normalize**, and what done looks like becomes the checks in Verify. [Watch it](https://neon1.tech/1NEON/live?play=free).
+The percent on a project's **Overview**, before the work starts. Each outline part is 10, the assessment 10, options 10, and an approved option 20, so 100% needs a decision. Then the outline carries into the work. [Watch it](https://neon1.tech/1NEON/live?play=free).
 
 ### How do I ask for an assessment?
-Under **Next step** on Home, write the note (required, a sentence or two), choose one to three projects, and choose **Request assessment**. You get one last look, then **Submit request**. It goes to me 30 minutes after your last change, so you can **Edit** or **Withdraw** it until then. An edit after it's sent goes out as an update. I reply by email.
+Under **Next step** on Home, write the required note (a sentence or two), choose one to three projects, and choose **Request assessment**. After one last look, choose **Submit request**. It goes to me 30 minutes after your last change, so you can **Edit** or **Withdraw** it until then. An edit after it's sent goes out as an update. I reply by email.
 
 ### Do I need a call first?
-No. The assessment and the call are two ways in, and neither needs the other first. **Next step** has **Book a 30-minute call**, or **ask me to reach out** to have me write to you (once a week).
+No. Neither the assessment nor the call needs the other first. **Next step** has **Book a 30-minute call**, or **ask me to reach out** to have me write to you (once a week).
 
 ### Will I get emails about my outline?
-In a free account, yes: while an outline is unfinished and nothing is waiting for me, tips arrive about 3 and 7 days after your last change, then no more. Turn them off under **Outline tips** in your profile's **Notifications**. Clients don't get them unless they turn them on.
+In a free account, yes, while an outline is unfinished and nothing is waiting for me: about 3 and 7 days after your last change, then no more. Turn them off under **Outline tips** in your profile's **Notifications**. Clients don't get them unless they turn them on.
 
 ### How do I hide or bring back Get to know 1NEON?
 Choose **Hide** on the card. To bring it back, open your profile and choose **Show Get to know 1NEON on Home** under Tutorial.
@@ -73,7 +73,7 @@ Projects follow the new names and order. A hidden stage still shows while a proj
 On the **Needs** tab, tap **Add request** and finish a sentence with a few taps. Only the first choice is required. **Define another need** adds more. [Watch it](https://neon1.tech/1NEON/live?play=needs).
 
 ### Do I have to write a lot?
-No. Each section shows an example and one-tap suggestions, and a short answer is enough. [Watch it](https://neon1.tech/1NEON/live?play=start).
+No. Each section shows an example and one-tap suggestions. [Watch it](https://neon1.tech/1NEON/live?play=start).
 
 ### How do I know when something changes?
 The bell glows. Tap it to see what and who. Important changes also email you, and you choose which under **Notifications** in your profile. [Watch it](https://neon1.tech/1NEON/live?play=listen).
@@ -100,7 +100,7 @@ Under **Projects**, **Timeline** draws each project from start to target date, c
 Choose **New project** and answer a few questions. It starts with a checklist you can change later. [Watch it](https://neon1.tech/1NEON/live?play=start).
 
 ### Is there a simpler way for a small job?
-Yes. For a fix of a few hours, neon1 starts a **Quick fix** with no proposal. neon1 sends one quote, a fixed price or hours at a rate capped at the most hours quoted, and nothing is paid up front. **Next step** says **Approve the quote**, and you sign once. When it's fixed, you accept that one step with your signature, and neon1 sends one invoice. Your organization still signs neon1's service agreement once before its first approval.
+Yes. For a fix of a few hours, neon1 starts a **Quick fix** with no proposal. neon1 sends one quote, a fixed price or hours at a rate capped at the most hours quoted, and nothing is paid up front. **Next step** says **Approve the quote**, and you sign once. When it's fixed, you accept that step with your signature, and neon1 sends one invoice. Your organization still signs neon1's service agreement once before its first approval.
 
 ### What is the calendar on Home?
 Due dates, milestones, project targets, and your organization's events, a month at a time. Choose a day to see them. Editors add leave, closures, meetings, or care plan dates, one-off or repeating. [Watch it](https://neon1.tech/1NEON/live?play=calendar).

@@ -4,9 +4,9 @@ title: "Before you buy a new tool"
 summary: "Ten questions to ask before adding software to your business, so it fits, lasts, and lets you leave."
 type: guide
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -16,7 +16,7 @@ related: [standards-technology-decisions, forms-tool-decision]
 
 # Before you buy a new tool
 
-New software can fix a problem or add one. These questions take about ten minutes.
+Ten questions, about ten minutes.
 
 ## 1. Can something you already pay for do it?
 
@@ -24,11 +24,11 @@ Microsoft 365, Google Workspace, accounting software, and point of sale often ha
 
 ## 2. What exactly will it fix?
 
-Write one sentence: "When X happens, we currently do Y, and Z goes wrong." If you can't, the tool can't either.
+Write one sentence: "When X happens, we do Y, and Z goes wrong." If you can't, the tool can't either.
 
 ## 3. Who will use it every day?
 
-Ask them. A tool the staff avoid won't fix anything, however much the owner likes it.
+Ask them. A tool the staff avoid fixes nothing.
 
 ## 4. What does it cost per year, all in?
 
@@ -36,7 +36,7 @@ Per-user subscriptions, add-ons, payment fees, setup, training, and upkeep hours
 
 ## 5. Can you get your data out?
 
-Look for export to a standard format, such as CSV or PDF, and try it during the trial. Hard to leave is a cost.
+Look for export to CSV or PDF, and try it during the trial. Hard to leave is a cost.
 
 ## 6. Whose account is it?
 
@@ -52,7 +52,7 @@ Is there a way to keep working by hand for a day? Who do you contact, and when d
 
 ## 9. Does it connect to what you have?
 
-Look for a built-in integration or official API, not hand copying or a fragile workaround.
+Look for a built-in integration or official API, not hand copying.
 
 ## 10. What will tell you it worked?
 
@@ -60,4 +60,4 @@ Measure one thing before you start, such as time, errors, or missed requests, an
 
 ## A simple decision
 
-If 1, 5, or 6 has a bad answer, wait. If they're fine and 2 and 3 are clear, try it on one small piece of work first. The [tool decision form](../forms/tool-decision.md) is the longer version I use with clients.
+If 1, 5, or 6 has a bad answer, wait. If they're fine and 2 and 3 are clear, try it on one small piece of work first. The [tool decision form](../forms/tool-decision.md) is the longer version I use.

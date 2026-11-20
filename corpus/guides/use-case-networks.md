@@ -4,9 +4,9 @@ title: "Networks and connected systems"
 summary: "Designing and integrating networks, devices, and connected environments: when it's worth doing, what I deliver, and which work belongs to licensed trades."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-19
-edition: "1.0"
+edition: "1.1"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Businesses with sites, devices, or cameras to connect, and households that want their network built properly"
@@ -14,8 +14,6 @@ related: [services, standards-security-and-data, standards-reliability-and-recov
 ---
 
 # Networks and connected systems
-
-Design and integrate networks, devices, and connected environments for reliable connectivity, security, interoperability, and visibility.
 
 ## When it's worth doing
 

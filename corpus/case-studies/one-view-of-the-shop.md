@@ -9,9 +9,9 @@ area: workflows
 kind: neon1
 role: "As neon1, my first business client"
 when: "2025"
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-15
-edition: "1.1"
+edition: "1.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: business
@@ -30,7 +30,7 @@ short_after: "I manage it remotely, and computer vision is next."
 
 A small business ran on systems that didn't know about each other: a cloud point-of-sale and order-tracking system, a camera system, and what the staff kept in their heads about where each order stood. To see whether the business was on track, the owner had to be there, or open each system in turn.
 
-The ask: see what's happening in the business, from the floor or from home, without giving the staff one more screen to look after.
+The ask: see what's happening in the business, from the floor or from home, without one more screen for staff to look after.
 
 ## The work
 
@@ -45,7 +45,7 @@ I chose middleware only where it earned its place: joining events across systems
 
 ## The results
 
-The measure was the owner's time to act: how long it took to notice and deal with a point-of-sale problem, an order that didn't match its items, or data that didn't add up. Before, that waited until the owner was on site. With the remote view alongside time on site, the owner deals with them much sooner than checking on site alone allowed.
+The measure was the owner's time to act: how long it took to notice and deal with a point-of-sale problem, an order that didn't match its items, or data that didn't add up. Before, that waited until the owner was on site. With the remote view alongside time on site, the owner deals with them much sooner.
 
 ## After handover
 

@@ -4,11 +4,11 @@ title: Technology decisions
 summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -47,7 +47,7 @@ I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud cos
 - Supported APIs over screen scraping.
 - API limits, paging, time zones, currencies, and ID formats written down.
 - Incoming data validated, and each business action given a stable ID, so a retry doesn't send a second invoice.
-- Temporary failures retry a few times with a delay; permanent ones go where a person will see them.
+- Temporary failures retry a few times with a delay, and permanent ones go where a person will see them.
 - Partial success is kept: if a record saves but its email fails, the record stays and the failure shows. Reconciliation checks surface missing or duplicate results.
 
 ## Knowing when it's broken

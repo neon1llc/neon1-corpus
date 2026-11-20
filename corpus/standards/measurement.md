@@ -4,11 +4,11 @@ title: Measurement
 summary: "How neon1 defines success with you, measures it, and reports what the numbers can and can't show."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 15
 origin: "neon1's internal handbook, measurement handbook (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
@@ -28,7 +28,7 @@ related: [forms-metric-record, standards-discovery-and-delivery, standards-relia
 | **Guardrail** | Something that must not get worse while we improve the main result |
 | **OKR** | An objective plus a few measurable key results by a date |
 
-Publishing a page is a task; people understanding and acting on it is an outcome. I measure outcomes.
+Publishing a page is a task. People understanding and acting on it is an outcome. I measure outcomes.
 
 ## Every measure gets a definition
 

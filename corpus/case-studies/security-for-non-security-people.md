@@ -9,9 +9,9 @@ area: security
 kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.9"
+edition: "1.10"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
@@ -40,7 +40,7 @@ I've run sessions for groups of parents, teachers, engineers, and executives. Mo
 - Account hygiene, password managers, and two-factor sign-in.
 - The security of physical spaces, not just screens.
 
-Each session fits the audience's devices and accounts, with time to change real settings together.
+Each session fits the audience's devices and accounts, with time to change real settings.
 
 ## The results
 
@@ -48,4 +48,4 @@ The best measure is what people do: turning on two-factor sign-in in the session
 
 ## After handover
 
-The material changes as threats do. [Ready, Secure, Go](../products/ready-secure-go.md), neon1's readiness guide, tracks what's worth doing for each kind of space. The sessions are informational, not certified training. Controls and audit preparation are [security readiness](../guides/use-case-security-readiness.md) work. [Get in touch](../engagement/contact.md) to ask about a session for your group.
+The material changes as threats do, and [Ready, Secure, Go](../products/ready-secure-go.md), neon1's readiness guide, tracks what's worth doing for each kind of space. The sessions are informational, not certified training. Controls and audit preparation are [security readiness](../guides/use-case-security-readiness.md) work. [Contact me](../engagement/contact.md) about a session for your group.

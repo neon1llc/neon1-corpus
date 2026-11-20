@@ -4,11 +4,11 @@ title: Discovery and delivery
 summary: How a neon1 project moves from your problem to a result you can run, step by step.
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 4
 origin: "neon1's internal handbook, discovery and delivery"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
@@ -30,7 +30,7 @@ I don't copy private records into my notes because they were on screen. For pers
 
 Before changing anything I time a few real examples, measuring effort, waiting, errors, and exceptions separately. Then we write one outcome, one measure of success, and one guardrail. For example: cut retyping time without increasing wrong customer records.
 
-Saved minutes aren't automatically money; any dollar value on time has its assumption written beside it.
+Saved minutes aren't automatically money, and any dollar value on time has its assumption written beside it.
 
 ## Compare the options
 

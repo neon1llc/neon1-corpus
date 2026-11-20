@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-11
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.1"
+edition: "2.2"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -26,7 +26,7 @@ neon1 is an independent engineering and technology consulting practice run by Pr
 
 ## How engagements work
 
-- **One engineer** from the first call to the handover. Pradeep does the work himself. Any partner on a project is named in the proposal and on the case study.
+- **One engineer** from the first call to the handover. Any partner on a project is named in the proposal and on the case study.
 - **Defined scope.** Assessments, scoped projects, and phased work, each with deliverables, acceptance criteria, and a price agreed before work starts.
 - **Measured results.** Work is checked against agreed criteria, and published results say how they were measured.
 - **Code and resources.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.

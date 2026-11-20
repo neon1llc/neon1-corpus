@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-03
-edition: "1.8"
+edition: "1.9"
 ---
 
 # DeployOps
@@ -44,4 +44,4 @@ Commands and settings may change before a stable release.
 
 ## Next step
 
-If you need deploy pipelines for production now, that work is part of [cloud and AI engineering](../engagement/index.md), done as a project with the tools you already use. [Get in touch](../engagement/contact.md) to talk it through.
+For production deploy pipelines now, I do that as [cloud and AI engineering](../engagement/index.md) work with the tools you already use. [Contact me](../engagement/contact.md).

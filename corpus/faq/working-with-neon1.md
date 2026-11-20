@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-07
-edition: "1.18"
+edition: "1.19"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -32,15 +32,13 @@ Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Easte
 
 Yes. [Start a 1NEON account](https://neon1.tech/1NEON/?signup=1), outline up to three projects on your own time, then ask for an assessment of any or all of them. I read them and reply by email.
 
-You don't need a call first, and a call doesn't need an assessment first. [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) whenever you'd rather talk.
-
-[Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
+Neither the call nor the assessment needs the other first. [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) whenever you'd rather talk. [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
 
 ## How do you treat our data and accounts?
 
 I use only the access the job needs, keep your information confidential, and remove my access when we're done. We sign a short [service agreement](../engagement/service-agreement.md) once, before any paid work.
 
-Each project is then a [proposal](../examples/proposal.md): one recommendation, or options when there's a real choice. What you approve is what we both agree to. Personal or health data needs the right agreement first, such as a Business Associate Agreement.
+Each project is then a [proposal](../examples/proposal.md), and what you approve is what we both agree to. Personal or health data needs the right agreement first, such as a Business Associate Agreement.
 
 ## What if something urgent comes up?
 
@@ -50,13 +48,13 @@ For anything your business can't go a day without, I take the work only when som
 
 ## How long does a project take?
 
-It depends on the scope, so the proposal gives the schedule. Larger projects run in phases you approve one at a time. I take a few clients at a time, so each gets my full attention.
+The proposal gives the schedule. Larger projects run in phases you approve one at a time. I take a few clients at a time.
 
 ## How is the cost worked out?
 
 After we talk, I send a short proposal: one recommendation, or options when there's a real choice, each with what it covers, its upkeep, and its cost. You approve it, and the cost changes only if you approve a change.
 
-Every option has the same security baseline: multi-factor sign-in, the least access the job needs, encryption that fits the data, a tested restore, and a way back from every big change. A smaller option does less, not worse. See [how I price my work](../engagement/pricing.md).
+Every option has the same security baseline: multi-factor sign-in, the least access the job needs, encryption that fits the data, a tested restore, and a way back from every big change. A smaller option does less, not worse. See [pricing](../engagement/pricing.md).
 
 ## How do invoices work?
 
@@ -66,7 +64,7 @@ A project usually starts with a deposit, and the rest is billed when you accept 
 
 ## Do you run security training?
 
-I run informational security awareness sessions for groups, from parents and teachers to engineers and executives: phishing, fraud, passwords, networks, and cameras. They're practical, not certified training. For controls, evidence, and audit preparation, see [security readiness](../guides/use-case-security-readiness.md).
+Yes, informational awareness sessions for groups, from parents and teachers to engineers and executives: phishing, fraud, passwords, networks, and cameras. They're not certified training. For controls, evidence, and audit preparation, see [security readiness](../guides/use-case-security-readiness.md).
 
 ## What don't you do?
 

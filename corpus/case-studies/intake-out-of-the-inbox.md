@@ -11,7 +11,7 @@ role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.7"
+edition: "1.8"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
@@ -49,7 +49,7 @@ I mapped the process with staff, separating patient waiting time from staff hand
 | Finding and opening a document               | ~2 min 18 s        | ~12 s      |
 | Intakes needing a missing-document follow-up | ~34%               | ~10%       |
 
-Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved. Time to a complete intake was timed from record timestamps, before and after launch: from the patient's most recent call, email, or other contact with the practice to when their appointment was scheduled. The portal records when each intake starts and when it's complete, as metrics only, with no patient details. The practice keeps them for its own dashboards and emails, and can turn them off. Before launch, staff time per intake was worked out by hand from the old records, from first call or email to the appointment being set, and checked against a short staff survey.
+Four weeks before and after, same definitions. At about 250 intakes a month, that's roughly 67 staff hours saved. Time to a complete intake was timed from record timestamps, before and after launch: from the patient's most recent call, email, or other contact with the practice to when their appointment was scheduled. The portal records when each intake starts and when it's complete, as metrics only, with no patient details. The practice keeps them for its own dashboards and can turn them off. Before launch, staff time per intake was worked out by hand from the old records, from first call or email to the appointment being set, and checked against a short staff survey.
 
 ## After handover
 

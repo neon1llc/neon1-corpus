@@ -7,14 +7,14 @@ consumers: [site, chat, knowledge, ai]
 pdf: true
 origin: "neon1-site src/app/public/index.html#services"
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2025-09-07
-edition: "2.1"
+edition: "2.2"
 ---
 
 # Services
 
-neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals. Work ranges from a focused assessment to a complete implementation, and I do it myself.
+neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals, from a focused assessment to a complete implementation. I do the work myself.
 
 ## Four services
 
@@ -25,7 +25,7 @@ neon1 is my independent engineering and technology consulting practice. I assess
 | **Networks and connected systems** | Network design and segmentation, multi-site and remote access, cameras, sensors, and other connected devices, monitoring, local storage, and backup | A flat network that should be segmented, a new location, devices to integrate and monitor, or a home network built to a higher standard |
 | **Security readiness** | Technical risk assessment, identity and access, hardening, cloud and network security, backup and recovery, and control and evidence work before a review | A customer security questionnaire, an upcoming SOC 2, HIPAA, or PCI DSS review, access that needs tightening, or recovery that was never tested |
 
-Each service has its own page: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md).
+Pages: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md).
 
 ## Ways to engage
 
@@ -37,9 +37,9 @@ Each service has its own page: [workflow automation](../guides/use-case-workflow
 | **Phased project** | Larger work in phases, each approved and accepted before the next starts | Per phase |
 | **Ongoing care** | Updates, checks, and set response times within my working hours | A monthly [care plan](../templates/care-plan.md) |
 
-A proposal makes one recommendation, or sets out options when there's a real choice to make. [How I price my work](pricing.md) explains the pricing.
+A proposal makes one recommendation, or sets out options when there's a real choice. See [pricing](pricing.md).
 
-Before any of these, the first 30-minute call is about your needs. If you write a project down in a [1NEON account](../guides/free-accounts.md) first, its assessment is free too: my written read of that one project, with a likely approach and the first questions to settle, which I review before we talk. It's lighter than the paid assessment above.
+Before any of these, the first 30-minute call covers your needs. If you write a project down in a [1NEON account](../guides/free-accounts.md) first, its assessment is free too: my written read of that project, with a likely approach and the first questions to settle. It's lighter than the paid assessment above.
 
 ## Who keeps what
 
@@ -53,8 +53,6 @@ Before any of these, the first 30-minute call is about your needs. If you write 
 On-site work is within about 30 miles of Queens, NY. Everything else is remote.
 
 ## Past work
-
-Each case study says what kind of work it was.
 
 | Service | Work | Kind |
 |---|---|---|

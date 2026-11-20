@@ -4,11 +4,11 @@ title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 18
 origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -56,7 +56,7 @@ Local relationships and referrals, LinkedIn, GitHub, and this website.
 
 ## Follow-up
 
-One follow-up after a proposal, then the next move is yours. A no ends it, and you're welcome back anytime.
+One follow-up after a proposal, then the next move is yours. A no ends it.
 
 ## Sources
 

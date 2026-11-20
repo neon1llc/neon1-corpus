@@ -4,18 +4,18 @@ title: Charter
 summary: What neon1 is for, who it works with, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "2.0"
+edition: "2.1"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
 
-neon1 is my independent engineering and technology consulting practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in the [How I work](../standards/operating-principles.md) documents.
+neon1 is my independent engineering and technology consulting practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in [How I work](../standards/operating-principles.md).
 
 ## Mission
 
@@ -69,13 +69,13 @@ I refer work that needs a specialist or round-the-clock team to someone who fits
 - Large migrations that need a team
 - Formal security assurance, such as a penetration test or an audit opinion
 
-## Free help
+## Community help
 
 Paid work is paid. Separately, I set aside a little time each month for community help, at my discretion. It's a habit, not a claim to be a nonprofit.
 
 ## Products
 
-neon1 also builds tools: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md), all public, each with its own license and release status. I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
+neon1 also builds tools, all public, each with its own license and release status: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md). I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
 
 ## Related companies
 
