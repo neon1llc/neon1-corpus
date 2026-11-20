@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-07
-edition: "1.16"
+edition: "1.17"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -30,7 +30,9 @@ Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Easte
 
 ## Can I start without a call?
 
-Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1) and write down what you need, on your own time. When it's ready, ask for a free assessment and book the 30-minute call. I read your project before we talk.
+Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), outline up to three projects on your own time, then ask for a free assessment of any or all of them. I read them and reply by email.
+
+You don't need a call first, and a call doesn't need an assessment first. [Book the free 30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) whenever you'd rather talk.
 
 [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
 

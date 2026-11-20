@@ -4,9 +4,9 @@ title: "Getting ready for a first call"
 summary: "What to bring to a free 30-minute call with neon1."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.5"
+edition: "1.6"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -15,7 +15,7 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and takes about 30 minutes. It's about your needs: the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've written your project down in a [free 1NEON account](free-accounts.md) and asked for an assessment, I read it before we talk.
+The first call is free and takes about 30 minutes. It's about your needs: the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've outlined a project in a [free 1NEON account](free-accounts.md) and asked for an assessment, I read it before we talk. You can book the call without one.
 
 ## Bring one real example
 
