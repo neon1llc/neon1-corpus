@@ -9,12 +9,12 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-20
 created: 2025-09-07
-edition: "2.3"
+edition: "2.4"
 ---
 
 # Services
 
-neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals, from a focused assessment to a complete implementation. I do the work myself.
+neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals, from a focused assessment to a complete implementation.
 
 ## Four services
 

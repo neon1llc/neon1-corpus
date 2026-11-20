@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.51.8 - 2026-11-20
+
+### Changed
+- "I do the work myself" is gone from About (edition 2.2) and Services (edition 2.4). Taking a few clients at a time already says it.
+
 ## v0.51.7 - 2026-11-20
 
 ### Changed
