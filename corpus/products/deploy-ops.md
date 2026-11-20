@@ -8,14 +8,14 @@ pdf: false
 stage: "local developer preview, not production-supported"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-03
-edition: "1.7"
+edition: "1.8"
 ---
 
 # DeployOps
 
-*Public · v0.14.0 · local developer preview, not production-supported*
+*Public · v0.15.0 · local developer preview, not production-supported*
 
 **Deploy pipelines with checks, approvals, and rollback.** The code is on [GitHub](https://github.com/neon1llc/deploy-ops) under the Apache-2.0 license.
 

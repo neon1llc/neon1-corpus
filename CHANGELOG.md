@@ -4,12 +4,19 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.51.0 - 2026-11-20
+
 ### Added
 - Outlining a project in 1NEON (edition 1.0): the six outline parts with a good answer for each, where each part goes once work starts, how Ready for Execute adds up, and how to ask for the free assessment.
 
 ### Changed
 - Free 1NEON accounts (edition 1.6), Getting ready for a first call (1.6), Contact (1.11), Working with neon1 (1.17), 1NEON help (2.8), Neo (3.2), Why neon1 (1.4), and 1NEON (1.7): a free account outlines up to three projects, then asks for a free assessment with a required note. The free 30-minute call is the other way in, and neither needs the other first.
 - The 1NEON guide pages (edition 1.13), people and account (1.14), and projects (2.7): Home's Next step (who sees it, the note, the last look, the 30-minute wait with Edit and Withdraw, and the weekly call request), outline tips by email, Get to know 1NEON, and a project's Ready for Execute with its six parts, tips, and where each part goes.
+
+### Fixed
+- Working hours read the same everywhere: Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time. Corrected in the proposal and services agreement templates (editions 1.6 and 1.5) and the two filled-in proposals (editions 1.6 and 3.1).
+- The dermatology intake figure is given in days, as on the site: Intake out of the inbox (edition 1.7) and the capability statement (edition 2.1).
+- Product pages name each tool's and guide's current release: AWS CLIP v0.2.0, DeployOps v0.15.0, Ready, Secure, Go v0.1.7, and the five companion guides.
 
 ## v0.50.2 - 2026-11-19
 

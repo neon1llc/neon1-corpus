@@ -8,15 +8,15 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-12
-edition: "1.3"
+edition: "1.4"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
 # SOC 2 readiness, step by step
 
-*Public · v0.1.3*
+*Public · v0.1.6*
 
 **SOC 2 readiness, as a course you can work through.** Open training that takes a company from a customer's first "do you have a SOC 2 report?" to ready for a first audit, without buying a compliance platform first. It's open on [GitHub](https://github.com/neon1llc/soc-2-readiness).
 

@@ -8,15 +8,15 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-12
-edition: "1.3"
+edition: "1.4"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go]
 ---
 
 # Incident response for small teams
 
-*Public · v0.1.1*
+*Public · v0.1.4*
 
 **Plan for a security incident, practice it, and handle a real one.** Open on [GitHub](https://github.com/neon1llc/incident-response-for-small-teams) for owners, office managers, IT providers, and trainers at businesses with 2 to 50 people, especially those holding client financial, tax, or health information.
 
