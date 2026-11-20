@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-20
-edition: "1.1"
+edition: "1.2"
 consumers: [knowledge, ai, portal]
 pdf: false
 audience: "Anyone writing a project down in a free or client 1NEON account"
@@ -58,4 +58,4 @@ It reaches 100% only with a decision, and then it goes away: Execute starts, and
 
 Choose one to three outlined projects under **Next step** on Home and add a required note of a sentence or two (at least 20 characters). A last look shows what a project could still say, and you can submit anyway. The request goes to me 30 minutes after your last change, so you can edit or withdraw it until then, and an edit after it's sent goes out as an update.
 
-Prefer to talk first? [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation). Neither the call nor the assessment needs the other first. Details are in [free 1NEON accounts](free-accounts.md).
+Prefer to talk first? [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation). Neither the call nor the assessment needs the other first. Details are in [how 1NEON accounts work](free-accounts.md).

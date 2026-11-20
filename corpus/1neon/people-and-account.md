@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "1.16"
+edition: "1.17"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -18,7 +18,7 @@ origin: "neon1-1NEON apps/api/src (auth, factors, me, notifications) and apps/we
 
 ## Getting in
 
-People join by invitation or by making their own free account. An admin of the organization, or neon1, invites a person by email, and they open the link and enter their email. When sign-up is open, someone new chooses **Start for free** on the sign-in screen and gives:
+People join by invitation or by making their own free account. An admin of the organization, or neon1, invites a person by email, and they open the link and enter their email. When sign-up is open, someone new chooses **Create an account** on the sign-in screen and gives:
 
 - An email, their name (one name is fine), which describes them best, and their organization's name (not asked of an individual, optional for **Something else**).
 - Optionally, a website or public page, a city and state (a state alone, or a place outside the US), and how they found neon1.

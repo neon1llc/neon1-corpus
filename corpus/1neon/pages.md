@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "1.16"
+edition: "1.17"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -26,7 +26,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Coming up** shows three weeks of due dates, milestones, and targets, then the next six weeks by Overdue, This week, Next week, and Later.
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Your account**, in a free account only, shows the date it's deleted if nothing changes, with **Keep it 30 more days** (once) and **Download a copy**.
-- **Get to know 1NEON**, in the side column for everyone but neon1's own people, links to **A sample project**, **From free account to client** (**The guided walkthrough** for neon1's own clients), **Try the demo**, **FAQs**, and, in a free account, **How free accounts work**. **Hide** puts it away, and the profile's Tutorial setting brings it back.
+- **Get to know 1NEON**, in the side column for everyone but neon1's own people, links to **A sample project**, **From sign-up to client** (**The guided walkthrough** for neon1's own clients), **Try the demo**, **FAQs**, and, in a free account, **How accounts work**. **Hide** puts it away, and the profile's Tutorial setting brings it back.
 - **Next step**, above Needs you for editors and admins (not neon1's own people), is where a project goes from outlined to assessed. A free account always sees it. A client organization sees it only while a project is waiting for an assessment: no options yet, and in the first stage.
   - With no projects, it says to outline one (up to three) with **Start a project**.
   - A free account lists each project with a six-segment meter of outline parts written, a tip for what's missing, and **Continue**. A fully outlined project says "Fully outlined" with **Review**. A client organization sees only what was sent and when.
@@ -34,7 +34,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
   - A saved request goes to neon1 30 minutes after its last change, and never within an hour of the previous email. Until then **Edit** unlocks it and **Withdraw** stops it. After it goes, the card says "Sent" with the date, and an edit sends neon1 "Assessment request updated". The reply comes by email.
   - In a free account, **Book a 30-minute call** opens the booking page, or **ask me to reach out** sends a call request with an optional note, once a week. A client organization sees **Contact neon1**. Neither the call nor the assessment needs the other first.
 
-How the assessment and outline work is in [free 1NEON accounts](../guides/free-accounts.md) and [outlining a project](../guides/outline-a-project.md).
+How the assessment and outline work is in [how 1NEON accounts work](../guides/free-accounts.md) and [outlining a project](../guides/outline-a-project.md).
 
 ## Board, projects, and layers
 

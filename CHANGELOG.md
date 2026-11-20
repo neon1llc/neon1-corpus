@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.51.6 - 2026-11-20
+
+### Changed
+- 1NEON help (edition 2.12) now matches the portal's own help word for word: the sign-in button is "Create an account" and appears only while sign-up is open, and "free" stays only where the file limits are stated.
+- The account guide, formerly "Free 1NEON accounts" (edition 1.9), is now "How 1NEON accounts work", the link in Home's Get to know 1NEON, and the 1NEON guide pages (pages 1.17, people and account 1.17) use the portal's names: "Create an account", "From sign-up to client", and "How accounts work".
+
 ## v0.51.5 - 2026-11-20
 
 ### Changed

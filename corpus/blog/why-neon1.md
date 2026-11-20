@@ -11,7 +11,7 @@ topic: whats-and-whys
 status: adopted
 updated: 2026-11-20
 created: 2026-11-15
-edition: "1.6"
+edition: "1.7"
 consumers: [blog, ai]
 pdf: false
 audience: "Small business owners deciding whether neon1 is worth a conversation"
@@ -41,6 +41,6 @@ Small Business Saturday is November 28. If something about your technology has b
 ## Sources
 
 - [Small Business Saturday](https://www.sba.gov/Saturday), U.S. Small Business Administration: the November 28, 2026 date and the count of more than 36.2 million independent businesses.
-- [Free accounts](../guides/free-accounts.md), neon1: what a free 1NEON account holds and how it becomes a client account.
+- [How 1NEON accounts work](../guides/free-accounts.md), neon1: what a free 1NEON account holds and how it becomes a client account.
 - [How a project runs](../engagement/process.md), neon1: the five steps.
 - [Services](../engagement/index.md), neon1: the four kinds of work and their usual costs.
