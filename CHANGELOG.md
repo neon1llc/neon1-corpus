@@ -2,6 +2,13 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.51.7 - 2026-11-20
+
+### Changed
+- The privacy policy and cookie notice no longer feed Neo, which links to them instead.
+- Legal pages say each retention period, number, and commitment once: the terms of use, privacy policy, cookie notice, security disclosure, AI use, accessibility statement, services agreement template, and business associate agreement example are shorter, and no obligation, right, or protection changed. The service agreement changes only in punctuation. The full list is in CHANGES-LEGAL.md.
+- Shorter guides, products, pricing, the tax preparer and Why neon1 posts, Working with neon1, security and data, and reliability and recovery: repeated steps, case-study lists, and install detail now live on one page and are linked.
+
 ## v0.51.6 - 2026-11-20
 
 ### Changed

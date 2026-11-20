@@ -4,12 +4,12 @@ title: Business associate agreement
 summary: "An example HIPAA business associate agreement with neon1 LLC as the business associate, modeled on the HHS sample provisions."
 type: template
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-20
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.1"
+edition: "1.2"
 origin: "Modeled on the HHS Office for Civil Rights sample business associate agreement provisions (January 2013), adapted for neon1 LLC"
 related: [templates-baa-request, examples-baa-request, standards-security-and-data, policy-privacy]
 ---
@@ -17,7 +17,7 @@ related: [templates-baa-request, examples-baa-request, standards-security-and-da
 # Business associate agreement
 
 > [!warning] An example, not legal advice
-> This is an example to show what neon1 LLC agrees to when a project involves protected health information. It follows the structure of the sample provisions published by the U.S. Department of Health and Human Services, which says using its sample isn't required for compliance. Your agreement should be reviewed by your own counsel and fitted to your practice, your state, and the actual services. Where a signed agreement differs from this example, the signed agreement governs.
+> This example shows what neon1 LLC agrees to when a project involves protected health information. It follows the sample provisions published by the U.S. Department of Health and Human Services, which says using its sample isn't required for compliance. Your counsel should review and fit it to your practice, your state, and the services. Where a signed agreement differs, the signed agreement governs.
 
 This Business Associate Agreement ("Agreement") is made on ____ ("Effective Date") between ____ ("Covered Entity") and neon1 LLC, a New York limited liability company ("Business Associate"), together the "Parties."
 

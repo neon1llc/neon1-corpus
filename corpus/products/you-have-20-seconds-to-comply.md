@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.6"
+edition: "1.7"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -33,4 +33,4 @@ It explains rules in plain words and points to the official text. It covers fede
 
 ## Next step
 
-For help applying it, my [security awareness and readiness](../engagement/index.md) work turns a walkthrough into training sessions, policies, and records that fit your business. [Contact me](../engagement/contact.md).
+For help turning a walkthrough into training, policies, and records, see my [security awareness and readiness](../engagement/index.md) work, or [contact me](../engagement/contact.md).

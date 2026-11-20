@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-19
-edition: "1.2"
+edition: "1.3"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Organizations facing a security review, a customer requirement, or a risk they want closed"
@@ -48,14 +48,3 @@ Prioritized findings, a remediation plan, the changes made and verified, and evi
 
 Work with health information starts only after a [business associate agreement](../templates/business-associate-agreement.md) is signed.
 
-## Awareness sessions
-
-I also run [security awareness sessions](use-case-security-awareness.md) for groups.
-
-## Related work
-
-- Access, encryption, malware scanning, and audit logging in the [patient intake portal](../case-studies/intake-out-of-the-inbox.md), a neon1 subcontracted engagement.
-- Permission checks before retrieval in the [permission-aware document assistant](../case-studies/answers-in-seconds.md), a neon1 subcontracted engagement.
-- [Ready, Secure, Go](../products/ready-secure-go.md) and [SOC 2 readiness, step by step](../products/soc-it-2-me.md), neon1's open guides.
-
-[Book a call](../engagement/contact.md) with the review or requirement you're facing and its deadline.

@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-07
-edition: "1.21"
+edition: "1.22"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -44,13 +44,13 @@ What you approve in a [proposal](../examples/proposal.md) is what we both agree 
 
 I work in planned appointments, with no 24/7 or emergency response. An incident in progress or an outage needs a provider with emergency coverage first.
 
-For anything your business can't go a day without, I take the work only when someone on your side runs it day to day, and the handover is written for that person. A care plan sets my response times in writing, within my working hours.
+For anything your business can't go a day without, someone on your side must run it day to day. A care plan sets my response times in writing, within my working hours.
 
 ## How is the cost worked out?
 
 After we talk, I send a short proposal: one recommendation, or options when there's a real choice, each with what it covers, its upkeep, and its cost. You approve it, and the cost changes only if you approve a change.
 
-Every option has the same security baseline: multi-factor sign-in, the least access the job needs, encryption that fits the data, a tested restore, and a way back from every big change. A smaller option does less, not worse. The proposal also gives the schedule, and larger projects run in phases you approve one at a time. Ranges, invoices, deposits, and payment methods are in [pricing](../engagement/pricing.md).
+Every option has the same security baseline, and a smaller option does less, not worse. The proposal also gives the schedule, and larger projects run in phases you approve one at a time. Ranges, invoices, and payment methods are in [pricing](../engagement/pricing.md).
 
 ## Do you run security training?
 

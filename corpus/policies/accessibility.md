@@ -4,9 +4,9 @@ title: Accessibility statement
 summary: "neon1.tech aims for WCAG 2.2 AA. What's in place, what isn't yet, and how to report a barrier."
 type: policy
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.1"
+edition: "1.2"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/knowledge/policies/accessibility/"
@@ -17,7 +17,7 @@ related: [standards-design-and-accessibility, policy-security]
 
 *Last updated November 15, 2026.*
 
-I want everyone to be able to use neon1.tech, the 1NEON portal, and the documents in the Knowledge Center, including people who use a screen reader, a keyboard, magnification, voice control, or reduced motion.
+neon1.tech, the 1NEON portal, and the Knowledge Center documents should work for people who use a screen reader, a keyboard, magnification, voice control, or reduced motion.
 
 ## The goal
 

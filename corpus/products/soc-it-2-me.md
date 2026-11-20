@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.6"
+edition: "1.7"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -31,4 +31,4 @@ Only a licensed CPA firm can issue a SOC 2 report. It doesn't yet cover the Proc
 
 ## Next step
 
-For help applying it, my [SOC 2 readiness](../engagement/index.md) work maps controls, gathers evidence, and fixes the basics before the auditor arrives. [Contact me](../engagement/contact.md).
+For help applying it, see my [SOC 2 readiness](../engagement/index.md) work, or [contact me](../engagement/contact.md).

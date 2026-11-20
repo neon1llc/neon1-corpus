@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "2.1"
+edition: "2.2"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Teams, organizations, and families"
@@ -38,6 +38,4 @@ To change controls as well as habits, pair a session with [security readiness](u
 - Recover an account, or know who to call
 - Report something suspicious without feeling foolish
 
-## Related
-
-[A password manager for your family](password-manager-for-family.md), [security and data](../standards/security-and-data.md), [Ready, Secure, Go](../products/ready-secure-go.md), neon1's security readiness guide, and the [phishing awareness session kit](../products/phish-out-of-water.md) behind these sessions.
+See also [a password manager for your family](password-manager-for-family.md), the [phishing awareness session kit](../products/phish-out-of-water.md), and [Ready, Secure, Go](../products/ready-secure-go.md).

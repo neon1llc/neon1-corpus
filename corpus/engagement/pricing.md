@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-20
 created: 2026-11-13
-edition: "1.7"
+edition: "1.8"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true
@@ -38,14 +38,7 @@ As of November 2026.
 | A larger build or move, several weeks or more | $3,000 or more, in phases you approve one at a time | A portal in your own cloud account, a migration with a tested fallback, or controls before an audit |
 | Care after a project | A monthly plan | Updates, checks, and a set response time in a [care plan](../templates/care-plan.md) |
 
-Fictional examples with illustrative figures:
-
-| Service | Situation | Recommended work | Priced as |
-|---|---|---|---|
-| Workflow automation | A retailer's store and point-of-sale disagree on stock | Sync them on a shared item ID, with an exception report | An estimate, $2,400 to $3,000 |
-| Cloud and AI engineering | A team wants an independent look at one AWS account before a renewal | A written review of architecture, access, and cost, with a costed list of changes | A fixed price, $1,500 |
-| Networks and connected systems | A two-site business runs cameras, point-of-sale, and guest Wi-Fi on one flat network | Segment both sites and link them by VPN, with a diagram, an inventory, and recovery steps. Cabling by a licensed installer | A fixed price, $2,800 |
-| Security readiness | A company faces a customer's security questionnaire in six weeks | A fixed-price review, then a choice: fix the top findings together, or have the team fix them with written guidance | $1,200, then an estimate of $3,000 to $4,500 or a fixed $600 |
+Fictional examples: syncing a retailer's store and point-of-sale on a shared item ID with an exception report is an estimate of $2,400 to $3,000. An independent review of one AWS account before a renewal is a fixed $1,500. Segmenting a two-site business's network and linking the sites by VPN, with a diagram and recovery steps, is a fixed $2,800. A security questionnaire review is a fixed $1,200, then a choice between an estimate of $3,000 to $4,500 to fix the findings together or a fixed $600 for written guidance.
 
 ## What's included, and what isn't
 
@@ -67,7 +60,7 @@ These ranges aren't a floor. I sometimes price below them for a neighborhood bus
 
 ## How this compares
 
-Published 2026 figures for the United States and New York: general IT consulting firms quote about $150 to $300 an hour, and a one-time assessment at $1,500 to $5,000. Modeled New York contract rates run about $90 to $115 an hour for a business systems analyst and $114 to $170 for a software engineer. A simple automation from a freelancer runs about $500 to $1,500, and a multi-step one from an agency $3,000 to $8,000. Managed IT for a small New York office runs about $85 to $200 per person each month.
+Published 2026 figures: general IT consulting firms quote about $150 to $300 an hour, a simple automation from a freelancer runs about $500 to $1,500, and managed IT for a small New York office runs about $85 to $200 per person each month.
 
 ## Sources
 

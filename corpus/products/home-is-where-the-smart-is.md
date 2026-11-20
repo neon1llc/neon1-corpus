@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.6"
+edition: "1.7"
 related: [guides-password-manager-for-family, guides-backups-you-can-trust, product-phish-out-of-water]
 ---
 
@@ -31,4 +31,4 @@ Credit freeze and reporting steps are for the United States. Settings menus chan
 
 ## Next step
 
-Start with the guides to [a password manager for your family](../guides/password-manager-for-family.md) and [backups you can trust](../guides/backups-you-can-trust.md). For hands-on help at home, [contact me](../engagement/contact.md).
+Start with [a password manager for your family](../guides/password-manager-for-family.md) and [backups you can trust](../guides/backups-you-can-trust.md). For hands-on help at home, [contact me](../engagement/contact.md).

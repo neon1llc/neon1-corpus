@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-19
-edition: "1.1"
+edition: "1.2"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Businesses with sites, devices, or cameras to connect, and households that want their network built properly"
@@ -49,11 +49,5 @@ Access to the current equipment and accounts, the ISP details, and a decision on
 ## Limits
 
 I design and configure. Cabling and physical installation are done by a qualified installer, arranged per project. No licensed electrical or alarm-system work, safety-critical systems, or electronics repair. On-site work is within about 30 miles of Queens, NY.
-
-## Related work
-
-- The separate device network and camera integration in [operations integration and monitoring](../case-studies/one-view-of-the-shop.md), a neon1 engagement.
-- The site-to-site VPN and separated access paths in the [two-site server migration](../case-studies/two-offices-off-local-servers.md), a neon1 engagement.
-- [Home is where the smart is](../products/home-is-where-the-smart-is.md), neon1's household technology handbook.
 
 [Book a call](../engagement/contact.md) with the sites, devices, and what has to stay running.

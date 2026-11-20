@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-20
-edition: "1.2"
+edition: "1.3"
 consumers: [knowledge, ai, portal]
 pdf: false
 audience: "Anyone writing a project down in a free or client 1NEON account"
@@ -45,14 +45,7 @@ These are made up, for a building-supply yard.
 
 ## Ready for Execute
 
-Each project's Overview shows **Ready for Execute**, a percent from 0 to 100 before the work starts:
-
-- 10 for each outline part, up to 60.
-- 10 when the project has been sent for an assessment.
-- 10 when I've shared options.
-- 20 when one option is approved with a signature.
-
-It reaches 100% only with a decision, and then it goes away: Execute starts, and the outline becomes the plan. I can work with whatever is written.
+Each project's Overview shows **Ready for Execute**, a percent from 0 to 100 before the work starts: 10 for each outline part (up to 60), 10 when the project has been sent for an assessment, 10 when I've shared options, and 20 when one option is approved with a signature. It reaches 100% only with a decision, and then it goes away. I can work with whatever is written.
 
 ## Then ask for the assessment
 

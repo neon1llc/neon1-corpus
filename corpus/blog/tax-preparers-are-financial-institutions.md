@@ -11,7 +11,7 @@ topic: questions
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.11"
+edition: "1.12"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -22,7 +22,7 @@ related: [product-you-have-20-seconds-to-comply, product-phish-out-of-water, gui
 
 A couple, invented for this example, has had their taxes done at the same small office for years. In February they e-file as always, and a day later it bounces. Someone already filed under their Social Security number, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate found identity theft victims waiting nearly two years for the IRS to resolve cases like this.
 
-The thief didn't need to break into the IRS. Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account.
+Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account.
 
 The Federal Trade Commission [names tax preparation services](https://www.ecfr.gov/current/title-16/section-314.2) as a "financial institution" under its [Safeguards Rule](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), whether you work alone at a kitchen table or run a ten-person firm. The Gramm-Leach-Bliley Act requires financial institutions to protect customers' personal information, and for most businesses outside banking the FTC enforces it through [16 CFR Part 314](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314). The FTC [rewrote the rule in 2021](https://www.federalregister.gov/documents/2021/12/09/2021-25736/standards-for-safeguarding-customer-information), mostly effective June 9, 2023, and a [later amendment](https://www.federalregister.gov/documents/2023/11/13/2023-24412/standards-for-safeguarding-customer-information) added a duty to report certain breaches, starting May 13, 2024.
 
@@ -55,7 +55,7 @@ The IRS's online tool for an [Identity Protection PIN](https://www.irs.gov/ident
 
 ## What to get done before January
 
-It takes a few evenings, not a large budget. In your office, I'd go in this order:
+It takes a few evenings. In your office, I'd go in this order:
 
 - [ ] Name your Qualified Individual, and write it down.
 - [ ] Fill in Publication 5708 with how your office works today, not how you wish it worked.
@@ -68,11 +68,9 @@ It takes a few evenings, not a large budget. In your office, I'd go in this orde
 - [ ] Do a test restore from your backup.
 - [ ] Write down who to call, and in what order, if a laptop goes missing or an account gets taken over.
 
-Revisit the plan when something changes, such as a new hire, new software, or a second location.
-
 ## Going further
 
-[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) has a staff checklist, a paperwork list, and a 20-day learning plan. The [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are on GitHub, and you can use them without talking to me. I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) and the [Phishing awareness session kit](../products/phish-out-of-water.md) are on GitHub, and you can use them without talking to me. I do this work for small offices around Queens: MFA, encryption and backups, the plan from Publication 5708, and the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
 
 ## Sources
 

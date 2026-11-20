@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "2.1"
+edition: "2.2"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Engineering leads, technical founders, and businesses running software in the cloud"
@@ -50,11 +50,5 @@ I work in your repositories, follow your conventions and change process, and agr
 ## Limits
 
 No round-the-clock operations or migrations that need a team. An AI demo isn't a production system, so AI work includes evaluation, access control, and a named human owner, or it doesn't ship.
-
-## Related work
-
-- [Permission-aware document assistant](../case-studies/answers-in-seconds.md), a neon1 subcontracted engagement.
-- [Two-site server migration](../case-studies/two-offices-off-local-servers.md), a neon1 engagement.
-- [AWS CLIP](../products/aws-clip.md) and [DeployOps](../products/deploy-ops.md), neon1's own open-source tools.
 
 [Book a call](../engagement/contact.md) with the system, the decision or change ahead, and how your team will judge the result.

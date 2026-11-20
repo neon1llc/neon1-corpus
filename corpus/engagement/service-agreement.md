@@ -8,9 +8,9 @@ short:
   - "An admin signs once in 1NEON. Either of us can end it with 14 days' notice."
 type: policy
 status: adopted
-updated: 2026-11-13
+updated: 2026-11-20
 created: 2026-11-12
-edition: "2.0"
+edition: "2.1"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 published: "https://neon1.tech/1NEON/agreement"
@@ -34,7 +34,7 @@ Prices for equipment, software, and services from other vendors are estimates. Y
 
 ## Paying
 
-I send invoices through 1NEON. Each one is due within 15 days unless it says otherwise. An option's price is either fixed or an estimate, and the proposal says which. A fixed price is the whole price for the work described. An estimate is billed for the hours I work, at the rate it states; each hour is listed in 1NEON, and the total never passes the estimate's high end unless you approve a change first. An option may ask for a deposit when it is approved, as the proposal states. A deposit counts toward the final invoice; if the work done comes to less than a deposit you paid, I refund the difference. You can pay by bank transfer (ACH), card, check, Zelle, or wire. If an invoice is more than 30 days overdue, I may pause work until it is paid, after telling you.
+I send invoices through 1NEON. Each one is due within 15 days unless it says otherwise. An option's price is either fixed or an estimate, and the proposal says which. A fixed price is the whole price for the work described. An estimate is billed for the hours I work, at the rate it states. Each hour is listed in 1NEON, and the total never passes the estimate's high end unless you approve a change first. An option may ask for a deposit when it is approved, as the proposal states. A deposit counts toward the final invoice. If the work done comes to less than a deposit you paid, I refund the difference. You can pay by bank transfer (ACH), card, check, Zelle, or wire. If an invoice is more than 30 days overdue, I may pause work until it is paid, after telling you.
 
 ## What you provide
 

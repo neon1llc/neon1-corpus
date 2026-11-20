@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -20,20 +20,11 @@ Targets come from how much interruption and data loss your business can tolerate
 
 ## Define the service first
 
-A service profile names the task that matters, operating hours, users, normal volume, dependencies, data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." Normal, degraded, and failed states are described separately: a form that sends its email late hasn't lost the request.
-
-Dependencies such as sign-in, email, payments, and your internet connection are listed, with which failures the design survives.
+A service profile names the task that matters, operating hours, users, dependencies (sign-in, email, payments, your internet connection, and which failures the design survives), data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." Normal, degraded, and failed states are described separately: a form that sends its email late hasn't lost the request.
 
 ## What a percentage costs
 
-| Availability target | Allowed downtime in 30 days |
-|---|---|
-| 99% | 7 hours 12 minutes |
-| 99.5% | 3 hours 36 minutes |
-| 99.9% | 43 minutes |
-| 99.99% | 4 minutes |
-
-Someone unavailable until the weekend can't meet 99.9% for anything a human must fix, so I don't sell targets the coverage can't back.
+In 30 days, 99% allows 7 hours 12 minutes of downtime, 99.5% allows 3 hours 36 minutes, 99.9% allows 43 minutes, and 99.99% allows 4 minutes. Someone unavailable until the weekend can't meet 99.9% for anything a human must fix, so I don't sell targets the coverage can't back.
 
 ## Setting a target together
 
@@ -41,10 +32,7 @@ I ask what happens if the task fails for five minutes, an hour, a day, and a wee
 
 ## Recoverable data is more than a schedule
 
-An hourly backup doesn't cap data loss at an hour. Jobs fail, copies come out incomplete, credentials get lost, and corruption is found late. Recovery also needs uploaded files, configuration, and the decryption keys.
-
-> [!example] Counting data loss
-> Trouble starts at 10:15. The last backup finished at 9:00, but the data in it only goes up to 8:30. You've lost an hour and forty-five minutes of work, not an hour and fifteen.
+An hourly backup doesn't cap data loss at an hour. Jobs fail, copies come out incomplete, credentials get lost, and corruption is found late. If trouble starts at 10:15 and the last backup finished at 9:00 but only holds data up to 8:30, you've lost an hour and forty-five minutes, not an hour and fifteen. Recovery also needs uploaded files, configuration, and the decryption keys.
 
 Replication and file sync copy deletions and corruption too. I keep an independent copy that matches the threat, following the 3-2-1 idea (several copies, different places, one off site) plus an offline or locked copy and regular test restores, as [CISA recommends](https://www.cisa.gov/stopransomware/ransomware-guide).
 
@@ -59,22 +47,17 @@ Replication and file sync copy deletions and corruption too. I keep an independe
 
 ## A real restore test
 
-1. Pick a safe, separate destination and a scenario, such as losing the main database or the admin account.
-2. Confirm it won't touch the live system or contact real customers.
-3. Start the clock at the agreed disruption point.
-4. Get the backup and keys through the documented route, then restore data and configuration.
-5. Check counts, key records, permissions, and a few real tasks. A success message alone isn't enough.
-6. Measure the actual recovery point and the full elapsed time, and note every manual step.
-7. You confirm the restored result is usable.
-8. Clean up the test copy, update the instructions, and schedule the next test.
+1. Pick a safe, separate destination and a scenario, such as losing the main database or the admin account, and confirm it won't touch the live system or contact real customers.
+2. Start the clock at the agreed disruption point, get the backup and keys through the documented route, and restore data and configuration.
+3. Check counts, key records, permissions, and a few real tasks. A success message alone isn't enough.
+4. Measure the actual recovery point and the full elapsed time, and note every manual step.
+5. You confirm the restored result is usable. Then I clean up the test copy, update the instructions, and schedule the next test.
 
 Restores are tested before handover, after big changes, and at an agreed interval.
 
 ## When something breaks
 
-An incident disrupts or threatens normal work. A request asks for access, advice, or a change. Severity comes from the consequences to you. Each incident names who coordinates, who can change the system, and your contact, with a timestamped log. Updates say what's affected, known, and unknown, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep evidence intact, and bring in the right specialist or insurer.
-
-A short review afterward covers what happened and what changes, focused on conditions, not blame.
+Each incident names who coordinates, who can change the system, and your contact, with a timestamped log. Updates say what's affected, known, and unknown, what you can do meanwhile, and when the next update comes. Suspected security incidents follow your agreed route, keep evidence intact, and bring in the right specialist or insurer. A short review afterward covers what happened and what changes, focused on conditions, not blame.
 
 ## What ongoing care covers
 

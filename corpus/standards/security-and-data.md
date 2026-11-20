@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -40,21 +40,7 @@ For multi-user apps, I test permissions on the server, since hiding a button doe
 
 ## The baseline
 
-| Area | Practice | Evidence kept |
-|---|---|---|
-| Inventory | Systems, accounts, vendors, data, and owners are named | A dated inventory, unknowns included |
-| Sign-in | Multi-factor sign-in and protected recovery | Configuration evidence, never the codes |
-| Permissions | Least access, with tests that someone can't get in | Role table and test results |
-| Devices | Supported software, updates, disk encryption | A device baseline and update record |
-| Storage and transfer | Encryption, retention, and access that fit the data | A data-flow record |
-| Secrets | Kept out of code, rotated when exposed | An inventory by name, never the values |
-| Backup | Recovery that doesn't share the original's weak points | A restore test |
-| Logging | Important actions logged without sensitive content | Sample redacted events |
-| Vulnerabilities | Findings triaged and fixes rechecked | Finding, decision, fix, recheck |
-| Changes | Big changes reviewed, with a way back | Version, approval, and release record |
-| Incidents | Contacts, authority, and a fallback are written down | A current incident procedure |
-
-When the stakes call for it, I bring in a specialist.
+Every project keeps a named inventory of systems, accounts, vendors, data, and owners, with unknowns included. Sign-in uses multi-factor authentication and protected recovery. Permissions are least access, with tests that someone can't get in. Devices run supported software with updates and disk encryption. Storage and transfer use encryption, retention, and access that fit the data. Secrets stay out of code and are rotated when exposed. Backups don't share the original's weak points and have a restore test. Important actions are logged without sensitive content. Findings are triaged and fixes rechecked, big changes are reviewed with a way back, and incident contacts, authority, and a fallback are written down. Evidence is kept for each, never codes or secret values. When the stakes call for it, I bring in a specialist.
 
 ## Software, threats, vulnerabilities, and privacy
 
