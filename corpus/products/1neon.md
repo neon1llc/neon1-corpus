@@ -30,6 +30,6 @@ The neon1 client portal at [neon1.tech/1NEON](https://neon1.tech/1NEON/). Each p
 
 ## Next step
 
-[See how it works](https://neon1.tech/1NEON/live) in a guided walkthrough of a fictional project, about three minutes. You can also read a [sample project](https://neon1.tech/1NEON/example) or [try the demo](https://neon1.tech/1NEON/demo/), which runs in your browser with made-up data. To use 1NEON for real, [make a free account](../guides/free-accounts.md), outline a project, and ask for a free assessment, or start with [a first call](../engagement/contact.md). For help inside the portal, see [1NEON help](../faq/1neon-help.md).
+[See how it works](https://neon1.tech/1NEON/live) in a guided walkthrough of a fictional project, about three minutes. You can also read a [sample project](https://neon1.tech/1NEON/example) or [try the demo](https://neon1.tech/1NEON/demo/), which runs in your browser with made-up data. To use 1NEON for real, [make a free account](../guides/free-accounts.md), outline a project, and ask for an assessment, or start with [a first call](../engagement/contact.md). For help inside the portal, see [1NEON help](../faq/1neon-help.md).
 
 Code: [neon1llc/neon1-1NEON](https://github.com/neon1llc/neon1-1NEON).

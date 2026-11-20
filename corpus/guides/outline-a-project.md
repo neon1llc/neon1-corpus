@@ -60,4 +60,4 @@ Choose one to three outlined projects under **Next step** on Home and add a note
 
 In a free account, 1NEON also emails tips about 3 and 7 days after your last change while an outline is unfinished and nothing is waiting for me. Turn them off under Outline tips in your profile's Notifications.
 
-Prefer to talk first? [Book the free 30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation). The call doesn't need an assessment first, and an assessment doesn't need a call first. Details are in [free 1NEON accounts](free-accounts.md).
+Prefer to talk first? [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation). The call doesn't need an assessment first, and an assessment doesn't need a call first. Details are in [free 1NEON accounts](free-accounts.md).

@@ -15,7 +15,7 @@ related: [forms-discovery, standards-discovery-and-delivery, examples-intake]
 
 # Intake
 
-Filled in during or right after the free first call. Don't write passwords, health details, or payment information here.
+Filled in during or right after the first call. Don't write passwords, health details, or payment information here.
 
 ## You
 
