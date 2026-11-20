@@ -9,7 +9,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ### Changed
 - Free 1NEON accounts (edition 1.6), Getting ready for a first call (1.6), Contact (1.11), Working with neon1 (1.17), 1NEON help (2.8), Neo (3.2), Why neon1 (1.4), and 1NEON (1.7): a free account outlines up to three projects, then asks for a free assessment with a required note. The free 30-minute call is the other way in, and neither needs the other first.
-- The 1NEON guide pages (edition 1.13), people and account (1.14), and projects (2.7): Home's Next step (who sees it, choosing projects, the note, the last look, the 14-day wait, and the weekly limit), Get to know 1NEON, and a project's Ready for Execute with its six parts, tips, and where each part goes.
+- The 1NEON guide pages (edition 1.13), people and account (1.14), and projects (2.7): Home's Next step (who sees it, the note, the last look, the 30-minute wait with Edit and Withdraw, and the weekly call request), outline tips by email, Get to know 1NEON, and a project's Ready for Execute with its six parts, tips, and where each part goes.
 
 ## v0.50.2 - 2026-11-19
 

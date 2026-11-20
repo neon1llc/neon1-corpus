@@ -56,6 +56,8 @@ It reaches 100% only with a decision, and then it goes away: Execute starts, the
 
 ## Then ask for the assessment
 
-Choose one to three outlined projects under **Next step** on Home and add a note. The note is required, at least 10 characters, for anything you want me to keep in mind. Before it goes, 1NEON shows what a project could still say, and you can send it anyway. A project already sent waits 14 days before it can be sent again.
+Choose one to three outlined projects under **Next step** on Home and add a note. The note is required, a sentence or two (at least 20 characters), for anything you want me to keep in mind. A last look shows what a project could still say, and you can submit anyway. The request goes to me 30 minutes after your last change, so you can edit or withdraw it until then, and an edit after it's sent goes out as an update.
+
+In a free account, 1NEON also emails tips about 3 and 7 days after your last change while an outline is unfinished and nothing is waiting for me. Turn them off under Outline tips in your profile's Notifications.
 
 Prefer to talk first? [Book the free 30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation). The call doesn't need an assessment first, and an assessment doesn't need a call first. Details are in [free 1NEON accounts](free-accounts.md).
