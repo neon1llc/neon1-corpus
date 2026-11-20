@@ -16,7 +16,7 @@ related: [standards-security-and-data, policy-privacy]
 
 # Security disclosure
 
-*Last updated November 15, 2026.*
+*Last updated November 20, 2026.*
 
 If you think you've found a security problem in neon1.tech, the 1NEON portal, Neo, or any [neon1llc repository](https://github.com/neon1llc), thank you. Please tell me privately so it can be fixed first.
 

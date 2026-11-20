@@ -15,7 +15,7 @@ origin: neon1-1NEON apps/web/src/legal/cookie-notice.md
 
 # Cookies and browser storage
 
-*Last updated November 17, 2026.* Matrix or Sentinel and light or dark mode are saved separately, shared with neon1.tech. Older theme preferences remain readable during migration. There is no new tracking.
+*Last updated November 20, 2026.* Matrix or Sentinel and light or dark mode are saved separately, shared with neon1.tech. Older theme preferences remain readable during migration. There is no new tracking.
 
 This notice is part of the [privacy and data policy](https://neon1.tech/1NEON/privacy) and lists every cookie and item neon1 saves in your browser. Neither neon1.tech nor the 1NEON portal uses analytics, advertising, or tracking of any kind.
 

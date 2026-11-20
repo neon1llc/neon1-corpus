@@ -16,7 +16,7 @@ related: [policy-cookies, policy-ai-use, policy-terms, policy-service-agreement,
 
 # Privacy and data policy
 
-*Last updated November 16, 2026.* This edition adds free accounts: what I collect at sign-up, the bot check (Cloudflare Turnstile), the check-in emails, and when a free account is deleted. Nothing changes for clients.
+*Last updated November 20, 2026.* This edition adds free accounts: what I collect at sign-up, the bot check (Cloudflare Turnstile), the check-in emails, and when a free account is deleted. Nothing changes for clients.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant on the website), and the 1NEON client portal at neon1.tech/1NEON, and does technology work for clients. This policy covers all of them. The [cookie and browser storage notice](https://neon1.tech/1NEON/cookies) is part of it. [How neon1 is built](https://neon1.tech/knowledge/company/architecture/) describes the systems.
 

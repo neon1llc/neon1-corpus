@@ -15,7 +15,7 @@ related: [standards-ai-quality, standards-development, standards-security-and-da
 
 # How I use AI
 
-*Last updated November 15, 2026.*
+*Last updated November 20, 2026.*
 
 I use AI tools in my own work, mainly for research and review.
 

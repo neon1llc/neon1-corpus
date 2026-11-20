@@ -15,7 +15,7 @@ related: [standards-design-and-accessibility, policy-security]
 
 # Accessibility statement
 
-*Last updated November 15, 2026.*
+*Last updated November 20, 2026.*
 
 neon1.tech, the 1NEON portal, and the Knowledge Center documents should work for people who use a screen reader, a keyboard, magnification, voice control, or reduced motion.
 

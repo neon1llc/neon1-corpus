@@ -2,6 +2,8 @@
 
 Every substantive change in the "harder pass" to the legal pages, so a lawyer can review it. The aim was to say each obligation, right, deadline, number, and defined term once, without weakening any protection. Nothing was added. The terms of use and privacy policy mirror `apps/web/src/legal/` in the 1NEON repo, so any change accepted here also needs making there.
 
+All six policy pages now read "Last updated November 20, 2026" and carry that date and a new edition, because their text changed.
+
 ## policies/terms.md (Terms of use)
 
 - Removed "The short version" bullets. They restated the body and added no term.
