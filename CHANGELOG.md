@@ -5,6 +5,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Fixed
+- Working hours read the same everywhere: Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time. Corrected in the proposal and services agreement templates (editions 1.6 and 1.5) and the two filled-in proposals (editions 1.6 and 3.1).
+- The dermatology intake figure is given in days, as on the site: Intake out of the inbox (edition 1.7) and the capability statement (edition 2.1).
 - Product pages name each tool's and guide's current release: AWS CLIP v0.2.0, DeployOps v0.15.0, Ready, Secure, Go v0.1.7, and the five companion guides.
 
 ## v0.50.2 - 2026-11-19
