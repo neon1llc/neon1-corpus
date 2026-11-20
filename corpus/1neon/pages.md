@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-10
-edition: "1.12"
+edition: "1.13"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -27,7 +27,14 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
 - **Recent activity**: what people did lately, newest first.
 - **Your free account**, in a free account only: the date it's deleted if nothing changes, **Keep it 30 more days** (once), and **Download a copy** (Settings, Your data).
-- **Next step**, in a free account only: **Ask for an assessment**, with an optional note, then **Book the 30-minute call**. The request emails neon1, and the reply comes by email. The assessment is free: neon1's written read of the project as written, with a likely approach and the first questions to settle. neon1 reads it before the call, which is about needs.
+- **Next step**, at the top of the main column above Needs you, for editors and admins (not neon1's own people), is where a project goes from outlined to assessed. A free account always sees it. A client organization sees it only while a project is still waiting for an assessment, meaning it has no options yet and is in the first stage. Tips about a project's outline show here and on its Overview, never in Needs you, which holds only what someone is waiting on.
+  - With no projects yet, it says to outline a project (up to three, in a free account), with **Start a project**.
+  - A free account lists each project with a six-segment meter of how many outline parts are written, and a tip for what's missing, such as "add what done looks like and a measure with where it is now", with **Continue** to that project. A fully outlined project says "Fully outlined" with **Review**. A client organization sees only what was sent and when.
+  - Under the list, a required note ("Add some final thoughts, concerns, or requirements you'd like me to keep in mind as I take a look"), at least 20 characters, and a checkbox for each project, up to three. **Request assessment** opens a last look with the projects, the note, and what each project could still say. **Submit request** (or **Submit request anyway**, when a project could say more) saves the request and locks the box. **Keep editing** goes back.
+  - A saved request goes to neon1 30 minutes after its last change, and never within an hour of the previous email. Until then **Edit** unlocks it and restarts the 30 minutes, and **Withdraw** stops it. After it goes, the card says "Sent" with the date, and an edit sends neon1 an update ("Assessment request updated"). It can be edited and sent again as often as needed. The reply comes by email.
+  - In a free account, **Book the free 30-minute call** opens neon1's booking page, or **ask me to reach out** sends a call request with an optional note. That request goes at once and can be made once a week. In a client organization the card drops "free" and offers **Contact neon1** instead. A call doesn't need an assessment first, and an assessment doesn't need a call.
+  - The assessment is free: neon1's written read of the projects as written, with a likely approach and the first questions to settle. neon1 reads it before the call, which is about needs.
+- **Get to know 1NEON**, in the side column for everyone but neon1's own people, links to **A sample project**, **From free account to client** (a six-minute walkthrough; neon1's own clients see **The guided walkthrough**), **Try the demo**, **FAQs**, and, in a free account, **How free accounts work**. **Hide** puts it away, and **Show Get to know 1NEON on Home** in the profile, under Tutorial, brings it back.
 
 ## Board
 
@@ -43,7 +50,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 
 ## One project
 
-`/1NEON/o/{org}/projects/{KEY}`, with tabs Overview, Needs, Execute, Observe, and Normalize (`/needs`, `/execute`, `/observe`, `/normalize`). The header shows the key, stage and time in it, name, health, and the onion, under **Next step**. Details are in the projects guide. Actions:
+`/1NEON/o/{org}/projects/{KEY}`, with tabs Overview, Needs, Execute, Observe, and Normalize (`/needs`, `/execute`, `/observe`, `/normalize`). The header shows the key, stage and time in it, name, health, and the onion, under **Next step**. On the Overview, everyone also sees **Ready for Execute** until a decision is made (only editors and admins get the links to write each part): the percent, the four steps, and the six outline parts, each with a tip, where to write it, and where it goes. Details are in the projects guide and [outlining a project](../guides/outline-a-project.md). Actions:
 
 | Action | Who |
 |---|---|

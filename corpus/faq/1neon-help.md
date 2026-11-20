@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-18
+updated: 2026-11-20
 created: 2026-11-07
-edition: "2.7"
+edition: "2.8"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -34,13 +34,34 @@ Check spam or promotions, wait a minute, and choose **Send a new code**. Codes w
 ### Is there a tour?
 Yes, at your first sign-in. Replay it from **?** or your profile. [Watch it](https://neon1.tech/1NEON/live?play=invite).
 
+### What do I do first in a free account?
+Outline up to three projects, then ask for a free assessment under **Next step** on Home. **Get to know 1NEON**, beside it, links to a sample project, a walkthrough, the demo, and these FAQs. [Watch it](https://neon1.tech/1NEON/live?play=free).
+
+### What is an outline?
+What you write down about a project before I assess it, in six parts: what it is, how it works today, what done looks like, who and what it touches, a measure, and timing and limits. Every part is optional, and a short answer is enough. **Next step** on Home and a project's **Overview** show what's written, with a tip for each missing part. [Outlining a project](https://neon1.tech/knowledge/guides/outline-a-project/) has examples.
+
+### What is Ready for Execute?
+The percent on a project's **Overview**, before the work starts. Each outline part is 10, the assessment 10, options 10, and an approved option 20, so 100% needs a decision. Then the outline carries into the work: its measure is tracked in **Observe**, its people and tools shape the handover in **Normalize**, and what done looks like becomes the checks in Verify. [Watch it](https://neon1.tech/1NEON/live?play=free).
+
+### How do I ask for a free assessment?
+Under **Next step** on Home, write the note (required, a sentence or two), choose one to three projects, and choose **Request assessment**. You get one last look, then **Submit request**. It goes to me 30 minutes after your last change, so you can **Edit** or **Withdraw** it until then. An edit after it's sent goes out as an update. I reply by email.
+
+### Do I need a call first?
+No. The assessment and the free 30-minute call are two ways in, and neither needs the other first. **Next step** has **Book the free 30-minute call**, or **ask me to reach out** to have me write to you (once a week).
+
+### Will I get emails about my outline?
+In a free account, yes: while an outline is unfinished and nothing is waiting for me, tips arrive about 3 and 7 days after your last change, then no more. Turn them off under **Outline tips** in your profile's **Notifications**. Clients don't get them unless they turn them on.
+
+### How do I hide or bring back Get to know 1NEON?
+Choose **Hide** on the card. To bring it back, open your profile and choose **Show Get to know 1NEON on Home** under Tutorial.
+
 ## Projects and the four layers
 
 ### What are Needs, Execute, Observe, and Normalize?
 The four layers of every project. **Needs** is what you want and the options, **Execute** the work, **Observe** the results against the goals, and **Normalize** the handover, training, and care. [Watch it](https://neon1.tech/1NEON/live).
 
 ### What should I do first on a project?
-Look at **Next step** at the top. It says what has to happen now and who it's waiting on. [Watch it](https://neon1.tech/1NEON/live?play=propose).
+Look at **Next step** at the top. It says what has to happen now and who it's waiting on. On a new project's **Overview**, **Ready for Execute** says what to write next. [Watch it](https://neon1.tech/1NEON/live?play=propose).
 
 ### What do Not assessed, On track, At risk, and Off track mean?
 They're the project's health, as the team assesses it. A new project is **Not assessed** until the team sets it, and moving stages doesn't change it. Items have their own status: To do, In progress, Blocked, or Done. [Watch it](https://neon1.tech/1NEON/live?play=build).
