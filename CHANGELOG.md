@@ -7,7 +7,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## v0.51.4 - 2026-11-20
 
 ### Changed
-- What not to upload is stated once, in the terms of use (section 2). The 1NEON help question "What can I upload?" (1NEON help edition 2.9) links to it, and the Documents page description (1NEON pages edition 1.15) no longer repeats it.
+- What not to upload is stated once, in the terms of use (section 2). The 1NEON help question "What can I upload?" (1NEON help edition 2.9) links to it, and the Documents page description (1NEON pages edition 1.14) no longer repeats it.
 
 ## v0.51.3 - 2026-11-20
 
