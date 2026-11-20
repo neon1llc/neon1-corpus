@@ -30,9 +30,9 @@ Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Easte
 
 ## Can I start without a call?
 
-Yes. [Start a free 1NEON account](https://neon1.tech/1NEON/?signup=1), outline up to three projects on your own time, then ask for a free assessment of any or all of them. I read them and reply by email.
+Yes. [Start a 1NEON account](https://neon1.tech/1NEON/?signup=1), outline up to three projects on your own time, then ask for an assessment of any or all of them. I read them and reply by email.
 
-You don't need a call first, and a call doesn't need an assessment first. [Book the free 30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) whenever you'd rather talk.
+You don't need a call first, and a call doesn't need an assessment first. [Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) whenever you'd rather talk.
 
 [Free 1NEON accounts](https://neon1.tech/knowledge/guides/free-accounts/) has the details.
 

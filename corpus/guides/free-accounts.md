@@ -1,7 +1,7 @@
 ---
 id: guides-free-accounts
 title: "Free 1NEON accounts"
-summary: "Start before we talk: make a free 1NEON account, outline up to three projects, then ask for a free assessment. The 30-minute call is the other way in."
+summary: "Start before we talk: make a free 1NEON account, outline up to three projects, then ask for an assessment. The 30-minute call is the other way in."
 type: guide
 status: adopted
 updated: 2026-11-20
@@ -15,7 +15,7 @@ related: [product-1neon, faq-working-with-neon1, policy-terms, policy-privacy]
 
 # Free 1NEON accounts
 
-You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, before we talk. Outline what your project needs, then ask for a free assessment of up to three projects, or book the free 30-minute call, whichever suits you. I read what you wrote before we talk. No card, no password.
+You can start in [1NEON](https://neon1.tech/1NEON/), the portal my clients use, before we talk. Outline what your project needs, then ask for an assessment of up to three projects, or book the first call, whichever suits you. I read what you wrote before we talk. No card, no password.
 
 Once you're in, **Contact neon1** in the menu has every way to reach me: email, call or text, or a booked call.
 

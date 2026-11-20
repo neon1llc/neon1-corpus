@@ -39,7 +39,7 @@ Each service has its own page: [workflow automation](../guides/use-case-workflow
 
 A proposal makes one recommendation, or sets out options when there's a real choice to make. [How I price my work](pricing.md) explains the pricing.
 
-Before any of these, the first 30-minute call is free and about your needs. If you write a project down in a [free 1NEON account](../guides/free-accounts.md) first, its assessment is free too: my written read of that one project, with a likely approach and the first questions to settle, which I review before we talk. It's lighter than the paid assessment above.
+Before any of these, the first 30-minute call is about your needs. If you write a project down in a [1NEON account](../guides/free-accounts.md) first, its assessment is free too: my written read of that one project, with a likely approach and the first questions to settle, which I review before we talk. It's lighter than the paid assessment above.
 
 ## Who keeps what
 
@@ -63,4 +63,4 @@ Each case study says what kind of work it was.
 | Networks and connected systems | The device network in [operations integration and monitoring](../case-studies/one-view-of-the-shop.md) | neon1 engagement |
 | Security readiness | Access, network, and recovery work inside the projects above, and [security awareness sessions](../case-studies/security-for-non-security-people.md) | neon1 engagements |
 
-[Book a call](contact.md) with the problem, the systems involved, and what a good result looks like. Or start with a [free 1NEON account](https://neon1.tech/1NEON/?signup=1) and write it down there.
+[Book a call](contact.md) with the problem, the systems involved, and what a good result looks like. Or start with a [1NEON account](https://neon1.tech/1NEON/?signup=1) and write it down there.
