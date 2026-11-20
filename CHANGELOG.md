@@ -4,6 +4,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.51.2 - 2026-11-20
+
+### Changed
+- About drops the sentence saying past employment work belonged to employers and their clients; the LinkedIn profile still lists the roles.
+
 ## v0.51.1 - 2026-11-20
 
 ### Changed
