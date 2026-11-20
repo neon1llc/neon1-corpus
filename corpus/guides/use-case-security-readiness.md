@@ -4,9 +4,9 @@ title: "Security readiness"
 summary: "Assessing technical risk, strengthening controls, and preparing systems for a security review or audit: what I deliver, and where an auditor or specialist takes over."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-19
-edition: "1.0"
+edition: "1.1"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Organizations facing a security review, a customer requirement, or a risk they want closed"
@@ -48,7 +48,7 @@ Prioritized findings, a remediation plan, the changes made and verified, and evi
 
 ## Limits
 
-No audit opinions, certifications, penetration tests, or legal advice, and no guarantee of passing a review. Work with health information starts only after a [business associate agreement](../templates/business-associate-agreement.md) is signed.
+Work with health information starts only after a [business associate agreement](../templates/business-associate-agreement.md) is signed.
 
 ## Awareness sessions
 

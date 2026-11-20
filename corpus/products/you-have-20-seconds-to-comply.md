@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.4"
+edition: "1.5"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -29,7 +29,7 @@ related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-
 
 ## Current limits
 
-It explains rules in plain words and points to the official text. It's training, not legal advice or a compliance determination, and finishing a plan doesn't make a business compliant. It covers federal rules and a few New York and state rules, not every state. Each page shows when it was last reviewed, and rules change after that.
+It explains rules in plain words and points to the official text. It covers federal rules and a few New York and state rules, not every state. Each page shows when it was last reviewed, and rules change after that.
 
 ## Next step
 

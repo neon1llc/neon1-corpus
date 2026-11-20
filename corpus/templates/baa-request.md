@@ -4,11 +4,11 @@ title: Business associate agreement request
 summary: "The short questionnaire that tells us whether a project involves health information, and if so, what the business associate agreement needs to cover."
 type: template
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 origin: "Written for neon1-corpus, based on 45 CFR 160.103 and the HHS guidance on business associates"
 related: [templates-business-associate-agreement, examples-baa-request, forms-intake]
 ---
@@ -16,7 +16,7 @@ related: [templates-business-associate-agreement, examples-baa-request, forms-in
 # Business associate agreement request
 
 > [!note] Why this exists
-> Under HIPAA, a vendor that creates, receives, keeps, or sends protected health information (PHI) for a covered entity is a business associate and needs a signed agreement first. This questionnaire tells us whether yours does, before any access. It isn't legal advice. Your privacy officer or counsel makes the final call.
+> Under HIPAA, a vendor that creates, receives, keeps, or sends protected health information (PHI) for a covered entity is a business associate and needs a signed agreement first. This questionnaire tells us whether yours does, before any access.
 
 **Organization:** ____
 

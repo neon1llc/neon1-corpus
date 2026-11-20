@@ -4,6 +4,13 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+## v0.51.3 - 2026-11-20
+
+### Changed
+- The limits and "not advice" caveats that were repeated across pages now live in one place, the answer to "What don't you do?" in Working with neon1 (edition 1.18): no audit opinions, certifications, penetration tests, or legal advice, no promise a review will pass, health data only under the right agreements, general information only, and a lawyer, accountant, or auditor decides what applies. It now covers penetration tests and the guides and kits too.
+- Removed the repeats: Security readiness (edition 1.1) keeps only the health-information condition under Limits, the SOC 2, Compliance basics, and incident-plan product pages (editions 1.5) keep only their own coverage limits, and the tax-preparer post (1.9), the business associate agreement guide (1.4), and the BAA request (1.3) lose their closing "not legal advice" notes. The agreement templates keep their own notice.
+- Neo (edition 3.3) points to that answer for what neon1 doesn't do, and no longer repeats the general-information line in its opening list.
+
 ## v0.51.2 - 2026-11-20
 
 ### Changed
