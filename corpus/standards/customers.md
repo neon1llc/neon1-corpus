@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "2.2"
+edition: "2.3"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
@@ -28,7 +28,7 @@ I work with businesses, technical teams, and individuals, described by what they
 
 ## Businesses and organizations
 
-Most have established software, vendors, and procedures, and often technical staff or a provider. They come to integrate systems that work well alone, see operations across them, add a capability their products don't cover, cut a recurring cost, consolidate after growth, evaluate an investment, apply AI where it fits, or hand off a project they could do but would rather not.
+Most have established software, vendors, and procedures, and often technical staff or a provider. They come to integrate systems that work well alone, see operations across them, add a capability their products don't cover, cut a recurring cost, or apply AI where it fits.
 
 ## Technical teams
 
@@ -46,6 +46,3 @@ When a project touches health information, a [business associate agreement](../t
 
 I turn down or refer work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, a larger delivery team, hidden employee monitoring, or support I can't give. I also say when something simpler or already available will do. [Where else to get help](../landscape/where-else-to-get-help.md) lists who's better placed.
 
-## Community help
-
-I set aside a little time each month to help people and groups in my community, at my discretion, never as a sales tool.

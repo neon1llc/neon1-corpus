@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-20
 created: 2026-11-01
-edition: "2.1"
+edition: "2.2"
 order: 1
 consumers: [ai]
 pdf: true
@@ -101,35 +101,20 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 
 | Kind | Its job | Structure |
 |---|---|---|
-| Policy | Tell people what's done with their information and their rights | Short version first, then sections by question. Dated "Last updated." Plain prose |
+| Policy | Tell people what's done with their information and their rights | Short version first, then sections by question. Dated "Last updated." |
 | Agreement or template | Record obligations exactly | Defined terms, numbered sections, blanks, an "example, not legal advice" note when it is one |
 | Standard | Say how neon1 works and why | What I do, then the reason. Present tense. No claims of certification or results |
 | Guide or how-to | Help someone finish a task | Who it's for, what they need, numbered steps, what to do when it goes wrong |
-| Reference | Be looked up | Tables and short entries, exact values, consistent order |
-| Explanation | Help someone understand a topic | One idea per section |
 | Proposal | Help a client decide | Their problem, the result, what's in and out, price, schedule, acceptance, next step |
 | Case study | Show real work honestly | My role and the years, the problem, the work, the results, and after handover, with limits stated |
-| Form | Capture facts | Labeled blanks and checkboxes |
-| README | Help someone use or contribute | What it is, who it's for, status, how to run, deploy, and contribute, license |
-| Changelog | Tell people what changed for them | Newest first, grouped by version |
-| Commit message | Explain one change | Type and scope, then a plain summary. A body when the reason isn't obvious |
-| Code comment | Explain intent the code can't | Why, constraints, and invariants, never a narration of the next line |
+| README, changelog | Help someone use, contribute, or see what changed | See the [documentation standard](documentation.md) |
+| Commit message, code comment | Explain one change, or intent the code can't | See the [code style standard](code-style.md) |
 | Interface text | Help someone act in the moment | Short labels, verbs on buttons, errors that say what happened and how to fix it |
 | Email or message | Get something done | The ask or answer first, context after, one next step |
 
-The [documentation standard](documentation.md) covers READMEs, changelogs, and decision records, and the [code style standard](code-style.md) covers comments and names.
-
 ## Checking a draft
 
-1. Read it as the intended reader. Can they act on it?
-2. Read only the headings and first words of each paragraph. Do they tell the story?
-3. Check each group's form.
-4. Compare it claim by claim with the sources. Nothing added, nothing overstated, every borrowed idea credited.
-5. Cut the habits above, then cut again.
-6. Check names, numbers, dates, links, and code.
-7. Read it aloud. Rewrite any sentence that's hard to say.
-
-Writing that already works stays as it is.
+Read it as the intended reader and ask whether they can act on it. Read only the headings and first words of each paragraph and ask whether they tell the story. Compare it claim by claim with the sources, with nothing added, nothing overstated, and every borrowed idea credited. Cut the habits above, then cut again. Check names, numbers, dates, links, and code, and read it aloud. Writing that already works stays as it is.
 
 ## Sources
 

@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "1.8"
+edition: "1.9"
 consumers: [knowledge, ai]
 pdf: true
 origin: "neon1's internal glossary, extended with the terms the standards use"
@@ -22,18 +22,16 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **neon1** | The name neon1 LLC does business under. See [the names](names.md) |
 | **1NEON** | The client workspace and portal, pronounced "onion": layers for purpose, plan, work, files, decisions, care, and exit |
 | **Neo** | The chat assistant on neon1.tech. It takes every fact about neon1 from neon1's public documents |
-| **CLIP** | Command-Line Interface Plus. AWS CLIP puts account guards and approval checks around the AWS command line. Its own previews show the service, operation, and policy decision and leave argument values out. What AWS prints isn't filtered |
+| **CLIP** | Command-Line Interface Plus. AWS CLIP puts account guards and approval checks around the AWS command line. What AWS prints isn't filtered |
 | **DeployOps** | Deploy pipelines with checks, approvals, and rollback. A local developer preview, not production-supported. Some AWS and Azure paths have been run live |
 | **Ready, Secure, Go** | A public security readiness guide for homes, schools, and small businesses |
 | **N1 Supply LLC** | A separate company for product experiments, with the same owner |
-| **neon1-corpus** | The public repository where every neon1 document is written once |
 
 ## Working together
 
 | Term | Meaning |
 |---|---|
 | **Discovery** | Learning one real task before proposing anything |
-| **Baseline** | How the task performs before any change |
 | **Scope** | What's included, what isn't, and how we'll know it's done |
 | **Change request** | A written, priced change to agreed scope, approved before work |
 | **Acceptance** | Your recorded decision that the work passed its agreed checks |
@@ -50,8 +48,6 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **RTO** | Recovery time objective: the longest acceptable time to restore a service |
 | **RPO** | Recovery point objective: how much recent data you can afford to lose |
 | **3-2-1 backup** | Three copies, two kinds of storage, one away from the building |
-| **Restore test** | Bringing data back from a backup to prove it works |
-| **Incident** | Something that disrupts or threatens normal work |
 
 ## Security and privacy
 
@@ -59,9 +55,7 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 |---|---|
 | **MFA** | Multi-factor authentication: a second proof of identity beyond a password |
 | **Least privilege** | Giving each person or system only the access the job needs |
-| **Phishing** | A message pretending to be someone trusted, to steal access or money |
-| **PHI** | Protected health information under HIPAA |
-| **HIPAA** | The U.S. law that governs health information privacy and security |
+| **PHI** | Protected health information under HIPAA, the U.S. health privacy law |
 | **BAA** | Business associate agreement: required before a vendor handles PHI for a health practice |
 | **SOC 2** | An independent audit report on a company's security controls |
 | **NIST CSF** | The NIST Cybersecurity Framework, a map of security responsibilities |
@@ -76,4 +70,3 @@ related: [company-names, standards-reliability-and-recovery, standards-security-
 | **RAG** | Retrieval-augmented generation: an AI assistant that answers from your own documents |
 | **Evaluation set** | Real examples with expected answers, used to test an AI system before anyone relies on it |
 | **Prompt injection** | Text hidden in a document or web page that tries to make an AI system misbehave |
-| **FinOps** | Managing cloud cost with a budget, an owner, and regular review |

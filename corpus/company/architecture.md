@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-11
-edition: "1.6"
+edition: "1.7"
 ---
 
 # How neon1 is built
@@ -77,7 +77,7 @@ flowchart TB
   classDef external fill:#f1f3f5,stroke:#7b8794,color:#1f2933
 ```
 
-Signed approvals, handover acceptances, agreement signatures, issued invoices, and payments are also copied to a records bucket under S3 Object Lock in governance mode, which write-protects each copy for seven years. An administrator with a special permission can override governance mode. Stripe's restricted key and webhook secret are SecureString parameters under `/1neon/prod/stripe/`. Terraform creates them with placeholders and never sees the real values. Until they're set, online payment stays off.
+Signed approvals, handover acceptances, agreement signatures, issued invoices, and payments are also copied to a records bucket under S3 Object Lock in governance mode, which write-protects each copy for seven years. Stripe's restricted key and webhook secret are SecureString parameters under `/1neon/prod/stripe/`. Terraform creates them with placeholders and never sees the real values. Until they're set, online payment stays off.
 
 ## Paying an invoice
 
@@ -236,8 +236,6 @@ flowchart TB
 | **Knowledge Center and blog** | Built with every site deploy, and republished within about 15 minutes of a new corpus release. | Built from the newest corpus release or a corpus branch. PDFs are copied, not printed. |
 | **1NEON** | neon1.tech/1NEON, with its own API, table, buckets, and sign-in pool. Malware scanning and seven-year record protection are on. | dev.neon1.tech/1NEON, with generated test data only. Only neon1's accounts can sign in, mail goes only to neon1, and texts and malware scan are off. |
 | **Neo** | neon1.tech/chat/api, from the corpus copy it was last released with. | No dev copy. Dev uses the live Neo. |
-| **Infrastructure** | The distribution and shared DNS records are applied by the pipeline from main. Deploy permissions are applied by hand. | Dev's distribution, gate, and permissions are applied by hand. |
-| **Corpus** | A merge to main tags a release and publishes its bundles. | None. A corpus branch is previewed through the site's dev build. |
 
 ## What data each part keeps
 
@@ -269,10 +267,6 @@ flowchart LR
 | **1NEON projects** | Accounts, projects, decisions, comments, and activity in DynamoDB, and files in the documents bucket, each organization kept separate. | Deleted when an organization asks. Database backups roll off after 35 days, earlier file copies after 90. |
 | **1NEON records** | A copy of every signature, issued invoice, and payment under S3 Object Lock, because tax and contract law expect them kept. | Write-protected for seven years. |
 | **1NEON system records** | The audit log of sign-ins and changes, and email and text delivery records. | Audit log up to three years, delivery records 30 days, API logs 90 days. |
-| **Payments** | Stripe's restricted key and webhook secret, as encrypted parameters. | Card and bank details go only to Stripe. |
-| **Dev** | Generated test data and a sign-in pool of neon1's own accounts. | Test records are write-protected for a day. |
-| **Infrastructure** | Terraform state in a versioned S3 bucket. No client data. | Earlier versions kept for recovery. |
-| **Corpus** | Public documents only. The linter fails on anything that looks private. | Kept in Git history. |
 
 The [privacy and data policy](../policies/privacy.md) is the full statement and wins if anything here differs.
 
@@ -312,11 +306,7 @@ flowchart TD
 | **neon1-1NEON** | Types, tests, build, secret scan, Terraform checks, and every guided walkthrough played to its end in a real browser | Applies Terraform, ships the API, then the app with its page last, confirms, and tags | About 26 minutes, mostly the walkthroughs |
 | **neon1-chat** (Neo) | Tests with AWS faked, Terraform checks, and a secret scan | Applies Terraform, which ships the function, checks the live endpoint, and tags | Within the 12 to 18 minutes above |
 | **neon1-corpus** | Front matter, links, anything that looks private, the renderer, and every diagram with alt text | Tags the release, publishes a bundle for each reader, and asks neon1.tech to publish it | Within the 12 to 18 minutes above |
-| **neon1-aws-infrastructure** | Formatting, validation, lint, misconfiguration and secret scans | Plans every stack and applies the distribution and shared DNS records. Pradeep applies deploy permissions by hand | A few minutes |
-| **Tools**: [DeployOps](https://github.com/neon1llc/deploy-ops), [AWS CLIP](https://github.com/neon1llc/aws-clip), and [refmark](https://github.com/neon1llc/refmark) | Their own checks and tests | Nothing deploys. Each changelog version is tagged if checks pass | A few minutes |
-| **Education**: Ready, Secure, Go and its five companion guides | Front matter, links, and each guide's rules | Nothing deploys. Each changelog version is tagged | A few minutes |
 
-- **One release at a time.** Pipelines never cancel a release halfway. 1NEON and Neo also stop a queued release if main has moved on.
 - **Tags follow the changelog.** Each change adds an entry under `## Unreleased`. On deploy it becomes the new version, and the pipeline tags it once the live version is confirmed. Dev builds are never tagged.
 
 ### Deploying the website
@@ -344,20 +334,11 @@ flowchart TD
 
 ### How far a change has been proven
 
-A version number says what changed. A release level says how far it has been proven.
-
-| Level | Means | Evidence |
-|---|---|---|
-| **Implemented** | The code exists | Merged with checks passing and a changelog entry |
-| **Verified** | Named acceptance tests passed | Affected scenarios pass in CI, plus a check on dev or in the demo for anything people see |
-| **Released** | The right version is live | Pradeep said deploy, the pipeline deployed it, the live version matches, and the tag exists |
-| **Qualified** | Real use and recovery are established | Representative real use, a safe production check, and a tested recovery path |
-
-A tag means Released, never Qualified on its own. The [versioning standard](../standards/versioning.md) has the rules.
+A version number says what changed. A release level says how far it has been proven: **Implemented** (merged with checks passing), **Verified** (named acceptance tests passed), **Released** (the right version is live and tagged), or **Qualified** (real use and recovery are established). A tag means Released, never Qualified on its own. The [versioning standard](../standards/versioning.md) has the rules.
 
 ## Trying a change on dev first
 
-Pushing any branch puts it on dev.neon1.tech, a private copy of the site and 1NEON, in about 30 seconds, because dev runs only the quick checks. A production release runs every check.
+Pushing any branch puts it on dev.neon1.tech, a private copy of the site and 1NEON, in about 30 seconds, because dev runs only the quick checks.
 
 ```mermaid
 %% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
@@ -379,7 +360,6 @@ flowchart TD
 
 - **Branches and the dev release.** Each branch has its own preview at `dev.neon1.tech/__preview?b=<branch>`. The `dev` branch is the dev release. After every push to main, a workflow merges main into `dev`, and a conflict stops it rather than forcing anything.
 - **Releases come only from main.** Main rebuilds with the full checks, including the browser tests and PDF printing dev skips.
-- **Cost.** A few dollars a month, with a $5 budget alert on everything tagged dev.
 
 ### Who can open dev
 
@@ -403,8 +383,6 @@ sequenceDiagram
   B->>F: Any dev page, with the cookie
   F-->>B: The page (without the cookie: Not found)
 ```
-
-The link and the cookie use separate keys. A new link doesn't sign anyone out. Removing someone from the access group stops their next sign-in.
 
 ## One source for every word
 

@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-11
-edition: "1.11"
+edition: "1.12"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -87,7 +87,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 1. The chat window sends your question and the conversation so far to `neon1.tech/chat/api/chat`.
 2. CloudFront forwards it with a secret header, so the API can't be reached around neon1.tech's limits.
 3. The function checks your limits in DynamoDB first.
-4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen by testing several models on the same questions. A question costs under a fifth of a cent.
+4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen by testing several models on the same questions.
 5. The reply is checked before you see it. Links stay only if the corpus has them, and the length is capped.
 
 - **Limits.** Six questions a minute and 60 an hour per visitor, and 500 a day for the whole site. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and entries expire by themselves.
@@ -103,9 +103,6 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 - **Projects.** Each has an overview and a tab per layer. Needs holds the request and my options, each with cost, quality, and effort. The client's decision maker approves one, kept as a record that can't be edited.
 - **Files** upload straight to a private bucket and can't be downloaded until a malware scan passes.
 - **Notifications.** A bell, plus email or text for the events you choose.
-- **Themes and modes.** Matrix has Awake (light) and Plugged (dark). Sentinel has Providence (light) and Desert of the real (dark). Switching the family preserves the mode. The profile also offers Match my device.
-
-Every change writes an audit record. Its messages go into an outbox in the same transaction, and a worker sends the outbox every minute and retries failures, so a saved change can't lose its email.
 
 ## Trying 1NEON without an account
 
@@ -121,45 +118,16 @@ The whole portal, with 1NEON's API running in your browser. You pick who to be. 
 
 ### The guided walkthrough at /1NEON/live
 
-A cursor plays through the real portal as one of the same three clients. Priya at Harborline Outfitters wants the stock counts of three stores, a web store, and a warehouse to agree, and a failed dry run changes the scope. Elena at Quillwork Software wants report workers off hand-managed hosts, and a canary is rolled back. Daniel at Fenwick & Marsh Architects needs a segmented network and evidence for a client's security questionnaire, and two tests fail before they pass. `?scenario=harborline`, `quillwork`, or `fenwick` picks one, and Harborline plays when none is named. It saves nothing and has pause, speed, Back, and Next.
+A cursor plays through the real portal as one of the same three clients. `?scenario=harborline`, `quillwork`, or `fenwick` picks one, and Harborline plays when none is named. It saves nothing and has pause, speed, Back, and Next.
 
-The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays the whole engagement in about 17 minutes, from sign-in to ongoing care. `?play=free` follows Noor Haddad, who runs Calder Building Supply, from a free account to client. Short demos cover joining from an invitation, adding a passkey, adding an authenticator app, text codes, and the calendar. Passkey requests go to a pretend prompt, so nothing on your device is touched. If a step fails, the chapter restarts twice, then stops on a card instead of looping. Before a release, a check plays each walkthrough in a real browser and fails if its length is off.
+The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays the whole engagement in about 17 minutes, from sign-in to ongoing care. `?play=free` follows Noor Haddad, who runs Calder Building Supply, from a free account to client. Short demos cover joining from an invitation, adding a passkey, adding an authenticator app, text codes, and the calendar. Passkey requests go to a pretend prompt, so nothing on your device is touched.
 
-## How a change goes live
+## How it runs
 
-Work starts on its own branch, where checks run on every push. Site and 1NEON changes can be seen first on dev.neon1.tech, a private copy for neon1's admins with generated test data. Nothing reaches neon1.tech until I say deploy. Then each repository deploys itself when the change merges to main, and every deploy stops if a check fails. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, so no repository holds AWS keys.
+Work starts on its own branch, with checks on every push, and nothing reaches neon1.tech until I say deploy. Each repository then deploys itself when the change merges to main, and every deploy stops if a check fails. A deploy never mixes old and new files: everything goes up together as one release, and rollback is one write back to an earlier release in seconds. A release of the site, the corpus, or Neo takes about 12 to 18 minutes, and 1NEON about 26.
 
-- **The site** checks its HTML, links, assets, sizes, and secrets, tests the page and chat in a headless browser, builds the PDFs, and deploys.
-- **1NEON** runs type checks, tests, and build, applies its Terraform, and ships.
-- **Neo** runs its tests, and its Terraform ships the code.
-- **Infrastructure** is applied by Terraform, except the deploy permissions, which I apply by hand so a deploy can never widen its own access.
-
-After a deploy, each pipeline confirms the live version and tags the release from the changelog's top entry. A release of the site, the corpus, or Neo takes about 12 to 18 minutes, and 1NEON about 26, because every guided walkthrough is played first. [How neon1 is built](architecture.md) has the diagrams and what data each part keeps.
-
-### The release switch
-
-A deploy never mixes old and new files. Everything goes up together into `releases/<id>/`, named by a fingerprint of its contents. Only then does the deploy write that id to a CloudFront key value store, which a CloudFront Function reads on every request. Every visitor moves at once. The last 5 releases are kept, and a rollback is one write back to an earlier id, done in seconds.
-
-## Where it runs
-
-One AWS account in us-east-1, sized to cost a few dollars a month while it's quiet.
-
-| Part | AWS service |
-|---|---|
-| The neon1.tech address | Route 53, with DNSSEC |
-| Serving and routing every address | CloudFront, with an ACM certificate and two small CloudFront Functions |
-| The site's files and 1NEON's app | Private S3 buckets that only CloudFront can read |
-| 1NEON's API and Neo's API | API Gateway and Lambda |
-| 1NEON's data and the chat limits | DynamoDB |
-| 1NEON's sign-in | Cognito |
-| 1NEON's email and texts | SES and End User Messaging |
-| Neo's model | Amazon Bedrock |
-| Alarms and budgets | CloudWatch and SNS, which email me |
-
-Mail runs on Google Workspace. One CloudFront distribution routes `/` to the site, `/1NEON` to the portal, `/1NEON/api` to its API, and `/chat/api` to Neo. Unknown addresses get a 404 with the rain.
+It all runs in one AWS account in us-east-1, sized to cost a few dollars a month while it's quiet. Mail runs on Google Workspace. [How neon1 is built](architecture.md) has the diagrams, the AWS services, and what data each part keeps.
 
 ## One source for the words
 
-neon1-corpus holds neon1's public words as Markdown, each document with a header for what it is, who reads it, and its edition. A linter checks headers, links, and anything that looks private. Each tagged release exports a bundle per reader: **site**, **blog**, **knowledge**, **chat** (for Neo), and **portal** (for Neo inside 1NEON).
-
-The site builds from the newest release. Every 15 minutes its deploy workflow compares that release with `/knowledge/corpus.json` on the live site and, when they differ, rebuilds and switches to a new release without changing the site's own version. Every Monday, Neo's refresh opens a pull request with any change.
+neon1-corpus holds neon1's public words as Markdown, checked by a linter for headers, links, and anything that looks private. Each tagged release exports a bundle per reader: **site**, **blog**, **knowledge**, **chat** (for Neo), and **portal** (for Neo inside 1NEON). The site rebuilds within about 15 minutes of a new release, and Neo's refresh runs every Monday.

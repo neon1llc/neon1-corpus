@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-20
 created: 2026-11-11
-edition: "3.1"
+edition: "3.2"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -19,7 +19,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 # Proposal with options, filled in
 
 > [!example] A fictional example
-> Harborline Outfitters, its people, and every detail below are invented. It's the retailer from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide&scenario=harborline). Hours are real estimates for the work described. The hourly rate and dollar amounts for neon1's time are left out of public examples. A real proposal states them.
+> Harborline Outfitters, its people, and every detail below are invented. It's the retailer from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide&scenario=harborline). Hours are real estimates for the work described. The hourly rate and dollar amounts are left out of public examples, and a real proposal states them.
 
 **neon1 proposal for:** Harborline Outfitters, "One stock count across stores and web"
 

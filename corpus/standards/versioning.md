@@ -4,9 +4,9 @@ title: Versioning and releases
 summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents (X.Y), when each number goes up, and how tags, changelogs, and package files stay in agreement."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.8"
+edition: "1.9"
 audience: "Developers"
 order: 6
 consumers: [ai]
@@ -80,37 +80,9 @@ A date may follow the version. Sections are **Added**, **Changed**, **Deprecated
 4. Merge it to main with `--no-ff`, the merge message naming the version and what it brings in one line. The pipeline deploys it, checks that what's live reports the new version, tags that commit (`vX.Y.Z`, annotated), and publishes the version's changelog entry as its GitHub release.
 5. A project without a pipeline tags by hand: `git tag -a vX.Y.Z -m "vX.Y.Z: one line on what it brings"`, then pushes the tag.
 
-## How neon1's repositories release
-
-In every neon1 repository the pipeline makes the tag, so a tag means this exact commit passed its checks and is live.
-
-| Repository | Where the version is set | When the tag is made |
-|---|---|---|
-| neon1-site | The changelog, the page's version, and the footer | After the deploy, once the live site reports the new version |
-| neon1-1NEON | The changelog and `package.json` | After the deploy, once the portal is verified live |
-| neon1-chat | The changelog and `package.json` | After the deploy, once Neo's health check reports the new commit |
-| neon1-aws-infrastructure | The changelog | Once every stack's plan or apply has passed |
-| neon1-corpus | The changelog | On main, by the release workflow, which also publishes the bundles |
-
-- **A change people will notice ships in a release,** with its changelog entry in the same merge.
-- **A push with no new version** is for changes nobody would notice, such as CI or comments.
-- **Checks enforce agreement.** The tag step stops when the changelog names no version.
-- **Dev builds are never releases.** Their changelog entries wait under `## Unreleased` until the batch reaches main.
-- **Every tag has a GitHub release** whose notes are its changelog entry, so each repository's Releases page reads newest first.
-- **A tag is never made again or moved.** If a release went wrong, the fix is the next patch.
-
 ## Release levels
 
-A release level says how far a change has been proven:
-
-| Level | Means | Evidence |
-|---|---|---|
-| **Implemented** | The code exists | Merged with checks passing, and a changelog entry under `## Unreleased` |
-| **Verified** | Named acceptance tests passed | Affected scenarios pass in CI, plus a check on dev or in the demo for anything people see |
-| **Released** | The right version is live | The pipeline deployed it, the live version matches, and the tag exists |
-| **Qualified** | Real use and recovery are established | Representative real use, a safe check in production, and its recovery path (a rollback, a restore, or a re-run) tested at least once |
-
-A tag means Released, never Qualified on its own. Descriptions don't get ahead of the level: Implemented is "in development", Verified is "in testing" or "a preview", Released is "available", and only Qualified is "in use" or "supported".
+A version number says what changed. A release level says how far it has been proven: **Implemented** (merged with checks passing), **Verified** (named acceptance tests passed), **Released** (the right version is live and tagged), or **Qualified** (real use and recovery are established). A tag means Released, never Qualified on its own.
 
 ## Documents: editions X.Y
 

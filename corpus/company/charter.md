@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-05
 consumers: [ai]
 pdf: true
-edition: "2.1"
+edition: "2.2"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
@@ -48,16 +48,7 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 ## Who I work with
 
-Businesses, technical teams, and individuals with a defined goal, described by their situation rather than their size. [Customers](../standards/customers.md) has the detail.
-
-| Service | Typical buyer |
-|---|---|
-| **Workflow automation** | A business whose systems work alone but not together, or whose process has outgrown them |
-| **Cloud and AI engineering** | A technical team or software business that wants a bounded, independent result in its own environment |
-| **Networks and connected systems** | A business or household that needs networks and devices designed, segmented, and monitored |
-| **Security readiness** | An organization facing a review, a customer requirement, or a risk it wants closed |
-
-Larger organizations get one focused piece of work, inside their own security, procurement, and change processes.
+Businesses, technical teams, and individuals with a defined goal, described by their situation rather than their size. [Customers](../standards/customers.md) has the detail, and [services](../engagement/index.md) lists the four kinds of work. Larger organizations get one focused piece of work, inside their own security, procurement, and change processes.
 
 ## What I refer to others
 
@@ -75,12 +66,8 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds tools, all public, each with its own license and release status: [1NEON](../products/1neon.md), the client workspace, [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), and [DeployOps](../products/deploy-ops.md). I also publish teaching material under CC BY-SA 4.0 and MIT: [SOC 2 readiness, step by step](../products/soc-it-2-me.md), a [phishing awareness session kit](../products/phish-out-of-water.md), a [household tech handbook](../products/home-is-where-the-smart-is.md), [compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md), and [incident response for small teams](../products/there-are-no-incidents.md). None of them is sold as a service until it can be supported like one.
+neon1 also builds public tools ([1NEON](../products/1neon.md), [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), [DeployOps](../products/deploy-ops.md)) and publishes teaching material under CC BY-SA 4.0 and MIT, each with its own license and release status. None is sold as a service until it can be supported like one.
 
 ## Related companies
 
 N1 Supply LLC is a separate company for product experiments. It shares an owner with neon1 LLC but not its money, contracts, or intellectual property, unless a written agreement says otherwise.
-
-## Signature lines
-
-*1 is glad to be of service*. It's part of neon1's personality, not a description of its services. See [the names](names.md).

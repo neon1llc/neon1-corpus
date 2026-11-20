@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -69,7 +69,7 @@ We track task success, corrections, review minutes, cost per success, and speed,
 
 Only scoped statements with their conditions: "In a twenty-case test using made-up records, it completed eighteen without correction," if that's what happened. Never "reliable AI for every business."
 
-Neo, the chat on this site, takes every fact about neon1 from neon1's public documents and answers general technology questions only as general information. It's run against a set of test questions before each change, and has its directives published in [the corpus](../neo/chat.md).
+Neo, the chat on this site, is tested against a set of questions before each change, and its directives are published in [the corpus](../neo/chat.md).
 
 ## Sources
 

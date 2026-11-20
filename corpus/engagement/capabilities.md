@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-11
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.2"
+edition: "2.3"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -17,19 +17,16 @@ related: [company-mission, company-registration, company-contact, services, comp
 
 neon1 is an independent engineering and technology consulting practice run by Pradeep Tathineni, its lead engineer, with more than eight years in cloud infrastructure, automation, and software delivery. It assesses, designs, builds, integrates, and improves technology systems for businesses, technical teams, and individuals.
 
-## Core capabilities
+## What I do
 
-- **Workflow automation.** Systems integration through APIs and events, data synchronization and reconciliation, custom applications, reporting, and AI-assisted document processing.
-- **Cloud and AI engineering.** AWS architecture and foundations in Terraform, delivery pipelines with checks and rollback, migrations, production readiness, cost reviews, and retrieval-based AI applications with permissions, citations, and evaluation.
-- **Networks and connected systems.** Network design and segmentation, multi-site and remote access, connected devices and cameras, monitoring, and documented recovery.
-- **Security readiness.** Technical risk assessments, identity and access, hardening, backup and recovery testing, and control and evidence preparation before a SOC 2, HIPAA, or customer review. Audit opinions come from independent auditors.
+Four services: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md). Audit opinions come from independent auditors.
 
 ## How engagements work
 
 - **One engineer** from the first call to the handover. Any partner on a project is named in the proposal and on the case study.
-- **Defined scope.** Assessments, scoped projects, and phased work, each with deliverables, acceptance criteria, and a price agreed before work starts.
+- **Defined scope.** Deliverables, acceptance criteria, and a price are agreed before work starts.
 - **Measured results.** Work is checked against agreed criteria, and published results say how they were measured.
-- **Code and resources.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
+- **Open code.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
 
 ## Delivered work
 

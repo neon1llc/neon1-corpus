@@ -4,9 +4,9 @@ title: Development
 summary: "The main development standard for neon1: the principles in priority order, what each word means, how work moves from idea to release, and where the detailed rules live."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.4"
+edition: "1.5"
 audience: "Developers"
 order: 2
 consumers: [ai]
@@ -36,20 +36,6 @@ When two conflict, the higher wins.
 | 9 | **Consistency** | It follows the conventions of its project and of neon1 |
 
 Consistency is last because a convention should give way when it would make something unsafe, wrong, or unusable. Then the convention is updated, not quietly broken.
-
-## Words neon1 uses, defined
-
-| Word | Meaning |
-|---|---|
-| **Mature** | Complete for its stated purpose, dependable in its intended workflows, documented, and recoverable. Not the same as old or large |
-| **Ready** | Tested in conditions like real use, with known limits written down and a way back |
-| **Done** | Built, tested, documented, reviewed, released, and handed over. Merged alone isn't done |
-| **Robust** | Survives bad input, outages, and retries without corrupting anything, and says when it fails |
-| **Simple** | Few parts and few concepts. Not the same as quick to write |
-| **Usable** | The intended person finishes the task without help |
-| **Valuable** | Someone would notice and mind if it were gone |
-| **Efficient** | Proportionate in time, cost, and resources to what it delivers |
-| **Secure** | Meets the agreed baseline for its data and risks, with evidence. Never a blanket claim |
 
 ## How work moves
 
@@ -85,10 +71,6 @@ Before `v1.0.0`, a project is in initial development. `v1.0.0` is the first comp
 ## Your code is yours
 
 Client code lives in a repository the client owns, under the agreed license, and the handover covers building, testing, deploying, and rolling back without me. Reused open source keeps its license and notices.
-
-## Review tools
-
-I use AI tools alongside automated checks to review code for bugs, security issues, and missing tests, and I review and take responsibility for every change that ships. See [How I use AI](../policies/ai-use.md).
 
 ## Sources
 

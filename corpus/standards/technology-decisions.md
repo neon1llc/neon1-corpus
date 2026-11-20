@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -34,13 +34,6 @@ First-year cost includes setup, subscriptions, computing, storage, data transfer
 > A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better.
 
 I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud costs at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
-
-## Architecture that fits the scale
-
-- A brochure website is usually a static site on managed hosting with versioned source and a documented redeploy.
-- Integrations use a few clearly owned parts and supported APIs. For one team's workload, a modular app or a managed workflow usually beats microservices or Kubernetes. A client that already runs a platform keeps it, and new work follows its conventions.
-- Infrastructure as code is worth it when repeatability and recovery justify the setup.
-- The [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) pillars are a useful lens even when nothing runs on AWS.
 
 ## Integrations that don't break quietly
 

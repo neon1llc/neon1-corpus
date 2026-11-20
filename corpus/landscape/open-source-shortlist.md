@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-20
 created: 2026-11-01
-edition: "1.3"
+edition: "1.4"
 reviewed: 2026-11-01
 consumers: [knowledge, ai]
 pdf: true
@@ -57,7 +57,6 @@ I left off projects that cost more to run than they save at small-business scale
 |---|---|---|
 | [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Scanning, reading, and filing paper documents | Worth a small trial |
 | [Outline](https://github.com/outline/outline), [BookStack](https://github.com/BookStackApp/BookStack), [Docmost](https://github.com/docmost/docmost) | A team wiki for procedures and how-tos | Worth a small trial |
-| [Formbricks](https://github.com/formbricks/formbricks) | Surveys and feedback forms | Worth a small trial |
 | [Documenso](https://github.com/documenso/documenso) | Electronic signatures | Needs an owner. Check that its signatures meet your legal needs |
 
 ## Data and reporting
@@ -110,14 +109,6 @@ I left off projects that cost more to run than they save at small-business scale
 | [Langflow](https://github.com/langflow-ai/langflow) | Building AI workflows visually | Worth a small trial |
 | [promptfoo](https://github.com/promptfoo/promptfoo), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix) | Testing and monitoring AI systems | Worth a small trial, checked against a human-graded set |
 | [Dify](https://github.com/langgenius/dify), [Open WebUI](https://github.com/open-webui/open-webui), [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack) | AI apps and document search | Needs an owner. Some carry branding or multi-tenant conditions in their licenses |
-
-## Design and planning
-
-| Project | What it's for | Fit |
-|---|---|---|
-| [Excalidraw](https://github.com/excalidraw/excalidraw), [Mermaid](https://github.com/mermaid-js/mermaid) | Sketches and diagrams | Worth a small trial |
-| [Penpot](https://github.com/penpot/penpot) | Interface design | Worth a small trial |
-| [Kanboard](https://github.com/kanboard/kanboard), [Vikunja](https://github.com/go-vikunja/vikunja) | Simple task boards | Worth a small trial |
 
 ## Before you rely on any of these
 

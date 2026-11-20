@@ -4,9 +4,9 @@ title: Code style
 summary: "How neon1 code reads: names, comments, file headers, formatting, and layout, in every language and configuration format."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "2.4"
+edition: "2.5"
 audience: "Developers"
 order: 7
 consumers: [ai]
@@ -47,13 +47,6 @@ Every source file starts with a one-line header saying what it is and what it's 
 
 The header uses sentence case and a period. A runnable file adds a `Usage:` line with a real invocation and no closing punctuation. Full help belongs in `--help`.
 
-## Layout and whitespace
-
-- Let the formatter decide what it can: Prettier, Black, gofmt, `terraform fmt`.
-- Two blank lines between top-level definitions and major sections, one between related groups inside them.
-- Break long lines at meaningful points, one argument or item per line when a call gets long.
-- Keep a file about one thing. When a file grows a second purpose, split it.
-
 ## Structure
 
 - Prefer plain functions and data to frameworks and abstractions until a pattern repeats three times.
@@ -71,16 +64,7 @@ The header uses sentence case and a period. A runnable file adds a `Usage:` line
 
 ## Exceptions
 
-These don't get added headers or comments:
-
-- **Generated files**, such as compiled output and generated clients. Document the generator and inputs, and regenerate rather than edit.
-- **Vendored code** from another project, left as written, with its source and version in the nearest README or notice.
-- **Lock files**, such as `package-lock.json` or `go.sum`. Their tools own them.
-- **Formats with their own authoritative description**, such as a JSON Schema with `description` fields, an OpenAPI document, or a migration tracked by its tool. The description fields are where the explanation goes.
-
-## Formats without comments
-
-Strict JSON can't hold comments, so the explanation goes in the nearest file that can, such as the README or the code that reads it.
+Generated files, vendored code, and lock files get no added headers or comments. Document the generator and inputs and regenerate rather than edit, keep vendored code as written with its source and version in the nearest README, and leave lock files to their tools. Formats with their own authoritative description, such as a JSON Schema or an OpenAPI document, hold the explanation there. Strict JSON can't hold comments, so the explanation goes in the nearest file that can.
 
 ## Sources
 

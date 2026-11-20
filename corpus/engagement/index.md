@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-20
 created: 2025-09-07
-edition: "2.2"
+edition: "2.3"
 ---
 
 # Services
@@ -54,11 +54,6 @@ On-site work is within about 30 miles of Queens, NY. Everything else is remote.
 
 ## Past work
 
-| Service | Work | Kind |
-|---|---|---|
-| Workflow automation | [Patient intake portal](../case-studies/intake-out-of-the-inbox.md) and [operations integration and monitoring](../case-studies/one-view-of-the-shop.md) | neon1 subcontracted engagement, and neon1 engagement |
-| Cloud and AI engineering | [Permission-aware document assistant](../case-studies/answers-in-seconds.md) and [two-site server migration](../case-studies/two-offices-off-local-servers.md) | neon1 subcontracted engagement, and neon1 engagement |
-| Networks and connected systems | The device network in [operations integration and monitoring](../case-studies/one-view-of-the-shop.md) | neon1 engagement |
-| Security readiness | Access, network, and recovery work inside the projects above, and [security awareness sessions](../case-studies/security-for-non-security-people.md) | neon1 engagements |
+See [capabilities](capabilities.md) for delivered work, and the [case studies](https://neon1.tech/knowledge/#case-studies) for each project.
 
 [Book a call](contact.md) with the problem, the systems involved, and what a good result looks like. Or start with a [1NEON account](https://neon1.tech/1NEON/?signup=1) and write it down there.

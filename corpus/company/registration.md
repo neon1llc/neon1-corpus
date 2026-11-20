@@ -4,10 +4,10 @@ title: State registration
 summary: "neon1 LLC's public record with the New York Department of State: its ID, status, filings, registered agent, and assumed name, and how to check the live record yourself."
 type: page
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-11
 reviewed: 2026-11-11
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Clients, partners, and anyone confirming that neon1 LLC is a registered, active business"
@@ -51,25 +51,11 @@ Copied from the state's public record. If the two differ, the [live record](#che
 
 ## Check the live record
 
-The state's database has no links to single records, so search for it:
-
-1. Open the [New York Department of State's public inquiry](https://apps.dos.ny.gov/publicInquiry/).
-2. Leave **Search By** on **EntityName**.
-3. Type `neon1 LLC` in **EntityName**.
-4. Leave **Entity type** on **AllStatuses** and **Search Functionality** on **BeginsWith**.
-5. Under **Entity list**, tick **LimitedLiabilityCompany**.
-6. Select **Search the Database**, then open **NEON1 LLC** in the results.
-
-To search by number instead, set **Search By** to **DOS ID** and enter `7668765`.
+Search the [New York Department of State's public inquiry](https://apps.dos.ny.gov/publicInquiry/) for `neon1 LLC` as an entity name (limited liability companies), or by DOS ID `7668765`, and open **NEON1 LLC** in the results. The database has no links to single records.
 
 ## Official proof
 
-Search results aren't a certified document. When a bank, agency, or client needs official proof, the Department of State issues it:
-
-- **Certificate of status** (good standing): requested in writing, $25.
-- **Copies of filed documents**, plain or certified.
-
-I can request either one for you. Ask through [contact](../engagement/contact.md) and say who needs it.
+Search results aren't a certified document. When a bank, agency, or client needs proof, the Department of State issues a **certificate of status** (good standing), requested in writing for $25, and copies of filed documents, plain or certified. I can request either one for you. Ask through [contact](../engagement/contact.md) and say who needs it.
 
 ## Sources
 

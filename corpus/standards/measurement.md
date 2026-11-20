@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 15
 origin: "neon1's internal handbook, measurement handbook (client-facing parts)"
 related: [forms-metric-record, standards-discovery-and-delivery, standards-reliability-and-recovery]
@@ -18,17 +18,7 @@ related: [forms-metric-record, standards-discovery-and-delivery, standards-relia
 
 ## Terms
 
-| Term | Meaning |
-|---|---|
-| **Measurement** | One observation, such as 18 completed requests |
-| **Metric** | A defined way to measure, such as completed requests divided by valid attempts |
-| **KPI** | A metric chosen because it matters to an ongoing goal. "Key" should keep the list short |
-| **Baseline** | Where things stood before, under stated conditions |
-| **Target** | The result we're aiming for |
-| **Guardrail** | Something that must not get worse while we improve the main result |
-| **OKR** | An objective plus a few measurable key results by a date |
-
-Publishing a page is a task. People understanding and acting on it is an outcome. I measure outcomes.
+A **measurement** is one observation. A **metric** is a defined way to measure. A **KPI** is a metric chosen because it matters to an ongoing goal, and "key" should keep the list short. A **baseline** is where things stood before, under stated conditions, and a **target** is the result we're aiming for. A **guardrail** is something that must not get worse while we improve the main result. Publishing a page is a task. People understanding and acting on it is an outcome, and I measure outcomes.
 
 ## Every measure gets a definition
 

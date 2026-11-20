@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 order: 18
 origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -49,14 +49,6 @@ related: [standards-customers, landscape-where-else-to-get-help]
 Every public claim has a record: wording, support, scope, date, permission, and limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's unknown. A clear result without a number beats an invented one.
 
 Work I did as an employee shows my background but isn't presented as neon1's client work. Testimonials reflect real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance on reviews and testimonials](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
-
-## Where I show up
-
-Local relationships and referrals, LinkedIn, GitHub, and this website.
-
-## Follow-up
-
-One follow-up after a proposal, then the next move is yours. A no ends it.
 
 ## Sources
 

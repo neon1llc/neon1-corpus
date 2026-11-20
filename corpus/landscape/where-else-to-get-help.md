@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "2.2"
+edition: "2.3"
 reviewed: 2026-11-18
 consumers: [chat, knowledge, ai]
 pdf: true
@@ -29,16 +29,14 @@ Prices change, so check each provider.
 | Freelance marketplaces: [Upwork](https://www.upwork.com/pricing/client), [Fiverr](https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service) | A narrow, well-defined build | The freelancer's price plus any platform fees shown for that contract or order | You can write the specification and check the result yourself |
 | Managed service providers (MSPs) | Help desk, devices, and security for a team | A monthly fee per user or device | Your staff need a help desk or someone to answer at 2 a.m. |
 | Retail and repair shops, such as Best Buy's [Geek Squad](https://www.bestbuy.com/site/electronics/services/pcmcat1528819595254.c?id=pcmcat1528819595254) | A broken device or a home install | A price per job, or a membership that adds 24/7 support | A device needs parts, a repair, or a walk-in visit |
-| Agencies | Larger builds that need a team | Project fees or retainers | The work needs several people at once, for months |
+| Agencies and large consultancies | Larger builds, enterprise programs | Project fees, retainers, or large contracts | The work needs several people at once for months, or scale and formal methods |
 | Fractional CTO or IT director | Technology leadership for a growing company | A monthly retainer | You need a leader in your meetings every week |
-| Large consultancies | Enterprise programs | Large contracts | You need scale, formal methods, or audit services |
 | Security specialists: MSSPs, auditors, penetration testers | Monitoring, audits, formal testing | Retainers or fixed engagements | You need an audit opinion, a penetration test report, or 24/7 monitoring |
 
 ## Things to watch for
 
 - **Freelancers:** quality, handover, and documentation vary. Keep accounts in your name.
 - **MSPs:** long contracts, tools and accounts in the provider's name, and exit fees. Ask what the monthly price includes, what costs extra, and how you'd leave before signing.
-- **Repair shops:** they fix the device in front of them, rarely how your tools work together.
 
 ## Where neon1 fits
 

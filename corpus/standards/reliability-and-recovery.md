@@ -4,11 +4,11 @@ title: Reliability and recovery
 summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -23,19 +23,6 @@ Targets come from how much interruption and data loss your business can tolerate
 A service profile names the task that matters, operating hours, users, normal volume, dependencies, data owner, support owner, and the manual fallback. "The website" is too vague when the real task is "a request reaches the right person." Normal, degraded, and failed states are described separately: a form that sends its email late hasn't lost the request.
 
 Dependencies such as sign-in, email, payments, and your internet connection are listed, with which failures the design survives.
-
-## The vocabulary
-
-| Term | Meaning |
-|---|---|
-| **SLI** (service level indicator) | What we observe, such as the share of valid requests stored and acknowledged within a set time |
-| **SLO** (service level objective) | The target value for that indicator over a stated window |
-| **SLA** (service level agreement) | A contractual promise with consequences. An internal target isn't automatically one |
-| **Response time** | Time to a real person's first useful reply, separate from time to fix |
-| **RTO** (recovery time objective) | The intended longest time to restore the service after a defined disruption |
-| **RPO** (recovery point objective) | How much recent data you can afford to lose, measured in time |
-
-Definitions follow [Google's site reliability guidance on service level objectives](https://sre.google/sre-book/service-level-objectives/) and NIST's contingency planning guide, [SP 800-34](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final).
 
 ## What a percentage costs
 

@@ -4,9 +4,9 @@ title: Documentation
 summary: "The documents every neon1 project keeps and how they stay true, and how the documents in this Knowledge Center are built, dated, shared, and credited."
 type: standard
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.6"
+edition: "1.7"
 audience: "Developers"
 order: 9
 consumers: [ai]
@@ -57,43 +57,7 @@ Prerequisites first, then commands in order, each with what you should see and w
 
 ## Documents in this Knowledge Center
 
-Everything here is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus) as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo.
-
-### What every document carries
-
-| Part | What it says |
-|---|---|
-| Title | What the document is, in plain words |
-| Summary | One sentence on what it covers and who it helps |
-| Type | Which kind of document it is (below) |
-| Edition | `X.Y`, raised as described in [versioning](versioning.md) |
-| Published | When the content first appeared, from its real history |
-| Updated | When it last changed in substance |
-| For | Who it's written for, when that isn't everyone |
-
-Dates are never moved, and a typo fix changes neither Updated nor the edition.
-
-### Kinds of document
-
-| Type | Its job | Shape |
-|---|---|---|
-| Page | Say what neon1 is or offers | Short sections, in the order a newcomer asks |
-| Standard | Say how neon1 works and why | What I do, then the reason, then Sources |
-| Guide | Help someone finish a task | Who it's for, steps, what to do when it goes wrong, Sources |
-| Case study | Show real work honestly | My role and the years, then the problem, the work, the results, and after handover, with limits stated |
-| FAQ | Answer the questions people ask | One question per heading, the answer in its first sentence |
-| Policy | Say what's done with information, and rights | Short version first, then sections by question |
-| Template and form | Be filled in | Labeled blanks and checkboxes, no advice mixed in |
-| Example | Show a template or form filled in | Marked fictional, linked to its blank |
-| Comparison | Point to other good options | Who each fits, and when another provider is better |
-
-### Sharing and reuse
-
-- **Link to the page.** Every document has a fixed address under `neon1.tech/knowledge/`, and each section an anchor.
-- **Hand over the PDF.** Marked documents print to a dated PDF with the edition in the footer.
-- **Copy word for word.** Documents are shared under CC BY-ND 4.0, credited "© neon1 LLC (neon1.tech)". Blank templates and forms may also be filled in and adapted for your own work.
-
-[Where I learn from](../company/sources.md) gathers every source.
+Everything is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus) as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo. Each document carries a title, a one-sentence summary, its type (page, standard, guide, case study, FAQ, policy, template, form, or example), an edition (`X.Y`, raised as described in [versioning](versioning.md)), the date it was published and last changed in substance, and who it's for when that isn't everyone. Dates are never moved, and a typo fix changes neither the date nor the edition.
 
 ## Sources
 

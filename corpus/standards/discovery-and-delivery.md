@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 4
 origin: "neon1's internal handbook, discovery and delivery"
 related: [company-process, forms-discovery, templates-proposal, forms-release-and-handover]
@@ -59,21 +59,6 @@ The handover covers the workflow, who owns each account, recurring costs, routin
 At the agreed review date we check whether the workflow is used and fixed the original problem, counting any upkeep it added. New work comes from a real need, not to fill a care plan.
 
 Permission to do the work isn't permission to publish it. I ask separately before naming or quoting you or showing a screenshot.
-
-## Methods I borrow from
-
-| Method | Where it helps | What I avoid |
-|---|---|---|
-| Kanban and work-in-progress limits | Making waiting and unfinished work visible | Treating a task board as a management system |
-| Plan, do, study, act | Testing one change and studying the result | Changing things without a prediction |
-| Lean waste analysis | Removing retyping, waiting, and extra handoffs | Removing checks because they look slow |
-| Five whys and root cause analysis | Understanding a recurring problem | Forcing every incident into one cause or one person |
-| Failure mode and effects analysis | Thinking through failures before a risky release | Treating guessed scores as real probabilities |
-| A simple responsibility table | Who does, approves, and is told | Two people both "owning" one decision |
-| Architecture decision records | Keeping the reason for a big choice | A record for every small preference |
-| Usability testing | Checking the whole task, including recovery | Testing only looks or expert use |
-
-These are tools, not certifications.
 
 ## Sources
 
