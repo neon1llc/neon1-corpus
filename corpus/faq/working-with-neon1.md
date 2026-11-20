@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-07
-edition: "1.17"
+edition: "1.18"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -70,4 +70,6 @@ I run informational security awareness sessions for groups, from parents and tea
 
 ## What don't you do?
 
-I don't repair electronics, do licensed electrical or alarm work, issue audit opinions, give legal advice, or handle personal or health data before the right agreements and insurance are in place. I can help you get those agreements.
+I don't repair electronics, do licensed electrical or alarm work, issue audit opinions or certifications, run penetration tests, or give legal advice. I can't promise a review will pass.
+
+I handle personal or health data only after the right agreements and insurance are in place, and I can help you get those. What I publish is general information. A lawyer, accountant, or auditor decides what applies to you, and I'll work with them on the technical side. My guides and training kits are practical, not compliance determinations.

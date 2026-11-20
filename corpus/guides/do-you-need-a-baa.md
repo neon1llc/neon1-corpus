@@ -4,9 +4,9 @@ title: "Do you need a business associate agreement?"
 summary: "A plain guide for health practices on when a vendor needs a BAA, and what to check before signing one."
 type: guide
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-09
-edition: "1.3"
+edition: "1.4"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Health practices and their vendors"
@@ -14,9 +14,6 @@ related: [templates-baa-request, templates-business-associate-agreement, example
 ---
 
 # Do you need a business associate agreement?
-
-> [!warning] General information, not legal advice
-> Your privacy officer or counsel makes the call for your practice.
 
 Under HIPAA, a health practice can share patient information with a vendor working on its behalf only after the vendor signs a business associate agreement (BAA), saying how it will protect the information and what it will do if something goes wrong.
 

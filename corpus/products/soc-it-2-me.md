@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.4"
+edition: "1.5"
 related: [product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
@@ -27,7 +27,7 @@ related: [product-phish-out-of-water, product-ready-secure-go, services]
 
 ## Current limits
 
-It's readiness training, not audit or legal advice. Only a licensed CPA firm can issue a SOC 2 report, and the audit opinion belongs to the auditor. It doesn't yet cover the Processing Integrity or Privacy criteria.
+Only a licensed CPA firm can issue a SOC 2 report. It doesn't yet cover the Processing Integrity or Privacy criteria.
 
 ## Next step
 
