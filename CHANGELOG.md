@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Fixed
+- Product pages name each tool's and guide's current release: AWS CLIP v0.2.0, DeployOps v0.15.0, Ready, Secure, Go v0.1.7, and the five companion guides.
+
 ## v0.50.2 - 2026-11-19
 
 ### Changed

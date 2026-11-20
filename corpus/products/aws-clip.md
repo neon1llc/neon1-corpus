@@ -8,14 +8,14 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at c90f092"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-09-13
-edition: "1.5"
+edition: "1.6"
 ---
 
 # AWS CLIP
 
-*Public · v0.1.0*
+*Public · v0.2.0*
 
 **AWS CLI Plus.** Account guards and approval checks around the AWS CLI. It doesn't replace the AWS CLI, which still handles sign-in, credentials, requests, and output.
 
