@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 18
 origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -20,14 +20,14 @@ related: [standards-customers, landscape-where-else-to-get-help]
 
 1. **Recognition.** Your problem, described in ordinary words.
 2. **Fit.** Who the offer is for, and when it isn't.
-3. **Credibility.** Who does the work (me) and real examples, labeled honestly.
+3. **Credibility.** I do the work, and the examples are real and labeled.
 4. **Clarity on cost.** The paid next step, what affects the price, and recurring costs, in the proposal before anything starts.
 5. **Control.** How you approve work, what you own, how to cancel, and what the handover includes.
 6. **Reliability.** When I respond, how failures are handled, and what support isn't included.
 
 ## What I don't do
 
-- Fake scarcity, countdowns, or "only two spots left" unless it's literally true and relevant.
+- Fake scarcity, countdowns, or "only two spots left" unless literally true.
 - Shame or fear, including the fear of being "left behind" by AI.
 - Fabricated reviews, logos, client lists, or numbers.
 - Guilt-trip exit messages or hard-to-cancel subscriptions.
@@ -46,7 +46,7 @@ related: [standards-customers, landscape-where-else-to-get-help]
 
 ## Claims and evidence
 
-Every public claim has a record: wording, support, scope, date, permission, and limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's unknown. A clear result without a number beats an invented percentage.
+Every public claim has a record: wording, support, scope, date, permission, and limits. A case study states the problem, my role, what was delivered, how it was checked, the result, and what's unknown. A clear result without a number beats an invented one.
 
 Work I did as an employee shows my background but isn't presented as neon1's client work. Testimonials reflect real experience, disclose relationships such as family, and never put a technical guarantee in a client's mouth, following the [FTC's guidance on reviews and testimonials](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers). Experiments are labeled as experiments.
 

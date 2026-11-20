@@ -9,9 +9,9 @@ area: migration
 kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.5"
+edition: "1.6"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
@@ -29,7 +29,7 @@ origin: "neon1-site src/app/public/index.html#case-migration"
 
 ## The problem
 
-An automotive business ran its application, database, and files on two local servers, and both locations had to keep working through the move. Their technical lead knew the servers best.
+An automotive business ran its application, database, and files on two local servers shared by both offices, and both had to keep working through the move. Their technical lead knew the servers best.
 
 ## The work
 

@@ -11,7 +11,7 @@ role: "For my own family"
 when: "2025"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.7"
+edition: "1.8"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
@@ -39,7 +39,7 @@ My parents' house had no cameras, and the family reused a few passwords across a
 
 ## The results
 
-The test: could everyone use it without calling me? Recordings and alerts work, and everyone finds their passwords on their own.
+The test was whether everyone could use it without calling me. Recordings and alerts work, and everyone finds their passwords on their own.
 
 ## After handover
 

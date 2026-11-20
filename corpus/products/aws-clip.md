@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at c90f09
 status: adopted
 updated: 2026-11-20
 created: 2026-09-13
-edition: "1.7"
+edition: "1.8"
 ---
 
 # AWS CLIP
@@ -19,16 +19,16 @@ edition: "1.7"
 
 **AWS CLI Plus.** Account guards and approval checks around the AWS CLI, which still handles sign-in, credentials, requests, and output.
 
-- **Available now:** the [code](https://github.com/neon1llc/aws-clip) is public under the MIT license and runs from source. It's a first release (v0.1), so commands and settings may still change before v1.0.
-- **Who it helps:** people who work across several AWS profiles and want to see which account they're in, and confirm before anything risky runs.
+- **Available now:** the [code](https://github.com/neon1llc/aws-clip) is public under the MIT license and runs from source. It's a first release (v0.1), so commands and settings may change before v1.0.
+- **Who it helps:** people with several AWS profiles who want to see which account they're in and confirm before anything risky runs.
 
 ## What it does
 
 - **Shows where you are.** It reports the profile, Region, and the account and role AWS says you're signed in as, and it never prints credential values.
-- **Asks before risky commands.** Before a command runs, it shows the target profile and Region, the service and operation, and how its policy rules classify it. Its previews and plans list option names and leave argument values out, because they can hold sensitive data. Anything that isn't a known read, or that returns credentials or secrets, needs your confirmation.
-- **Guards production accounts.** A profile can be bound to the account it must resolve to. If it resolves to a different account, the command is refused, and a confirmation can't override that.
+- **Asks before risky commands.** Before a command runs, it shows the target profile and Region, the service and operation, and how its policy rules classify it. Previews list option names and leave argument values out, because they can hold sensitive data. Anything that isn't a known read, or that returns credentials or secrets, needs your confirmation.
+- **Guards production accounts.** Bind a profile to the account it must resolve to. If it resolves to a different one, the command is refused, and a confirmation can't override that.
 
-For example, `aws-clip --profile production exec -- ec2 terminate-instances ...` shows the target and `ec2:terminate-instances`, then waits for a yes. If the production profile is bound to an account and resolves to another one, it stops.
+For example, `aws-clip --profile production exec -- ec2 terminate-instances ...` shows the target and `ec2:terminate-instances`, then waits for a yes. If the profile is bound to one account and resolves to another, it stops.
 
 ## Current limits
 

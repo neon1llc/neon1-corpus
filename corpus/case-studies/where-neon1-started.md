@@ -11,7 +11,7 @@ role: "As a volunteer, before neon1"
 when: "2025"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.5"
+edition: "1.6"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
@@ -29,11 +29,11 @@ origin: "neon1-site src/app/public/index.html#case-community"
 
 ## The problem
 
-A local grade school, P.S. 33 Edward M. Funk in Queens, needed a STEM edtech setup teachers would use, on a budget with no room for mistakes. I'd long wanted to do this work in my community.
+P.S. 33 Edward M. Funk, a grade school in Queens, needed a STEM edtech setup that teachers would use, on a budget with no room for mistakes. I'd long wanted to do this work in my community.
 
 ## The work
 
-I'd volunteered there in high school, and in 2025 I was working there after school as a counselor, teacher's aide, and tech assistant. On my own time, I compared options, budgeted the system, and set it up for the classrooms, then invited teachers and parents to free sessions on staying safe online.
+I'd volunteered there in high school, and in 2025 I was working there after school as a counselor, teacher's aide, and tech assistant. On my own time, I compared options, budgeted the system, and set it up for the classrooms. I then invited teachers and parents to sessions on staying safe online, at no charge.
 
 ## The results
 

@@ -11,7 +11,7 @@ role: "As neon1"
 when: "2025"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.10"
+edition: "1.11"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: security
@@ -33,18 +33,16 @@ Teachers, parents, engineers, and executives knew their accounts, homes, and bus
 
 ## The work
 
-I've run sessions for groups of parents, teachers, engineers, and executives. Most were hosted by small and medium businesses for their own people. Others I held in a rented WeWork room for people who came through my Retro NY meetups. Topics include:
+I've run sessions for groups of parents, teachers, engineers, and executives. Most were hosted by small and medium businesses for their own people. Others I held in a rented WeWork room for people who came through my Retro NY meetups. Each session fits the audience's devices and accounts, with time to change real settings. Topics include:
 
 - Securing home and business networks, cameras, and connected devices.
 - Fraud, phishing, data brokers, and what's sold on the dark web.
 - Account hygiene, password managers, and two-factor sign-in.
 - The security of physical spaces, not just screens.
 
-Each session fits the audience's devices and accounts, with time to change real settings.
-
 ## The results
 
-The best measure is what people do: turning on two-factor sign-in in the session, changing default camera and router passwords, and returning with questions about their own setups.
+The best measure is what people do: turning on two-factor sign-in during the session, changing default camera and router passwords, and returning with questions about their own setups.
 
 ## After handover
 

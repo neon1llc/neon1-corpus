@@ -11,7 +11,7 @@ role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.10"
+edition: "1.11"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -29,13 +29,13 @@ origin: "neon1-site src/app/public/index.html#case-accounting"
 
 ## The problem
 
-The firm's knowledge was spread across Microsoft 365: policies, manuals, Word files, PDFs, and client documents. A routine lookup took 2 to 10 minutes, often by asking a senior colleague. Drafts, old versions, and restricted files sat next to the right answer, so a simple chatbot would have been risky.
+The firm's knowledge sat across Microsoft 365: policies, manuals, Word files, PDFs, and client documents. A routine lookup took 2 to 10 minutes, often by asking a senior colleague. Drafts, old versions, and restricted files sat beside the right answer, so a plain chatbot would have been risky.
 
-The ask: staff ask normal questions and get the approved answer with its document.
+The ask: staff ask a normal question and get the approved answer with its source document.
 
 ## The work
 
-[Xenoss](https://xenoss.io), an AWS partner, held the contract and brought me in as a subcontractor. This was my first project with a partner. We designed it together and Xenoss maintains it. I handled ingestion, embeddings, retrieval, and answer quality.
+[Xenoss](https://xenoss.io), an AWS partner, held the contract and brought me in as a subcontractor, my first project with a partner. We designed it together, Xenoss maintains it, and I handled ingestion, embeddings, retrieval, and answer quality.
 
 - Only approved Microsoft 365 libraries sync into versioned, encrypted S3, with source, version, and access details.
 - Bedrock Knowledge Bases, Titan embeddings, and OpenSearch Serverless run hybrid search, so exact form numbers match as well as reworded questions.

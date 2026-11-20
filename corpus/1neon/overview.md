@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-10
-edition: "1.6"
+edition: "1.7"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -32,16 +32,16 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 | `N1-0001`, `N1-0002` | An organization's **client ID**, numbered in the order clients joined. N1-0001 is neon1 itself. | Chooser, All clients, organization header |
 | `acme-dental` | An organization's **slug**, its handle in addresses | `/1NEON/o/acme-dental/...` |
 | `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template plus a number counted per organization and prefix | Cards, lists, the project page, search |
-| `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal; the first 1NEON issued is 0039, and each change is issued as the next revision | The proposal strip under Options, the proposal page, its PDF and Word copies |
+| `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal. The first 1NEON issued is 0039, and each change is issued as the next revision | The proposal strip under Options, the proposal page, its PDF and Word copies |
 | `0039-r2-B` | An **option ID**: the revision and the option's letter. A decision names the ID it approved | Options, decisions, purchases bought for an option |
 | `INV-0039-01` | An **invoice number**: the proposal's number (or the project key when there's no proposal) and the invoice's place in the project. Set when neon1 issues it | Invoices, the invoice page, card statements (`NEON1* INV003901`) |
-| Item titles | Items (requests, tasks, options, measures, and so on) are shown by title; their IDs only appear in links (`#item-…`) | Inside a project |
+| Item titles | Items (requests, tasks, options, measures, and so on) are shown by title. Their IDs only appear in links (`#item-…`) | Inside a project |
 
 Key prefixes come from the New project template: Blank is `PRJ`, Cloud migration `MIG`, Workflow automation `FLOW`, AI assistant `AI`, Security readiness `SEC`, and Personal or home tech `HOME`. The number counts up per prefix within one organization, so `MIG-1` in two organizations are two projects.
 
 ## The frame around every signed-in page
 
-- **Menu** (top left; **Menu** at the bottom on phones) opens every page: Home, Board, Projects, Files, Insights, People, Settings, the four layers, and your profile. Choosing **Mini** on the profile also keeps a slim column of icons on the left.
+- **Menu** (top left, **Menu** at the bottom on phones) opens every page: Home, Board, Projects, Files, Insights, People, Settings, the four layers, and your profile. Choosing **Mini** on the profile also keeps a slim column of icons on the left.
 - **Organization chooser** at the top of the menu switches between organizations a person belongs to. neon1 also sees **All clients** there.
 - **Search** (the search button, Ctrl K or ⌘K, or `/`) jumps to any page or project and starts common actions: Start a new project and Upload a file for editors and admins, Invite people for admins.
 - **?** (top right) opens help for the page in view: what it's for, a few how-tos, **Show me on this page** (a spotlight tour of that page), and **Full tour**.
@@ -51,7 +51,7 @@ Key prefixes come from the New project template: Blank is `PRJ`, Cloud migration
 
 ## Themes
 
-Matrix offers **Awake** (light, the default) and **Plugged** (dark). Sentinel offers **Providence** (light) and **Desert of the real** (dark). The landing theme switch changes the family without changing the mode. Profile choices use the same names; **Match my device** follows the device setting within the chosen family. Neo's window follows the page.
+Matrix offers **Awake** (light, the default) and **Plugged** (dark). Sentinel offers **Providence** (light) and **Desert of the real** (dark). The landing theme switch changes the family without changing the mode. Profile choices use the same names. **Match my device** follows the device setting within the chosen family. Neo's window follows the page.
 
 ## Addresses
 
@@ -81,7 +81,7 @@ Signed-in pages live under `https://neon1.tech/1NEON/`. `{org}` is the organizat
 | Your profile | `/1NEON/me` (two-step verification at `/1NEON/me#security`) |
 | All clients (neon1 only) | `/1NEON/all/workflow` |
 | FAQs, public | `/1NEON/faqs` |
-| Guided walkthrough, public, the way in | `/1NEON/live` (whole story: `?play=full`; short ones: `?play=free`, `invite`, `passkey`, `authenticator`, `texts`, `calendar`; one chapter: `?play=signin`, `profile`, `team`, `start`, `needs`, `listen`, `propose`, `decide`, `pay`, `build`, `change`, `observe`, `handover`, `final`, `care`; client: `&scenario=harborline`, `quillwork`, or `fenwick`) |
+| Guided walkthrough, public, the way in | `/1NEON/live` (whole story: `?play=full`. Short ones: `?play=free`, `invite`, `passkey`, `authenticator`, `texts`, `calendar`. One chapter: `?play=signin`, `profile`, `team`, `start`, `needs`, `listen`, `propose`, `decide`, `pay`, `build`, `change`, `observe`, `handover`, `final`, `care`, client: `&scenario=harborline`, `quillwork`, or `fenwick`) |
 | Sample project, public | `/1NEON/example` (`?scenario=harborline`, `quillwork`, or `fenwick`) |
 | Interactive demo, public | `/1NEON/demo/` |
 | Privacy, terms, cookies, service agreement | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies`, `/1NEON/agreement` |

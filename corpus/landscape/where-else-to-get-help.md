@@ -6,7 +6,7 @@ type: comparison
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "2.1"
+edition: "2.2"
 reviewed: 2026-11-18
 consumers: [chat, knowledge, ai]
 pdf: true
@@ -36,7 +36,7 @@ Prices change, so check each provider.
 
 ## Things to watch for
 
-- **Freelancers:** quality, handover, and documentation vary. Make sure accounts are in your name.
+- **Freelancers:** quality, handover, and documentation vary. Keep accounts in your name.
 - **MSPs:** long contracts, tools and accounts in the provider's name, and exit fees. Ask what the monthly price includes, what costs extra, and how you'd leave before signing.
 - **Repair shops:** they fix the device in front of them, rarely how your tools work together.
 
@@ -46,4 +46,4 @@ A bounded result that needs judgment across systems: an assessment, an integrati
 
 ## Sources
 
-Provider pricing and service terms change. Check the linked pages and each provider's quote before deciding.
+Provider pricing and terms change. Check each provider's quote before deciding.

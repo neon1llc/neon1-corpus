@@ -11,7 +11,7 @@ role: "As neon1, as a subcontractor"
 when: "2026"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.8"
+edition: "1.9"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
@@ -29,16 +29,16 @@ origin: "neon1-site src/app/public/index.html#case-dermatology"
 
 ## The problem
 
-A new practice and its sister location ran intake through a shared Microsoft 365 inbox. Patients sent forms, insurance cards, referrals, and phone photos. Staff downloaded, renamed, and tracked them in Outlook flags and a spreadsheet, then uploaded each into a slow EHR. Anything missing started another round of emails.
+A new dermatology practice and its sister location ran intake through one shared Microsoft 365 inbox. Patients sent forms, insurance cards, referrals, and phone photos. Staff downloaded, renamed, and tracked each one with Outlook flags and a spreadsheet, then uploaded it into a slow EHR. Anything missing started another round of emails.
 
 ## The work
 
 I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. [Xenoss](https://xenoss.io) held the contract, brought me in as a subcontractor, and helped on design and maintenance.
 
-- CloudFront, WAF, and a private S3 site serve the portal. API Gateway, Cognito, and Python Lambda run the workflow.
-- Each intake has one state in DynamoDB. Documents upload to an encrypted S3 vault, locked until a malware scan passes.
-- Staff see one queue of what's complete and missing, and link each intake to the patient's EHR record by ID and MRN. The EHR vendor's interface wasn't available, so the portal was built not to depend on it.
-- Emails never include patient details, and access, encryption, and audit logging were set up front.
+- Patients upload once. CloudFront, WAF, and a private S3 site serve the portal, and API Gateway, Cognito, and Python Lambda run the workflow.
+- Each intake has one state in DynamoDB. Documents go to an encrypted S3 vault, locked until a malware scan passes.
+- Staff see one queue of what's complete and missing, and link each intake to the patient's EHR record by ID and MRN. The EHR vendor's interface wasn't available, so the portal doesn't depend on it.
+- Emails never include patient details, and access, encryption, and audit logging were set up first.
 
 ## The results
 

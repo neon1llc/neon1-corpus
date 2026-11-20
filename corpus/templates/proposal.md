@@ -9,7 +9,7 @@ created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.6"
+edition: "1.7"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -17,7 +17,7 @@ related: [examples-proposal-options, examples-proposal, templates-services-agree
 # Proposal
 
 > [!note] How to use this template
-> Fill every blank. An empty blank is an open question to settle before signing. This proposal works under the [services agreement](services-agreement.md), signed once before paid work, and doesn't replace it. One way to do the work: fill in "Included" and "Not included." Two or three: fill in "Options" instead, one block each. Hours are estimated task by task for one experienced person, with no padding.
+> Fill every blank. An empty blank is an open question to settle before signing. This proposal works under the [services agreement](services-agreement.md) and doesn't replace it. For one way to do the work, fill in "Included" and "Not included." For two or three, fill in "Options" instead, one block each. Hours are estimated task by task for one experienced person, with no padding.
 
 **neon1 proposal for:** ____
 

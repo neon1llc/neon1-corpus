@@ -10,14 +10,14 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.10"
+edition: "1.11"
 ---
 
 # Ready, Secure, Go
 
 *Public · v0.1.7*
 
-**Security steps for each kind of space.** Plain-language guidance for a phone, a home network, a classroom, a small office, or a company heading into SOC 2: five things worth doing first, then what's next. It's open on [GitHub](https://github.com/neon1llc/ready-secure-go).
+**Security steps for each kind of space.** Plain-language guidance for a phone, a home network, a classroom, a small office, or a company heading into SOC 2: five things to do first, then what's next. It's open on [GitHub](https://github.com/neon1llc/ready-secure-go).
 
 - **What's in it:** ten spaces, from Me to Builders, each with five first steps, plus a readiness check, practices by level, playbooks for when something goes wrong, teach kits, and printable handouts. It was called neon1 Ready until November 2026.
 - **Licenses:** written material under CC BY-SA 4.0, code under MIT.

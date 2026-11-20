@@ -10,7 +10,7 @@ origin: "neon1-site src/app/public/index.html#work"
 status: adopted
 updated: 2026-11-20
 created: 2026-11-03
-edition: "1.9"
+edition: "1.10"
 ---
 
 # DeployOps
@@ -19,7 +19,7 @@ edition: "1.9"
 
 **Deploy pipelines with checks, approvals, and rollback.** The code is on [GitHub](https://github.com/neon1llc/deploy-ops) under the Apache-2.0 license.
 
-- **Who it's for:** small technical teams that deploy by hand today, or whose pipelines grew piece by piece.
+- **Who it's for:** small technical teams that deploy by hand, or whose pipelines grew piece by piece.
 - **What it does:** builds, deploys, releases only the app when only the app changed, promotes between stages, runs an HTTP check, and rolls back.
 
 ## What's been run
@@ -31,7 +31,7 @@ edition: "1.9"
 
 ## Try the demo
 
-The demo needs Python 3 and no cloud account. From a clone of the repository:
+The demo needs Python 3 and no cloud account. From a clone:
 
 ```sh
 python3 -m venv .venv && source .venv/bin/activate && python -m pip install -r requirements-dev.txt -e .

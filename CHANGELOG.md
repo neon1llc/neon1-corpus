@@ -6,6 +6,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ### Changed
 - Shorter pages across guides, FAQs, services, pricing, contact, blog posts, case studies, products, and standards: intro and closing explainers, repeated context, and helper sentences are gone, and the first call, free accounts, and outlining guides are about a seventh shorter. Facts, figures, client details, and links are unchanged.
+- The case studies are rewritten so the problem, the work, and the result read in order, with every figure, name, and attribution unchanged. The 1NEON guide pages and Neo's directive lose their prose semicolons and some repeated wording, with no change to any rule. The 1NEON help questions now match the portal's own help (the profile saves on its own), and the product pages and customer-facing standards are tighter.
 - The "free" wording is lighter, and the blog post "Why I started neon1" (edition 1.5) drops its update note and its "free way to start" title. The companion-guides caveat on Ready, Secure, Go is gone, since "What don't you do?" covers it.
 
 ## v0.51.4 - 2026-11-20

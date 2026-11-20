@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "2.3"
+edition: "2.4"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
@@ -34,11 +34,11 @@ I keep apart what we observed, what someone remembers, what we estimated, what a
 
 ## Match promises to coverage
 
-A system can run around the clock while I work by appointment, so every service says who responds to a failure, and when. An automatic alert isn't a staffed response.
+A system can run around the clock while I work by appointment, so every service says who responds to a failure, and when. An alert isn't a staffed response.
 
 ## Prefer the smallest solution that lasts
 
-I check what you already pay for before adding anything, counting maintenance, vendor changes, access, and recovery. Self-hosted free software still costs someone's time.
+I check what you already pay for before adding anything, counting maintenance, vendor changes, access, and recovery. Self-hosted software still costs someone's time.
 
 ## Make you an effective participant
 
@@ -50,7 +50,7 @@ Before a change, I know how to undo it, recover the data, and keep the business 
 
 ## Choosing engagements
 
-A project fits when the problem repeats, success can be described, the data is yours to share, the work fits the calendar, and there's a manual fallback. I talk with both the person who pays and the people who use it.
+A project fits when the problem repeats, success can be described, the data is yours to share, the work fits the calendar, and there's a manual fallback. I talk with the person who pays and the people who use it.
 
 I refer out continuous emergency support, safety-critical equipment, regulated professional judgment, specialist security assurance, and large migrations.
 

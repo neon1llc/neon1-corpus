@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "2.7"
+edition: "2.8"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -20,7 +20,7 @@ origin: "neon1-1NEON packages/domain (model, defaults, access, proposal, billing
 
 A project is one piece of work for one organization. It has a key (such as `FLOW-1`), a name, a short summary, an outcome ("what will be true when it's done"), a target date, a stage, a health, the people on it with their roles, sensitive-data flags (PII, PHI, or payment data), and items in four layers. Every change records who and when. Every edit carries the version last seen, so two people can't silently overwrite each other: the later save is shown what changed and asked to choose.
 
-A project can be **archived** (kept, read only, off the main lists; **Restore from archive** brings it back) or moved to **Trash** by an admin, who types the project's key to confirm. A trashed project leaves every view but is kept, and erased only if the client asks.
+A project can be **archived** (kept, read only, off the main lists. **Restore from archive** brings it back) or moved to **Trash** by an admin, who types the project's key to confirm. A trashed project leaves every view but is kept, and erased only if the client asks.
 
 ## Stages and the board
 
@@ -62,11 +62,11 @@ A project page has tabs for **Overview** and each layer, which groups its items 
 | Task | Execute | One piece of work someone can finish | To do, In progress, Blocked, Done |
 | Milestone | Execute | A point everyone can see, such as a launch | same |
 | Change request | Execute | A change to what was agreed, with its effect on cost and dates | same |
-| Hours | Execute | Time neon1 worked on one day, in quarter hours, with what it went to. Only neon1 adds entries; the client reads them | a record, kept as logged once an invoice bills it |
+| Hours | Execute | Time neon1 worked on one day, in quarter hours, with what it went to. Only neon1 adds entries, the client reads them | a record, kept as logged once an invoice bills it |
 | Purchase | Execute | Something to buy for the approved option: estimate, actual cost, where it was bought, who buys it (the client or neon1), and its receipt | Open, Bought, Installed (done), Returned |
 | Invoice | Execute | A bill for the work or for purchases, numbered when issued (such as INV-0039-01) | Draft, Issued, Paid, Void. Partly paid, bank payment clearing, and overdue are worked out from payments and the due date |
 | Payment | Execute | Money received against one invoice, from Stripe or recorded by neon1 | a record |
-| Status update | Execute | One line on how it's going, with a health; posting it sets the project's health | a record |
+| Status update | Execute | One line on how it's going, with a health, posting it sets the project's health | a record |
 | Measure (metric) | Observe | A number that shows it worked: unit, baseline, target, which way is better, and dated readings | Done when it reaches its target |
 | Check | Observe | Something to test before calling it done | To do, In progress, Blocked, Done |
 | Incident | Observe | Something that broke: what people saw, when, and what fixed it | same |
@@ -115,9 +115,9 @@ A request added after approval asks "Does this change what was approved?" (**Yes
 
 **Approve this option** is offered only to the person allowed to approve on that project:
 
-- the project's named **decision maker**, or several, any of whom may approve;
-- if nobody is named, an **admin of the client organization**;
-- never neon1, which proposed the options, except in neon1's own organization (N1-0001), where neon1 is the client.
+- the project's named **decision maker**, or several, any of whom may approve
+- if nobody is named, an **admin of the client organization**
+- never neon1, which proposed the options, except in neon1's own organization (N1-0001), where neon1 is the client
 
 Neo never approves for anyone. Asked to, it points to **Approve this option**.
 
@@ -137,17 +137,17 @@ Approving also:
 - The option's expected purchases join Execute, marked with its ID.
 - Drafts a deposit invoice for neon1 to check and issue, when the price is in numbers: half a fixed price, or half an estimate's low end. Nothing reaches the client until it's issued.
 
-Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview; editors change everyone else. neon1 can't be decision maker outside its own organization.
+Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview. Editors change everyone else. neon1 can't be decision maker outside its own organization.
 
 ### Changing the decision
 
-Until the handover is accepted, the decision maker can choose a different option with **Choose this instead**. The screen says **Change to 0039-r1-C?** and adds what the change replaces (the option, when it was approved, and by whom), what was already invoiced for it, the hours already logged, and the deposit asked now. A reason is required, and the change is signed like an approval; the reason and the replaced decision go into the signed fingerprint.
+Until the handover is accepted, the decision maker can choose a different option with **Choose this instead**. The screen says **Change to 0039-r1-C?** and adds what the change replaces (the option, when it was approved, and by whom), what was already invoiced for it, the hours already logged, and the deposit asked now. A reason is required, and the change is signed like an approval. The reason and the replaced decision go into the signed fingerprint.
 
 - Nothing is billed twice. Money invoiced for the replaced decision counts toward the new one, so its deposit asks only for the difference, or nothing. An unissued deposit draft for the replaced decision is removed, and the new option's takes its place.
 - Hours already logged count toward the new option's hours, and its high end still caps the total.
 - If what was invoiced comes to more than the new option can cost, accepting the handover drafts a credit for the difference.
 - The replaced decision stays in Needs, marked "replaced by a later decision", and its option shows **replaced**. The new decision shows **Why it changed**.
-- Going back to a replaced option waits until neon1 confirms it in the next revision, with checked prices; then it shows **Go back to this option**.
+- Going back to a replaced option waits until neon1 confirms it in the next revision, with checked prices, then it shows **Go back to this option**.
 - Once the handover is accepted, the decision stays. Everyone following Decisions and options is told of a change, and the activity record says from what, to what, and why.
 
 ## The service agreement
@@ -156,14 +156,14 @@ neon1's service agreement covers every project with an organization. Anyone can 
 
 ## Purchases
 
-**Purchases**, in Execute, start from the approved option's expected purchases. Each shows its estimate, the actual cost and where, who buys it, and its receipt; a bought item without one is flagged. Statuses are **Open**, **Bought**, **Installed** (done), and **Returned**.
+**Purchases**, in Execute, start from the approved option's expected purchases. Each shows its estimate, the actual cost and where, who buys it, and its receipt. A bought item without one is flagged. Statuses are **Open**, **Bought**, **Installed** (done), and **Returned**.
 
 - **The client buys it** ("You buy it."): in the organization's name, keeping the receipt with the project (**Attach the receipt**).
 - **neon1 buys it**: only after the decision maker initials that neon1 buys it and is paid back at cost, in the signed approval or later on the purchase. Until then it says "Waiting on the decision maker's initials before neon1 buys it." neon1 attaches the receipt and bills exactly that amount, with no markup.
 
 ## Handover acceptance
 
-Handover steps in Normalize are ticked as they're done, by either side. Until all are, the steps say how many are left; then the decision maker sees "Every step is done" and chooses **Accept the handover**, with an optional note ("What you checked") and **Sign and accept the handover**, signed like an approval. One signature accepts every remaining step, each keeping its own record with "Accepted by", name, and date. **Check it and accept** accepts a single unticked step and marks it done. An accepted step can't be unticked. Acceptance drafts a final invoice for neon1: what's left on a fixed price, or the hours worked less earlier invoices on an estimate. Home's **Needs you** and the project's **Next step** prompt the decision maker when it's time.
+Handover steps in Normalize are ticked as they're done, by either side. Until all are, the steps say how many are left. Then the decision maker sees "Every step is done" and chooses **Accept the handover**, with an optional note ("What you checked") and **Sign and accept the handover**, signed like an approval. One signature accepts every remaining step, each keeping its own record with "Accepted by", name, and date. **Check it and accept** accepts a single unticked step and marks it done. An accepted step can't be unticked. Acceptance drafts a final invoice for neon1: what's left on a fixed price, or the hours worked less earlier invoices on an estimate. Home's **Needs you** and the project's **Next step** prompt the decision maker when it's time.
 
 ## Hours
 
@@ -190,11 +190,11 @@ Each invoice has its own page, `/1NEON/o/{org}/projects/{KEY}/invoices/{id}`: fr
 
 Paying:
 
-- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout for the balance, bank transfer (ACH) first and card too. 1NEON never sees card or bank details. A card payment shows as paid at once. A bank payment shows as **bank payment clearing**, with its amount and date, until the bank clears it in a few business days; meanwhile **Pay** is gone and nothing counts it overdue or asks for it, so nobody pays twice. If the bank refuses it, no money moved: the invoice reopens with the failed payment listed and **Pay again**, and Next step and Needs you say so. Billing contacts are told when a bank payment starts, clears, or fails.
+- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout for the balance, bank transfer (ACH) first and card too. 1NEON never sees card or bank details. A card payment shows as paid at once. A bank payment shows as **bank payment clearing**, with its amount and date, until the bank clears it in a few business days, meanwhile **Pay** is gone and nothing counts it overdue or asks for it, so nobody pays twice. If the bank refuses it, no money moved: the invoice reopens with the failed payment listed and **Pay again**, and Next step and Needs you say so. Billing contacts are told when a bank payment starts, clears, or fails.
 - **By check, Zelle, or wire:** neon1 records it with **Record a payment** when it arrives: the amount, how it arrived, the date, and a check number or confirmation.
 - No surcharge is added for any way of paying.
 
-Issued invoices and payments are permanent. A mistake is fixed with a **credit** or by voiding with a reason (**Void invoice**), both kept on record. An invoice with payments, or one clearing, is credited rather than voided; one whose only payment failed can be voided. Every signature, issued invoice, and payment is also kept write-protected for seven years.
+Issued invoices and payments are permanent. A mistake is fixed with a **credit** or by voiding with a reason (**Void invoice**), both kept on record. An invoice with payments, or one clearing, is credited rather than voided. One whose only payment failed can be voided. Every signature, issued invoice, and payment is also kept write-protected for seven years.
 
 The **Agreements, invoices, and payments** notification group (email on by default) covers the agreement signed, invoices issued or voided, and payments started, arrived, or failed. Drafts never reach the client.
 

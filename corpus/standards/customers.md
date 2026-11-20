@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "2.1"
+edition: "2.2"
 order: 16
 origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
@@ -22,17 +22,17 @@ I work with businesses, technical teams, and individuals, described by what they
 
 - Start from what's already there. Existing systems, vendors, staff, and procedures usually stay, and paper or a spreadsheet can be the right tool.
 - Compare the alternatives: doing it in-house, a feature you already pay for, an established product, an AI tool, another provider, or not doing it yet.
-- Monitoring, recording, AI use, and data access are always visible. Efficiency never becomes hidden surveillance of staff.
+- Monitoring, recording, AI use, and data access are visible. Efficiency never becomes hidden surveillance of staff.
 - Accounts, data, and documentation stay with the client, with a clean way out.
-- Handover fits the person taking over: a technical review for an engineer, hands-on practice for anyone who wants it.
+- Handover fits the person taking over: a technical review for an engineer, hands-on practice for anyone else.
 
 ## Businesses and organizations
 
-Most have established software, vendors, and procedures, and often technical staff or a provider. They come to me to integrate systems that work well alone, see operations across them, add a capability their products don't cover, cut a recurring cost, consolidate after growth, evaluate an investment, apply AI where it fits, or hand off a project they could do but would rather not.
+Most have established software, vendors, and procedures, and often technical staff or a provider. They come to integrate systems that work well alone, see operations across them, add a capability their products don't cover, cut a recurring cost, consolidate after growth, evaluate an investment, apply AI where it fits, or hand off a project they could do but would rather not.
 
 ## Technical teams
 
-Teams often know their systems, and sometimes their field, better than I do. They don't need more hands. They bring me a bounded result: an architecture or cost review, a migration with a rollback plan, a specialist integration, production readiness, an AI evaluation, a customer's security requirement, or a project outside their main commitments. I work in their repositories and change process, follow their conventions, agree how they'll judge the result, and hand it back to them.
+Teams often know their systems, and sometimes their field, better than I do. They don't need more hands. They need a bounded result: an architecture or cost review, a migration with a rollback plan, a specialist integration, production readiness, an AI evaluation, a customer's security requirement, or a project outside their main commitments. I work in their repositories and change process, agree how they'll judge the result, and hand it back.
 
 ## Individuals and households
 
@@ -44,7 +44,7 @@ When a project touches health information, a [business associate agreement](../t
 
 ## When I say no
 
-I turn down or refer work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, a larger delivery team, hidden employee monitoring, or support I can't give. I also say so when something simpler or already available will do. The [alternatives page](../landscape/where-else-to-get-help.md) lists who's better placed.
+I turn down or refer work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, a larger delivery team, hidden employee monitoring, or support I can't give. I also say when something simpler or already available will do. [Where else to get help](../landscape/where-else-to-get-help.md) lists who's better placed.
 
 ## Community help
 

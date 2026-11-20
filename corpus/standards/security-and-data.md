@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.4"
+edition: "1.5"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -16,7 +16,7 @@ related: [standards-ai-quality, standards-reliability-and-recovery, policy-priva
 
 # Security and data
 
-Security starts with who owns what and who can get in, then adds controls to match the data and stakes. A tool or a scan doesn't make a system secure, so I never say it does.
+Security starts with who owns what and who can get in, then adds controls to match the data and stakes. A tool or scan doesn't make a system secure, so I never say it does.
 
 ## Frameworks, used for what they're for
 
@@ -35,7 +35,7 @@ Before connecting anything, we list the information, why it's needed, where it l
 
 I don't collect what the work doesn't need, and development uses sample or redacted records. Before data goes to a vendor, I explain where it's processed, how long it's kept, and who else touches it, checking whether consumer or business terms apply.
 
-Information lingers in forgotten places: notifications, automation history, logs, AI prompts, search indexes, and backups. I won't promise complete deletion until I know how each behaves.
+Information lingers in notifications, automation history, logs, AI prompts, search indexes, and backups. I won't promise complete deletion until I know how each behaves.
 
 ## Access and ownership
 
@@ -49,7 +49,7 @@ For multi-user apps, I test permissions on the server, since hiding a button doe
 
 ## Thinking through threats, briefly
 
-For each project I sketch what's built, where information changes hands, what could go wrong, and how we'll check. For an intake form: a forged submission, a stolen account, a malicious attachment, or a misdirected email. Each risk ends with a decision and a test.
+For each project I sketch what's built, where information changes hands, what could go wrong, and how we'll check. For an intake form: a forged submission, a stolen account, a malicious attachment, or a misdirected email. Each risk ends in a decision and a test.
 
 ## The baseline
 
