@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-09
-edition: "1.7"
+edition: "1.8"
 consumers: [knowledge, ai]
 pdf: true
 audience: "Anyone thinking about a project"
@@ -15,7 +15,7 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call is free and takes about 30 minutes. We cover the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've asked for an assessment from a [1NEON account](free-accounts.md), I read it first. You can book without one.
+The first call takes about 30 minutes. We cover the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've asked for an assessment from a [1NEON account](free-accounts.md), I read it first. You can book without one.
 
 ## Bring one real example
 

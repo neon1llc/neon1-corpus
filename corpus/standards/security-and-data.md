@@ -8,7 +8,7 @@ updated: 2026-11-20
 created: 2026-11-01
 consumers: [ai]
 pdf: true
-edition: "1.5"
+edition: "1.6"
 order: 10
 origin: "neon1's internal handbook, security and data"
 related: [standards-ai-quality, standards-reliability-and-recovery, policy-privacy, templates-business-associate-agreement]
@@ -18,22 +18,13 @@ related: [standards-ai-quality, standards-reliability-and-recovery, policy-priva
 
 Security starts with who owns what and who can get in, then adds controls to match the data and stakes. A tool or scan doesn't make a system secure, so I never say it does.
 
-## Frameworks, used for what they're for
+## Frameworks
 
-| Framework | What I use it for |
-|---|---|
-| [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Spotting missing responsibilities across Govern, Identify, Protect, Detect, Respond, and Recover |
-| [CIS Controls, Implementation Group 1](https://www.cisecurity.org/controls/implementation-groups/ig1) | A prioritized starting point for basic hygiene |
-| [OWASP Application Security Verification Standard (ASVS)](https://asvs.owasp.org/) | Testable requirements for applications, cited by version and number |
-| [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | How software gets built and released safely |
+I use the [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) to spot missing responsibilities, [CIS Controls IG1](https://www.cisecurity.org/controls/implementation-groups/ig1) as a starting point for basic hygiene, the [OWASP ASVS](https://asvs.owasp.org/) for testable application requirements, and the [NIST SSDF](https://csrc.nist.gov/pubs/sp/800/218/final) for building and releasing software safely. Informed by a framework isn't certified against it. I won't call work "NIST certified," "compliant," or "enterprise grade" because these sources shaped it.
 
-Informed by a framework isn't certified against it. I won't call work "NIST certified," "compliant," or "enterprise grade" because these sources shaped it.
+## Data first
 
-## Know the data first
-
-Before connecting anything, we list the information, why it's needed, where it lives, who sees it, which vendors get it, and when it's deleted, labeled public, internal, confidential, or restricted.
-
-I don't collect what the work doesn't need, and development uses sample or redacted records. Before data goes to a vendor, I explain where it's processed, how long it's kept, and who else touches it, checking whether consumer or business terms apply.
+Before connecting anything, we list the information, why it's needed, where it lives, who sees it, which vendors get it, and when it's deleted, labeled public, internal, confidential, or restricted. I don't collect what the work doesn't need, and development uses sample or redacted records. Before data goes to a vendor, I explain where it's processed, how long it's kept, and who else touches it, and check whether consumer or business terms apply.
 
 Information lingers in notifications, automation history, logs, AI prompts, search indexes, and backups. I won't promise complete deletion until I know how each behaves.
 
@@ -42,14 +33,10 @@ Information lingers in notifications, automation history, logs, AI prompts, sear
 - Named accounts, the least access the job needs, and separate admin roles.
 - Multi-factor sign-in on business and admin accounts, phishing-resistant where the service supports it.
 - No shared admin passwords, and no credentials in proposals, chat, code, or bookmarks.
-- Every access grant records who approved it, why, and when it ends. After handover I remove what I no longer need and check it's gone.
+- Every grant records who approved it, why, and when it ends. After handover I remove what I no longer need and check it's gone.
 - No remote-control software left installed without a support agreement and your informed consent.
 
 For multi-user apps, I test permissions on the server, since hiding a button doesn't stop a direct request, and check that no customer can reach another's records by changing an ID, including through exports and search.
-
-## Thinking through threats, briefly
-
-For each project I sketch what's built, where information changes hands, what could go wrong, and how we'll check. For an intake form: a forged submission, a stolen account, a malicious attachment, or a misdirected email. Each risk ends in a decision and a test.
 
 ## The baseline
 
@@ -69,23 +56,19 @@ For each project I sketch what's built, where information changes hands, what co
 
 When the stakes call for it, I bring in a specialist.
 
-## Software and secrets
+## Software, threats, vulnerabilities, and privacy
+
+For each project I sketch what's built, where information changes hands, and what could go wrong, such as a forged submission, a stolen account, a malicious attachment, or a misdirected email. Each risk ends in a decision and a test.
 
 Code follows the [development](development.md) standard. A leaked secret is revoked or rotated and the old one confirmed dead, because deleting the visible copy isn't enough. A scan of a live system can change data, so its scope is agreed first.
 
-## Fixing vulnerabilities
+For a vulnerability I ask whether the affected part is present, reachable, being exploited, and what it would expose. A severity score sorts the list but doesn't describe your risk. If something urgent needs a faster response than I can give, we arrange someone who can first.
 
-I ask whether the affected part is present, reachable, being exploited, and what it would expose. A severity score sorts the list but doesn't describe your risk. If something urgent needs a faster response than I can give, we arrange someone who can first.
-
-## Privacy and agreements
-
-neon1's promises and a vendor's are kept apart. The right agreements for your data and location come before work starts, such as a [business associate agreement](../templates/business-associate-agreement.md) when health information is involved. A vendor's compliance badge doesn't cover a custom setup or how I handle the data.
-
-Real customer information never appears in a public demo, forum post, or code issue, and screenshots, file names, logs, comments, and revision history are scrubbed.
+neon1's promises and a vendor's are kept apart. The right agreements for your data and location come before work starts, such as a [business associate agreement](../templates/business-associate-agreement.md) for health information. A vendor's compliance badge doesn't cover a custom setup or how I handle the data. Real customer information never appears in a public demo, forum post, or code issue, and screenshots, file names, logs, comments, and revision history are scrubbed.
 
 ## Before you rely on it
 
-Access is right, normal and failure paths behave as agreed, findings are fixed or knowingly accepted, recovery is believable, recurring charges are understood, and you can run it. We record who decided, on what evidence, and name anything important that's unknown, then resolve it or limit the release.
+Access is right, normal and failure paths behave as agreed, findings are fixed or knowingly accepted, recovery is believable, recurring charges are understood, and you can run it. Anything important that's unknown is resolved or limits the release.
 
 ## Sources
 

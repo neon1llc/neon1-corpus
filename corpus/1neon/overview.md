@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "1.7"
+edition: "1.8"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -16,42 +16,38 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 
 # 1NEON guide: overview, names, and addresses
 
-1NEON is neon1's client portal at neon1.tech/1NEON. Each client organization runs its projects there with neon1. Every project moves through four layers, N E O N: **Needs** (what's wanted, and the options), **Execute** (the work), **Observe** (results checked against the goals), and **Normalize** (handover, training, and care). This guide covers every page, state, and action, so Neo can explain, link, tour, and plan any action.
+1NEON is neon1's client portal at neon1.tech/1NEON, where each client organization runs its projects with neon1. Every project moves through four layers, N E O N: **Needs** (what's wanted, and the options), **Execute** (the work), **Observe** (results checked against the goals), and **Normalize** (handover, training, and care).
 
 ## Who's who
 
-- **neon1** is the *operator*: it proposes options, does the work, and can enter every client organization. The operator role comes from sign-in configuration, never from portal data.
-- **A client organization** (also an organization, a client, or a tenant) is one business or household neon1 works with. Its admins or neon1 invite its people.
-- **neon1's own organization** has the slug `neon1` and the client ID **N1-0001**. There neon1 is also the client, so its people may approve options and name decision makers, which they can't do in any other organization.
-- **A member** is a person in an organization, with one access level there: viewer, editor, or admin. One person can belong to several organizations with a different level in each.
+- **neon1** is the *operator*. It proposes options, does the work, and can enter every client organization. The role comes from sign-in configuration, never from portal data.
+- **A client organization** is one business or household neon1 works with. Its admins or neon1 invite its people.
+- **neon1's own organization** has the slug `neon1` and the client ID **N1-0001**. There neon1 is also the client, so its people may approve options and name decision makers, which they can't do anywhere else.
+- **A member** is a person in an organization with one access level there: viewer, editor, or admin. One person can belong to several organizations at different levels.
 
-## IDs and names people see
+## IDs people see
 
-| Looks like | What it is | Where it shows |
-|---|---|---|
-| `N1-0001`, `N1-0002` | An organization's **client ID**, numbered in the order clients joined. N1-0001 is neon1 itself. | Chooser, All clients, organization header |
-| `acme-dental` | An organization's **slug**, its handle in addresses | `/1NEON/o/acme-dental/...` |
-| `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template plus a number counted per organization and prefix | Cards, lists, the project page, search |
-| `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal. The first 1NEON issued is 0039, and each change is issued as the next revision | The proposal strip under Options, the proposal page, its PDF and Word copies |
-| `0039-r2-B` | An **option ID**: the revision and the option's letter. A decision names the ID it approved | Options, decisions, purchases bought for an option |
-| `INV-0039-01` | An **invoice number**: the proposal's number (or the project key when there's no proposal) and the invoice's place in the project. Set when neon1 issues it | Invoices, the invoice page, card statements (`NEON1* INV003901`) |
-| Item titles | Items (requests, tasks, options, measures, and so on) are shown by title. Their IDs only appear in links (`#item-…`) | Inside a project |
+| Looks like | What it is |
+|---|---|
+| `N1-0001`, `N1-0002` | A **client ID**, numbered in the order clients joined |
+| `acme-dental` | An organization's **slug**, its handle in addresses (`/1NEON/o/acme-dental/...`) |
+| `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template (`PRJ` Blank, `MIG` Cloud migration, `FLOW` Workflow automation, `NET` Networks, `AI` AI assistant, `SEC` Security readiness, `HOME` Personal or home tech) and a number counted per organization and prefix, so `MIG-1` in two organizations are two projects |
+| `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal, and each change is issued as the next revision |
+| `0039-r2-B` | An **option ID**: the revision and the option's letter. A decision names the ID it approved |
+| `INV-0039-01` | An **invoice number**: the proposal's number (or the project key) and the invoice's place in the project. Card statements show `NEON1* INV003901` |
 
-Key prefixes come from the New project template: Blank is `PRJ`, Cloud migration `MIG`, Workflow automation `FLOW`, AI assistant `AI`, Security readiness `SEC`, and Personal or home tech `HOME`. The number counts up per prefix within one organization, so `MIG-1` in two organizations are two projects.
+Items are shown by title. Their IDs only appear in links (`#item-…`).
 
 ## The frame around every signed-in page
 
-- **Menu** (top left, **Menu** at the bottom on phones) opens every page: Home, Board, Projects, Files, Insights, People, Settings, the four layers, and your profile. Choosing **Mini** on the profile also keeps a slim column of icons on the left.
-- **Organization chooser** at the top of the menu switches between organizations a person belongs to. neon1 also sees **All clients** there.
-- **Search** (the search button, Ctrl K or ⌘K, or `/`) jumps to any page or project and starts common actions: Start a new project and Upload a file for editors and admins, Invite people for admins.
-- **?** (top right) opens help for the page in view: what it's for, a few how-tos, **Show me on this page** (a spotlight tour of that page), and **Full tour**.
-- **The bell** glows when something new happened in the organization: a file upload, a decision, a stage move, a new comment, and similar. Opening it lists what changed and who did it.
-- **Neo** sits at the bottom right: the assistant that answers questions, links to pages, runs tours, and, with the person's go-ahead, does things for them.
-- **A read-only banner** shows on All clients: "read only. Open a client to make changes."
+- **Menu** (top left, **Menu** at the bottom on phones) opens every page. Choosing **Mini** on the profile also keeps a slim column of icons.
+- **Organization chooser** at the top of the menu switches organizations. neon1 also sees **All clients**, read only ("Open a client to make changes").
+- **Search** (the button, Ctrl K or ⌘K, or `/`) jumps to any page or project and starts common actions.
+- **?** (top right) opens help for the page in view, with **Show me on this page** (a spotlight tour) and **Full tour**.
+- **The bell** glows when something new happened in the organization and lists what changed and who did it.
+- **Neo** sits at the bottom right. It answers questions, links to pages, runs tours, and with the person's go-ahead does things for them.
 
-## Themes
-
-Matrix offers **Awake** (light, the default) and **Plugged** (dark). Sentinel offers **Providence** (light) and **Desert of the real** (dark). The landing theme switch changes the family without changing the mode. Profile choices use the same names. **Match my device** follows the device setting within the chosen family. Neo's window follows the page.
+Themes: Matrix (**Awake** light, the default, and **Plugged** dark) and Sentinel (**Providence** light and **Desert of the real** dark). **Match my device** follows the device setting.
 
 ## Addresses
 
@@ -60,54 +56,36 @@ Signed-in pages live under `https://neon1.tech/1NEON/`. `{org}` is the organizat
 | Page | Address |
 |---|---|
 | Sign-in | `/1NEON/` |
-| Home (the organization's starting page) | `/1NEON/o/{org}/workspace` |
+| Home | `/1NEON/o/{org}/workspace` |
 | Board | `/1NEON/o/{org}/workflow` |
-| Projects (list and timeline) | `/1NEON/o/{org}/projects` |
-| New project | `/1NEON/o/{org}/projects/new` |
-| One project, Overview | `/1NEON/o/{org}/projects/{KEY}` |
-| One project, a layer | `/1NEON/o/{org}/projects/{KEY}/needs`, `/execute`, `/observe`, or `/normalize` |
-| Options on a project | `/1NEON/o/{org}/projects/{KEY}/needs#options` |
-| The project's proposal | `/1NEON/o/{org}/projects/{KEY}/proposal` |
-| A project's invoices | `/1NEON/o/{org}/projects/{KEY}/execute#billing` |
-| One invoice | `/1NEON/o/{org}/projects/{KEY}/invoices/{invoiceId}` |
+| Projects (list and timeline), New project | `/1NEON/o/{org}/projects`, `/1NEON/o/{org}/projects/new` |
+| A project, Overview | `/1NEON/o/{org}/projects/{KEY}` |
+| A project's layer | `/1NEON/o/{org}/projects/{KEY}/needs`, `/execute`, `/observe`, or `/normalize` |
+| Options, files asked for, invoices, one item | `.../{KEY}/needs#options`, `.../needs#files`, `.../execute#billing`, `.../{layer}#item-{itemId}` |
+| Proposal, one invoice | `.../{KEY}/proposal`, `.../{KEY}/invoices/{invoiceId}` |
 | The service agreement, to sign | `/1NEON/o/{org}/agreement` |
-| Files asked for on a project | `/1NEON/o/{org}/projects/{KEY}/needs#files` |
-| One item on a project | `/1NEON/o/{org}/projects/{KEY}/{layer}#item-{itemId}` |
 | One layer across all projects | `/1NEON/o/{org}/layer/needs` (also `execute`, `observe`, `normalize`) |
-| People | `/1NEON/o/{org}/people` |
-| Files | `/1NEON/o/{org}/documents` |
-| Insights | `/1NEON/o/{org}/insights` |
-| Settings | `/1NEON/o/{org}/settings` |
+| People, Files, Insights, Settings | `/1NEON/o/{org}/people`, `/documents`, `/insights`, `/settings` |
 | Your profile | `/1NEON/me` (two-step verification at `/1NEON/me#security`) |
 | All clients (neon1 only) | `/1NEON/all/workflow` |
 | FAQs, public | `/1NEON/faqs` |
-| Guided walkthrough, public, the way in | `/1NEON/live` (whole story: `?play=full`. Short ones: `?play=free`, `invite`, `passkey`, `authenticator`, `texts`, `calendar`. One chapter: `?play=signin`, `profile`, `team`, `start`, `needs`, `listen`, `propose`, `decide`, `pay`, `build`, `change`, `observe`, `handover`, `final`, `care`, client: `&scenario=harborline`, `quillwork`, or `fenwick`) |
+| Guided walkthrough, public | `/1NEON/live` (whole story: `?play=full`. Short ones: `?play=free`, `invite`, `passkey`, `authenticator`, `texts`, `calendar`. One chapter: `?play=signin`, `profile`, `team`, `start`, `needs`, `listen`, `propose`, `decide`, `pay`, `build`, `change`, `observe`, `handover`, `final`, `care`, client: `&scenario=harborline`, `quillwork`, or `fenwick`) |
 | Sample project, public | `/1NEON/example` (`?scenario=harborline`, `quillwork`, or `fenwick`) |
 | Interactive demo, public | `/1NEON/demo/` |
 | Privacy, terms, cookies, service agreement | `/1NEON/privacy`, `/1NEON/terms`, `/1NEON/cookies`, `/1NEON/agreement` |
 
-The address word for Execute is `execute` and for Normalize is `normalize`. Older links that say `execution` or `next` still work.
+Older links that say `execution` or `next` still work.
 
 ## Spotlight anchors
 
 Tours point at named spots, which exist only on the page listed and only while on screen.
 
-| Anchor | Page | What it is |
-|---|---|---|
-| `nav-home`, `nav-board`, `nav-projects`, `nav-layers`, `nav-files`, `nav-me` | Every page | Menu entries (the menu must be open, or Mini on) |
-| `menu` | Every page | The menu button |
-| `search` | Every page | The search button |
-| `help` | Every page | The ? button |
-| `notifications` | Organization pages | The bell |
-| `needs-you`, `coming-up`, `get-started`, `activity` | Home | Needs you, Coming up, Get started, Recent activity |
-| `board-column`, `board-card` | Board, All clients | A stage column, a project card |
-| `new-project`, `project-list` | Projects | New project button, the list |
-| `next-step`, `stage`, `layers` | One project | Next step box, the stage line, the layer tabs |
-| `proposal` | One project, Needs | The proposal strip under Options: the revision, its price check, and Issue or Read the proposal |
-| `wizard` | New project | The questions |
-| `layer-list` | One layer across projects | The list |
-| `invite`, `people-list` | People | Invite people, the list of people |
-| `upload` | Files | The upload area |
-| `kpis`, `weekly`, `by-layer` | Insights | The numbers on top, Finished per week, Projects by layer |
-| `stages` | Settings | The stage rows |
-| `passkey` | Profile | Two-step verification |
+- **Every page:** `nav-home`, `nav-board`, `nav-projects`, `nav-layers`, `nav-files`, `nav-me` (menu entries, with the menu open or Mini on), `menu`, `search`, `help`.
+- **Organization pages:** `notifications` (the bell).
+- **Home:** `needs-you`, `coming-up`, `get-started`, `activity`.
+- **Board, All clients:** `board-column`, `board-card`.
+- **Projects:** `new-project`, `project-list`.
+- **One project:** `next-step`, `stage`, `layers`, and on Needs `proposal` (the proposal strip under Options).
+- **New project:** `wizard`. **One layer across projects:** `layer-list`.
+- **People:** `invite`, `people-list`. **Files:** `upload`.
+- **Insights:** `kpis`, `weekly`, `by-layer`. **Settings:** `stages`. **Profile:** `passkey`.

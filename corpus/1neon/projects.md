@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "2.8"
+edition: "2.9"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -18,13 +18,13 @@ origin: "neon1-1NEON packages/domain (model, defaults, access, proposal, billing
 
 ## A project
 
-A project is one piece of work for one organization. It has a key (such as `FLOW-1`), a name, a short summary, an outcome ("what will be true when it's done"), a target date, a stage, a health, the people on it with their roles, sensitive-data flags (PII, PHI, or payment data), and items in four layers. Every change records who and when. Every edit carries the version last seen, so two people can't silently overwrite each other: the later save is shown what changed and asked to choose.
+A project is one piece of work for one organization. It has a key (such as `FLOW-1`), a name, a summary, an outcome ("what will be true when it's done"), a target date, a stage, a health, the people on it, sensitive-data flags (PII, PHI, or payment data), and items in four layers. Every change records who and when. Every edit carries the version last seen, so two people can't silently overwrite each other. The later save is shown what changed and asked to choose.
 
-A project can be **archived** (kept, read only, off the main lists. **Restore from archive** brings it back) or moved to **Trash** by an admin, who types the project's key to confirm. A trashed project leaves every view but is kept, and erased only if the client asks.
+An admin can **archive** a project (kept, read only, off the main lists, and **Restore from archive** brings it back) or move it to **Trash** by typing its key. A trashed project leaves every view but is kept, and erased only if the client asks.
 
 ## Stages and the board
 
-An organization's workflow is a row of stages, each tied to one layer. The default stages, in order:
+An organization's workflow is a row of stages, each tied to one layer. The defaults:
 
 | Stage | Layer | Done when |
 |---|---|---|
@@ -38,236 +38,166 @@ An organization's workflow is a row of stages, each tied to one layer. The defau
 | Care | Normalize | Ongoing care, or closed |
 | Closed | Normalize | (the end) |
 
-The **Board** shows each project as a card (key, name, health, time in stage) in its stage's column, under the "Done when" line and count. Editors and admins drag cards, or use **Move to** on a phone. In **Settings**, admins rename, reorder, limit, and hide stages and edit "Done when", confirming it's them to save. A hidden stage still shows while a project is in it.
+The **Board** shows each project as a card (key, name, health, time in stage) in its stage's column. Editors and admins drag cards, or use **Move to** on a phone. In **Settings**, admins rename, reorder, limit, and hide stages and edit "Done when", confirming it's them to save. A hidden stage still shows while a project is in it.
 
-Two stages keep their roles under any name or position: **Decide** is the gate (moving past it without an approved option asks for a reason, which is recorded), and **Closed** ends a project. **Reopen**, or dragging it back, moves a closed project to the stage before. Moving backward never asks for a reason, and moving never changes health.
+Two stages keep their roles under any name or position. **Decide** is the gate: moving past it without an approved option asks for a recorded reason. **Closed** ends a project, and **Reopen** (or dragging it back) moves it to the stage before. Moving backward never asks for a reason, and moving never changes health.
 
-**All clients** (neon1 only) is the same board across every organization, read only, grouped by organization or as one board.
+**All clients** (neon1 only) is the same board across every organization, read only.
 
 ## The four layers and their items
 
-A project page has tabs for **Overview** and each layer, which groups its items by kind. The onion beside the name has a ring per layer, Needs in the center, each filling as work gets done.
+A project page has tabs for **Overview** and each layer. The onion beside the name has a ring per layer, Needs in the center, each filling as work gets done.
 
 | Kind | Layer | What it is | Statuses |
 |---|---|---|---|
-| Request | Needs | Something the client wants, built as a sentence of taps: what, what for, what happens today, how often, and when | To do, In progress, Blocked, Done |
+| Request | Needs | What the client wants, built as a sentence of taps: what, what for, what happens today, how often, when | To do, In progress, Blocked, Done |
 | Discovery question | Needs | A question for the people who do the work, answered in their words | same |
-| System or account (asset) | Needs | A system, account, vendor, or data source the work touches. Never passwords | same |
-| Requirement | Needs | Something the result must do, with a priority: must, should, or could | same |
-| Option | Needs | One way to solve it, from neon1: cost, timeline, and scores for cost, quality, and effort (1 to 5, more is better), and whether neon1 recommends it | Draft, Proposed (shared for approval), Declined, Approved |
-| Decision | Needs | The permanent record of an approved option, with the approver's signature | Approved (a record, can't change) |
-| Constraint or assumption | Needs | Something the work depends on or is limited by, printed in the proposal | To do, In progress, Blocked, Done |
-| Proposal revision | Needs | One issued, frozen revision of the project's proposal, such as 0039-r1. Made only by **Issue the proposal** | a record |
-| File needed | Needs | A file neon1 asked the client for | Done once the file is sent |
-| Task | Execute | One piece of work someone can finish | To do, In progress, Blocked, Done |
-| Milestone | Execute | A point everyone can see, such as a launch | same |
+| System or account | Needs | A system, account, vendor, or data source the work touches. Never passwords | same |
+| Requirement | Needs | What the result must do: must, should, or could | same |
+| Option | Needs | One way to solve it, from neon1: cost, timeline, scores for cost, quality, and effort (1 to 5, more is better), and whether neon1 recommends it | Draft, Proposed, Declined, Approved |
+| Decision | Needs | The permanent record of an approved option, with the approver's signature | a record |
+| Constraint or assumption | Needs | What the work depends on or is limited by, printed in the proposal | same as requests |
+| Proposal revision | Needs | One issued, frozen revision, such as 0039-r1, made only by **Issue the proposal** | a record |
+| File needed | Needs | A file neon1 asked the client for | Done once sent |
+| Task, Milestone | Execute | A piece of work someone can finish, or a point everyone can see, such as a launch | same as requests |
 | Change request | Execute | A change to what was agreed, with its effect on cost and dates | same |
-| Hours | Execute | Time neon1 worked on one day, in quarter hours, with what it went to. Only neon1 adds entries, the client reads them | a record, kept as logged once an invoice bills it |
-| Purchase | Execute | Something to buy for the approved option: estimate, actual cost, where it was bought, who buys it (the client or neon1), and its receipt | Open, Bought, Installed (done), Returned |
-| Invoice | Execute | A bill for the work or for purchases, numbered when issued (such as INV-0039-01) | Draft, Issued, Paid, Void. Partly paid, bank payment clearing, and overdue are worked out from payments and the due date |
-| Payment | Execute | Money received against one invoice, from Stripe or recorded by neon1 | a record |
-| Status update | Execute | One line on how it's going, with a health, posting it sets the project's health | a record |
-| Measure (metric) | Observe | A number that shows it worked: unit, baseline, target, which way is better, and dated readings | Done when it reaches its target |
-| Check | Observe | Something to test before calling it done | To do, In progress, Blocked, Done |
-| Incident | Observe | Something that broke: what people saw, when, and what fixed it | same |
-| Handover step | Normalize | A step before it's fully the client's, such as admin access transferred | same |
-| Runbook | Normalize | Written steps for a job that comes up again | same |
-| Training | Normalize | Who learns what, and how | same |
-| Care | Normalize | Ongoing care after launch | same |
-| Retro | Normalize | What went well, or what to do differently | same |
+| Hours | Execute | Time neon1 worked on one day, in quarter hours, and what it went to. Only neon1 adds entries | a record |
+| Purchase | Execute | Something to buy for the approved option, with who buys it and its receipt | Open, Bought, Installed (done), Returned |
+| Invoice | Execute | A bill for work or purchases, numbered when issued | Draft, Issued, Paid, Void |
+| Payment | Execute | Money received against one invoice | a record |
+| Status update | Execute | One line on how it's going, with a health. Posting it sets the project's health | a record |
+| Measure | Observe | A number that shows it worked: unit, baseline, target, which way is better, dated readings | Done at its target |
+| Check, Incident | Observe | Something to test before calling it done, or something that broke and what fixed it | same as requests |
+| Handover step, Runbook, Training, Care, Retro | Normalize | A step before it's the client's, written steps for a repeated job, who learns what, ongoing care, and what to do differently | same as requests |
 
-An item's title opens its panel: status, owner, due date, details, and comments. Its box ticks it done. Counts show done out of total. A choice between options counts as one, done once one is approved. Updates, decisions, revisions, invoices, payments, and files aren't counted.
+An item's title opens its panel: status, owner, due date, details, and comments. Its box ticks it done. A choice between options counts as one, done once one is approved. Updates, decisions, revisions, invoices, payments, and files aren't counted.
 
-Who may do what with items:
+Who may do what:
 
-- Anyone who can read the project (viewers too) may add a **request** and comment.
-- Editors and admins add, edit, tick off, and delete other items.
-- **Options** come only from neon1, which writes, shares (Proposed), and withdraws them. A client who wants another comments or adds a request.
-- **Proposal revisions**, **invoices**, and **payments** come only from neon1, and once issued can't be edited or deleted.
-- An **approved option** and its **decision** can't be edited or deleted. To change course, the decision maker approves a different option, and the earlier decision stays on record, marked as replaced (see **Changing the decision**).
+- Anyone who can read the project, viewers too, may add a **request** and comment. Editors and admins add, edit, tick off, and delete other items. Only neon1 writes, shares, and withdraws **options** and makes **proposal revisions**, **invoices**, and **payments**, and issued ones can't be edited or deleted. A client who wants another option comments or adds a request. An **approved option** and its **decision** can't be edited or deleted. To change course, the decision maker approves a different option.
 
 ## Options and the proposal
 
-Options are compared on the Needs tab (`#options`), each with its cost (one-time and recurring apart, with a first-year total), timeline, three scores, and any Recommended mark. An option can also carry neon1's hours, costs paid to vendors, expected purchases (what, why, an example, an estimate, who buys it), and the result the client can check.
+Options are compared on the Needs tab (`#options`), each with its cost (one-time and recurring apart, with a first-year total), timeline, three scores, and any Recommended mark. An option can also carry neon1's hours, vendor costs, expected purchases, and the result the client can check.
 
-An option's price is one of two kinds, and the option says which:
+An option's price is **fixed** ("$6,500 fixed"), the whole price for the work described, changed only by an approved change. Or it's an **estimate** ("$3,500 to $4,200 estimate"), a range of hours at an hourly rate. The client pays for hours worked, each listed under Hours, never past the high end without an approved change, and fewer hours cost less. **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover.
 
-- **Fixed** ("$6,500 fixed"): the whole price for the work described, changed only by an approved change.
-- **Estimate** ("$3,500 to $4,200 estimate"): a range of hours at an hourly rate. The client pays for hours worked, each listed under Hours, never past the high end without an approved change. Fewer hours cost less.
+A project has one proposal, issued in numbered revisions. While neon1 shapes the options it's a **draft** the client can read but not approve. **Issue the proposal** freezes and numbers a copy. The first 1NEON issued is 0039, so its first revision is **0039-r1**, and each option gets the revision plus a letter, such as **0039-r1-B**. A later change of option, estimate, or scope is issued as the next revision, 0039-r2. Earlier ones stay readable, marked "Replaced by a later revision".
 
-Either way, **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover. Each option says why neon1 recommends it, or when to pick it. The proposal prints the same breakdown.
+**Read the proposal**, under the options (`/1NEON/o/{org}/projects/{KEY}/proposal`), shows discovery, goals, constraints and assumptions, every shared option with what's in and out, a cost table, and what each side will do. **Print or save as PDF** puts its ID and page number on every page. **Download Word** saves `neon1-{org}-proposal-0039-r1.docx`, and a marked-up copy uploaded to Files prompts "Is this a revision of Proposal 0039-r1?"
 
-A project has one proposal, issued in numbered revisions. While neon1 shapes the options it's a **draft** the client can read but not approve. **Issue the proposal** freezes and numbers a copy: the first 1NEON issued is 0039, so its first revision is **0039-r1**. Each option gets the revision plus a letter, such as **0039-r1-B**, and the decision names that ID.
+**Price checks.** Estimates are checked when a revision is issued and again after 30 days. Past that, approval waits until the decision maker chooses **Ask neon1 to refresh** and neon1 issues a revision with checked prices.
 
-A later change of option, estimate, or scope is issued as the next revision, 0039-r2. Earlier ones stay readable, marked "Replaced by a later revision", and none can be edited or deleted.
-
-**Read the proposal**, under the options, opens `/1NEON/o/{org}/projects/{KEY}/proposal`: discovery, goals, constraints and assumptions, every shared option with what's in and out, a cost table, what each side will do, and the agreement. It shows the latest revision, with earlier ones a choice away. **Print or save as PDF** prints only the proposal, with its ID and page number on every page. **Download Word** saves `neon1-{org}-proposal-0039-r1.docx`, with the ID in the name, properties, and every header, so a marked-up copy uploaded to Files prompts "Is this a revision of Proposal 0039-r1?" and is filed with that revision.
-
-### Price checks
-
-Estimates are checked when a revision is issued and again after 30 days. Past that, approval waits until the decision maker chooses **Ask neon1 to refresh** and neon1 issues a revision with checked prices. Revisions don't otherwise expire.
-
-### Changes of scope
-
-A request added after approval asks "Does this change what was approved?" (**Yes, it changes it**, **No**, or **Not sure**). One marked as a change is flagged for, and answered in, the next revision.
+**Changes of scope.** A request added after approval asks "Does this change what was approved?" (**Yes, it changes it**, **No**, or **Not sure**). One marked as a change is flagged for, and answered in, the next revision.
 
 ## Approving and signing
 
-**Approve this option** is offered only to the person allowed to approve on that project:
-
-- the project's named **decision maker**, or several, any of whom may approve
-- if nobody is named, an **admin of the client organization**
-- never neon1, which proposed the options, except in neon1's own organization (N1-0001), where neon1 is the client
-
-Neo never approves for anyone. Asked to, it points to **Approve this option**.
+**Approve this option** is offered only to the project's named **decision maker** (or several, any of whom may approve), or if nobody is named, an **admin of the client organization**. It's never offered to neon1, except in neon1's own organization (N1-0001), where neon1 is the client. Neo never approves for anyone. It points to **Approve this option**.
 
 Approving needs all of these, and 1NEON says which is missing:
 
-1. neon1 has issued the proposal, and the option is in the latest revision.
-2. The option hasn't changed since that revision was issued.
-3. The revision is within its price check.
-4. An admin of the client organization has signed neon1's [service agreement](../engagement/service-agreement.md) at its current edition. (Not needed in N1-0001.)
+1. neon1 has issued the proposal, and the option is in the latest revision and unchanged since.
+2. The revision is within its price check.
+3. An admin of the client organization has signed neon1's [service agreement](../engagement/service-agreement.md) at its current edition. (Not needed in N1-0001.)
 
-Approving restates exactly what's accepted: the option and its ID, its proposal, estimate, timeline, neon1's hours, vendor costs, purchases, and the result to check. The approver may add conditions ("only after 6pm"), then types their full name and ticks the consent box: "I agree to sign electronically. My typed name is my signature, and I can ask neon1 for a paper copy at any time."
+The approval screen restates what's accepted. The approver may add conditions ("only after 6pm"), then types their full name and ticks the consent box: "I agree to sign electronically. My typed name is my signature, and I can ask neon1 for a paper copy at any time."
 
-The decision records the option ID, the approver's name and email, the time, the option's version, its terms exactly as shown, and the signature: typed name, consent, a SHA-256 fingerprint of the signed terms, and the address and browser. If the option changed after it was opened, the approval is refused for review. A signed approval records that the organization agreed to that option's scope, cost, and timeline, as on paper. The printed and Word proposals show it.
+The decision records the option ID, the approver's name and email, the time, its terms exactly as shown, and the signature (typed name, consent, a SHA-256 fingerprint of the signed terms, and the address and browser). If the option changed after it was opened, the approval is refused for review. It records that the organization agreed to that option's scope, cost, and timeline, as on paper.
 
-Approving also:
+Approving also adds the option's expected purchases to Execute, and drafts a deposit invoice for neon1 to check and issue when the price is in numbers: half a fixed price, or half an estimate's low end. Nothing reaches the client until it's issued.
 
-- The option's expected purchases join Execute, marked with its ID.
-- Drafts a deposit invoice for neon1 to check and issue, when the price is in numbers: half a fixed price, or half an estimate's low end. Nothing reaches the client until it's issued.
-
-Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview. Editors change everyone else. neon1 can't be decision maker outside its own organization.
+Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview.
 
 ### Changing the decision
 
-Until the handover is accepted, the decision maker can choose a different option with **Choose this instead**. The screen says **Change to 0039-r1-C?** and adds what the change replaces (the option, when it was approved, and by whom), what was already invoiced for it, the hours already logged, and the deposit asked now. A reason is required, and the change is signed like an approval. The reason and the replaced decision go into the signed fingerprint.
+Until the handover is accepted, the decision maker can choose a different option with **Choose this instead**. The screen says **Change to 0039-r1-C?** and shows what it replaces, what was already invoiced, the hours already logged, and the deposit asked now. A reason is required, and the change is signed like an approval.
 
-- Nothing is billed twice. Money invoiced for the replaced decision counts toward the new one, so its deposit asks only for the difference, or nothing. An unissued deposit draft for the replaced decision is removed, and the new option's takes its place.
+- Nothing is billed twice. Money invoiced for the replaced decision counts toward the new one, so its deposit asks only for the difference, or nothing. An unissued deposit draft for the replaced decision is removed.
 - Hours already logged count toward the new option's hours, and its high end still caps the total.
 - If what was invoiced comes to more than the new option can cost, accepting the handover drafts a credit for the difference.
-- The replaced decision stays in Needs, marked "replaced by a later decision", and its option shows **replaced**. The new decision shows **Why it changed**.
-- Going back to a replaced option waits until neon1 confirms it in the next revision, with checked prices, then it shows **Go back to this option**.
-- Once the handover is accepted, the decision stays. Everyone following Decisions and options is told of a change, and the activity record says from what, to what, and why.
+- The replaced decision stays in Needs, marked "replaced by a later decision", and the new one shows **Why it changed**. Everyone following Decisions and options is told.
+- Going back to a replaced option waits until neon1 confirms it in the next revision with checked prices, then it shows **Go back to this option**.
+- Once the handover is accepted, the decision stays.
 
 ## The service agreement
 
-neon1's service agreement covers every project with an organization. Anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement`, from **Settings** or the notice under the options, with a typed name and the consent box, before the first approval. The signature records the edition (now 2.0, which added how estimates are billed and that a deposit counts toward the final invoice), a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given. The full text is in the [service agreement](../engagement/service-agreement.md).
+neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. The signature records the edition (now 2.0), a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given.
 
-## Purchases
+## Purchases, hours, and handover
 
-**Purchases**, in Execute, start from the approved option's expected purchases. Each shows its estimate, the actual cost and where, who buys it, and its receipt. A bought item without one is flagged. Statuses are **Open**, **Bought**, **Installed** (done), and **Returned**.
+**Purchases**, in Execute, start from the approved option's expected purchases. Each shows its estimate, the actual cost and where, who buys it, and its receipt. A bought item without a receipt is flagged.
 
-- **The client buys it** ("You buy it."): in the organization's name, keeping the receipt with the project (**Attach the receipt**).
-- **neon1 buys it**: only after the decision maker initials that neon1 buys it and is paid back at cost, in the signed approval or later on the purchase. Until then it says "Waiting on the decision maker's initials before neon1 buys it." neon1 attaches the receipt and bills exactly that amount, with no markup.
+- **The client buys it,** in the organization's name, and attaches the receipt (**Attach the receipt**).
+- **neon1 buys it** only after the decision maker initials that neon1 buys it and is paid back at cost, in the signed approval or later on the purchase. Until then it says "Waiting on the decision maker's initials before neon1 buys it." neon1 attaches the receipt and bills exactly that amount, with no markup.
 
-## Handover acceptance
+**Hours** (Execute, `#hours`) are logged by neon1 with date, quarter hours, and what they went to, and the client reads them only. On an estimate, the section shows hours against the range and a bar to the high end. Hours past the high end are listed, not billed. On a fixed price, hours are a record, not a bill. Issuing an invoice marks the hours it bills ("billed on INV-0039-02"), and a mistake is corrected with a credit.
 
-Handover steps in Normalize are ticked as they're done, by either side. Until all are, the steps say how many are left. Then the decision maker sees "Every step is done" and chooses **Accept the handover**, with an optional note ("What you checked") and **Sign and accept the handover**, signed like an approval. One signature accepts every remaining step, each keeping its own record with "Accepted by", name, and date. **Check it and accept** accepts a single unticked step and marks it done. An accepted step can't be unticked. Acceptance drafts a final invoice for neon1: what's left on a fixed price, or the hours worked less earlier invoices on an estimate. Home's **Needs you** and the project's **Next step** prompt the decision maker when it's time.
-
-## Hours
-
-Hours are in Execute under **Hours** (`#hours`). neon1 logs each entry's date, quarter hours, and what it went to. The client reads them only. On an estimate, the section shows hours against the range, their cost at the rate, and a bar to the high end with a mark at the low end. Hours past the high end are listed, not billed. On a fixed price, hours are a record, not a bill.
-
-Issuing a progress or final invoice on an estimate marks unbilled hours with its number ("billed on INV-0039-02"). Those entries then stay as logged, and a mistake is corrected with a credit.
+**Handover acceptance.** Handover steps in Normalize are ticked as they're done, by either side. When all are, the decision maker sees "Every step is done" and chooses **Accept the handover**, with an optional note ("What you checked") and **Sign and accept the handover**, signed like an approval. One signature accepts every remaining step, each keeping its own record. **Check it and accept** accepts a single step early. An accepted step can't be unticked. Acceptance drafts a final invoice for neon1.
 
 ## Invoices and paying
 
 Invoices are in Execute (`#billing`). neon1 makes them, and the client sees them only once issued.
 
-| Type | When it comes up |
+| Type | When |
 |---|---|
-| Deposit | Drafted when an option with a price in numbers is approved: half of a fixed price, or half of an estimate's low end |
-| Progress | Added by neon1 for a stage of the work. On an estimate: the hours worked so far, less earlier invoices |
-| Final | Drafted when the last handover step is accepted: what's left on a fixed price, or the hours worked (never past the high end) less earlier invoices |
+| Deposit | Drafted at approval: half of a fixed price, or half of an estimate's low end |
+| Progress | Added by neon1 for a stage. On an estimate: the hours worked so far, less earlier invoices |
+| Final | Drafted at handover acceptance: what's left on a fixed price, or the hours worked (never past the high end) less earlier invoices |
 | Purchases at cost | Reimbursement for what neon1 bought, from the receipts |
 | Care plan | The monthly fee for ongoing care |
 | Credit | Reduces an issued invoice it names |
 
-**New invoice** (neon1) picks a type, and empty lines fill from the approved option or receipts. **Save draft** keeps it private. **Issue** numbers it (**INV-0039-01**: the proposal's number, or the project key, and its place in the project), sets a due date (15 days by default), addresses it to the decision maker or a client admin, fixes its contents with a SHA-256 fingerprint, and tells the client by bell and email.
+**Issue** numbers an invoice (**INV-0039-01**: the proposal's number, or the project key, and its place in the project), sets a due date (15 days by default), addresses it to the decision maker or a client admin, fixes its contents with a SHA-256 fingerprint, and tells the client by bell and email. Each invoice has its own page (`/1NEON/o/{org}/projects/{KEY}/invoices/{id}`) with lines, sales tax, total, credits, payments, balance due, terms, and how to pay, ready to print or save as a PDF. If the work comes to less than a deposit paid, neon1 refunds the difference as a credit.
 
-Each invoice has its own page, `/1NEON/o/{org}/projects/{KEY}/invoices/{id}`: from, bill to, lines, sales tax, total, credits, payments, balance due, terms, and how to pay, ready to print or save as a PDF. An invoice for hours lists the entries it covers and names the earlier invoices it subtracts. If the work comes to less than a deposit paid, neon1 refunds the difference as a credit. An invoice reads as **Draft**, **Open**, **Partly paid**, **Overdue** (past its due date with a balance), **Paid in full**, **Void**, or **Credit**.
+An invoice reads as **Draft**, **Open**, **Partly paid**, **Overdue** (past due with a balance), **Paid in full**, **Void**, or **Credit**.
 
-Paying:
-
-- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout for the balance, bank transfer (ACH) first and card too. 1NEON never sees card or bank details. A card payment shows as paid at once. A bank payment shows as **bank payment clearing**, with its amount and date, until the bank clears it in a few business days, meanwhile **Pay** is gone and nothing counts it overdue or asks for it, so nobody pays twice. If the bank refuses it, no money moved: the invoice reopens with the failed payment listed and **Pay again**, and Next step and Needs you say so. Billing contacts are told when a bank payment starts, clears, or fails.
-- **By check, Zelle, or wire:** neon1 records it with **Record a payment** when it arrives: the amount, how it arrived, the date, and a check number or confirmation.
-- No surcharge is added for any way of paying.
+- **Online:** **See and pay**, then **Pay**, opens Stripe Checkout, bank transfer (ACH) first and card too. 1NEON never sees card or bank details. A card payment shows as paid at once. A bank payment shows as **bank payment clearing** until the bank clears it in a few business days. Meanwhile **Pay** is gone and nothing counts it overdue, so nobody pays twice. If the bank refuses it, no money moved, and the invoice reopens with the failed payment listed and **Pay again**. Billing contacts are told when a bank payment starts, clears, or fails.
+- **By check, Zelle, or wire:** neon1 records it with **Record a payment** on arrival: amount, how it arrived, date, and a check number or confirmation.
+- No surcharge for any way of paying.
 
 Issued invoices and payments are permanent. A mistake is fixed with a **credit** or by voiding with a reason (**Void invoice**), both kept on record. An invoice with payments, or one clearing, is credited rather than voided. One whose only payment failed can be voided. Every signature, issued invoice, and payment is also kept write-protected for seven years.
 
-The **Agreements, invoices, and payments** notification group (email on by default) covers the agreement signed, invoices issued or voided, and payments started, arrived, or failed. Drafts never reach the client.
-
 ## Next step
 
-**Next step**, at the top of every project, shows the one thing to do now and who it waits on, the first of these that applies:
+**Next step**, at the top of every project, shows the one thing to do now and who it waits on. The first that applies wins:
 
-1. For client members, an invoice with something to pay: "Invoice INV-0039-01 is ready" (or **overdue**, or "The bank payment on invoice INV-0039-01 didn't go through"), the amount, and the due date, with **See and pay**. An invoice covered by a bank payment that's clearing isn't listed.
-2. For neon1, invoice drafts: "A deposit invoice is drafted. Check it, then issue.", with **Check invoices**.
-3. For neon1, shared options not yet in an issued revision: "Issue the proposal so the client can approve an option" (or its next revision, such as r2), with **Issue the proposal** or **Issue r2**.
-4. Options are shared and you may approve: "Choose an option: {n} ready for your approval in Proposal 0039-r1", or that the estimates are due a price check, or that neon1 is preparing the proposal, with **Compare options**.
-5. Options are shared and someone else approves: "Waiting on {decision maker} to choose an option", with **See options**.
-6. Files are asked for (for client members): "Send {n} files", with **Upload**.
-7. Every handover step is done and you may accept: "Every handover step is done. Check them, then accept the handover with one signature.", with **Review and accept**.
-8. You have open items assigned to you: "You have {n} open items here", with **Open**.
-9. An option is approved and the project is at or before Decide: "{option} is approved. Next, move the project to {next stage}", with **Move to** for neon1. A client reads "Next, neon1 moves the project to {next stage}".
-10. For neon1: "Add options" when none exist yet near Decide, or "Share an option" when options exist but none is shared.
-11. Otherwise the stage's goal. neon1 reads "To finish {stage}: {done when}", with **Move to {next stage}** (not past Decide without an approval). A client reads who has the work: "{stage} is with neon1. It's done when: {done when}. Then neon1 moves the project to {next stage}. Nothing needs you right now." In neon1's own organization, editors get the move as neon1 does.
-12. "Nothing needs doing right now."
+1. Client members: an invoice to pay ("Invoice INV-0039-01 is ready", **overdue**, or "didn't go through"), with **See and pay**. An invoice covered by a clearing bank payment isn't listed.
+2. neon1: invoice drafts to check (**Check invoices**), then shared options not yet in an issued revision (**Issue the proposal** or **Issue r2**).
+3. Options are shared: the approver sees "Choose an option" with **Compare options** (or that estimates are due a price check, or neon1 is preparing the proposal). Everyone else sees "Waiting on {decision maker} to choose an option", with **See options**.
+4. Client members: "Send {n} files", with **Upload**.
+5. The approver, once every handover step is done: **Review and accept**.
+6. Anyone with open items assigned: "You have {n} open items here".
+7. After an option is approved at or before Decide: "Next, move the project to {next stage}" (**Move to** for neon1, and clients read that neon1 moves it).
+8. neon1 near Decide: "Add options" when none exist, "Share an option" when none is shared.
+9. Otherwise the stage's goal. neon1 reads "To finish {stage}: {done when}" with **Move to {next stage}** (not past Decide without an approval). A client reads who has the work, what it's done when, and that nothing needs them now.
+
+If nothing applies, it says "Nothing needs doing right now." In neon1's own organization, editors get the move as neon1 does.
 
 ## Health
 
-Health is **Not assessed** (the start), **On track**, **At risk**, or **Off track**. Only people change it, on the Overview or by posting a status update ("How is it going?"), which records who and when.
+Health is **Not assessed** (the start), **On track**, **At risk**, or **Off track**. Only people change it, on the Overview or by posting a status update ("How is it going?").
 
 ## Starting a project
 
-**New project** (editors and admins) asks for a template, a name, what it is, what will be true when it's done, one real example of today's work, a target date, any sensitive data (PII, PHI, or payment), and optional measures with baseline and target. Templates start it with fitting items:
+**New project** (editors and admins) asks for a template, a name, what it is, what will be true when it's done, one real example of today's work, a target date, any sensitive data, and optional measures with baseline and target.
 
-| Template | Key | Starts with |
-|---|---|---|
-| Blank | PRJ | Nothing |
-| Cloud migration | MIG | Discovery questions, servers and files assets, a must-have requirement, cost and downtime measures, a backup restore check, and the handover checklist |
-| Workflow automation | FLOW | Discovery questions, tools and inboxes asset, "nothing is retyped twice", turnaround and staff-time measures, and the handover checklist |
-| Networks and connected systems | NET | Discovery questions, sites, devices, and connections asset, "guest and device traffic can't reach business systems", an unplanned-outages measure, a failover or restore check, and the handover checklist |
-| AI assistant | AI | Discovery questions, document sources asset, "answers cite their source", time-to-answer and correctness measures, and the handover checklist |
-| Security readiness | SEC | Discovery questions, systems in scope, "MFA on every admin account", an open-findings measure, an access review check, and the handover checklist |
-| Personal or home tech | HOME | "What's not working, in your own words", devices and accounts involved, and "Written steps left behind" |
-
-Every template except Blank and Personal or home tech starts with this handover checklist:
-
-- Accounts are in the client's name.
-- Admin access is transferred to the client.
-- Docs are delivered and walked through.
-- The people who use it are trained on it.
-- Older tools are retired or merged.
-- neon1's access is reduced or removed.
+Templates start a project with fitting items: Blank (`PRJ`), Cloud migration (`MIG`), Workflow automation (`FLOW`), Networks and connected systems (`NET`), AI assistant (`AI`), Security readiness (`SEC`), and Personal or home tech (`HOME`). Each starts with discovery questions, the systems involved, one requirement, one or two measures, and a check. Every template except Blank and Personal or home tech also starts with a handover checklist: accounts in the client's name, admin access transferred, docs delivered and walked through, users trained, older tools retired or merged, and neon1's access reduced or removed.
 
 ## The Overview tab
 
-Overview shows any decision, the summary and outcome, measures with progress, a side column (health and who set it, stage and dates, the latest update, sensitive-data flags, people, and **Archive this project**), **How is it going?**, and **People on this project** with roles: lead engineer, sponsor, decision maker, tech contact, stakeholder, and observer. Roles describe work and never grant access, except that a decision maker may approve.
+Overview shows any decision, the summary and outcome, measures with progress, a side column (health, stage and dates, the latest update, sensitive-data flags, people, **Archive this project**), and **How is it going?**. **People on this project** have roles: lead engineer, sponsor, decision maker, tech contact, stakeholder, and observer. Roles describe work and never grant access, except that a decision maker may approve.
 
 ### Ready for Execute
 
-Above the tabs' content, until a decision exists, Overview shows **Ready for Execute**: a percent, a bar, and four steps in order.
+Until a decision exists, Overview shows **Ready for Execute**: a percent, a bar, and four steps. Everything in it is optional.
 
 | Step | Counts for |
 |---|---|
 | **Outline** | 10 for each of six parts, up to 60 |
-| **Assessment** | 10, once the project was sent for assessment from Home's Next step, or once an option has been proposed |
+| **Assessment** | 10, once the project was sent for assessment from Home's Next step, or an option has been proposed |
 | **Options** | 10, once an option is proposed or approved |
 | **Decision** | 20, once an option is approved or a decision exists |
 
-It reaches 100% only with a decision (it shows at most 99% before), and then the card goes away. Everything in it is optional.
+It reaches 100% only with a decision (at most 99% before), and then the card goes away. The six outline parts are what it is (the summary), how it works today (the real-example question), what done looks like (the outcome), who and what it touches (another answered discovery question, or a named system), how we'll know it worked (a measure with a baseline), and timing and limits (a target date, a constraint, or a requirement). [Outlining a project](../guides/outline-a-project.md) has what counts, a tip for each, and where each goes once work starts.
 
-The six outline parts, in the order they're asked, each with the tip shown when it's missing:
-
-| Part | Counts when | Tip | Goes to |
-|---|---|---|---|
-| What it is | The summary has real words | Add what this is, in a sentence or two | The scope in the proposal |
-| How it works today | The "One real example of how it works today" question is answered | Add one real example of how it works today | The starting point Observe measures against |
-| What done looks like | The outcome has real words | Add what will be true when it's done | The checks in Verify that say it's finished |
-| Who and what it touches | Another discovery question is answered, or a system or account is added with a name or description | Add who does this work and the tools it touches | The handover in Normalize: accounts, access, and training |
-| How we'll know it worked | A measure has a baseline number | Add a measure with where it is now | Tracked in Observe, before and after |
-| Timing and limits | A target date is set, or a constraint or a requirement is added | Add a target date or any limits, such as budget or must-nots | The proposal's schedule and constraints |
-
-Real words means about a dozen characters or more. A starter question that still has no answer, or a starter system or requirement from a template, never counts alone. A project is **outlined** with the first three parts, and **fully outlined** with all six. Each missing part names where to write it: **Write it here** or **Set a target date** opens the Overview's own edit form, **Answer in Needs** opens Needs, and **Add in Observe** opens Observe. Viewers see the card without those links. The percent and the parts are the same ones Home's Next step shows and neon1 reads when it assesses a project. [Outlining a project](../guides/outline-a-project.md) shows what a good answer looks like.
+A part counts with about a dozen characters or more of real words. A starter question with no answer, or a starter item from a template, never counts alone. A project is **outlined** with the first three parts and **fully outlined** with all six. Each missing part links to where to write it, except for viewers. The same percent and parts show on Home's Next step and are what neon1 reads when it assesses a project.

@@ -11,7 +11,7 @@ topic: questions
 status: adopted
 updated: 2026-11-20
 created: 2026-11-12
-edition: "1.10"
+edition: "1.11"
 consumers: [blog, ai]
 pdf: false
 audience: "Owners of small tax, bookkeeping, and accounting offices"
@@ -20,74 +20,59 @@ related: [product-you-have-20-seconds-to-comply, product-phish-out-of-water, gui
 
 # Tax preparers are financial institutions, as far as the FTC is concerned
 
-A couple, invented for this example, has had their taxes done at the same small office for years. In February they sign and e-file, as always. A day later it bounces. Someone already filed under their Social Security number, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate found identity theft victims waiting nearly two years for the IRS to resolve cases like this. That's nearly two years without money they were counting on.
+A couple, invented for this example, has had their taxes done at the same small office for years. In February they e-file as always, and a day later it bounces. Someone already filed under their Social Security number, with their names, their income, and a refund sent to an account they've never seen. In its [2025 report to Congress](https://www.irs.gov/newsroom/national-taxpayer-advocate-delivers-annual-report-to-congress-finds-taxpayer-service-was-strong-in-2025-but-foresees-challenges-for-taxpayers-who-encounter-problems-in-2026), the National Taxpayer Advocate found identity theft victims waiting nearly two years for the IRS to resolve cases like this.
 
-The thief didn't need to break into the IRS. Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account. People hand it over every year because they trust the person across the desk, and criminals go after that trust.
+The thief didn't need to break into the IRS. Everything that return took sits in a preparer's client folder: Social Security numbers, income, prior returns, and the refund account.
 
-The IRS's online tool for an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), a six-digit number that helps stop someone else filing under a person's Social Security number, is offline until mid-January 2027. Use the gap to get your office's other defenses in order.
-
-Those defenses aren't optional. The Federal Trade Commission [names tax preparation services](https://www.ecfr.gov/current/title-16/section-314.2) as a "financial institution" under its [Safeguards Rule](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), whether you work alone at a kitchen table or run a ten-person firm.
-
-## Why the rule reaches tax offices
-
-The Gramm-Leach-Bliley Act requires financial institutions to protect customers' personal information. Banks answer to their own regulators. For most other businesses offering consumer financial services, tax preparers included, the FTC enforces it through the Safeguards Rule, [16 CFR Part 314](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314).
-
-The FTC [rewrote the rule in 2021](https://www.federalregister.gov/documents/2021/12/09/2021-25736/standards-for-safeguarding-customer-information) with specific requirements, most effective June 9, 2023. A [later amendment](https://www.federalregister.gov/documents/2023/11/13/2023-24412/standards-for-safeguarding-customer-information) added a duty to report certain breaches to the FTC, starting May 13, 2024.
+The Federal Trade Commission [names tax preparation services](https://www.ecfr.gov/current/title-16/section-314.2) as a "financial institution" under its [Safeguards Rule](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know), whether you work alone at a kitchen table or run a ten-person firm. The Gramm-Leach-Bliley Act requires financial institutions to protect customers' personal information, and for most businesses outside banking the FTC enforces it through [16 CFR Part 314](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314). The FTC [rewrote the rule in 2021](https://www.federalregister.gov/documents/2021/12/09/2021-25736/standards-for-safeguarding-customer-information), mostly effective June 9, 2023, and a [later amendment](https://www.federalregister.gov/documents/2023/11/13/2023-24412/standards-for-safeguarding-customer-information) added a duty to report certain breaches, starting May 13, 2024.
 
 ## What the rule asks for
 
-The rule asks for a [written information security program](https://www.ecfr.gov/current/title-16/section-314.4) that fits your size and what you hold, called a WISP (written information security plan) in the tax world. For a small office:
+A [written information security program](https://www.ecfr.gov/current/title-16/section-314.4) that fits your size and what you hold, called a WISP in the tax world. For a small office:
 
-- **One person in charge.** The rule calls this person the Qualified Individual: you, someone on staff, or an outside provider. With a provider, you still own the result and name someone senior to oversee them.
+- **One person in charge,** called the Qualified Individual: you, someone on staff, or an outside provider. With a provider, you still own the result and name someone senior to oversee them.
 - **Multi-factor authentication** on every system holding client information: email, tax software, the client portal, cloud storage, and remote access.
-- **Encryption** of client information in transit outside your network and at rest, including on laptops and backup drives.
-- **Access limited to what each job needs**, and a list of the systems, devices, and people touching client data.
-- **Security training for everyone**, kept current as new tricks show up.
-- **Contracts that require your service providers to protect the data**, and a periodic check that they do. That includes your IT person, software vendors, and any outside bookkeeper.
+- **Encryption** of client information in transit outside your network and at rest, including laptops and backup drives.
+- **Access limited to what each job needs,** and a list of the systems, devices, and people touching client data.
+- **Security training for everyone,** kept current.
+- **Contracts that require service providers to protect the data,** and a periodic check that they do. That includes your IT person, software vendors, and any outside bookkeeper.
 - **Secure disposal** of a former client's information no later than two years after you last used it, unless you have a legal or business reason to keep it.
-- **A written plan for what happens when something goes wrong**: who decides, who gets told, and in what order.
+- **A written plan for when something goes wrong:** who decides, who gets told, and in what order.
 
-If you keep information on [fewer than 5,000 consumers](https://www.ecfr.gov/current/title-16/section-314.6), you can skip four formal pieces: the written risk assessment, penetration testing and scans, the written incident response plan, and the annual report to leadership. Everything else still applies, including MFA, encryption, and training. Former clients count, and an established office usually holds more people's information than its client list suggests.
+If you keep information on [fewer than 5,000 consumers](https://www.ecfr.gov/current/title-16/section-314.6), you can skip four formal pieces: the written risk assessment, penetration testing and scans, the written incident response plan, and the annual report to leadership. Everything else still applies. Former clients count, and an established office usually holds more people's information than its client list suggests.
 
 ## The 30-day clock
 
-Since May 13, 2024, if unencrypted information on 500 or more people is taken, you must tell the FTC through its online form within 30 days of finding out. Encrypted data counts as unencrypted if the key was taken too. The FTC can publish these reports. New York's own [breach notification law](https://ag.ny.gov/resources/organizations/data-breach-reporting) applies on top of that, with notices to the people affected and to the state.
+Since May 13, 2024, if unencrypted information on 500 or more people is taken, you must tell the FTC through its online form within 30 days of finding out. Encrypted data counts as unencrypted if the key was taken too, and the FTC can publish these reports. New York's [breach notification law](https://ag.ny.gov/resources/organizations/data-breach-reporting) applies on top, with notices to the people affected and to the state. A stolen laptop with an encrypted disk means a police report. Without encryption, it can mean a federal filing and letters to every client on it.
 
-A stolen laptop with an encrypted disk means a police report. Without encryption, it can mean a federal filing and letters to every client on it.
+## What the IRS asks
 
-## The IRS asks too
+Each time you apply for or renew your PTIN, [Form W-12](https://www.irs.gov/pub/irs-pdf/fw12.pdf) asks you to confirm that you know paid preparers must create and maintain a written information security plan. Start with [Publication 5708](https://www.irs.gov/pub/irs-pdf/p5708.pdf), a sample WISP written for small practices, and [Publication 4557](https://www.irs.gov/pub/irs-pdf/p4557.pdf), the IRS guide to safeguarding taxpayer data.
 
-Each time you apply for or renew your PTIN, [Form W-12](https://www.irs.gov/pub/irs-pdf/fw12.pdf) asks you to confirm that you know paid preparers are required by law to create and maintain a written information security plan. It points to two IRS publications:
+## The IP PIN gap
 
-- **[Publication 5708](https://www.irs.gov/pub/irs-pdf/p5708.pdf)** is a sample WISP written for small tax and accounting practices. It's the best place to start.
-- **[Publication 4557](https://www.irs.gov/pub/irs-pdf/p4557.pdf)** is the IRS guide to safeguarding taxpayer data, with checklists for the office.
-
-## While the IRS IP PIN system is offline
-
-The system is offline from November 16, 2026, until mid-January 2027. Clients who already have a 2026 PIN should keep it with their tax records, since the IRS issues a new number each calendar year. Anyone seeking a 2027 PIN can request one through their [IRS online account](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) when the system returns. Remind clients that the IRS never calls, emails, or texts asking for an IP PIN, and that they share it with their preparer only when ready to file.
+The IRS's online tool for an [Identity Protection PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), a six-digit number that helps stop someone else filing under a Social Security number, is offline from November 16, 2026, until mid-January 2027. Clients with a 2026 PIN should keep it with their tax records, since the IRS issues a new number each calendar year. Anyone seeking a 2027 PIN can request one through their IRS online account when the system returns. The IRS never calls, emails, or texts asking for an IP PIN, and clients share it with their preparer only when ready to file.
 
 ## What to get done before January
 
 It takes a few evenings, not a large budget. In your office, I'd go in this order:
 
-- [ ] Decide who your Qualified Individual is, and write the name down.
-- [ ] Download Publication 5708 and fill it in with how your office actually works today, not how you wish it worked.
-- [ ] Turn on MFA for email, tax software, the client portal, cloud storage, and any remote access tool.
-- [ ] Check that every laptop and desktop has disk encryption on (BitLocker on Windows, FileVault on a Mac).
+- [ ] Name your Qualified Individual, and write it down.
+- [ ] Fill in Publication 5708 with how your office works today, not how you wish it worked.
+- [ ] Turn on MFA for email, tax software, the client portal, cloud storage, and remote access.
+- [ ] Turn on disk encryption on every computer (BitLocker on Windows, FileVault on a Mac).
 - [ ] Stop taking tax documents by plain email, and point clients to a portal or another encrypted option.
-- [ ] List everyone who has access to client data, including outside help, and remove accounts nobody uses.
-- [ ] Ask your IT provider and software vendors what they do to protect your data, and get it in writing.
+- [ ] List everyone with access to client data, including outside help, and remove unused accounts.
+- [ ] Ask your IT provider and software vendors what they do to protect your data, in writing.
 - [ ] Run one short staff session on phishing and fake sign-in prompts before the season starts.
-- [ ] Do a test restore from your backup, so you know you can get files back.
+- [ ] Do a test restore from your backup.
 - [ ] Write down who to call, and in what order, if a laptop goes missing or an account gets taken over.
 
 Revisit the plan when something changes, such as a new hire, new software, or a second location.
 
 ## Going further
 
-[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) is a longer walkthrough with a staff checklist, a paperwork list, and a 20-day learning plan. The [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are on GitHub, and you can use them without talking to me.
-
-I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) has a staff checklist, a paperwork list, and a 20-day learning plan. The [Phishing awareness session kit](../products/phish-out-of-water.md) is a one-hour kit anyone can teach from. Both are on GitHub, and you can use them without talking to me. I do this work for small offices around Queens: setting up MFA, checking encryption and backups, drafting the plan from Publication 5708, and running the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
 
 ## Sources
 

@@ -11,17 +11,17 @@ role: "As a volunteer, before neon1"
 when: "2025"
 updated: 2026-11-20
 created: 2026-11-06
-edition: "1.6"
+edition: "1.7"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
 order: 7
-stat_key: "free for the school"
+stat_key: "at no charge"
 stat: "· where it began"
 short_problem: "A grade school wanted real STEM tools on a small budget."
-short_work: "Budgeted and set up a new STEM edtech system, free of charge."
+short_work: "Budgeted and set up a new STEM edtech system, at no charge."
 short_results: "Watched how classes used it, and adjusted."
-short_after: "Free security sessions for teachers and parents became neon1."
+short_after: "Security sessions at no charge for teachers and parents became neon1."
 origin: "neon1-site src/app/public/index.html#case-community"
 ---
 

@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-20
 created: 2026-11-10
-edition: "1.15"
+edition: "1.16"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -18,58 +18,44 @@ origin: "neon1-1NEON apps/api/src (auth, factors, me, notifications) and apps/we
 
 ## Getting in
 
-You join 1NEON by invitation or by making your own free account. An admin of the organization, or neon1, invites a person by email, and they open the link and enter their email.
+People join by invitation or by making their own free account. An admin of the organization, or neon1, invites a person by email, and they open the link and enter their email. When sign-up is open, someone new chooses **Start for free** on the sign-in screen and gives:
 
-Someone new chooses **Start for free** on the sign-in screen (or **start a free 1NEON account** on neon1.tech) and gives:
-
-- An email, and their name (one name is fine).
-- Which describes them best, and their organization's name (not asked of an individual, optional for **Something else**).
+- An email, their name (one name is fine), which describes them best, and their organization's name (not asked of an individual, optional for **Something else**).
 - Optionally, a website or public page, a city and state (a state alone, or a place outside the US), and how they found neon1.
 
-Each field is checked as it's filled in. The email's domain must take mail and can't be a temporary mailbox. A website must look like a web address (it's never visited). A US city is spelled properly when it's on the public places list and kept as typed when it isn't. A problem shows under its field.
+Each field is checked as it's filled in. The email's domain must take mail and can't be a temporary mailbox, a website must look like a web address (it's never visited), and a US city is spelled properly when it's on the public places list and kept as typed when it isn't.
 
-Either way, people sign in with an 8-digit code sent to their email (valid a few minutes, in the browser that asked), or with a passkey once added. There are no passwords. If a code doesn't arrive, check spam or promotions, wait a minute, then **Send a new code**. The first sign-in offers a one-minute welcome tour, with **Remind me next time** and **Skip**. Replay it from **?** or the profile.
+Either way, people sign in with an 8-digit code sent to their email (valid a few minutes, in the browser that asked), or with a passkey once added. There are no passwords. The first sign-in offers a one-minute welcome tour.
 
-A free account is limited to 3 projects, 50 items in a project, and 10 documents or pictures (10 MB each), with no inviting, approvals, proposals, billing, or Neo until neon1 converts it to a client account.
+A free account holds up to 3 projects, 50 items in a project, and 10 files (10 MB each, 50 MB in all), with no inviting, approvals, proposals, billing, or Neo until neon1 converts it to a client account. A client account takes any file up to 100 MB. How a free account works, including the assessment, the call, the outline tips, and its 30-day deletion with check-ins at 7 and 14 days and a final notice at 21, is in [free 1NEON accounts](../guides/free-accounts.md). **Keep it 30 more days** (once) and **Download a copy** are on Home's **Your account**.
 
-- **Assessment.** Home's **Next step** sends neon1 a request to assess one to three outlined projects, with a required note of at least 20 characters. neon1's written read gives a likely approach and the first questions to settle. The request locks on submit and goes to neon1 30 minutes after its last change, so it can be edited or withdrawn until then, and an edit after it's sent goes out as an update. The reply comes by email, and Home shows when each project was sent.
-- **Call.** **Book a call** on the same card, or ask neon1 to reach out (once a week). It's about needs and needs no assessment first.
-- **Tips.** While an outline is unfinished and nothing is waiting, the account gets outline tips by email about 3 and 7 days after the last edit. **Outline tips** under Notifications turns them off.
-- **Get to know 1NEON** on Home links to the sample project, the walkthrough, the demo, and the FAQs. Each project's Overview shows **Ready for Execute**, how far its outline has come.
-- **Deletion.** If nothing changes for 30 days, the account is deleted, after check-ins at 7 and 14 days and a final notice at 21. Home's **Your account** shows the date, with **Keep it 30 more days** (once) and **Download a copy**.
-
-Your email address can't be changed on the profile. A new address means an admin invites the new one and deactivates the old one.
+An email address can't be changed on the profile. An admin invites the new address and deactivates the old one.
 
 ## Confirming it's you
 
-Admin actions need a recent second-step confirmation, so a stolen email account isn't enough. They are: inviting people, changing access or deactivating someone, changing settings (stages), naming a decision maker, deleting a project, and deleting someone else's comment or file. 1NEON asks "Confirm it's you" and offers the person's second steps. Once confirmed, it doesn't ask again for 12 hours in that sign-in.
+Admin actions need a recent second-step confirmation, so a stolen email account isn't enough: inviting people, changing access or deactivating someone, changing settings (stages), naming a decision maker, deleting a project, and deleting someone else's comment or file. 1NEON asks "Confirm it's you" and offers the person's second steps. Once confirmed, it doesn't ask again for 12 hours in that sign-in.
 
-The three second steps, added on the profile under **Two-step verification** (`/1NEON/me#security`):
+The second steps are added on the profile under **Two-step verification** (`/1NEON/me#security`):
 
-- **Passkey**: face, fingerprint, or device PIN. Fastest and phishing-resistant. Once added, sign-in offers it first.
-- **Authenticator app**: **Set up**, scan the code with Google Authenticator, Microsoft Authenticator, 1Password, Authy, or similar, and type its 6-digit code.
-- **Text-message codes**: once a mobile number is verified for texts.
+- **Passkey:** face, fingerprint, or device PIN. Phishing-resistant, and offered first at sign-in once added.
+- **Authenticator app:** **Set up**, scan the code with Google Authenticator, Microsoft Authenticator, 1Password, Authy, or similar, and type its 6-digit code.
+- **Text-message codes,** once a mobile number is verified for texts.
 
-A second one is a backup. Lost one: confirm with another, remove the lost one, and add a new one. Lost all of them: email hello@neon1.tech from the account's address. There's no self-service reset, and email alone isn't enough, since a stolen mailbox is what the second step guards against. neon1 first confirms who it is by calling a phone number already on record for the person or their organization (never one given in the email), plus the written OK of another admin when the organization has one. Then the lost methods are removed, the removal is dated, and the person is emailed to add a new one. Email codes still sign you in meanwhile. The second step is only for admin actions.
+A second one is a backup. If one is lost, confirm with another, remove the lost one, and add a new one. If all are lost, email hello@neon1.tech from the account's address. There's no self-service reset, and email alone isn't enough, since a stolen mailbox is what the second step guards against. neon1 confirms who it is by calling a number already on record (never one from the email), plus another admin's written OK if the organization has one. Then the lost methods are removed and dated, and the person is emailed to add a new one. Email codes still sign you in meanwhile. Only admin actions wait.
 
-## Notifications
+## Notifications and texts
 
-The bell glows when something new happens. Opening it lists what changed. Important changes also email you. Each person chooses per group on the profile:
+The bell glows when something new happens. Each person chooses per group on the profile whether it also reaches them by email, text, or neither:
 
 | Group | What counts | Email by default |
 |---|---|---|
-| Files | A file is uploaded or removed | Yes |
-| People and access | Someone is invited, joins, or changes access | Yes |
-| Decisions and options | An option is proposed or approved | Yes |
-| Workflow and stages | A project is created, moves stage, or goes to Trash, or the stages change | Yes |
-| Comments | Someone comments on an item | No |
-| Updates and items | Status updates, requests, tasks, measures, and other items | No |
-| Sign-ins | Someone in the organization signs in | No |
+| Files, People and access, Decisions and options, Agreements, invoices, and payments, Workflow and stages | Uploads and removals, invites and access changes, options proposed or approved, agreements, invoices, and payments, projects created or moved or trashed | Yes |
+| Comments, Updates and items, Sign-ins | Comments, status updates and other items, someone signing in | No |
 
-## Texts
+To turn on texts, add a mobile number on the profile, agree to texts, save, and type the 6-digit code 1NEON texts you. Texts say only that something new is waiting, with a link, and never name the organization, projects, or files. Reply STOP to turn them off, and agree again to turn them back on. Changing the number turns texts and text codes off until the new one is confirmed.
 
-Add a mobile number on the profile, agree to texts, save, then type the 6-digit code 1NEON texts you. Texts only say something new is waiting, with a link, and never name the organization, projects, or files. Reply STOP to turn them off. Agreeing again turns them back on. Changing the number turns texts and text codes off until the new one is confirmed.
+## Your data and urgent problems
 
-## Your data, billing, and urgent problems
+Invoices and payments are in each project's Execute layer. An admin can **Download everything** from Settings, under Your data. What the zip holds, and when it ends in -partial.zip, is in the [1NEON help](../faq/1neon-help.md). Data is kept as the record of the work unless the organization asks for deletion.
 
-Invoices and payments are in each project's Execute layer, under Invoices. An admin can download all the organization's data any time from Settings, under Your data, with **Download everything**: one zip of JSON and CSV records plus every uploaded file, comment, the activity history, and projects in Trash, with a README and a manifest.json listing every file. Its name ends in -complete.zip, or -partial.zip if anything couldn't be included. Data is kept as the record of the work unless the organization asks for deletion. neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.
+neon1 is one person working planned hours, with no 24/7 response. For an emergency, contact the provider responsible first. Report a security problem in the portal to security@neon1.tech.
