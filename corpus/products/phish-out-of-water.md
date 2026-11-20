@@ -8,15 +8,15 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-16
+updated: 2026-11-20
 created: 2026-11-12
-edition: "1.4"
+edition: "1.5"
 related: [guides-use-case-security-awareness, product-home-is-where-the-smart-is, product-ready-secure-go]
 ---
 
 # Phishing awareness session kit
 
-*Public · v0.1.3*
+*Public · v0.1.7*
 
 **An hour on scams and safer accounts, ready to run.** The kit behind neon1's [security awareness sessions](../guides/use-case-security-awareness.md), open on [GitHub](https://github.com/neon1llc/phishing-awareness-kit) for anyone to teach from, whether a team, a family, a senior center, or a classroom.
 

@@ -9,9 +9,9 @@ area: workflows
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.6"
+edition: "1.7"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
@@ -44,7 +44,7 @@ I mapped the process with staff, separating patient waiting time from staff hand
 
 | Measure                                      | Before             | After      |
 |----------------------------------------------|--------------------|------------|
-| Median time to a complete intake             | ~2.6 business days | ~3.4 hours |
+| Median time to a complete intake             | ~2.6 days          | ~3.4 hours |
 | Staff time per intake                        | ~24 min            | ~8 min     |
 | Finding and opening a document               | ~2 min 18 s        | ~12 s      |
 | Intakes needing a missing-document follow-up | ~34%               | ~10%       |

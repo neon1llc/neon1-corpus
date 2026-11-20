@@ -8,14 +8,14 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-06
-edition: "1.8"
+edition: "1.9"
 ---
 
 # Ready, Secure, Go
 
-*Public · v0.1.2*
+*Public · v0.1.7*
 
 **Security steps for each kind of space.** Plain-language guidance for a phone, a home network, a classroom, a small office, or a company heading into SOC 2: five things worth doing first, then what's next. It's open on [GitHub](https://github.com/neon1llc/ready-secure-go).
 

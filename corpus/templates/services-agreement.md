@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-14
+updated: 2026-11-20
 created: 2026-11-11
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.4"
+edition: "1.5"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -42,7 +42,7 @@ Each proposal lists its own responsibilities. On every project:
 
 | You will | I will |
 |---|---|
-| Name one person who can make decisions, and answer questions within two business days | Say when I'm working and what I'll do, and answer questions in my working hours (weekends 8am to 8pm and weekday evenings 6pm to 9pm, Eastern time), usually within a day |
+| Name one person who can make decisions, and answer questions within two business days | Say when I'm working and what I'll do, and answer questions in my working hours (Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time), usually within a day |
 | Give the access the work needs, in your own accounts | Use only that access, keep it confidential, and remove it at handover |
 | Make time for testing and training | Test against the agreed checks, show you the result, and train your team |
 | Pay for outside accounts and subscriptions directly, in your name | Keep every account, login, and record in your name |

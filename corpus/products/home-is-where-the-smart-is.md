@@ -8,15 +8,15 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-20
 created: 2026-11-12
-edition: "1.3"
+edition: "1.4"
 related: [guides-password-manager-for-family, guides-backups-you-can-trust, product-phish-out-of-water]
 ---
 
 # Household tech handbook
 
-*Public · v0.1.3*
+*Public · v0.1.6*
 
 **The handbook for a family's unofficial tech lead,** the person everyone calls when the Wi-Fi drops or a strange text arrives. It helps them set things up once so the same problems stop coming back. It's open on [GitHub](https://github.com/neon1llc/household-tech-handbook).
 

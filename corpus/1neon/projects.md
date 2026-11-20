@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-19
+updated: 2026-11-20
 created: 2026-11-10
-edition: "2.6"
+edition: "2.7"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -245,3 +245,29 @@ Every template except Blank and Personal or home tech starts with this handover 
 ## The Overview tab
 
 Overview shows any decision, the summary and outcome, measures with progress, a side column (health and who set it, stage and dates, the latest update, sensitive-data flags, people, and **Archive this project**), **How is it going?**, and **People on this project** with roles: lead engineer, sponsor, decision maker, tech contact, stakeholder, and observer. Roles describe work and never grant access, except that a decision maker may approve.
+
+### Ready for Execute
+
+Above the tabs' content, until a decision exists, Overview shows **Ready for Execute**: a percent, a bar, and four steps in order.
+
+| Step | Counts for |
+|---|---|
+| **Outline** | 10 for each of six parts, up to 60 |
+| **Assessment** | 10, once the project was sent for assessment from Home's Next step, or once an option has been proposed |
+| **Options** | 10, once an option is proposed or approved |
+| **Decision** | 20, once an option is approved or a decision exists |
+
+It reaches 100% only with a decision (it shows at most 99% before), and then the card goes away. Everything in it is optional.
+
+The six outline parts, in the order they're asked, each with the tip shown when it's missing:
+
+| Part | Counts when | Tip | Goes to |
+|---|---|---|---|
+| What it is | The summary has real words | Add what this is, in a sentence or two | The scope in the proposal |
+| How it works today | The "One real example of how it works today" question is answered | Add one real example of how it works today | The starting point Observe measures against |
+| What done looks like | The outcome has real words | Add what will be true when it's done | The checks in Verify that say it's finished |
+| Who and what it touches | Another discovery question is answered, or a system or account is added with a name or description | Add who does this work and the tools it touches | The handover in Normalize: accounts, access, and training |
+| How we'll know it worked | A measure has a baseline number | Add a measure with where it is now | Tracked in Observe, before and after |
+| Timing and limits | A target date is set, or a constraint or a requirement is added | Add a target date or any limits, such as budget or must-nots | The proposal's schedule and constraints |
+
+Real words means about a dozen characters or more. A starter question that still has no answer, or a starter system or requirement from a template, never counts alone. A project is **outlined** with the first three parts, and **fully outlined** with all six. Each missing part names where to write it: **Write it here** or **Set a target date** opens the Overview's own edit form, **Answer in Needs** opens Needs, and **Add in Observe** opens Observe. Viewers see the card without those links. The percent and the parts are the same ones Home's Next step shows and neon1 reads when it assesses a project. [Outlining a project](../guides/outline-a-project.md) shows what a good answer looks like.
