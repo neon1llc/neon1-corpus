@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## v0.52.5 - 2026-11-23
+
+### Changed
+- How neon1.tech works (edition 1.14) describes the Sentinel landing as the default and Matrix as optional, and says people join by invitation or make a free account. The 1NEON overview (edition 1.9) names Sentinel as the default look. AWS CLIP (edition 1.9) says v0.2.1 and early software, with install steps. The filled proposal with options (edition 3.3) is titled for what its chosen scope delivers, stock reconciliation and exception monitoring, and no longer promises that the counts agree.
+
 ## v0.52.4 - 2026-11-23
 
 ### Changed

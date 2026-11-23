@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-23
 created: 2026-11-11
-edition: "1.13"
+edition: "1.14"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -30,7 +30,7 @@ The code is public in neon1's [GitHub repositories](https://github.com/neon1llc)
 
 One long page of views, each about one screen:
 
-1. **Landing.** The neon1 wordmark over the rain, with "1 is glad to be of service."
+1. **Landing.** The default Sentinel look is a plain page: what I do, the four services, "Discuss a project" and "See the work," and email and booking links. The optional Matrix look is the neon1 wordmark over the rain, with "1 is glad to be of service." A switch on the landing and in the footer changes the look.
 2. **Services.** Four kinds of help, and a note that the first 30-minute call is free.
 3. **Process.** The five steps: listen, propose, decide, build, and hand over.
 4. **Client work.** Case study cards with my role, the problem, the work, and the results.
@@ -52,7 +52,7 @@ CloudFront serves every page with a strict content security policy. Scripts, sty
 
 ## The rain and the white rabbit
 
-The falling green characters are drawn by one shared file, `shared/rain.js`, which also draws the rain behind 1NEON's sign-in and the not-found page. Three buttons on the landing (grid, text, pause) change how it falls. Your choices are saved in your browser. With reduced motion on, the rain is a still frame.
+In the Matrix look, the falling green characters are drawn by one shared file, `shared/rain.js`, which also draws the rain behind 1NEON's sign-in and the not-found page. Three buttons on the landing (grid, text, pause) change how it falls. Your choices are saved in your browser. With reduced motion on, the rain is a still frame.
 
 Now and then a white rabbit drops into the rain. Catching it by click or tap stops the rain and loads a 3D scene, which scrolling plays forward and back. The scene and its 3D library download only then, so nobody else pays for them. Keyboard users get a "follow the white rabbit" link. With reduced motion, no WebGL, or a failed load, you get a silent still card, and Esc leaves any time. The room's models and textures are credited in the site's asset manifest.
 
@@ -99,7 +99,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 
 [neon1.tech/1NEON](https://neon1.tech/1NEON/) is where a client and I run a project. Every project moves through Needs, Execute, Observe, and Normalize, which spell N E O N.
 
-- **Signing in.** There are no passwords. An eight-digit code arrives by email from notify.neon1.tech. You can then add a passkey, an authenticator app, or text codes, which admin actions ask for. Only invited addresses can make an account. Sign-in runs on Amazon Cognito, with the session in cookies page scripts can't read.
+- **Signing in.** There are no passwords. An eight-digit code arrives by email from notify.neon1.tech. You can then add a passkey, an authenticator app, or text codes, which admin actions ask for. People join by invitation or make a free account of their own. Sign-in runs on Amazon Cognito, with the session in cookies page scripts can't read.
 - **Projects.** Each has an overview and a tab per layer. Needs holds the request and my options, each with cost, quality, and effort. The client's decision maker approves one, kept as a record that can't be edited.
 - **Files** upload straight to a private bucket and can't be downloaded until a malware scan passes.
 - **Notifications.** A bell, plus email or text for the events you choose.

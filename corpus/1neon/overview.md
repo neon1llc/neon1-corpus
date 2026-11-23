@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-10
-edition: "1.8"
+edition: "1.9"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -47,7 +47,7 @@ Items are shown by title. Their IDs only appear in links (`#item-…`).
 - **The bell** glows when something new happened in the organization and lists what changed and who did it.
 - **Neo** sits at the bottom right. It answers questions, links to pages, runs tours, and with the person's go-ahead does things for them.
 
-Themes: Matrix (**Awake** light, the default, and **Plugged** dark) and Sentinel (**Providence** light and **Desert of the real** dark). **Match my device** follows the device setting.
+Themes: Sentinel (**Providence** light, the default, and **Desert of the real** dark) and Matrix (**Awake** light and **Plugged** dark). **Match my device** follows the device setting.
 
 ## Addresses
 

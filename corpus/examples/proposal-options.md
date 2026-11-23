@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional retailer whose stock counts disagree: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-11
-edition: "3.2"
+edition: "3.3"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -21,7 +21,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 > [!example] A fictional example
 > Harborline Outfitters, its people, and every detail below are invented. It's the retailer from the [1NEON walkthrough](https://neon1.tech/1NEON/live?play=decide&scenario=harborline). Hours are real estimates for the work described. The hourly rate and dollar amounts are left out of public examples, and a real proposal states them.
 
-**neon1 proposal for:** Harborline Outfitters, "One stock count across stores and web"
+**neon1 proposal for:** Harborline Outfitters, "Stock reconciliation and exception monitoring"
 
 **Proposal number:** 0039 **Revision:** r1 **Date:** October 1
 
@@ -40,7 +40,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 **What "better" means, in Priya's words**
 
-"A count we can trust by 7am, a short list of what to check instead of a spreadsheet to build, and no apologies to customers for stock we don't have."
+"A short list by 7am of what to check instead of a spreadsheet to build, and a chance to fix a count before a customer meets it."
 
 **What can't change**
 
@@ -55,7 +55,7 @@ related: [templates-proposal, templates-services-agreement, examples-proposal, f
 
 ## Objectives
 
-**The result:** the counts agree, and anything that doesn't is on one short exception list by 7am, without replacing a system.
+**The result:** every morning by 7am, one short list shows which counts disagree and why, without replacing a system.
 
 **How we'll know it worked,** measured the same way before and after:
 
