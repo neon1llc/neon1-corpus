@@ -1,12 +1,12 @@
 ---
 id: guides-use-case-security-readiness
 title: "Security readiness"
-summary: "Assessing technical risk, strengthening controls, and preparing systems for a security review or audit: what I deliver, and where an auditor or specialist takes over."
+summary: "Assessing technical risk, strengthening controls, and preparing systems for a security review or audit: what I deliver, and how I work with auditors and specialists."
 type: guide
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-09-10
-edition: "1.3"
+edition: "1.4"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Organizations facing a security review, a customer requirement, or a risk they want closed"
@@ -37,14 +37,7 @@ related: [services, standards-security-and-data, standards-reliability-and-recov
 
 Prioritized findings, a remediation plan, the changes made and verified, and evidence of the checks performed.
 
-## When something else fits better
+## Around the review
 
-- You need an audit opinion. That comes from an independent auditor, such as a CPA firm for SOC 2.
-- You need ongoing evidence collection across many controls. A compliance platform such as Vanta, Drata, or Secureframe may fit, and I can help set it up.
-- You need a penetration test, 24/7 monitoring, or incident response in progress. A specialist or managed security provider fits better.
-- You need legal advice on an obligation. A lawyer does that, and I'll work with them on the technical side.
-
-## Limits
-
-Work with health information starts only after a [business associate agreement](../templates/business-associate-agreement.md) is signed.
+I get you ready, and an independent auditor, such as a CPA firm for SOC 2, gives the opinion. A compliance platform such as Vanta, Drata, or Secureframe can carry ongoing evidence collection across many controls, and I help set it up. For a penetration test I bring in a specialist and turn the findings into fixes. On a legal question about an obligation, I work with your lawyer on the technical side. Work with health information starts once a [business associate agreement](../templates/business-associate-agreement.md) is signed.
 

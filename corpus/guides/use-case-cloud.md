@@ -4,9 +4,9 @@ title: "Cloud and AI engineering"
 summary: "Cloud architecture, infrastructure as code, delivery, migrations, and AI applications: when an independent engineer is worth bringing in, what I deliver, and how ownership stays with your team."
 type: guide
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-09-10
-edition: "2.2"
+edition: "2.3"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Engineering leads, technical founders, and businesses running software in the cloud"
@@ -41,14 +41,8 @@ Depending on scope: written findings and options, reviewed changes in your repos
 
 I work in your repositories, follow your conventions and change process, and agree up front how the team will accept the work. The team keeps ownership and on-call.
 
-## When something else fits better
+## Right-sized choices
 
-- The team needs sustained capacity, not a bounded result. A hire or staffing partner fits better.
-- You need 24/7 operations, or a vendor with partner status or compliance attestations of its own.
-- A managed platform or an existing AI product already meets the need at lower cost.
-
-## Limits
-
-No round-the-clock operations or migrations that need a team. An AI demo isn't a production system, so AI work includes evaluation, access control, and a named human owner, or it doesn't ship.
+When a managed platform or an existing AI product meets the need at lower cost, I recommend it. When the team needs sustained capacity, I help you weigh a hire against a staffing partner. Larger migrations run in phases you approve one at a time. AI work includes evaluation, access control, and a named human owner before it ships, because an AI demo isn't a production system.
 
 [Book a call](../engagement/contact.md) with the system, the decision or change ahead, and how your team will judge the result.

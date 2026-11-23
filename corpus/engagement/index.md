@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-23
 created: 2025-09-07
-edition: "2.5"
+edition: "2.6"
 ---
 
 # Services
@@ -19,7 +19,7 @@ neon1 is my independent engineering and technology consulting practice. I assess
 ## Four services
 
 | Service | What it covers | Common reasons to call |
-|---|---|---|
+|---|---|
 | **Workflow automation** | Systems integration, APIs and events, data synchronization and quality, custom applications, reporting, and AI-assisted document processing | Systems of record disagree, exceptions are handled by hand, reporting needs data no single system holds, or a process has outgrown its tools |
 | **Cloud and AI engineering** | Cloud architecture, infrastructure as code, delivery pipelines, migrations, production readiness, observability, cost, and AI applications with access control and evaluation | A launch or migration with a rollback requirement, an architecture or cost review, or an AI feature that must cite sources and respect permissions |
 | **Networks and connected systems** | Network design and segmentation, multi-site and remote access, cameras, sensors, and other connected devices, monitoring, local storage, and backup | A flat network that should be segmented, a new location, devices to integrate and monitor, or a home network built to a higher standard |
@@ -43,14 +43,14 @@ Before any of these, the first 30-minute call covers your needs. If you write a 
 
 ## Who keeps what
 
-| Service | You keep | Outside my scope |
-|---|---|---|
-| Workflow automation | Your systems of record, accounts, data, and a runbook for each integration | Replacing systems that work, or running integrations as a 24/7 managed service |
-| Cloud and AI engineering | Repositories, infrastructure code, and production on-call | Round-the-clock operations, or migrations that need a team |
-| Networks and connected systems | The equipment, its admin accounts, the network diagram, and the asset inventory | Cabling and physical installation, licensed electrical or alarm-system work, safety-critical systems, and electronics repair |
-| Security readiness | Your controls, evidence, and risk decisions | Audit opinions, certifications, penetration tests, and legal advice |
+| Service | You keep |
+|---|---|
+| Workflow automation | Your systems of record, accounts, data, and a runbook for each integration |
+| Cloud and AI engineering | Repositories, infrastructure code, and production on-call |
+| Networks and connected systems | The equipment, its admin accounts, the network diagram, and the asset inventory |
+| Security readiness | Your controls, evidence, and risk decisions |
 
-On-site work is within about 30 miles of Queens, NY. Everything else is remote.
+Licensed trades, audit opinions, and penetration tests come from the right specialist, whom I bring in and whose role the proposal defines. On-site work is within about 30 miles of Queens, NY. Everything else is remote.
 
 ## Past work
 

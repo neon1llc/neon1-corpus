@@ -9,13 +9,13 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-23
 created: 2026-11-07
-edition: "1.24"
+edition: "1.25"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
   - "What if something urgent comes up?"
   - "How is the cost worked out?"
-  - "What don't you do?"
+  - "What do you cover?"
 ---
 
 # Working with neon1
@@ -42,9 +42,9 @@ What you approve in a [proposal](../examples/proposal.md) is what we both agree 
 
 ## What if something urgent comes up?
 
-I work in planned appointments, with no 24/7 or emergency response. An incident in progress or an outage needs a provider with emergency coverage first.
+I work in planned appointments, and a care plan sets my response times in writing. An outage or incident in progress needs a provider with emergency coverage first. I take it from there, with the cause, the fix, and what to change.
 
-For anything your business can't go a day without, someone on your side must run it day to day. A care plan sets my response times in writing, within my working hours.
+For anything your business can't go a day without, someone on your side runs it day to day.
 
 ## How is the cost worked out?
 
@@ -56,8 +56,8 @@ Every option has the same security baseline, and a smaller option does less, not
 
 Yes, informational awareness sessions for groups, from parents and teachers to engineers and executives. They're not certified training. For controls, evidence, and audit preparation, see [security readiness](../guides/use-case-security-readiness.md).
 
-## What don't you do?
+## What do you cover?
 
-I don't repair electronics, do licensed electrical or alarm work, issue audit opinions or certifications, run penetration tests, or give legal advice. I can't promise a review will pass.
+Workflow automation, cloud and AI engineering, networks and connected systems, and security readiness, for businesses, technical teams, and households.
 
-I handle personal or health data only after the right agreements and insurance are in place, and I can help you get those. What I publish is general information. A lawyer, accountant, or auditor decides what applies to you, and I'll work with them on the technical side. My guides and training kits are practical, not compliance determinations.
+When a project needs a licensed installer, an independent auditor, or a penetration tester, I bring in a vetted one and write their role into the proposal. I get you ready for a review, and the reviewer makes the call. I work with your lawyer, accountant, or auditor on the technical side, and I take on personal or health data once the right agreements and insurance are in place. What I publish is general information, and a professional decides what applies to you.

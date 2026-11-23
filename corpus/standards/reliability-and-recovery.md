@@ -4,11 +4,11 @@ title: Reliability and recovery
 summary: "How neon1 sets service targets, plans for failure, and tests that backups restore."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-08-26
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 order: 13
 origin: "neon1's internal handbook, reliability and recovery"
 related: [forms-service-and-recovery-profile, forms-incident-and-restore, standards-measurement]
@@ -61,7 +61,7 @@ Each incident names who coordinates, who can change the system, and your contact
 
 ## What ongoing care covers
 
-Ongoing care is scheduled attention to a named workflow within an agreed allowance, not a help desk, round-the-clock monitoring, an unlimited repair fund, or insurance against vendor outages. If the work regularly outgrows it, we change the scope or price.
+Ongoing care is scheduled attention to a named workflow within an agreed allowance, with response times written into the care plan. If the work regularly outgrows it, we change the scope or price.
 
 ## Sources
 

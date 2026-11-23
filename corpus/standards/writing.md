@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-08-05
-edition: "2.2"
+edition: "2.3"
 order: 1
 consumers: [ai]
 pdf: true
@@ -33,7 +33,7 @@ Direct, candid, and specific, the way an engineer talks to a client or a peer.
 - **Don't solicit.** No pitch, no urgency, no telling readers what they deserve.
 - **Argue from evidence.** A number, method, or real example beats an adjective. When the evidence is thin, say so.
 - **Leave the decision with the reader.** Give options and tradeoffs, and recommend plainly, with why.
-- **Be candid about limits.** Say what neon1 doesn't do, when someone else is a better fit, and what might not work.
+- **Be candid and confident.** Lead with what neon1 does and brings in. Name the specialist or tool that fits when one does, and say what might not work where it matters to the decision. Keep legal limits in the policies, the agreement, and the one FAQ answer that carries them, not in marketing copy.
 - **Respect the reader.** Describe people by their situation, not their size, age, or assumed skill. Don't explain what a competent reader already knows, and don't announce honesty or humility. Show them through specifics.
 
 The test: would a capable professional say this across a table to a peer? If it sounds like an ad, rewrite it.

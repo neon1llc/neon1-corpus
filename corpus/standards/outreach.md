@@ -4,11 +4,11 @@ title: Outreach and claims
 summary: "How neon1 finds clients and talks about its work, and the sales tactics it doesn't use."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "1.7"
+edition: "1.8"
 order: 18
 origin: "neon1's planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
@@ -40,7 +40,7 @@ related: [standards-customers, landscape-where-else-to-get-help]
 |---|---|
 | "That's expensive." | We check the value against the budget. I can offer a smaller useful step, not the same work for half the price. |
 | "Why not do it ourselves?" | Often you can. I'll say which parts, and what review, testing, and training would add. |
-| "We need someone during the day." | Then I may not be the right fit, and I'll help you find the coverage you need. |
+| "We need someone during the day." | I work evenings and weekends. I'll help you set up daytime coverage, and do the project work on my schedule. |
 | "Can you guarantee the savings?" | I commit to deliverables and to measuring the result. Estimates are labeled as estimates. |
 | "Will we depend on you?" | You'll own the accounts, have the instructions and exports, and know how to leave. |
 
