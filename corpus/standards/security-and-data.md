@@ -5,7 +5,7 @@ summary: How neon1 handles your accounts, access, and information, and the basel
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-26
 consumers: [ai]
 pdf: true
 edition: "1.7"

@@ -5,7 +5,7 @@ summary: "The exact definition of one measure: what counts, the formula, the sou
 type: form
 status: adopted
 updated: 2026-11-09
-created: 2026-11-01
+created: 2025-09-04
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"

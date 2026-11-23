@@ -5,7 +5,7 @@ summary: "How neon1 works with other firms, vendors, and referrals, and how resp
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-12
 consumers: [ai]
 pdf: true
 edition: "1.5"

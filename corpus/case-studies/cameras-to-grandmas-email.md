@@ -10,7 +10,7 @@ kind: founder
 role: "For my own family"
 when: "2025"
 updated: 2026-11-20
-created: 2026-11-06
+created: 2025-09-22
 edition: "1.8"
 consumers: [chat, knowledge, ai]
 pdf: true

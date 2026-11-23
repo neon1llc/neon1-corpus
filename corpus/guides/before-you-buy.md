@@ -5,7 +5,7 @@ summary: "Ten questions to ask before adding software to your business, so it fi
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "1.2"
 consumers: [knowledge, ai]
 pdf: true

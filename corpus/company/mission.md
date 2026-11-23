@@ -5,7 +5,7 @@ summary: "What neon1 is for and the five things every client can count on."
 type: page
 status: adopted
 updated: 2026-11-20
-created: 2026-11-11
+created: 2025-08-12
 consumers: [site, chat, knowledge, ai]
 pdf: true
 featured: true

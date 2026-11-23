@@ -10,7 +10,7 @@ kind: neon1
 role: "As neon1"
 when: "2025"
 updated: 2026-11-20
-created: 2026-11-06
+created: 2025-09-22
 edition: "1.6"
 consumers: [site, chat, knowledge, ai]
 pdf: true

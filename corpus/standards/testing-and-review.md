@@ -5,7 +5,7 @@ summary: "What neon1 tests, how changes are checked and reviewed before they shi
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-08-26
 edition: "2.7"
 audience: "Developers"
 order: 8

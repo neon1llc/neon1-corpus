@@ -10,7 +10,7 @@ kind: founder
 role: "As a volunteer, before neon1"
 when: "2025"
 updated: 2026-11-20
-created: 2026-11-06
+created: 2025-09-22
 edition: "1.7"
 consumers: [chat, knowledge, ai]
 pdf: true

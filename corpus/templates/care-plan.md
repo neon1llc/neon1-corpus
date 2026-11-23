@@ -5,7 +5,7 @@ summary: "The monthly agreement for ongoing care after a project: what's looked 
 type: template
 status: adopted
 updated: 2026-11-15
-created: 2026-11-11
+created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"

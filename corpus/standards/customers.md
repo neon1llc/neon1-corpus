@@ -5,12 +5,12 @@ summary: "Who neon1 works with, the situations that bring them, and when it decl
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-12
 consumers: [ai]
 pdf: true
 edition: "2.3"
 order: 16
-origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
+origin: "neon1's planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
 

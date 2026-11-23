@@ -5,7 +5,7 @@ summary: "How neon1 sets service targets, plans for failure, and tests that back
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-26
 consumers: [ai]
 pdf: true
 edition: "1.6"

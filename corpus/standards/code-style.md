@@ -5,7 +5,7 @@ summary: "How neon1 code reads: names, comments, file headers, formatting, and l
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-08-26
 edition: "2.5"
 audience: "Developers"
 order: 7

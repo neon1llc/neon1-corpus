@@ -5,7 +5,7 @@ summary: "Integrating business systems, automating processes, and building the s
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "2.2"
 consumers: [chat, knowledge, ai]
 pdf: true

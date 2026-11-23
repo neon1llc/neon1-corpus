@@ -5,7 +5,7 @@ summary: "Cloud architecture, infrastructure as code, delivery, migrations, and 
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "2.2"
 consumers: [chat, knowledge, ai]
 pdf: true

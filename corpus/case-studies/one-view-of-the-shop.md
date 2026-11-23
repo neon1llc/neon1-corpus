@@ -10,7 +10,7 @@ kind: neon1
 role: "As neon1, my first business client"
 when: "2025"
 updated: 2026-11-20
-created: 2026-11-15
+created: 2025-09-22
 edition: "1.3"
 consumers: [site, chat, knowledge, ai]
 pdf: true

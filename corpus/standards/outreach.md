@@ -5,12 +5,12 @@ summary: "How neon1 finds clients and talks about its work, and the sales tactic
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-12
 consumers: [ai]
 pdf: true
 edition: "1.7"
 order: 18
-origin: "neon1's November 2026 planning notes, community marketing and sales (ethical persuasion)"
+origin: "neon1's planning notes, community marketing and sales (ethical persuasion)"
 related: [standards-customers, landscape-where-else-to-get-help]
 ---
 
