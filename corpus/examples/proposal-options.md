@@ -6,7 +6,7 @@ type: example
 status: adopted
 updated: 2026-11-23
 created: 2026-11-11
-edition: "3.3"
+edition: "3.4"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -90,7 +90,7 @@ Match every item across the POS, the web store, and the warehouse once. Each mor
 
 **Target result:** counts are compared every morning, and unexplained differences fall from about 38 a week to 5 or fewer.
 
-**neon1's time:** 26 to 34 hours **Timeline:** 4 weeks, the last two beside Monday's count **Paid directly by you:** about $15 a month for an AWS account in Harborline's name.
+**neon1's time:** 26 to 34 hours **Timeline:** 4 weeks, the last two beside Monday's count **Paid directly by you:** a small monthly AWS bill, in an account in Harborline's name.
 
 **Why I recommend it:** it shows how much of the drift is process and how much is sync before anything writes into a POS that limits writes. Option B can follow, and nothing in A is redone.
 
@@ -112,7 +112,7 @@ Everything in A, plus counts written back to the web store and the POS as sales 
 
 **Target result:** counts correct themselves within minutes, at normal volume.
 
-**neon1's time:** 58 to 74 hours **Timeline:** 10 weeks, after the holiday weeks **Paid directly by you:** about $45 a month for the queue and its runtime, in Harborline's AWS account.
+**neon1's time:** 58 to 74 hours **Timeline:** 10 weeks, after the holiday weeks **Paid directly by you:** a small monthly AWS bill for the queue and its runtime, in Harborline's account.
 
 **When to pick it:** once A shows how many differences are real and the holiday weeks are over. It writes to a POS that limits writes, so it's the riskier of the two to build first.
 
@@ -175,7 +175,7 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 | Estimate | 26 to 34 hours at that rate | 58 to 74 hours at that rate | 80 to 100 hours at that rate |
 | Deposit when you approve | Half of the low end | Half of the low end | Half of the low end |
 | Final invoice, when you accept the handover | The hours worked, less the deposit | The hours worked, less the deposit | The hours worked, less the deposit |
-| Paid directly by you | About $15 a month for AWS | About $45 a month for the queue and runtime | New hardware, and the cost of leaving the POS contract |
+| Paid directly by you | A small monthly AWS bill | A small monthly AWS bill for the queue and runtime | New hardware, and the cost of leaving the POS contract |
 
 **Changes:** no extra work or spending without a written, approved [change request](../forms/change-request.md).
 

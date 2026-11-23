@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-23
 created: 2026-11-07
-edition: "1.27"
+edition: "1.28"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -50,7 +50,7 @@ For anything your business can't go a day without, someone on your side runs it 
 
 After we talk, I send a short proposal: one recommendation, or options when there's a real choice, each with what it covers, its upkeep, and an estimate. Discovery sets the estimate. Unforeseen work or purchases are agreed with you before I add them.
 
-Every option has the same security baseline, and a smaller option does less, not worse. The proposal also gives the schedule, and larger projects split into phases, each with its own scope and price, approved before it starts. Ranges, invoices, and payment methods are in [pricing](../engagement/pricing.md).
+Every option has the same security baseline, and a smaller option does less, not worse. The proposal also gives the schedule, and larger projects split into phases, each with its own scope and price, approved before it starts. How a price is set, invoices, and payment methods are in [pricing](../engagement/pricing.md).
 
 ## Do you run security training?
 
