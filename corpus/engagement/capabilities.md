@@ -5,10 +5,10 @@ summary: "neon1 on one page for a buyer, partner, or procurement office: what it
 type: page
 status: adopted
 updated: 2026-11-20
-created: 2026-11-11
+created: 2025-08-05
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.3"
+edition: "2.4"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -37,6 +37,18 @@ Four services: [workflow automation](../guides/use-case-workflows.md), [cloud an
 | Automotive business | neon1 engagement | [Two-site server migration](../case-studies/two-offices-off-local-servers.md) to AWS, with the client's technical lead | Both locations moved with no application rewrite, records reconciled, and restore tested |
 | Small local business | neon1 engagement | [Operations integration and monitoring](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras joined on AWS, on a separate device network | The owner acts on problems from anywhere, not only on site |
 | Schools, families, and teams | neon1 engagement | [Security awareness sessions](../case-studies/security-for-non-security-people.md) | Informational sessions, with accounts and devices secured during the session |
+
+## Community work
+
+From late 2024 through 2025 I took on small projects for schools, families, and local businesses, and chose to do them free. Each began with a specific difficulty.
+
+- **A high school's computer lab.** A quarter of the machines were dead, and students were told to use their phones. I refurbished and reimaged the rest as cloud-managed Chromebooks, built a STEM lab toolkit, and set up a shared GitHub classroom so students could code together.
+- **A veteran's family.** His medical alert was a landline box that cost $50 a month and barely worked. I replaced it with an LTE wearable tied to a monitoring dashboard. His daughter is alerted on her phone if he falls, and local responders are called if he doesn't answer.
+- **A farm.** A drought season put the harvest at risk. I built IoT monitoring for the irrigation pumps, with soil moisture and crop health readings across corn, soybeans, and tomatoes, so watering followed measurements.
+- **A small nonprofit.** Its records were on paper, and manual entry caused errors. I moved document storage and collaboration to AWS and made the work paperless.
+- **A business foyer.** The business wanted tighter, more secure entry. I redesigned the foyer around keypad locks, PIV card identity, and standalone cameras at the door.
+- **A homeowner's cameras.** The home camera system was slow to report events. I rebuilt it as a cloud-based, LTE-connected system, so the homeowner sees events as they happen from anywhere.
+- **A single parent.** Paper bills led to late fees and shut-off notices. Every bill now lands on a shared calendar with reminders, her accounts are in a password manager, and payments are scheduled.
 
 ## Company data
 
