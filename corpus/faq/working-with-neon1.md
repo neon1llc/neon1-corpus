@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-23
 created: 2026-11-07
-edition: "1.25"
+edition: "1.26"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -26,7 +26,7 @@ Yes, within about 30 miles of Queens, NY. Otherwise I work remotely across the U
 
 ## When do you work?
 
-Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern. The booking calendar shows what's open.
+Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern, for about 10 to 20 project hours a week. Meetings with your team fit those windows. I plan any change to a live system, like a cutover, with your team ahead of time and keep a rollback ready. When a step waits on a vendor or your staff during the day, I work from the written plan and pick up as soon as it clears. The booking calendar shows what's open.
 
 ## Can I start without a call?
 

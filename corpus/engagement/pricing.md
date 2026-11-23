@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-23
 created: 2026-11-13
-edition: "1.9"
+edition: "1.10"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true
@@ -32,10 +32,10 @@ As of November 2026.
 |---|---|---|
 | A small fix or setup, a few hours | $150 to $750 | A broken sync repaired, or one system's access tightened |
 | A focused project, one to four weeks | $1,000 to $3,000 | Two systems kept in sync, or a network segmented with its diagram |
-| A larger build or move, several weeks or more | $3,000 or more, in phases you approve one at a time | A portal in your own cloud account, a migration with a tested fallback, or controls before an audit |
+| A larger build or move, several weeks or more | $3,000 to $12,000 or more, in phases you approve one at a time | A portal in your own cloud account, a migration with a tested fallback, or controls before an audit |
 | Care after a project | A monthly plan | Updates, checks, and a set response time in a [care plan](../templates/care-plan.md) |
 
-Fictional examples: syncing a retailer's store and point-of-sale on a shared item ID with an exception report is an estimate of $2,400 to $3,000. An independent review of one AWS account before a renewal comes to about $1,500. Segmenting a two-site business's network and linking the sites by VPN, with a diagram and recovery steps, comes to about $2,800. A security questionnaire review comes to about $1,200, then a choice between an estimate of $3,000 to $4,500 to fix the findings together or about $600 for written guidance.
+Fictional examples: syncing a retailer's store and point-of-sale on a shared item ID with an exception report is an estimate of $2,600 to $3,400. Moving a software team's report workers to container tasks, with a canary, a rollback, and a handover to its platform team, is about $9,800 over six weeks. An independent review of one AWS account before a renewal comes to about $1,500. Segmenting a two-site business's network and linking the sites by VPN, with a diagram and recovery steps, comes to about $2,800. A security questionnaire review comes to about $1,200, then a choice between an estimate of $3,000 to $4,500 to fix the findings together or about $600 for written guidance.
 
 ## What's included, and what isn't
 
