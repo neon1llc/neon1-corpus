@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.6"
+edition: "1.7"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -50,7 +50,7 @@ If something outside either of our control holds the work up, I'll pause the tim
 
 ## 3. Price and payment
 
-1. Each proposal says how it's priced: a fixed fee for the work described, or an estimate billed for the hours worked at a stated rate, up to a stated ceiling.
+1. Each proposal prices the work as an estimate that discovery sets: hours worked at a stated rate, up to a stated high end. Unforeseen work or purchases are agreed with you before I add them. A proposal may instead state a fixed fee for a small, well-defined job.
 2. A deposit of ____% is due when you choose an option, and the balance when the work is accepted. Invoices are due within ____ days.
 3. Outside costs, such as software, hardware, and subscriptions, are billed to you directly by the vendor. I don't mark them up.
 4. If an invoice is more than ____ days late, I may pause work until it's paid, after telling you in writing.

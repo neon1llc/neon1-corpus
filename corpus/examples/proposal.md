@@ -4,9 +4,9 @@ title: "Proposal, filled in"
 summary: "A complete neon1 proposal for a fictional physical therapy practice's intake project."
 type: example
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-09-16
-edition: "1.6"
+edition: "1.7"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -74,12 +74,12 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 | Item | Amount |
 |---|---|
-| Fixed fee for the work above | *Stated in the real proposal* |
+| Estimate for the work above (low to high end) | *Stated in the real proposal* |
 | Deposit due at signing | *Stated in the real proposal* |
 | Balance due at acceptance | *Stated in the real proposal* |
 | Estimated outside costs (paid directly by you) | None expected. The patient form is included in your current plan |
 
-**How the deposit is credited:** in full against the fixed fee.
+**How the deposit is credited:** in full against the final invoice.
 
 **Changes:** no extra work or spending without a written, approved change request.
 

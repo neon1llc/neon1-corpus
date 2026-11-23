@@ -8,6 +8,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Working with neon1 (edition 1.24) says discovery sets the estimate, and that unforeseen work or purchases are agreed before they are added.
 - About (edition 2.5) says the first clients paid nothing, by choice.
 - How I price my work (edition 1.9), Engagement (edition 2.5), and Operating principles (edition 2.5) price every project as an estimate that discovery sets, with unforeseen work or purchases agreed before they are added, instead of a fixed price or an estimate with a ceiling.
+- The service agreement (edition 2.2, agreement text 2.1) and its template (edition 1.7) price work as an estimate that discovery sets, with unforeseen work or purchases agreed first, and still allow a stated fixed price for a small, well-defined job. The proposal template (edition 1.8) and example (edition 1.7) show an estimate. The 1NEON help (edition 2.14) and projects guide (edition 2.10) say estimates are the usual price and fixed is for small, well-defined jobs.
 
 ## v0.52.2 - 2026-11-23
 
