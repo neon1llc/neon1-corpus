@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-22
 created: 2026-11-07
-edition: "2.12"
+edition: "2.13"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -243,5 +243,8 @@ Yes, any time, without asking me. An admin opens **Settings** and chooses **Down
 ### What happens to our data when the work ends?
 It's kept as the record of our work unless your organization asks me to delete it. Your organization can stop using 1NEON any time and download everything from Settings first. The [privacy policy](https://neon1.tech/1NEON/privacy) has the details, including how long backups and audit records last.
 
+### Can I message you directly?
+Yes. Open the round Neo button at the bottom of any page and choose **Pradeep**. Everyone in your organization sees the conversation, with names, and **private** keeps one message between you and me. You can edit your own messages, and a reply also comes to your email. I pause chat for anyone who spams or abuses it.
+
 ### Who can I contact?
-Email [hello@neon1.tech](mailto:hello@neon1.tech), or see [Contact](https://neon1.tech/1NEON/contact).
+Message me in the chat, email [hello@neon1.tech](mailto:hello@neon1.tech), or see [Contact](https://neon1.tech/1NEON/contact).

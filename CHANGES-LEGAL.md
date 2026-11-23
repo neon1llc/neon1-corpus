@@ -60,3 +60,8 @@ All six policy pages now read "Last updated November 20, 2026" and carry that da
 ## Not changed
 
 The service agreement's clauses, the BAA's clauses, and the care plan's clauses. Each states obligations once already.
+
+
+## Chat with Pradeep (not yet in the policies; for the lawyer list)
+
+The chat is live in 1NEON on dev, and none of the policy pages mention it. Terms of use (conduct) and the privacy policy should say: chat messages are kept with the organization's records and everyone in the organization sees them except one marked private, which only the author and neon1 see; a member can edit their own message and the earlier text is kept for neon1; a network address is hashed and counted for limits only; and neon1 may flag, mute, or ban someone from chat, and mutes automatically after repeated refused messages. The cookie notice lists the browser storage chat uses (a draft, and whether the launcher already showed its label). The portal's own copies of these pages carry the same change.
