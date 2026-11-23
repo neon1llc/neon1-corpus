@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-23
 created: 2025-09-07
-edition: "2.6"
+edition: "2.7"
 ---
 
 # Services
@@ -34,7 +34,7 @@ Pages: [workflow automation](../guides/use-case-workflows.md), [cloud and AI eng
 | **Assessment** | A written review of one system, architecture, or risk area: findings, priorities, and costed next steps you can take on with me, with someone else, or yourself | An estimate |
 | **Advisory** | A second opinion on a design, vendor, or build-or-buy decision | An estimate |
 | **Scoped project** | A defined result, built, tested against agreed acceptance criteria, and handed over | An estimate |
-| **Phased project** | Larger work in phases, each approved and accepted before the next starts | Per phase |
+| **Phased project** | Larger work split into phases. A phase is a self-contained piece of up to about six weeks, with its own scope, price, and handover, approved before it starts | Per phase |
 | **Ongoing care** | Updates, checks, and set response times within my working hours | A monthly [care plan](../templates/care-plan.md) |
 
 A proposal makes one recommendation, or sets out options when there's a real choice. See [pricing](pricing.md).
