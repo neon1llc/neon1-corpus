@@ -4,11 +4,11 @@ title: Capability statement
 summary: "neon1 on one page for a buyer, partner, or procurement office: what it does, how it differs, work it has delivered, and the company's details."
 type: page
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-08-05
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.4"
+edition: "2.5"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -37,7 +37,7 @@ Four services: [workflow automation](../guides/use-case-workflows.md), [cloud an
 | Automotive business | neon1 engagement | [Two-site server migration](../case-studies/two-offices-off-local-servers.md) to AWS, with the client's technical lead | Both locations moved with no application rewrite, records reconciled, and restore tested |
 | Small local business | neon1 engagement | [Operations integration and monitoring](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras joined on AWS, on a separate device network | The owner acts on problems from anywhere, not only on site |
 | Schools, families, and teams | neon1 engagement | [Security awareness sessions](../case-studies/security-for-non-security-people.md) | Informational sessions, with accounts and devices secured during the session |
-| Schools, families, and local businesses | Community work, late 2024 to 2025, done free by choice | A high school lab with a quarter of its machines dead, a veteran's medical alert on a failing landline box, and a farm's irrigation pumps during a drought | Cloud-managed Chromebooks and a shared GitHub classroom, an LTE wearable that alerts his family, and soil and crop monitoring so watering followed measurements |
+| Schools and families | Community work, late 2024 to 2025, done free by choice | A high school lab with a quarter of its machines dead, and a veteran's medical alert on a failing landline box | Cloud-managed Chromebooks and a shared GitHub classroom, and an LTE wearable that alerts his family |
 
 ## Company data
 
