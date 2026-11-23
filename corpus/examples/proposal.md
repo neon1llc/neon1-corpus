@@ -1,12 +1,12 @@
 ---
 id: examples-proposal
 title: "Proposal, filled in"
-summary: "A complete neon1 proposal for a fictional physical therapy practice's intake project."
+summary: "A complete neon1 proposal for a fictional analytics company's architecture review of its AWS account."
 type: example
 status: adopted
 updated: 2026-11-23
 created: 2025-09-16
-edition: "1.7"
+edition: "2.0"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -17,58 +17,60 @@ related: [templates-proposal, examples-proposal-options, templates-services-agre
 # Proposal, filled in
 
 > [!example] A fictional example
-> Fernwood Physical Therapy, its staff, and every detail below are invented. Prices are left out of public examples. A real proposal states them.
+> Brightwater Analytics, its staff, and every detail below are invented. Prices are left out of public examples. A real proposal states them.
 
-**neon1 proposal for:** Fernwood Physical Therapy
+**neon1 proposal for:** Brightwater Analytics
 
-**Proposal number:** FPT-01 **Version:** 1 **Date:** March 14
+**Proposal number:** BWA-01 **Version:** 1 **Date:** March 14
 
 **Valid until:** April 14
 
-**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** Dana Reyes, owner
+**Prepared by:** Pradeep Tathineni, neon1 **Prepared for:** Maya Okafor, head of engineering
 
 ## Your problem
 
-New patient requests arrive by website form, phone message, and a shared inbox. Sam retypes each one into the practice management system and a follow-up spreadsheet, about 40 a week at roughly 6 minutes each. Some are missed, and a physician's referral recently waited three days for a callback.
+Brightwater's ten engineers run the product in one AWS account that grew by accident: a few services on instances, a few on containers, and infrastructure in three styles. A customer's security review is due in six weeks, and the team can't say which of its own design choices to defend and which to fix first. Costs have also doubled in a year with no clear reason.
 
 ## The result
 
-Every new patient request lands once, in one queue, and reaches the practice management system without retyping, with nothing waiting more than one business day unseen.
+A written architecture review the team can act on: what the account looks like today, which findings matter before the customer's review and why, a costed order of fixes, and a decision record for each major choice.
 
 ## Included
 
-- Move the website request form to the practice management system's own patient form, which is covered by your existing business associate agreement with that vendor
-- A rule in your business email that files referral and request emails into one shared queue, with a daily summary of anything unanswered after one business day
-- Retire the follow-up spreadsheet once the queue covers it
-- Testing with made-up patients, then a supervised check of the first real requests
-- A one-page guide for the front desk, a 45-minute training session, and a handover record
+- A read-only walk through the account's organization, networking, identity and access, data stores, logging, and backups, with the platform team
+- A diagram of the account as it runs, checked against what the team believes
+- Findings ranked by risk to the customer review and by cost to fix, each with the evidence behind it
+- A cost breakdown by service and team, with the three largest savings and what each would change
+- A costed fix order, split into pieces the team can take itself, with me, or with someone else
+- A decision record for each major choice the team asks me to weigh
+- A 60-minute walkthrough of the review with the engineers, and a short summary for the customer's review
 
 ## Not included
 
-- Changes to scheduling, billing, or clinical notes
-- Phone system changes, so voicemail requests are still entered by hand
-- Emergency or after-hours coverage
-- Third-party subscriptions, which you pay the vendors for directly
+- Changes to the account. The review is read-only, and fixes are a separate proposal
+- A penetration test or a compliance certification
+- Application code review
+- Third-party tools, which you pay the vendors for directly
 
 ## What each of us will do
 
 | You will | I will |
 |---|---|
-| Decide through Dana, within two business days of a question | Say when I'm working and what I'll do, and answer in my working hours (Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time), usually within a day |
-| Give admin access to the practice management system, business email, and website | Use only that access, and remove it at handover |
-| Approve using a few real requests during go-live checks, under the signed business associate agreement | Test with made-up patients first, and handle real requests only as that agreement allows |
-| Give an hour of Sam's time for testing and 45 minutes for training | Show you every acceptance check passing, and train the front desk |
-| Pay the practice management vendor directly | Leave the guide, the handover record, and every login in the practice's name |
+| Decide through Maya, within two business days of a question | Say when I'm working and what I'll do, and answer in my working hours (Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time), usually within a day |
+| Give read-only access to the account, through a role the team creates and removes | Use only that access, and never change anything |
+| Give an hour a week of a platform engineer's time for questions | Come with questions written down, and keep each session short |
+| Share the customer's review questions | Rank findings against them, and say what I couldn't check |
+| Pay tool vendors directly | Leave the review, the diagram, and the decision records in the company's repository |
 
 ## Schedule
 
-**Starts when:** the business associate agreement and this proposal are signed
+**Starts when:** the read-only role exists and this proposal is signed
 
-**Working sessions:** two evening sessions and one Saturday morning on site
+**Working sessions:** two evening sessions with the platform team and one Saturday review of the draft
 
-**Estimated finish:** three weeks after start, before the open house
+**Estimated finish:** two weeks after start, a month before the customer's review
 
-**Depends on:** the practice management vendor enabling the patient form on your plan
+**Depends on:** access to the account's logs and billing data
 
 ## Price and payment
 
@@ -77,7 +79,7 @@ Every new patient request lands once, in one queue, and reaches the practice man
 | Estimate for the work above (low to high end) | *Stated in the real proposal* |
 | Deposit due at signing | *Stated in the real proposal* |
 | Balance due at acceptance | *Stated in the real proposal* |
-| Estimated outside costs (paid directly by you) | None expected. The patient form is included in your current plan |
+| Estimated outside costs (paid directly by you) | None expected |
 
 **How the deposit is credited:** in full against the final invoice.
 
@@ -85,18 +87,18 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 ## Acceptance
 
-- [x] A test request from the new form appears in the practice management system once, with every field filled in correctly
-- [x] A test referral email files into the shared queue and shows in the next daily summary
-- [x] A duplicate submission is flagged instead of creating a second patient
-- [x] Sam completes the whole intake routine without help
+- [x] The diagram matches the account, confirmed by a platform engineer
+- [x] Every finding names its evidence and the customer-review question it relates to
+- [x] The cost breakdown adds up to the last month's AWS bill
+- [x] The team can say, without help, what to fix first and why
 
 ## After handover
 
-**Defects found within 30 days of acceptance** are fixed at no charge.
+**Questions about the review within 30 days of acceptance** are answered at no charge.
 
-**Optional ongoing care:** a monthly check of the queue rule and form, described separately if you want it.
+**Optional next step:** a proposal for the fixes the team chooses, described separately.
 
-**Your exit:** every account stays in the practice's name, and the handover explains how to change or remove each rule.
+**Your exit:** the review and every record stay in the company's repository, and the access role is removed at handover.
 
 ## Terms
 
@@ -104,9 +106,9 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 **Other agreements needed:**
 
-- [x] Business associate agreement (health information)
+- [ ] Business associate agreement (health information)
 - [ ] Data processing terms
-- [ ] None
+- [x] None
 
 ## Comments and agreement
 
@@ -114,7 +116,7 @@ Every new patient request lands once, in one queue, and reaches the practice man
 
 ## Acceptance of this proposal
 
-**For the client:** Dana Reyes **Title:** Owner **Date:** March 16
+**For the client:** Maya Okafor **Title:** Head of engineering **Date:** March 16
 
 **For neon1 LLC:** Pradeep Tathineni **Date:** March 16
 

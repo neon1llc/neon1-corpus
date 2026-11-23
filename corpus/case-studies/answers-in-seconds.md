@@ -9,9 +9,9 @@ area: "cloud & AI"
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-06
-edition: "1.11"
+edition: "1.12"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -56,7 +56,7 @@ Measured on 80 representative questions, including ones it should refuse, judged
 
 These results describe that test set, not a guarantee, so each answer carries citations to check.
 
-Boris M., who owns Boris M Tax, said the firm had been moving its files, client documents, and software onto one cloud, and wanted to start using AI carefully and on its own terms. In his view, the knowledge base moved the firm forward on both. This is my summary of our conversation, published with his agreement.
+The firm's owner said the firm had been moving its files, client documents, and software onto one cloud, and wanted to start using AI carefully and on its own terms. In the owner's view, the knowledge base moved the firm forward on both. This is my summary of our conversation, published with the owner's agreement.
 
 ## After handover
 
