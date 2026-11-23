@@ -7,16 +7,16 @@ consumers: [site, chat, knowledge, ai]
 pdf: false
 origin: "neon1-site src/app/public/index.html#why"
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-09-07
-edition: "2.3"
+edition: "2.4"
 ---
 
 # About neon1
 
 I'm [Pradeep Tathineni](https://www.linkedin.com/in/pradeep-tathineni/), and neon1 is my independent engineering and technology consulting practice, formed in New York in July 2025 ([the state record](registration.md)).
 
-Before neon1, I spent more than eight years as a cloud and DevOps engineer, mostly on AWS: data migration and validation for a government science program, application modernization and release automation in financial services, infrastructure hardening for a national news organization, and monitoring and reporting at a cybersecurity company. My [LinkedIn profile](https://www.linkedin.com/in/pradeep-tathineni/) lists the roles.
+Before neon1, I spent more than eight years as a cloud and DevOps engineer, mostly on AWS: data migration and validation for a government science program, application modernization and release automation in financial services, infrastructure hardening for a national news organization, and monitoring and reporting at a cybersecurity company.
 
 Through neon1 I've built a [permission-aware document assistant](../case-studies/answers-in-seconds.md) and a [patient intake portal](../case-studies/intake-out-of-the-inbox.md) as a subcontractor, [migrated a two-site business to AWS](../case-studies/two-offices-off-local-servers.md), and [integrated a business's operations and monitoring](../case-studies/one-view-of-the-shop.md). I publish client work only [with permission](../engagement/publishing-client-work.md).
 
