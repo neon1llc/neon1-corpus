@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## v0.52.4 - 2026-11-23
 
 ### Changed
-- Working with neon1 (edition 1.25) replaces "What don't you do?" with "What do you cover?", which says what neon1 covers and that a vetted specialist joins the proposal when the work needs one. The urgent-problem answer leads with the care plan's written response times.
+- Working with neon1 (edition 1.25) replaces "What don't you do?" with "What if a project needs a specialist?", which says a vetted specialist joins the proposal when the work needs one, and what neon1 covers. The urgent-problem answer leads with the care plan's written response times.
 - The four service guides (workflow automation 2.3, cloud and AI engineering 2.3, networks 1.3, security readiness 1.4) swap "When something else fits better" and "Limits" for what I choose, who does what, and what surrounds a review.
 - Engagement (edition 2.6) lists only what you keep and says specialists come through the proposal. About (2.6), the charter (2.3), customers (2.4), reliability and recovery (1.7), outreach (1.8), and the writing standard (2.3) state what neon1 does and brings in, not what it refuses. Neo's directives (3.6) lead with what is possible.
 

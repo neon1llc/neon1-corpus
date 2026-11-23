@@ -15,7 +15,7 @@ home:
   - "How do you treat our data and accounts?"
   - "What if something urgent comes up?"
   - "How is the cost worked out?"
-  - "What do you cover?"
+  - "What if a project needs a specialist?"
 ---
 
 # Working with neon1
@@ -56,8 +56,8 @@ Every option has the same security baseline, and a smaller option does less, not
 
 Yes, informational awareness sessions for groups, from parents and teachers to engineers and executives. They're not certified training. For controls, evidence, and audit preparation, see [security readiness](../guides/use-case-security-readiness.md).
 
-## What do you cover?
+## What if a project needs a specialist?
 
-Workflow automation, cloud and AI engineering, networks and connected systems, and security readiness, for businesses, technical teams, and households.
+When a project needs a licensed installer, an independent auditor, or a penetration tester, I bring in a vetted one and write their role into the proposal.
 
-When a project needs a licensed installer, an independent auditor, or a penetration tester, I bring in a vetted one and write their role into the proposal. I get you ready for a review, and the reviewer makes the call. I work with your lawyer, accountant, or auditor on the technical side, and I take on personal or health data once the right agreements and insurance are in place. What I publish is general information, and a professional decides what applies to you.
+I cover workflow automation, cloud and AI engineering, networks and connected systems, and security readiness. I get you ready for a review, and the reviewer makes the call. I work with your lawyer, accountant, or auditor on the technical side, and I take on personal or health data once the right agreements and insurance are in place. What I publish is general information, and a professional decides what applies to you.
