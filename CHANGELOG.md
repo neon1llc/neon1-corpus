@@ -7,6 +7,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - Working with neon1 (edition 1.24) says discovery sets the estimate, and that unforeseen work or purchases are agreed before they are added.
 - About (edition 2.5) says the first clients paid nothing, by choice.
+- How I price my work (edition 1.9), Engagement (edition 2.5), and Operating principles (edition 2.5) price every project as an estimate that discovery sets, with unforeseen work or purchases agreed before they are added, instead of a fixed price or an estimate with a ceiling.
 
 ## v0.52.2 - 2026-11-23
 

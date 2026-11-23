@@ -4,11 +4,11 @@ title: Operating principles
 summary: "The habits behind every neon1 engagement, and what each one means in practice."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "2.4"
+edition: "2.5"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
@@ -56,7 +56,7 @@ I refer out continuous emergency support, safety-critical equipment, regulated p
 
 ## Commercial basics
 
-- Projects have a written scope, price, and assumptions. The price is fixed when the work is well understood. Otherwise it's an estimate, billed for listed hours and never above its high end without your approval.
+- Projects have a written scope, estimate, and assumptions. Discovery sets the estimate, billed for listed hours and never above its high end without your approval. Unforeseen work or purchases are agreed before they're added.
 - Third-party subscriptions, hardware, and travel are separate, and I prefer that vendors bill you directly.
 - No extra work or spending happens without your written approval.
 - A signed agreement governs each engagement.
