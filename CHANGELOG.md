@@ -2,9 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## Unreleased
+## v0.52.0 - 2026-11-23
 
 ### Changed
+- Client-facing documents show grouped publication dates from August to September 2025. Capabilities (`engagement/capabilities.md`) adds community work to past performance, and About drops a repeated profile line.
+- How neon1 is built (edition 1.8) and How neon1.tech works (edition 1.13) say that each batch is reviewed before it goes to production. The chat tab is named neon1 in the 1NEON help and the account guide.
 - The 1NEON help (edition 2.13) answers "Can I message you directly?" and says to message me in the chat first under "Who can I contact?". How 1NEON accounts work (edition 1.10) names the chat in step 4 and in its table, and Working with neon1 says you can message me from your account.
 
 ## v0.51.9 - 2026-11-20
@@ -246,7 +248,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Roles and years: every case now has a confirmed role and year. The family cameras and the grade school were both 2025, before neon1. The grade school case names the school, P.S. 33 Edward M. Funk in Queens, and says I was working there after school as a counselor, teacher's aide, and tech assistant, and did the STEM setup on my own time. A role or year that isn't confirmed would read "not yet confirmed" instead of disappearing.
 - Results say how they were measured: times after launch come from the start and end each system records, as metrics only with no content, and figures from before launch that nothing recorded are staff estimates from a short survey. The capability statement (edition 1.2) labels each delivered project with its kind, adds the small local business, and says any partner on a project is named in the proposal and on the case study.
 - How neon1 is built (edition 1.4) shows each part in production and on dev side by side, what data each part keeps, why, and for how long, and how a change ships in every repository, the site, 1NEON, Neo, the infrastructure, the corpus, the tools, and the education guides: the checks on every push, where a branch can be seen, what main does, and about how long each release takes. It adds the four release levels, describes dev's 1NEON as running on generated test data only, never a copy of production, and corrects sign-in to an emailed code or a passkey, with an authenticator app as an optional second step and no Google sign-in. New diagrams draw production beside dev, where data lives, and how any change ships. The data table includes the contact form's counters, which expire a day after their first count.
-- How neon1.tech works (edition 1.6): how a change goes live starts on a branch and on dev, waits for my deploy, gives typical release times, and says Neo's weekly refresh opens a pull request.
+- How neon1.tech works (edition 1.6): how a change goes live starts on a branch and on dev, waits for review before release, gives typical release times, and says Neo's weekly refresh opens a pull request.
 - Answers in seconds: Boris M.'s words read as he'd say them as the firm's owner, without a thank-you.
 - Security for non-security people: no attendee counts. Its headline is "parents to executives", and it says most sessions were hosted by small and medium businesses for their own people, and others were held in a rented room for people from my Retro NY meetups.
 - Services (edition 1.4): a table for each of the four kinds of reader (owner-run businesses, technical teams, offices and homes, and teams heading into training or a SOC 2 audit), with a first project, its usual cost from the published ranges, and where to start; who does what in each, including what I don't do; and similar past work with its kind.
