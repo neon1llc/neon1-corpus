@@ -5,7 +5,7 @@ summary: "How neon1 numbers releases of code (vX.Y.Z) and editions of documents 
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-08-26
 edition: "1.9"
 audience: "Developers"
 order: 6
@@ -74,7 +74,7 @@ A date may follow the version. Sections are **Added**, **Changed**, **Deprecated
 
 ## Releasing
 
-1. Look at the batch on dev first, where a project has one. neon1's site and 1NEON do, at dev.neon1.tech.
+1. Look at the batch on dev first, where a project has one.
 2. Merge everything the release includes into main, with the checks passing.
 3. Update the changelog and every place the version appears, in one commit.
 4. Merge it to main with `--no-ff`, the merge message naming the version and what it brings in one line. The pipeline deploys it, checks that what's live reports the new version, tags that commit (`vX.Y.Z`, annotated), and publishes the version's changelog entry as its GitHub release.

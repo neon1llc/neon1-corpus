@@ -5,7 +5,7 @@ summary: "How neon1 uses git: branch names, commit messages, merges, protected b
 type: standard
 status: adopted
 updated: 2026-11-15
-created: 2026-11-08
+created: 2025-08-26
 edition: "2.6"
 audience: "Developers"
 order: 5
@@ -85,7 +85,7 @@ Production and client data decide when safeguards apply, not the version number.
 
 ### How this works today
 
-neon1 has one maintainer. On the repositories that deploy to production (the website, 1NEON, the chat, and the AWS infrastructure), main has two rulesets:
+neon1 has one maintainer. On the repositories that deploy to production , main has two rulesets:
 
 - **No force push or deletion**, with no bypass for anyone, including me.
 - **Required checks** must pass before a change lands. As sole maintainer and admin, I can bypass this one, and GitHub warns whenever I do.

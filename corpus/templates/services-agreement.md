@@ -5,7 +5,7 @@ summary: "The short agreement a client and neon1 sign once, before any paid work
 type: template
 status: adopted
 updated: 2026-11-20
-created: 2026-11-11
+created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -18,9 +18,6 @@ related: [policy-service-agreement, templates-proposal, examples-proposal-option
 > [!warning] An example, not legal advice
 > This shows the terms neon1 works under. Your own counsel should review it before you sign, and the signed copy is the one that counts.
 
-> [!note] Signing in 1NEON
-> Clients who work with me in 1NEON sign the [service agreement](../engagement/service-agreement.md) there instead, with the blanks filled in. This blank stays for agreements made outside the portal.
-
 We sign this once, before any paid work. After that, each piece of work is a [proposal](proposal.md) saying what will be done, by when, and for how much. This agreement holds the parts that stay the same, so a proposal can stay short.
 
 **Client:** ____ **Address:** ____
@@ -32,7 +29,7 @@ We sign this once, before any paid work. After that, each piece of work is a [pr
 ## 1. How work is agreed
 
 1. Each project starts with a proposal that names its work, price, timeline, and the result you'll be able to check.
-2. A proposal becomes agreed work when you choose an option in it, by signing it or by approving that option in 1NEON. An approval in 1NEON records who approved, when, and the exact terms shown, and it counts the same as a signature.
+2. A proposal becomes agreed work when you choose an option in it, by signing it.
 3. Agreed work binds both of us: I do the work as described, and you pay as described.
 4. If a proposal and this agreement disagree, this agreement wins, unless the proposal names the section it changes.
 

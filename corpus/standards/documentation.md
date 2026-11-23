@@ -5,7 +5,7 @@ summary: "The documents every neon1 project keeps and how they stay true, and ho
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-08-05
 edition: "1.7"
 audience: "Developers"
 order: 9
@@ -57,7 +57,7 @@ Prerequisites first, then commands in order, each with what you should see and w
 
 ## Documents in this Knowledge Center
 
-Everything is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus) as Markdown, and read from there by the website, the Knowledge Center, the blog, and Neo. Each document carries a title, a one-sentence summary, its type (page, standard, guide, case study, FAQ, policy, template, form, or example), an edition (`X.Y`, raised as described in [versioning](versioning.md)), the date it was published and last changed in substance, and who it's for when that isn't everyone. Dates are never moved, and a typo fix changes neither the date nor the edition.
+Everything is written once in [neon1-corpus](https://github.com/neon1llc/neon1-corpus) as Markdown, and read from there by the website, the Knowledge Center, and the blog. Each document carries a title, a one-sentence summary, its type (page, standard, guide, case study, FAQ, policy, template, form, or example), an edition (`X.Y`, raised as described in [versioning](versioning.md)), the date it was published and last changed in substance, and who it's for when that isn't everyone. Dates are never moved, and a typo fix changes neither the date nor the edition.
 
 ## Sources
 

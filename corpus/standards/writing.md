@@ -5,7 +5,7 @@ summary: "How everything neon1 writes is written, from policies and proposals to
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-05
 edition: "2.2"
 order: 1
 consumers: [ai]
@@ -72,7 +72,7 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 - Serial comma: "email, spreadsheets, and POS."
 - Sentence case for titles and headings.
 - Words for one to nine in prose, numerals for 10 and up, and numerals for measurements, money, versions, and tables.
-- Dates: "November 9, 2026" in prose, `2026-11-09` in data and file names. Times: "8am to 8pm, Eastern time."
+- Dates: "September 9, 2025" in prose, `2025-09-09` in data and file names. Times: "8am to 8pm, Eastern time."
 - Links say where they go ("see the [privacy policy](../policies/privacy.md)"), never "click here."
 - Code, commands, file names, and identifiers go in `code formatting`, copied exactly.
 

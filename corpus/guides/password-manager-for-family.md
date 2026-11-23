@@ -9,7 +9,7 @@ short:
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "1.8"
 consumers: [knowledge, ai]
 pdf: true

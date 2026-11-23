@@ -5,7 +5,7 @@ summary: "Assessing technical risk, strengthening controls, and preparing system
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-19
+created: 2025-09-10
 edition: "1.3"
 consumers: [chat, knowledge, ai]
 pdf: true
