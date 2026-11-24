@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-10
-edition: "2.13"
+edition: "2.14"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -80,7 +80,7 @@ Who may do what:
 
 Options are compared on the Needs tab (`#options`), each with its cost (one-time and recurring apart, with a first-year total), timeline, three scores, and any Recommended mark. An option can also carry neon1's hours, vendor costs, expected purchases, and the result the client can check.
 
-An option's price is usually an **estimate** a range of hours at an hourly rate that discovery sets. The client pays for hours worked, each listed under Hours, never past the high end without an approved change, and fewer hours cost less. Unforeseen work or purchases are agreed before they're added. A small, well-defined job may carry a **fixed** price instead the whole price for the work described, changed only by an approved change. **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover.
+An option's price is usually an **estimate**: a range of hours at an hourly rate that discovery sets. The client pays for hours worked, each listed under Hours, never past the high end without an approved change, and fewer hours cost less. Unforeseen work or purchases are agreed before they're added. A small, well-defined job may carry a **fixed** price instead: the whole price for the work described, changed only by an approved change. **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover.
 
 A project has one proposal, issued in numbered revisions. While neon1 shapes the options it's a **draft** the client can read but not approve. **Issue the proposal** freezes and numbers a copy. The first 1NEON issued is 0039, so its first revision is **0039-r1**, and each option gets the revision plus a letter, such as **0039-r1-B**. A later change of option, estimate, or scope is issued as the next revision, 0039-r2. Earlier ones stay readable, marked "Replaced by a later revision".
 
@@ -121,7 +121,7 @@ Until the handover is accepted, the decision maker can choose a different option
 
 ## The service agreement
 
-neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. The signature records the edition (now 2.0), a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given.
+neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. The signature records the edition, a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given.
 
 ## Purchases, hours, and handover
 
