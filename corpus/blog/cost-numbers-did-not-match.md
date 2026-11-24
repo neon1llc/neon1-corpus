@@ -1,7 +1,7 @@
 ---
 id: blog-cost-numbers-did-not-match
 title: "When the cost numbers didn't match"
-summary: "Neo's documented cost was a fifth of a cent a question and $12 in a worst-case month. Measured, it is about 0.6 cent and $37, and November's Bedrock bill was mostly my own evaluation runs."
+summary: "Neo's documented cost was a fifth of a cent a question and $12 in a worst-case month. Measured, it is about 0.6 cent and $37, and November's Bedrock bill was my own evaluation runs, one night of them repeated 29 times."
 type: post
 topic: lessons
 status: draft
@@ -16,18 +16,19 @@ related: [company-decision-spend-controls,company-decision-neo-prompt]
 
 # When the cost numbers didn't match
 
-Summary: the cost I had written down for Neo was a fifth of the measured cost, and a spike I couldn't explain made me add logging and a spending limit on my own access.
+Summary: the cost I had written down for Neo was a fifth of the measured cost, and one night of repeated evaluation runs made me add logging and a spending limit on my own access.
 
 ## What happened
 
 - The neon1-chat README said the corpus was about 12,000 tokens and that Neo cost under a fifth of a cent a question, so a month at the 200-question cap would cost about $12.
 - The corpus had grown. The prompt is about 157,000 characters, roughly 39,000 tokens, and Qwen3 Next has no prompt caching. At November's rates a question costs about $0.0055 for input and up to $0.0007 for output, and a month at the cap is about $37.
-- On November 16, Bedrock billed $29.90 in a day: $21.90 for Claude Sonnet 4.6 and $8.00 for other models. About 2,000 Sonnet calls and 54 million Qwen tokens came through. I first wrote it down as an unattended evaluation night. Then I measured a run, and the recorded runs can't account for that much. I still can't say what did.
-- A full evaluation run, measured afterward, costs about $0.80 to $1.20, not the $30 I had believed.
+- On November 16, Bedrock billed $29.90 in a day: $21.90 for Claude Sonnet 4.6 and $8.00 for other models. I first wrote it down as an unattended evaluation night, then doubted it, because a measured run costs about a dollar.
+- CloudTrail settled it. Between 11:43 pm on November 15 and 9:07 am on November 16, my admin user made 1,770 Sonnet calls and 1,547 Qwen calls from one Mac, through the Node SDK. That's about 29 passes of the 53-question set with its judge. Another 144 Sonnet calls came through the AWS MCP server, and Neo's own function made 177 calls during three live runs. None of the 29 passes was saved as a result, so my records had no trace of them.
+- A full evaluation run costs about $0.80 to $1.20. The $30 came from repeating it 29 times unattended, not from one run.
 
 ## What changed
 
-- A role for evaluations that can only call Bedrock, and invocation logging that records the caller, model, and token counts for 14 days, with no prompt text.
+- A role for evaluations that can only call Bedrock, and invocation logging that records the caller, model, and token counts for 14 days, with no prompt text. CloudTrail already names the caller of each call, but only for 90 days.
 - A $1 daily Bedrock alert, and a $10 monthly deny on my admin user and the evaluation role.
 - The cap and the README are being corrected to the measured numbers. See [the spending decision](../company/decision-spend-controls.md).
 
