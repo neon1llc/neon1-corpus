@@ -1,7 +1,7 @@
 ---
 id: policy-ai-use
 title: How I work with AI
-summary: "How AI is used in my work, what stays with me, how it's checked, and how your information is kept out of it."
+summary: "How AI supports my research, review, and building, what stays with me, and how your information is kept out of it."
 type: policy
 status: adopted
 updated: 2026-11-24
@@ -17,35 +17,21 @@ related: [standards-ai-quality, standards-development, standards-security-and-da
 
 *Last updated November 24, 2026.*
 
-AI does much of the drafting, coding, and checking in my practice, under my direction. I decide what gets built, I approve every release, and I answer for the result.
+I write and publish under my own name, and I make the decisions: what neon1 says, how its systems are built, and what ships. AI is part of how I work. It supplements my research, helps me review and recompose, and speeds up building and testing.
 
-## What AI does
+## Writing and content
 
-- **Research.** Gathering and condensing sources, standards, and options, so I can weigh them.
-- **Understanding a need.** Organizing what I learn in discovery and checking for angles I've missed.
-- **Writing.** Drafting and revising documents, including the ones in this Knowledge Center.
-- **Code.** Writing and changing code, tests, and automation.
-- **Review.** Looking for bugs, security issues, gaps, and mistakes before a change is merged.
+What neon1 publishes is mine, the way a blog post is. I research each topic myself, alongside the sources, then decide what to say, shape it, and publish it under my name. AI supplements that research, reviews it, and helps me recompose it. I check facts and figures against the original before I use them, and the final say is mine.
 
-## What stays with me
+## Building
 
-- Every decision about what to build, publish, or ship.
-- The rules AI works under. It doesn't release anything to production without my approval.
-- Approval of every production release, and accountability for it.
-- Facts, figures, and sources are checked against the original before they're used.
+I own the architecture, the structure, the standards, and the release decisions. I choose how things are organized, what gets built, and when it's done. AI speeds up writing code, tests, and reviews. Automated checks run on every change. Before a production release, I look at what changed on desktop and on a phone, try the paths clients rely on, log a checklist, and approve it. Nothing reaches production without my approval.
 
-## How it's checked
-
-- Automated tests and checks run on every change.
-- Before a production release, I look at what changed on desktop and on a phone, and I try the paths clients rely on myself. I log the checklist and approve the release.
-- Neo is run against a fixed set of prospect questions before it changes.
-- The [AI quality and oversight](../standards/ai-quality.md) standard sets how AI is tested and where a person stays in charge.
-
-AI tools change quickly. This page describes how I work, not which products I use, so it stays true when the tools change.
+The [AI quality and oversight](../standards/ai-quality.md) standard sets how AI is tested and where a person stays in charge. AI tools change quickly, so this page describes how I work, not which products I use.
 
 ## Neo
 
-Neo, the chat on neon1.tech and in 1NEON, is an automated assistant and says so. It answers from neon1's public documents, can't take actions, and doesn't keep your messages. Its rules are public in [Neo's directives](../neo/chat.md). When it can't answer, it offers me by email or a call.
+Neo, the chat on neon1.tech and in 1NEON, is an automated assistant and says so. It answers from neon1's public documents, can't take actions, and doesn't keep your messages. It's run against a fixed set of prospect questions before it changes, and its rules are public in [Neo's directives](../neo/chat.md). When it can't answer, it offers me by email or a call.
 
 ## AI in what I build for you
 

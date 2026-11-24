@@ -42,7 +42,7 @@ What you approve in a [proposal](../examples/proposal.md) is what we both agree 
 
 ## Do you use AI?
 
-Yes. AI does much of the drafting, coding, and checking under my direction. I decide, approve every release, and answer for the result. [How I work with AI](../policies/ai-use.md) has the detail.
+Yes. It supplements my research, review, and building, and helps me recompose my writing. I make the decisions, approve every release, and answer for the result. [How I work with AI](../policies/ai-use.md) has the detail.
 
 ## What if something urgent comes up?
 
