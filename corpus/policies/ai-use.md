@@ -17,15 +17,19 @@ related: [standards-ai-quality, standards-development, standards-security-and-da
 
 *Last updated November 24, 2026.*
 
-I write and publish under my own name, and I make the decisions: what neon1 says, how its systems are built, and what ships. AI is part of how I work. It supplements my research, helps me review and recompose, and speeds up building and testing.
+I write and publish under my own name, and I make the decisions: what neon1 says, how its systems are built, and what ships. AI is part of how I work. It helps me research, recompose, review, and build faster.
 
-## Writing and content
+## Where the work comes from
 
-What neon1 publishes is mine, the way a blog post is. I research each topic myself, alongside the sources, then decide what to say, shape it, and publish it under my name. AI supplements that research, reviews it, and helps me recompose it. I check facts and figures against the original before I use them, and the final say is mine.
+Everything neon1 publishes, code and writing, builds on years of my own work: what I've learned and checked, the curricula I wrote, the guides and documentation I built, and constant study. AI now helps me revise, recompose, and supplement it before and while I share it.
+
+AI is my main tool for broad research, current and historical, and I check facts, figures, and sources against the original before I use them. It also reviews my content and recomposes it to keep a clean, consistent voice and a short length. That last part matters to me. I tend to overwrite, whether it's a blog post a few people read or a comment no one will, and I care enough that it shows. AI helps me say it in fewer words, so I don't waste your time.
+
+None of this plays down my part. The ideas are mine, and so are the hours of building, trying, and refining, and the work of getting something ready to share. I use AI the way I think it should be used: carefully, with limits and a person in charge, to get more out of what I already know. I say so plainly because I respect the work, the people who read it, and the places it appears.
 
 ## Building
 
-I own the architecture, the structure, the standards, and the release decisions. I choose how things are organized, what gets built, and when it's done. AI speeds up writing code, tests, and reviews. Automated checks run on every change. Before a production release, I look at what changed on desktop and on a phone, try the paths clients rely on, log a checklist, and approve it. Nothing reaches production without my approval.
+AI does much of the writing and checking of code, and I direct it. I own the architecture, the structure, the standards, and the release decisions, and I choose how things are organized and when they're done. Automated tests and scans run on every change. Before a production release, I look at what changed on desktop and on a phone, try the paths clients rely on, log a checklist, and approve it. Nothing reaches production without my approval.
 
 The [AI quality and oversight](../standards/ai-quality.md) standard sets how AI is tested and where a person stays in charge. AI tools change quickly, so this page describes how I work, not which products I use.
 
