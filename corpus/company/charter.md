@@ -8,7 +8,7 @@ updated: 2026-11-24
 created: 2025-07-28
 consumers: [ai]
 pdf: true
-edition: "2.4"
+edition: "2.5"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
@@ -52,13 +52,7 @@ Businesses, technical teams, and individuals with a defined goal, described by t
 
 ## Who I bring in
 
-Some work is best done with a specialist beside me, and I bring in or hand off to someone who fits:
-
-- Emergency coverage
-- Safety-critical equipment
-- Regulated professional judgment, such as legal, medical, or accounting advice
-- Large migrations that need a team
-- Formal security assurance, such as a penetration test or an audit opinion
+Some work is best done with a specialist beside me. [When someone else fits better](../standards/customers.md#when-someone-else-fits-better) lists which.
 
 ## Community help
 
@@ -66,7 +60,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds public tools and publishes teaching material under CC BY-SA 4.0 and MIT, each with its own license and release status. None is sold as a service until it can be supported like one.
+neon1 also builds public tools and publishes teaching material, each with its own license and release status. None is sold as a service until it can be supported like one.
 
 ## Related companies
 

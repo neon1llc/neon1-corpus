@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 origin: "neon1-site src/app/public/index.html#contact"
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-09-07
-edition: "1.14"
+edition: "1.15"
 ---
 
 # Contact
@@ -27,7 +27,7 @@ edition: "1.14"
 - **Where:** remote across the US, or on site within about 30 miles of Queens, NY. Outside the US, ask.
 - **When:** Monday to Thursday 6pm to 9pm, Friday 6pm to 8pm, and weekends 8am to 8pm, Eastern time.
 - **Size:** a week or two up to about six weeks for one piece of work. Larger efforts split into phases, each with its own scope, price, and handover, approved before it starts. A few clients at a time.
-- **First call:** free, 30 minutes, about your needs. Options come afterward, in writing.
+- **First call:** free, 30 minutes, about your needs. Options come afterward, in writing. [What to bring](../guides/first-call.md).
 - **Before the call, if you like:** outline up to three projects in a [1NEON account](../guides/free-accounts.md) and ask for an assessment. I read them before we talk. Neither needs the other first.
 - **After:** a short proposal. Nothing starts until you approve it.
 

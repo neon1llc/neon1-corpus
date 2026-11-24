@@ -4,11 +4,11 @@ title: Operating principles
 summary: "The habits behind every neon1 engagement, and what each one means in practice."
 type: standard
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "2.5"
+edition: "2.6"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
@@ -52,14 +52,11 @@ Before a change, I know how to undo it, recover the data, and keep the business 
 
 A project fits when the problem repeats, success can be described, the data is yours to share, the work fits the calendar, and there's a manual fallback. I talk with the person who pays and the people who use it.
 
-I refer out continuous emergency support, safety-critical equipment, regulated professional judgment, specialist security assurance, and large migrations.
+[When someone else fits better](customers.md#when-someone-else-fits-better) says what I hand to a specialist.
 
 ## Commercial basics
 
-- Projects have a written scope, estimate, and assumptions. Discovery sets the estimate, billed for listed hours and never above its high end without your approval. Unforeseen work or purchases are agreed before they're added.
-- Third-party subscriptions, hardware, and travel are separate, and I prefer that vendors bill you directly.
-- No extra work or spending happens without your written approval.
-- A signed agreement governs each engagement.
+[How I price my work](../engagement/pricing.md) covers estimates, changes, and payment. A signed agreement governs each engagement, and no extra work or spending happens without your written approval.
 
 ## Partnerships
 

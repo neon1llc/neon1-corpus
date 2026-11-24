@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-24
 created: 2026-11-11
-edition: "1.15"
+edition: "1.16"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -31,11 +31,11 @@ The code is public in neon1's [GitHub repositories](https://github.com/neon1llc)
 One long page of views, each about one screen:
 
 1. **Landing.** The default Sentinel look is a plain page: what I do, the four services, "Discuss a project" and "See the work," and email and booking links. The optional Matrix look is the neon1 wordmark over the rain, with "1 is glad to be of service." A switch on the landing and in the footer changes the look.
-2. **Services.** Four kinds of help, and a note that the first 30-minute call is free.
+2. **Services.** Four kinds of help, starting with a 1NEON account or a first call.
 3. **Process.** The five steps: listen, propose, decide, build, and hand over.
 4. **Client work.** Case study cards with my role, the problem, the work, and the results.
 5. **Code and resources.** neon1's public repositories and tools, each with its status, version, and license. Only the MIT, Apache-2.0, and CC BY-SA ones are open source. The rest are source-available under FSL-1.1, with text under CC BY-ND.
-6. **About.** Who I am and how I work, with a link to the [mission and promise](mission.md).
+6. **About.** Who I am and how I work, with a link to [About neon1](about.md).
 7. **Questions.** Common questions, with a link to the full set.
 8. **Contact.** Where and when I work, a booking link, email, phone, and the contact form.
 
@@ -67,11 +67,11 @@ Now and then a white rabbit drops into the rain. Catching it by click or tap sto
 
 ## The blog
 
-[neon1.tech/blog](https://neon1.tech/blog/) holds short posts, about one a week, written in the corpus. There's an RSS feed at `/blog/feed.xml`.
+[neon1.tech/blog](https://neon1.tech/blog/) holds short posts, written in the corpus. There's an RSS feed at `/blog/feed.xml`.
 
 ## The contact form
 
-The form sits under "send me your use case" in Contact.
+The form sits under "send a message" in Contact.
 
 1. The page checks the fields.
 2. It sends the message to one public route on 1NEON's API.
@@ -87,7 +87,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 1. The chat window sends your question and the conversation so far to `neon1.tech/chat/api/chat`.
 2. CloudFront forwards it with a secret header, so the API can't be reached around neon1.tech's limits.
 3. The function checks your limits in DynamoDB first.
-4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen by testing several models on the same questions.
+4. It sends the model every document published for the chat, with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen by testing several models on the same questions.
 5. The reply is checked before you see it. Links stay only if the corpus has them, and the length is capped.
 
 - **Limits.** Six questions a minute and 60 an hour per visitor, and 200 a day for the whole site, after which Neo says to try again tomorrow. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and entries expire by themselves.
@@ -124,7 +124,7 @@ The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays 
 
 ## How it runs
 
-Work starts on its own branch, with checks on every push, and I review each batch, and nothing reaches neon1.tech until it passes. Each repository then deploys itself when the change merges to main, and every deploy stops if a check fails. A deploy never mixes old and new files: everything goes up together as one release, and rollback is one write back to an earlier release in seconds. A release of the site, the corpus, or Neo takes about 12 to 18 minutes, and 1NEON about 26.
+Work starts on its own branch, with checks on every push, and I review each batch, and nothing reaches neon1.tech until it passes. Each repository then deploys itself when the change merges to main, and every deploy stops if a check fails. A deploy never mixes old and new files: everything goes up together as one release, and rollback is one write back to an earlier release in seconds. A release takes minutes. 1NEON takes longer when its browser walkthroughs have to run.
 
 It all runs in one AWS account in us-east-1, sized to cost a few dollars a month while it's quiet. Mail runs on Google Workspace. [How neon1 is built](architecture.md) has the diagrams, the AWS services, and what data each part keeps.
 

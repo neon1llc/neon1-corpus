@@ -8,15 +8,15 @@ pdf: false
 stage: "public, first release"
 origin: "neon1-site src/app/public/index.html#work"
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-24
 created: 2026-11-12
-edition: "1.7"
+edition: "1.8"
 related: [product-soc-it-2-me, product-phish-out-of-water, product-ready-secure-go, services]
 ---
 
 # Compliance basics for small businesses
 
-*Public · v0.1.5*
+*Public · v0.1.6*
 
 **Compliance rules explained by domain, with training.** Open guides for the owner, office manager, or IT lead who has to work out what a rule asks and train staff on it, without a compliance department. It's open on [GitHub](https://github.com/neon1llc/compliance-basics).
 

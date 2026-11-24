@@ -4,7 +4,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Fixed
+- The seven product pages show their latest releases. The charter no longer says every product is under CC BY-SA 4.0 and MIT. How neon1.tech works matches the live site: the services note, the About link, the contact form's label, and release times, without the old token count and weekly blog claim.
+
 ### Changed
+- One home for repeated facts: the charter and operating principles link to Customers for who gets a specialist, operating principles links to pricing, Ready, Secure, Go links its companion guides' own pages, and Contact links what to bring to a first call.
 - Outlining a project is now the What to write section of How 1NEON accounts work (edition 1.13), and the separate guide is gone. Ready for Execute's scoring stays in the 1NEON guide. The 1NEON pages and projects guides and 1NEON help link to the new section.
 
 ## v0.52.9 - 2026-11-24
