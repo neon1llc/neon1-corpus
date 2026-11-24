@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-24
 created: 2025-08-05
-edition: "2.4"
+edition: "2.5"
 order: 1
 consumers: [ai]
 pdf: true
@@ -102,7 +102,7 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 
 | Kind | Its job | Structure |
 |---|---|---|
-| Policy | Tell people what's done with their information and their rights | Short version first, then sections by question. Dated "Last updated." |
+| Policy | Tell people what's done with their information and their rights | Short version first, then sections by question. Dated by its Updated field. |
 | Agreement or template | Record obligations exactly | Defined terms, numbered sections, blanks, an "example, not legal advice" note when it is one |
 | Standard | Say how neon1 works and why | What I do, then the reason. Present tense. No claims of certification or results |
 | Guide or how-to | Help someone finish a task | Who it's for, what they need, numbered steps, what to do when it goes wrong |
