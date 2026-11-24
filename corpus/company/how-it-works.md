@@ -6,7 +6,7 @@ type: page
 status: adopted
 updated: 2026-11-24
 created: 2026-11-11
-edition: "1.15"
+edition: "1.16"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -90,7 +90,7 @@ Neo is the button at the bottom right of neon1.tech and 1NEON's public pages. Wh
 4. It sends the model every document published for the chat (about 32,000 tokens at release 0.39), with Neo's rules and your conversation. There's no search index. The model is Qwen3 Next 80B on Amazon Bedrock, chosen by testing several models on the same questions.
 5. The reply is checked before you see it. Links stay only if the corpus has them, and the length is capped.
 
-- **Limits.** Six questions a minute and 60 an hour per visitor, and 200 a day for the whole site, after which Neo says to try again tomorrow. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and entries expire by themselves.
+- **Limits.** Six questions a minute and 60 an hour per visitor, and 60 a day for the whole site, after which Neo says to try again tomorrow. Going over earns a cooldown that grows with each strike in a day: 2 minutes, 10, an hour, then a day. Repeating a question three times in ten minutes, or pushing Neo off topic, also counts. Visitors are counted by a salted hash of their network address, and entries expire by themselves.
 - **Privacy.** The conversation lives only in the open page, and the function never logs it. Amazon says Bedrock doesn't train on it, and that some models may keep it for abuse detection.
 - **Staying current.** Every Monday, Neo's repository rebuilds its copy of the corpus and opens a pull request if anything changed. Neo can trail a release by up to a week.
 - **Inside 1NEON.** Signed-in people get a separate Neo that knows the portal's guide and their own data, through the same permission checks as the page. It acts only after "Yes, do it."
