@@ -441,4 +441,4 @@ stateDiagram-v2
 - [neon1-1NEON](https://github.com/neon1llc/neon1-1NEON): the portal, its API, and its infrastructure.
 - [neon1-chat](https://github.com/neon1llc/neon1-chat): Neo.
 - [neon1-corpus](https://github.com/neon1llc/neon1-corpus): every document, and these diagrams.
-- [Decisions](decisions.md): why it's built this way, and what it costs.
+- [Architecture decisions](architecture-decisions.md): why it's built this way, and what it costs.

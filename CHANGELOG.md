@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Added
-- Decisions, a draft: the main choices behind how neon1 runs, with why, what would change them, and what I missed. How neon1 is built (edition 1.9) links to it.
+- Architecture decisions, a draft: six numbered records (ADR-001 to ADR-006) with why, what would change them, and what I missed. How neon1 is built (edition 1.9) links to it.
 
 ## v0.52.9 - 2026-11-24
 
