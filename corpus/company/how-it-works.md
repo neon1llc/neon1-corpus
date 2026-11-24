@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-11
-edition: "1.14"
+edition: "1.15"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -63,7 +63,7 @@ Now and then a white rabbit drops into the rain. Catching it by click or tap sto
 - **Pages.** The build reads the newest corpus release and writes each document as plain HTML at `/knowledge/<shelf>/<name>/`, so search engines, link previews, and readers without JavaScript get the whole page. `/knowledge/corpus.json` names the release that's live.
 - **Search** runs in your browser. Nothing you type leaves it.
 - **PDFs.** Marked documents get a branded PDF, printed by headless Chromium at each deploy.
-- **Diagrams** are Mermaid text in the documents, drawn to SVG ahead of time, with their source shown beneath.
+- **Diagrams** are Mermaid text in the documents, drawn to SVG ahead of time, with a link to open each full size.
 
 ## The blog
 

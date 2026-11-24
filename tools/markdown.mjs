@@ -4,7 +4,7 @@
 // tables, block quotes, callouts (> [!note] Title), fenced code, rules, and inline code, links, bold, italics and
 // fill-in blanks (four or more underscores). Raw HTML in a document is escaped, never passed through.
 // A ```mermaid fence becomes its diagram, drawn ahead of time by tools/diagrams.mjs into diagrams/<key>.svg,
-// as an image with its alt text and the source beneath it; without a drawing it stays a code block. Exports
+// as an image with its alt text; without a drawing it stays a code block. Exports
 // copy the drawings their documents use into <bundle>/diagrams/.
 
 import { createHash } from "node:crypto"
@@ -42,8 +42,7 @@ export const diagramKey = (source) => createHash("sha256").update(source.trim())
 export const diagramAlt = (source) => (source.match(/^\s*%%\s*alt:\s*(.+)$/m) || [])[1]?.trim() ?? ""
 
 // The drawing as an image file (its own styles stay inside it, under the page's strict CSP), sized so the
-// page doesn't shift as it loads, with its alt text, a link to open it full size (to zoom on a phone), and
-// the source folded beneath for the text form
+// page doesn't shift as it loads, with its alt text and a link to open it full size (to zoom on a phone)
 function diagram(source) {
   const key = diagramKey(source)
   const svg = DIAGRAMS[key]
@@ -52,8 +51,7 @@ function diagram(source) {
   const h = svg.match(/<svg[^>]* height="(\d+)"/)?.[1]
   const size = w && h ? ` width="${w}" height="${h}"` : ""
   return `<figure class="diagram"><div class="diagram-scroll"><img src="${DIAGRAM_BASE}${key}.svg"${size} alt="${attr(diagramAlt(source))}" loading="lazy" decoding="async"></div>` +
-    `<p class="diagram-open"><a href="${DIAGRAM_BASE}${key}.svg">Open full size</a></p>` +
-    `<details><summary>Diagram source (Mermaid)</summary><pre><code class="language-mermaid">${escape(source)}</code></pre></details></figure>`
+    `<p class="diagram-open"><a href="${DIAGRAM_BASE}${key}.svg">Open full size</a></p></figure>`
 }
 
 

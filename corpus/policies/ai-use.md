@@ -29,6 +29,10 @@ I own the architecture, the structure, the standards, and the release decisions.
 
 The [AI quality and oversight](../standards/ai-quality.md) standard sets how AI is tested and where a person stays in charge. AI tools change quickly, so this page describes how I work, not which products I use.
 
+## How it fits together
+
+One loop runs through everything. I research and decide, then recompose and build with AI's help, and check the result. Automated tests run on every change, and each change goes to a private copy of the site and 1NEON first. I look it over there, approve the release, and it goes live. neon1's words are written once, in the same corpus that holds this page, and the site, Neo, and 1NEON read from it, so a fact changes in one place. After release, budgets and caps watch spend and misuse, and a weekly refresh keeps Neo's documents current. When a model changes, Neo's test questions decide whether the new one replaces the old. [How neon1 is built](../company/architecture.md) shows the parts.
+
 ## Neo
 
 Neo, the chat on neon1.tech and in 1NEON, is an automated assistant and says so. It answers from neon1's public documents, can't take actions, and doesn't keep your messages. It's run against a fixed set of prospect questions before it changes, and its rules are public in [Neo's directives](../neo/chat.md). When it can't answer, it offers me by email or a call.

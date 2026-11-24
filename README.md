@@ -58,7 +58,7 @@ node tools/diagrams.mjs check           # every diagram is drawn and has alt tex
 
 ### Diagrams
 
-A diagram is a ```` ```mermaid ```` block in a document, so GitHub shows it too. Its first line is `%% alt: ...`, describing it for anyone who can't see it. The drawings are committed in [`diagrams/`](diagrams), named by a hash of their source, so exporting needs no dependencies. Exports copy the drawings their documents use into `<bundle>/diagrams/`, and the Knowledge Center shows each as an image with its source beneath it. After adding or editing a diagram, draw it (this step needs Playwright and Mermaid):
+A diagram is a ```` ```mermaid ```` block in a document, so GitHub shows it too. Its first line is `%% alt: ...`, describing it for anyone who can't see it. The drawings are committed in [`diagrams/`](diagrams), named by a hash of their source, so exporting needs no dependencies. Exports copy the drawings their documents use into `<bundle>/diagrams/`, and the Knowledge Center shows each as an image. After adding or editing a diagram, draw it (this step needs Playwright and Mermaid):
 
 ```
 npm i --prefix tools/.diagram-deps mermaid@11 playwright
