@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-11
-edition: "1.8"
+edition: "1.9"
 ---
 
 # How neon1 is built
@@ -441,3 +441,6 @@ stateDiagram-v2
 - [neon1-1NEON](https://github.com/neon1llc/neon1-1NEON): the portal, its API, and its infrastructure.
 - [neon1-chat](https://github.com/neon1llc/neon1-chat): Neo.
 - [neon1-corpus](https://github.com/neon1llc/neon1-corpus): every document, and these diagrams.
+- [Decisions](decisions.md): why it's built this way, and what it costs.
+- [Operating record](operating-record.md): what it costs to run, how long a release takes, and what I've tested by breaking it.
+- [Neo and releases at four depths](four-depths.md): the same story at four levels of detail.

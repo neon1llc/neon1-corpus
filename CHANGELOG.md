@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Added
+- Drafts of seven decision records (Decisions index, with Neo's model, Neo's prompt, spending limits, release proof, abuse counters, licenses, and one source), an Operating record with measured costs and release times, Neo and releases at four depths, and four blog notes from real operations. Each leaves marked places for my own words, so none is adopted yet. How neon1 is built (edition 1.9) links the three company pages.
+
 ## v0.52.9 - 2026-11-24
 
 ### Changed
