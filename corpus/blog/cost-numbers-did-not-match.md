@@ -30,7 +30,7 @@ Summary: the cost I had written down for Neo was a fifth of the measured cost, a
 
 - A role for evaluations that can only call Bedrock, and invocation logging that records the caller, model, and token counts for 14 days, with no prompt text. CloudTrail already names the caller of each call, but only for 90 days.
 - A $1 daily Bedrock alert, and a $10 monthly deny on my admin user and the evaluation role.
-- The cap and the README are being corrected to the measured numbers. See [the spending decision](../company/decision-spend-controls.md).
+- The site-wide cap went from 200 to 60 questions a day, about $11 at worst, and the README states the measured numbers. See [the spending decision](../company/decision-spend-controls.md).
 
 ## Where it stands
 

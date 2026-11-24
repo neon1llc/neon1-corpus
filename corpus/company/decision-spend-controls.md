@@ -25,12 +25,12 @@ Spend can grow from a bug, an abuser, or my own evaluation runs. Each layer cove
 | Bedrock daily alert | Emails when Bedrock passes $1 in a day | `account/` |
 | Bedrock monthly deny | At $10 a month, denies model calls from my admin user and the evaluation role | `account/` |
 | Per-visitor caps | 6 questions a minute and 60 an hour, with cooldowns of 2 minutes, 10, an hour, then a day | neon1-chat |
-| Site-wide cap | 200 questions a day, then Neo says to try again tomorrow and links the call booking | neon1-chat |
+| Site-wide cap | 60 questions a day, then Neo says to try again tomorrow and links the call booking | neon1-chat |
 | Concurrency | At most 5 copies of the function, and 5 requests a second | neon1-chat |
 
 ## What the layers don't cover
 
-The monthly deny applies to my admin user and the evaluation role. It doesn't stop Neo itself, so Neo's own caps are what limit it. At 200 questions a day and about 0.6 cent each, a month at the cap costs about $37, more than the $10 deny. I'm deciding whether to lower the cap.
+The monthly deny applies to my admin user and the evaluation role. It doesn't stop Neo itself, so Neo's own caps are what limit it. At 60 questions a day and about 0.6 cent each, a month at the cap costs about $11, near the $10 deny. I lowered the cap from 200 on November 24, because 200 would have cost about $37.
 
 In November the deny fired. Bedrock reached $50.56, mostly evaluation runs, and the account passed its $15 budget. See the [operating record](operating-record.md).
 
