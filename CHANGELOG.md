@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## v0.52.9 - 2026-11-24
 
 ### Changed
-- About (edition 2.9) names what I did in each earlier role, in my own words, and says how neon1 began, with free work for people I already knew. It says "polish" where it said "recompose", as do How I work with AI (edition 2.1), the Capability statement (edition 2.7), the working-with FAQ and Neo's directive. The 1NEON pages guide, 1NEON help, and free accounts guide call the call-request button "Ask me to email you". Pricing lists what moves a price and what a price covers as lists. The Services page drops a repeated phrase and its first table's header row now matches its columns.
+- About (edition 2.9) names what I did in each earlier role, in my own words, and says how neon1 began, with free work for people I already knew. It says "polish" where it said "recompose", as do How I work with AI (edition 2.1), the Capability statement (edition 2.7), the working-with FAQ and Neo's directive. The 1NEON pages guide, 1NEON help, and free accounts guide call the call-request button "Ask me to email you". Pricing lists what moves a price and what a price covers as lists. Writing (edition 2.6) lists stating the obvious as a differentiator among the habits to cut, and About and the Capability statement no longer say the person you talk to is the person who builds it. The Services page drops a repeated phrase and its first table's header row now matches its columns.
 
 ## v0.52.8 - 2026-11-24
 

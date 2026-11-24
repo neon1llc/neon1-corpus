@@ -23,7 +23,7 @@ Four services: [workflow automation](../guides/use-case-workflows.md), [cloud an
 
 ## How engagements work
 
-- **One engineer** from the first call to the handover. Any partner on a project is named in the proposal and on the case study.
+- **Named partners.** Any partner on a project is named in the proposal and on the case study.
 - **Defined scope.** Deliverables, acceptance criteria, and a price are agreed before work starts.
 - **Measured results.** Work is checked against agreed criteria, and published results say how they were measured.
 - **My decisions, AI's speed.** AI helps me research, polish, review, and build faster. I decide, approve every release, and answer for the result ([how I work with AI](../policies/ai-use.md)).

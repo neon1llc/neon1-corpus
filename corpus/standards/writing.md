@@ -6,7 +6,7 @@ type: standard
 status: adopted
 updated: 2026-11-24
 created: 2025-08-05
-edition: "2.5"
+edition: "2.6"
 order: 1
 consumers: [ai]
 pdf: true
@@ -64,6 +64,7 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 - **Slogans** that sound good but say little.
 - **Character claims** instead of practice: passionate, dedicated, committed to, here for you.
 - **Telling readers how they feel**, such as "Worried about...?"
+- **The obvious as a differentiator,** such as "the person you talk to is the person who builds it."
 - **Absolutes** such as "always," "never," and "every" when they aren't literally true.
 - **Dashes and semicolons** in prose.
 
