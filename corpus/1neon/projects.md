@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-10
-edition: "2.12"
+edition: "2.13"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -198,6 +198,6 @@ Until a decision exists, Overview shows **Ready for Execute**: a percent, a bar,
 | **Options** | 10, once an option is proposed or approved |
 | **Decision** | 20, once an option is approved or a decision exists |
 
-It reaches 100% only with a decision (at most 99% before), and then the card goes away. The six outline parts are what it is (the summary), how it works today (the real-example question), what done looks like (the outcome), who and what it touches (another answered discovery question, or a named system), how we'll know it worked (a measure with a baseline), and timing and limits (a target date, a constraint, or a requirement). [Outlining a project](../guides/outline-a-project.md) has what counts, a tip for each, and where each goes once work starts.
+It reaches 100% only with a decision (at most 99% before), and then the card goes away. The six outline parts are what it is (the summary), how it works today (the real-example question), what done looks like (the outcome), who and what it touches (another answered discovery question, or a named system), how we'll know it worked (a measure with a baseline), and timing and limits (a target date, a constraint, or a requirement). [What to write](../guides/free-accounts.md#what-to-write) has what counts, a tip for each, and where each goes once work starts.
 
 A part counts with about a dozen characters or more of real words. A starter question with no answer, or a starter item from a template, never counts alone. A project is **outlined** with the first three parts and **fully outlined** with all six. Each missing part links to where to write it, except for viewers. The same percent and parts show on Home's Next step and are what neon1 reads when it assesses a project.
