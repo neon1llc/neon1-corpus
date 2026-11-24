@@ -7,19 +7,19 @@ consumers: [site, chat, knowledge, ai]
 pdf: true
 origin: "neon1-site src/app/public/index.html#services"
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-09-07
-edition: "2.7"
+edition: "2.8"
 ---
 
 # Services
 
-neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals, from a focused assessment to a complete implementation.
+neon1 is my independent engineering and technology consulting practice. I assess, design, build, integrate, and improve technology systems for businesses, technical teams, and individuals.
 
 ## Four services
 
 | Service | What it covers | Common reasons to call |
-|---|---|
+|---|---|---|
 | **Workflow automation** | Systems integration, APIs and events, data synchronization and quality, custom applications, reporting, and AI-assisted document processing | Systems of record disagree, exceptions are handled by hand, reporting needs data no single system holds, or a process has outgrown its tools |
 | **Cloud and AI engineering** | Cloud architecture, infrastructure as code, delivery pipelines, migrations, production readiness, observability, cost, and AI applications with access control and evaluation | A launch or migration with a rollback requirement, an architecture or cost review, or an AI feature that must cite sources and respect permissions |
 | **Networks and connected systems** | Network design and segmentation, multi-site and remote access, cameras, sensors, and other connected devices, monitoring, local storage, and backup | A flat network that should be segmented, a new location, devices to integrate and monitor, or a home network built to a higher standard |
@@ -39,7 +39,7 @@ Pages: [workflow automation](../guides/use-case-workflows.md), [cloud and AI eng
 
 A proposal makes one recommendation, or sets out options when there's a real choice. See [pricing](pricing.md).
 
-Before any of these, the first 30-minute call covers your needs. If you write a project down in a [1NEON account](../guides/free-accounts.md) first, its assessment is free too: my written read of that project, with a likely approach and the first questions to settle. It's lighter than the paid assessment above.
+The first 30-minute call comes before any of these. Write a project down in a [1NEON account](../guides/free-accounts.md) first, and its assessment is free too: my written read, with a likely approach and the first questions to settle. It's lighter than the paid assessment above.
 
 ## Who keeps what
 
