@@ -5,11 +5,11 @@ summary: "The checklist that closes a project: acceptance, ownership, recovery, 
 type: form
 status: adopted
 updated: 2026-11-09
-created: 2026-11-01
+created: 2025-09-04
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.0"
-origin: "neon1's internal handbook, release and handover form and the November 2026 planning notes, working templates"
+origin: "neon1's internal handbook, release and handover form and the planning notes, working templates"
 related: [standards-discovery-and-delivery, examples-release-and-handover, forms-service-and-recovery-profile]
 ---
 

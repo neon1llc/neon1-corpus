@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-20
-created: 2026-11-01
-edition: "2.2"
+updated: 2026-11-23
+created: 2025-08-05
+edition: "2.3"
 order: 1
 consumers: [ai]
 pdf: true
@@ -33,7 +33,7 @@ Direct, candid, and specific, the way an engineer talks to a client or a peer.
 - **Don't solicit.** No pitch, no urgency, no telling readers what they deserve.
 - **Argue from evidence.** A number, method, or real example beats an adjective. When the evidence is thin, say so.
 - **Leave the decision with the reader.** Give options and tradeoffs, and recommend plainly, with why.
-- **Be candid about limits.** Say what neon1 doesn't do, when someone else is a better fit, and what might not work.
+- **Be candid and confident.** Lead with what neon1 does and brings in. Name the specialist or tool that fits when one does, and say what might not work where it matters to the decision. Keep legal limits in the policies, the agreement, and the one FAQ answer that carries them, not in marketing copy.
 - **Respect the reader.** Describe people by their situation, not their size, age, or assumed skill. Don't explain what a competent reader already knows, and don't announce honesty or humility. Show them through specifics.
 
 The test: would a capable professional say this across a table to a peer? If it sounds like an ad, rewrite it.
@@ -72,7 +72,7 @@ The [GOV.UK style guide](https://guidance.publishing.service.gov.uk/writing-to-g
 - Serial comma: "email, spreadsheets, and POS."
 - Sentence case for titles and headings.
 - Words for one to nine in prose, numerals for 10 and up, and numerals for measurements, money, versions, and tables.
-- Dates: "November 9, 2026" in prose, `2026-11-09` in data and file names. Times: "8am to 8pm, Eastern time."
+- Dates: "September 9, 2025" in prose, `2025-09-09` in data and file names. Times: "8am to 8pm, Eastern time."
 - Links say where they go ("see the [privacy policy](../policies/privacy.md)"), never "click here."
 - Code, commands, file names, and identifiers go in `code formatting`, copied exactly.
 

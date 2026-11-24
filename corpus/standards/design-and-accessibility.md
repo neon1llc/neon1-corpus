@@ -5,7 +5,7 @@ summary: "How neon1 designs interfaces and documents for any device and for peop
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-26
 consumers: [ai]
 pdf: true
 edition: "2.2"

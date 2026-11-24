@@ -5,7 +5,7 @@ summary: When neon1 uses AI, how it's tested before anyone relies on it, and whe
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-08-26
 consumers: [ai]
 pdf: true
 edition: "1.6"
@@ -68,8 +68,6 @@ We track task success, corrections, review minutes, cost per success, and speed,
 ## What I'll say publicly
 
 Only scoped statements with their conditions: "In a twenty-case test using made-up records, it completed eighteen without correction," if that's what happened. Never "reliable AI for every business."
-
-Neo, the chat on this site, is tested against a set of questions before each change, and its directives are published in [the corpus](../neo/chat.md).
 
 ## Sources
 

@@ -60,3 +60,17 @@ All six policy pages now read "Last updated November 20, 2026" and carry that da
 ## Not changed
 
 The service agreement's clauses, the BAA's clauses, and the care plan's clauses. Each states obligations once already.
+
+
+## Chat with Pradeep (not yet in the policies; for the lawyer list)
+
+The chat is live in 1NEON on dev, and none of the policy pages mention it. Terms of use (conduct) and the privacy policy should say: chat messages are kept with the organization's records and everyone in the organization sees them except one marked private, which only the author and neon1 see; a member can edit their own message and the earlier text is kept for neon1; a network address is hashed and counted for limits only; and neon1 may flag, mute, or ban someone from chat, and mutes automatically after repeated refused messages. The cookie notice lists the browser storage chat uses (a draft, and whether the launcher already showed its label). The portal's own copies of these pages carry the same change.
+
+## Pricing clauses, November 23, 2026 (for the lawyer list)
+
+The pricing wording changed in the service agreement and its template, so these need review.
+
+- **engagement/service-agreement.md, "Paying" (agreement text edition 2.0 to 2.1).** "An option's price is either fixed or an estimate" became "A proposal prices the work as an estimate that discovery sets, billed for the hours I work, at the rate it states." The cap stays: the total never passes the estimate's high end unless you approve a change first. New: "Unforeseen work or purchases are agreed with you before I add them." New: "When a proposal states a fixed price, for a small, well-defined job, that price is the whole price for the work described." Deposit, refund, payment methods, and late-payment terms are unchanged. A signature records the edition and a hash of the text, so clients sign edition 2.1 again before their next approval.
+- **templates/services-agreement.md, section 3, item 1.** "A fixed fee for the work described, or an estimate ... up to a stated ceiling" became an estimate that discovery sets, up to a stated high end, with unforeseen work or purchases agreed first, and a fixed fee allowed for a small, well-defined job. "Ceiling" became "high end".
+- **templates/proposal.md and examples/proposal.md.** The price row reads "Estimate for the work above (low to high end)" in place of "Fixed fee". The example's deposit is credited against the final invoice.
+- **Not a clause change:** the agreement's summary bullet, the pricing page, and the 1NEON help describe the same model.

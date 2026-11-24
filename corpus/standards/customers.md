@@ -4,13 +4,13 @@ title: Customers
 summary: "Who neon1 works with, the situations that bring them, and when it declines work."
 type: standard
 status: adopted
-updated: 2026-11-20
-created: 2026-11-01
+updated: 2026-11-23
+created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "2.3"
+edition: "2.4"
 order: 16
-origin: "neon1's November 2026 planning notes, positioning and operating model and the internal handbook's operating principles"
+origin: "neon1's planning notes, positioning and operating model and the internal handbook's operating principles"
 related: [company-charter, standards-operating-principles, landscape-where-else-to-get-help]
 ---
 
@@ -40,9 +40,9 @@ Some want a reliable home network, secure remote access, a home lab, local stora
 
 ## Health care and other regulated work
 
-When a project touches health information, a [business associate agreement](../templates/business-associate-agreement.md) is signed before any access, and the work uses as little sensitive data as possible. I don't make clinical, legal, or financial judgments, or build systems that make them unattended.
+When a project touches health information, a [business associate agreement](../templates/business-associate-agreement.md) is signed before any access, and the work uses as little sensitive data as possible. Clinical, legal, and financial judgments stay with the professionals, and I build the systems that support them.
 
-## When I say no
+## When someone else fits better
 
-I turn down or refer work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, a larger delivery team, hidden employee monitoring, or support I can't give. I also say when something simpler or already available will do. [Where else to get help](../landscape/where-else-to-get-help.md) lists who's better placed.
+Work needing emergency coverage, safety-critical equipment, licensed trades, regulated professional judgment, formal assurance, or a larger delivery team gets the right specialist beside me. I don't build hidden employee monitoring. I also say when something simpler or already available will do. [Where else to get help](../landscape/where-else-to-get-help.md) lists who's better placed.
 

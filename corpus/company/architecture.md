@@ -7,9 +7,9 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-11
-edition: "1.7"
+edition: "1.8"
 ---
 
 # How neon1 is built
@@ -272,16 +272,16 @@ The [privacy and data policy](../policies/privacy.md) is the full statement and 
 
 ## How a change ships
 
-A change starts on its own branch, where checks run on every push. Website and 1NEON changes can be seen on dev. A batch goes to production only when Pradeep says deploy. It merges to main and the pipeline runs every check again, deploys, confirms the live version, and tags the release. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, and each role trusts only its own repository, so no repository holds AWS keys.
+A change starts on its own branch, where checks run on every push. Website and 1NEON changes can be seen on dev. I review each batch, and it goes to production once it passes. It merges to main and the pipeline runs every check again, deploys, confirms the live version, and tags the release. GitHub Actions signs in to AWS with short-lived OpenID Connect credentials, and each role trusts only its own repository, so no repository holds AWS keys.
 
 ```mermaid
-%% alt: Flowchart of how any change ships. A change is pushed to a work branch, and checks run on every push. The website and 1NEON can show the branch on dev.neon1.tech. If it isn't right yet, the work continues on the branch. When Pradeep says deploy, the branch merges to main. Main runs every check again: secret scans, tests, browser and walkthrough checks, and Terraform checks. If any fail, nothing deploys. If they pass, the pipeline gets a short-lived AWS role through OpenID Connect, deploys, and confirms the live version. Once it's confirmed, the release is tagged vX.Y.Z from the changelog. After that, main is merged back into dev.
+%% alt: Flowchart of how any change ships. A change is pushed to a work branch, and checks run on every push. The website and 1NEON can show the branch on dev.neon1.tech. If it isn't ready yet, the work continues on the branch. Once I've reviewed the batch, the branch merges to main. Main runs every check again: secret scans, tests, browser and walkthrough checks, and Terraform checks. If any fail, nothing deploys. If they pass, the pipeline gets a short-lived AWS role through OpenID Connect, deploys, and confirms the live version. Once it's confirmed, the release is tagged vX.Y.Z from the changelog. After that, main is merged back into dev.
 flowchart TD
   push["Push a work branch"]:::step --> ci["Checks on every push"]:::check
   ci --> devsee["Seen on dev.neon1.tech<br/>website and 1NEON"]:::dev
-  devsee --> ready{"Right yet?"}:::decision
+  devsee --> ready{"Ready to release?"}:::decision
   ready -->|not yet| push
-  ready -->|"Pradeep says deploy"| main["Merge to main"]:::step
+  ready -->|"reviewed"| main["Merge to main"]:::step
   main --> gates{"Every check again:<br/>secrets, tests, browser,<br/>walkthroughs, Terraform"}:::decision
   gates -->|any fail| stop["Nothing deploys"]:::stop
   gates -->|all pass| oidc["Short-lived AWS role<br/>through OpenID Connect"]:::security
@@ -341,14 +341,14 @@ A version number says what changed. A release level says how far it has been pro
 Pushing any branch puts it on dev.neon1.tech, a private copy of the site and 1NEON, in about 30 seconds, because dev runs only the quick checks.
 
 ```mermaid
-%% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right, Pradeep says deploy, and the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
+%% alt: Flowchart of the dev to production workflow. A push to any feature branch builds a private preview of that branch on dev.neon1.tech in about 30 seconds. The dev branch, which follows main, is the dev release at dev.neon1.tech. When a batch looks right and has been reviewed, the work is merged to main. Main runs the full checks, deploys to neon1.tech, and tags vX.Y.Z. After every push to main, main is merged back into the dev branch, so dev always starts from what is live.
 flowchart TD
   branch["Push a feature branch"]:::step --> preview["Private preview<br/>dev.neon1.tech, about 30 seconds"]:::dev
   dev["dev branch<br/>follows main"]:::step --> devrel["Dev release<br/>dev.neon1.tech"]:::dev
   preview --> look{"Looks right?"}:::decision
   devrel --> look
   look -->|not yet| branch
-  look -->|"Pradeep says deploy"| main["Merge to main"]:::step
+  look -->|"reviewed"| main["Merge to main"]:::step
   main --> prod["Full checks, deploy to neon1.tech,<br/>tag vX.Y.Z"]:::prod
   prod -->|"main merged back into dev"| dev
 

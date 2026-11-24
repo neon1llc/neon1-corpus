@@ -5,7 +5,7 @@ summary: "A timestamped record of an interruption or restore test, what was affe
 type: form
 status: adopted
 updated: 2026-11-15
-created: 2026-11-01
+created: 2025-09-04
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"

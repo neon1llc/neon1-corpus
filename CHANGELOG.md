@@ -2,10 +2,49 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
-## Unreleased
+## v0.52.6 - 2026-11-23
 
 ### Changed
-- Neo's directives (edition 3.6) link the privacy policy and the 1NEON help by their addresses, since the privacy policy no longer feeds Neo and a relative link couldn't be followed, and say Neo doesn't confirm a certification in writing but sends a vendor questionnaire to Pradeep.
+- Neo's directives (edition 3.8) link the 1NEON help and the privacy policy by their addresses, since a relative link couldn't be followed, and say Neo doesn't confirm a certification in writing but sends a vendor questionnaire to Pradeep.
+
+## v0.52.5 - 2026-11-23
+
+### Changed
+- How neon1.tech works (edition 1.14) describes the Sentinel landing as the default and Matrix as optional, and says people join by invitation or make a free account. The 1NEON overview (edition 1.9) names Sentinel as the default look. AWS CLIP (edition 1.9) says v0.2.1 and early software, with install steps. The filled proposal with options (edition 3.3) is titled for what its chosen scope delivers, stock reconciliation and exception monitoring, and no longer promises that the counts agree.
+- Why I started neon1 (edition 1.9) opens on where systems meet and on my engineering work, not on small businesses lacking technical help. Contact says one piece of work runs up to about six weeks, and larger efforts split into phases, each with its own scope, price, and handover, approved before it starts. Engagement (edition bumped), pricing, and the working-with FAQ use the same definition of a phase. How I price my work (edition 1.12) drops every dollar range, example, and market comparison and explains how a price is set instead: a first call, a written estimate for each piece of work, phases for larger work, changes agreed before they are added, and approval before work starts. The filled proposal (edition 3.4), the projects guide (2.11), and the working-with FAQ (1.28) lose their remaining dollar figures. Neo's directives (3.7) say Neo never states a dollar figure, range, or rate for neon1's work. Working with neon1 says what evening and weekend hours mean for meetings, cutovers, and waiting on others.
+- The accounting case study (edition bumped) calls its client "the firm's owner" instead of naming a person, until written approval exists. The filled proposal (edition 2.0) is an architecture review of an AWS account for a fictional analytics company, in place of the physical therapy intake, with no price shown.
+
+## v0.52.4 - 2026-11-23
+
+### Changed
+- Working with neon1 (edition 1.25) replaces "What don't you do?" with "What if a project needs a specialist?", which says a vetted specialist joins the proposal when the work needs one, and what neon1 covers. The urgent-problem answer leads with the care plan's written response times.
+- The four service guides (workflow automation 2.3, cloud and AI engineering 2.3, networks 1.3, security readiness 1.4) swap "When something else fits better" and "Limits" for what I choose, who does what, and what surrounds a review.
+- Engagement (edition 2.6) lists only what you keep and says specialists come through the proposal. About (2.6), the charter (2.3), customers (2.4), reliability and recovery (1.7), outreach (1.8), and the writing standard (2.3) state what neon1 does and brings in, not what it refuses. Neo's directives (3.6) lead with what is possible.
+
+## v0.52.3 - 2026-11-23
+
+### Changed
+- Working with neon1 (edition 1.24) says discovery sets the estimate, and that unforeseen work or purchases are agreed before they are added.
+- About (edition 2.5) says the first clients paid nothing, by choice.
+- How I price my work (edition 1.9), Engagement (edition 2.5), and Operating principles (edition 2.5) price every project as an estimate that discovery sets, with unforeseen work or purchases agreed before they are added, instead of a fixed price or an estimate with a ceiling.
+- The service agreement (edition 2.2, agreement text 2.1) and its template (edition 1.7) price work as an estimate that discovery sets, with unforeseen work or purchases agreed first, and still allow a stated fixed price for a small, well-defined job. The proposal template (edition 1.8) and example (edition 1.7) show an estimate. The 1NEON help (edition 2.14) and projects guide (edition 2.10) say estimates are the usual price and fixed is for small, well-defined jobs.
+
+## v0.52.2 - 2026-11-23
+
+### Changed
+- The v0.52.1 release note is reworded.
+
+## v0.52.1 - 2026-11-23
+
+### Changed
+- Capabilities (edition 2.5) lists community work for schools and families.
+
+## v0.52.0 - 2026-11-23
+
+### Changed
+- Client-facing documents show grouped publication dates from August to September 2025. Capabilities (`engagement/capabilities.md`) adds community work to past performance, and About drops a repeated profile line.
+- How neon1 is built (edition 1.8) and How neon1.tech works (edition 1.13) say that each batch is reviewed before it goes to production. The chat tab is named neon1 in the 1NEON help and the account guide.
+- The 1NEON help (edition 2.13) answers "Can I message you directly?" and says to message me in the chat first under "Who can I contact?". How 1NEON accounts work (edition 1.10) names the chat in step 4 and in its table, and Working with neon1 says you can message me from your account.
 
 ## v0.51.9 - 2026-11-20
 
@@ -246,7 +285,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Roles and years: every case now has a confirmed role and year. The family cameras and the grade school were both 2025, before neon1. The grade school case names the school, P.S. 33 Edward M. Funk in Queens, and says I was working there after school as a counselor, teacher's aide, and tech assistant, and did the STEM setup on my own time. A role or year that isn't confirmed would read "not yet confirmed" instead of disappearing.
 - Results say how they were measured: times after launch come from the start and end each system records, as metrics only with no content, and figures from before launch that nothing recorded are staff estimates from a short survey. The capability statement (edition 1.2) labels each delivered project with its kind, adds the small local business, and says any partner on a project is named in the proposal and on the case study.
 - How neon1 is built (edition 1.4) shows each part in production and on dev side by side, what data each part keeps, why, and for how long, and how a change ships in every repository, the site, 1NEON, Neo, the infrastructure, the corpus, the tools, and the education guides: the checks on every push, where a branch can be seen, what main does, and about how long each release takes. It adds the four release levels, describes dev's 1NEON as running on generated test data only, never a copy of production, and corrects sign-in to an emailed code or a passkey, with an authenticator app as an optional second step and no Google sign-in. New diagrams draw production beside dev, where data lives, and how any change ships. The data table includes the contact form's counters, which expire a day after their first count.
-- How neon1.tech works (edition 1.6): how a change goes live starts on a branch and on dev, waits for my deploy, gives typical release times, and says Neo's weekly refresh opens a pull request.
+- How neon1.tech works (edition 1.6): how a change goes live starts on a branch and on dev, waits for review before release, gives typical release times, and says Neo's weekly refresh opens a pull request.
 - Answers in seconds: Boris M.'s words read as he'd say them as the firm's owner, without a thank-you.
 - Security for non-security people: no attendee counts. Its headline is "parents to executives", and it says most sessions were hosted by small and medium businesses for their own people, and others were held in a rented room for people from my Retro NY meetups.
 - Services (edition 1.4): a table for each of the four kinds of reader (owner-run businesses, technical teams, offices and homes, and teams heading into training or a SOC 2 audit), with a first project, its usual cost from the published ranges, and where to start; who does what in each, including what I don't do; and similar past work with its kind.

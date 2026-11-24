@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-07
-edition: "2.12"
+edition: "2.14"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -100,7 +100,7 @@ Under **Projects**, **Timeline** draws each project from start to target date, c
 Choose **New project** and answer a few questions. It starts with a checklist you can change later. [Watch it](https://neon1.tech/1NEON/live?play=start).
 
 ### Is there a simpler way for a small job?
-Yes. For a fix of a few hours, I start a **Quick fix** with no proposal. I send one quote, a fixed price or hours at a rate capped at the most hours quoted, and nothing is paid up front. **Next step** says **Approve the quote**, and you sign once. When it's fixed, you accept that one step with your signature, and I send one invoice. Your organization still signs the service agreement once before its first approval.
+Yes. For a fix of a few hours, I start a **Quick fix** with no proposal. I send one quote: an estimate capped at the most hours quoted, or a fixed price when the job is small and well defined. Nothing is paid up front. **Next step** says **Approve the quote**, and you sign once. When it's fixed, you accept that one step with your signature, and I send one invoice. Your organization still signs the service agreement once before its first approval.
 
 ### What is the calendar on Home?
 Due dates, milestones, project targets, and your organization's events, a month at a time. Choose a day to see them. Editors add leave, closures, meetings, or care plan dates, one-off or repeating. [Watch it](https://neon1.tech/1NEON/live?play=calendar).
@@ -197,7 +197,7 @@ An admin of your organization. If you don't know who that is, or neon1's access 
 ## Invoices and paying
 
 ### Is a price fixed or an estimate?
-The option says which, and **How this adds up** shows the work behind it. A fixed price is the whole price for the work described, changed only by a change you approve. An estimate is a range of hours at the option's hourly rate. You pay for hours worked, each listed as logged, never past the high end without your approval. [Watch it](https://neon1.tech/1NEON/live?play=decide).
+Usually an estimate, and the option says which. **How this adds up** shows the work behind it. An estimate is a range of hours at the option's hourly rate, set after discovery. You pay for hours worked, each listed as logged, never past the high end without your approval. Unforeseen work or purchases are agreed before I add them. A small, well-defined job may carry a fixed price instead: the whole price for the work described, changed only by a change you approve. [Watch it](https://neon1.tech/1NEON/live?play=decide).
 
 ### Where do I see the hours worked?
 In **Hours**, under Execute. Each entry has its date, what it went to, and its length in quarter hours. Billed hours carry the invoice's number. On a fixed price, hours are a record, not a bill. [Watch it](https://neon1.tech/1NEON/live?play=build).
@@ -243,5 +243,8 @@ Yes, any time, without asking me. An admin opens **Settings** and chooses **Down
 ### What happens to our data when the work ends?
 It's kept as the record of our work unless your organization asks me to delete it. Your organization can stop using 1NEON any time and download everything from Settings first. The [privacy policy](https://neon1.tech/1NEON/privacy) has the details, including how long backups and audit records last.
 
+### Can I message you directly?
+Yes. Open the round Neo button at the bottom of any page and choose **neon1**. Everyone in your organization sees the conversation, with names, and **private** keeps one message between you and me. You can edit your own messages, and a reply also comes to your email. I pause chat for anyone who spams or abuses it.
+
 ### Who can I contact?
-Email [hello@neon1.tech](mailto:hello@neon1.tech), or see [Contact](https://neon1.tech/1NEON/contact).
+Message me in the chat, email [hello@neon1.tech](mailto:hello@neon1.tech), or see [Contact](https://neon1.tech/1NEON/contact).

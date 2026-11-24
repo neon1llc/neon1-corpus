@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-11-10
-edition: "2.9"
+edition: "2.11"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -80,7 +80,7 @@ Who may do what:
 
 Options are compared on the Needs tab (`#options`), each with its cost (one-time and recurring apart, with a first-year total), timeline, three scores, and any Recommended mark. An option can also carry neon1's hours, vendor costs, expected purchases, and the result the client can check.
 
-An option's price is **fixed** ("$6,500 fixed"), the whole price for the work described, changed only by an approved change. Or it's an **estimate** ("$3,500 to $4,200 estimate"), a range of hours at an hourly rate. The client pays for hours worked, each listed under Hours, never past the high end without an approved change, and fewer hours cost less. **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover.
+An option's price is usually an **estimate** a range of hours at an hourly rate that discovery sets. The client pays for hours worked, each listed under Hours, never past the high end without an approved change, and fewer hours cost less. Unforeseen work or purchases are agreed before they're added. A small, well-defined job may carry a **fixed** price instead the whole price for the work described, changed only by an approved change. **How this adds up** lists the work line by line with hours, the expected total, and **When you pay**: the deposit at approval and the rest at handover.
 
 A project has one proposal, issued in numbered revisions. While neon1 shapes the options it's a **draft** the client can read but not approve. **Issue the proposal** freezes and numbers a copy. The first 1NEON issued is 0039, so its first revision is **0039-r1**, and each option gets the revision plus a letter, such as **0039-r1-B**. A later change of option, estimate, or scope is issued as the next revision, 0039-r2. Earlier ones stay readable, marked "Replaced by a later revision".
 

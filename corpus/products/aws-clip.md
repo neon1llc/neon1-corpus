@@ -5,21 +5,21 @@ summary: "AWS CLI Plus: account guards and approval checks around the AWS CLI, f
 type: page
 consumers: [site, chat, knowledge, ai]
 pdf: false
-stage: "public, first release"
-origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at c90f092"
+stage: "public, early release"
+origin: "neon1-site src/app/public/index.html#work; aws-clip README.md at v0.2.1"
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-23
 created: 2026-09-13
-edition: "1.8"
+edition: "1.9"
 ---
 
 # AWS CLIP
 
-*Public · v0.2.0*
+*Public · v0.2.1*
 
 **AWS CLI Plus.** Account guards and approval checks around the AWS CLI, which still handles sign-in, credentials, requests, and output.
 
-- **Available now:** the [code](https://github.com/neon1llc/aws-clip) is public under the MIT license and runs from source. It's a first release (v0.1), so commands and settings may change before v1.0.
+- **Available now:** the [code](https://github.com/neon1llc/aws-clip) is public under the MIT license. Install with `go install` or a macOS or Linux binary from the releases page. It's early software (v0.x), so commands and settings may change before v1.0.
 - **Who it helps:** people with several AWS profiles who want to see which account they're in and confirm before anything risky runs.
 
 ## What it does
@@ -38,4 +38,4 @@ For example, `aws-clip --profile production exec -- ec2 terminate-instances ...`
 
 ## Next step
 
-Install steps and every safety limit are in the [README](https://github.com/neon1llc/aws-clip/blob/c90f092292cd2dd60be89ea906777c667666b4c5/README.md).
+Install steps and every safety limit are in the [README](https://github.com/neon1llc/aws-clip/blob/v0.2.1/README.md).

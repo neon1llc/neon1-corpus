@@ -4,11 +4,11 @@ title: Charter
 summary: What neon1 is for, who it works with, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-20
-created: 2026-11-05
+updated: 2026-11-23
+created: 2025-07-28
 consumers: [ai]
 pdf: true
-edition: "2.2"
+edition: "2.3"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
@@ -50,11 +50,11 @@ Moving everything to the cloud, or to an AI model, is never the default answer.
 
 Businesses, technical teams, and individuals with a defined goal, described by their situation rather than their size. [Customers](../standards/customers.md) has the detail, and [services](../engagement/index.md) lists the four kinds of work. Larger organizations get one focused piece of work, inside their own security, procurement, and change processes.
 
-## What I refer to others
+## Who I bring in
 
-I refer work that needs a specialist or round-the-clock team to someone who fits:
+Some work is best done with a specialist beside me, and I bring in or hand off to someone who fits:
 
-- 24/7 emergency support
+- Emergency coverage
 - Safety-critical equipment
 - Regulated professional judgment, such as legal, medical, or accounting advice
 - Large migrations that need a team
@@ -66,7 +66,7 @@ Paid work is paid. Separately, I set aside a little time each month for communit
 
 ## Products
 
-neon1 also builds public tools ([1NEON](../products/1neon.md), [AWS CLIP](../products/aws-clip.md), [Ready, Secure, Go](../products/ready-secure-go.md), [DeployOps](../products/deploy-ops.md)) and publishes teaching material under CC BY-SA 4.0 and MIT, each with its own license and release status. None is sold as a service until it can be supported like one.
+neon1 also builds public tools and publishes teaching material under CC BY-SA 4.0 and MIT, each with its own license and release status. None is sold as a service until it can be supported like one.
 
 ## Related companies
 

@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-20
-created: 2026-11-11
+updated: 2026-11-23
+created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.6"
+edition: "1.7"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -17,9 +17,6 @@ related: [policy-service-agreement, templates-proposal, examples-proposal-option
 
 > [!warning] An example, not legal advice
 > This shows the terms neon1 works under. Your own counsel should review it before you sign, and the signed copy is the one that counts.
-
-> [!note] Signing in 1NEON
-> Clients who work with me in 1NEON sign the [service agreement](../engagement/service-agreement.md) there instead, with the blanks filled in. This blank stays for agreements made outside the portal.
 
 We sign this once, before any paid work. After that, each piece of work is a [proposal](proposal.md) saying what will be done, by when, and for how much. This agreement holds the parts that stay the same, so a proposal can stay short.
 
@@ -32,7 +29,7 @@ We sign this once, before any paid work. After that, each piece of work is a [pr
 ## 1. How work is agreed
 
 1. Each project starts with a proposal that names its work, price, timeline, and the result you'll be able to check.
-2. A proposal becomes agreed work when you choose an option in it, by signing it or by approving that option in 1NEON. An approval in 1NEON records who approved, when, and the exact terms shown, and it counts the same as a signature.
+2. A proposal becomes agreed work when you choose an option in it, by signing it.
 3. Agreed work binds both of us: I do the work as described, and you pay as described.
 4. If a proposal and this agreement disagree, this agreement wins, unless the proposal names the section it changes.
 
@@ -53,7 +50,7 @@ If something outside either of our control holds the work up, I'll pause the tim
 
 ## 3. Price and payment
 
-1. Each proposal says how it's priced: a fixed fee for the work described, or an estimate billed for the hours worked at a stated rate, up to a stated ceiling.
+1. Each proposal prices the work as an estimate that discovery sets: hours worked at a stated rate, up to a stated high end. Unforeseen work or purchases are agreed with you before I add them. A proposal may instead state a fixed fee for a small, well-defined job.
 2. A deposit of ____% is due when you choose an option, and the balance when the work is accepted. Invoices are due within ____ days.
 3. Outside costs, such as software, hardware, and subscriptions, are billed to you directly by the vendor. I don't mark them up.
 4. If an invoice is more than ____ days late, I may pause work until it's paid, after telling you in writing.

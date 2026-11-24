@@ -5,7 +5,7 @@ summary: "What to bring to a 30-minute call with neon1."
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "1.8"
 consumers: [knowledge, ai]
 pdf: true
@@ -15,7 +15,7 @@ related: [company-process, forms-intake, company-contact]
 
 # Getting ready for a first call
 
-The first call takes about 30 minutes. We cover the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing. If you've asked for an assessment from a [1NEON account](free-accounts.md), I read it first. You can book without one.
+The first call takes about 30 minutes. We cover the main pain point, what a good result looks like, and whether I'm the right help. Options come afterward, in writing.
 
 ## Bring one real example
 

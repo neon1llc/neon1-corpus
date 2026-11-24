@@ -5,7 +5,7 @@ summary: "The main development standard for neon1: the principles in priority or
 type: standard
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-08-26
 edition: "1.5"
 audience: "Developers"
 order: 2

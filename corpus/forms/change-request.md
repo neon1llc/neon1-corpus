@@ -5,11 +5,11 @@ summary: "How a change to agreed scope is written down, priced, and approved bef
 type: form
 status: adopted
 updated: 2026-11-15
-created: 2026-11-01
+created: 2025-09-04
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.1"
-origin: "neon1's November 2026 planning notes, working templates"
+origin: "neon1's planning notes, working templates"
 related: [templates-proposal, standards-discovery-and-delivery]
 ---
 

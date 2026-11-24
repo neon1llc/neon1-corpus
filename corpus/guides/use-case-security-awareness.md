@@ -5,7 +5,7 @@ summary: "How an informational security awareness session for a team or group ru
 type: guide
 status: adopted
 updated: 2026-11-20
-created: 2026-11-09
+created: 2025-09-10
 edition: "2.2"
 consumers: [knowledge, ai]
 pdf: true
@@ -38,4 +38,4 @@ To change controls as well as habits, pair a session with [security readiness](u
 - Recover an account, or know who to call
 - Report something suspicious without feeling foolish
 
-See also [a password manager for your family](password-manager-for-family.md), the [phishing awareness session kit](../products/phish-out-of-water.md), and [Ready, Secure, Go](../products/ready-secure-go.md).
+See also [a password manager for your family](password-manager-for-family.md).

@@ -5,11 +5,11 @@ summary: "Who does what when neon1 works alongside another firm: selling, buildi
 type: template
 status: adopted
 updated: 2026-11-20
-created: 2026-11-01
+created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"
-origin: "neon1's November 2026 planning notes, working templates"
+origin: "neon1's planning notes, working templates"
 related: [standards-operating-principles]
 ---
 

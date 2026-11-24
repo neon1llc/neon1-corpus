@@ -5,11 +5,11 @@ summary: "Your specific permission before anything about your project is publish
 type: form
 status: adopted
 updated: 2026-11-15
-created: 2026-11-01
+created: 2025-08-19
 consumers: [knowledge, ai]
 pdf: true
 edition: "1.2"
-origin: "neon1's internal handbook, evidence and publication form and the November 2026 planning notes, working templates"
+origin: "neon1's internal handbook, evidence and publication form and the planning notes, working templates"
 related: [standards-outreach]
 ---
 
