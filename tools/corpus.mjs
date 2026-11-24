@@ -25,7 +25,7 @@ export const SHELF_GROUP = {
 }
 
 export const SHELVES = {
-  company: ["Company", "Who neon1 is, what it stands for, how it is built, and its state record and glossary."],
+  company: ["The practice", "Who neon1 is, what it stands for, how it is built, and its state record and glossary."],
   engagement: ["Engagement", "Working with neon1: what I offer, what it costs, how a project runs, how to get in touch, and the agreement."],
   standards: ["How I work", "How each engagement is run, from the first conversation to handover."],
   guides: ["Guides", "How-tos and typical engagements, for owners, teams, and families."],
