@@ -4,11 +4,11 @@ title: Operating principles
 summary: "The habits behind every neon1 engagement, and what each one means in practice."
 type: standard
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "2.5"
+edition: "2.6"
 order: 3
 origin: "neon1's internal handbook, operating principles"
 related: [company-charter, standards-discovery-and-delivery]
@@ -30,7 +30,7 @@ Scoping, testing, documentation, and training are part of the work and the price
 
 ## State uncertainty early
 
-I keep apart what we observed, what someone remembers, what we estimated, what a demo showed, and what we propose.
+From the start, I keep apart what we observed, what someone remembers, what we estimated, what a demo showed, and what we propose.
 
 ## Match promises to coverage
 
@@ -50,13 +50,22 @@ Before a change, I know how to undo it, recover the data, and keep the business 
 
 ## Choosing engagements
 
-A project fits when the problem repeats, success can be described, the data is yours to share, the work fits the calendar, and there's a manual fallback. I talk with the person who pays and the people who use it.
+A project fits when:
+
+- The problem repeats.
+- Success can be described.
+- The data is yours to share.
+- The work fits the calendar.
+- There's a manual fallback.
+
+I talk with the person who pays and the people who use it.
 
 I refer out continuous emergency support, safety-critical equipment, regulated professional judgment, specialist security assurance, and large migrations.
 
 ## Commercial basics
 
-- Projects have a written scope, estimate, and assumptions. Discovery sets the estimate, billed for listed hours and never above its high end without your approval. Unforeseen work or purchases are agreed before they're added.
+- Projects have a written scope, estimate, and assumptions.
+- Discovery sets the estimate. It's billed for listed hours and never goes above its high end without your approval.
 - Third-party subscriptions, hardware, and travel are separate, and I prefer that vendors bill you directly.
 - No extra work or spending happens without your written approval.
 - A signed agreement governs each engagement.
