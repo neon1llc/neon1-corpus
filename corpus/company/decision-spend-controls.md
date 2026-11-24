@@ -24,7 +24,7 @@ Spend can grow from a bug, an abuser, or my own evaluation runs. Each layer cove
 | Account budget | $15 a month on usage, emails at 80% actual and 100% forecast | neon1-aws-infrastructure `account/` |
 | Bedrock daily alert | Emails when Bedrock passes $1 in a day | `account/` |
 | Bedrock monthly deny | At $10 a month, denies model calls from my admin user and the evaluation role | `account/` |
-| Per-visitor caps | 6 questions a minute and 60 an hour, with cooldowns of 2 minutes, 10, an hour, then a day | neon1-chat |
+| Per-visitor caps | 6 questions a minute and 15 an hour, with cooldowns of 2 minutes, 10, an hour, then a day | neon1-chat |
 | Site-wide cap | 60 questions a day, then Neo says to try again tomorrow and links the call booking | neon1-chat |
 | Concurrency | At most 5 copies of the function, and 5 requests a second | neon1-chat |
 
