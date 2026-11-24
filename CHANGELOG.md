@@ -8,6 +8,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Architecture decisions: six numbered records (ADR-001 to ADR-006) with why, what would change them, and what I missed. How neon1 is built (edition 1.9) links to it.
 
 ### Fixed
+- The 1NEON projects guide regains two missing colons in its estimate and fixed-price sentences, and no longer names an out-of-date service agreement edition.
 - The seven product pages show their latest releases. The charter no longer says every product is under CC BY-SA 4.0 and MIT. How neon1.tech works matches the live site: the services note, the About link, the contact form's label, and release times, without the old token count and weekly blog claim.
 
 ### Changed
