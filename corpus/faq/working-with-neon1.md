@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-24
 created: 2026-11-07
-edition: "1.30"
+edition: "1.31"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -64,4 +64,4 @@ Yes, informational awareness sessions for groups, from parents and teachers to e
 
 When a project needs a licensed installer, an independent auditor, or a penetration tester, I bring in a vetted one and write their role into the proposal.
 
-I cover workflow automation, cloud and AI engineering, networks and connected systems, and security readiness. I get you ready for a review, and the reviewer makes the call. I work with your lawyer, accountant, or auditor on the technical side, and I take on personal or health data once the right agreements and insurance are in place. What I publish is general information, and a professional decides what applies to you.
+I cover workflow automation, cloud and AI engineering, networks, devices, and connected systems, and security readiness. I get you ready for a review, and the reviewer makes the call. I work with your lawyer, accountant, or auditor on the technical side, and I take on personal or health data once the right agreements and insurance are in place. What I publish is general information, and a professional decides what applies to you.

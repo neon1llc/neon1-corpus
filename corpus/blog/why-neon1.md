@@ -9,7 +9,7 @@ short:
 type: post
 topic: whats-and-whys
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-15
 edition: "1.9"
 consumers: [blog, ai]
@@ -24,7 +24,7 @@ The hard part of most technology work is rarely one system. It's the place where
 
 I'm Pradeep. For more than eight years I've built and run cloud systems as an engineer, and the work I've learned the most from sat across those boundaries: integrations, migrations, AI that has to be measured, and networks that carry real equipment. neon1 is how I take that work on directly, for businesses, technical teams, and individuals.
 
-I take on [four kinds of work](../engagement/index.md): workflow automation, cloud and AI engineering, networks and connected systems, and security readiness. I work remotely across the US, and on site within about 30 miles of Queens. Outside the US, ask.
+I take on [four kinds of work](../engagement/index.md): workflow automation, cloud and AI engineering, networks, devices, and connected systems, and security readiness. I work remotely across the US, and on site within about 30 miles of Queens. Outside the US, ask.
 
 Every project runs through [five steps](../engagement/process.md): listen, propose, decide, build, and hand over. I learn how the work gets done today, including what your own team already knows better than I do, before I suggest anything. Then you get one recommendation, or options when there's a real choice, and you decide. Sometimes the right option is a setting, a cleanup, or leaving something alone. When we're done, you have the documentation and the accounts, and everything stays yours.
 

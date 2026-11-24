@@ -8,7 +8,7 @@ updated: 2026-11-24
 created: 2025-08-05
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.7"
+edition: "2.8"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -19,7 +19,7 @@ neon1 is an independent engineering and technology consulting practice run by Pr
 
 ## What I do
 
-Four services: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md). Audit opinions come from independent auditors.
+Four services: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks, devices, and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md). Audit opinions come from independent auditors.
 
 ## How engagements work
 

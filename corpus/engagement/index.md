@@ -1,7 +1,7 @@
 ---
 id: services
 title: Services
-summary: "Workflow automation, cloud and AI engineering, networks and connected systems, and security readiness, from a focused assessment to a complete implementation."
+summary: "Workflow automation, cloud and AI engineering, networks, devices, and connected systems, and security readiness, from a focused assessment to a complete implementation."
 type: page
 consumers: [site, chat, knowledge, ai]
 pdf: true
@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-24
 created: 2025-09-07
-edition: "2.8"
+edition: "2.9"
 ---
 
 # Services
@@ -22,10 +22,10 @@ neon1 is my independent engineering and technology consulting practice. I assess
 |---|---|---|
 | **Workflow automation** | Systems integration, APIs and events, data synchronization and quality, custom applications, reporting, and AI-assisted document processing | Systems of record disagree, exceptions are handled by hand, reporting needs data no single system holds, or a process has outgrown its tools |
 | **Cloud and AI engineering** | Cloud architecture, infrastructure as code, delivery pipelines, migrations, production readiness, observability, cost, and AI applications with access control and evaluation | A launch or migration with a rollback requirement, an architecture or cost review, or an AI feature that must cite sources and respect permissions |
-| **Networks and connected systems** | Network design and segmentation, multi-site and remote access, cameras, sensors, and other connected devices, monitoring, local storage, and backup | A flat network that should be segmented, a new location, devices to integrate and monitor, or a home network built to a higher standard |
+| **Networks, devices, and connected systems** | Network design and segmentation, multi-site and remote access, IoT, sensors, cameras, and other connected devices, with the hardware and software integrated, monitoring, local storage, and backup | A flat network that should be segmented, a new location, devices to integrate and monitor, or a home network built to a higher standard |
 | **Security readiness** | Technical risk assessment, identity and access, hardening, cloud and network security, backup and recovery, and control and evidence work before a review | A customer security questionnaire, an upcoming SOC 2, HIPAA, or PCI DSS review, access that needs tightening, or recovery that was never tested |
 
-Pages: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md).
+Pages: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks, devices, and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md).
 
 ## Ways to engage
 
@@ -47,7 +47,7 @@ The first 30-minute call comes before any of these. Write a project down in a [1
 |---|---|
 | Workflow automation | Your systems of record, accounts, data, and a runbook for each integration |
 | Cloud and AI engineering | Repositories, infrastructure code, and production on-call |
-| Networks and connected systems | The equipment, its admin accounts, the network diagram, and the asset inventory |
+| Networks, devices, and connected systems | The equipment, its admin accounts, the network diagram, and the asset inventory |
 | Security readiness | Your controls, evidence, and risk decisions |
 
 Licensed trades, audit opinions, and penetration tests come from the right specialist, whom I bring in and whose role the proposal defines. On-site work is within about 30 miles of Queens, NY. Everything else is remote.
