@@ -20,7 +20,7 @@ Before neon1, I spent more than eight years as a cloud and DevOps engineer, most
 
 Through neon1 I've [migrated a two-site business to AWS](../case-studies/two-offices-off-local-servers.md) and [integrated a business's operations and monitoring](../case-studies/one-view-of-the-shop.md). As a subcontractor, I built a [permission-aware document assistant](../case-studies/answers-in-seconds.md) and a [patient intake portal](../case-studies/intake-out-of-the-inbox.md). I publish client work only [with permission](../engagement/publishing-client-work.md).
 
-neon1 began in my local community. At the corporate level, the impact of my work is felt further downstream, so I also wanted to aim it closer to home. My first clients were people I already knew, and I did their work for free. That let me practice and refine the methods I use today, on problems that matter to me.
+neon1 began with free work for people I already knew. It gave me room to practice and refine the methods I use today, and it keeps me close to the community I care about.
 
 What I publish builds on years of my own work, and AI now helps me research, polish, and review it. I make the decisions and approve every release. [How I work with AI](../policies/ai-use.md) has the detail.
 
