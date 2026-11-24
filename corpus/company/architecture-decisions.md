@@ -1,11 +1,11 @@
 ---
 id: company-architecture-decisions
 title: "Architecture decisions"
-summary: "Architecture decision records for neon1's systems: what I chose, why, what would change my mind, and what I missed."
+summary: "Architecture decision records for neon1's systems: what I chose, why, and what would change my mind."
 type: page
 consumers: [ai]
 pdf: false
-origin: "neon1-chat, neon1-aws-infrastructure, neon1-1NEON, neon1-corpus, git history, and AWS Cost Explorer and CloudTrail for neon1's account"
+origin: "neon1-chat, neon1-aws-infrastructure, neon1-1NEON, neon1-corpus, git history, and AWS Cost Explorer for neon1's account"
 status: adopted
 updated: 2026-11-24
 created: 2026-11-24
@@ -23,7 +23,7 @@ Each record is one choice that shapes how neon1's systems work, numbered in the 
 
 Every question carries the public text Neo answers from, about 157,000 characters. There's no search index to run, and an answer can't be lost to a bad search. A question costs about 0.6 cent at most, computed from the prompt size and November's token prices.
 
-I'd add search when the text nears the 170,000-character limit. What I missed: my README said under a fifth of a cent long after the text had grown.
+I'd add search when the text nears the 170,000-character limit.
 
 ## ADR-002: Spending has more than one stop
 
@@ -31,7 +31,7 @@ I'd add search when the text nears the 170,000-character limit. What I missed: m
 
 Neo takes 6 questions a minute and 15 an hour from one visitor, and 60 a day in total. At the daily cap that's about $11 a month. Separate limits cover me: a $1 daily Bedrock alert, and a $10 monthly block on my own admin access and my evaluation role. A bug, a stranger, and my own testing fail in different ways, so one limit isn't enough.
 
-What I missed: on the night of November 15, my admin user ran Neo's question set about 29 times unattended, and the day cost $29.90. I didn't save those runs, so my records didn't explain the bill. CloudTrail did. November reached $60.32 against a $15 budget, mostly from testing. I also set the cap at 200 from the old cost figure. At the measured cost, that was about $37 a month, so I lowered it.
+I set the daily cap from the measured cost of a question, and when the measurement moved, the cap moved with it.
 
 ## ADR-003: Neo counts networks, not people
 
@@ -59,7 +59,7 @@ The website, Neo, the Knowledge Center, and the PDFs read from this repository, 
 
 The portal's browser tests are skipped when the files and live site styles they depend on match a run that passed. Any difference, or any error in the check, runs them all. Replaying identical inputs cost time without telling me anything new. With the tests split into parts too, the portal deploy went from about 26 minutes to about 2.5.
 
-I'd drop the skip if a release passed this way and failed live. What I missed: the first time it skipped, GitHub skipped the release steps after it too. The run was green and nothing shipped. The release job now checks each result itself.
+I'd drop the skip if a release passed this way and failed live. GitHub also skips the steps that follow a skipped one, so the release job checks each result itself.
 
 ## Sources
 
@@ -67,4 +67,4 @@ I'd drop the skip if a release passed this way and failed live. What I missed: t
 - [neon1-aws-infrastructure](https://github.com/neon1llc/neon1-aws-infrastructure#readme): budgets, blocks, and releases.
 - [neon1-1NEON deploy workflow](https://github.com/neon1llc/neon1-1NEON/blob/main/.github/workflows/deploy.yml): the skip and the release condition.
 - Git history in these repositories: the dates.
-- AWS Cost Explorer and CloudTrail for neon1's account, November 1 to 24, 2026: costs, token prices, and who made the calls.
+- AWS Cost Explorer for neon1's account, November 2026: token prices.

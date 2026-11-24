@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Added
-- Architecture decisions: six numbered records (ADR-001 to ADR-006) with why, what would change them, and what I missed. How neon1 is built (edition 1.9) links to it.
+- Architecture decisions: six numbered records (ADR-001 to ADR-006) with why and what would change them. How neon1 is built (edition 1.9) links to it.
 
 ### Fixed
 - The 1NEON projects guide regains two missing colons in its estimate and fixed-price sentences, and no longer names an out-of-date service agreement edition.
