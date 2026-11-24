@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#services"
 status: adopted
 updated: 2026-11-24
 created: 2025-09-07
-edition: "2.9"
+edition: "2.10"
 ---
 
 # Services
@@ -50,7 +50,7 @@ The first 30-minute call comes before any of these. Write a project down in a [1
 | Networks, devices, and connected systems | The equipment, its admin accounts, the network diagram, and the asset inventory |
 | Security readiness | Your controls, evidence, and risk decisions |
 
-Licensed trades, audit opinions, and penetration tests come from the right specialist, whom I bring in and whose role the proposal defines. On-site work is within about 30 miles of Queens, NY. Everything else is remote.
+Licensed trades, audit opinions, and penetration tests come from the right specialist, whom I bring in and whose role the proposal defines. Where and when I work is on the [contact page](contact.md).
 
 ## Past work
 

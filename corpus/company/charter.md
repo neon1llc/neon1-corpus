@@ -4,18 +4,18 @@ title: Charter
 summary: What neon1 is for, who it works with, the values it works by, and what it leaves to others.
 type: page
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-07-28
 consumers: [ai]
 pdf: true
-edition: "2.3"
+edition: "2.4"
 origin: "neon1's internal handbook, charter (public parts)"
 related: [company-mission, standards-operating-principles, company-about, company-names, services]
 ---
 
 # Charter
 
-neon1 is my independent engineering and technology consulting practice in New York, formed as neon1 LLC on July 24, 2025 ([registration](registration.md)). Detail is in [How I work](../standards/operating-principles.md).
+neon1 is my independent engineering and technology consulting practice in New York, formed as neon1 LLC ([registration](registration.md)). Detail is in [How I work](../standards/operating-principles.md).
 
 ## Mission
 

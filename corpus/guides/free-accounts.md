@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-15
-edition: "1.11"
+edition: "1.12"
 consumers: [knowledge, ai]
 pdf: false
 audience: "Anyone with a project in mind who'd rather write it down first"
@@ -27,7 +27,7 @@ related: [product-1neon, faq-working-with-neon1, policy-terms, policy-privacy]
 4. **We talk,** if you like. Message me any time in the chat (the round Neo button, then **neon1**), or talk for 30 minutes: book from **Next step**, ask me to email you, or use **Contact neon1** in the menu. Options come afterward, in writing.
 5. **If it fits,** we agree on the work and your account becomes a client account. Everything you wrote stays, and the outline becomes the plan.
 
-I work remotely across the US, and on site within about 30 miles of Queens, NY. Outside the US, ask.
+Where and when I work is on the [contact page](../engagement/contact.md).
 
 ## What it holds
 
