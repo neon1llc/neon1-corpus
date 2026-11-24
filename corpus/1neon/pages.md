@@ -4,9 +4,9 @@ title: "1NEON guide: every page, what it shows, and who can do what"
 summary: "Each signed-in 1NEON page: what it's for, what's on it, its states, and the actions on it with the access each one needs."
 type: guide
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-24
 created: 2026-11-10
-edition: "1.17"
+edition: "1.18"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -32,7 +32,7 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
   - A free account lists each project with a six-segment meter of outline parts written, a tip for what's missing, and **Continue**. A fully outlined project says "Fully outlined" with **Review**. A client organization sees only what was sent and when.
   - Under the list, a required note of at least 20 characters and a checkbox for each project, up to three. **Request assessment** opens a last look at the projects, the note, and what each could still say. **Submit request** (or **Submit request anyway**) locks the box. **Keep editing** goes back.
   - A saved request goes to neon1 30 minutes after its last change, and never within an hour of the previous email. Until then **Edit** unlocks it and **Withdraw** stops it. After it goes, the card says "Sent" with the date, and an edit sends neon1 "Assessment request updated". The reply comes by email.
-  - In a free account, **Book a 30-minute call** opens the booking page, or **ask me to reach out** sends a call request with an optional note, once a week. A client organization sees **Contact neon1**. Neither the call nor the assessment needs the other first.
+  - In a free account, **Book a 30-minute call** opens the booking page, or **ask me to email you** sends a call request with an optional note, once a week. A client organization sees **Contact neon1**. Neither the call nor the assessment needs the other first.
 
 How the assessment and outline work is in [how 1NEON accounts work](../guides/free-accounts.md) and [outlining a project](../guides/outline-a-project.md).
 

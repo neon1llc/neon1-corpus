@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-07
-edition: "2.14"
+edition: "2.15"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -47,7 +47,7 @@ The percent on a project's **Overview**, before the work starts. Each outline pa
 Under **Next step** on Home, write the note (required, a sentence or two), choose one to three projects, and choose **Request assessment**, then **Submit request**. It goes to me 30 minutes after your last change, so you can **Edit** or **Withdraw** it until then. An edit after that goes out as an update. I reply by email.
 
 ### Do I need a call first?
-No. The assessment and the call are separate ways in. **Next step** has **Book a 30-minute call**, or **ask me to reach out** to have me write to you (once a week).
+No. The assessment and the call are separate ways in. **Next step** has **Book a 30-minute call**, or **ask me to email you** (once a week).
 
 ### Will I get emails about my outline?
 In a new account, yes: while an outline is unfinished and nothing is waiting for me, tips arrive about 3 and 7 days after your last change, then no more. Turn them off under **Outline tips** in your profile's **Notifications**. Clients don't get them unless they turn them on.

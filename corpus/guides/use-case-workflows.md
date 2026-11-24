@@ -1,7 +1,7 @@
 ---
 id: guides-use-case-workflows
 title: "Workflow automation"
-summary: "When systems disagree or people reconcile by hand, I integrate them, automate the handoffs, and build what's missing, with the lightest tool that works."
+summary: "Integrating business systems, automating processes, and building the software in between: when it's worth doing, what I deliver, and how I choose the right tool."
 type: guide
 status: adopted
 updated: 2026-11-24

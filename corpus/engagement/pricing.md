@@ -4,9 +4,9 @@ title: How I price my work
 summary: "How a neon1 project is priced: a first call, a written estimate for each piece of work, changes agreed before they are added, approval before work starts, and how paying works."
 type: page
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-13
-edition: "1.12"
+edition: "1.13"
 consumers: [knowledge, chat, ai]
 pdf: true
 featured: true
@@ -30,11 +30,24 @@ Every setup is different, so I price each piece of work on its own, in writing, 
 
 ## What moves a price
 
-How many systems are involved, how much of your real data and edge cases need testing, how carefully a cutover has to be staged, whether it runs in your own cloud account, and how much your staff needs to be walked through. A proposal names which of these drive the estimate.
+A proposal names which of these drive the estimate:
+
+- How many systems are involved.
+- How much of your real data and edge cases need testing.
+- How carefully a cutover has to be staged.
+- Whether it runs in your own cloud account.
+- How much your staff needs to be walked through.
 
 ## What's included, and what isn't
 
-A price covers the whole result: working out what's needed, testing it with your real cases, a runbook, a walkthrough for your staff, every account left in your name, and a free fix if something I delivered doesn't work as agreed and you tell me within 30 days of handover.
+A price covers the whole result:
+
+- Working out what's needed.
+- Testing it with your real cases.
+- A runbook.
+- A walkthrough for your staff.
+- Every account left in your name.
+- A free fix if something I delivered doesn't work as agreed and you tell me within 30 days of handover.
 
 Separately, subscriptions and hardware are yours, billed by the vendor where possible, and the proposal lists each with an estimate. Anything I buy for you is paid back at exactly what the receipt shows, with no markup, and only after you've agreed to it.
 
