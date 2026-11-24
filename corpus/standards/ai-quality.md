@@ -6,9 +6,9 @@ type: standard
 status: adopted
 updated: 2026-11-24
 created: 2025-08-26
-consumers: [ai]
+consumers: [knowledge, chat, ai]
 pdf: true
-edition: "1.7"
+edition: "1.8"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]

@@ -4,9 +4,9 @@ title: Writing
 summary: "How everything neon1 writes is written, from policies and proposals to READMEs, commit messages, code comments, and interface text."
 type: standard
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-08-05
-edition: "2.3"
+edition: "2.4"
 order: 1
 consumers: [ai]
 pdf: true
@@ -24,6 +24,7 @@ related: [standards-development, standards-documentation, standards-code-style]
 4. **Say only what's true and supported.** Keep planned, built, tested, released, and shown to help distinct. Don't invent experience, numbers, quotes, or results. Say when something is unknown.
 5. **Use the fewest words that keep the full meaning.**
 6. **Keep the voices straight.** I'm "I," neon1 is the business, and "you" is the reader.
+7. **Write for people first.** A page is for the person reading it. What AI consumers need lives in structure, such as the consumers list, the short box, and directives, never in prose aimed at a machine.
 
 ## Voice
 

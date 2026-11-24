@@ -6,6 +6,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ### Changed
 - How I work with AI (edition 2.0, was How I use AI): says what AI does in my work, what stays with me, how it's checked, and what Neo is. About (edition 2.7), the Capability statement (edition 2.6), Working with neon1 (edition 1.29), AI quality and oversight (edition 1.7), and Neo's directive (edition 3.9) point to it, and the privacy and data policy (edition 3.8) uses the new title.
+- AI quality and oversight (edition 1.8) now shows in the Knowledge Center and in Neo's documents, so the links to it open a page here. Writing (edition 2.4) adds a seventh rule: write for people first, and keep what AI consumers need in structure. How I work with AI says the corpus is public, so people can read what Neo and my tools work from.
 - Diagrams show as images with an Open full size link, without the "Diagram source (Mermaid)" dropdown. This affects the fourteen diagrams in How neon1 is built. How neon1.tech works (edition 1.15) says so. The Mermaid source stays in the document for GitHub.
 
 ## v0.52.6 - 2026-11-23

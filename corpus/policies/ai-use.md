@@ -35,7 +35,7 @@ The [AI quality and oversight](../standards/ai-quality.md) standard sets how AI 
 
 ## How it fits together
 
-One loop runs through everything. I research and decide, then recompose and build with AI's help, and check the result. Automated tests run on every change, and each change goes to a private copy of the site and 1NEON first. I look it over there, approve the release, and it goes live. neon1's words are written once, in the same corpus that holds this page, and the site, Neo, and 1NEON read from it, so a fact changes in one place. After release, budgets and caps watch spend and misuse, and a weekly refresh keeps Neo's documents current. When a model changes, Neo's test questions decide whether the new one replaces the old. [How neon1 is built](../company/architecture.md) shows the parts.
+One loop runs through everything. I research and decide, then recompose and build with AI's help, and check the result. Automated tests run on every change, and each change goes to a private copy of the site and 1NEON first. I look it over there, approve the release, and it goes live. neon1's words are written once, in the same corpus that holds this page, and the site, Neo, and 1NEON read from it, so a fact changes in one place. It's public, so you can read what Neo and my AI tools work from. After release, budgets and caps watch spend and misuse, and a weekly refresh keeps Neo's documents current. When a model changes, Neo's test questions decide whether the new one replaces the old. [How neon1 is built](../company/architecture.md) shows the parts.
 
 ## Neo
 
