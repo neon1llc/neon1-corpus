@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Changed
-- How neon1.tech works (edition 1.16) says Neo answers 60 questions a day for the whole site, down from 200.
+- How neon1.tech works (edition 1.16) says Neo answers 15 questions an hour per visitor, down from 60, and 60 a day for the whole site, down from 200.
 
 ## v0.52.9 - 2026-11-24
 
