@@ -9,7 +9,7 @@ origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
 updated: 2026-11-24
 created: 2026-11-07
-edition: "1.29"
+edition: "1.30"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -42,7 +42,7 @@ What you approve in a [proposal](../examples/proposal.md) is what we both agree 
 
 ## Do you use AI?
 
-Yes. It helps me research, recompose my writing, review, and build faster, and I direct it. I make the decisions, approve every release, and answer for the result. [How I work with AI](../policies/ai-use.md) has the detail.
+Yes. It helps me research, polish my writing, review, and build faster, and I direct it. I make the decisions, approve every release, and answer for the result. [How I work with AI](../policies/ai-use.md) has the detail.
 
 ## What if something urgent comes up?
 
