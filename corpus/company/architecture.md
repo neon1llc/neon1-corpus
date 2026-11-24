@@ -442,5 +442,3 @@ stateDiagram-v2
 - [neon1-chat](https://github.com/neon1llc/neon1-chat): Neo.
 - [neon1-corpus](https://github.com/neon1llc/neon1-corpus): every document, and these diagrams.
 - [Decisions](decisions.md): why it's built this way, and what it costs.
-- [Operating record](operating-record.md): what it costs to run, how long a release takes, and what I've tested by breaking it.
-- [Neo and releases at four depths](four-depths.md): the same story at four levels of detail.

@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Added
-- Drafts of seven decision records (Decisions index, with Neo's model, Neo's prompt, spending limits, release proof, abuse counters, licenses, and one source), an Operating record with measured costs and release times, Neo and releases at four depths, and four blog notes from real operations. Each leaves marked places for my own words, so none is adopted yet. How neon1 is built (edition 1.9) links the three company pages.
+- Decisions, a draft: the main choices behind how neon1 runs, with why, what would change them, and what I missed. How neon1 is built (edition 1.9) links to it.
 
 ## v0.52.9 - 2026-11-24
 
