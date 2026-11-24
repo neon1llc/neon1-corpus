@@ -4,11 +4,11 @@ title: Capability statement
 summary: "neon1 on one page for a buyer, partner, or procurement office: what it does, how it differs, work it has delivered, and the company's details."
 type: page
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-08-05
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.5"
+edition: "2.6"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -26,6 +26,7 @@ Four services: [workflow automation](../guides/use-case-workflows.md), [cloud an
 - **One engineer** from the first call to the handover. Any partner on a project is named in the proposal and on the case study.
 - **Defined scope.** Deliverables, acceptance criteria, and a price are agreed before work starts.
 - **Measured results.** Work is checked against agreed criteria, and published results say how they were measured.
+- **AI under my direction.** AI does much of the drafting, coding, and checking. I decide, approve every release, and answer for the result ([how I work with AI](../policies/ai-use.md)).
 - **Open code.** neon1's tools and this site are public on [GitHub](https://github.com/neon1llc). AWS CLIP and 1NEON are MIT and DeployOps is Apache-2.0. The site, Neo, the infrastructure, and the corpus tooling are source-available under FSL-1.1, and neon1's documents are CC BY-ND 4.0.
 
 ## Delivered work

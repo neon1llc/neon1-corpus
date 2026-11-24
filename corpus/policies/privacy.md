@@ -4,9 +4,9 @@ title: Privacy and data policy
 summary: "What neon1 collects on neon1.tech, in Neo, in the 1NEON portal, and in client work, where it goes, how long it's kept, and what you can do about it."
 type: policy
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-24
 created: 2026-11-06
-edition: "3.7"
+edition: "3.8"
 consumers: [site, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -16,7 +16,7 @@ related: [policy-cookies, policy-ai-use, policy-terms, policy-service-agreement,
 
 # Privacy and data policy
 
-*Last updated November 20, 2026.* This edition adds free accounts: what I collect at sign-up, the bot check (Cloudflare Turnstile), the check-in emails, and when a free account is deleted. Nothing changes for clients.
+*Last updated November 24, 2026.* This edition adds free accounts: what I collect at sign-up, the bot check (Cloudflare Turnstile), the check-in emails, and when a free account is deleted. Nothing changes for clients.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant on the website), and the 1NEON client portal at neon1.tech/1NEON, and does technology work for clients. This policy covers all of them. The [cookie and browser storage notice](https://neon1.tech/1NEON/cookies) is part of it. [How neon1 is built](https://neon1.tech/knowledge/company/architecture/) describes the systems.
 
@@ -85,7 +85,7 @@ Much of my work happens in your accounts and systems rather than in 1NEON. There
 
 - I use named accounts with the least access the job needs, and I remove my access at handover and check that it's gone.
 - I look at your information only as far as the work needs, and I don't copy it to my own systems unless the work requires it and you agree.
-- Your confidential information doesn't go into an AI service unless you've approved that service in writing, as [How I use AI](https://neon1.tech/knowledge/policies/ai-use/) explains.
+- Your confidential information doesn't go into an AI service unless you've approved that service in writing, as [How I work with AI](https://neon1.tech/knowledge/policies/ai-use/) explains.
 - Real client information never appears in a demo, a public post, or a code issue.
 
 ### Regulated data

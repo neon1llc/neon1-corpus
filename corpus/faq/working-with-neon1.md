@@ -7,9 +7,9 @@ consumers: [site, chat, knowledge, ai, portal]
 pdf: true
 origin: "neon1-site src/app/public/index.html#faq"
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-07
-edition: "1.28"
+edition: "1.29"
 home:
   - "Can I start without a call?"
   - "How do you treat our data and accounts?"
@@ -39,6 +39,10 @@ Neither the call nor the assessment needs the other first. [Book a call](https:/
 I use only the access the job needs, keep your information confidential, and remove my access when we're done. We sign a short [service agreement](../engagement/service-agreement.md) once, before any paid work.
 
 What you approve in a [proposal](../examples/proposal.md) is what we both agree to. Personal or health data needs the right agreement first, such as a Business Associate Agreement.
+
+## Do you use AI?
+
+Yes. AI does much of the drafting, coding, and checking under my direction. I decide, approve every release, and answer for the result. [How I work with AI](../policies/ai-use.md) has the detail.
 
 ## What if something urgent comes up?
 

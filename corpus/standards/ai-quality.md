@@ -4,11 +4,11 @@ title: AI quality and oversight
 summary: When neon1 uses AI, how it's tested before anyone relies on it, and where a person stays in charge.
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-24
 created: 2025-08-26
 consumers: [ai]
 pdf: true
-edition: "1.6"
+edition: "1.7"
 order: 14
 origin: "neon1's internal handbook, AI quality and oversight"
 related: [standards-security-and-data, standards-technology-decisions, policy-ai-use]
@@ -16,7 +16,7 @@ related: [standards-security-and-data, standards-technology-decisions, policy-ai
 
 # AI quality and oversight
 
-I use AI when it makes a defined task better after counting errors, review time, privacy, cost, and upkeep. A smooth demo doesn't show dependability, so I start with AI a person can check and correct, and earn autonomy with evidence.
+I use AI when it makes a defined task better after counting errors, review time, privacy, cost, and upkeep. A smooth demo doesn't show dependability, so I start with AI a person can check and correct, and earn autonomy with evidence. How AI is used in my own work is in [How I work with AI](../policies/ai-use.md).
 
 ## Whether AI belongs in the solution
 
