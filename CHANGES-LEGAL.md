@@ -4,6 +4,14 @@ Every substantive change in the "harder pass" to the legal pages, so a lawyer ca
 
 All six policy pages now read "Last updated November 20, 2026" and carry that date and a new edition, because their text changed.
 
+## templates/services-agreement.md, section 5 (November 25, 2026), for lawyer review
+
+- Removed deemed acceptance: work was accepted if nothing was heard within five business days of the demonstration. Acceptance is now only what the client records, in 1NEON or in writing, and silence never counts.
+- The five-business-day deadline for reporting a failed check is removed with it.
+- Effect to review: the balance (section 3) and the 30-day defect period (section 6) start only at recorded acceptance, so a client who doesn't respond holds both open. Consider what, if anything, protects payment then.
+- templates/proposal.md and examples/proposal-options.md now say the same.
+- Not changed: the service agreement clients sign in 1NEON (engagement/service-agreement.md). Check that it matches.
+
 ## engagement/service-agreement.md, edition 2.3 (November 24, 2026), for lawyer review
 
 New terms, not yet reviewed by a lawyer:

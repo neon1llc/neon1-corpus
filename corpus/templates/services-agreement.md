@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-25
 created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.8"
+edition: "2.0"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -61,7 +61,7 @@ Neither of us adds work, cost, or time without a written [change request](../for
 
 ## 5. Acceptance
 
-The work is accepted when the checks in its proposal pass in front of you. If a check fails, tell me which one within five business days of the demonstration, and I'll fix it and show you again. If I don't hear back in that time, the work is accepted.
+The work is accepted when you record your acceptance, in 1NEON or in writing, after the checks in its proposal pass in front of you. If a check fails, tell me which one, and I'll fix it and show you again. Silence never counts as acceptance.
 
 ## 6. After handover
 

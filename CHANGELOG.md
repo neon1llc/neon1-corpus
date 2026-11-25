@@ -7,6 +7,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Fixed
 - Cookie and browser storage notice (edition 1.11) lists every item neon1.tech and 1NEON save, including scroll positions, the shared look choice, and chat drafts.
 
+### Changed
+- Work is accepted only when the client records it, never by silence: the services agreement template, proposal template, and filled proposal with options say so, and 1NEON help says reminders go after 3 and 7 business days while a decision waits.
+- DeployOps states its minimum Python version, and How a project runs gains a missing comma in its summary.
+
+
 ## v0.54.0 - 2026-11-24
 
 ### Added
