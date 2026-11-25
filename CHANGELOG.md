@@ -2,6 +2,11 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- Work is accepted only when the client records it, never by silence: the services agreement template, proposal template, and filled proposal with options say so, and 1NEON help says reminders go after 3 and 7 business days while a decision waits.
+
 ## v0.54.0 - 2026-11-24
 
 ### Added

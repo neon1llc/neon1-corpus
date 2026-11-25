@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-25
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.9"
+edition: "2.0"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -114,7 +114,7 @@ If something outside either of our control holds the work up, I'll pause the tim
 
 ## Acceptance
 
-The work is accepted when these checks pass in front of you:
+The work is accepted when these checks pass in front of you and you record your acceptance:
 
 - [ ] ____
 - [ ] ____
