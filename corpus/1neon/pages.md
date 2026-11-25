@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-10
-edition: "1.20"
+edition: "1.21"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -74,7 +74,7 @@ How the assessment and outline work is in [how 1NEON accounts work](../guides/fr
 - **Files** (`/1NEON/o/{org}/documents`) lists every file. Anyone, viewers too, can **Upload** at Organization level, under a project, or in one of its layers, up to 100 MB each (a free account holds 10 files, 10 MB each and 50 MB in all). **Move** refiles one, and issued proposals are listed too. Files move through **Receiving**, **Checking** (virus and size), **Ready**, **Rejected** (a threat found), or **Failed**. PDFs, pictures, and text open in a tab, and others download. Uploaders and admins can delete.
 - **Insights** (`/1NEON/o/{org}/insights`) charts open and overdue work, the on-time rate, days to a decision, measures at target, items finished per week for eight weeks, projects by layer, and health.
 - **Settings** (`/1NEON/o/{org}/settings`) has **Where**: the organization's website and where it's based, checked as on sign-up. Any admin can **Change** it without confirming. It's optional. It also shows the agreement's signer and edition (or "not signed yet") with **Read and sign**, the case study and client list choices, **Download everything** under Your data, **Report a bug**, and the board's stages: name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
-- **Your profile** (`/1NEON/me`) has name, title, phone (only you see it), time zone, motion, menu (Default or Mini), and **Notifications** by group (email, text, or neither). Most changes save by themselves. Also here: texts, **Two-step verification** at `#security`, **Replay the tutorial**, and **Sign out**. Two-step changes and signing out take effect at once.
+- **Your profile** (`/1NEON/me`) has name, title, phone (only you see it), time zone, motion, menu (Default or Mini), and **Notifications** by group (email, text, or neither). Most changes save by themselves. Also here: texts, **Two-step verification** at `#security`, **Replay the tutorial**, and **Sign out** (also beside your name in the open menu). Two-step changes and signing out take effect at once.
 - **Contact** (`/1NEON/contact`), in the menu for every account, has email hello@neon1.tech, call or text (424) 32-neon1, and a booked call, with the hours I answer. Anything about a project is best written in that project.
 
 ## Public pages
