@@ -4,12 +4,12 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.7"
+edition: "1.8"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -81,19 +81,26 @@ The work is accepted when the checks in its proposal pass in front of you. If a 
 2. I work under the [security and data standard](../standards/security-and-data.md). If the work touches health information, a [business associate agreement](business-associate-agreement.md) is signed first. Other personal data may need its own terms.
 3. Unless you ask me to delete it, I keep a project's records after it ends, as the privacy policy describes.
 
-## 9. Limits
+## 9. Showing the work
+
+1. Anonymized case studies, blog posts, and examples of the work (choose one): ☒ yes ☐ decide later, project by project ☐ no. Nothing in them names or points to you or your people, or shows your data or confidential details. Section 8 allows what you choose here.
+2. Listing your name as a client (choose one): ☒ ask me first ☐ yes ☐ no.
+3. A quote or logo always takes a separate yes.
+4. You can change these choices in writing at any time, from then on. Ask me to take down something I published about your work, and I remove it from the places I control.
+
+## 10. Limits
 
 1. Each of us is responsible for our own work. Neither of us is liable for the other's lost profits or indirect losses.
 2. My total liability for a project is limited to the fees paid for that project.
 3. These limits don't apply to gross negligence, willful misconduct, or breaking confidentiality.
 
-## 10. Ending
+## 11. Ending
 
 1. Either of us can end this agreement, or a project under it, with ____ days' written notice.
 2. On ending, you pay for work done up to that date, and I hand over everything made so far, with its access and records.
-3. Sections 7, 8, and 9 continue after it ends.
+3. Sections 7 to 10 continue after it ends.
 
-## 11. General
+## 12. General
 
 1. I work as an independent contractor, not an employee.
 2. New York law governs this agreement.

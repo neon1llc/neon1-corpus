@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-10
-edition: "2.14"
+edition: "2.15"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -98,7 +98,7 @@ Approving needs all of these, and 1NEON says which is missing:
 
 1. neon1 has issued the proposal, and the option is in the latest revision and unchanged since.
 2. The revision is within its price check.
-3. An admin of the client organization has signed neon1's [service agreement](../engagement/service-agreement.md) at its current edition. (Not needed in N1-0001.)
+3. An admin of the client organization has signed neon1's [service agreement](../engagement/service-agreement.md) at an edition that still covers approvals. (Not needed in N1-0001.)
 
 The approval screen restates what's accepted. The approver may add conditions ("only after 6pm"), then types their full name and ticks the consent box: "I agree to sign electronically. My typed name is my signature, and I can ask neon1 for a paper copy at any time."
 
@@ -121,9 +121,11 @@ Until the handover is accepted, the decision maker can choose a different option
 
 ## The service agreement
 
-neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. The signature records the edition, a SHA-256 fingerprint of its text, the time, and where it came from. A new edition is signed again before the next approval, and an earlier signature keeps the text it was given.
+neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. As they sign, they choose about anonymous case studies (yes, decide later, no) and neon1's client list (ask first, yes, no). An admin can change either on the same page. The signature records the edition, a SHA-256 fingerprint of its text, the time, and where it came from. Editions 2.1 and 2.3 both cover approvals; under 2.1, case studies are at decide later until an admin chooses. A later edition that changes the terms is signed again before the next approval, and every signature keeps the text it was given.
 
 ## Purchases, hours, and handover
+
+Accepting a handover can carry a few words about the work. neon1 quotes them, without names, only if the client ticks the box.
 
 **Purchases**, in Execute, start from the approved option's expected purchases. Each shows its estimate, the actual cost and where, who buys it, and its receipt. A bought item without a receipt is flagged.
 

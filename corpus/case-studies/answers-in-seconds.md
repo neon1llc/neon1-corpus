@@ -9,9 +9,9 @@ area: "cloud & AI"
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-06
-edition: "1.12"
+edition: "1.13"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: accounting
@@ -35,7 +35,7 @@ The ask: staff ask a normal question and get the approved answer with its source
 
 ## The work
 
-[Xenoss](https://xenoss.io), an AWS partner, held the contract and brought me in as a subcontractor, my first project with a partner. We designed it together, Xenoss maintains it, and I handled ingestion, embeddings, retrieval, and answer quality.
+This was my first project with an AWS Select Partner, a partnership that helps us both: I bring them local client opportunities, they support design and maintenance, and, being local, I'm the lead engineer. The partner held the contract, with me as its subcontractor. We designed it together, they maintain it, and I handled ingestion, embeddings, retrieval, and answer quality.
 
 - Only approved Microsoft 365 libraries sync into versioned, encrypted S3, with source, version, and access details.
 - Bedrock Knowledge Bases, Titan embeddings, and OpenSearch Serverless run hybrid search, so exact form numbers match as well as reworded questions.

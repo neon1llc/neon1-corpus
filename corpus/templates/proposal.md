@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "1.8"
+edition: "1.9"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -40,6 +40,10 @@ ____
 One result you'll be able to see and check:
 
 ____
+
+**Today:** ____ **Target:** ____ **How it's measured:** ____
+
+I note today's number before the work starts and measure it the same way at handover.
 
 ## Included
 

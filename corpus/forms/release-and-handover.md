@@ -4,11 +4,11 @@ title: Release and handover record
 summary: "The checklist that closes a project: acceptance, ownership, recovery, training, access removal, and follow-up."
 type: form
 status: adopted
-updated: 2026-11-09
+updated: 2026-11-24
 created: 2025-09-04
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.0"
+edition: "1.1"
 origin: "neon1's internal handbook, release and handover form and the planning notes, working templates"
 related: [standards-discovery-and-delivery, examples-release-and-handover, forms-service-and-recovery-profile]
 ---
@@ -56,7 +56,13 @@ Acceptance is a decision you record, never assumed from silence.
 
 **Final invoice or milestone:** ____
 
+**The result, before and after:** ____
+
 **Follow-up review date:** ____
+
+**A few words about the work (optional):** ____
+
+- [ ] neon1 may quote these words, without our names
 
 **Permission to publish:**
 

@@ -4,18 +4,18 @@ title: Publication permission record
 summary: "Your specific permission before anything about your project is published."
 type: form
 status: adopted
-updated: 2026-11-15
+updated: 2026-11-24
 created: 2025-08-19
 consumers: [knowledge, ai]
 pdf: true
-edition: "1.2"
+edition: "1.3"
 origin: "neon1's internal handbook, evidence and publication form and the planning notes, working templates"
-related: [standards-outreach]
+related: [standards-outreach, policy-service-agreement]
 ---
 
 # Publication permission record
 
-Working on your project isn't permission to publish it.
+Use this for anything that names or quotes you. Anonymized case studies follow your choice in the [service agreement](../engagement/service-agreement.md): if it's decide later, I use this too.
 
 **Project:** ____ **Date:** ____
 

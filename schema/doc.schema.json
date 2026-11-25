@@ -176,7 +176,7 @@
     },
     "role": {
       "type": "string",
-      "description": "Case study: in what capacity I did the work, in a few words, such as \"As neon1\", \"Through partner Xenoss\", or \"Before neon1, as an employee\". Shown on cards and pages. TBD until confirmed: lint warns, and bundles say \"role not yet confirmed\"."
+      "description": "Case study: in what capacity I did the work, in a few words, such as \"As neon1\", \"Through a partner\", or \"Before neon1, as an employee\". Shown on cards and pages. TBD until confirmed: lint warns, and bundles say \"role not yet confirmed\"."
     },
     "kind": {
       "enum": [

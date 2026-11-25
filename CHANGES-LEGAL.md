@@ -4,6 +4,18 @@ Every substantive change in the "harder pass" to the legal pages, so a lawyer ca
 
 All six policy pages now read "Last updated November 20, 2026" and carry that date and a new edition, because their text changed.
 
+## engagement/service-agreement.md, edition 2.3 (November 24, 2026), for lawyer review
+
+New terms, not yet reviewed by a lawyer:
+
+- "Case studies": permission for anonymized case studies, blog posts, and examples, chosen at signing (yes, decide later, no). 1NEON preselects yes; all three show with equal weight beside the signature. Review the preselected default, the meaning of "anonymized," and whether permission needs its own acknowledgment.
+- "Using your name": ask first (preselected), yes, or no.
+- Either choice can change anytime, going forward, with takedown on request from places neon1 controls.
+- "Confidentiality" now excludes what these choices allow.
+- Edition 2.1 signatures stay valid for approvals. Their case-study choice is treated as decide later, never as yes.
+- templates/services-agreement.md section 9 carries the same choices, with yes and ask first pre-marked on the blank form.
+- Also review: past anonymized case studies rest on the case-study clause in the earlier signed contracts.
+
 ## policies/terms.md (Terms of use)
 
 - Removed "The short version" bullets. They restated the body and added no term.

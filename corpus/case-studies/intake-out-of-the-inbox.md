@@ -9,9 +9,9 @@ area: workflows
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-20
+updated: 2026-11-24
 created: 2026-11-06
-edition: "1.9"
+edition: "1.10"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
@@ -21,7 +21,7 @@ stat: "· 24 → 8 min staff time"
 short_problem: "Intake ran through a shared inbox, with staff chasing documents by email."
 short_work: "An AWS portal where patients upload once and staff see what's complete."
 short_results: "Compared four weeks before and after."
-short_after: "Maintained with Xenoss, and an EHR interface when the vendor allows it."
+short_after: "Maintained with the partner, and an EHR interface when the vendor allows it."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
 
@@ -33,7 +33,7 @@ A new dermatology practice and its sister location ran intake through one shared
 
 ## The work
 
-I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. [Xenoss](https://xenoss.io) held the contract, brought me in as a subcontractor, and helped on design and maintenance.
+I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. I was the lead engineer, being local, with an AWS Select Partner supporting design and maintenance. The partner held the contract, with me as its subcontractor.
 
 - Patients upload once. CloudFront, WAF, and a private S3 site serve the portal, and API Gateway, Cognito, and Python Lambda run the workflow.
 - Each intake has one state in DynamoDB. Documents go to an encrypted S3 vault, locked until a malware scan passes.
@@ -53,4 +53,4 @@ Four weeks before and after, same definitions. At about 250 intakes a month, tha
 
 ## After handover
 
-The EHR stays the clinical record. Xenoss and I maintain the portal, watch the measures, and tune it as both locations grow. Next is a direct EHR interface, once the vendor enables one and the volume justifies it.
+The EHR stays the clinical record. The partner and I maintain the portal, watch the measures, and tune it as both locations grow. Next is a direct EHR interface, once the vendor enables one and the volume justifies it.
