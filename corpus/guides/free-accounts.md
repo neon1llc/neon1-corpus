@@ -6,7 +6,7 @@ type: guide
 status: adopted
 updated: 2026-11-24
 created: 2026-11-15
-edition: "1.13"
+edition: "1.14"
 consumers: [knowledge, ai, portal]
 pdf: false
 audience: "Anyone with a project in mind who'd rather write it down first"
@@ -59,6 +59,7 @@ These are made up, for a building-supply yard.
 | --- | --- | --- |
 | Projects | 3 | No set limit |
 | Needs and notes in a project | 50 | No set limit |
+| Files | 10 files, 10 MB each, 50 MB total | Up to 100 MB each |
 | Inviting your team, proposals, approvals, and invoices | Once we work together | Yes |
 | Message me in the chat | Yes | Yes |
 | Who sees it | You and me | Your team and me |
