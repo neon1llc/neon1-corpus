@@ -2,6 +2,14 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- About links its free work to Where neon1 started and the Capability statement, which now says the high school lab also got software that unified features on its new smart boards.
+
+### Fixed
+- The service agreement shows edition 2.1 again, with the same punctuation clients sign in 1NEON. The 2.2 label came from a punctuation-only edit, so no one has to sign again.
+
 ## v0.53.0 - 2026-11-24
 
 ### Added

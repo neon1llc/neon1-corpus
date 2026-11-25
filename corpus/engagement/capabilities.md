@@ -8,7 +8,7 @@ updated: 2026-11-24
 created: 2025-08-05
 consumers: [chat, knowledge, ai]
 pdf: true
-edition: "2.8"
+edition: "2.9"
 audience: "Business buyers, partners, and procurement offices that ask for a capability statement before talking"
 related: [company-mission, company-registration, company-contact, services, company-charter]
 ---
@@ -38,7 +38,7 @@ Four services: [workflow automation](../guides/use-case-workflows.md), [cloud an
 | Automotive business | neon1 engagement | [Two-site server migration](../case-studies/two-offices-off-local-servers.md) to AWS, with the client's technical lead | Both locations moved with no application rewrite, records reconciled, and restore tested |
 | Small local business | neon1 engagement | [Operations integration and monitoring](../case-studies/one-view-of-the-shop.md): point-of-sale, order tracking, and cameras joined on AWS, on a separate device network | The owner acts on problems from anywhere, not only on site |
 | Schools, families, and teams | neon1 engagement | [Security awareness sessions](../case-studies/security-for-non-security-people.md) | Informational sessions, with accounts and devices secured during the session |
-| Schools and families | Community work, late 2024 to 2025, done free | A high school lab with a quarter of its machines dead, and a veteran's medical alert on a failing landline box | Cloud-managed Chromebooks and a shared GitHub classroom, and an LTE wearable that alerts his family |
+| Schools and families | Community work, late 2024 to 2025, done free | A high school lab with a quarter of its machines dead, and a veteran's medical alert on a failing landline box | Cloud-managed Chromebooks, a shared GitHub classroom, and software that unified features on the lab's new smart boards, and an LTE wearable that alerts his family |
 
 ## Company data
 
