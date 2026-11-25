@@ -11,7 +11,6 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Work is accepted only when the client records it, never by silence: the services agreement template, proposal template, and filled proposal with options say so, and 1NEON help says reminders go after 3 and 7 business days while a decision waits.
 - DeployOps states its minimum Python version, and How a project runs gains a missing comma in its summary.
 
-
 ## v0.54.0 - 2026-11-24
 
 ### Added
