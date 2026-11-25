@@ -18,6 +18,20 @@ import { diagramKey, diagramAlt } from "./markdown.mjs"
 
 export const diagramsDir = join(root, "diagrams")
 
+// Labels stay readable where a drawing is shown smallest. 12px is the design system's smallest type step
+// (--fs-xs). neon1.tech scales a drawing down to its column, which is narrowest, 706px, at a 1024px-wide
+// screen; on a phone it scrolls sideways and is never narrower than that
+export const MIN_LABEL_PX = 12
+export const NARROWEST_COLUMN_PX = 706
+
+/** The smallest label in a drawing as it renders in the narrowest column, in CSS pixels */
+export function smallestLabel(svg) {
+  const width = Number(svg.match(/viewBox="[^"]*?\s([\d.]+)\s[\d.]+"/)?.[1])
+  const sizes = [...svg.matchAll(/<(?:text|tspan)\b[^>]*?\sfont-size="([\d.]+)px"[^>]*>(?=[^<]*[^<\s])/g)].map((m) => Number(m[1]))
+  if (!width || !sizes.length) return undefined
+  return Math.min(...sizes) * Math.min(1, NARROWEST_COLUMN_PX / width)
+}
+
 
 // --- Finding and loading diagrams ---
 
@@ -79,7 +93,7 @@ const CONFIG = {
   htmlLabels: false,
   flowchart: { htmlLabels: false, curve: "basis", padding: 12 },
   // Messages wrap to the space between lifelines, so a sequence stays narrow enough to read on a phone
-  sequence: { useMaxWidth: false, mirrorActors: false, wrap: true, width: 116, actorMargin: 56, messageMargin: 32, noteMargin: 8 },
+  sequence: { useMaxWidth: false, mirrorActors: false, wrap: true, width: 96, actorMargin: 20, messageMargin: 32, noteMargin: 8, diagramMarginX: 8 },
   state: { useMaxWidth: false },
 }
 
@@ -183,6 +197,13 @@ function check() {
   for (const { path, key, alt } of all) {
     if (!alt) errors.push(`corpus/${path}: a mermaid diagram needs a "%% alt: ..." line describing it`)
     if (!drawn[key]) errors.push(`corpus/${path}: diagram ${key} isn't drawn; run node tools/diagrams.mjs draw`)
+  }
+  for (const { path, key } of all) {
+    if (!drawn[key]) continue
+    const px = smallestLabel(drawn[key])
+    if (px === undefined) errors.push(`diagrams/${key}.svg: its label sizes can't be read`)
+    // A tenth of a pixel is rounding, not a smaller label
+    else if (px < MIN_LABEL_PX - 0.05) errors.push(`corpus/${path}: diagram ${key} draws labels at ${px.toFixed(1)}px in a ${NARROWEST_COLUMN_PX}px column; the least is ${MIN_LABEL_PX}px. Narrow it: split it, stack it, or shorten its labels`)
   }
   const keys = new Set(all.map((f) => f.key))
   for (const key of Object.keys(drawn)) if (!keys.has(key)) errors.push(`diagrams/${key}.svg: no diagram uses it; run node tools/diagrams.mjs draw`)

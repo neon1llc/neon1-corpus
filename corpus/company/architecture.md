@@ -9,7 +9,7 @@ origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon
 status: adopted
 updated: 2026-11-24
 created: 2026-11-11
-edition: "1.9"
+edition: "1.10"
 ---
 
 # How neon1 is built
@@ -51,20 +51,30 @@ flowchart TB
 ### Inside 1NEON
 
 ```mermaid
-%% alt: Diagram of 1NEON. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, writes write-protected copies of signatures, invoices, and payments to an S3 records bucket under Object Lock, reads Stripe keys from SSM Parameter Store, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly, uploads files straight to the documents bucket with a presigned link, where each one is scanned for malware, and pays invoices on Stripe Checkout, which calls the API's webhook at /1NEON/api/billing/stripe.
+%% alt: Diagram of how 1NEON serves its app and data. CloudFront serves the 1NEON app from a private S3 bucket and sends /1NEON/api to API Gateway and the 1NEON API Lambda function. The API reads and writes DynamoDB and the S3 documents bucket, and writes write-protected copies of signatures, invoices, and payments to an S3 records bucket under Object Lock.
 flowchart TB
   browser(["Browser"]):::person --> cf["CloudFront"]:::network
   cf -->|"/1NEON"| app[("S3 app bucket<br/>the 1NEON app")]:::storage
   cf -->|"/1NEON/api"| gw["API Gateway"]:::network --> api["1NEON API, Lambda<br/>and its outbox"]:::compute
-  browser -.->|sign in| cognito["Cognito<br/>auth.neon1.tech"]:::security
-  browser -.->|"uploads, presigned"| docs[("S3 documents<br/>malware-scanned")]:::storage
   api --> ddb[("DynamoDB<br/>projects, people")]:::storage
-  api --> docs
+  api --> docs[("S3 documents<br/>malware-scanned")]:::storage
   api --> records[("S3 records<br/>Object Lock, 7 years")]:::storage
-  api -.->|keys| ssm["SSM Parameter Store<br/>Stripe keys"]:::security
+
+  classDef person fill:#ffffff,stroke:#16201a,stroke-width:1.5px,color:#16201a
+  classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700
+  classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+```
+
+```mermaid
+%% alt: Diagram of what 1NEON connects to. The 1NEON API reads Stripe keys from SSM Parameter Store, opens a checkout with Stripe, sends email through SES, and sends texts through End User Messaging. The browser signs in with Cognito directly, uploads files straight to the S3 documents bucket with a presigned link, where each one is scanned for malware, and pays invoices on Stripe Checkout, which calls the API's webhook at /1NEON/api/billing/stripe through CloudFront.
+flowchart LR
+  browser(["Browser"]):::person -.->|sign in| cognito["Cognito<br/>auth.neon1.tech"]:::security
+  browser -.->|upload| docs[("S3 documents<br/>malware-scanned")]:::storage
   browser -.->|pay| stripe["Stripe Checkout"]:::external
-  stripe -.->|"webhook, signed"| cf
-  api -->|"open checkout"| stripe
+  stripe -.->|webhook| cf["CloudFront<br/>to the API"]:::network
+  api["1NEON API, Lambda<br/>and its outbox"]:::compute -->|checkout| stripe
+  api -.->|keys| ssm["SSM Parameter Store<br/>Stripe keys"]:::security
   api --> ses["SES<br/>email"]:::comms
   api --> sms["End User Messaging<br/>texts"]:::comms
 
@@ -100,7 +110,7 @@ sequenceDiagram
   S-->>C: Stripe's payment page
   C->>S: pays
   S->>X: signed webhook, /1NEON/api/billing/stripe
-  X->>X: check signature and age
+  X->>X: check signature, age
   X->>D: record payment once, mark paid if nothing is left
   X->>R: write-protected copy
   X-->>C: bell and email to the organization
@@ -203,7 +213,7 @@ sequenceDiagram
 Production serves clients and visitors. Dev is a private copy for trying changes, with its own buckets, distribution, release store, backend, sign-in pool, and permissions, so it can't reach production or client data.
 
 ```mermaid
-%% alt: Diagram of production and dev side by side. Production, at neon1.tech, is open to everyone: CloudFront serves the website's releases, 1NEON with its own API, table, buckets, and sign-in pool holding real client data, and Neo. Dev, at dev.neon1.tech, sits behind a sign-in gate that needs a secret link and then a passkey or email code from a neon1 admin. Its own CloudFront serves branch previews and the dev release of the website, and a separate 1NEON with its own API, table, buckets, and sign-in pool holding generated test data only. Dev sends chat questions to the live Neo. Production's client data is never copied to dev.
+%% alt: Diagram of production, at neon1.tech, open to everyone. CloudFront serves the website's releases and Knowledge Center, 1NEON with its own API, table, buckets, and sign-in pool holding real client data, and Neo, the chat.
 flowchart TB
   subgraph prod["Production: neon1.tech, open to everyone"]
     direction TB
@@ -213,15 +223,24 @@ flowchart TB
     pportal --> pdata[("Real client data")]:::storage
     pcf --> neo["Neo, the chat"]:::ai
   end
+
+  classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
+  classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700
+  classDef storage fill:#e8f5ea,stroke:#3b8f4a,color:#123d1b
+  classDef ai fill:#e6f4f7,stroke:#1f8a9e,color:#0c3a43
+```
+
+```mermaid
+%% alt: Diagram of dev, at dev.neon1.tech, for neon1 admins only. A sign-in gate leads to its own CloudFront, which serves branch previews, the dev release, and 1NEON dev with its own API, table, buckets, and sign-in pool holding generated test data. Dev sends chat questions to the same Neo as production. Production's client data is never copied to dev.
+flowchart TB
   subgraph dev["Dev: dev.neon1.tech, neon1 admins only"]
     direction TB
     gate["Sign-in gate<br/>secret link, then<br/>passkey or email code"]:::security --> dcf["CloudFront<br/>dev.neon1.tech"]:::network
     dcf --> dsite[("Branch previews<br/>and the dev release")]:::storage
     dcf --> dportal["1NEON dev<br/>its own API, table,<br/>buckets, sign-in pool"]:::compute
-    dportal --> ddata[("Generated test data")]:::storage
+    dportal --> ddata[("Generated test data,<br/>never real client data")]:::storage
   end
-  dcf -->|"chat questions"| neo
-  pdata -.-x|"never copied"| ddata
+  dcf -->|"chat questions"| neo["Neo, the chat<br/>(shared with production)"]:::ai
 
   classDef network fill:#efe9fb,stroke:#7a4fd0,color:#2b1a52
   classDef compute fill:#fff1e3,stroke:#e07b14,color:#4a2700

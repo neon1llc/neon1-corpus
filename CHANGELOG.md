@@ -12,6 +12,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - About links its free work to Where neon1 started and the Capability statement, which now says the high school lab also got software that unified features on its new smart boards.
 
 ### Fixed
+- How neon1 is built (edition 1.10): diagram labels render at 12px or more at every screen width. The 1NEON and production-and-dev diagrams are each two smaller ones, and sequence diagrams are narrower. The diagram check now fails a drawing whose labels would render below 12px in the narrowest column.
 - How 1NEON accounts work (edition 1.14) and the 1NEON pages guide state the free account's file limits: 10 files, 10 MB each, 50 MB total. Earlier entries that name a 15-minute call now say the free first call is 30 minutes.
 - The service agreement shows edition 2.1 again, with the same punctuation clients sign in 1NEON. The 2.2 label came from a punctuation-only edit, so no one has to sign again.
 
