@@ -4,9 +4,9 @@ title: Cookie and browser storage notice
 summary: "The only cookies and browser storage neon1.tech and 1NEON use, and why."
 type: policy
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-25
 created: 2026-11-06
-edition: "1.10"
+edition: "1.11"
 consumers: [site, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/cookies"
@@ -26,6 +26,9 @@ The website sets no cookies. Your browser keeps preferences on your device only.
 | Saved item | What it's for | How long it lasts |
 |---|---|---|
 | `neon1.rain` (local storage) | The rain settings you pick: grid or free, the characters, and pause | Until you clear it |
+| `n1.entries` (session storage) | How far down you had scrolled on each page in this tab's history, so Back, Forward, and reload land where you were | Until the tab closes |
+| `neon1.theme.shared` (local storage) | That you picked a look in this browser, so neon1.tech and 1NEON both follow it | Until you clear it |
+| `neon1.reload:` and a page's path (session storage) | That a page whose styles failed to load was already reloaded once, so it can't loop | Until the page loads cleanly or the tab closes |
 
 ## The 1NEON portal
 
@@ -58,7 +61,10 @@ The portal also saves, on your device only:
 | `1neon.signin` (session storage) | Your email and the sign-in step in progress, so a reload mid sign-in returns to the code step. The code itself is never saved | 5 minutes, or until the tab closes |
 | `1neon.projects.view`, `1neon.projects.view.sort` (local storage) | Whether you last looked at projects as a list or a timeline, and how you sorted them | Until you clear it |
 | `1neon.tour-offered` (session storage) | That the welcome tour was already offered, so it isn't offered again in this tab | Until the tab closes |
-| `1neon.scroll` (session storage) | How far down you had scrolled in each section of the app, so moving between sections and back lands where you were | Until the tab closes, or you sign out |
+| `1neon.entries` (session storage) | How far down you had scrolled on each page in this tab's history, so Back, Forward, and reload land where you were | Until the tab closes, or you sign out |
+| `1neon.scroll` (session storage) | The older scroll record, kept per section; removed the next time the portal opens | Until then |
+| `1neon.chat.draft.` and an organization's ID (local storage) | A chat message you've typed and not sent, so closing the page loses nothing | Until you send it or clear it |
+| `1neon.peeked` (session storage) | That the chat button already showed its label once in this tab | Until the tab closes |
 | `1neon-export` (the browser's private file storage) | Admins only: the zip from **Download everything** while it's built, so a large export doesn't fill memory. Never sent anywhere; your browser copies it to your downloads | 30 minutes after it's saved; if you close the tab sooner, the next time you open Settings or start an export |
 
 Your other preferences are saved with your account.
