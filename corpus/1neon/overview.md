@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-24
 created: 2026-11-10
-edition: "1.9"
+edition: "1.10"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -43,7 +43,7 @@ Items are shown by title. Their IDs only appear in links (`#item-…`).
 - **Menu** (top left, **Menu** at the bottom on phones) opens every page. Choosing **Mini** on the profile also keeps a slim column of icons.
 - **Organization chooser** at the top of the menu switches organizations. neon1 also sees **All clients**, read only ("Open a client to make changes").
 - **Search** (the button, Ctrl K or ⌘K, or `/`) jumps to any page or project and starts common actions.
-- **?** (top right) opens help for the page in view, with **Show me on this page** (a spotlight tour) and **Full tour**.
+- **?** (top right) opens help for the page in view, with **Tour this page** (a spotlight tour, where the page has one) and **Full tour**.
 - **The bell** glows when something new happened in the organization and lists what changed and who did it.
 - **Neo** sits at the bottom right. It answers questions, links to pages, runs tours, and with the person's go-ahead does things for them.
 
@@ -82,10 +82,10 @@ Tours point at named spots, which exist only on the page listed and only while o
 
 - **Every page:** `nav-home`, `nav-board`, `nav-projects`, `nav-layers`, `nav-files`, `nav-me` (menu entries, with the menu open or Mini on), `menu`, `search`, `help`.
 - **Organization pages:** `notifications` (the bell).
-- **Home:** `needs-you`, `coming-up`, `get-started`, `activity`.
+- **Home:** `next-step-ask` (only when Next step shows), `needs-you`, `coming-up` (the calendar), `glance`, `get-to-know`, `get-started`, `activity`.
 - **Board, All clients:** `board-column`, `board-card`.
 - **Projects:** `new-project`, `project-list`.
-- **One project:** `next-step`, `stage`, `layers`, and on Needs `proposal` (the proposal strip under Options).
+- **One project:** `next-step`, `readiness` (Overview, until a decision), `stage`, `layers`, and on Needs `proposal` (the proposal strip under Options).
 - **New project:** `wizard`. **One layer across projects:** `layer-list`.
 - **People:** `invite`, `people-list`. **Files:** `upload`.
 - **Insights:** `kpis`, `weekly`, `by-layer`. **Settings:** `stages`. **Profile:** `passkey`.

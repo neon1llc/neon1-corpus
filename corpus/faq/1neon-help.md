@@ -6,7 +6,7 @@ type: faq
 status: adopted
 updated: 2026-11-24
 created: 2026-11-07
-edition: "2.16"
+edition: "2.17"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -180,7 +180,7 @@ A sign-in with your face, fingerprint, or device PIN instead of a code. It's phi
 ## Your account
 
 ### How do I change my name or the look?
-Open your profile from the menu and change your name, title, theme, menu, or notifications. Most changes save by themselves. [Watch it](https://neon1.tech/1NEON/live?play=profile).
+Open your profile from the menu to change your name, title, time zone, menu, or notifications. Most changes save by themselves. The theme and dark mode switches are at the bottom of the menu. [Watch it](https://neon1.tech/1NEON/live?play=profile).
 
 ### How do I sign out?
 Open your profile and choose **Sign out**.
