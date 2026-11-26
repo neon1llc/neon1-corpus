@@ -4,9 +4,9 @@ title: "Workflow automation"
 summary: "Integrating business systems, automating processes, and building the software in between: when it's worth doing, what I deliver, and how I choose the right tool."
 type: guide
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2025-09-10
-edition: "2.4"
+edition: "2.5"
 consumers: [chat, knowledge, ai]
 pdf: true
 audience: "Businesses and organizations whose systems need to work together, and the people who run them"
@@ -28,7 +28,7 @@ related: [services, standards-discovery-and-delivery, standards-technology-decis
 
 - **Integration.** APIs, webhooks, and event-driven sync between CRM, ERP, point-of-sale, accounting, scheduling, and document systems, with identifiers mapped and a clear source of truth for each record.
 - **Exception handling.** Retries, idempotency, reconciliation reports, and a queue for anything that needs a person, so failures are visible rather than silent.
-- **Custom applications.** Portals, internal tools, and services where configuration and integration can't meet the requirement.
+- **Custom pieces.** Small services and screens where configuration can't meet the requirement. Larger applications are [custom software](use-case-custom-software.md).
 - **Reporting and visibility.** Data consolidated into dashboards and reports that people use.
 - **AI where it earns its place.** Document classification and extraction with review, measured against real samples.
 
