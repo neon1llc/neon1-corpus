@@ -20,7 +20,10 @@ related: [policy-service-agreement, templates-proposal, examples-proposal-option
 
 We sign this once, before any paid work. After that, each piece of work is a [proposal](proposal.md) saying what will be done, by when, and for how much. This agreement holds the parts that stay the same, so a proposal can stay short.
 
-**Client (legal name):** ____ **Mailing address:** ____
+**Client (legal name):** ____
+
+**Mailing address:** ____
+____
 
 **neon1 LLC**, 418 Broadway, Ste R, Albany, NY 12207
 
