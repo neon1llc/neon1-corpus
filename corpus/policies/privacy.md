@@ -51,8 +51,8 @@ Please don't type anything sensitive into Neo.
 
 The portal is available to people invited by me or by an administrator of their organization, and to anyone who makes their own free account (below). It holds:
 
-- **Account details:** your email address, and optionally your name, job title, phone number, and profile photo.
-- **Organization details:** your organization's name, and, if you add them, where it's based and a link to its website or a public page (Google, Yelp, LinkedIn). I use these to see who I'm working with.
+- **Account details:** your email address, and optionally your name, job title, phone number, profile photo, LinkedIn profile, and website. People in the organizations you belong to can see your LinkedIn profile and website.
+- **Organization details:** your organization's name, and, if you add them, where it's based, a link to its website or a public page (Google, Yelp), and its LinkedIn page. I use these to see who I'm working with.
 - **Sign-in data:** your sign-in methods (an emailed code or a passkey, with an authenticator app as an optional second step; there's no password) and security events, such as sign-in times, the IP address and browser used, and when a sign-in method was added or removed. Passkeys and email codes are handled by Amazon Cognito.
 - **Authenticator app key:** if you set up an authenticator app, the portal creates the app's secret key and keeps it, encrypted, so it can check your 6-digit codes. Only the portal's server reads it, you see it once during setup, and it's deleted when you remove the app. 
 - **Project content:** what you and your colleagues add, such as requirements, decisions, tasks, metrics, comments, and files. Every uploaded file is scanned for malware (Amazon GuardDuty) before anyone can download it, and a file that fails the scan is blocked.
