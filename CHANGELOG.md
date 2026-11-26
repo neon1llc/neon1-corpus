@@ -4,6 +4,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Added
+- Two services: custom software, and modernization (greenfield, migrate, retrofit, upgrade, and repair), each with its own page. Services now lists six, with DevOps under cloud and AI engineering and security covering readiness and awareness.
+
 ### Changed
 - About and the capability statement add recent AI evaluation and operations work, and the capability statement lists the University of Texas AI and machine learning program.
 

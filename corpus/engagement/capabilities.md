@@ -19,7 +19,7 @@ neon1 is an independent engineering and technology consulting practice run by Pr
 
 ## What I do
 
-Four services: [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [networks, devices, and connected systems](../guides/use-case-networks.md), and [security readiness](../guides/use-case-security-readiness.md). Audit opinions come from independent auditors.
+Six services: [custom software](../guides/use-case-custom-software.md), [workflow automation](../guides/use-case-workflows.md), [cloud and AI engineering](../guides/use-case-cloud.md), [modernization](../guides/use-case-modernization.md), [networks, devices, and connected systems](../guides/use-case-networks.md), and security [readiness](../guides/use-case-security-readiness.md) and [awareness](../guides/use-case-security-awareness.md). Audit opinions come from independent auditors.
 
 ## How engagements work
 
