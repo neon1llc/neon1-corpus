@@ -7,6 +7,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - About and the capability statement add recent AI evaluation and operations work, and the capability statement lists the University of Texas AI and machine learning program.
 
+### Fixed
+- Booking links go to calendly.com/book-neon1/initial. The old link stopped working.
+
 ## v0.54.1 - 2026-11-25
 
 ### Fixed
