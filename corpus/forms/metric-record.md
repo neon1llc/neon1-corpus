@@ -48,5 +48,4 @@ One per measure. If eligibility changes, write a new version rather than editing
 **Objective:** ____
 
 **Key results by date:** ____
-
 ____

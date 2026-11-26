@@ -19,14 +19,13 @@ related: [standards-technology-decisions, templates-proposal]
 
 ## The decision
 
+**In one sentence:** ____
 ____
 
 ## Where things stand
 
 The task, the people, the systems that hold the records, the recurring friction, and the evidence:
-
 ____
-
 ____
 
 ## Options

@@ -30,15 +30,12 @@ related: [examples-proposal-options, examples-proposal, templates-services-agree
 ## Your problem
 
 In your words, from our discovery conversation:
-
 ____
-
 ____
 
 ## The result
 
 One result you'll be able to see and check:
-
 ____
 
 **Today:** ____ **Target:** ____ **How it's measured:** ____

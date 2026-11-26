@@ -26,9 +26,7 @@ An empty field is an open question. Don't assume an answer.
 ## The task
 
 **The last real example, start to finish.** What started it, what information was needed, who handled each step, where it waited, and what counted as done:
-
 ____
-
 ____
 
 **Current tools and subscriptions:** ____

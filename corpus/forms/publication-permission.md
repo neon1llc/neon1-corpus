@@ -22,7 +22,6 @@ Use this for anything that names or quotes you. Anonymized case studies follow y
 ## The claim
 
 **Exact wording proposed for publication:** ____
-
 ____
 
 **Kind of claim:**

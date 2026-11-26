@@ -36,7 +36,6 @@ related: [templates-business-associate-agreement, examples-baa-request, forms-in
 ## Part 2: The project and the data
 
 **What the project is about:** ____
-
 ____
 
 **Systems neon1 would work in:** ____

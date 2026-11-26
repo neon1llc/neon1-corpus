@@ -4,11 +4,11 @@ title: Design and accessibility
 summary: "How neon1 designs interfaces and documents for any device and for people using assistive technology."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-26
 created: 2025-08-26
 consumers: [ai]
 pdf: true
-edition: "2.2"
+edition: "2.3"
 order: 11
 origin: "neon1's internal handbook, brand and client trust (website behavior), extended"
 related: [standards-development, policy-accessibility]
@@ -50,6 +50,17 @@ Pages load only what they need, with no trackers, ad scripts, or outside fonts. 
 
 Short forms with only the questions the task needs, one per field, and the right phone keyboard. A submitted form says it was received and what's next, and a wrong field loses nothing.
 
+## Forms on paper
+
+Templates and forms meant to be filled in by hand or in a PDF editor follow one layout:
+
+- **A label above its line.** Each field is a short label, then a line long enough to write on by hand. Fields that belong together share a row; a date or number takes a short line, a name or address a long one.
+- **Room for longer answers.** A question that needs more than a few words gets several lines under it, not one.
+- **Signature blocks per party.** Each party has its own block, side by side: signature, printed name, title, and date, each on its own line, with the signature line tallest.
+- **Initials only where they do work.** An agreement two parties sign on paper carries both sets of initials at the foot of every page, so no page can be swapped after signing. Initials aren't added to single clauses (the signature covers the whole document), to forms one person signs, or to agreements signed electronically, where a fingerprint of the exact text already shows nothing changed.
+
+In the source, a field is `**Label:** ____`; extra `____` lines under it make room for a longer answer; a signature block is a table whose first column names its lines.
+
 ## For your projects
 
 The same standard applies to what I build for you. If something in scope can't meet it, such as a vendor's checkout page, I say so and note it in the handover.
@@ -60,4 +71,5 @@ The same standard applies to what I build for you. If something in scope can't m
 - [Introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/), W3C Web Accessibility Initiative: who accessibility serves, in plain terms.
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/), Nielsen Norman Group: broad rules for judging an interface.
 - [GOV.UK Design System](https://design-system.service.gov.uk/), UK Government Digital Service: tested patterns for forms, errors, and navigation.
+- [U.S. Web Design System: form templates](https://designsystem.digital.gov/templates/form-templates/), General Services Administration: labels above fields, related fields grouped, and one column for scanning.
 - [Web Vitals](https://web.dev/articles/vitals), Google: measures of how fast and stable a page feels.

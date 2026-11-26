@@ -24,7 +24,6 @@ No extra work or spending starts until this is approved in writing. The original
 ## The change
 
 **What's being asked for:** ____
-
 ____
 
 **Why:** ____

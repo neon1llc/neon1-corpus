@@ -30,11 +30,9 @@ Filled in during or right after the first call. No passwords, health details, or
 ## The problem
 
 **In your words:** ____
-
 ____
 
 **The last time it happened:** ____
-
 ____
 
 **Current steps and tools:** ____
