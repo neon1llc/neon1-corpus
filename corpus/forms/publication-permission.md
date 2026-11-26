@@ -15,7 +15,7 @@ related: [standards-outreach, policy-service-agreement]
 
 # Publication permission record
 
-Use this for anything that names or quotes you. Anonymized case studies follow your choice in the [service agreement](../engagement/service-agreement.md): if it's decide later, I use this too.
+Use this for anything that names or quotes you. Anonymized case studies follow your choice in the [service agreement](../engagement/service-agreement.md): if it's decide later, I use this before publication.
 
 **Project:** ____ **Date:** ____
 

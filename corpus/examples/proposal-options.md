@@ -173,8 +173,9 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 |---|---|---|---|
 | Hourly rate | *Stated in the real proposal* | *Stated in the real proposal* | *Stated in the real proposal* |
 | Estimate | 26 to 34 hours at that rate | 58 to 74 hours at that rate | 80 to 100 hours at that rate |
-| Deposit when you approve | Half of the low end | Half of the low end | Half of the low end |
-| Final invoice, when you accept the handover | The hours worked, less the deposit | The hours worked, less the deposit | The hours worked, less the deposit |
+| Deposit when you approve | 30% of the low end | 30% of the low end | 30% of the low end |
+| Invoices after that | The hours worked, every two weeks | The hours worked, every two weeks | The hours worked, every two weeks |
+| Final invoice, at handover | The hours worked, less earlier invoices | The hours worked, less earlier invoices | The hours worked, less earlier invoices |
 | Paid directly by you | A small monthly AWS bill | A small monthly AWS bill for the queue and runtime | New hardware, and the cost of leaving the POS contract |
 
 **Changes:** no extra work or spending without a written, approved [change request](../forms/change-request.md).
