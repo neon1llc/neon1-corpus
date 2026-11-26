@@ -58,7 +58,7 @@ I note today's number before the work starts and measure it the same way at hand
 
 ## Options
 
-### ____ (A, B, C)
+### Option ____
 
 **What it is, in a sentence:** ____
 
