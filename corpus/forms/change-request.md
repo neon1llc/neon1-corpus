@@ -47,6 +47,9 @@ ____
 - [ ] Approved with changes: ____
 - [ ] Declined
 
-**Approved by:** ____ **Date:** ____
-
-**For neon1:** ____ **Date:** ____
+| | Approved for the client | For neon1 LLC |
+|---|---|---|
+| Signature | ____ | ____ |
+| Name | ____ | Pradeep Tathineni |
+| Title | ____ | Owner |
+| Date | ____ | ____ |

@@ -96,8 +96,8 @@ These commitments describe how Business Associate meets Section 2 for typical ne
 
 | | Covered Entity | Business Associate |
 |---|---|---|
+| Signature | ____ | ____ |
 | Name | ____ | Pradeep Tathineni |
 | Title | ____ | Owner, neon1 LLC |
-| Signature | ____ | ____ |
 | Date | ____ | ____ |
 | Notice address | ____ | neon1 LLC, 418 Broadway, Ste R, Albany, NY 12207 |

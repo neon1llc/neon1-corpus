@@ -77,9 +77,9 @@ Third-party services, such as cloud hosting, licenses, and hardware, are billed 
 
 | | Client | neon1 LLC |
 |---|---|---|
+| Signature | ____ | ____ |
 | Name | ____ | Pradeep Tathineni |
 | Title | ____ | Owner |
-| Signature | ____ | ____ |
 | Date | ____ | ____ |
 
 *1 is glad to be of service.*

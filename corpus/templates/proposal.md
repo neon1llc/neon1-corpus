@@ -60,7 +60,7 @@ I note today's number before the work starts and measure it the same way at hand
 
 ### ____ (A, B, C)
 
-____ (what it is, in a sentence)
+**What it is, in a sentence:** ____
 
 **Includes:** ____
 
@@ -70,7 +70,7 @@ ____ (what it is, in a sentence)
 
 **Target result:** ____
 
-**neon1's time:** about ____ hours **Timeline:** ____ **Paid directly by you:** ____
+**neon1's time (hours):** ____ **Timeline:** ____ **Paid directly by you:** ____
 
 **Which to choose:** one line per option on when it's the right one.
 
@@ -145,8 +145,11 @@ After handover, you review the work against these checks within 10 business days
 
 **Option chosen:** ____
 
-**For the client:** ____ **Title:** ____ **Date:** ____
-
-**For neon1 LLC:** ____ **Date:** ____
+| | For the client | For neon1 LLC |
+|---|---|---|
+| Signature | ____ | ____ |
+| Name | ____ | Pradeep Tathineni |
+| Title | ____ | Owner |
+| Date | ____ | ____ |
 
 *1 is glad to be of service.*

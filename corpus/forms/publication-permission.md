@@ -55,4 +55,9 @@ ____
 
 **Review or expiry date:** ____
 
-**Approved by:** ____ **Date:** ____
+| | Approved by |
+|---|---|
+| Signature | ____ |
+| Name | ____ |
+| Title | ____ |
+| Date | ____ |

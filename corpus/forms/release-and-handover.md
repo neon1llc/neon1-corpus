@@ -69,6 +69,9 @@ Acceptance is a decision you record, never assumed from silence.
 - [ ] Not requested
 - [ ] Requested, see the publication permission record
 
-**Signed for the client:** ____ **Date:** ____
-
-**Signed for neon1:** ____ **Date:** ____
+| | For the client | For neon1 LLC |
+|---|---|---|
+| Signature | ____ | ____ |
+| Name | ____ | Pradeep Tathineni |
+| Title | ____ | Owner |
+| Date | ____ | ____ |

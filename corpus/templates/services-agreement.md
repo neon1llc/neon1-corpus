@@ -122,9 +122,9 @@ Neither of us adds work, cost, or time without a written [change request](../for
 
 | | Client | neon1 LLC |
 |---|---|---|
+| Signature | ____ | ____ |
 | Name | ____ | Pradeep Tathineni |
 | Title | ____ | Owner |
-| Signature | ____ | ____ |
 | Date | ____ | ____ |
 
 ## Sources

@@ -17,7 +17,7 @@ related: [standards-operating-principles]
 
 Fill this in before a shared engagement starts. The client sees it. A past project together isn't an agreement for future work.
 
-**Client:** ____ **neon1 LLC** and **partner:** ____
+**Client:** ____ **Partner:** ____
 
 **Date:** ____ **Version:** ____
 
