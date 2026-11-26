@@ -5,7 +5,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## Unreleased
 
 ### Added
-- Two services: custom software, and modernization (greenfield, migrate, retrofit, upgrade, and repair), each with its own page. Services now lists six, with DevOps under cloud and AI engineering and security covering readiness and awareness.
+- Two services: custom software, and modernization (greenfield, migrate, retrofit, upgrade, and repair), each with its own page, and 1NEON help lists the Custom software (`APP`) and Modernization (`MOD`) templates. Services now lists six, with DevOps under cloud and AI engineering and security covering readiness and awareness.
 
 ### Changed
 - The accounting and dermatology case studies (editions 1.14 and 1.11) and the capability statement (edition 2.10) say plainly that I was the lead engineer, subcontracted to an AWS Select Partner that held the contract. Their results give rounded figures, with the staff-hours line worked out in the open.

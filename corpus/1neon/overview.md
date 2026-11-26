@@ -4,9 +4,9 @@ title: "1NEON guide: overview, names, and addresses"
 summary: "What 1NEON is, how its frame works, every kind of ID and name it shows, and the address of every page."
 type: guide
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-10
-edition: "1.10"
+edition: "1.11"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -31,7 +31,7 @@ origin: "neon1-1NEON apps/web/src (routes, Shell, Help, Palette) and packages/do
 |---|---|
 | `N1-0001`, `N1-0002` | A **client ID**, numbered in the order clients joined |
 | `acme-dental` | An organization's **slug**, its handle in addresses (`/1NEON/o/acme-dental/...`) |
-| `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template (`PRJ` Blank, `MIG` Cloud migration, `FLOW` Workflow automation, `NET` Networks, `AI` AI assistant, `SEC` Security readiness, `HOME` Personal or home tech) and a number counted per organization and prefix, so `MIG-1` in two organizations are two projects |
+| `FLOW-1`, `MIG-2`, `HOME-1`, `PRJ-3` | A **project key**: a prefix from the project's template (`PRJ` Blank, `APP` Custom software, `MIG` Cloud migration, `MOD` Modernization, `FLOW` Workflow automation, `NET` Networks, `AI` AI assistant, `SEC` Security readiness, `HOME` Personal or home tech) and a number counted per organization and prefix, so `MIG-1` in two organizations are two projects |
 | `0039`, `0039-r2` | A **proposal number** and one of its **revisions**. Each project has one proposal, and each change is issued as the next revision |
 | `0039-r2-B` | An **option ID**: the revision and the option's letter. A decision names the ID it approved |
 | `INV-0039-01` | An **invoice number**: the proposal's number (or the project key) and the invoice's place in the project. Card statements show `NEON1* INV003901` |
