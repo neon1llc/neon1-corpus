@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-10
-edition: "2.15"
+edition: "2.16"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -183,7 +183,7 @@ Health is **Not assessed** (the start), **On track**, **At risk**, or **Off trac
 
 **New project** (editors and admins) asks for a template, a name, what it is, what will be true when it's done, one real example of today's work, a target date, any sensitive data, and optional measures with baseline and target.
 
-Templates start a project with fitting items: Blank (`PRJ`), Cloud migration (`MIG`), Workflow automation (`FLOW`), Networks, devices, and connected systems (`NET`), AI assistant (`AI`), Security readiness (`SEC`), and Personal or home tech (`HOME`). Each starts with discovery questions, the systems involved, one requirement, one or two measures, and a check. Every template except Blank and Personal or home tech also starts with a handover checklist: accounts in the client's name, admin access transferred, docs delivered and walked through, users trained, older tools retired or merged, and neon1's access reduced or removed.
+Templates start a project with fitting items: Blank (`PRJ`), Custom software (`APP`), Cloud migration (`MIG`), Modernization (`MOD`), Workflow automation (`FLOW`), Networks, devices, and connected systems (`NET`), AI assistant (`AI`), Security readiness (`SEC`), and Personal or home tech (`HOME`). Each starts with discovery questions, the systems involved, one requirement, one or two measures, and a check. Every template except Blank and Personal or home tech also starts with a handover checklist: accounts in the client's name, admin access transferred, docs delivered and walked through, users trained, older tools retired or merged, and neon1's access reduced or removed.
 
 ## The Overview tab
 
