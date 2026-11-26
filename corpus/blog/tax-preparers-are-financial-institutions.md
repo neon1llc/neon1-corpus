@@ -70,7 +70,7 @@ It takes a few evenings. In your office, I'd go in this order:
 
 ## Going further
 
-[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) and the [Phishing awareness session kit](../products/phish-out-of-water.md) are on GitHub, and you can use them without talking to me. I do this work for small offices around Queens: MFA, encryption and backups, the plan from Publication 5708, and the staff session. The first [30-minute call](https://calendly.com/1isgladtobeofservice/neon1-consultation) is free.
+[Compliance basics for small businesses](../products/you-have-20-seconds-to-comply.md) and the [Phishing awareness session kit](../products/phish-out-of-water.md) are on GitHub, and you can use them without talking to me. I do this work for small offices around Queens: MFA, encryption and backups, the plan from Publication 5708, and the staff session. The first [30-minute call](https://calendly.com/book-neon1/initial) is free.
 
 ## Sources
 

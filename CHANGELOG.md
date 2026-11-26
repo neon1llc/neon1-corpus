@@ -8,10 +8,17 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - The accounting and dermatology case studies (editions 1.14 and 1.11) and the capability statement (edition 2.10) say plainly that I was the lead engineer, subcontracted to an AWS Select Partner that held the contract. Their results give rounded figures, with the staff-hours line worked out in the open.
 - How neon1 is built (edition 1.11), How neon1.tech works (edition 1.17), Architecture decisions (edition 1.1), and Technology decisions (edition 1.8) describe neon1's own running costs and limits without dollar amounts.
 
+### Fixed
+- Booking links go to calendly.com/book-neon1/initial. The old link stopped working.
+
 ## v0.54.1 - 2026-11-25
 
 ### Fixed
 - Cookie and browser storage notice (edition 1.11) lists every item neon1.tech and 1NEON save, including scroll positions, the shared look choice, and chat drafts.
+
+### Changed
+- Work is accepted only when the client records it, never by silence: the services agreement template, proposal template, and filled proposal with options say so, and 1NEON help says reminders go after 3 and 7 business days while a decision waits.
+- DeployOps states its minimum Python version, and How a project runs gains a missing comma in its summary.
 
 ## v0.54.0 - 2026-11-24
 
@@ -24,8 +31,8 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ### Fixed
 - How neon1 is built (edition 1.10): diagram labels render at 12px or more at every screen width. The 1NEON and production-and-dev diagrams are each two smaller ones, and sequence diagrams are narrower. The diagram check now fails a drawing whose labels would render below 12px in the narrowest column.
-- How 1NEON accounts work (edition 1.14) and the 1NEON pages guide state the free account's file limits: 10 files, 10 MB each, 50 MB total. Earlier entries that name a 15-minute call now say the free first call is 30 minutes.
-- The service agreement shows edition 2.1 again, with the same punctuation clients sign in 1NEON. The 2.2 label came from a punctuation-only edit, so no one has to sign again.
+- How 1NEON accounts work (edition 1.14) and the 1NEON pages guide state the free account's file limits: 10 files, 10 MB each, 50 MB total.
+- The service agreement shows edition 2.1 again, with the same punctuation clients sign in 1NEON.
 
 ## v0.53.0 - 2026-11-24
 

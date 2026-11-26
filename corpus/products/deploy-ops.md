@@ -31,7 +31,7 @@ edition: "1.11"
 
 ## Try the demo
 
-The demo needs Python 3 and no cloud account. From a clone:
+The demo needs Python 3.11 or later and no cloud account. From a clone:
 
 ```sh
 python3 -m venv .venv && source .venv/bin/activate && python -m pip install -r requirements-dev.txt -e .

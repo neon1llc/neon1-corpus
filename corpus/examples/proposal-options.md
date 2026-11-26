@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional retailer whose stock counts disagree: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-25
 created: 2026-11-11
-edition: "3.4"
+edition: "4.0"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -193,7 +193,7 @@ If something outside either of our control holds the work up, such as a vendor o
 
 ## Acceptance
 
-The work is accepted when these checks pass in front of you:
+The work is accepted when these checks pass in front of you and you record your acceptance:
 
 - [ ] Every active item has one ID across the POS, the web store, and the warehouse, and items with no UPC are listed
 - [ ] The 7am email arrives with each difference and its reason
