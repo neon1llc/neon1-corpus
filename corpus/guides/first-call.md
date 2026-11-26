@@ -47,4 +47,4 @@ Don't send passwords, health details, or payment information. If the work involv
 
 If it makes sense, a short proposal follows. I fill in the [intake form](../forms/intake.md) from our conversation.
 
-[Book a call](https://calendly.com/1isgladtobeofservice/neon1-consultation) or see [contact](../engagement/contact.md) for other ways to reach me.
+[Book a call](https://calendly.com/book-neon1/initial) or see [contact](../engagement/contact.md) for other ways to reach me.
