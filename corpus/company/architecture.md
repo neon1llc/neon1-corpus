@@ -7,14 +7,14 @@ consumers: [knowledge, ai]
 pdf: false
 origin: "neon1-aws-infrastructure, neon1-site, neon1-1NEON, neon1-chat, and neon1-corpus"
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-11
-edition: "1.10"
+edition: "1.11"
 ---
 
 # How neon1 is built
 
-neon1 runs on a few AWS services, sized to cost a few dollars a month while it's quiet. Everything is defined in code in public [GitHub](https://github.com/neon1llc) repositories.
+neon1 runs on a few AWS services, sized to what it serves today and scaled by use. Everything is defined in code in public [GitHub](https://github.com/neon1llc) repositories.
 
 ## The whole picture
 

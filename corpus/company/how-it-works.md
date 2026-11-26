@@ -4,9 +4,9 @@ title: How neon1.tech works
 summary: "A plain walk through every part of neon1.tech: the page and its sections, the rain, the white rabbit, the Knowledge Center, the blog, the contact form, Neo, the 1NEON portal and its demo, sample, and guided walkthroughs, and how a change goes live."
 type: page
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-11
-edition: "1.16"
+edition: "1.17"
 consumers: [ai]
 pdf: true
 audience: "Anyone curious how the site is put together, from clients to engineers"
@@ -126,7 +126,7 @@ The bare `/1NEON/live` address plays a three-minute preview. `?play=full` plays 
 
 Work starts on its own branch, with checks on every push, and I review each batch, and nothing reaches neon1.tech until it passes. Each repository then deploys itself when the change merges to main, and every deploy stops if a check fails. A deploy never mixes old and new files: everything goes up together as one release, and rollback is one write back to an earlier release in seconds. A release takes minutes. 1NEON takes longer when its browser walkthroughs have to run.
 
-It all runs in one AWS account in us-east-1, sized to cost a few dollars a month while it's quiet. Mail runs on Google Workspace. [How neon1 is built](architecture.md) has the diagrams, the AWS services, and what data each part keeps.
+It all runs in one AWS account in us-east-1, sized to what it serves today and scaled by use. Mail runs on Google Workspace. [How neon1 is built](architecture.md) has the diagrams, the AWS services, and what data each part keeps.
 
 ## One source for the words
 

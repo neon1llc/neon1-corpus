@@ -4,11 +4,11 @@ title: Technology decisions
 summary: "How neon1 chooses tools and architecture, counts the full cost, and checks licenses."
 type: standard
 status: adopted
-updated: 2026-11-20
+updated: 2026-11-26
 created: 2025-08-12
 consumers: [ai]
 pdf: true
-edition: "1.7"
+edition: "1.8"
 order: 12
 origin: "neon1's internal handbook, technology decisions"
 related: [forms-tool-decision, standards-security-and-data, standards-reliability-and-recovery]
@@ -31,7 +31,7 @@ A tool that fails the hard requirements, permissions, export, lawful use, and re
 First-year cost includes setup, subscriptions, computing, storage, data transfer, backups, monitoring, AI usage, payment fees, migration, training, upkeep, and the cost of leaving later.
 
 > [!example] Why the license price isn't the price
-> A free tool on a $12 a month server that needs an hour of someone's time each month, valued here at $75, costs at least $1,044 a year before setup, backups, or incidents. A $25 a month managed service costs $300 a year in fees before its own admin time and limits. Neither is automatically better.
+> A free tool still needs a server and someone's time each month, and the time usually costs more than the server. A managed service charges fees, and still needs some admin time and has its own limits. Neither is automatically better.
 
 I follow the [FinOps Framework](https://www.finops.org/framework/) for cloud costs at a small scale: a budget, an owner, a regular look at the bill, and a cost per useful result.
 

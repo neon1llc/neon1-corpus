@@ -2,6 +2,12 @@
 
 neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, and a correction or clarification is a patch (see the [versioning standard](corpus/standards/versioning.md)). Releases up to v0.23.1 are listed with their bundles on GitHub's releases page. From v0.24.1, the release workflow tags each version in this file once it's on main and publishes its bundles.
 
+## Unreleased
+
+### Changed
+- The accounting and dermatology case studies (editions 1.14 and 1.11) and the capability statement (edition 2.10) say plainly that I was the lead engineer, subcontracted to an AWS Select Partner that held the contract. Their results give rounded figures, with the staff-hours line worked out in the open.
+- How neon1 is built (edition 1.11), How neon1.tech works (edition 1.17), Architecture decisions (edition 1.1), and Technology decisions (edition 1.8) describe neon1's own running costs and limits without dollar amounts.
+
 ## v0.54.1 - 2026-11-25
 
 ### Fixed
@@ -13,7 +19,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Service agreement edition 2.3: a client picks yes, decide later, or no for anonymized case studies, and whether neon1 may list their name. Edition 2.1 signatures stay valid, with case studies at decide later. The services agreement template has the same choices, and Publishing client work and the publication permission record match. The proposal records today's number for its result, and the release and handover record keeps the before and after, plus an optional quote.
 
 ### Changed
-- The two partner case studies and the capability statement describe an AWS Select Partner engagement and no longer name the partner.
+- The two subcontracted case studies and the capability statement describe the AWS Select Partner engagement.
 - About links its free work to Where neon1 started and the Capability statement, which now says the high school lab also got software that unified features on its new smart boards.
 
 ### Fixed
@@ -63,7 +69,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - How neon1.tech works (edition 1.14) describes the Sentinel landing as the default and Matrix as optional, and says people join by invitation or make a free account. The 1NEON overview (edition 1.9) names Sentinel as the default look. AWS CLIP (edition 1.9) says v0.2.1 and early software, with install steps. The filled proposal with options (edition 3.3) is titled for what its chosen scope delivers, stock reconciliation and exception monitoring, and no longer promises that the counts agree.
 - Why I started neon1 (edition 1.9) opens on where systems meet and on my engineering work, not on small businesses lacking technical help. Contact says one piece of work runs up to about six weeks, and larger efforts split into phases, each with its own scope, price, and handover, approved before it starts. Engagement (edition bumped), pricing, and the working-with FAQ use the same definition of a phase. How I price my work (edition 1.12) drops every dollar range, example, and market comparison and explains how a price is set instead: a first call, a written estimate for each piece of work, phases for larger work, changes agreed before they are added, and approval before work starts. The filled proposal (edition 3.4), the projects guide (2.11), and the working-with FAQ (1.28) lose their remaining dollar figures. Neo's directives (3.7) say Neo never states a dollar figure, range, or rate for neon1's work. Working with neon1 says what evening and weekend hours mean for meetings, cutovers, and waiting on others.
-- The accounting case study (edition bumped) calls its client "the firm's owner" instead of naming a person, until written approval exists. The filled proposal (edition 2.0) is an architecture review of an AWS account for a fictional analytics company, in place of the physical therapy intake, with no price shown.
+- The accounting case study (edition bumped) refers to "the firm's owner". The filled proposal (edition 2.0) is an architecture review of an AWS account for a fictional analytics company.
 
 ## v0.52.4 - 2026-11-23
 
@@ -243,7 +249,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ### Changed
 - Working with neon1 (edition 1.12): answers cut by about a third, each opening with a one or two sentence answer. "How do I pay?" is now "How do invoices work?" and leaves the home page, which shows five questions.
 - Services (edition 1.9): no prices in the table; each project is priced in a proposal, and the page closes with a free 1NEON account or a call.
-- How I price my work (edition 1.4): ranges read as a rough guide, the worked example drops the deposit arithmetic, and the line placing neon1 at the low end of the market is gone.
+- How I price my work (edition 1.4): ranges read as a rough guide, and the worked example is simpler.
 - Neo (edition 2.4): gives price ranges only when asked about cost.
 
 ## v0.46.2 - 2026-11-16
@@ -302,9 +308,9 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## v0.43.0 - 2026-11-15
 
 ### Changed
-- Case study labels are shorter: "neon1 engagement, 2025" and "neon1 subcontracted engagement, 2026". The role text no longer repeats on the card, since client work is neon1 work. The kind "partner" keeps its name in the files, and the partner is still named in the cases and the capability statement.
+- Case study labels are shorter: "neon1 engagement, 2025" and "neon1 subcontracted engagement, 2026". The role text no longer repeats on the card, since client work is neon1 work.
 - Shorter, plainer wording across the public documents, standards, templates, forms, examples, the 1NEON guide, and Neo's directive, with a new "Fewer words" section in the writing standard. Policies and agreements keep their wording. The cookie notice (edition 1.5) adds `1neon.email`, the sign-in email kept when Remember me is ticked.
-- The two partner cases read "As neon1, as a subcontractor" on the home page cards and in the case lead, with no partner name there. The partner is still named, with a link, in the case itself and in the capability statement.
+- The two subcontracted cases read "As neon1, as a subcontractor" on the home page cards and in the case lead.
 
 ### Fixed
 - The first client case is fully anonymous: the case calls the client a small local business, and nothing in it, the capability statement, or the services page names the real industry or its equipment.
@@ -382,7 +388,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 - Working with neon1: anything a business can't run without for a day needs someone on the client's side who runs it day to day; care plans set response times within working hours; personal or health data needs the right agreement and the insurance to back it.
 - Neo gives the published price ranges and links How I price my work, never a rate or a specific quote. Its voice is its own: Neo's lines, the catalog of film quotes, is removed, and Neo doesn't quote the films.
 - 1NEON: an admin can download all of an organization's data from Settings (Download everything), and 1NEON help, the 1NEON page, and the people and account guide say so in place of "no export button".
-- Proposal with options: the bakery re-estimated with go-live support, account setup, training, and a contingency for vendor behavior: A 4 to 6 hours, B 22 to 28, C 32 to 39, and the finished work at 24.5 hours. How I price my work shows the same example at $400 to $600, $2,200 to $2,800, and $3,200 to $3,900.
+- Proposal with options: the bakery re-estimated with go-live support, account setup, training, and a contingency for vendor behavior: A 4 to 6 hours, B 22 to 28, C 32 to 39, and the finished work at 24.5 hours.
 - Privacy policy (edition 2.2): which records a deletion request can't remove (signatures, issued invoices, and payments, locked seven years) and what the 3-year audit log holds.
 - How I price my work: paying for fewer hours applies to estimates, not fixed prices.
 - 1NEON help: the full walkthrough is about 17 minutes, as the portal says.
@@ -399,7 +405,7 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 ## v0.39.0 - 2026-11-13
 
 ### Added
-- How I price my work: the two ways a project is priced, the ranges most work falls into (small fixes $150 to $750, workflow projects $1,000 to $3,000, larger builds from $3,000 in phases), the bakery's three options as a worked example, what a price includes and what's paid separately, when a price can change, paying, room to adjust, why the site shows ranges while proposals show hours, and how the ranges compare with published 2026 figures for the United States and New York.
+- How I price my work: the two ways a project is priced, the bakery's three options as a worked example, what a price includes and what's paid separately, when a price can change, paying, and room to adjust.
 
 ### Changed
 - 1NEON help (edition 2.1): "Can I change my mind after approving an option?" replaces "Can an approval be changed?", word for word as the portal says it.

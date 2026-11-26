@@ -7,9 +7,9 @@ consumers: [ai]
 pdf: false
 origin: "neon1-chat, neon1-aws-infrastructure, neon1-1NEON, neon1-corpus, git history, and AWS Cost Explorer for neon1's account"
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-24
-edition: "1.0"
+edition: "1.1"
 related: [company-architecture, standards-technology-decisions]
 ---
 
@@ -27,11 +27,9 @@ I'd add search when the text nears the 170,000-character limit.
 
 ## ADR-002: Spending has more than one stop
 
-*Accepted 2026-11-08, limits changed 2026-11-24.*
+*Accepted 2026-11-08.*
 
-Neo takes 6 questions a minute and 15 an hour from one visitor, and 60 a day in total. At the daily cap that's about $11 a month. Separate limits cover me: a $1 daily Bedrock alert, and a $10 monthly block on my own admin access and my evaluation role. A bug, a stranger, and my own testing fail in different ways, so one limit isn't enough.
-
-I set the daily cap from the measured cost of a question, and when the measurement moved, the cap moved with it.
+Neo takes 6 questions a minute and 15 an hour from one visitor, and 60 a day in total, a cap set from the measured cost of a question. Separate limits cover me: a daily Bedrock alert, and a monthly block on my own admin access and my evaluation role. A bug, a stranger, and my own testing fail in different ways, so one limit isn't enough.
 
 ## ADR-003: Neo counts networks, not people
 
