@@ -78,7 +78,7 @@ A written architecture review the team can act on: what the account looks like t
 |---|---|
 | Estimate for the work above (low to high end) | *Stated in the real proposal* |
 | Deposit due at signing | *Stated in the real proposal* |
-| Balance due at acceptance | *Stated in the real proposal* |
+| Balance due at handover | *Stated in the real proposal* |
 | Estimated outside costs (paid directly by you) | None expected |
 
 **How the deposit is credited:** in full against the final invoice.
@@ -94,7 +94,7 @@ A written architecture review the team can act on: what the account looks like t
 
 ## After handover
 
-**Questions about the review within 30 days of acceptance** are answered at no charge.
+**Questions about the review within 30 days of handover** are answered at no charge.
 
 **Optional next step:** a proposal for the fixes the team chooses, described separately.
 

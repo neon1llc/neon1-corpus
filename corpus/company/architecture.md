@@ -284,7 +284,7 @@ flowchart LR
 | **Website** | No accounts, cookies, analytics, or trackers. Contact form messages are emailed to hello@neon1.tech, not stored. Form limits count senders by a one-way code of their address. | CloudFront handles IP addresses and browser details to deliver pages, and AWS may keep them briefly. Form counters expire a day after the first count. |
 | **Neo** | No question or answer text. A one-way fingerprint of each question to spot repeats, and visitor counts by one-way code. Logs hold timing, length, and errors. Bedrock logging is off. | Fingerprints ten minutes. Logs two weeks. |
 | **1NEON projects** | Accounts, projects, decisions, comments, and activity in DynamoDB, and files in the documents bucket, each organization kept separate. | Deleted when an organization asks. Database backups roll off after 35 days, earlier file copies after 90. |
-| **1NEON records** | A copy of every signature, issued invoice, and payment under S3 Object Lock, because tax and contract law expect them kept. | Write-protected for seven years. |
+| **1NEON records** | A copy of every signature, issued invoice, and payment under S3 Object Lock, kept for seven years as a business practice. | Write-protected for seven years. |
 | **1NEON system records** | The audit log of sign-ins and changes, and email and text delivery records. | Audit log up to three years, delivery records 30 days, API logs 90 days. |
 
 The [privacy and data policy](../policies/privacy.md) is the full statement and wins if anything here differs.

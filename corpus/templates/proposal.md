@@ -105,7 +105,7 @@ If something outside either of our control holds the work up, I'll pause the tim
 |---|---|
 | Estimate for the work above (low to high end) | ____ to ____ |
 | Deposit due at signing | ____ |
-| Balance due at acceptance | ____ |
+| Billing schedule (every two weeks, by milestone, or at handover) | ____ |
 | Estimated outside costs (paid directly by you) | ____ |
 
 **How the deposit is credited:** ____
@@ -114,7 +114,7 @@ If something outside either of our control holds the work up, I'll pause the tim
 
 ## Acceptance
 
-The work is accepted when these checks pass in front of you and you record your acceptance:
+After handover, you review the work against these checks within 10 business days and record your acceptance. Silence never counts as acceptance, and payment for properly performed work doesn't wait on it:
 
 - [ ] ____
 - [ ] ____
@@ -123,7 +123,7 @@ The work is accepted when these checks pass in front of you and you record your 
 
 ## After handover
 
-**Defects found within ____ days of acceptance** are fixed at no charge.
+**Defects reported within ____ days of handover** are fixed at no charge.
 
 **Optional ongoing care:** ____
 

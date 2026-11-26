@@ -4,9 +4,9 @@ title: Privacy and data policy
 summary: "What neon1 collects on neon1.tech, in Neo, in the 1NEON portal, and in client work, where it goes, how long it's kept, and what you can do about it."
 type: policy
 status: adopted
-updated: 2026-11-24
+updated: 2026-11-26
 created: 2026-11-06
-edition: "3.9"
+edition: "4.0"
 consumers: [site, knowledge, ai]
 pdf: true
 published: "https://neon1.tech/1NEON/privacy"
@@ -16,7 +16,7 @@ related: [policy-cookies, policy-ai-use, policy-terms, policy-service-agreement,
 
 # Privacy and data policy
 
-This edition adds free accounts: what I collect at sign-up, the bot check (Cloudflare Turnstile), the check-in emails, and when a free account is deleted. Nothing changes for clients.
+This edition adds the chat with neon1 in 1NEON, says how anonymized case studies fit the no-marketing rule, and states which records are kept for seven years and why.
 
 neon1 LLC ("neon1", "I", "me") runs the website neon1.tech, Neo (the assistant on the website), and the 1NEON client portal at neon1.tech/1NEON, and does technology work for clients. This policy covers all of them. The [cookie and browser storage notice](https://neon1.tech/1NEON/cookies) is part of it. [How neon1 is built](https://neon1.tech/knowledge/company/architecture/) describes the systems.
 
@@ -58,7 +58,8 @@ The portal is available to people invited by me or by an administrator of their 
 - **Project content:** what you and your colleagues add, such as requirements, decisions, tasks, metrics, comments, and files. Every uploaded file is scanned for malware (Amazon GuardDuty) before anyone can download it, and a file that fails the scan is blocked.
 - **Signatures:** when you sign the service agreement (with your case-study and naming choices, and any later change to them), approve an option, or accept a handover (including any words you leave about the work and whether I may quote them), the portal records your name, email address, the time, your IP address and browser, and a fingerprint of exactly what you signed, so either of us can later show what was agreed.
 - **Invoices and payments:** invoices name your organization and the person they're billed to. When you pay online, you enter your card or bank details on Stripe's own payment page. I never see or store them. Stripe receives the amount, the invoice number, a short description naming your organization and project, and your email address, and tells the portal whether the payment succeeded. Payments by check or transfer are recorded by hand.
-- **Activity records:** who changed what and when, kept as an audit trail so both sides have a reliable history of the work.
+- **Activity records:** who changed what and when, kept as an audit trail so both sides have a reliable history of the work, including handovers, review requests, invoice disputes, reminders, pauses, and endings.
+- **Chat with neon1:** messages you send me in 1NEON's chat. Everyone in your organization can read its ordinary messages. A message marked private can be read only by its author and me, and I can read every message in your organization's chat; private doesn't mean encrypted end to end. If you edit a message, I keep its earlier versions with it. Chat messages are part of your organization's project records and are kept and deleted like them. To limit abuse, the chat counts messages per person and per network address, using a one-way code of the address, not the address itself. I may flag, mute, or ban someone from chat, and the chat mutes someone automatically for a day after repeated refused messages. Your browser keeps an unsent draft on your device.
 
 **Emails and texts.** The portal emails you what you need (invitations, sign-in codes, security notices, and invoices) and notices about the kinds of changes you choose, each of which you can turn off in your profile. If you add a mobile number and agree to texts, 1NEON first texts a 6-digit code to confirm the number is yours (only a one-way code of it is stored, and it expires in 10 minutes). After that, it texts you about the kinds of changes you choose. Each text says only that something new is waiting, with a link to sign in; it doesn't name your organization, project, or files. Changing your number turns texts off until the new number is confirmed. Frequency varies with your projects, up to 10 notices a day. Message and data rates may apply. Reply STOP to opt out or HELP for help, or turn texts off in your profile at any time. A STOP reply is recorded, and turning texts back on needs a new code. Your number and your agreement are used only to send these notices. I never sell or share mobile numbers or text consent with third parties or affiliates for their marketing.
 
@@ -86,7 +87,7 @@ Much of my work happens in your accounts and systems rather than in 1NEON. There
 - I use named accounts with the least access the job needs, and I remove my access at handover and check that it's gone.
 - I look at your information only as far as the work needs, and I don't copy it to my own systems unless the work requires it and you agree.
 - Your confidential information doesn't go into an AI service unless you've approved that service in writing, as [How I work with AI](https://neon1.tech/knowledge/policies/ai-use/) explains.
-- Real client information never appears in a demo, a public post, or a code issue.
+- Real client information never appears in a demo or a code issue. A public post or case study describes a client's work only as the client has allowed in the service agreement: anonymized, with nothing that identifies them, or with their separate permission for anything that does.
 
 ### Regulated data
 
@@ -99,7 +100,7 @@ The portal and my standard services aren't designed for health records, payment 
 - To keep everything secure: detecting misuse, investigating problems, and keeping an audit trail.
 - To meet legal, tax, and accounting obligations.
 
-I don't use your information for marketing or advertising, I don't use it to train AI models, and I don't use automated decision-making that affects you.
+I don't use your information for marketing or advertising, except anonymized case studies a client has allowed, and I don't use identifiable or confidential client information publicly without separate permission. I don't use it to train AI models, and I don't use automated decision-making that affects you.
 
 ## Tests and development use made-up data
 
@@ -121,7 +122,7 @@ I disclose information only to these providers, when the law requires it, or to 
 
 ## Where it's stored and how it's protected
 
-Portal data and files are stored on AWS in its US East (N. Virginia) region, encrypted in transit and at rest. Each organization's data is kept separate from every other organization's, and the server checks every request against the person's access. My own administrative access uses multi-factor sign-in, and keys and passwords are kept in a secure store, never in code. I keep backups and an audit trail, and I test that one organization can't reach another's data.
+Portal data and files are stored on AWS in its US East (N. Virginia) region, encrypted in transit and at rest. Each organization's data is kept separate from every other organization's, and the server checks every request against the person's access. My own administrative access uses multi-factor sign-in, and keys and passwords are kept in a secure store, never in code. I keep backups and an audit trail, and I test that one organization can't reach another's data. I take reasonable measures to protect your information, but no system can guarantee absolute security.
 
 ## How long I keep it
 
@@ -132,7 +133,7 @@ Clients' projects and files are never deleted on a schedule, and I never sell, r
 | Projects, items, comments, uploaded files, and projects moved to the trash | Until your organization asks me to delete them, including after our work ends. Trashed projects are hidden from everyone but kept |
 | Files you delete | Removed right away, and earlier copies of deleted or replaced files are erased after 90 days |
 | Database backups | 35 days |
-| Signatures, issued invoices, and payments | Write-protected for seven years from the day they're made, because tax and contract law expect those records kept. Only an administrator with a special permission can shorten that |
+| Signatures, issued invoices, and payments | Write-protected for seven years from the day they're made, as my business practice: it covers New York's six-year period for contract claims and the records tax law asks for. Only an administrator with a special permission can shorten that |
 | Audit records of sign-ins and changes | Up to 3 years, then deleted |
 | Records that an email or text was delivered, or failed | 30 days |
 | Portal server logs (request time, route, IP address, status, and errors, never what you sent) | 90 days |
@@ -144,6 +145,8 @@ Clients' projects and files are never deleted on a schedule, and I never sell, r
 | An unfinished authenticator app setup | 10 minutes |
 | Emails and contact form messages | As correspondence, while useful for our work or required by law, or until you ask me to delete them |
 | Information copied from your systems for a project | Deleted when the project ends, unless you ask me to keep it |
+| Chat network-address counters | Two days |
+| Anything an actual or reasonably expected dispute, investigation, or legal obligation needs, such as delivery records, payment requests, and project evidence | Until it's resolved, even where the schedule above would end sooner |
 
 ## Getting a copy of your data
 
