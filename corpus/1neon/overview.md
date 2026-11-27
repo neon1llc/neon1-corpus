@@ -83,7 +83,7 @@ Tours point at named spots, which exist only on the page listed and only while o
 
 - **Every page:** `nav-home`, `nav-board`, `nav-projects`, `nav-layers`, `nav-files`, `nav-me` (menu entries, with the menu open or Mini on), `menu`, `search`, `help`.
 - **Organization pages:** `notifications` (the bell).
-- **Home:** `next-step-ask` (only when Next step shows), `needs-you`, `coming-up` (the calendar), `glance`, `get-to-know`, `get-started`, `activity`.
+- **Home:** `next-step-ask` (only when Next step shows), `needs-you`, `coming-up` (the calendar), `glance`, `weekly` (Finished per week), `get-to-know`, `get-started`, `activity`.
 - **Board, All clients:** `board-column`, `board-card`.
 - **Projects:** `new-project`, `project-list`.
 - **One project:** `next-step`, `readiness` (Overview, until a decision), `stage`, `layers`, and on Needs `proposal` (the proposal strip under Options).
