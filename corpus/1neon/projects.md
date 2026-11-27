@@ -187,7 +187,7 @@ Templates start a project with fitting items: Blank (`PRJ`), Cloud migration (`M
 
 ## The Overview tab
 
-Overview shows any decision, the summary and outcome, measures with progress, a side column (health, stage and dates, the latest update, sensitive-data flags, people, **Archive this project**), and **How is it going?**. **People on this project** have roles: lead engineer, sponsor, decision maker, tech contact, stakeholder, and observer. Roles describe work and never grant access, except that a decision maker may approve.
+Overview shows any decision, the summary and outcome, measures with progress, a side column (health, stage and dates, the latest update, sensitive-data flags, people, **Archive this project**), and **How is it going?**. **People on this project** have roles: engineer, sponsor, decision maker, tech contact, stakeholder, and observer. Roles describe work and never grant access, except that a decision maker may approve.
 
 ### Ready for Execute
 
