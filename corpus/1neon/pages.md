@@ -22,6 +22,10 @@ Access levels build up. **Viewers** read, comment, add requests, and approve whe
 
 `/1NEON/o/{org}/workspace`.
 
+Home is a grid of cards. **View** shows or hides each one, grouped as **To do**, **Movement**, **Visuals**, and **Shortcuts**, with each card's urgent, suggested, and to-know counts. Every organization offers the same cards; only setup and suggestion cards come and go. **Arrange** moves and resizes them, **Tidy up** repacks them, and the layout follows the person to any device.
+
+- **Visuals** holds the charts: **Projects at a glance**, **Projects by layer**, **Numbers**, **Finished per week** (eight weeks), and, once turned on in View, **Project health** and **Delivery** (open and overdue work, the on-time rate, days to a decision, measures at target). Hovering a number says how it's counted. The old Insights address, `/1NEON/o/{org}/insights`, opens Home at these charts.
+
 - **Needs you** lists what's waiting on you, most pressing first, each with its action: **See and pay** (an invoice due, overdue, or whose bank payment failed, but not one clearing), **Compare options**, **Review and accept**, **Upload file**, or **Open**. neon1 sees invoice drafts with **Check it**. Empty, it says "You're all caught up".
 - **Calendar** shows a month at a time: work due, milestones, targets, and the organization's events. Choose a day to see it. Editors add leave, closures, meetings, or care plan dates. Under it are **Past**, **Overdue**, **Upcoming**, and **Repeated**.
 - **Get started** is a setup checklist that disappears once done: the tour, a first project (editors), inviting the team, and a second step for admin actions (admins).
@@ -68,11 +72,10 @@ How the assessment and outline work is in [how 1NEON accounts work](../guides/fr
 - **The service agreement** (`/1NEON/o/{org}/agreement` signed in, `/1NEON/agreement` public) shows its edition and **Signatures**: who signed which edition and when. A client admin signs it once, choosing about anonymous case studies and neon1's client list, and can change either later on the same page.
 - **All clients** also has **Potentials** (`/1NEON/all/prospects`, neon1 only): free accounts that aren't clients yet.
 
-## People, files, insights, and settings
+## People, files, and settings
 
 - **People** (`/1NEON/o/{org}/people`) shows who's in the organization, with title, access, and status (**Invited**, **Joined**, **Deactivated**). Admins **Invite people** (up to 50 emails at once, with an access level and optional names and titles), see whether each invitation went out (queued, sent, or failed), **Resend** (rate limited), change access or titles, or **deactivate** someone until reactivated. neon1's own access shows without a way to change it.
 - **Files** (`/1NEON/o/{org}/documents`) lists every file. Anyone, viewers too, can **Upload** at Organization level, under a project, or in one of its layers, up to 100 MB each (a free account holds 10 files, 10 MB each and 50 MB in all). **Move** refiles one, and issued proposals are listed too. Files move through **Receiving**, **Checking** (virus and size), **Ready**, **Rejected** (a threat found), or **Failed**. PDFs, pictures, and text open in a tab, and others download. Uploaders and admins can delete.
-- **Insights** (`/1NEON/o/{org}/insights`) charts open and overdue work, the on-time rate, days to a decision, measures at target, items finished per week for eight weeks, projects by layer, and health.
 - **Settings** (`/1NEON/o/{org}/settings`) has **Where**: the organization's website and where it's based, checked as on sign-up. Any admin can **Change** it without confirming. It's optional. It also shows the agreement's signer and edition (or "not signed yet") with **Read and sign**, the case study and client list choices, **Download everything** under Your data, **Report a bug**, and the board's stages: name, layer, "Done when", optional limit, **Show** or **Hide**, and order. **Save workflow** saves all (admins, after confirming it's them). A stage holding projects can't be removed.
 - **Your profile** (`/1NEON/me`) has name, title, phone (only you see it), time zone, motion, menu (Default or Mini), and **Notifications** by group (email, text, or neither). Most changes save by themselves. Also here: texts, **Two-step verification** at `#security`, **Replay the tutorial**, and **Sign out** (also beside your name in the open menu, in two taps). Two-step changes and signing out take effect at once.
 - **Contact** (`/1NEON/contact`), in the menu for every account, has email hello@neon1.tech, call or text (424) 32-neon1, and a booked call, with the hours I answer. Anything about a project is best written in that project.

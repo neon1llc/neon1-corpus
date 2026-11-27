@@ -65,7 +65,8 @@ Signed-in pages live under `https://neon1.tech/1NEON/`. `{org}` is the organizat
 | Proposal, one invoice | `.../{KEY}/proposal`, `.../{KEY}/invoices/{invoiceId}` |
 | The service agreement, to sign | `/1NEON/o/{org}/agreement` |
 | One layer across all projects | `/1NEON/o/{org}/layer/needs` (also `execute`, `observe`, `normalize`) |
-| People, Files, Insights, Settings | `/1NEON/o/{org}/people`, `/documents`, `/insights`, `/settings` |
+| People, Files, Settings | `/1NEON/o/{org}/people`, `/documents`, `/settings` |
+| Home's charts | `/1NEON/o/{org}/workspace#insights` |
 | Your profile | `/1NEON/me` (two-step verification at `/1NEON/me#security`) |
 | All clients (neon1 only) | `/1NEON/all/workflow` |
 | FAQs, public | `/1NEON/faqs` |
@@ -88,4 +89,4 @@ Tours point at named spots, which exist only on the page listed and only while o
 - **One project:** `next-step`, `readiness` (Overview, until a decision), `stage`, `layers`, and on Needs `proposal` (the proposal strip under Options).
 - **New project:** `wizard`. **One layer across projects:** `layer-list`.
 - **People:** `invite`, `people-list`. **Files:** `upload`.
-- **Insights:** `kpis`, `weekly`, `by-layer`. **Settings:** `stages`. **Profile:** `passkey`.
+- **Settings:** `stages`. **Profile:** `passkey`.
