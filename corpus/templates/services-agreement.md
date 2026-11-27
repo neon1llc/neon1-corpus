@@ -4,7 +4,7 @@ title: Services agreement
 summary: "The short agreement a client and neon1 sign once, before any paid work: how proposals become agreed work, payment and disputes, review and acceptance, delays, changes, ownership, confidentiality, limits, and ending."
 type: template
 status: adopted
-updated: 2026-11-26
+updated: 2026-11-27
 created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
@@ -87,7 +87,7 @@ Neither of us adds work, cost, or time without a written [change request](../for
 
 ## 8. Confidentiality and data
 
-1. Each of us keeps the other's non-public information confidential and uses it only for the work. This lasts for ____ years after the agreement ends.
+1. Each of us keeps the other's non-public information confidential and uses it only for the work. This lasts for 3 years after the agreement ends, and a trade secret stays confidential for as long as it remains one.
 2. I work under the [security and data standard](../standards/security-and-data.md). If the work touches health information, a [business associate agreement](business-associate-agreement.md) is signed first. Other personal data may need its own terms.
 3. Unless you ask me to delete it, I keep a project's records after it ends, as the privacy policy describes. I keep signed agreements, approvals, invoices, and payment records for seven years as my business practice, and longer while an actual or reasonably expected dispute, investigation, or legal obligation needs them.
 

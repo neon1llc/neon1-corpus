@@ -2,6 +2,10 @@
 
 Every substantive change to the legal pages, newest first, so a lawyer can review it. The terms of use and privacy policy mirror `apps/web/src/legal/` in the 1NEON repo, and the service agreement mirrors `packages/domain/src/agreement.ts`, so a change here is made there too.
 
+## Confidentiality term, November 27, 2026, for lawyer review
+
+- **templates/services-agreement.md, section 8, item 1.** The blank term is now 3 years after the agreement ends, and a trade secret stays confidential for as long as it remains one. This is a recommended default, not yet reviewed by a lawyer. The agreement clients sign in 1NEON (engagement/service-agreement.md, "Confidentiality") states no term and lists exclusions the template doesn't, so check whether the two should match.
+
 ## Legal review of November 26, 2026, carried out
 
 A legal review covered this file, the services agreement template, service agreement edition 2.3, the terms, the privacy policy, and the seven case studies. Its recommendations are now in the text:
