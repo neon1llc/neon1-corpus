@@ -9,7 +9,8 @@ Every substantive change to the legal pages, newest first, so a lawyer can revie
 - **Publishing client work** (2.0): the review's statement.
 - **Case studies.** The owner states permission is held for every study, so all seven stay. Removed: unverified figures, the 65-hour calculation, benchmark and test-set claims, the client commentary, the partner's AWS designation, health-record and security specifics, family security details, and the school's name. The family and school accounts and the sessions' wording follow the review. A signed permission per study is still to be filed.
 - **Privacy policy:** deleted accounts and mobile numbers now match the code. The readable number is no longer kept: a keyed identifier is held for 30 days. Account deletion also removes that account's security and audit records.
-- **Still open:** the health engagement's BAA and subcontract, evidence for any figure before it returns, the facts the review asks for, and counsel's review.
+- **Owner, later the same day:** the figures were already approved, so the document assistant and intake figures return, rounded, with how they were measured. The 65-hour estimate and the two figures his register doesn't carry stay out, as does the client commentary.
+- **Still open:** the health engagement's BAA and subcontract, the facts the review asks for, and counsel's review.
 
 ## Confidentiality term, November 27, 2026, for lawyer review
 

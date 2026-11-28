@@ -11,7 +11,7 @@ role: "As neon1, my first business client"
 when: "2025"
 updated: 2026-11-27
 created: 2025-09-22
-edition: "2.0"
+edition: "2.1"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: business
@@ -21,7 +21,7 @@ stat: "· from the floor or from home"
 short_problem: "Separate systems each lived on their own screen."
 short_work: "Tied them together on AWS, shown on wall tablets and a remote view."
 short_results: "The owner can act on problems from anywhere."
-short_after: "I manage it remotely."
+short_after: "I manage it remotely, and computer vision is in progress."
 ---
 
 # Operations integration and monitoring
@@ -46,4 +46,4 @@ The owner can see and act on problems without being on site.
 
 ## After handover
 
-I manage the setup remotely, and the owner and staff use it day to day. Anything new is tested before anyone relies on it.
+I manage the setup remotely, and the owner and staff use it day to day. Computer vision is in progress, and it gets tested before anyone relies on it.
