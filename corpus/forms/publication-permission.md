@@ -58,6 +58,8 @@ I confirm that I am authorized to grant the permissions selected above and that,
 
 neon1 remains responsible for supporting its claims and protecting confidential and personal information.
 
+Your identity as the signer stays private and is never published.
+
 You may withdraw permission at any time. neon1 will stop further use and remove the affected material from places it controls. Independent copies and archives may remain.
 
 This permission takes effect when signed. It does not create a services agreement, establish that permission existed before today, or authorize the use of protected health information.
