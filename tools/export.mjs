@@ -50,6 +50,7 @@ const KINDS = {
   partner: "neon1 subcontracted engagement",
   employment: "Founder's previous employment",
   founder: "Personal or volunteer work",
+  community: "Community education",
   demonstration: "Independent project",
   reconstructed: "Reconstructed demonstration",
   fictional: "Fictional example",

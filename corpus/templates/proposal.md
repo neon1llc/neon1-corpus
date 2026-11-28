@@ -4,12 +4,12 @@ title: Proposal
 summary: "The proposal neon1 sends after discovery: your problem, the result, the options with what's in and out and honest hours, what each of us will do, price, and acceptance."
 type: template
 status: adopted
-updated: 2026-11-25
+updated: 2026-11-27
 created: 2025-09-26
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "2.0"
+edition: "2.1"
 origin: "neon1's November 2026 planning notes, working templates, and past proposals (structure only)"
 related: [examples-proposal-options, examples-proposal, templates-services-agreement, forms-change-request, forms-discovery, templates-decision-review]
 ---
@@ -101,11 +101,15 @@ If something outside either of our control holds the work up, I'll pause the tim
 | Item | Amount |
 |---|---|
 | Estimate for the work above (low to high end) | ____ to ____ |
-| Deposit due at signing | ____ |
+| Deposit: amount, due before work begins (or none) | ____ |
 | Billing schedule (every two weeks, by milestone, or at handover) | ____ |
 | Estimated outside costs (paid directly by you) | ____ |
 
 **How the deposit is credited:** ____
+
+**If a fixed fee ends early** (milestone or partial-work values): ____
+
+**Itemized work records:** sent with each invoice, within seven days after what it bills. Any other deadline your payment process needs: ____
 
 **Changes:** no extra work or spending without a written, approved [change request](../forms/change-request.md).
 

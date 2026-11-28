@@ -9,7 +9,7 @@ created: 2025-09-16
 consumers: [knowledge, ai]
 pdf: true
 featured: true
-edition: "2.1"
+edition: "2.2"
 related: [policy-service-agreement, templates-proposal, examples-proposal-options, examples-proposal, forms-change-request, templates-care-plan, templates-business-associate-agreement]
 ---
 
@@ -54,12 +54,22 @@ If something outside either of our control holds the work up, I'll pause the tim
 ## 3. Price and payment
 
 1. Each proposal prices the work as an estimate that discovery sets: hours worked at a stated rate, up to a stated high end, billed every two weeks unless the proposal says otherwise. Unforeseen work or purchases are agreed with you before I add them. A proposal may instead state a fixed fee for a small, well-defined job, billed by its milestones or on delivery.
-2. A deposit of 30% of the fixed fee or of the estimate's low end is due when you choose an option, unless the proposal states another share. It counts toward later invoices, and I refund any part the work done doesn't use.
-3. I send each invoice within 7 days after the period, milestone, or delivery it bills. Invoices are due within 15 days unless we agree otherwise in writing.
+2. A project usually starts with a deposit of 30% of its fixed price or the low end of its estimate. The proposal may set a different amount, or no deposit, based on the work and payment schedule.
+
+   Any required deposit is due before the work begins. It counts toward later invoices, and I refund any unearned amount when the project ends.
+3. I send the itemized record of work with each invoice, within seven days after the billing period, milestone, or delivery. Any different submission deadline needed for your payment process is agreed in the proposal before work begins. Other invoices are due within 15 days unless we agree otherwise in writing.
 4. Payment for properly performed work doesn't depend on you recording acceptance (section 5), and paying an invoice doesn't mean you accept the work or give up a valid claim.
-5. If you believe an invoice includes work that wasn't agreed, performed, or delivered as required, tell me which part you dispute and why, and we'll work to resolve it. The undisputed amount stays payable by its original due date.
+5. If you believe an invoice includes work that wasn't agreed, performed, or delivered as required, tell me promptly, in 1NEON or by email, which amount you dispute and why.
+
+   We'll work to resolve it. The undisputed amount remains payable by its original due date. I won't pause work solely because an amount is genuinely disputed while we're working to resolve it.
 6. Outside costs, such as software, hardware, and subscriptions, are billed to you directly by the vendor. When a proposal says I buy something for you, you pay me back exactly what I paid, shown by the receipt, with no markup.
-7. I send a reminder the business day after an invoice is due. If an undisputed amount is more than 7 days overdue, I may pause work until it's paid, after telling you in writing. A pause never disables your systems, withholds your credentials or data, or deletes anything of yours.
+7. I send a reminder the business day after an invoice is due.
+
+   If an undisputed amount becomes more than seven calendar days overdue, I may pause the affected work after giving you at least two business days' written notice to pay.
+
+   When payment is received or we agree on another arrangement, I resume the work as soon as reasonably practical and confirm any changes to the schedule.
+
+   A pause doesn't cancel obligations already incurred, disable your systems, withhold your data or access, or prevent you from arranging other support.
 
 ## 4. Changes
 
@@ -70,7 +80,15 @@ Neither of us adds work, cost, or time without a written [change request](../for
 1. When the work is ready, I hand it over: the agreed deliverables, the documentation, and the access you need to use and review it. I record that date and tell you in writing.
 2. Please review the work within 10 business days, and record your acceptance, in 1NEON or in writing, or tell me which agreed check doesn't pass. If a check fails, I correct the work and present it again. Silence never counts as acceptance.
 3. A delay in your review doesn't postpone payment for properly performed work or change the payment schedule.
-4. If I can't continue because I'm waiting for your access, information, decisions, or participation, I tell you what's needed and how the delay affects the work. After 10 business days from that notice, I may pause the affected work and adjust its schedule. After 30 calendar days, I may end the affected project under section 11. You remain responsible for work properly performed and purchases you approved before then, and I don't charge for work not yet done because of a delay.
+4. If I cannot continue because I'm waiting for your access, information, decisions, or participation, I tell you what I need and how the delay affects the work.
+
+   If the delay continues for ten business days after that notice, I may pause the affected work and adjust its schedule.
+
+   If it continues for thirty calendar days, I may end the affected project, provided I've given you at least fourteen calendar days' written notice of the intended ending (section 11).
+
+   If you resolve the delay before the project ends, we'll agree on a reasonable revised schedule. I'll confirm when I can resume.
+
+   You remain responsible for work properly performed and purchases you approved. I don't charge for unperformed work merely because the project is delayed.
 
 ## 6. After handover
 
@@ -87,17 +105,25 @@ Neither of us adds work, cost, or time without a written [change request](../for
 
 ## 8. Confidentiality and data
 
-1. Each of us keeps the other's non-public information confidential and uses it only for the work. This lasts for 3 years after the agreement ends, and a trade secret stays confidential for as long as it remains one.
+1. We each protect the other's non-public information and use it only for our agreed work, unless the other gives written permission.
+
+   We may share it with people who need it for the work or professional advice and are required to protect it.
+
+   This doesn't cover information that becomes public without a breach, was already lawfully known, is independently developed, is lawfully received without a confidentiality restriction, or must be disclosed by law. Where legally permitted, we tell each other before a required disclosure.
+
+   This duty continues for three years after the agreement ends. Trade secrets stay protected for as long as they remain trade secrets. Personal information, credentials, and security-sensitive information remain protected while held and sensitive, and for as long as applicable law or a separate agreement requires.
+
+   Publication requires the permission described in section 9. Nothing here reduces protections required by law or a separate data protection agreement.
 2. I work under the [security and data standard](../standards/security-and-data.md). If the work touches health information, a [business associate agreement](business-associate-agreement.md) is signed first. Other personal data may need its own terms.
 3. Unless you ask me to delete it, I keep a project's records after it ends, as the privacy policy describes. I keep signed agreements, approvals, invoices, and payment records for seven years as my business practice, and longer while an actual or reasonably expected dispute, investigation, or legal obligation needs them.
 
 ## 9. Showing the work
 
-1. Anonymized case studies, articles, and examples of the work (choose one; nothing is pre-marked): ☐ yes ☐ decide later: ask me about each project before publication ☐ no. Your choice doesn't affect the services or their price.
-2. Anonymized means neither the information itself nor its combination with other reasonably available information can reasonably identify you, your people, or your customers. I never publish your confidential information, personal information, security-sensitive details, or identifiable records. Section 8 allows what you choose here.
-3. Listing your name as a client (choose one): ☐ ask me first ☐ yes ☐ no.
-4. Your name, logo or trademarks, quotations or testimonials, endorsements, identifiable screenshots, and linking your name to a particular case study each take a separate yes. Permission for anonymized case studies doesn't cover them.
-5. You can change these choices in writing at any time, from then on. If you withdraw permission, I stop further use and remove the affected material from the places I control. I can't guarantee removal of independent copies or archives kept by others.
+1. You choose whether I may describe our work in anonymized case studies, articles, or examples. Your choice doesn't affect your services or their price. Choose one; nothing is pre-marked: ☐ yes: anonymized case studies are fine ☐ decide later: ask me about each project before publication ☐ no: don't publish case studies about my projects. Without a recorded choice, I ask first.
+2. Anonymized means that the information, alone or combined with other reasonably available information, can't reasonably identify your organization, your people, or your customers. I don't publish confidential information, personal information, or security-sensitive details.
+3. You separately choose whether I may list your organization as a client (choose one): ☐ ask me first ☐ yes ☐ no.
+4. A logo, testimonial, quotation, endorsement, identifiable image, or link between your name and a particular case study requires separate permission.
+5. Someone authorized to act for your organization can change these choices at any time. If you withdraw permission, I stop further use and remove the affected material from places I control. Independent copies and archives may remain.
 
 ## 10. Limits
 
@@ -107,9 +133,15 @@ Neither of us adds work, cost, or time without a written [change request](../for
 
 ## 11. Ending
 
-1. Either of us can end this agreement, or a project under it, with 14 days' written notice.
-2. On ending, you pay for work properly performed and purchases you approved up to that date, not the price of work not yet done, and I refund any unearned deposit. I return your access and credentials and hand over everything made so far, with its records, which becomes yours once it's paid for.
-3. Sections 3 (for amounts owed), 7, 8, 9, and 10 continue after it ends.
+1. Either of us may end this agreement or an individual project with fourteen calendar days' written notice, by email or a message in 1NEON. Ending a project because of client delay also follows section 5, item 4.
+
+   During the notice period, we avoid unnecessary additional work and spending.
+
+   When the project ends, you pay for work properly performed and purchases you approved that cannot reasonably be cancelled or refunded. For unfinished fixed-price work, the amount due follows the agreed milestone or partial-work values in the proposal.
+
+   I send a final statement, credit any deposit and previous payments, and refund any unearned balance within fifteen days after final reconciliation. I return your access and credentials and hand over the work completed so far, with its records. Ownership of commissioned work follows section 7.
+
+   Payment owed, ownership, confidentiality, publication choices, recordkeeping, liability limits, and obligations to correct defects reported within the agreed period continue after ending.
 
 ## 12. General
 

@@ -9,9 +9,9 @@ area: migration
 kind: neon1
 role: "As neon1"
 when: "2025"
-updated: 2026-11-20
+updated: 2026-11-27
 created: 2025-09-22
-edition: "1.6"
+edition: "2.0"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: migration
@@ -20,8 +20,8 @@ stat_key: "2 servers · 2 offices"
 stat: "· no app rewrite"
 short_problem: "The app, database, and files lived on two local servers both offices used."
 short_work: "Moved them to AWS with their technical lead, linked over a VPN."
-short_results: "Re-ran daily tasks from each office and reconciled every record."
-short_after: "Change more only when the data says so."
+short_results: "Both offices moved without an application rewrite."
+short_after: "Their technical lead runs it."
 origin: "neon1-site src/app/public/index.html#case-migration"
 ---
 
@@ -35,20 +35,15 @@ An automotive business ran its application, database, and files on two local ser
 
 He led the inventory and dependency discovery. I owned the AWS design, sizing, and migration plan.
 
-- An isolated VPC built with Terraform, EC2 for the application, RDS for the database, and S3 for files that suit object storage.
-- Site-to-Site VPN connects both offices, with separate access paths for the app, the database, and management.
-- Sized from measured CPU, memory, database, and storage use, not the old hardware.
-- Data was seeded ahead, and the cutover kept a fallback until both offices signed off.
+- A private AWS network built with Terraform, with the application, database, and files each on a service that suits them.
+- A site-to-site VPN connects both offices.
+- Sizing came from measured use, not the old hardware.
+- Data was moved ahead of the cutover, with a way back until both offices signed off.
 
 ## The results
 
-| Check                              | Result                           |
-|------------------------------------|----------------------------------|
-| Daily business tasks, both offices | Passed from each location        |
-| Records and files after migration  | Reconciled against the originals |
-| Backup and restore                 | Tested with the technical lead   |
-| Application changes needed         | None                             |
+Both offices moved to AWS without an application rewrite.
 
 ## After handover
 
-The technical lead runs it, with architecture, access, backup, restore, and monitoring written down. Containers or a bigger platform come only if measured reliability, capacity, or cost makes the case.
+The technical lead runs it, with the architecture and operating steps written down. Bigger changes come only if reliability, capacity, or cost makes the case.

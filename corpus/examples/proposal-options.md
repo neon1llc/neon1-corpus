@@ -4,9 +4,9 @@ title: "Proposal with options, filled in"
 summary: "A complete neon1 proposal with three options for a fictional retailer whose stock counts disagree: discovery, goals, what's in and out, the hours behind each price, when the client pays, what each side will do, and the agreement."
 type: example
 status: adopted
-updated: 2026-11-25
+updated: 2026-11-27
 created: 2026-11-11
-edition: "4.0"
+edition: "4.1"
 consumers: [knowledge, ai]
 pdf: true
 featured: true
@@ -173,10 +173,12 @@ Each option's price is an estimate: the hours above at my hourly rate. You pay f
 |---|---|---|---|
 | Hourly rate | *Stated in the real proposal* | *Stated in the real proposal* | *Stated in the real proposal* |
 | Estimate | 26 to 34 hours at that rate | 58 to 74 hours at that rate | 80 to 100 hours at that rate |
-| Deposit when you approve | 30% of the low end | 30% of the low end | 30% of the low end |
+| Deposit, due before work begins | 30% of the low end | 30% of the low end | 30% of the low end |
 | Invoices after that | The hours worked, every two weeks | The hours worked, every two weeks | The hours worked, every two weeks |
 | Final invoice, at handover | The hours worked, less earlier invoices | The hours worked, less earlier invoices | The hours worked, less earlier invoices |
 | Paid directly by you | A small monthly AWS bill | A small monthly AWS bill for the queue and runtime | New hardware, and the cost of leaving the POS contract |
+
+**Deposit:** counts toward later invoices, and any unearned amount is refunded when the project ends.
 
 **Changes:** no extra work or spending without a written, approved [change request](../forms/change-request.md).
 

@@ -9,19 +9,19 @@ area: workflows
 kind: partner
 role: "As neon1, as a subcontractor"
 when: "2026"
-updated: 2026-11-26
+updated: 2026-11-27
 created: 2026-11-06
-edition: "1.11"
+edition: "2.0"
 consumers: [site, chat, knowledge, ai]
 pdf: true
 key: dermatology
 order: 2
-stat_key: "2.6 days → 3.4 hours"
-stat: "· 24 → 8 min staff time"
+stat_key: "one queue"
+stat: "· complete and missing"
 short_problem: "Intake ran through a shared inbox, with staff chasing documents by email."
 short_work: "An AWS portal where patients upload once and staff see what's complete."
-short_results: "Compared four weeks before and after."
-short_after: "Maintained with the partner, and an EHR interface when the vendor allows it."
+short_results: "Staff see what's missing without searching email."
+short_after: "Maintained with the partner."
 origin: "neon1-site src/app/public/index.html#case-dermatology"
 ---
 
@@ -29,28 +29,20 @@ origin: "neon1-site src/app/public/index.html#case-dermatology"
 
 ## The problem
 
-A new dermatology practice and its sister location ran intake through one shared Microsoft 365 inbox. Patients sent forms, insurance cards, referrals, and phone photos. Staff downloaded, renamed, and tracked each one with Outlook flags and a spreadsheet, then uploaded it into a slow EHR. Anything missing started another round of emails.
+A dermatology practice with two locations ran intake through one shared inbox. Staff downloaded, tracked, and re-uploaded each document, and anything missing started another round of emails.
 
 ## The work
 
-I mapped the process with staff, separating patient waiting time from staff handling time, then built a Terraform-managed serverless portal. I was the lead engineer, subcontracted to an AWS Select Partner that held the contract and supports design and maintenance.
+I mapped the process with staff, then built a Terraform-managed serverless portal on AWS. I was the lead engineer, subcontracted to the firm that held the contract.
 
-- Patients upload once. CloudFront, WAF, and a private S3 site serve the portal, and API Gateway, Cognito, and Python Lambda run the workflow.
-- Each intake has one state in DynamoDB. Documents go to an encrypted S3 vault, locked until a malware scan passes.
-- Staff see one queue of what's complete and missing, and link each intake to the patient's EHR record by ID and MRN. The EHR vendor's interface wasn't available, so the portal doesn't depend on it.
-- Emails never include patient details, and access, encryption, and audit logging were set up first.
+- Patients upload once, and each intake has one status.
+- Staff see one queue of what's complete and what's missing.
+- The practice's health record system stays the clinical record, and the portal doesn't depend on its vendor's interface.
 
 ## The results
 
-| Measure                                      | Before             | After      |
-|----------------------------------------------|--------------------|------------|
-| Median time to a complete intake             | ~2.6 days          | ~3.4 hours |
-| Staff time per intake                        | ~24 min            | ~8 min     |
-| Finding and opening a document               | ~2 min             | ~12 s      |
-| Intakes needing a missing-document follow-up | ~34%               | ~10%       |
-
-Four weeks before and after, same definitions. At about 250 intakes a month, 16 fewer minutes each comes to about 65 staff hours. Time to a complete intake was timed from record timestamps, before and after launch: from the patient's most recent call, email, or other contact with the practice to when their appointment was scheduled. The portal records when each intake starts and when it's complete, as metrics only, with no patient details. The practice keeps them for its own dashboards and can turn them off. Before launch, staff time per intake was worked out by hand from the old records, from first call or email to the appointment being set, and checked against a short staff survey.
+Documents arrive in one place, and staff can see what's missing without searching email.
 
 ## After handover
 
-The EHR stays the clinical record. The partner and I maintain the portal, watch the measures, and tune it as both locations grow. Next is a direct EHR interface, once the vendor enables one and the volume justifies it.
+The partner and I maintain the portal. Next is a direct interface to the record system, once its vendor enables one.

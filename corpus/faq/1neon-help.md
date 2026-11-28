@@ -4,9 +4,9 @@ title: 1NEON help
 summary: Short answers about using the 1NEON client portal.
 type: faq
 status: adopted
-updated: 2026-11-25
+updated: 2026-11-27
 created: 2026-11-07
-edition: "2.20"
+edition: "2.21"
 consumers: [site, chat, knowledge, ai, portal]
 pdf: false
 published: "https://neon1.tech/1NEON/"
@@ -218,13 +218,13 @@ No money moved. The invoice reopens with the failed payment listed, and 1NEON te
 The invoice is your receipt. Once paid it reads **Paid in full**, with each payment's date, amount, and method, and prints or saves as a PDF. Billing contacts are also emailed when a payment arrives.
 
 ### Is there a fee for paying by card, or for paying late?
-No. The total is what you pay, however you pay, with no card surcharge, late fee, or interest. A late invoice shows as overdue, you get a reminder the business day after it's due, and neon1 may pause work, after telling you, once an undisputed amount is more than 7 days overdue.
+No. The total is what you pay, however you pay, with no card surcharge, late fee, or interest. A late invoice shows as overdue, and you get a reminder the business day after it's due. Once an undisputed amount is more than 7 days overdue, neon1 may pause the affected work after at least 2 business days' written notice to pay.
 
 ### What if I think an invoice is wrong?
 Open it and choose **Dispute part of this invoice**, with the amount and why. neon1 answers on the invoice and fixes a real mistake with a credit, or voids it with a reason and issues a new one, on the record. The undisputed amount stays due on the original date.
 
 ### When are invoices sent?
-As your option's **When you pay** says. A deposit, 30% of a fixed price or of an estimate's low end unless the option says otherwise, comes at approval. On an estimate, the hours worked are billed every two weeks; a fixed price by its milestones or on delivery. The final invoice comes at handover, whether or not your review is finished. Purchases are billed at cost with the receipt, and care plans monthly. Invoices are due in 15 days unless the option says otherwise, and each emails your billing contacts. Watch [the deposit](https://neon1.tech/1NEON/live?play=pay) and [the final invoice](https://neon1.tech/1NEON/live?play=final).
+As your option's **When you pay** says. A deposit, 30% of a fixed price or of an estimate's low end unless the option says otherwise, comes at approval and is due before the work begins. On an estimate, the hours worked are billed every two weeks; a fixed price by its milestones or on delivery. The final invoice comes at handover, whether or not your review is finished. Purchases are billed at cost with the receipt, and care plans monthly. Other invoices are due in 15 days unless the option says otherwise, and each emails your billing contacts. Watch [the deposit](https://neon1.tech/1NEON/live?play=pay) and [the final invoice](https://neon1.tech/1NEON/live?play=final).
 
 ### Can an invoice be changed?
 Not once issued. A mistake is fixed with a credit, or by voiding it with a reason, both on record. An invoice with a payment, or one clearing, can't be voided.

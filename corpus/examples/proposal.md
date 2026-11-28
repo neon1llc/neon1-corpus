@@ -4,9 +4,9 @@ title: "Proposal, filled in"
 summary: "A complete neon1 proposal for a fictional analytics company's architecture review of its AWS account."
 type: example
 status: adopted
-updated: 2026-11-23
+updated: 2026-11-27
 created: 2025-09-16
-edition: "2.0"
+edition: "2.1"
 consumers: [knowledge, ai]
 pdf: true
 example_of: templates-proposal
@@ -77,7 +77,7 @@ A written architecture review the team can act on: what the account looks like t
 | Item | Amount |
 |---|---|
 | Estimate for the work above (low to high end) | *Stated in the real proposal* |
-| Deposit due at signing | *Stated in the real proposal* |
+| Deposit: amount, due before work begins | *Stated in the real proposal* |
 | Balance due at handover | *Stated in the real proposal* |
 | Estimated outside costs (paid directly by you) | None expected |
 

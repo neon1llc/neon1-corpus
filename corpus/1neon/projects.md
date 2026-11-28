@@ -4,9 +4,9 @@ title: "1NEON guide: projects, stages, layers, and items"
 summary: "How a project moves through stages and the four layers, every kind of item and its states, Next step, health, the proposal and its revisions, signed approvals, fixed prices and estimates, hours, purchases, handover acceptance, invoices, and payments."
 type: guide
 status: adopted
-updated: 2026-11-26
+updated: 2026-11-27
 created: 2026-11-10
-edition: "2.16"
+edition: "2.17"
 consumers: [portal, ai]
 audience: "People signed in to 1NEON, and Neo inside it"
 pdf: false
@@ -104,7 +104,7 @@ The approval screen restates what's accepted. The approver may add conditions ("
 
 The decision records the option ID, the approver's name and email, the time, its terms exactly as shown, and the signature (typed name, consent, a SHA-256 fingerprint of the signed terms, and the address and browser). If the option changed after it was opened, the approval is refused for review. It records that the organization agreed to that option's scope, cost, and timeline, as on paper.
 
-Approving also adds the option's expected purchases to Execute, and drafts a deposit invoice for neon1 to check and issue when the price is in numbers: 30% of a fixed price or of an estimate's low end, unless the option states another share. Nothing reaches the client until it's issued.
+Approving also adds the option's expected purchases to Execute, and drafts a deposit invoice for neon1 to check and issue when the price is in numbers: 30% of a fixed price or of an estimate's low end, unless the option states another share. It's due before the work begins, and a fixed price can state what's due if it ends early. Nothing reaches the client until it's issued.
 
 Only a client admin, after confirming it's them, can name or change the decision maker, under People on the Overview.
 
@@ -121,7 +121,7 @@ Until the handover is accepted, the decision maker can choose a different option
 
 ## The service agreement
 
-neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. As they sign, they give the organization's legal name and mailing address, confirm they're authorized to sign for it, and choose about anonymized case studies (yes, decide later, no) and neon1's client list (ask first, yes, no). Nothing is selected for them. An admin can change either choice on the same page. The signature records the edition, a SHA-256 fingerprint of its text, the time, and where it came from, and the signed text can be downloaded. Edition 2.4 is signed before the next approval. Approvals made under 2.1 or 2.3 keep those terms, and those organizations' case-study choice stays at decide later until an admin chooses.
+neon1's [service agreement](../engagement/service-agreement.md) covers every project with an organization, and anyone can read it at `/1NEON/agreement`. A client admin signs it once at `/1NEON/o/{org}/agreement` (from **Settings** or the notice under the options) with a typed name and the consent box, before the first approval. As they sign, they give the organization's legal name and mailing address, confirm they're authorized to sign for it, and choose about anonymized case studies (yes, decide later, no) and neon1's client list (ask first, yes, no). Nothing is selected for them. An admin can change either choice on the same page. The signature records the edition, a SHA-256 fingerprint of its text, the time, and where it came from, and the signed text can be downloaded. Edition 2.5 is signed before the next approval. Approvals made under an earlier edition keep its terms, and an earlier signer's case-study choice stays at decide later until an admin chooses. Changing a choice also asks the admin to confirm they're authorized to make it.
 
 ## Purchases, hours, and handover
 
@@ -138,7 +138,7 @@ Accepting a handover can carry a few words about the work. neon1 quotes them, wi
 
 **Handover, review, and acceptance are separate records.** When the work is delivered, neon1 chooses **Record handover** with what was handed over. That date starts the 30-day defect period and asks the decision maker to review within 10 business days, by email and on the project. It also drafts the final invoice. Acceptance comes only from the client's signature, never from silence, and a review still open doesn't hold up payment for work properly performed.
 
-**Waiting on the client.** When neon1 can't continue without the client's access, information, or decision, neon1 records what's needed with **Waiting on you**, and the client is told by email. The project shows when the work may pause (10 business days later) and when the project may end (30 calendar days later). A pause, for that or for an undisputed amount more than 7 days overdue, and an ending, are each recorded with a reason and told to the client. A pause never touches the client's own systems or data.
+**Waiting on the client.** When neon1 can't continue without the client's access, information, or decision, neon1 records what's needed with **Waiting on you**, and the client is told by email. The project shows when the work may pause (10 business days later) and when the project may end (30 calendar days later, and at least 14 days after neon1 sends **notice of ending**). For an undisputed amount more than 7 days overdue, neon1 first sends **notice to pay**, and may pause the affected work 2 business days later. Each notice, pause, and ending is recorded and told to the client. A pause never touches the client's own systems or data.
 
 ## Invoices and paying
 
@@ -146,7 +146,7 @@ Invoices are in Execute (`#billing`). neon1 makes them, and the client sees them
 
 | Type | When |
 |---|---|
-| Deposit | Drafted at approval: 30% of a fixed price or of an estimate's low end, unless the option states another share |
+| Deposit | Drafted at approval: 30% of a fixed price or of an estimate's low end, unless the option states another share. Due when issued, before the work begins |
 | Progress | Added by neon1 for a stage. On an estimate: the hours worked so far, less earlier invoices |
 | Final | Drafted when neon1 records the handover: what's left on a fixed price, or the hours worked (never past the high end) less earlier invoices |
 | Purchases at cost | Reimbursement for what neon1 bought, from the receipts |
@@ -157,7 +157,7 @@ Invoices are in Execute (`#billing`). neon1 makes them, and the client sees them
 
 An invoice reads as **Draft**, **Open**, **Partly paid**, **Overdue** (past due with an undisputed balance), **Paid in full**, **Void**, or **Credit**. The business day after an invoice is due, its billing contacts get a reminder.
 
-**Disputing an invoice.** The decision maker or a client admin chooses **Dispute part of this invoice**, with the amount and why. neon1 sees it at once and answers on the invoice, with a credit, a corrected invoice, or an explanation, and marks it resolved. The undisputed amount stays due on the original date.
+**Disputing an invoice.** The decision maker or a client admin chooses **Dispute part of this invoice**, with the amount and why. neon1 sees it at once and answers on the invoice, with a credit, a corrected invoice, or an explanation, and marks it resolved. The undisputed amount stays due on the original date, and neon1 doesn't pause work only because an amount is genuinely disputed while it's being resolved.
 
 - **Online:** **See and pay**, then **Pay**, opens Stripe Checkout, bank transfer (ACH) first and card too. 1NEON never sees card or bank details. A card payment shows as paid at once. A bank payment shows as **bank payment clearing** until the bank clears it in a few business days. Meanwhile **Pay** is gone and nothing counts it overdue, so nobody pays twice. If the bank refuses it, no money moved, and the invoice reopens with the failed payment listed and **Pay again**. Billing contacts are told when a bank payment starts, clears, or fails.
 - **By check, Zelle, or wire:** neon1 records it with **Record a payment** on arrival: amount, how it arrived, date, and a check number or confirmation.

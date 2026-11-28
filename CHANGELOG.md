@@ -4,6 +4,11 @@ neon1-corpus releases use `v0.MINOR.PATCH`: a new document is a minor release, a
 
 ## Unreleased
 
+### Changed
+- Service agreement (edition 2.5) and services agreement template (edition 2.2): deposits, invoice disputes, pauses, client delays, ending, confidentiality, and publication choices.
+- Case studies describe the work without figures, test results, or client commentary, and the personal, community, and education accounts are rewritten. The publication permission form and Publishing client work are replaced.
+- Privacy policy: what deleting an account removes, and the keyed identifier kept 30 days for a confirmed mobile number.
+
 ### Added
 - Two services: custom software, and modernization (greenfield, migrate, retrofit, upgrade, and repair), each with its own page, and 1NEON help lists the Custom software (`APP`) and Modernization (`MOD`) templates. Services now lists six, with DevOps under cloud and AI engineering and security covering readiness and awareness.
 

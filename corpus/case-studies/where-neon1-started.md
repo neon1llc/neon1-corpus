@@ -1,27 +1,27 @@
 ---
 id: case-where-neon1-started
 title: Where neon1 started
-summary: A grade school wanted real STEM tools on a small budget.
+summary: "My work with a school community in Queens before I formed neon1."
 type: case-study
 status: adopted
-client: grade school
+client: local school community
 area: community
 kind: founder
-role: "As a volunteer, before neon1"
+role: "Before neon1"
 when: "2025"
-updated: 2026-11-20
+updated: 2026-11-27
 created: 2025-09-22
-edition: "1.7"
+edition: "2.0"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: community
 order: 7
-stat_key: "at no charge"
+stat_key: "before neon1"
 stat: "· where it began"
-short_problem: "A grade school wanted real STEM tools on a small budget."
-short_work: "Budgeted and set up a new STEM edtech system, at no charge."
-short_results: "Watched how classes used it, and adjusted."
-short_after: "Security sessions at no charge for teachers and parents became neon1."
+short_problem: "Helping a school community make better use of technology."
+short_work: "Educational technology setup and online safety guidance."
+short_results: "It shaped neon1."
+short_after: "Not a neon1 engagement."
 origin: "neon1-site src/app/public/index.html#case-community"
 ---
 
@@ -29,16 +29,16 @@ origin: "neon1-site src/app/public/index.html#case-community"
 
 ## The problem
 
-P.S. 33 Edward M. Funk, a grade school in Queens, needed a STEM edtech setup that teachers would use, on a budget with no room for mistakes. I'd long wanted to do this work in my community.
+Before forming neon1 LLC, I worked with a local school community in Queens, helping teachers and students make better use of technology.
 
 ## The work
 
-I'd volunteered there in high school, and in 2025 I was working there after school as a counselor, teacher's aide, and tech assistant. On my own time, I compared options, budgeted the system, and set it up for the classrooms. I then invited teachers and parents to sessions on staying safe online, at no charge.
+Alongside my work at the school, I helped plan and set up educational technology and shared practical online safety guidance with teachers and families.
 
 ## The results
 
-Teachers used it in class, and parents left with specific steps. That showed the help was worth offering more widely.
+That experience helped shape neon1: technology should be understandable, useful, and accessible to the people who depend on it.
 
 ## After handover
 
-That's how neon1 began, and community work is still part of it. Schools and community groups can [contact me](../engagement/contact.md).
+This was part of my experience before forming the company, not a commercial neon1 engagement. Schools and community groups can [contact me](../engagement/contact.md).

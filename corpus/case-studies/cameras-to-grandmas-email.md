@@ -1,46 +1,44 @@
 ---
 id: case-cameras-to-grandmas-email
-title: Home cameras and family accounts
-summary: "A house with no cameras, and passwords reused everywhere."
+title: Home technology and account security
+summary: "A personal project: home technology and account security for my family."
 type: case-study
 status: adopted
 client: "family & friends"
 area: home tech
 kind: founder
-role: "For my own family"
+role: "Personal project, before neon1"
 when: "2025"
-updated: 2026-11-20
+updated: 2026-11-27
 created: 2025-09-22
-edition: "1.8"
+edition: "2.0"
 consumers: [chat, knowledge, ai]
 pdf: true
 key: home
 order: 6
-stat_key: "9 devices"
-stat: "· cameras, DNS filtering, passwords"
-short_problem: "A house with no cameras, and passwords reused everywhere."
-short_work: "A camera system at my parents' house, and a password manager for the family."
-short_results: "Checked recordings, alerts, and logins work without me."
-short_after: "Advice and troubleshooting when something acts up."
+stat_key: "personal project"
+stat: "· before neon1"
+short_problem: "Home technology needed to be easier to manage and secure."
+short_work: "Camera monitoring, network filtering, passwords, and stronger sign-in."
+short_results: "Easier to manage without giving up security."
+short_after: "Not a client engagement."
 origin: "neon1-site src/app/public/index.html#case-home"
 ---
 
-# Home cameras and family accounts
+# Home technology and account security
 
 ## The problem
 
-My parents' house had no cameras, and the family reused a few passwords across accounts. I did this work in February 2025, for my own family, before neon1 was formed.
+Everyday technology at home needed to be easier to manage without giving up security.
 
 ## The work
 
-- Placed eight cameras, outdoor and indoor, around entrances and blind spots, then set up recording and alerts.
-- Added network-wide ad and tracker blocking with a Pi-hole DNS server.
-- Moved the family onto a password manager, one person at a time, with two-factor sign-in on key accounts.
+Before founding neon1 LLC, I helped my family improve home technology and account security. I set up camera monitoring, network-level filtering, password management, and stronger sign-in protection.
 
 ## The results
 
-The test was whether everyone could use it without calling me. Recordings and alerts work, and everyone finds their passwords on their own.
+The goal was to make everyday technology easier to manage without sacrificing security.
 
 ## After handover
 
-Advice and troubleshooting when something breaks. Household work ranges from one device to a full home network.
+This was a personal project, not a commercial client engagement.

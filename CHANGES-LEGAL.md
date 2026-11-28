@@ -2,6 +2,15 @@
 
 Every substantive change to the legal pages, newest first, so a lawyer can review it. The terms of use and privacy policy mirror `apps/web/src/legal/` in the 1NEON repo, and the service agreement mirrors `packages/domain/src/agreement.ts`, so a change here is made there too.
 
+## Legal review of November 27, 2026, carried out
+
+- **Service agreement 2.5 and services agreement template 2.2**, using the review's replacement wording for the deposit, invoice disputes, suspension, client delays, ending, confidentiality (one clause in both), case studies, and name use, plus the itemized-record sentence. One added word: invoices other than the deposit are due in 15 days ("Each other invoice"), so the deposit's "due before the work begins" doesn't conflict. 1NEON keeps 2.4's exact text for its signers and asks for a 2.5 signature before a new approval.
+- **Publication permission** (forms/publication-permission.md, 2.0): the review's form.
+- **Publishing client work** (2.0): the review's statement.
+- **Case studies.** The owner states permission is held for every study, so all seven stay. Removed: unverified figures, the 65-hour calculation, benchmark and test-set claims, the client commentary, the partner's AWS designation, health-record and security specifics, family security details, and the school's name. The family and school accounts and the sessions' wording follow the review. A signed permission per study is still to be filed.
+- **Privacy policy:** deleted accounts and mobile numbers now match the code. The readable number is no longer kept: a keyed identifier is held for 30 days. Account deletion also removes that account's security and audit records.
+- **Still open:** the health engagement's BAA and subcontract, evidence for any figure before it returns, the facts the review asks for, and counsel's review.
+
 ## Confidentiality term, November 27, 2026, for lawyer review
 
 - **templates/services-agreement.md, section 8, item 1.** The blank term is now 3 years after the agreement ends, and a trade secret stays confidential for as long as it remains one. This is a recommended default, not yet reviewed by a lawyer. The agreement clients sign in 1NEON (engagement/service-agreement.md, "Confidentiality") states no term and lists exclusions the template doesn't, so check whether the two should match.
