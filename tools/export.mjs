@@ -63,7 +63,7 @@ const shown = (d, key) => (confirmed(d[key]) ? d[key] : UNCONFIRMED[key])
 // A neon1 or subcontracted engagement's role is left to the label, which already says it (Client work assumes neon1)
 const caseLine = (d) => {
   const label = KINDS[d.kind] ?? KINDS.founder
-  return d.kind === "neon1" || d.kind === "partner" ? `${label}, ${shown(d, "when")}` : `${label}: ${shown(d, "role")}, ${shown(d, "when")}`
+  return d.kind === "neon1" || d.kind === "partner" || d.kind === "community" ? `${label}, ${shown(d, "when")}` : `${label}: ${shown(d, "role")}, ${shown(d, "when")}`
 }
 
 // What a type keeps in front matter, written out as Markdown so the .md file reads whole on its own
